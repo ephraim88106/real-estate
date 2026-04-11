@@ -546,6 +546,17 @@ img { max-width: 100%; display: block; }
 .subscribed .important-notice { display: none !important; }
 .subscribed #link-subscribe { color: var(--gold); font-weight: 700; }
 
+/* ===== Fixed Sidebar Ad ===== */
+.fixed-sidebar-ad {
+  position: fixed;
+  top: 150px;
+  right: 20px;
+  z-index: 1000;
+}
+@media (max-width: 1400px) {
+  .fixed-sidebar-ad { display: none; }
+}
+
 .article-modal {
   border: 0;
   padding: 0;
