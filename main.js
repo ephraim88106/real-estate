@@ -171,55 +171,82 @@ const articles = [
     summary_en: 'Apgujeong and Daechi, the heart of the Korean real estate market. Decades-old rebuilding issues have resurfaced. We analyze the true value of these areas.',
     bodyHtml: `
       <div class="data-box">
-        <div class="data-box-title">📊 강남 핵심 재건축 구역 지표</div>
+        <div class="data-box-title">📊 강남 재건축 주요 지표</div>
         <div class="data-grid">
           <div class="data-item">
-            <span class="num">3구역</span>
-            <div class="label">압구정 최대 속도</div>
+            <span class="num">35년+</span>
+            <div class="label">현대아파트 평균 연령</div>
           </div>
           <div class="data-item">
-            <span class="num">50층+</span>
-            <div class="label">목표 층수 상향</div>
+            <span class="num">3.3만㎡</span>
+            <div class="label">압구정 추진 면적</div>
           </div>
           <div class="data-item">
-            <span class="num">8,000만</span>
-            <div class="label">3.3㎡당 평균가</div>
+            <span class="num">50억+</span>
+            <div class="label">현대 84㎡ 호가</div>
           </div>
         </div>
       </div>
 
-      <h2>강남 재건축의 상징: 압구정 현대와 대치 은마</h2>
-      <p>부동산 시장에서 '입지'는 모든 가치의 출발점입니다. 압구정동과 대치동은 한국 부동산 역사에서 이 명제를 가장 극명하게 증명해온 지역입니다. 특히 서울시의 '신속통합기획' 도입 이후, 압구정 현대아파트 단지들은 과거의 지지부진했던 흐름을 깨고 가속도를 내고 있습니다.</p>
-      
+      <h2>왜 압구정·대치인가: 입지의 불변 가치</h2>
+      <p>부동산 시장에서 '입지'는 모든 가치의 출발점입니다. 압구정동과 대치동은 한국 부동산 역사에서 이 명제를 가장 극명하게 증명해온 지역입니다. 한강변, 강남 핵심 업무지구 접근성, 대치학원가라는 삼위일체 조건은 수십 년이 지나도 바뀌지 않는 구조적 수요를 만들어냅니다.</p>
+      <p>압구정 현대아파트 단지는 1976~1988년에 걸쳐 준공된 노후 아파트입니다. 재건축 연한(30년)을 한참 넘겼음에도 재건축이 더디게 진행된 것은 사업성과 규제가 번갈아가며 발목을 잡았기 때문입니다. 그러나 지금 이 단지들은 다시 가장 뜨거운 재건축 시장의 중심에 서 있습니다.</p>
+
+      <h2>현재 진행 상황: 어디까지 왔나</h2>
+      <p>압구정 재건축은 구역별로 진행 속도가 다릅니다. 압구정 3구역(현대 7·8·11차)은 정비구역 지정 및 조합설립인가 단계에 있으며, 시공사 선정을 앞두고 있습니다. 반면 나머지 구역들은 주민 간 이해관계 충돌과 서울시의 종상향 기준 적용 문제로 여전히 초기 단계에 머물러 있습니다.</p>
+      <p>대치동의 경우, 은마아파트가 핵심입니다. 49층 재건축 계획이 서울시와 오랫동안 협의 중이며, 최근 층수 조정 및 기부채납 비율을 두고 사업 조건이 좁혀지고 있다는 신호가 포착됩니다. 은마아파트는 4,424가구라는 대규모 단지 특성상 재건축 이후 공급 효과도 상당합니다.</p>
+
+      <div class="pull-quote">
+        <p>"압구정 재건축은 단지 아파트를 새로 짓는 것이 아닙니다. 서울 도심 한복판에 새로운 최고급 주거 클러스터를 창조하는 도시 재편 사업입니다."</p>
+        <cite>— 서울시 도시재생 연구원</cite>
+      </div>
+
+      <h2>가격의 역설: 규제가 강할수록 오른다?</h2>
+      <p>흥미롭게도 압구정 재건축 아파트 가격은 규제가 강화될수록 오르는 '역설적 현상'을 보입니다. 2023년 이후 각종 대출 규제와 재건축 초과이익 환수제가 재차 강화됐음에도, 압구정 현대아파트 시세는 꾸준히 상승 추세를 유지했습니다.</p>
+
       <table class="comparison-table">
         <thead>
           <tr>
             <th>단지명</th>
             <th>준공년도</th>
+            <th>규모(가구)</th>
             <th>재건축 단계</th>
-            <th>최근 실거래가(84㎡)</th>
+            <th>전용 84㎡ 호가</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="highlight">압구정 현대 3구역</td>
             <td>1982~84</td>
+            <td>약 1,400</td>
             <td>조합설립인가</td>
-            <td>약 58억 (2026.03)</td>
+            <td>약 55억~65억</td>
           </tr>
           <tr>
             <td class="highlight">대치 은마아파트</td>
             <td>1979</td>
-            <td>사업시행인가 준비</td>
-            <td>약 31억 (2026.02)</td>
+            <td>4,424</td>
+            <td>사업시행인가 추진</td>
+            <td>약 28억~34억</td>
+          </tr>
+          <tr>
+            <td>대치 쌍용 1차</td>
+            <td>1988</td>
+            <td>990</td>
+            <td>정비구역 지정</td>
+            <td>약 25억~30억</td>
           </tr>
         </tbody>
       </table>
 
-      <div class="pull-quote">
-        <p>"압구정 재건축은 단순한 주거지 공급이 아닙니다. 서울의 도시 경쟁력을 결정짓는 한강변 랜드마크 경쟁의 정점에 있습니다."</p>
-        <cite>— 서울시 도시계획위원회 자문위원 인터뷰</cite>
-      </div>
+      <h2>재건축 초과이익 환수제의 딜레마</h2>
+      <p>재건축 사업의 가장 큰 변수는 '재건축 초과이익 환수제'입니다. 재건축으로 발생하는 이익 중 일정 부분을 국가가 환수하는 이 제도는 조합원들의 사업 의지를 꺾는 강력한 억제 요인입니다. 압구정처럼 지가가 높은 지역일수록 환수 금액이 천문학적 수준에 달하기 때문입니다.</p>
+
+      <h2>리스크 요인: 과도한 기대에 대한 경계</h2>
+      <p>물론 장밋빛 전망만 있는 것은 아닙니다. 첫째는 사업 기간 리스크입니다. 재건축은 이주, 철거, 착공, 준공까지 통상 10~15년이 걸립니다. 둘째는 금리 환경입니다. 공사비 급등과 금융비용 증가로 재건축 사업의 추가 분담금이 크게 늘었습니다.</p>
+
+      <h2>투자 관점에서의 결론</h2>
+      <p>압구정·대치 재건축은 '언젠가는 오른다'는 명제가 거의 공리(公理)에 가까운 시장입니다. 그러나 그 '언젠가'가 5년 후인지 15년 후인지는 아무도 모릅니다. 투자 관점에서는 대기 기간 동안의 기회비용, 추가 분담금, 취득세·보유세 부담을 면밀히 계산해야 합니다.</p>
 
       <div class="source-info" style="font-size: 0.8rem; color: #888; border-top: 1px solid #eee; margin-top: 40px; padding-top: 20px;">
         <strong>참고 및 출처:</strong><br>
@@ -233,17 +260,29 @@ const articles = [
         <div class="data-box-title">📊 Key Rebuilding Metrics in Gangnam</div>
         <div class="data-grid">
           <div class="data-item">
-            <span class="num">Area 3</span>
-            <div class="label">Fastest Progress</div>
+            <span class="num">35Y+</span>
+            <div class="label">Avg Bldg Age</div>
           </div>
           <div class="data-item">
-            <span class="num">50F+</span>
-            <div class="label">Target Floors</div>
+            <span class="num">33k㎡</span>
+            <div class="label">Project Area</div>
+          </div>
+          <div class="data-item">
+            <span class="num">5B+ KRW</span>
+            <div class="label">Asking Price (84㎡)</div>
           </div>
         </div>
       </div>
       <h2>Icons of Gangnam Rebuilding</h2>
       <p>In the real estate market, 'location' is the starting point of all value. Apgujeong and Daechi have proven this throughout history.</p>
+      
+      <div class="pull-quote">
+        <p>"Apgujeong rebuilding is not just about new apartments; it is a city reorganization project creating a new luxury residential cluster."</p>
+        <cite>— Seoul Urban Regeneration Researcher</cite>
+      </div>
+
+      <h2>Conclusion from Investment Perspective</h2>
+      <p>Apgujeong and Daechi rebuilding is a market where the proposition "it will rise eventually" is almost an axiom. However, no one knows if that "eventually" is in 5 or 15 years.</p>
     `
   },
   {
