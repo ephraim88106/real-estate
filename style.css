@@ -508,6 +508,44 @@ img { max-width: 100%; display: block; }
   .city-comparison { grid-template-columns: 1fr; }
 }
 
+/* ===== Important Notice ===== */
+.important-notice {
+  background: var(--bg-paper);
+  border-bottom: 1px solid var(--line);
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--ink);
+  text-align: center;
+}
+.important-notice .badge {
+  background: var(--up);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+/* ===== Report Form ===== */
+.report-form-container { padding: 40px; }
+.report-form-container h2 { font-family: var(--serif); margin-bottom: 8px; }
+.report-form-container p { color: var(--ink-soft); margin-bottom: 32px; font-size: 14px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-weight: 700; margin-bottom: 8px; font-size: 14px; }
+.form-group input, .form-group textarea {
+  width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 6px; font-family: var(--sans);
+}
+.form-group textarea { height: 150px; resize: none; }
+#btn-report-submit {
+  width: 100%; background: var(--accent); color: #fff; border: 0; padding: 14px;
+  font-weight: 700; border-radius: 6px; cursor: pointer; font-size: 16px;
+}
+#btn-report-submit:hover { background: var(--accent-bright); }
+
+/* ===== Subscription State ===== */
+.subscribed .important-notice { display: none !important; }
+.subscribed #link-subscribe { color: var(--gold); font-weight: 700; }
+
 .article-modal {
   border: 0;
   padding: 0;

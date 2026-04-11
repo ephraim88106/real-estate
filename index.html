@@ -16,10 +16,15 @@
       <div class="container topbar-inner">
         <span id="current-date"></span>
         <nav class="topbar-links">
-          <a href="#">구독</a>
-          <a href="#">제보하기</a>
-          <a href="#">English</a>
+          <a href="#" id="link-subscribe">구독</a>
+          <a href="#" id="link-report">제보하기</a>
+          <a href="#" id="link-lang">English</a>
         </nav>
+      </div>
+    </div>
+    <div id="important-notice" class="important-notice">
+      <div class="container">
+        <span class="badge">[중요]</span> 2026년 하반기 수도권 공공분양 사전청약 일정이 공고되었습니다. (비구독자 전용 공지)
       </div>
     </div>
     <div class="container masthead">
@@ -90,6 +95,29 @@
   <dialog id="article-modal" class="article-modal">
     <article id="article-content"></article>
     <button class="modal-close" id="modal-close" aria-label="닫기">&times;</button>
+  </dialog>
+
+  <dialog id="report-modal" class="article-modal">
+    <div class="report-form-container">
+      <h2 id="report-modal-title">부동산 인사이트 제보하기</h2>
+      <p id="report-modal-desc">여러분의 소중한 제보가 더 정확한 뉴스를 만듭니다.</p>
+      <form id="report-form">
+        <div class="form-group">
+          <label for="report-title" id="lbl-report-title">제보 제목</label>
+          <input type="text" id="report-title" required placeholder="예: 구역 내 재개발 추진 현황 제보" />
+        </div>
+        <div class="form-group">
+          <label for="report-content" id="lbl-report-content">제보 내용</label>
+          <textarea id="report-content" required placeholder="구체적인 내용을 적어주세요. 기사화 시 개별 연락드립니다."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="report-email" id="lbl-report-email">연락처 (이메일)</label>
+          <input type="email" id="report-email" required placeholder="example@email.com" />
+        </div>
+        <button type="submit" id="btn-report-submit">제보 완료</button>
+      </form>
+    </div>
+    <button class="modal-close" id="report-modal-close" aria-label="닫기">&times;</button>
   </dialog>
 
   <footer class="site-footer">
