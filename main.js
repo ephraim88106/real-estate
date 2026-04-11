@@ -75,16 +75,28 @@ const i18n = {
 
 const articles = [
   {
+    id: 14,
+    url: 'article5_pf_risk.html',
+    category: '투자분석',
+    title: '수도권 미분양 3만 세대 시대, PF 리스크의 연쇄 반응',
+    summary: '미분양이 쌓이고, 시행사는 숨을 죽이고, 대출을 내준 금융기관은 긴장한다. 부동산 PF(프로젝트 파이낸싱) 위기의 도미노를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 투자분석팀',
+    date: '2026-04-12',
+    title_en: 'Seoul Metro Unsold Units Hit 30k: PF Risk Chain Reaction',
+    summary_en: 'Unsold units are piling up, and developers are holding their breath. We analyze the domino effect of the Real Estate PF crisis.'
+  },
+  {
     id: 13,
     url: 'article4_public_presale.html',
     category: '분양',
     title: '[단독] 2026년 하반기 수도권 공공분양 사전청약 확정… 3기 신도시 물량 집중',
-    summary: '국토교통부가 2026년 하반기 공공분양 사전청약 일정을 전격 공고했습니다. 남양주 왕숙, 하남 교산 등 3기 신도시 선호 지역의 대규모 물량이 포함되어 실수요자들의 관심이 집중되고 있습니다.',
+    summary: '국토교통부가 2026년 하반기 공공분양 사전청약 일정을 전격 공고했습니다. 남양주 왕숙, 하남 교산 등 3기 신도시 선호 지역의 대규모 물량이 포함됩니다.',
     image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&q=80',
     author: '부동산인사이트 편집부',
     date: '2026-04-12',
     title_en: '2H 2026 Public Presale Confirmed: Focus on 3rd Gen New Cities',
-    summary_en: 'MOLIT has announced the Public Presale schedule for late 2026. Massive supply in preferred areas like Namyangju Wangsuk and Hanam Gyosan is expected to attract home seekers.'
+    summary_en: 'MOLIT has announced the Public Presale schedule for late 2026. Massive supply in preferred areas like Namyangju Wangsuk and Hanam Gyosan is expected.'
   },
   {
     id: 10,
@@ -96,7 +108,7 @@ const articles = [
     author: '부동산인사이트 편집부',
     date: '2026-04-12',
     title_en: 'Stress DSR Stage 3: A Paradigm Shift in Lending',
-    summary_en: 'The final move for household debt management has been fully implemented. Stage 3 of Stress DSR is more than a regulation; it is a turning point for the real estate market.'
+    summary_en: 'The final move for household debt management has been fully implemented. Stage 3 of Stress DSR is more than a regulation.'
   },
   {
     id: 11,
@@ -108,14 +120,14 @@ const articles = [
     author: '부동산인사이트 시장분석팀',
     date: '2026-04-12',
     title_en: 'Apgujeong & Daechi: Rebuilding Momentum Under Regulation',
-    summary_en: 'Apgujeong and Daechi, the heart of the Korean real estate market. Decades-old rebuilding issues have resurfaced. We analyze the true value of these areas.'
+    summary_en: 'Apgujeong and Daechi, the heart of the Korean real estate market. Decades-old rebuilding issues have resurfaced.'
   },
   {
     id: 12,
     url: 'article3_1st_newtown.html',
     category: '투자분석',
     title: '1기 신도시 선도지구 선정 이후: 분당과 일산의 엇갈린 운명',
-    summary: '30년이 넘은 노후 신도시의 대규모 재정비가 시작됐다. 선도지구 선정을 계기로 분당과 일산은 각자의 길을 걷기 시작했다. 수요, 입지, 사업성의 세 변수로 두 도시의 미래를 전망한다.',
+    summary: '30년이 넘은 노후 신도시의 대규모 재정비가 시작됐다. 선도지구 선정을 계기로 분당과 일산은 각자의 길을 걷기 시작했다.',
     image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&q=80',
     author: '부동산인사이트 편집부',
     date: '2026-04-12',
