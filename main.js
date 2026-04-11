@@ -367,9 +367,77 @@ const articles = [
     image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
     author: '김지훈 기자',
     date: '2026-04-11',
-    title_en: 'Seoul Apartment Prices Rise for 6th Week',
-    summary_en: 'Led by Gangnam and Songpa, Seoul apartment prices continue to recover for the sixth consecutive week.',
-    body: ['Seoul apartment prices rose by 0.08% this week.']
+    title_en: 'Seoul Apartment Prices Rise for 6th Week Led by Gangnam',
+    summary_en: 'According to REB data, Seoul apartment prices have risen for six consecutive weeks, with Gangnam and Songpa leading the recovery trend.',
+    bodyHtml: `
+      <div class="data-box">
+        <div class="data-box-title">📊 주간 아파트 가격 동향 (서울)</div>
+        <div class="data-grid">
+          <div class="data-item">
+            <span class="num">+0.08%</span>
+            <div class="label">서울 평균 상승률</div>
+          </div>
+          <div class="data-item">
+            <span class="num">+0.21%</span>
+            <div class="label">송파구 변동률</div>
+          </div>
+          <div class="data-item">
+            <span class="num">+0.18%</span>
+            <div class="label">강남구 변동률</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>강남 4구와 마용성의 동반 상승</h2>
+      <p>한국부동산원이 발표한 '주간 아파트 가격 동향'에 따르면, 4월 둘째 주 서울 아파트 매매가격은 지난주 대비 0.08% 오르며 6주 연속 상승세를 기록했습니다. 특히 송파구(0.21%)와 강남구(0.18%) 등 상급지 아파트가 상승세를 견인하고 있습니다.</p>
+      <p>강북권에서도 마포(0.15%), 용산(0.14%), 성동(0.12%) 등 이른바 '마용성' 지역의 주요 단지들이 신고가를 경신하며 회복세를 굳히는 모양새입니다. 이는 금리 인하 기대감과 함께 '신생아 특례대출' 등 정책 금융 상품이 시장에 투입되면서 실수요자들의 매수 심리가 회복된 결과로 풀이됩니다.</p>
+
+      <div class="pull-quote">
+        <p>"급매물 소진 이후 매수 대기자들이 추격 매수에 나서면서 서울 주요 지역의 가격 지지선이 견고해지고 있습니다. 다만 지역별 양극화는 더욱 뚜렷해질 전망입니다."</p>
+        <cite>— KB부동산 수석전문위원 인터뷰</cite>
+      </div>
+
+      <h2>거래량 증가와 매수심리 회복</h2>
+      <p>서울시 부동산정보광장에 따르면, 지난달 서울 아파트 거래량은 4,000건을 넘어서며 2년 만에 최대치를 기록했습니다. 거래량이 가격 상승의 선행 지표라는 점을 감안할 때, 당분간 서울 시장의 우상향 흐름은 지속될 가능성이 높습니다. 매수우위지수 역시 50선을 돌파하며 매도자보다는 매수자들의 문의가 늘어나는 추세입니다.</p>
+
+      <div class="source-info" style="font-size: 0.8rem; color: #888; border-top: 1px solid #eee; margin-top: 40px; padding-top: 20px;">
+        <strong>참고 및 출처:</strong><br>
+        • 한국부동산원(REB) 주간 아파트 가격동향 (2026.04)<br>
+        • 국토교통부 실거래가 시스템 및 서울시 부동산정보광장 통계<br>
+        • KB부동산 데이터허브 시장 동향 리포트
+      </div>
+    `,
+    bodyHtml_en: `
+      <div class="data-box">
+        <div class="data-box-title">📊 Weekly Seoul Apt Price Trends</div>
+        <div class="data-grid">
+          <div class="data-item">
+            <span class="num">+0.08%</span>
+            <div class="label">Seoul Avg Increase</div>
+          </div>
+          <div class="data-item">
+            <span class="num">+0.21%</span>
+            <div class="label">Songpa District</div>
+          </div>
+          <div class="data-item">
+            <span class="num">+0.18%</span>
+            <div class="label">Gangnam District</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Recovery in Core Districts</h2>
+      <p>Seoul\'s apartment market continues its upward trajectory for the 6th consecutive week. According to the Korea Real Estate Board (REB), price increases are most prominent in high-end districts such as Songpa (+0.21%) and Gangnam (+0.18%).</p>
+      <p>The "Ma-Yong-Seong" area (Mapo, Yongsan, Seongdong) is also showing strong recovery, with major complexes reaching new yearly highs. Experts attribute this to growing anticipation of interest rate cuts and the infusion of government-backed policy loans like the "Special Loan for Newborns."</p>
+
+      <div class="pull-quote">
+        <p>"Buyers are becoming more proactive as bottom-tier prices consolidate in core Seoul areas. However, we expect to see further divergence between regions."</p>
+        <cite>— Senior Analyst at KB Real Estate</cite>
+      </div>
+
+      <h2>Rising Volume and Market Sentiment</h2>
+      <p>Trading volume in Seoul surpassed 4,000 units last month, reaching a two-year high. As volume often leads price movement, the current upward trend is likely to persist in the short term. The Market Buy-Sell Index has also crossed the 50-point mark, indicating increased interest from prospective buyers.</p>
+    `
   }
 ];
 
