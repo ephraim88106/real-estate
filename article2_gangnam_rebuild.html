@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>압구정·대치 재건축, 규제 속 상승 동력 분석 | 부동산 인사이트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0D2B55;
+      --accent: #1A7F4D;
+      --text: #1E1E1E;
+      --subtext: #5A5A5A;
+      --light: #F6F7F9;
+      --border: #E0E0E0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: #fff; color: var(--text); line-height: 1.7; }
+
+    header { background: var(--primary); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; font-weight: 700; color: #fff; letter-spacing: -0.5px; text-decoration: none; }
+    .logo span { color: #F4A52D; }
+    nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; margin-left: 20px; transition: color 0.2s; }
+    nav a:hover { color: #F4A52D; }
+
+    .hero { background: linear-gradient(135deg, #0a2a0f 0%, #1A7F4D 55%, #0d4a2a 100%); padding: 64px 24px 56px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(248,165,45,0.12) 0%, transparent 70%); pointer-events: none; }
+    .hero-inner { max-width: 820px; margin: 0 auto; position: relative; }
+    .category-tag { display: inline-block; padding: 4px 12px; border-radius: 3px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 18px; background: var(--accent); color: #fff; }
+    .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: 700; color: #fff; line-height: 1.35; margin-bottom: 18px; letter-spacing: -1px; }
+    .hero-subtitle { font-size: 1.05rem; color: rgba(255,255,255,0.75); margin-bottom: 28px; max-width: 680px; line-height: 1.6; }
+    .meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .meta-item { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+    .meta-divider { width: 1px; height: 12px; background: rgba(255,255,255,0.3); }
+
+    .layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; padding: 48px 24px; max-width: 1100px; margin: 0 auto; }
+
+    .article-body h2 { font-family: 'Noto Serif KR', serif; font-size: 1.45rem; font-weight: 700; color: var(--primary); margin: 40px 0 14px; padding-left: 14px; border-left: 4px solid var(--accent); line-height: 1.4; }
+    .article-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--text); margin: 28px 0 10px; }
+    .article-body p { font-size: 0.97rem; line-height: 1.95; color: #333; margin-bottom: 18px; }
+    .article-body ul { padding-left: 20px; margin-bottom: 18px; }
+    .article-body ul li { font-size: 0.95rem; line-height: 1.8; color: #333; margin-bottom: 6px; }
+
+    .pull-quote { border-left: 4px solid var(--accent); background: #F0FAF5; padding: 20px 24px; margin: 32px 0; border-radius: 0 8px 8px 0; }
+    .pull-quote p { font-family: 'Noto Serif KR', serif; font-size: 1.1rem !important; line-height: 1.7 !important; color: #0a4a2a !important; font-style: italic; margin-bottom: 8px !important; }
+    .pull-quote cite { font-size: 0.8rem; color: var(--subtext); font-style: normal; }
+
+    .data-box { background: #EAF5EF; border: 1px solid #A8D8B8; border-radius: 8px; padding: 20px 24px; margin: 28px 0; }
+    .data-box-title { font-size: 0.78rem; font-weight: 700; color: #0a4a2a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+    .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .data-item { text-align: center; padding: 12px; background: #fff; border-radius: 6px; }
+    .data-item .num { font-size: 1.4rem; font-weight: 700; color: #0a4a2a; display: block; }
+    .data-item .label { font-size: 0.75rem; color: var(--subtext); margin-top: 4px; }
+
+    .section-divider { height: 1px; background: var(--border); margin: 36px 0; }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+    .comparison-table th { background: #0a4a2a; color: #fff; padding: 10px 12px; text-align: left; }
+    .comparison-table td { padding: 10px 12px; border-bottom: 1px solid #e0e0e0; }
+    .comparison-table tr:nth-child(even) td { background: #f6f9f7; }
+    .comparison-table .highlight { font-weight: 700; color: #0a4a2a; }
+
+    .sidebar {}
+    .sidebar-widget { background: var(--light); border-radius: 8px; padding: 20px; margin-bottom: 24px; }
+    .sidebar-widget h4 { font-size: 0.85rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); }
+    .sidebar-list li { list-style: none; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 0.87rem; line-height: 1.5; color: #444; }
+    .sidebar-list li:last-child { border-bottom: none; }
+    .sidebar-tag { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 0.68rem; font-weight: 700; margin-right: 6px; color: #fff; }
+    .tag-policy { background: #1A4D8F; }
+    .tag-market { background: #1A7F4D; }
+    .tag-invest { background: #7F1A4D; }
+    .tag-legal { background: #7F6A1A; }
+
+    .key-points { background: #EAF5EF; border: 1px solid #A8D8B8; border-radius: 8px; padding: 20px 24px; }
+    .key-points h5 { font-size: 0.82rem; font-weight: 700; color: #0a4a2a; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+    .key-points ul { padding-left: 16px; }
+    .key-points ul li { font-size: 0.85rem; line-height: 1.7; color: #444; margin-bottom: 6px; }
+
+    .disclaimer { background: #f0f0f0; border-left: 3px solid var(--subtext); padding: 14px 18px; margin: 36px 0 0; border-radius: 0 4px 4px 0; font-size: 0.82rem; color: var(--subtext); line-height: 1.6; }
+
+    footer { background: var(--primary); color: rgba(255,255,255,0.6); padding: 40px 24px; margin-top: 60px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { font-family: 'Noto Serif KR', serif; font-size: 1.1rem; font-weight: 700; color: #fff; }
+    .footer-logo span { color: #F4A52D; }
+    .footer-text { font-size: 0.78rem; line-height: 1.6; }
+
+    @media (max-width: 768px) { .layout { grid-template-columns: 1fr; gap: 32px; } .data-grid { grid-template-columns: repeat(2, 1fr); } nav { display: none; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">지역별 시장 동향</span>
+    <h1>압구정·대치 재건축,<br>규제 속에서도 상승 동력은 남아 있나</h1>
+    <p class="hero-subtitle">
+      한국 부동산 시장의 심장부, 강남구 압구정동과 대치동. 수십 년간 묵혀온 재건축 이슈가 다시 수면 위로 올라왔다. 규제와 기대 사이, 이 지역의 진짜 가치를 분석한다.
+    </p>
+    <div class="meta">
+      <span class="meta-item">📅 2026년 4월 12일</span>
+      <span class="meta-divider"></span>
+      <span class="meta-item">✍️ 부동산인사이트 시장분석팀</span>
+      <span class="meta-divider"></span>
+      <span class="meta-item">⏱ 약 8분 읽기</span>
+    </div>
+  </div>
+</div>
+
+<div class="layout">
+  <article class="article-body">
+
+    <div class="data-box">
+      <div class="data-box-title">📊 강남 재건축 주요 지표</div>
+      <div class="data-grid">
+        <div class="data-item">
+          <span class="num">35년+</span>
+          <div class="label">압구정 현대아파트 평균 연령</div>
+        </div>
+        <div class="data-item">
+          <span class="num">3.3만㎡</span>
+          <div class="label">압구정 재건축 추진 면적</div>
+        </div>
+        <div class="data-item">
+          <span class="num">50억+</span>
+          <div class="label">압구정 현대 84㎡ 호가</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>왜 압구정·대치인가: 입지의 불변 가치</h2>
+    <p>
+      부동산 시장에서 '입지'는 모든 가치의 출발점이다. 압구정동과 대치동은 한국 부동산 역사에서 이 명제를 가장 극명하게 증명해온 지역이다. 한강변, 강남 핵심 업무지구 접근성, 대치학원가라는 삼위일체 조건은 수십 년이 지나도 바뀌지 않는 구조적 수요를 만들어낸다.
+    </p>
+    <p>
+      압구정 현대아파트 단지는 1976~1988년에 걸쳐 준공된 노후 아파트다. 재건축 연한(30년)을 한참 넘겼음에도 재건축이 더디게 진행된 것은 사업성과 규제가 번갈아가며 발목을 잡았기 때문이다. 그러나 지금 이 단지들은 다시 가장 뜨거운 재건축 시장의 중심에 서 있다.
+    </p>
+
+    <h2>현재 진행 상황: 어디까지 왔나</h2>
+    <p>
+      압구정 재건축은 구역별로 진행 속도가 다르다. 압구정 3구역(현대 7·8·11차)은 정비구역 지정 및 조합설립인가 단계에 있으며, 시공사 선정을 앞두고 있다. 반면 나머지 구역들은 주민 간 이해관계 충돌과 서울시의 종상향 기준 적용 문제로 여전히 초기 단계에 머물러 있다.
+    </p>
+    <p>
+      대치동의 경우, 은마아파트가 핵심이다. 49층 재건축 계획이 서울시와 오랫동안 협의 중이며, 최근 층수 조정 및 기부채납 비율을 두고 사업 조건이 좁혀지고 있다는 신호가 포착된다. 은마아파트는 4,424가구라는 대규모 단지 특성상 재건축 이후 공급 효과도 상당하다.
+    </p>
+
+    <div class="pull-quote">
+      <p>"압구정 재건축은 단지 아파트를 새로 짓는 것이 아니다. 서울 도심 한복판에 새로운 최고급 주거 클러스터를 창조하는 도시 재편 사업이다."</p>
+      <cite>— 서울시 도시재생 연구원</cite>
+    </div>
+
+    <h2>가격의 역설: 규제가 강할수록 오른다?</h2>
+    <p>
+      흥미롭게도 압구정 재건축 아파트 가격은 규제가 강화될수록 오르는 '역설적 현상'을 보인다. 2023년 이후 각종 대출 규제와 재건축 초과이익 환수제가 재차 강화됐음에도, 압구정 현대아파트 시세는 꾸준히 상승 추세를 유지했다.
+    </p>
+    <p>
+      그 이유는 단순하다. 공급이 제한돼 있기 때문이다. 재건축 규제가 강해질수록 새로운 공급이 줄어들고, 희소가치가 높아지는 구조다. 특히 자산 보존 목적의 초고가 아파트 수요는 DSR이나 LTV 규제에서 상대적으로 자유롭다. 현금성 자산가들에게 압구정 아파트는 금융 상품에 가까운 '실물 자산'이다.
+    </p>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>단지명</th>
+          <th>준공년도</th>
+          <th>규모(가구)</th>
+          <th>재건축 단계</th>
+          <th>전용 84㎡ 호가</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="highlight">압구정 현대 3구역</td>
+          <td>1982~84</td>
+          <td>약 1,400</td>
+          <td>조합설립인가</td>
+          <td>약 55억~65억</td>
+        </tr>
+        <tr>
+          <td class="highlight">압구정 현대 1구역</td>
+          <td>1976~78</td>
+          <td>약 800</td>
+          <td>정비구역 지정</td>
+          <td>약 50억~58억</td>
+        </tr>
+        <tr>
+          <td class="highlight">대치 은마아파트</td>
+          <td>1979</td>
+          <td>4,424</td>
+          <td>사업시행인가 추진</td>
+          <td>약 28억~34억</td>
+        </tr>
+        <tr>
+          <td>대치 쌍용 1차</td>
+          <td>1988</td>
+          <td>990</td>
+          <td>정비구역 지정</td>
+          <td>약 25억~30억</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>재건축 초과이익 환수제의 딜레마</h2>
+    <p>
+      재건축 사업의 가장 큰 변수는 '재건축 초과이익 환수제'다. 재건축으로 발생하는 이익 중 일정 부분을 국가가 환수하는 이 제도는 조합원들의 사업 의지를 꺾는 강력한 억제 요인이다. 압구정처럼 지가가 높은 지역일수록 환수 금액이 천문학적 수준에 달하기 때문이다.
+    </p>
+    <p>
+      그러나 최근 흐름은 다르다. 정부는 재건축 초과이익 환수 기준을 완화하는 방향으로 제도 개선을 추진해왔다. 면제 기준 상향, 부과율 조정, 장기 보유 공제 확대 등이 논의되고 있으며, 이는 재건축 사업성을 높이는 직접적인 요인이 된다. 규제 완화 시그널이 강해질수록 호가는 즉각 반응한다.
+    </p>
+
+    <div class="section-divider"></div>
+
+    <h2>리스크 요인: 과도한 기대에 대한 경계</h2>
+    <p>
+      물론 장밋빛 전망만 있는 것은 아니다. 첫째, 사업 기간 리스크다. 재건축은 이주, 철거, 착공, 준공까지 통상 10~15년이 걸린다. 조합원들이 그 긴 기간 동안 추가 분담금과 이주 비용을 감당해야 하며, 이 과정에서 내부 갈등과 시공사 교체 등의 사태가 빈번하게 발생한다.
+    </p>
+    <p>
+      둘째, 금리 환경이다. 공사비 급등과 금융비용 증가로 재건축 사업의 추가 분담금이 크게 늘었다. 수십억 원의 추가 분담금을 감당할 수 없는 고령의 조합원들이 조합 내에 다수 존재할 경우, 사업 속도가 크게 느려진다.
+    </p>
+    <p>
+      셋째, 정치적 리스크다. 선거 주기마다 강남 재건축을 둘러싼 규제 완화·강화 논쟁이 반복된다. 현 정부의 규제 완화 기조가 다음 정부에서도 유지될 것이라는 보장이 없다.
+    </p>
+
+    <h2>투자 관점에서의 결론</h2>
+    <p>
+      압구정·대치 재건축은 '언젠가는 오른다'는 명제가 거의 공리(公理)에 가까운 시장이다. 그러나 그 '언젠가'가 5년 후인지 15년 후인지는 아무도 모른다. 투자 관점에서는 대기 기간 동안의 기회비용, 추가 분담금, 취득세·보유세 부담을 면밀히 계산해야 한다.
+    </p>
+    <p>
+      특히 현재 호가가 미래 재건축 프리미엄을 이미 반영하고 있는 수준인지를 냉정하게 평가해야 한다. 시장 심리가 뜨거울 때는 프리미엄이 과도하게 책정되는 경향이 있으며, 이 경우 재건축이 완료돼도 기대만큼의 수익이 나지 않는 '기대 함정'에 빠질 수 있다.
+    </p>
+
+    <div class="disclaimer">
+      ⚠️ 본 글은 공개된 정보와 시장 분석을 바탕으로 작성되었습니다. 개별 단지의 재건축 진행 상황은 수시로 변동될 수 있으므로 반드시 최신 정보를 확인하시기 바랍니다.
+    </div>
+
+  </article>
+
+  <aside class="sidebar">
+    <div class="key-points">
+      <h5>🔑 핵심 요약</h5>
+      <ul>
+        <li>압구정 3구역, 시공사 선정 임박으로 관심 집중</li>
+        <li>은마아파트, 49층 재건축 협의 막바지 단계</li>
+        <li>재건축 초과이익 환수제 완화 기조가 핵심 변수</li>
+        <li>규제 강화 → 공급 감소 → 희소가치 상승의 역설</li>
+        <li>10~15년 사업 기간, 추가 분담금이 최대 리스크</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h4>관련 기사</h4>
+      <ul class="sidebar-list">
+        <li><span class="sidebar-tag tag-policy">정책</span>스트레스 DSR 3단계, 대출 시장의 지각변동</li>
+        <li><span class="sidebar-tag tag-policy">정책</span>1기 신도시 선도지구 이후: 분당·일산의 운명</li>
+        <li><span class="sidebar-tag tag-legal">세금</span>공시가격 현실화율 폐지와 보유세 변화</li>
+        <li><span class="sidebar-tag tag-invest">투자</span>수도권 미분양 3만 세대, PF 리스크 분석</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h4>재건축 단계별 가이드</h4>
+      <div style="font-size:0.83rem; line-height:1.7; color:#444;">
+        <div style="padding:8px 0; border-bottom:1px solid #ddd;"><strong>① 정비구역 지정</strong><br>서울시 도시계획위원회 심의</div>
+        <div style="padding:8px 0; border-bottom:1px solid #ddd;"><strong>② 조합설립인가</strong><br>주민 동의율 75% 이상</div>
+        <div style="padding:8px 0; border-bottom:1px solid #ddd;"><strong>③ 사업시행인가</strong><br>건축계획·이주계획 확정</div>
+        <div style="padding:8px 0; border-bottom:1px solid #ddd;"><strong>④ 관리처분인가</strong><br>분담금·배분 확정</div>
+        <div style="padding:8px 0;"><strong>⑤ 이주·철거·착공</strong><br>통상 준공까지 4~5년</div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">부동산<span>인사이트</span></div>
+      <p class="footer-text" style="margin-top:8px;">한국 부동산 시장의 깊이 있는 분석</p>
+    </div>
+    <div class="footer-text" style="text-align:right;">
+      <p>정책 · 시장 · 투자 · 법률 전문 분석 매체</p>
+      <p style="margin-top:4px;">© 2026 부동산인사이트. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
