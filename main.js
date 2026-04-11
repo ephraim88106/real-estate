@@ -75,6 +75,127 @@ const i18n = {
 
 const articles = [
   {
+    id: 13,
+    category: '분양',
+    title: '[단독] 2026년 하반기 수도권 공공분양 사전청약 확정… 3기 신도시 물량 집중',
+    summary: '국토교통부가 2026년 하반기 공공분양 사전청약 일정을 전격 공고했습니다. 남양주 왕숙, 하남 교산 등 3기 신도시 선호 지역의 대규모 물량이 포함되어 실수요자들의 관심이 집중되고 있습니다.',
+    image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-12',
+    title_en: '2H 2026 Public Presale Confirmed: Focus on 3rd Gen New Cities',
+    summary_en: 'MOLIT has announced the Public Presale schedule for late 2026. Massive supply in preferred areas like Namyangju Wangsuk and Hanam Gyosan is expected to attract home seekers.',
+    bodyHtml: `
+      <div class="data-box">
+        <div class="data-box-title">📊 2026 하반기 사전청약 핵심 지표</div>
+        <div class="data-grid">
+          <div class="data-item">
+            <span class="num">약 1.2만</span>
+            <div class="label">총 공급 가구 수</div>
+          </div>
+          <div class="data-item">
+            <span class="num">3기 신도시</span>
+            <div class="label">공급 주력 지역</div>
+          </div>
+          <div class="data-item">
+            <span class="num">80%</span>
+            <div class="label">특별공급 비중</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>3기 신도시 본궤도 진입: 공급 가뭄 해갈될까</h2>
+      <p>국토교통부와 LH(한국토지주택공사)는 2026년 하반기 수도권 공공분양 사전청약 시행 계획을 최종 확정했습니다. 이번 공고는 최근 서울 및 수도권의 신축 공급 부족 우려를 불식시키고, 무주택 실수요자들에게 안정적인 내 집 마련 기회를 제공하기 위한 선제적 조치로 풀이됩니다.</p>
+      <p>가장 주목받는 지역은 단연 하남 교산과 남양주 왕숙지구입니다. 이들 지역은 서울 강남 및 도심 접근성이 뛰어나 사전청약 제도 도입 초기부터 가장 높은 경쟁률을 기록했던 곳들입니다. 특히 이번 물량은 토지 보상 절차가 마무리된 구역을 중심으로 구성되어, 본청약 및 입주 시기의 불확실성이 크게 낮아졌다는 점이 긍정적입니다.</p>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>지구명</th>
+            <th>공급 규모</th>
+            <th>주요 특징</th>
+            <th>예상 분양가(전용 84㎡)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="highlight">하남 교산</td>
+            <td>1,200가구</td>
+            <td>3호선 연장 역세권</td>
+            <td>7억 중반~8억 초반</td>
+          </tr>
+          <tr>
+            <td class="highlight">남양주 왕숙</td>
+            <td>2,500가구</td>
+            <td>GTX-B 노선 인접</td>
+            <td>5억 중반~6억 중반</td>
+          </tr>
+          <tr>
+            <td class="highlight">고양 창릉</td>
+            <td>1,800가구</td>
+            <td>GTX-A 개통 수혜</td>
+            <td>6억 초반~7억 초반</td>
+          </tr>
+          <tr>
+            <td class="highlight">인천 계양</td>
+            <td>1,000가구</td>
+            <td>테크노밸리 배후지</td>
+            <td>4억 후반~5억 중반</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>청약 제도 개편: '신생아·다자녀' 우선 배정 강화</h2>
+      <p>이번 사전청약부터는 정부의 저출생 대책에 따른 제도 개편 사항이 전면 적용됩니다. 신생아 특별공급 물량이 대폭 확대되며, 다자녀 기준이 2자녀로 하향 조정된 이후 시행되는 대규모 공고인 만큼 청약 전략의 전면적인 수정이 필요합니다.</p>
+      <p>또한, 소득 및 자산 기준이 완화된 '선택형(나눔형)' 물량이 다수 포함되어 사회초년생 및 신혼부부들의 초기 자금 부담을 덜어줄 것으로 기대됩니다. 다만, 사전청약 당첨 시 본청약까지 무주택 요건을 유지해야 하며, 다른 단지 중복 청약에 제한이 있을 수 있으므로 주의가 요구됩니다.</p>
+
+      <div class="pull-quote">
+        <p>"하반기 물량은 입지 면에서 역대급이라 평가받습니다. 분양가 상한제가 적용되는 만큼, 주변 시세 대비 20~30% 저렴한 가격 경쟁력이 최대 강점입니다."</p>
+        <cite>— LH 청약센터 관계자 인터뷰</cite>
+      </div>
+
+      <h2>시장 전망 및 대응 전략</h2>
+      <p>전문가들은 이번 사전청약이 가열된 서울 구축 매수 심리를 분산시키는 효과가 있을 것으로 내다보고 있습니다. 실수요자들은 자신의 가점과 특별공급 자격을 냉정하게 분석하여, 당첨 확률이 높은 지구를 선별하는 전략이 필요합니다. 특히 본청약 시점의 분양가 상승 가능성을 염두에 두고 자금 계획을 보수적으로 수립해야 합니다.</p>
+
+      <div class="source-info" style="font-size: 0.8rem; color: #888; border-top: 1px solid #eee; margin-top: 40px; padding-top: 20px;">
+        <strong>참고 및 출처:</strong><br>
+        • 국토교통부 주택공급 혁신위원회 보도자료 (2026)<br>
+        • LH 청약플러스 사전청약 공고문<br>
+        • 3기 신도시 홈페이지(www.3rd-newcity.kr) 데이터
+      </div>
+    `,
+    bodyHtml_en: `
+      <div class="data-box">
+        <div class="data-box-title">📊 Key Metrics for 2H 2026 Public Presale</div>
+        <div class="data-grid">
+          <div class="data-item">
+            <span class="num">12,000</span>
+            <div class="label">Total Units</div>
+          </div>
+          <div class="data-item">
+            <span class="num">3rd Gen NC</span>
+            <div class="label">Primary Areas</div>
+          </div>
+          <div class="data-item">
+            <span class="num">80%</span>
+            <div class="label">Special Supply Ratio</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Acceleration of 3rd Gen New Cities</h2>
+      <p>The Ministry of Land, Infrastructure and Transport (MOLIT) and LH have finalized the plan for the Public Presale in the Seoul Metropolitan Area for the second half of 2026. This move aims to secure supply stability amidst concerns over high-quality housing shortages.</p>
+      <p>High-demand areas such as Hanam Gyosan and Namyangju Wangsuk are the highlights of this announcement. These sites offer excellent accessibility to central Seoul and Gangnam, previously recording record-high competition rates.</p>
+
+      <div class="pull-quote">
+        <p>"The 2H supply is considered top-tier in terms of location. With price ceilings applied, the 20-30% discount compared to market prices is a major advantage."</p>
+        <cite>— LH Presale Center Official</cite>
+      </div>
+
+      <h2>New Eligibility Rules</h2>
+      <p>Revisions targeting low birth rates will be fully applied, significantly expanding quotas for households with newborns and multi-child families (now 2+ children). Prospective buyers are advised to recalibrate their strategies based on these new priority groups.</p>
+    `
+  },
+  {
     id: 10,
     category: '정책',
     title: '스트레스 DSR 3단계, 대출 시장의 지각변동이 시작된다',
