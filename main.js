@@ -442,6 +442,25 @@ const articles = [
 ];
 
 // ============================================================
+// Firebase 초기화 (본인의 Firebase Config로 교체하세요)
+// ============================================================
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT_ID.appspot.com",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+// Firebase 초기화 (설정이 유효한 경우에만)
+let db = null;
+if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.firestore();
+}
+
+// ============================================================
 // 유틸리티 및 렌더링
 // ============================================================
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -671,8 +690,25 @@ $('#link-report').addEventListener('click', (e) => {
 
 $('#report-modal-close').addEventListener('click', () => $('#report-modal').close());
 
-$('#report-form').addEventListener('submit', (e) => {
+$('#report-form').addEventListener('submit', async (e) => {
   e.preventDefault();
+  const reportData = {
+    title: $('#report-title').value,
+    content: $('#report-content').value,
+    email: $('#report-email').value,
+    timestamp: new Date()
+  };
+
+  if (db) {
+    try {
+      await db.collection('reports').add(reportData);
+    } catch (error) {
+      console.error("Error adding report: ", error);
+    }
+  } else {
+    console.log("Firestore not initialized. Data not saved: ", reportData);
+  }
+
   alert(i18n[state.lang].report_success);
   $('#report-form').reset();
   $('#report-modal').close();
@@ -695,8 +731,23 @@ $('#search-form').addEventListener('submit', (e) => {
   renderGrid();
 });
 
-$('#newsletter-form').addEventListener('submit', (e) => {
+$('#newsletter-form').addEventListener('submit', async (e) => {
   e.preventDefault();
+  const email = $('#newsletter-form input').value;
+  
+  if (db) {
+    try {
+      await db.collection('subscribers').add({
+        email: email,
+        timestamp: new Date()
+      });
+    } catch (error) {
+      console.error("Error adding subscriber: ", error);
+    }
+  } else {
+    console.log("Firestore not initialized. Subscriber not saved: ", email);
+  }
+
   $('#newsletter-form').reset();
   $('#newsletter-note').hidden = false;
   setTimeout(() => { $('#newsletter-note').hidden = true; }, 4000);
