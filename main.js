@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 16,
+    url: 'article_20260412_2_column.html',
+    category: '칼럼',
+    title: '안개 속의 봄, 2026년 부동산 시장의 거대한 체질 변화를 직시하라',
+    summary: '상승론과 하락론의 대립을 넘어 — 공급 절벽, 양극화 고착, 정책 불확실성이라는 구조적 변곡점에 선 한국 주택 시장의 냉정한 진단.',
+    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-12',
+    title_en: 'Spring in the Fog: Facing the Structural Shift of Korea\'s 2026 Housing Market',
+    summary_en: 'Beyond the bull-bear debate — a sober diagnosis of Korea\'s housing market at a structural inflection point of supply cliff, polarization, and policy uncertainty.'
+  },
+  {
+    id: 15,
+    url: 'article_20260412_1_overseas.html',
+    category: '해외',
+    title: '트럼프 관세 폭풍 속 미·일 부동산, 한국인 투자자의 선택은?',
+    summary: '엔화 약세와 모기지 금리 하락이 만든 기회 — 그러나 리스크는 여전히 진행형. 2026년 미국과 일본 부동산 시장의 구조적 변화를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-12',
+    title_en: 'US & Japan Real Estate Amid Trump Tariff Storm: What Should Korean Investors Choose?',
+    summary_en: 'Opportunities from weak yen and falling mortgage rates — but risks remain. An in-depth analysis of structural changes in the US and Japan real estate markets in 2026.'
+  },
+  {
     id: 14,
     url: 'article5_pf_risk.html',
     category: '투자분석',

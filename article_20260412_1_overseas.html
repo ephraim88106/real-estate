@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>트럼프 관세 폭풍 속 미·일 부동산, 한국인 투자자의 선택은? — 부동산인사이트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; color: #222; background: #f4f4f0; line-height: 1.8; }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: #0D2B55; color: #fff;
+      padding: 0 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.4);
+    }
+    .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 56px;
+    }
+    .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+    .logo span { color: #F4A52D; }
+    nav { display: flex; gap: 24px; }
+    nav a { color: #cde; font-size: .85rem; text-decoration: none; transition: color .2s; }
+    nav a:hover { color: #F4A52D; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #003A4A 0%, #006E8A 55%, #003A4A 100%);
+      color: #fff; padding: 72px 24px 56px;
+      text-align: center;
+    }
+    .category-tag {
+      display: inline-block;
+      background: #006E8A; color: #fff;
+      font-size: .75rem; font-weight: 700; letter-spacing: .08em;
+      padding: 4px 14px; border-radius: 20px; margin-bottom: 20px;
+      border: 1px solid rgba(255,255,255,.3);
+    }
+    .hero h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+      font-weight: 700; line-height: 1.4;
+      max-width: 860px; margin: 0 auto 16px;
+    }
+    .hero-sub { font-size: .95rem; opacity: .8; margin-bottom: 28px; }
+    .hero-meta { font-size: .8rem; opacity: .65; }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 36px; }
+    @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+    /* ── MAIN ARTICLE ── */
+    article { background: #fff; border-radius: 8px; padding: 40px; box-shadow: 0 2px 12px rgba(0,0,0,.07); }
+
+    /* data-box */
+    .data-box { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin: 32px 0; }
+    @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+    .data-card {
+      background: #e6f4f7; border-left: 4px solid #006E8A;
+      border-radius: 6px; padding: 18px 16px; text-align: center;
+    }
+    .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.8rem; font-weight: 700; color: #006E8A; }
+    .data-card .label { font-size: .78rem; color: #555; margin-top: 4px; }
+
+    /* headings */
+    article h2 {
+      font-family: 'Noto Serif KR', serif; font-size: 1.3rem; font-weight: 700;
+      color: #0D2B55; margin: 36px 0 14px;
+      border-left: 4px solid #006E8A; padding-left: 14px;
+    }
+    article p { margin-bottom: 18px; color: #333; font-size: .97rem; }
+
+    /* quote */
+    .pull-quote {
+      background: #d0edf3; border-left: 5px solid #006E8A;
+      border-radius: 0 6px 6px 0; padding: 22px 26px; margin: 28px 0;
+      font-family: 'Noto Serif KR', serif; font-style: italic;
+      font-size: 1.05rem; color: #004455; line-height: 1.7;
+    }
+
+    /* insight list */
+    .insight-list { background: #f0f8fa; border-radius: 8px; padding: 24px 28px; margin: 28px 0; }
+    .insight-list h3 { font-family: 'Noto Serif KR', serif; color: #006E8A; font-size: 1.05rem; margin-bottom: 14px; }
+    .insight-list ul { list-style: none; }
+    .insight-list ul li {
+      padding: 8px 0 8px 26px; border-bottom: 1px dashed #c8dde0;
+      font-size: .93rem; position: relative;
+    }
+    .insight-list ul li:last-child { border-bottom: none; }
+    .insight-list ul li::before { content: "▶"; color: #006E8A; position: absolute; left: 0; font-size: .7rem; top: 11px; }
+
+    /* disclaimer */
+    .disclaimer {
+      background: #f0f0ec; border: 1px solid #ddd; border-radius: 6px;
+      padding: 16px 20px; margin-top: 36px;
+      font-size: .78rem; color: #777; line-height: 1.6;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar { display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-box { background: #fff; border-radius: 8px; padding: 22px; box-shadow: 0 2px 10px rgba(0,0,0,.07); }
+    .sidebar-box h4 {
+      font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700;
+      color: #0D2B55; border-bottom: 2px solid #006E8A;
+      padding-bottom: 10px; margin-bottom: 14px;
+    }
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 7px 0 7px 22px; border-bottom: 1px solid #eee;
+      font-size: .85rem; color: #333; position: relative;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-list li::before { content: "●"; color: #006E8A; position: absolute; left: 0; font-size: .55rem; top: 11px; }
+
+    .related-list { list-style: none; }
+    .related-list li { padding: 8px 0; border-bottom: 1px solid #eee; font-size: .83rem; }
+    .related-list li:last-child { border-bottom: none; }
+    .related-list li a { color: #0D2B55; text-decoration: none; }
+    .related-list li a:hover { color: #006E8A; }
+
+    .compare-table { width: 100%; border-collapse: collapse; font-size: .8rem; margin-top: 8px; }
+    .compare-table th { background: #006E8A; color: #fff; padding: 7px 8px; text-align: left; }
+    .compare-table td { padding: 7px 8px; border-bottom: 1px solid #eee; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:nth-child(even) td { background: #f0f8fa; }
+
+    /* ── FOOTER ── */
+    footer { background: #0D2B55; color: #aac; padding: 32px 24px; text-align: center; font-size: .8rem; margin-top: 48px; }
+    footer strong { color: #F4A52D; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="category-tag">해외부동산</span>
+  <h1>트럼프 관세 폭풍 속 미·일 부동산,<br>한국인 투자자의 전략적 선택</h1>
+  <p class="hero-sub">엔화 약세와 모기지 금리 하락이 만든 기회 — 그러나 리스크는 여전히 진행형</p>
+  <p class="hero-meta">2026년 4월 12일 | 부동산인사이트 편집부</p>
+</div>
+
+<!-- CONTAINER -->
+<div class="container">
+
+  <!-- MAIN ARTICLE -->
+  <article>
+
+    <!-- 데이터 박스 -->
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">6.10%</div>
+        <div class="label">미국 30년 모기지 금리<br>(2026년 초 기준)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">$420,000</div>
+        <div class="label">미국 중위 주택가격 전망<br>(NAR 2026년 연간)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">엔화 약세</div>
+        <div class="label">한국 투자자 원화 기준<br>진입 기회 지속</div>
+      </div>
+    </div>
+
+    <!-- 배경·맥락 -->
+    <p>2026년 봄, 글로벌 부동산 시장은 전례 없는 지정학적 변수와 씨름하고 있다. 트럼프 2기 행정부가 단행한 대규모 관세 정책은 건자재 수입 비용을 끌어올리고 신규 주택 공급에 직접적인 제동을 걸었다. 미국 주택건설업협회(NAHB)는 관세로 인해 신축 주택 한 채당 건설 비용이 약 9,200달러 이상 상승할 것이라고 경고한 바 있다.</p>
+
+    <p>반면 미국의 30년 고정 모기지 금리는 불과 1년 전의 6.96%에서 6.10%로 하락하며 매수자들의 숨통을 조금씩 틔워주고 있다. 일본에서는 엔화 약세 기조가 장기화되면서 한국을 비롯한 아시아 투자자들의 도쿄·오사카 부동산 매입이 꾸준히 늘고 있다. 두 시장 모두 기회와 리스크가 공존하는 복잡한 국면이다.</p>
+
+    <p>이 글에서는 2026년 미국과 일본 부동산 시장의 구조적 변화를 심층 분석하고, 한국인 투자자가 취해야 할 전략적 시사점을 제시하고자 한다. 단순한 가격 동향의 나열을 넘어, 정책·환율·공급 구조가 뒤엉킨 현 국면을 입체적으로 해부한다.</p>
+
+    <!-- 섹션 1 -->
+    <h2>관세 전쟁이 흔드는 미국 주택 공급망</h2>
+    <p>트럼프 행정부의 광범위한 관세 부과는 미국 주택 시장에 이중의 충격을 주고 있다. 첫째는 캐나다산 목재, 중국산 철강·알루미늄에 대한 고율 관세로 인한 건설 자재비 상승이다. NAHB 추산에 따르면 신규 단독주택 한 채당 비용이 최소 9,200달러 이상 늘어났으며, 이는 고스란히 분양가에 반영될 수밖에 없다.</p>
+    <p>둘째는 이민 규제 강화에 따른 건설 노동력 부족이다. 미국 주택 건설 현장의 상당 비중을 차지하는 이주 노동자에 대한 단속이 강화되면서 신규 착공 속도가 더뎌지고 있다. 2026년 현재 미국에는 약 470만 채의 주택이 부족한 것으로 집계되는데, 공급 감소 추세가 지속되면 이 간극은 더욱 벌어질 가능성이 높다.</p>
+
+    <div class="pull-quote">
+      "관세는 단순히 무역 분쟁의 도구가 아니다. 주택 시장 관점에서 관세는 공급을 줄이고 가격을 높이는 구조적 압력으로 작용한다. 공급 부족 환경에서는 역설적으로 기존 주택 가격 하방 지지가 강해진다."
+    </div>
+
+    <p>그러나 이를 단순히 '호재'로 읽는 것은 위험하다. 주택 구매 능력 지수(HAI)가 116.5로 개선됐지만, 이는 여전히 역사적 평균을 크게 밑도는 수준이다. 고금리 여진과 높은 주택 가격이 맞물려 40년 만에 최저 수준의 주택 구매력을 기록하고 있는 현실은 수요 측면의 근본적 취약성을 드러낸다.</p>
+
+    <!-- 섹션 2 -->
+    <h2>미국 지역별 양극화: 선벨트와 해안 대도시의 엇갈린 운명</h2>
+    <p>2026년 미국 주택 시장의 가장 뚜렷한 특징은 지역별 양극화의 심화다. 텍사스 오스틴, 플로리다 탬파 등 '선벨트' 지역은 코로나 이후 인구 유입 붐이 꺼지며 재고 증가와 가격 조정을 겪고 있다. 이들 지역은 공급이 크게 늘었고, 원격근무 특수가 소멸하면서 매수자 우위 시장으로 전환됐다.</p>
+    <p>반면 뉴욕 맨해튼과 캘리포니아 핵심 지역은 이야기가 다르다. 맨해튼 고급 주택시장은 2026년 1분기 기준 6년 만에 최고 실적을 기록했다. 공급 제약이 심각한 도심 프리미엄 입지는 관세 환경에도 불구하고 글로벌 자산가들의 '안전자산' 역할을 이어가고 있다.</p>
+
+    <div class="pull-quote">
+      "한국 투자자가 미국 부동산에 투자한다면, '미국 전체 시장에 투자한다'는 사고방식을 버려야 한다. 시장은 500개 이상의 도시별 미시시장(micro-market)으로 쪼개져 있고, 각각의 수급 구조는 판이하게 다르다."
+    </div>
+
+    <!-- 섹션 3 -->
+    <h2>엔화 약세의 역설: 일본 도쿄 부동산의 구조적 상승</h2>
+    <p>일본 부동산 시장은 한국인 투자자들에게 2024년부터 주요 관심 대상으로 부상했다. 엔화 약세 기조는 원화 기준 진입 비용을 낮추는 동시에, 향후 엔화 정상화 과정에서의 환차익 가능성을 열어둔다. 실제로 도쿄 도심 5구(치요다·중앙·항·신주쿠·시부야)의 아파트 중위 가격은 2024년 이후 지속적인 상승세를 기록하고 있다.</p>
+    <p>수급 구조 측면에서도 도쿄는 매력적이다. 건설비 상승으로 신규 공급이 제한적인 가운데, 국제 관광·비즈니스 수요 회복으로 민박·임대 수익률이 개선되고 있다. 일본 정부 관광청(JNTO)에 따르면 2025년 방일 외국인은 연간 3,500만 명을 상회했으며, 도쿄·오사카 도심 임대 수요를 직접 견인하고 있다.</p>
+    <p>다만 일본은행(BOJ)의 금리 정상화가 진행 중임을 간과해서는 안 된다. 일본은 2026년까지 기준금리 1% 도달을 목표로 하고 있으며, 30년간 이어진 초저금리 환경의 종언은 중장기적으로 부동산 시장의 자산 재평가 압력으로 작용할 수 있다. 특히 임대 수익률보다 자본 차익에 의존하는 투자 구조는 금리 상승 국면에서 취약해진다.</p>
+
+    <!-- 섹션 4 -->
+    <h2>한·미·일 부동산 시장 비교와 한국 투자자의 포지셔닝</h2>
+    <p>한국 투자자의 관점에서 해외 부동산 투자는 자산 분산, 환헤지, 임대 수익 확보라는 세 가지 목적으로 수렴된다. 2026년 현 시점에서 미국과 일본은 각기 다른 매력과 리스크 프로파일을 갖는다.</p>
+    <p>미국은 달러 강세와 높은 모기지 금리가 레버리지 투자의 매력을 반감시키지만, 트럼프 정책으로 인한 공급 감소가 핵심 대도시 기존 주택의 가격 지지 역할을 하고 있다. 반면 일본은 엔화 약세가 역설적으로 기회가 되는 상황이지만, 금리 인상 사이클 진입이 리스크 요인이다. 두 시장 모두 '전국 단위' 접근이 아닌 도시·지구 단위의 정밀한 분석이 전제되어야 한다.</p>
+
+    <!-- 실수요자/투자자 시사점 -->
+    <div class="insight-list">
+      <h3>🏠 한국인 해외 부동산 투자자를 위한 핵심 시사점</h3>
+      <ul>
+        <li>미국 투자 시 선벨트 공급 과잉 지역은 피하고, 뉴욕·LA·시카고 등 공급 제한 핵심 도시의 중소형 주거 자산을 우선 검토하라.</li>
+        <li>일본 투자 시 도쿄 도심 5구 이외 지역은 인구 감소·공실률 리스크가 크므로, 입지 선별에 극도로 신중해야 한다.</li>
+        <li>엔화 환노출(FX exposure)을 관리하라. 중장기 엔화 강세 전환 시나리오에서의 환차익은 매력적이나, 단기 변동성에 대한 헤지 전략이 병행되어야 한다.</li>
+        <li>현지 법인 설립, 세금 신고 의무(FBAR·FATCA, 일본 해외부동산 세제 등)를 사전에 철저히 이해해야 한다. 세후 실질 수익률이 예상보다 크게 낮아질 수 있다.</li>
+        <li>리츠(REITs)나 부동산 펀드를 통한 간접 투자는 직접 매입 대비 유동성과 분산 투자 면에서 유리할 수 있으므로, 초보 투자자는 이를 먼저 고려할 것을 권장한다.</li>
+        <li>해외 부동산 투자 전 반드시 전문 자문사(세무사·법무사·현지 에이전트)를 통해 실사(due diligence)를 수행하고, 감정 평가 기반의 매입가 검증을 거쳐야 한다.</li>
+      </ul>
+    </div>
+
+    <!-- 결론 -->
+    <h2>결론: '구조의 시대'에는 구조로 승부해야 한다</h2>
+    <p>2026년 해외 부동산 시장은 '싸게 사서 비싸게 파는' 단순한 자산 증식의 장이 아니다. 관세 전쟁, 금리 정상화, 인구 구조 변화라는 세 가지 메가 트렌드가 교차하는 구조적 전환기다. 이 시대에 성공적인 투자자가 되려면 거시적 흐름을 읽는 안목과 함께, 개별 시장의 미시적 수급 구조를 정밀하게 파악하는 역량이 필요하다.</p>
+    <p>한국에서 수십 년간 통했던 '입지 불패' 공식은 해외에서도 동일하게 적용된다. 다만 그 '입지'의 의미와 평가 기준이 한국과 다르다는 점을 잊지 말아야 한다. 충분한 사전 학습과 현지 전문가 네트워크 구축 없이는 기회가 아니라 함정에 빠질 수 있다.</p>
+
+    <!-- 면책 고지 -->
+    <div class="disclaimer">
+      <strong>※ 면책 고지</strong><br>
+      본 기사는 공개된 자료와 전문가 분석을 바탕으로 작성된 정보 제공 목적의 콘텐츠입니다. 특정 부동산 상품이나 투자 행위에 대한 매수·매도 권유가 아니며, 투자에 따른 손익은 전적으로 투자자 본인의 판단과 책임 하에 귀속됩니다. 해외 부동산 투자 시에는 현지 법령, 세제, 환율 리스크를 포함한 제반 사항을 반드시 독립적으로 확인하시기 바랍니다.
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- 핵심 요약 -->
+    <div class="sidebar-box">
+      <h4>📌 핵심 요약</h4>
+      <ul class="summary-list">
+        <li>트럼프 관세로 미국 신축 비용 ↑, 기존 주택 가격 지지 효과</li>
+        <li>미 모기지 금리 6.10%로 하락 — 1년 전 대비 0.86%p ↓</li>
+        <li>일본 엔화 약세 = 한국인 원화 기준 진입 비용 감소</li>
+        <li>일본 BOJ 금리 인상 사이클 진입 → 중장기 리스크 상존</li>
+        <li>두 시장 모두 '전국 단위'가 아닌 도시·지구 단위 분석이 필수</li>
+      </ul>
+    </div>
+
+    <!-- 관련 기사 -->
+    <div class="sidebar-box">
+      <h4>📰 관련 기사</h4>
+      <ul class="related-list">
+        <li><a href="#">2026 한·미·일 부동산 전망: 초양극화의 시대</a></li>
+        <li><a href="#">미국 주택시장, 점진적 회복 vs 공급 위기</a></li>
+        <li><a href="#">도쿄 도심 5구 아파트, 외국인 수요에 상승세</a></li>
+        <li><a href="#">해외 부동산 세금 완전 정리 — FBAR·FATCA 가이드</a></li>
+      </ul>
+    </div>
+
+    <!-- 미·일 투자 비교 -->
+    <div class="sidebar-box">
+      <h4>🌏 미·일 투자 환경 비교 (2026년)</h4>
+      <table class="compare-table">
+        <thead>
+          <tr><th>항목</th><th>미국</th><th>일본</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>금리 방향</td><td>하락세</td><td>인상 중</td></tr>
+          <tr><td>환율 이슈</td><td>달러 강세</td><td>엔화 약세</td></tr>
+          <tr><td>공급 구조</td><td>지역별 상이</td><td>도심 제한적</td></tr>
+          <tr><td>임대 수요</td><td>중간</td><td>관광·외인 강함</td></tr>
+          <tr><td>진입 난이도</td><td>보통</td><td>법적 절차 복잡</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>부동산인사이트</strong> — 데이터와 분석으로 읽는 한국·글로벌 부동산<br>
+  <span style="font-size:.75rem; opacity:.6;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재·복사·배포를 금합니다.</span>
+</footer>
+
+</body>
+</html>
