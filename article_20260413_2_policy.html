@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4월 17일, 다주택자 대출 만기연장 불허 시행 — 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #1a1a2e;
+    background: #f5f5f0;
+  }
+
+  /* ── 헤더 ── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: #0D2B55;
+    padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.35);
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: #fff; text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a {
+    color: rgba(255,255,255,.78);
+    text-decoration: none; font-size: .82rem; font-weight: 500;
+    letter-spacing: .3px;
+    transition: color .2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* ── 히어로 ── */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 72px 24px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .category-tag {
+    display: inline-block;
+    background: #C8401A;
+    color: #fff; font-size: .78rem; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 6px 18px; border-radius: 2px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255,255,255,.25);
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 700; color: #fff;
+    line-height: 1.4; letter-spacing: -1px;
+    max-width: 820px; margin: 0 auto 18px;
+  }
+  .hero-sub {
+    color: rgba(255,255,255,.72);
+    font-size: 1rem; max-width: 660px;
+    margin: 0 auto 28px;
+  }
+  .hero-meta {
+    color: rgba(255,255,255,.5);
+    font-size: .8rem; letter-spacing: .5px;
+  }
+
+  /* ── 본문 레이아웃 ── */
+  .container {
+    max-width: 1180px; margin: 0 auto;
+    padding: 48px 24px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+  }
+  @media (max-width: 880px) {
+    .container { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+
+  /* ── 본문 ── */
+  .article-body { min-width: 0; }
+
+  /* 데이터 박스 */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 16px; margin-bottom: 40px;
+  }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #fdf0ec;
+    border-left: 4px solid #C8401A;
+    border-radius: 6px; padding: 20px 18px;
+    text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem; font-weight: 700;
+    color: #C8401A; line-height: 1.1;
+  }
+  .data-card .label {
+    font-size: .78rem; color: #555; margin-top: 6px; font-weight: 500;
+  }
+
+  /* 섹션 제목 */
+  .article-body h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem; font-weight: 700;
+    color: #2a0a0a;
+    margin: 40px 0 16px;
+    padding-left: 16px;
+    border-left: 4px solid #C8401A;
+    line-height: 1.4;
+  }
+
+  .article-body p {
+    color: #333; margin-bottom: 18px;
+    font-size: .97rem; line-height: 1.85;
+  }
+
+  /* 경고 배너 */
+  .alert-banner {
+    background: #fff3f0;
+    border: 1.5px solid #C8401A;
+    border-radius: 6px;
+    padding: 16px 22px;
+    margin-bottom: 36px;
+    display: flex; align-items: flex-start; gap: 14px;
+    font-size: .9rem; color: #6a1a0a;
+  }
+  .alert-banner .icon { font-size: 1.4rem; flex-shrink: 0; }
+  .alert-banner strong { display: block; margin-bottom: 4px; font-size: .95rem; color: #C8401A; }
+
+  /* 쿼트 박스 */
+  .quote-box {
+    background: #fde9e4;
+    border-left: 5px solid #C8401A;
+    border-radius: 4px;
+    padding: 22px 28px;
+    margin: 28px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem;
+    color: #4a1a10; margin: 0;
+    line-height: 1.75;
+  }
+  .quote-box .attribution {
+    font-size: .78rem; color: #9a5a4a;
+    margin-top: 10px; font-style: normal;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  /* 규제 비교 테이블 */
+  .policy-table {
+    width: 100%; border-collapse: collapse;
+    margin: 20px 0 32px;
+    font-size: .88rem;
+  }
+  .policy-table thead tr { background: #C8401A; color: #fff; }
+  .policy-table th {
+    padding: 12px 14px; text-align: left; font-weight: 700;
+    letter-spacing: .3px;
+  }
+  .policy-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #eed8d3;
+    color: #333;
+  }
+  .policy-table tr:nth-child(even) { background: #fff3f0; }
+  .policy-table tr:last-child td { border-bottom: none; }
+  .highlight { color: #C8401A; font-weight: 700; }
+
+  /* 시사점 목록 */
+  .insight-list {
+    list-style: none; padding: 0;
+    margin: 16px 0 28px;
+  }
+  .insight-list li {
+    display: flex; gap: 12px;
+    align-items: flex-start;
+    padding: 12px 16px;
+    background: #fff3f0;
+    border-radius: 6px; margin-bottom: 10px;
+    font-size: .93rem; color: #2a1010;
+  }
+  .insight-list li::before {
+    content: '▶';
+    color: #C8401A;
+    font-size: .75rem;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  /* 면책 고지 */
+  .disclaimer {
+    background: #f0f0f0;
+    border-radius: 6px; padding: 18px 22px;
+    margin-top: 40px;
+    font-size: .78rem; color: #777;
+    line-height: 1.7;
+    border: 1px solid #ddd;
+  }
+
+  /* ── 사이드바 ── */
+  .sidebar { position: sticky; top: 76px; }
+
+  .sidebar-widget {
+    background: #fff;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+  }
+  .sidebar-widget h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: .95rem; font-weight: 700;
+    color: #2a0a0a; margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #C8401A;
+  }
+
+  /* 핵심 요약 */
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    font-size: .85rem; color: #334;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex; gap: 8px;
+    line-height: 1.55;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: '●';
+    color: #C8401A; font-size: .6rem;
+    margin-top: 5px; flex-shrink: 0;
+  }
+
+  /* 관련 기사 */
+  .related-list { list-style: none; padding: 0; }
+  .related-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: .82rem;
+  }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a {
+    color: #C8401A; text-decoration: none;
+    font-weight: 500; line-height: 1.45;
+    display: block;
+  }
+  .related-list a:hover { text-decoration: underline; }
+  .related-list .meta {
+    color: #aaa; font-size: .72rem; margin-top: 3px;
+  }
+
+  /* 체크리스트 */
+  .checklist { list-style: none; padding: 0; }
+  .checklist li {
+    font-size: .84rem; color: #333;
+    padding: 7px 0;
+    border-bottom: 1px solid #eee;
+    display: flex; gap: 10px; align-items: flex-start;
+    line-height: 1.5;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: '☐';
+    color: #C8401A; font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  /* ── 푸터 ── */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,.55);
+    text-align: center; padding: 28px 24px;
+    font-size: .78rem; line-height: 1.8;
+    margin-top: 60px;
+  }
+  footer strong { color: rgba(255,255,255,.85); }
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+</style>
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-vH50HcSMSOmwFD8o"
+    data-ad-width = "160"
+    data-ad-height = "600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-c1XP1iKah32kfdAU"
+    data-ad-width = "728"
+    data-ad-height = "90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<!-- 헤더 -->
+<header>
+  <a class="logo" href="#">부동산<span>인사이트</span></a>
+  <nav>
+    <a href="#">시장동향</a>
+    <a href="#">정책·규제</a>
+    <a href="#">투자분석</a>
+    <a href="#">법률·세금</a>
+    <a href="#">칼럼</a>
+  </nav>
+</header>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="category-tag">정책·규제 분석</div>
+  <h1>4월 17일, 다주택자 담보대출 만기연장 불허<br>— 10.15 대책의 마지막 퍼즐이 맞춰진다</h1>
+  <p class="hero-sub">수도권·규제지역 다주택자의 아파트 담보대출 만기연장이 원칙적으로 금지된다.<br>DSR 스트레스 금리 3% 적용까지, 2026년 봄 대출 규제의 전모를 분석한다.</p>
+  <div class="hero-meta">2026년 4월 13일 일요일 &nbsp;|&nbsp; 부동산인사이트 편집부</div>
+</section>
+
+<!-- 본문 + 사이드바 -->
+<div class="container">
+
+  <!-- 본문 -->
+  <main class="article-body">
+
+    <!-- 경고 배너 -->
+    <div class="alert-banner">
+      <span class="icon">🔔</span>
+      <div>
+        <strong>D-4 시행 예정 — 2026년 4월 17일부터 적용</strong>
+        수도권 및 규제지역 내 다주택자의 아파트 담보대출 만기연장이 원칙적으로 금지됩니다. 해당자는 기존 대출 처리 계획을 즉시 점검하시기 바랍니다.
+      </div>
+    </div>
+
+    <!-- 데이터 카드 -->
+    <div class="data-cards">
+      <div class="data-card">
+        <div class="num">D-4</div>
+        <div class="label">다주택자 대출 만기연장<br>불허 시행 (4.17)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">3%</div>
+        <div class="label">DSR 스트레스 금리<br>(기존 1.5%에서 상향)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">2억</div>
+        <div class="label">25억 초과 주택<br>최대 담보대출 한도</div>
+      </div>
+    </div>
+
+    <!-- 배경 및 맥락 -->
+    <h2>10.15 대책의 설계도 — 규제의 전체 그림</h2>
+    <p>2025년 10월 15일, 정부는 과열된 수도권 주택 시장을 겨냥해 포괄적인 부동산 안정화 대책을 발표했다. 이 대책은 단순한 LTV 조정이 아니라, 대출 한도 축소·DSR 강화·다주택자 규제·공급 확대 의지를 아우르는 복합 처방이었다. 그 중에서도 가장 큰 파장이 예상되었던 '다주택자 담보대출 만기연장 원칙적 불허' 조치가 드디어 이번 주 현실화된다.</p>
+    <p>4월 17일은 이 대책의 핵심 규제 중 마지막 퍼즐이 맞춰지는 날이다. 이미 생애최초 구매자 LTV 80% 적용, 규제지역 고가 주택 담보대출 한도 축소, DSR 스트레스 금리 인상 등 여러 조치가 순차적으로 시행된 가운데, 이번 다주택자 만기연장 불허 조치는 투자 목적 다주택 보유를 직접 겨냥한 가장 강력한 규제로 평가받는다.</p>
+    <p>정책의 메시지는 명확하다. 투자 목적으로 다수의 주택을 보유하면서 금융 레버리지를 활용하는 행태를 더 이상 제도적으로 지원하지 않겠다는 것이다. 이 규제의 실제 효과와 부작용, 그리고 시장과 수요자에게 미치는 파급 효과를 면밀히 짚어본다.</p>
+
+    <h2>다주택자 만기연장 불허 — 구체적으로 무엇이 달라지나</h2>
+    <p>4월 17일부터 적용되는 조치의 핵심은 수도권 및 규제지역 내 아파트를 담보로 한 대출의 만기연장이 다주택자에게는 원칙적으로 허용되지 않는다는 것이다. 이는 기존 대출 보유자가 만기 도래 시 자동으로 연장하던 관행을 차단하겠다는 의미다. 기존 대출이 만기가 되면, 해당 주택을 처분하거나 자기 자금으로 상환하지 않으면 대출을 유지할 수 없게 된다.</p>
+    <p>다만 세부 예외 조항도 존재한다. 실거주 의무 이행 중이거나 불가피한 사정이 인정되는 경우 등 일부 조건에서는 예외 적용이 가능하다. 그러나 일반적인 투자 목적 다주택자들에게 이 규제는 실질적인 압박으로 작용할 전망이다. 특히 전세를 끼고 갭 투자 방식으로 다수 물건을 보유한 경우, 만기가 도래하는 대출을 처리해야 한다는 부담이 현실화된다.</p>
+
+    <!-- 규제 비교 테이블 -->
+    <table class="policy-table">
+      <thead>
+        <tr>
+          <th>대출 한도 기준</th>
+          <th>주택 가격 구간</th>
+          <th>변경 전</th>
+          <th>변경 후 (현행)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>생애최초 구매자</td>
+          <td>전 구간</td>
+          <td>LTV 70%</td>
+          <td class="highlight">LTV 80%, 최대 6억</td>
+        </tr>
+        <tr>
+          <td>1주택자 (규제지역)</td>
+          <td>15억 이하</td>
+          <td>LTV 50%</td>
+          <td class="highlight">최대 6억 한도</td>
+        </tr>
+        <tr>
+          <td>1주택자 (규제지역)</td>
+          <td>15억~25억</td>
+          <td>LTV 40%</td>
+          <td class="highlight">최대 4억 한도</td>
+        </tr>
+        <tr>
+          <td>고가 주택 (규제지역)</td>
+          <td>25억 초과</td>
+          <td>LTV 30%</td>
+          <td class="highlight">최대 2억 한도</td>
+        </tr>
+        <tr>
+          <td>다주택자 (수도권·규제지역)</td>
+          <td>전 구간</td>
+          <td>만기연장 가능</td>
+          <td class="highlight">만기연장 원칙 불허 (4.17~)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>DSR 스트레스 금리 3% — 실질적인 대출 가능 금액은 얼마나 줄었나</h2>
+    <p>담보대출 한도 조정과 함께 주목해야 할 또 다른 규제 강화는 DSR 스트레스 금리 인상이다. 차주별 DSR 산정 시 실제 대출금리에 가산되는 스트레스 금리가 수도권 규제지역 주담대에 한해 기존 1.5%에서 3.0%로 두 배 상향되었다. 이는 명목 대출금리가 낮아도 DSR 계산에서는 훨씬 높은 금리가 적용된다는 뜻이다.</p>
+    <p>구체적으로 살펴보면 그 영향이 상당하다. 예컨대 연소득 8천만 원 직장인이 금리 3.5% 주담대를 받는다고 가정할 경우, 스트레스 금리 적용 후 DSR은 사실상 6.5% 금리로 계산된다. DSR 40% 한도를 적용하면 차주가 이용할 수 있는 대출 원금이 수억 원가량 줄어들 수 있다. 실수요자라도 대출 계획을 다시 계산해야 할 수준의 변화다.</p>
+    <p>특히 1주택자가 수도권·규제지역에서 임차인으로 전세대출을 받는 경우, 전세대출 이자상환분이 DSR에 반영됨으로써 추가적인 주담대 여력이 더욱 제한된다. 이중 대출 구조를 활용하던 실수요자들도 적지 않은 타격을 받을 수 있다.</p>
+
+    <div class="quote-box">
+      <p>"DSR 스트레스 금리 3% 적용은 단순한 숫자의 문제가 아니다. 금리 인하 기조 속에서도 실질적인 대출 가능 규모를 인위적으로 억제하는 구조다. 이는 통화정책과 금융규제가 정반대 방향으로 당기는 상황을 만들 수 있다."</p>
+      <div class="attribution">— 부동산인사이트 규제분석팀</div>
+    </div>
+
+    <h2>정책 평가 — 의도와 현실 사이의 간극</h2>
+    <p>10.15 대책과 그 후속 조치들의 입법 의도는 분명하다. 가계부채 관리, 다주택자 투기 억제, 고가 주택 시장 안정이라는 세 가지 축으로 구성된 이 규제 패키지는 정책적 논리에서 일관성을 유지하고 있다. 특히 다주택자 대출 만기연장 불허 조치는 국내 금융기관들이 사실상 다주택 투기의 자금 공급원 역할을 하지 못하도록 차단하는 제도적 장치로서 의의가 있다.</p>
+    <p>그러나 현실은 항상 정책의 의도만큼 단순하지 않다. 만기연장 불허 압박이 일시적 매물 출회로 이어질 경우, 단기적으로 특정 지역 가격 하락이 나타날 수 있다. 반면, 매도 의사가 없는 다주택자들은 주택 처분 대신 금리 부담을 안고 다른 금융 수단을 탐색할 가능성도 있다. 이 경우 규제의 효과가 상당 부분 희석될 수 있다.</p>
+    <p>또한 이번 규제가 갭투자 중심의 다주택자 층에 집중된 만큼, 실거주 목적의 1주택자나 생애최초 구매자에 대한 영향은 제한적일 것으로 보인다. 오히려 생애최초 LTV 80% 혜택은 무주택 실수요자들에게 긍정적인 신호로 작용할 수 있다. 정책이 명확한 수혜자와 피해자를 구분하고 있다는 점은 과거 포괄 규제와는 차별화된 접근이다.</p>
+
+    <div class="quote-box">
+      <p>"이번 규제 패키지의 설계는 세밀하다. 문제는 세밀한 설계가 언제나 세밀한 효과를 보장하지 않는다는 것이다. 금융 시장의 창의성은 규제보다 빠르게 대응한다. 감당 가능한 부작용의 범위를 미리 설정해두는 것이 정책 당국의 다음 과제다."</p>
+      <div class="attribution">— 부동산인사이트 편집위원</div>
+    </div>
+
+    <h2>은행권 위험가중치 조기 상향 — 금융 시스템의 선제적 안전망</h2>
+    <p>정책적으로 눈여겨볼 또 하나의 변화는 은행권 주담대 위험가중치 하한 상향 조치의 조기 시행이다. 원래 2026년 4월에 시행 예정이었던 이 조치(15% → 20%)는 예정보다 앞당겨 1월부터 이미 시행됐다. 이는 주택담보대출에 대해 은행이 더 많은 자본을 적립하도록 강제하는 조치로, 단기적으로는 은행의 주담대 공급 유인을 줄이는 효과를 낸다.</p>
+    <p>거시 건전성 규제의 강화라는 측면에서 이 조치는 국내 금융 시스템의 탄력성을 높이는 긍정적인 방향이다. 그러나 대출 공급의 축소가 실수요자의 금융 접근성을 좁힌다는 비판도 함께 제기되고 있다. 대출 규제가 자산 불평등 심화의 도구로 작용할 수 있다는 구조적 우려는 정책 당국이 계속 균형을 맞춰야 할 긴장이다.</p>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+    <ul class="insight-list">
+      <li>다주택자는 기존 보유 대출의 만기 시점을 즉각 확인해야 한다. 4월 17일 이후 만기가 도래하는 수도권·규제지역 아파트 담보대출은 연장이 원칙적으로 불허되므로, 사전에 상환 계획 또는 매각 계획을 수립해야 한다.</li>
+      <li>생애최초 구매자는 LTV 80% 혜택을 적극 활용할 수 있다. 다만 DSR 스트레스 금리 3% 적용에 따라 실제 대출 가능 금액은 예상보다 낮을 수 있으므로, 반드시 은행 상담을 통해 실제 한도를 사전에 확인해야 한다.</li>
+      <li>전세대출과 주담대를 동시에 보유하거나 계획 중인 경우 DSR 합산 영향을 반드시 점검해야 한다. 1주택자 전세대출 이자분의 DSR 반영으로 추가 대출 여력이 줄어든 상황이므로, 이중 대출 구조의 리스크를 냉정하게 평가해야 한다.</li>
+      <li>규제 지역 지정 해제 여부를 지속 모니터링해야 한다. 시장이 안정화되면 정부가 일부 지역을 규제지역에서 해제할 가능성이 있으며, 이는 해당 지역 대출 조건을 즉시 변화시킨다. 매수 타이밍을 조율하는 데 있어 중요한 변수다.</li>
+      <li>금리 인하 기조와 규제 강화의 역설적 공존을 이해해야 한다. 시장금리가 내려가더라도 스트레스 금리 적용으로 실질적 대출 한도는 늘지 않을 수 있다. 금리 인하가 자동으로 내 집 마련 여력 확대로 이어지지 않는다는 점을 염두에 두어야 한다.</li>
+    </ul>
+
+    <h2>결론 — 규제의 완성, 그리고 다음 단계</h2>
+    <p>4월 17일 다주택자 대출 만기연장 불허 시행으로 10.15 대책의 주요 규제 패키지가 사실상 완성된다. 지난 6개월간 단계적으로 시행된 복합 규제는 이제 전면 가동 상태에 놓였다. 시장은 이미 이를 반영하고 있으며, 규제지역 거래 감소와 고가 주택 약세라는 형태로 정책의 일부 의도는 현실화되고 있다.</p>
+    <p>그러나 규제의 완성이 시장의 안정을 의미하지는 않는다. 비규제지역 풍선효과, 실수요자의 대출 접근성 제약, 임차 시장 파급 효과 등 규제의 부작용과 미해결 과제는 여전히 산적해 있다. 정책 당국의 다음 과제는 새로운 규제를 더하는 것이 아니라, 기존 규제의 효과를 정밀하게 모니터링하고 부작용을 최소화하는 섬세한 조율이다.</p>
+    <p>수요자 입장에서는 규제 환경이 바뀌어도 흔들리지 않는 투자 원칙이 필요하다. 지금 이 순간의 규제 지도를 확인하는 것은 기본이지만, 5년 이상의 시계에서 수요와 공급, 도시 인프라, 경제 펀더멘털을 통합적으로 읽는 안목이 끝내 성패를 가른다.</p>
+
+    <!-- 면책 고지 -->
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지</strong><br>
+      본 기사에 포함된 규제 내용 및 정책 분석은 공개된 정부 자료 및 보도를 바탕으로 한 편집부의 독자적 해석이며, 법률적 자문이나 특정 투자 행위에 대한 권고가 아닙니다. 대출 및 금융 규제와 관련한 개인 상황은 반드시 해당 금융기관 또는 공인 전문가와 직접 상담하시기 바랍니다. 규제 세부 내용은 시행 전 변경될 수 있으며, 본지는 본 기사를 근거로 한 의사결정 결과에 대해 법적 책임을 지지 않습니다.
+    </div>
+
+  </main>
+
+  <!-- 사이드바 -->
+  <aside class="sidebar">
+
+    <!-- 핵심 요약 -->
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>4월 17일부터 수도권·규제지역 다주택자 아파트 담보대출 만기연장 원칙 금지</li>
+        <li>DSR 스트레스 금리 1.5% → 3.0%로 상향, 실질 대출 여력 상당폭 감소</li>
+        <li>생애최초 구매자 LTV 80%, 6억 한도 — 실수요자엔 긍정적 신호</li>
+        <li>25억 초과 고가 주택 담보대출 한도 2억 — 강남 약세 지속 주요인</li>
+        <li>은행권 위험가중치 15% → 20% 조기 시행으로 대출 공급 유인 축소</li>
+      </ul>
+    </div>
+
+    <!-- 관련 기사 -->
+    <div class="sidebar-widget">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li>
+          <a href="#">비규제지역 거래 20% 폭증 — 풍선효과의 귀환</a>
+          <div class="meta">2026.04.13 · 시장동향</div>
+        </li>
+        <li>
+          <a href="#">10.15 대책 6개월 결산 — 기대와 현실의 간극</a>
+          <div class="meta">2026.04.10 · 정책·규제</div>
+        </li>
+        <li>
+          <a href="#">DSR 스트레스 금리, 내 대출 한도 얼마나 줄었나</a>
+          <div class="meta">2026.04.06 · 법률·세금</div>
+        </li>
+        <li>
+          <a href="#">다주택자, 지금 팔아야 할까 버텨야 할까</a>
+          <div class="meta">2026.04.03 · 투자분석</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 규제 시행 체크리스트 -->
+    <div class="sidebar-widget">
+      <h3>✅ 규제 대응 체크리스트</h3>
+      <ul class="checklist">
+        <li>보유 담보대출 만기일 확인 (4.17 이후 해당 여부)</li>
+        <li>수도권·규제지역 다주택 해당 여부 자가 점검</li>
+        <li>DSR 재산정 — 실제 대출 한도 은행 상담</li>
+        <li>생애최초 LTV 80% 요건 해당 여부 확인</li>
+        <li>전세대출+주담대 이중 구조 DSR 합산 점검</li>
+        <li>규제지역 지정 현황 최신 버전으로 업데이트</li>
+      </ul>
+    </div>
+
+  </aside>
+</div>
+
+<!-- 푸터 -->
+<footer>
+  <strong>부동산인사이트</strong><br>
+  전문적 분석과 깊이 있는 시각으로 부동산 시장을 읽습니다.<br>
+  © 2026 부동산인사이트. 본 콘텐츠는 정보 제공 목적으로만 작성되었습니다.
+</footer>
+
+</body>
+</html>

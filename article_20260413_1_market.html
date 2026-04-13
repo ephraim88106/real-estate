@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>비규제지역 거래 폭증, 풍선효과의 귀환 — 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #1a1a2e;
+    background: #f5f5f0;
+  }
+
+  /* ── 헤더 ── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: #0D2B55;
+    padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.35);
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: #fff; text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a {
+    color: rgba(255,255,255,.78);
+    text-decoration: none; font-size: .82rem; font-weight: 500;
+    letter-spacing: .3px;
+    transition: color .2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* ── 히어로 ── */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 72px 24px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .category-tag {
+    display: inline-block;
+    background: #1A4D8F;
+    color: #fff; font-size: .78rem; font-weight: 700;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 6px 18px; border-radius: 2px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255,255,255,.25);
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 700; color: #fff;
+    line-height: 1.4; letter-spacing: -1px;
+    max-width: 820px; margin: 0 auto 18px;
+  }
+  .hero-sub {
+    color: rgba(255,255,255,.72);
+    font-size: 1rem; max-width: 660px;
+    margin: 0 auto 28px;
+  }
+  .hero-meta {
+    color: rgba(255,255,255,.5);
+    font-size: .8rem; letter-spacing: .5px;
+  }
+
+  /* ── 본문 레이아웃 ── */
+  .container {
+    max-width: 1180px; margin: 0 auto;
+    padding: 48px 24px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+  }
+  @media (max-width: 880px) {
+    .container { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+
+  /* ── 본문 ── */
+  .article-body { min-width: 0; }
+
+  /* 데이터 박스 */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 16px; margin-bottom: 40px;
+  }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #e8edf5;
+    border-left: 4px solid #1A4D8F;
+    border-radius: 6px; padding: 20px 18px;
+    text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem; font-weight: 700;
+    color: #1A4D8F; line-height: 1.1;
+  }
+  .data-card .label {
+    font-size: .78rem; color: #555; margin-top: 6px; font-weight: 500;
+  }
+
+  /* 섹션 제목 */
+  .article-body h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem; font-weight: 700;
+    color: #0D2B55;
+    margin: 40px 0 16px;
+    padding-left: 16px;
+    border-left: 4px solid #1A4D8F;
+    line-height: 1.4;
+  }
+
+  .article-body p {
+    color: #333; margin-bottom: 18px;
+    font-size: .97rem; line-height: 1.85;
+  }
+
+  /* 쿼트 박스 */
+  .quote-box {
+    background: #dce6f4;
+    border-left: 5px solid #1A4D8F;
+    border-radius: 4px;
+    padding: 22px 28px;
+    margin: 28px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem;
+    color: #1a2e4a; margin: 0;
+    line-height: 1.75;
+  }
+  .quote-box .attribution {
+    font-size: .78rem; color: #5a6e85;
+    margin-top: 10px; font-style: normal;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  /* 시사점 목록 */
+  .insight-list {
+    list-style: none; padding: 0;
+    margin: 16px 0 28px;
+  }
+  .insight-list li {
+    display: flex; gap: 12px;
+    align-items: flex-start;
+    padding: 12px 16px;
+    background: #f0f4fb;
+    border-radius: 6px; margin-bottom: 10px;
+    font-size: .93rem; color: #2a2a3a;
+  }
+  .insight-list li::before {
+    content: '▶';
+    color: #1A4D8F;
+    font-size: .75rem;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  /* 면책 고지 */
+  .disclaimer {
+    background: #f0f0f0;
+    border-radius: 6px; padding: 18px 22px;
+    margin-top: 40px;
+    font-size: .78rem; color: #777;
+    line-height: 1.7;
+    border: 1px solid #ddd;
+  }
+
+  /* ── 사이드바 ── */
+  .sidebar { position: sticky; top: 76px; }
+
+  .sidebar-widget {
+    background: #fff;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.07);
+  }
+  .sidebar-widget h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: .95rem; font-weight: 700;
+    color: #0D2B55; margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1A4D8F;
+  }
+
+  /* 핵심 요약 */
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    font-size: .85rem; color: #334;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex; gap: 8px;
+    line-height: 1.55;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: '●';
+    color: #1A4D8F; font-size: .6rem;
+    margin-top: 5px; flex-shrink: 0;
+  }
+
+  /* 관련 기사 */
+  .related-list { list-style: none; padding: 0; }
+  .related-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: .82rem;
+  }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a {
+    color: #1A4D8F; text-decoration: none;
+    font-weight: 500; line-height: 1.45;
+    display: block;
+  }
+  .related-list a:hover { text-decoration: underline; }
+  .related-list .meta {
+    color: #aaa; font-size: .72rem; margin-top: 3px;
+  }
+
+  /* 지역별 표 */
+  .region-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .82rem;
+  }
+  .region-table th {
+    background: #1A4D8F; color: #fff;
+    padding: 8px 10px; text-align: left;
+    font-weight: 600;
+  }
+  .region-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+  }
+  .region-table tr:last-child td { border-bottom: none; }
+  .up { color: #c0392b; font-weight: 700; }
+  .down { color: #2471a3; font-weight: 700; }
+
+  /* ── 푸터 ── */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,.55);
+    text-align: center; padding: 28px 24px;
+    font-size: .78rem; line-height: 1.8;
+    margin-top: 60px;
+  }
+  footer strong { color: rgba(255,255,255,.85); }
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+</style>
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-vH50HcSMSOmwFD8o"
+    data-ad-width = "160"
+    data-ad-height = "600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-c1XP1iKah32kfdAU"
+    data-ad-width = "728"
+    data-ad-height = "90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<!-- 헤더 -->
+<header>
+  <a class="logo" href="#">부동산<span>인사이트</span></a>
+  <nav>
+    <a href="#">시장동향</a>
+    <a href="#">정책·규제</a>
+    <a href="#">투자분석</a>
+    <a href="#">법률·세금</a>
+    <a href="#">칼럼</a>
+  </nav>
+</header>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="category-tag">시장동향</div>
+  <h1>비규제지역 거래 폭증, 풍선효과의 귀환<br>— 10.15 대책이 만든 양극화 시장</h1>
+  <p class="hero-sub">규제지역 거래가 35% 급감하는 동안, 비규제지역은 20% 이상 증가했다.<br>수도권 내 이중 시장의 현실과 실수요자가 읽어야 할 신호.</p>
+  <div class="hero-meta">2026년 4월 13일 일요일 &nbsp;|&nbsp; 부동산인사이트 편집부</div>
+</section>
+
+<!-- 본문 + 사이드바 -->
+<div class="container">
+
+  <!-- 본문 -->
+  <main class="article-body">
+
+    <!-- 데이터 카드 -->
+    <div class="data-cards">
+      <div class="data-card">
+        <div class="num">+20%</div>
+        <div class="label">비규제지역 거래량 증가율<br>(직전 4개월 대비)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">-35%</div>
+        <div class="label">규제지역 거래량 감소율<br>(동일 기간 비교)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">5만4천</div>
+        <div class="label">비규제지역 아파트 거래 건수<br>(2026년 1~2월)</div>
+      </div>
+    </div>
+
+    <!-- 배경 및 맥락 -->
+    <h2>10.15 대책, 그 이후의 시장</h2>
+    <p>2025년 10월, 정부는 서울과 수도권 일부 지역의 과열을 잡기 위한 강력한 '10.15 부동산 대책'을 내놓았다. 규제지역 확대, 담보대출 한도 축소, DSR 스트레스 금리 인상 등 복합적인 대출 규제가 동시에 작동하기 시작했다. 시장은 정책에 즉각적으로 반응했다. 그러나 그 반응의 방향은 규제 당국이 기대했던 '전반적인 냉각'이 아니라, 수요의 이동이었다.</p>
+    <p>2026년 1~2월 수도권 통계는 이 현실을 생생하게 보여준다. 서울 25개 구와 경기 12개 시군 등 규제지역 37곳의 아파트 거래량은 직전 4개월 4만9912건에서 3만2283건으로 35% 급감했다. 반면, 규제지역에서 벗어난 비규제지역의 거래는 같은 기간 4만5172건에서 5만4031건으로 오히려 20% 가까이 늘었다. 수요는 사라진 것이 아니라, 규제의 빈틈을 향해 이동했다.</p>
+    <p>이른바 '풍선효과(balloon effect)'의 전형적인 재연이다. 한국 부동산 정책사에서 이 현상은 수차례 반복되어 왔다. 규제가 한 곳을 누르면, 인접한 다른 곳이 부풀어 오른다. 2026년 봄, 그 풍선은 다시 부풀기 시작했다.</p>
+
+    <h2>강남 하락, 비강남 상승 — 서울 내부의 이중 시장</h2>
+    <p>서울 내부에서도 온도차는 극명하다. 강남·서초·송파 등 이른바 강남3구는 10.15 대책 이후 긴 약세 국면을 이어가고 있다. 고가 주택에 대한 담보대출 한도가 대폭 축소되면서 매수 가능 계층이 줄어들었고, 이는 자연스럽게 호가 하락으로 이어지고 있다. 25억 원을 초과하는 주택의 경우 담보대출 한도가 2억 원으로 제한됨에 따라, 자산가조차 선뜻 매수에 나서기 어려운 구조다.</p>
+    <p>반면, 중저가 아파트 밀집 지역인 용산구와 동작구에서는 소폭이지만 가격 상승 전환이 확인됐다. 강남의 대안으로 꼽히며 실수요자와 갈아타기 수요가 몰린 결과로 풀이된다. 강북권 일부 지역에서도 역세권 신축을 중심으로 가격이 지지되는 모습이 나타나고 있어, 서울의 시장이 단일한 방향으로 움직이지 않음을 보여준다.</p>
+
+    <div class="quote-box">
+      <p>"규제는 시장을 없애지 않는다. 다만 이동시킬 뿐이다. 진짜 문제는 그 이동이 정책 목표와 정반대 방향으로 진행될 때다. 비규제지역의 급격한 거래 증가는 다음 단계 규제 확대의 빌미가 되고, 그렇게 규제의 범위는 점점 넓어진다."</p>
+      <div class="attribution">— 부동산인사이트 분석팀</div>
+    </div>
+
+    <h2>수도권 외곽의 변화 — 경기·인천의 엇갈린 운명</h2>
+    <p>수도권 외곽 시장도 단순하지 않다. 경기도에서도 규제지역으로 지정된 12개 시군은 직격탄을 맞았지만, 그 외 비규제 지역은 오히려 반사이익을 누리고 있다. 평택, 안성, 오산 등 비규제 외곽 지역에서는 서울·수도권 규제에 지친 수요자들이 몰리며 거래량이 뚜렷하게 증가했다. 실입주 목적의 실수요자뿐 아니라, 소위 '갭 투자'를 노리는 수요까지 섞여 있다는 분석이다.</p>
+    <p>인천의 경우도 지역 내 양분화가 심화되고 있다. 부평·계양 등 핵심 지역은 규제 영향을 받는 반면, GTX-B 노선 수혜가 기대되는 지역들은 기대 심리가 가격을 지지하고 있다. 교통 인프라 개발 이슈가 규제보다 강한 동력이 될 수 있음을 보여주는 사례다.</p>
+    <p>문제는 이 풍선 지역들이 과거에도 선제 규제의 대상이 되어왔다는 점이다. 정부는 이미 비규제지역의 과열 징후를 예의주시하고 있으며, 추가 규제지역 지정 가능성을 배제할 수 없다. 수요자 입장에서는 지금의 '자유로움'이 영속적이지 않을 수 있다는 리스크를 인식해야 한다.</p>
+
+    <div class="quote-box">
+      <p>"비규제지역이라고 해서 리스크가 없는 게 아니다. 오히려 규제가 없기 때문에 가격 조정도 빠르게 올 수 있다. 풍선이 부풀수록 터질 위험도 함께 커진다."</p>
+      <div class="attribution">— 시장분석 전문가 종합 의견</div>
+    </div>
+
+    <h2>공급 변수 — 입주 물량과 미분양의 복잡한 방정식</h2>
+    <p>수요 측면의 이동만이 현재 시장을 설명하는 유일한 변수가 아니다. 공급 측에서도 중요한 변화가 진행 중이다. 2026년 수도권 아파트 입주 물량은 전년 대비 소폭 감소할 것으로 예측되고 있으며, 서울 도심 공급은 여전히 구조적으로 부족한 상황이다. 재개발·재건축 규제 완화 기대감에도 불구하고 실제 공급까지는 수년의 시간이 걸린다.</p>
+    <p>한편, 지방 및 수도권 외곽에서는 미분양이 증가하는 추세다. 분양가는 오르고, 금리 부담은 여전한 상황에서 실수요자들은 청약에 더 신중해졌다. 양질의 입지와 그렇지 않은 곳 사이의 양극화는 분양 시장에서도 뚜렷하게 나타나고 있다.</p>
+    <p>이러한 수급 환경은 서울 핵심 지역의 가격 하방을 지지하는 동시에, 외곽 시장의 변동성을 키우는 이중 작용을 한다. 투자자와 실수요자 모두 단순한 규제 적용 여부보다는 입지의 본질적 가치를 따지는 안목이 더욱 중요해졌다.</p>
+
+    <h2>정책 평가 — 규제의 역설을 어떻게 볼 것인가</h2>
+    <p>10.15 대책이 시행된 지 약 6개월이 지난 현시점에서, 그 정책 효과를 냉정하게 평가할 필요가 있다. 강남·서초 등 고가 주택 시장의 과열을 일정 부분 억제했다는 점에서 정책은 의도한 목표를 일부 달성했다. 그러나 그 이면에서는 비규제지역의 대체 수요가 폭발했고, 서민과 실수요자들이 접근하는 중저가 주택 시장이 오히려 더 빠르게 움직이는 아이러니가 발생했다.</p>
+    <p>부동산 규제 정책의 한계는 언제나 여기서 드러난다. 수요 자체를 줄이지 않고 특정 지역·가격대만 규제하면, 수요는 반드시 다른 경로를 찾는다. 서울 도심의 절대적 공급 부족이 해소되지 않는 한, 이 구조적 문제는 반복될 수밖에 없다. 결국 장기적으로는 공급 확대와 도시 재생이 병행되어야만 진정한 시장 안정이 가능하다는 오래된 명제가 다시금 유효하다.</p>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+    <ul class="insight-list">
+      <li>비규제지역 매수 시 추가 규제 가능성을 상수로 고려해야 한다. 현재의 규제 공백이 영구적이지 않을 수 있으며, 정부의 추가 지정에 대비한 리스크 관리가 필수적이다.</li>
+      <li>강남 고가 주택 시장은 단기 관망이 합리적이다. 담보대출 한도 축소로 매수 수요가 줄어든 상황에서, 추가 하락 가능성을 배제하기 어렵다. 실거주 목적이 아니라면 서두를 이유가 없다.</li>
+      <li>용산·동작 등 중저가 서울 지역의 실수요 접근은 여전히 유효하다. 다만 가격 상승 모멘텀이 지속될지는 금리 환경과 전세 시장 안정에 달려 있어, 전세가율 동향을 함께 점검해야 한다.</li>
+      <li>수도권 비규제지역 투자는 유동성 관리가 핵심이다. 빠르게 오른 만큼 조정도 빠를 수 있다. 단기 시세차익보다는 임대 수익률, 교통 개선 호재 등 펀더멘털에 집중해야 한다.</li>
+      <li>공급 이슈에 예의주시할 것. 2026~2027년 입주 물량 감소는 핵심 지역 가격의 하방 지지 요인이다. 그러나 외곽의 공급 과잉 지역은 반드시 피해야 한다. 미분양 현황 데이터를 통해 지역별 수급을 확인하는 습관이 필요하다.</li>
+    </ul>
+
+    <h2>결론 — 규제와 시장, 끝나지 않은 대화</h2>
+    <p>2026년 봄의 수도권 부동산 시장은 '규제의 의도'와 '시장의 반응' 사이에서 발생하는 영원한 긴장의 산물이다. 비규제지역 거래 폭증이라는 현실은, 강력한 규제만으로 시장을 원하는 방향으로 이끄는 데 한계가 있다는 것을 다시금 입증한다. 이 시장을 읽는 데 있어 가장 중요한 시각은 '어디가 규제받지 않느냐'가 아니라 '어디에 본질적인 가치가 있느냐'다.</p>
+    <p>정책은 바뀌고, 규제 지도는 다시 그려질 것이다. 그러나 좋은 입지, 탄탄한 인프라, 지역 수요를 뒷받침하는 펀더멘털은 규제 환경이 어떻게 바뀌더라도 장기적으로 가치를 보존한다. 단기적인 규제 공백에 편승한 투기적 접근보다, 5년 이상의 시계로 본질적 가치를 바라보는 접근이 지금 이 시장에서 요구되는 자세다.</p>
+
+    <!-- 면책 고지 -->
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지</strong><br>
+      본 기사에 포함된 시장 분석, 수치 및 전망은 공개된 자료를 바탕으로 한 편집부의 독자적 해석이며, 특정 부동산 상품에 대한 투자 권유가 아닙니다. 부동산 거래는 개인의 재무 상황, 시장 여건, 법적 요건 등을 종합적으로 고려하여 신중하게 결정하시기 바랍니다. 본지는 본 기사를 근거로 한 투자 결과에 대해 법적 책임을 지지 않습니다.
+    </div>
+
+  </main>
+
+  <!-- 사이드바 -->
+  <aside class="sidebar">
+
+    <!-- 핵심 요약 -->
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>10.15 대책 후 규제지역 거래량 35% 급감, 비규제지역 20% 폭증</li>
+        <li>강남3구 약세 지속, 용산·동작 소폭 상승 전환 — 서울 내 양극화 심화</li>
+        <li>수도권 외곽 비규제 지역이 대체 수요 흡수 중, 추가 규제 가능성 내재</li>
+        <li>서울 입주 물량 감소로 핵심 지역 공급 부족 구조 지속 전망</li>
+        <li>실수요자는 펀더멘털 중심의 중장기 관점으로 접근 필요</li>
+      </ul>
+    </div>
+
+    <!-- 관련 기사 -->
+    <div class="sidebar-widget">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li>
+          <a href="#">다주택자 담보대출 만기연장 불허, 4월 17일 시행 확정</a>
+          <div class="meta">2026.04.11 · 정책·규제</div>
+        </li>
+        <li>
+          <a href="#">강남 재건축 부담금 완화론, 다시 수면 위로</a>
+          <div class="meta">2026.04.09 · 재개발·재건축</div>
+        </li>
+        <li>
+          <a href="#">GTX-B 수혜지 분석 — 인천 수요 이동의 진짜 이유</a>
+          <div class="meta">2026.04.07 · 투자분석</div>
+        </li>
+        <li>
+          <a href="#">생애최초 LTV 80% 실전 활용법</a>
+          <div class="meta">2026.04.05 · 법률·세금</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 지역별 시장 온도 -->
+    <div class="sidebar-widget">
+      <h3>🌡️ 지역별 시장 온도 (4월)</h3>
+      <table class="region-table">
+        <thead>
+          <tr><th>지역</th><th>거래</th><th>가격</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>강남3구</td><td class="down">↓ 냉각</td><td class="down">▼ 약세</td></tr>
+          <tr><td>용산·동작</td><td>→ 보합</td><td class="up">▲ 소폭↑</td></tr>
+          <tr><td>강북 역세권</td><td>→ 보합</td><td>→ 보합</td></tr>
+          <tr><td>경기 비규제</td><td class="up">↑ 활발</td><td class="up">▲ 상승</td></tr>
+          <tr><td>인천 GTX</td><td class="up">↑ 활발</td><td class="up">▲ 기대↑</td></tr>
+          <tr><td>지방 외곽</td><td class="down">↓ 침체</td><td class="down">▼ 약세</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </aside>
+</div>
+
+<!-- 푸터 -->
+<footer>
+  <strong>부동산인사이트</strong><br>
+  전문적 분석과 깊이 있는 시각으로 부동산 시장을 읽습니다.<br>
+  © 2026 부동산인사이트. 본 콘텐츠는 정보 제공 목적으로만 작성되었습니다.
+</footer>
+
+</body>
+</html>

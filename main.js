@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 18,
+    url: 'article_20260413_2_policy.html',
+    category: '정책',
+    title: '4월 17일, 다주택자 대출 만기연장 불허 시행 — 2026년 봄 대출 규제의 전모',
+    summary: '수도권·규제지역 다주택자의 아파트 담보대출 만기연장이 원칙적으로 금지된다. DSR 스트레스 금리 3% 적용까지, 2026년 봄 대출 규제의 전모를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-13',
+    title_en: 'Multi-Home Owners Loan Extension Ban Takes Effect April 17',
+    summary_en: 'Mortgage extension for multi-home owners in regulated areas is effectively banned. A full analysis of the spring 2026 lending regulations including DSR stress rate of 3%.'
+  },
+  {
+    id: 17,
+    url: 'article_20260413_1_market.html',
+    category: '시장동향',
+    title: '비규제지역 거래 폭증, 풍선효과의 귀환 — 10.15 대책이 만든 양극화 시장',
+    summary: '규제지역 거래가 35% 급감하는 동안, 비규제지역은 20% 이상 증가했다. 수도권 내 이중 시장의 현실과 실수요자가 읽어야 할 신호.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-13',
+    title_en: 'Unregulated Area Transactions Surge: The Return of the Balloon Effect',
+    summary_en: 'While regulated area transactions dropped 35%, unregulated areas saw a 20%+ increase. The reality of the dual market in the Seoul metro area.'
+  },
+  {
     id: 16,
     url: 'article_20260412_2_column.html',
     category: '칼럼',
