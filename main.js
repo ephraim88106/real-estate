@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 20,
+    url: 'article_20260413_4_policy.html',
+    category: '정책',
+    title: '스트레스 DSR 3단계 전면 시행 — 대출 규제의 완성인가, 과도한 억압인가',
+    summary: '2026년 4월, 수도권 주담대 스트레스 금리 3% 적용·다주택자 만기 연장 금지 동시 시행. 한도 최대 15% 감소, 시장에 실질적으로 어떤 충격을 주는가.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-13',
+    title_en: 'Stress DSR Stage 3 Full Implementation — Completion or Overreach of Lending Regulations?',
+    summary_en: 'April 2026: 3% stress rate on Seoul metro mortgages and multi-home owner extension ban take effect simultaneously. What real impact does this have on the market?'
+  },
+  {
+    id: 19,
+    url: 'article_20260413_3_market.html',
+    category: '시장동향',
+    title: '서울 아파트, 강남발 하락세가 수도권 전역으로 번지고 있다',
+    summary: '4월 둘째 주 서울 –0.03% 하락 전환, 강남 3구 고가 단지 매수세 실종. 반면 전세는 연속 상승세 지속, 매매·전세 디커플링이 심화되고 있다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-13',
+    title_en: 'Seoul Apartments: Gangnam-Led Decline Spreading Across the Metro Area',
+    summary_en: 'Seoul turns negative at -0.03% in the second week of April as Gangnam high-end demand evaporates. Meanwhile, jeonse keeps rising — the buy-rent decoupling deepens.'
+  },
+  {
     id: 18,
     url: 'article_20260413_2_policy.html',
     category: '정책',
