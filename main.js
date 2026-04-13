@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 22,
+    url: 'article_20260413_4b_policy.html',
+    category: '정책',
+    title: '스트레스 DSR 3단계 전면 시행, 대출 한도 충격과 부동산 시장 재편',
+    summary: '2026년 4월 스트레스 DSR 3단계 전면 시행으로 대출 한도 10~15% 감소. 25억 초과 주택 주담대 2억 원 제한, 실수요자 배제 우려와 비은행권 풍선 효과를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 정책팀',
+    date: '2026-04-13',
+    title_en: 'Stress DSR Stage 3 Full Implementation: Loan Limit Shock and Market Restructuring',
+    summary_en: 'With Stress DSR Stage 3 fully implemented in April 2026, loan limits drop 10-15%. Analysis of the 200M KRW cap on 2.5B+ homes and concerns over real buyer exclusion.'
+  },
+  {
+    id: 21,
+    url: 'article_20260413_3b_market.html',
+    category: '시장동향',
+    title: '서울 아파트 하락 재개, 공급 쇼크와 양극화의 교차점에 서다',
+    summary: '4월 둘째 주 서울 아파트 매매가 0.03% 하락, 전세는 0.09% 상승. 공급 확대·금융 규제·관망 심리의 삼중 압박 속 매매-전세 역행 구조를 진단한다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-13',
+    title_en: 'Seoul Apartment Decline Resumes: At the Crossroads of Supply Shock and Polarization',
+    summary_en: 'Seoul apartment prices fall 0.03% in the second week of April while jeonse rises 0.09%. Diagnosing the triple pressure of supply expansion, financial regulation, and wait-and-see sentiment.'
+  },
+  {
     id: 20,
     url: 'article_20260413_4_policy.html',
     category: '정책',
