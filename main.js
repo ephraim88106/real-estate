@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 24,
+    url: 'article_20260414_2_redevelopment.html',
+    category: '재개발',
+    title: '80조 정비사업 수주전의 민낯 — 압구정·반포·목동이 드러내는 재건축 생태계의 균열',
+    summary: '압구정5구역 불법촬영 논란, 신반포 래미안 vs 오티에르 2파전, 목동6단지 유찰까지. 80조 원 규모 정비사업 시장의 수주 경쟁이 드러내는 건설업계의 구조적 문제를 진단한다.',
+    image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-14',
+    title_en: 'The 80 Trillion KRW Redevelopment Battle — Cracks in the Reconstruction Ecosystem Revealed by Apgujeong, Banpo, and Mokdong',
+    summary_en: 'From illegal filming controversies at Apgujeong District 5 to Mokdong Block 6 failed bids. Diagnosing structural problems in the construction industry revealed by the 80 trillion KRW redevelopment market.'
+  },
+  {
+    id: 23,
+    url: 'article_20260414_1_subscription.html',
+    category: '분양',
+    title: '4월 분양 대폭발, 4만7천 가구의 역습 — 봄 성수기가 던지는 질문',
+    summary: '4월 전국 분양 4만 7,062가구, 3월 대비 1.84배 급증. 수도권 물량 63%, 3기 신도시 본청약 개시, 분양가 상한제 확대 논쟁 재점화. 봄 성수기 분양 시장의 빛과 그림자를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-14',
+    title_en: 'April Presale Explosion: 47,000 Units Strike Back — Questions from the Spring Peak Season',
+    summary_en: 'April presales surge to 47,062 units nationwide, 1.84x March levels. Seoul metro accounts for 63%, 3rd-gen new city subscriptions begin, and price cap expansion debate reignites.'
+  },
+  {
     id: 22,
     url: 'article_20260413_4b_policy.html',
     category: '정책',
