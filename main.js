@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 28,
+    url: 'article_20260414_5_redevelopment.html',
+    category: '재개발',
+    title: "압구정5구역 '도촬 파문' 충격 — 80조 서울 정비사업 수주전 대혼돈",
+    summary: "DL이앤씨 볼펜형 카메라 입찰 도촬 의혹, 현대건설 고소장 제출. 목동6단지 유찰·반포 시공사 전쟁까지, 80조 원 서울 정비사업 수주전이 격랑 속으로 빠져들고 있다.",
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-04-14',
+    title_en: "Apgujeong District 5 'Hidden Camera' Scandal — 80 Trillion KRW Seoul Redevelopment War in Chaos",
+    summary_en: "DL E&C accused of using a pen camera to photograph sealed bids, Hyundai E&C files a criminal complaint. From Mokdong 6 failing to attract bids to the Banpo contractor wars, Seoul's 80-trillion-won redevelopment market has entered turmoil."
+  },
+  {
+    id: 27,
+    url: 'article_20260414_1_cheongnyak.html',
+    category: '분양',
+    title: '봄 성수기 분양 대폭발 — 오티에르 반포 710대1, 4월 물량 3월의 7배',
+    summary: '4월 전국 4.7만 가구 쏟아지며 3월 대비 7.3배. 오티에르 반포 청약 경쟁률 평균 710대1, 최고 1,180대1 기록. 강남 과열과 지방 미분양이 교차하는 양극화 시장을 진단한다.',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-04-14',
+    title_en: 'Spring Presale Explosion — Hautere Banpo 710:1, April Supply Seven Times March',
+    summary_en: 'April brings 47,000 units nationwide — 7.3× March. Hautere Banpo sees an average 710:1 subscription rate, peaking at 1,180:1. A diagnosis of the polarized market where Gangnam overheats while regional unsold stock piles up.'
+  },
+  {
     id: 26,
     url: 'article_20260414_4_column.html',
     category: '칼럼',

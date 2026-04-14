@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-adsense-account" content="ca-pub-9118774019383180">
+  <title>압구정5구역 '도촬 파문' 충격 — 서울 정비사업 수주전 대혼돈 | 부동산인사이트</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: #F4F5F7; color: #1A1A2E; line-height: 1.8; }
+
+    /* ── HEADER ── */
+    header {
+      background: #0D2B55;
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .header-inner {
+      max-width: 1280px; margin: 0 auto;
+      padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.45rem; font-weight: 700;
+      color: #fff; text-decoration: none; letter-spacing: -0.5px;
+    }
+    .logo span { color: #F4A52D; }
+    nav { display: flex; gap: 0; }
+    nav a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none; font-size: 0.85rem; font-weight: 500;
+      padding: 0 14px; height: 64px; display: flex; align-items: center;
+      transition: color 0.2s, background 0.2s;
+    }
+    nav a:hover, nav a.active { color: #F4A52D; background: rgba(255,255,255,0.06); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%);
+      padding: 80px 24px 72px;
+      text-align: center; color: #fff;
+    }
+    .hero-cat {
+      display: inline-block;
+      background: #7B4A9E; color: #fff;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 1.5px;
+      padding: 4px 14px; border-radius: 20px; margin-bottom: 22px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(1.55rem, 4vw, 2.55rem);
+      font-weight: 700; line-height: 1.4;
+      max-width: 840px; margin: 0 auto 20px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .hero-meta {
+      color: rgba(255,255,255,0.7); font-size: 0.85rem;
+    }
+    .hero-meta span { margin: 0 8px; }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 1280px; margin: 0 auto; padding: 48px 24px;
+      display: grid; grid-template-columns: 1fr 300px; gap: 40px;
+    }
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+    }
+
+    /* ── ARTICLE BODY ── */
+    .article { background: #fff; border-radius: 12px; padding: 48px 44px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
+    @media (max-width: 640px) { .article { padding: 28px 20px; } }
+
+    /* Data boxes */
+    .data-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+      margin: 0 0 40px;
+    }
+    @media (max-width: 640px) { .data-grid { grid-template-columns: 1fr; } }
+    .data-card {
+      background: #F3EDF9; border: 1px solid #C9A8E0;
+      border-radius: 10px; padding: 20px 18px; text-align: center;
+    }
+    .data-card .label { font-size: 0.78rem; color: #7B4A9E; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .data-card .value { font-family: 'Noto Serif KR', serif; font-size: 1.9rem; font-weight: 700; color: #3A1060; }
+    .data-card .desc { font-size: 0.78rem; color: #555; margin-top: 5px; }
+
+    /* Headings */
+    .article h2 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.3rem; font-weight: 700;
+      border-left: 4px solid #7B4A9E;
+      padding-left: 14px; margin: 40px 0 16px;
+      color: #0D2B55;
+    }
+    .article p { margin-bottom: 18px; font-size: 0.97rem; color: #2E2E2E; }
+
+    /* Quote box */
+    .quote {
+      background: #F3EDF9; border-left: 5px solid #7B4A9E;
+      border-radius: 6px; padding: 22px 28px; margin: 32px 0;
+    }
+    .quote p {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.05rem; font-style: italic;
+      color: #3A1060; margin-bottom: 10px; line-height: 1.7;
+    }
+    .quote cite { font-size: 0.8rem; color: #7B4A9E; font-style: normal; font-weight: 600; }
+
+    /* Bullet list */
+    .insight-list {
+      background: #F9F5FD; border: 1px solid #C9A8E0;
+      border-radius: 10px; padding: 24px 28px; margin: 24px 0;
+    }
+    .insight-list h3 { font-size: 1rem; font-weight: 700; color: #3A1060; margin-bottom: 14px; }
+    .insight-list ul { list-style: none; }
+    .insight-list ul li {
+      padding: 8px 0 8px 22px; position: relative;
+      font-size: 0.94rem; color: #2E2E2E; border-bottom: 1px dashed #D4B8E8;
+    }
+    .insight-list ul li:last-child { border-bottom: none; }
+    .insight-list ul li::before {
+      content: "▶"; position: absolute; left: 0;
+      color: #7B4A9E; font-size: 0.7rem; top: 12px;
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: #F0F0F0; border-radius: 8px;
+      padding: 18px 22px; margin-top: 40px;
+      font-size: 0.78rem; color: #777; line-height: 1.7;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar { display: flex; flex-direction: column; gap: 24px; }
+
+    .sidebar-card {
+      background: #fff; border-radius: 12px;
+      padding: 24px 22px; box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .sidebar-card h3 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 0.95rem; font-weight: 700;
+      color: #0D2B55; border-bottom: 2px solid #7B4A9E;
+      padding-bottom: 10px; margin-bottom: 16px;
+    }
+
+    /* Summary bullets */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 8px 0 8px 20px; position: relative;
+      font-size: 0.85rem; color: #2E2E2E; border-bottom: 1px solid #EEF;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-list li::before { content: "●"; position: absolute; left: 0; color: #7B4A9E; font-size: 0.6rem; top: 12px; }
+
+    /* Related articles */
+    .related-list { list-style: none; }
+    .related-list li { border-bottom: 1px solid #EEF; }
+    .related-list li a {
+      display: block; padding: 10px 0;
+      font-size: 0.85rem; color: #0D2B55; text-decoration: none;
+      transition: color 0.2s;
+    }
+    .related-list li a:hover { color: #7B4A9E; }
+    .related-list li a::before { content: "→ "; color: #7B4A9E; }
+
+    /* Project status table */
+    .project-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .project-table th {
+      background: #7B4A9E; color: #fff;
+      padding: 8px 10px; text-align: left;
+    }
+    .project-table td { padding: 8px 10px; border-bottom: 1px solid #E4D4F0; }
+    .project-table tr:nth-child(even) td { background: #F9F5FD; }
+    .badge {
+      display: inline-block; padding: 2px 8px; border-radius: 12px;
+      font-size: 0.72rem; font-weight: 700;
+    }
+    .badge-warn { background: #FFF3CD; color: #856404; }
+    .badge-ok { background: #D4EDDA; color: #155724; }
+    .badge-stop { background: #F8D7DA; color: #721c24; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0D2B55; color: rgba(255,255,255,0.6);
+      text-align: center; padding: 32px 24px; font-size: 0.8rem; margin-top: 40px;
+    }
+    footer strong { color: #F4A52D; }
+    .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+    @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+  </style>
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-vH50HcSMSOmwFD8o"
+    data-ad-width = "160"
+    data-ad-height = "600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-c1XP1iKah32kfdAU"
+    data-ad-width = "728"
+    data-ad-height = "90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#" class="active">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-cat">재개발·재건축</div>
+  <h1>압구정5구역 '도촬 파문' 충격<br>80조 서울 정비사업 수주전, 대혼돈 속으로</h1>
+  <div class="hero-meta">
+    <span>2026년 4월 14일</span>
+    <span>|</span>
+    <span>부동산인사이트 편집팀</span>
+    <span>|</span>
+    <span>예상 읽기 시간 9분</span>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <!-- ARTICLE -->
+  <article class="article">
+
+    <!-- 핵심 수치 -->
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="label">압구정5구역 총공사비</div>
+        <div class="value">1.5조</div>
+        <div class="desc">1조 4,960억 원 — 강남 재건축 최대어</div>
+      </div>
+      <div class="data-card">
+        <div class="label">목동6단지 공사비</div>
+        <div class="value">1.2조</div>
+        <div class="desc">1조 2,129억 원 · 2,120가구 대단지 유찰</div>
+      </div>
+      <div class="data-card">
+        <div class="label">서울 토허구역 면적</div>
+        <div class="value">4.6㎢</div>
+        <div class="desc">압구정·여의도·목동·성수 2027년 4월까지 연장</div>
+      </div>
+    </div>
+
+    <!-- 배경·맥락 -->
+    <p>2026년 서울 정비사업 시장은 '80조 원 수주전'이라는 표현이 어색하지 않을 정도로 초대형 재건축·재개발 프로젝트가 줄줄이 대기 중이다. 강남·서초·영등포·양천 등 서울 전역에서 1조 원을 웃도는 메가 프로젝트들이 시공사 선정 절차에 돌입하면서, 건설 빅5가 전력을 다해 수주전에 뛰어들었다. 그러나 경쟁이 뜨거워질수록 잡음도 커지고 있다. 2026년 4월 14일 현재, 압구정5구역에서 터진 '도촬(盜撮) 파문'은 업계 전체를 충격에 빠뜨렸다.</p>
+
+    <p>이번 사건은 시공사 선정 입찰 마감 당일, DL이앤씨 관계자가 볼펜형 카메라를 이용해 입찰 서류를 무단 촬영한 혐의를 받으면서 불거졌다. 현대건설은 즉각 경찰에 고소장을 제출했고, 조합은 긴급 이사회를 소집해 수습 방안을 논의 중이다. 당초 5월 말 시공사 선정 총회를 목표로 했던 일정은 무기한 연기될 가능성이 높아졌다.</p>
+
+    <p>이 사건은 단순한 불법 행위를 넘어, 건설사들이 수조 원짜리 계약을 따내기 위해 얼마나 치열하고 때로는 도를 넘는 경쟁을 벌이는지를 여실히 드러냈다. 동시에 조합원 수천 명의 재산과 직결된 정비사업이 얼마나 취약한 관리 구조 위에 놓여 있는지를 다시 한번 경고한다.</p>
+
+    <h2>압구정5구역의 지정학적 가치: 왜 건설사들이 목숨 거는가</h2>
+    <p>압구정5구역은 서울 강남구 압구정동에 위치한 현대아파트 6·7차 일대를 재건축하는 사업이다. 총공사비 1조 4,960억 원, 서울 최고 노른자위 입지, 완공 후 분양 수익 극대화 가능성 등을 감안하면 건설사 입장에서는 한 번의 수주로 수년치 브랜드 가치와 수익을 동시에 챙길 수 있는 초대형 건이다.</p>
+
+    <p>압구정 재건축은 단순한 공사 수주를 넘어 '강남 최고급 주거의 상징'이라는 브랜드 타이틀을 건 싸움이다. 현대건설은 '디에이치', DL이앤씨는 '아크로'라는 하이엔드 브랜드를 각각 내세우며 수주전에 임했다. 이 두 브랜드 모두 강남권에서 상징적인 랜드마크 단지를 보유하고 있어, 압구정5구역 수주는 다음 세대 브랜드 경쟁의 분기점이 될 터였다.</p>
+
+    <div class="quote">
+      <p>"수조 원짜리 계약 하나가 브랜드의 명운을 가르는 시대가 됐다. 강남 정비사업 수주전은 이제 단순한 시공 영업이 아니라, 브랜드 생존 전략의 일환이다."</p>
+      <cite>— 건설업계 관계자 발언 (2026년 4월, 복수 매체 인용)</cite>
+    </div>
+
+    <h2>반포·목동 정비사업도 요동: 시공사 선정 격전</h2>
+    <p>압구정만이 아니다. 서초구 잠원동 신반포19·25차 재건축도 치열한 수주전이 한창이다. 삼성물산과 포스코이앤씨가 맞붙은 이 사업은 지하 4층~지상 49층, 총 614가구 규모로, 반포·잠원 일대 스카이라인의 새 주인공이 될 프로젝트다. 삼성물산은 '래미안'의 서초·반포 지역 지배력을 더욱 굳히겠다는 전략이고, 포스코이앤씨는 오티에르 반포 분양 흥행의 기세를 몰아 정비사업 시장에서도 존재감을 키우려 한다.</p>
+
+    <p>양천구 목동6단지는 대조적인 흥행 부진을 겪었다. 총 2,120가구, 공사비 1조 2,129억 원에 달하는 대단지임에도 1차 시공사 선정 입찰이 유찰됐다. 목동6단지의 입찰 실패는 목동 재건축 사업성에 대한 의구심과 더불어, 사업 추진 과정의 내부 갈등이 외부 건설사에도 부담으로 작용했다는 분석이 나온다.</p>
+
+    <div class="quote">
+      <p>"목동6단지 유찰은 공사비 조율 실패와 조합 내 이견이 복합 작용한 결과다. 건설사 입장에서는 수익성 확신이 없는 사업에 천문학적 수주 비용을 쏟아붓기 어렵다."</p>
+      <cite>— 정비사업 컨설팅 전문가 분석 (2026년 4월)</cite>
+    </div>
+
+    <h2>서울시 토허구역 1년 연장: 규제의 칼날은 계속된다</h2>
+    <p>서울시는 2026년 4월 초, 압구정·여의도·목동·성수 등 핵심 재건축·재개발 지역 4.6㎢를 토지거래허가구역(토허구역)으로 재지정하고 2027년 4월 26일까지 1년 연장하기로 결정했다. 이 지역 내 일정 면적 이상의 주거·업무용 토지를 취득하려면 관할 구청장의 허가가 필요하며, 실거주 또는 직접 이용 목적이 아니면 거래 자체가 불가능하다.</p>
+
+    <p>정책 평가 측면에서 토허구역 연장은 '재건축 기대감이 집값 급등을 촉발한다'는 논리에 기반한 선제적 억제 조치다. 그러나 시장 현실은 다른 방향을 가리킨다. 토허구역으로 묶인 압구정 아파트값은 규제 지정 이후에도 상승세를 멈추지 않았다. 공급이 줄어드는 상황에서 수요가 살아 있는 한 규제만으로 가격을 안정시키기 어렵다는 한계를 다시금 보여준다.</p>
+
+    <p>국민의힘 일각에서는 "재건축·재개발 규제가 오히려 주택 공급을 가로막아 집값을 올린다"는 주장을 제기하며 규제 완화를 촉구하고 있다. 이처럼 정부·서울시의 규제 드라이브와 여당의 공급 확대 주장이 충돌하면서, 정비사업 정책 방향은 당분간 불확실성이 지속될 전망이다.</p>
+
+    <h2>정비사업 리스크 재조명: 구조적 문제들</h2>
+    <p>이번 도촬 파문은 정비사업의 구조적 취약성을 드러내는 빙산의 일각이다. 조합원 수천 명의 이해관계가 얽힌 수조 원짜리 사업을 비전문가 조합 집행부가 운영하다 보니, 시공사의 과도한 영업 활동과 금품 제공, 홍보 경쟁 등이 반복되고 있다. 2025년 서울시가 강화한 '신속통합기획(신통기획)'과 정비사업 관리 감독 방침도 근본적인 해법이 되기엔 역부족이라는 지적이 많다.</p>
+
+    <p>공사비 협상도 주요 리스크다. 자재값 급등, 인건비 상승, 설계 변경 등으로 최초 계약 공사비가 사업 추진 중 크게 뛰는 사례가 빈번하다. 이는 조합원 분담금 급등으로 이어지고, 사업 중단이나 조합 내 갈등의 씨앗이 된다. 목동6단지 입찰 유찰도 그 연장선상에 있다.</p>
+
+    <h2>결론: 서울 정비사업, 기회와 위험이 공존하는 시장</h2>
+    <p>압구정5구역 도촬 파문, 목동6단지 유찰, 반포 수주전 치열 — 2026년 4월 서울 정비사업 시장은 사상 최고 수준의 열기와 사상 최고 수준의 혼란이 공존하는 아이러니한 상황을 연출하고 있다. 이 시장에서 기회를 포착하려는 투자자라면, 사업 추진 단계별 리스크와 조합 내부 동학을 냉철하게 파악해야 한다. 단순히 '강남이라서', '재건축이라서'라는 이유만으로 묻지마 투자에 나서는 것은 이 시장의 복잡성을 과소평가하는 위험한 도박이다.</p>
+
+    <!-- 시사점 -->
+    <div class="insight-list">
+      <h3>📌 실수요자·투자자 핵심 시사점</h3>
+      <ul>
+        <li>시공사 선정 전후 재건축 단지는 사업 지연 리스크가 크다. 압구정5구역처럼 돌발 변수로 수개월 일정이 밀리면 보유 비용과 기회비용이 동시에 증가한다.</li>
+        <li>토허구역 내 매수는 실거주 목적이 아닌 단순 투자 목적으로는 불가능하므로, 법적 요건과 허가 절차를 반드시 사전에 확인해야 한다.</li>
+        <li>목동6단지 유찰 사례처럼 조합 내 갈등이 심한 단지는 사업 장기화 가능성이 높아 입주 시점 예측이 어렵다. 기대 수익률 산정 시 최소 2~3년 추가 지연 시나리오를 반드시 포함해야 한다.</li>
+        <li>정비사업 투자는 단순 아파트 매수보다 법률·세무 지식이 훨씬 중요하다. 입주권·분양권 과세 체계, 재건축 초과이익환수제 변동 등을 반드시 전문가와 함께 점검해야 한다.</li>
+        <li>건설사 브랜드 파워가 재건축 단지 준공 후 시세에 미치는 영향이 점점 커지고 있다. 시공사 선정 결과 확정 시점을 전후한 가격 변동에 주목하고, 이를 매수·매도 시점 판단에 활용하는 전략이 유효하다.</li>
+      </ul>
+    </div>
+
+    <!-- 면책 고지 -->
+    <div class="disclaimer">
+      <strong>※ 면책 고지</strong><br>
+      본 기사는 공개된 보도 자료와 전문가 의견을 바탕으로 작성된 분석 및 의견 제시 목적의 에세이입니다. 재개발·재건축 관련 투자 및 의사결정은 반드시 공인된 전문가(공인중개사, 법무사, 세무사, 정비사업 전문 관리업자 등)와 상담하시기 바랍니다. 본 기사에 언급된 수치와 사업 현황은 보도 시점 기준이며, 이후 변동될 수 있습니다. 본 매체는 특정 구역 또는 단지에 대한 투자를 권유하지 않습니다.
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- 핵심 요약 -->
+    <div class="sidebar-card">
+      <h3>📋 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>압구정5구역 도촬 파문 — DL이앤씨 고소, 시공사 선정 일정 무기한 연기</li>
+        <li>신반포19·25차 삼성물산 vs. 포스코이앤씨 격전</li>
+        <li>목동6단지 1조 2천억 사업 1차 입찰 유찰</li>
+        <li>서울시 토허구역 4.6㎢ 2027년 4월까지 연장</li>
+        <li>규제 vs. 공급 논쟁 속 정책 불확실성 지속</li>
+      </ul>
+    </div>
+
+    <!-- 관련 기사 -->
+    <div class="sidebar-card">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="#">현대건설, 압구정5구역 입찰 '도촬' DL이앤씨 고소</a></li>
+        <li><a href="#">반포·목동 재건축 시공사 선정 윤곽 나온다</a></li>
+        <li><a href="#">서울시 압구정·목동 토허구역 1년 추가 연장</a></li>
+        <li><a href="#">국민의힘 "재건축 규제가 집값 올린다" 완화 촉구</a></li>
+      </ul>
+    </div>
+
+    <!-- 사업 현황 위젯 -->
+    <div class="sidebar-card">
+      <h3>🔎 주요 사업 진행 현황</h3>
+      <table class="project-table">
+        <thead>
+          <tr>
+            <th>구역</th>
+            <th>단계</th>
+            <th>상태</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>압구정5구역</td>
+            <td>시공사 선정</td>
+            <td><span class="badge badge-stop">파문 지연</span></td>
+          </tr>
+          <tr>
+            <td>신반포19·25차</td>
+            <td>시공사 선정</td>
+            <td><span class="badge badge-warn">경쟁 중</span></td>
+          </tr>
+          <tr>
+            <td>목동6단지</td>
+            <td>시공사 선정</td>
+            <td><span class="badge badge-stop">유찰</span></td>
+          </tr>
+          <tr>
+            <td>성수전략정비구역</td>
+            <td>사업시행인가</td>
+            <td><span class="badge badge-ok">진행 중</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </aside>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>부동산인사이트</strong> | 매일 오후 11시 발행 | 전문적 시각과 데이터 기반 분석</p>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+</footer>
+
+</body>
+</html>
