@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 26,
+    url: 'article_20260414_4_column.html',
+    category: '칼럼',
+    title: '우리는 왜 부동산 앞에서 이성을 잃는가',
+    summary: '공포와 탐욕 사이에서 반복되는 한국 부동산 심리의 해부. 공급 절벽과 양극화가 교차하는 2026년, 개인의 판단이 얼마나 군중심리에 휩쓸리는지 냉정하게 짚는다.',
+    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80',
+    author: '부동산인사이트 편집장 칼럼',
+    date: '2026-04-14',
+    title_en: 'Why We Lose Reason in Front of Real Estate',
+    summary_en: 'Dissecting the Korean housing psyche that swings between fear and greed. In a 2026 defined by a supply cliff and polarization, how much of your judgment is truly your own?'
+  },
+  {
+    id: 25,
+    url: 'article_20260414_3_overseas.html',
+    category: '해외',
+    title: '관세 전쟁과 엔저의 교차로 — 한국인 해외 부동산 투자의 지금',
+    summary: '트럼프 2기 관세가 미국 건설 원가를 끌어올리고, 엔화 약세가 일본 투자 창을 연다. 6.3% 모기지와 도쿄 5구 매력도를 대비해 두 시장의 기회와 리스크를 냉정히 분석한다.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 해외투자팀',
+    date: '2026-04-14',
+    title_en: 'At the Crossroads of Tariff Wars and a Weak Yen — Korean Overseas Real Estate Investment Today',
+    summary_en: 'Trump\'s second-term tariffs lift US construction costs while a weak yen opens a window into Japan. A sober comparison of opportunities and risks in both markets, from 6.3% mortgages to central Tokyo.'
+  },
+  {
     id: 24,
     url: 'article_20260414_2_redevelopment.html',
     category: '재개발',
