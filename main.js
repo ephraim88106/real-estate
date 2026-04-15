@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 32,
+    url: 'article_20260415_4_overseas.html',
+    category: '해외',
+    title: '엔저 끝물·미국 금리 6%·동남아 급부상…2026년 해외 부동산 투자의 新지도를 그려라',
+    summary: '일본은 금리 인상 카드를 꺼내들었고, 미국은 여전히 6%대 모기지 금리가 시장을 짓누른다. 그러나 동남아는 새로운 기회의 땅으로 부상하고 있다. 국내 부동산 규제가 강화될수록 해외 자산 분산 수요는 커진다. 2026년 지금, 어느 나라의 어떤 자산에 주목해야 하는가.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-15',
+    title_en: 'End of Weak Yen, US Rates at 6%, SE Asia Rising: Draw the New 2026 Overseas Real Estate Investment Map',
+    summary_en: "Japan plays the rate hike card while 6% mortgages still weigh on the US market. Meanwhile, Southeast Asia emerges as a new land of opportunity. As domestic regulations tighten, the demand for global diversification grows."
+  },
+  {
+    id: 31,
+    url: 'article_20260415_3_investment.html',
+    category: '투자분석',
+    title: "경매 낙찰률 38% 추락·다주택자 대출 막힌다…지금이 부동산 경매 '옥석가리기' 진입 타이밍인가?",
+    summary: '수도권 아파트 경매 낙찰률이 2주 연속 하락하며 38.1%까지 떨어졌다. 4월 17일 다주택자 주담대 만기 연장 금지가 시행되면 경매 물량은 더 늘어날 전망이다. 규제와 물량 증가가 교차하는 이 시점에서, 투자자는 어떤 전략을 취해야 하는가.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-15',
+    title_en: "Auction Sale Rate Plunges to 38% & Multi-Home Owner Loans Blocked: Is Now the Time to Enter the Real Estate Auction Market?",
+    summary_en: "Seoul metro apartment auction winning rate falls for two consecutive weeks to 38.1%. With the multi-home owner mortgage extension ban starting April 17, auction volume is expected to increase further."
+  },
+  {
     id: 30,
     url: 'article_20260415_1_investment.html',
     category: '투자분석',
