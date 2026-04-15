@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-adsense-account" content="ca-pub-9118774019383180">
+  <title>관세 전쟁에 흔들리는 미국 부동산, 한국인 투자자는 어디로 가야 하나 | 부동산인사이트</title>
+  <meta name="description" content="2026년 4월 트럼프 관세 폭풍이 글로벌 부동산 시장을 강타하고 있다. 미국·일본·동남아 각지에서 한국인 투자자들의 선택지가 달라지고 있는 지금, 냉정한 나라별 분석이 필요하다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --accent: #006E8A;
+      --accent-light: #eef8fb;
+      --accent-mid: #0090b5;
+      --text: #1a1a1a;
+      --text-muted: #555;
+      --border: #e0e0e0;
+      --bg: #f6f9fb;
+    }
+    body { font-family: 'Noto Sans KR', sans-serif; color: var(--text); background: var(--bg); font-size: 16px; line-height: 1.8; }
+
+    /* HEADER */
+    header {
+      background: #0D2B55;
+      position: sticky; top: 0; z-index: 100;
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .logo { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; color: #fff; text-decoration: none; }
+    .logo span { color: #F4A52D; }
+    nav { display: flex; gap: 1.5rem; }
+    nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
+    nav a:hover { color: #F4A52D; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #003A4A 0%, #006E8A 55%, #003A4A 100%);
+      padding: 4rem 2rem 3.5rem;
+      color: #fff;
+    }
+    .hero-inner { max-width: 1100px; margin: 0 auto; }
+    .category-tag {
+      display: inline-block;
+      background: rgba(0,110,138,0.5);
+      border: 1px solid #006E8A;
+      color: #a8e6f0;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      padding: 0.3rem 0.9rem;
+      border-radius: 2px;
+      margin-bottom: 1.2rem;
+      font-weight: 500;
+    }
+    .hero h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 1rem;
+    }
+    .hero-subtitle {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 700px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.5); }
+    .hero-meta span { margin-right: 1.2rem; }
+    .hashtags { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .hashtags span { font-size: 0.8rem; color: #a8e6f0; opacity: 0.85; }
+
+    /* LAYOUT */
+    .container { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; }
+    @media (max-width: 860px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+    /* ARTICLE */
+    article { min-width: 0; }
+    article h2 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+      padding-left: 1rem;
+      border-left: 4px solid var(--accent);
+      color: #1a1a1a;
+    }
+    article p { margin-bottom: 1.2rem; color: #333; line-height: 1.85; }
+    article ul { margin: 1rem 0 1.5rem 1.5rem; }
+    article ul li { margin-bottom: 0.7rem; color: #333; line-height: 1.7; }
+    article ul li::marker { color: var(--accent); }
+
+    /* DATA BOX */
+    .data-box {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+    .data-card {
+      background: #fff;
+      border: 1px solid #bde7f0;
+      border-top: 3px solid var(--accent);
+      padding: 1.2rem;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .data-card .num { font-size: 1.9rem; font-weight: 700; color: var(--accent); font-family: 'Noto Serif KR', serif; }
+    .data-card .label { font-size: 0.78rem; color: #777; margin-top: 0.3rem; }
+    .data-card .desc { font-size: 0.8rem; color: #555; margin-top: 0.5rem; }
+
+    /* QUOTE */
+    .quote-block {
+      background: var(--accent-light);
+      border-left: 5px solid var(--accent-mid);
+      margin: 2rem 0;
+      padding: 1.5rem 1.8rem;
+      border-radius: 0 4px 4px 0;
+    }
+    .quote-block p {
+      font-family: 'Noto Serif KR', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #003a4a;
+      margin: 0;
+      line-height: 1.9;
+    }
+    .quote-block cite { display: block; margin-top: 0.8rem; font-size: 0.82rem; color: #888; font-style: normal; }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 1.2rem 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #777;
+      line-height: 1.7;
+    }
+
+    /* SIDEBAR */
+    aside { display: flex; flex-direction: column; gap: 1.5rem; }
+    .sidebar-widget {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.3rem;
+    }
+    .sidebar-widget h3 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--accent);
+      color: #1a1a1a;
+    }
+    .summary-list { list-style: none; padding: 0; }
+    .summary-list li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 0.85rem;
+      color: #333;
+      line-height: 1.6;
+      display: flex; gap: 0.5rem;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .bullet-dot { color: var(--accent); font-weight: 700; flex-shrink: 0; }
+    .related-list { list-style: none; padding: 0; }
+    .related-list li { padding: 0.6rem 0; border-bottom: 1px solid #f0f0f0; }
+    .related-list li:last-child { border-bottom: none; }
+    .related-list a { font-size: 0.85rem; color: #333; text-decoration: none; line-height: 1.5; display: block; }
+    .related-list a:hover { color: var(--accent); }
+    .related-tag { font-size: 0.7rem; background: var(--accent-light); color: var(--accent); padding: 0.1rem 0.5rem; border-radius: 2px; margin-right: 0.3rem; }
+
+    /* COUNTRY TABLE */
+    .country-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-top: 0.5rem; }
+    .country-table th { background: var(--accent); color: #fff; padding: 0.5rem 0.4rem; text-align: left; font-weight: 500; }
+    .country-table td { padding: 0.45rem 0.4rem; border-bottom: 1px solid #f0f0f0; color: #444; vertical-align: top; }
+    .country-table tr:last-child td { border-bottom: none; }
+    .badge { display: inline-block; font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 2px; font-weight: 600; }
+    .badge-green { background: #e0f7ec; color: #0a7a3a; }
+    .badge-red { background: #fde8e8; color: #c00; }
+    .badge-yellow { background: #fff8e0; color: #7a6000; }
+
+    /* FOOTER */
+    footer {
+      background: #0D2B55;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+      margin-top: 3rem;
+    }
+    footer strong { color: #F4A52D; }
+    .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+    @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+  </style>
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-vH50HcSMSOmwFD8o"
+    data-ad-width = "160"
+    data-ad-height = "600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-c1XP1iKah32kfdAU"
+    data-ad-width = "728"
+    data-ad-height = "90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <a href="#" class="logo">부동산<span>인사이트</span></a>
+  <nav>
+    <a href="#">시장동향</a>
+    <a href="#">정책·규제</a>
+    <a href="#">투자분석</a>
+    <a href="#">법률·세금</a>
+    <a href="#">칼럼</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">🌏 해외부동산</span>
+    <h1>관세 전쟁이 뒤흔드는 글로벌 부동산 지형도<br>미국·일본·동남아, 한국인 투자자의 선택은?</h1>
+    <p class="hero-subtitle">트럼프 행정부의 고율 관세가 글로벌 경기 불확실성을 키우는 가운데, 해외 부동산 시장도 요동치고 있다. 미국 주택 재고 급증, 일본 엔화 약세 기회, 베트남·태국의 외국인 규제 변화까지—2026년 해외 투자의 새 지형을 짚는다.</p>
+    <div class="hero-meta">
+      <span>📅 2026년 4월 15일</span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>⏱ 약 10분 소요</span>
+    </div>
+    <div class="hashtags">
+      <span>#해외부동산투자</span>
+      <span>#미국주택시장</span>
+      <span>#일본부동산</span>
+      <span>#동남아부동산</span>
+      <span>#트럼프관세</span>
+      <span>#글로벌부동산2026</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">6%</div>
+        <div class="label">미국 30년 모기지 금리 전망 (2026년)</div>
+        <div class="desc">고금리 지속에도 완만한 하락 추세</div>
+      </div>
+      <div class="data-card">
+        <div class="num">+14%</div>
+        <div class="label">미국 기존 주택 판매량 전망 (NAR)</div>
+        <div class="desc">2025년 대비 증가 예상, 재고 정상화</div>
+      </div>
+      <div class="data-card">
+        <div class="num">초양극화</div>
+        <div class="label">2026년 글로벌 부동산 핵심 키워드</div>
+        <div class="desc">핵심 vs 비핵심 자산 격차 사상 최대</div>
+      </div>
+    </div>
+
+    <p>2026년 4월, 글로벌 부동산 시장은 두 가지 거대한 힘 사이에서 균형을 찾지 못하고 있다. 한쪽에는 미국 트럼프 행정부의 고율 관세가 불러온 무역 불확실성과 달러 강세·약세의 혼란이, 다른 쪽에는 금리 정상화 기대 속에 살아나는 글로벌 실수요가 자리한다. 한국인 투자자에게 해외 부동산은 이미 분산 투자의 한 축으로 자리 잡았지만, 지금은 국가별로 리스크와 기회가 극명하게 갈리는 시점이다. 막연한 '해외 투자'가 아니라, 냉정하고 선택적인 접근이 필요하다.</p>
+
+    <p>이 글은 미국·일본·동남아(베트남, 태국, 필리핀) 세 권역으로 나눠 현재 시장 상황과 한국인 투자자의 현실적인 기회·리스크를 분석한다. 특히 관세 충격이 각 시장에 어떻게 다르게 파급되는지를 중점적으로 살펴볼 것이다.</p>
+
+    <h2>미국: 관세 충격의 역설—매도자 시장이 무너지고 있다</h2>
+
+    <p>트럼프 행정부의 광범위한 관세 부과는 건설 자재 비용을 끌어올려 신규 주택 공급을 더욱 어렵게 만드는 동시에, 경기 침체 우려로 기존 주택 매수 수요를 냉각시키는 이중 압력을 가하고 있다. 미국 전국부동산중개인협회(NAR)는 2026년 기존 주택 판매량이 2025년 대비 약 14% 증가할 것으로 전망하지만, 이는 관세 충격 본격화 이전의 예측치로, 실제 수치는 더 보수적으로 수정될 가능성이 높다.</p>
+
+    <p>지역별 양극화는 더욱 심화하고 있다. 텍사스 오스틴·휴스턴은 팬데믹 기간 공급 과잉의 여파로 재고가 쌓이며 매수자 우위 시장이 고착화됐다. 반면 뉴욕 맨해튼, 캘리포니아 LA·샌프란시스코의 핵심 지역은 공급 부족이 여전히 가격을 지지하고 있다. 한국인 투자자들이 집중하는 LA 한인타운이나 뉴저지 버겐 카운티 등 한인 밀집 지역은 커뮤니티 수요가 뒷받침하고 있지만, 그만큼 이미 프리미엄이 충분히 반영된 상태다.</p>
+
+    <p>30년 고정 모기지 금리는 2026년 연평균 6% 내외로 완만히 하락하고 있으나, 한국 투자자 관점에서는 환율 변동도 핵심 변수다. 달러 강세 국면에서는 원화 기준 취득 비용이 올라가고, 반대로 엑시트 시점에 달러 약세가 찾아오면 환차손이 발생한다. 미국 부동산은 자산 그 자체의 가치보다 달러-원 환율 사이클을 함께 고려해야 한다는 점에서, 환헤지 전략을 반드시 병행해야 한다.</p>
+
+    <div class="quote-block">
+      <p>"미국 관세 정책은 부동산에 두 가지 상반된 효과를 냅니다. 건자재 비용 상승으로 신규 공급이 줄어 기존 주택 가격을 지지하는 반면, 경기 불확실성이 수요를 냉각시킵니다. 지역 선별이 그 어느 때보다 중요한 이유입니다."</p>
+      <cite>— 글로벌 부동산 시장 분석 전문가 (2026년 4월)</cite>
+    </div>
+
+    <h2>일본: 엔화 약세 시대의 마지막 기회인가</h2>
+
+    <p>일본 부동산은 수년간 한국인 투자자들의 대표 해외 투자처였다. 엔화 약세로 원화 대비 취득 비용이 낮아진 데다, 도쿄·오사카 중심부의 임대 수요가 탄탄하기 때문이다. 그러나 2026년 현재 일본 부동산 시장은 변곡점을 맞이하고 있다.</p>
+
+    <p>일본은행(BOJ)의 금리 인상 기조가 이어지면서 엔화는 점진적으로 강세 전환 중이다. 이는 한국인 투자자 입장에서 두 가지 의미를 갖는다. 첫째, 기존 보유자는 원화 기준 자산 가치 상승이라는 환차익을 누릴 수 있다. 둘째, 신규 취득자는 '엔화가 더 오르기 전에 사야 하는가'라는 압박을 받는다. 실제 도쿄 미나토·시부야구 등 도심 핵심 지역의 맨션 가격은 지난 2년간 20% 이상 올랐으며, 오사카 키타구도 2025년 엑스포 여파로 가격 상승세가 지속 중이다.</p>
+
+    <p>일본 부동산의 핵심 리스크는 '공실'이 아니라 '관리 비용'이다. 일본 특유의 관리비, 수선적립금, 고정자산세 구조를 잘못 계산하면 표면 수익률 5~6%가 실질 수익률 2~3%로 줄어드는 경우가 많다. 또한 비거주자 외국인의 담보 대출이 매우 제한적이라 현금 비중이 높아야 한다. 현재 시점에서 일본 투자는 '추가 매수'보다는 '기존 보유 물건의 수익 극대화 또는 고점 차익 실현' 쪽에 무게중심을 두는 것이 현명하다.</p>
+
+    <h2>동남아: 베트남·태국·필리핀, 기회와 규제의 경계에서</h2>
+
+    <p>동남아 부동산은 높은 성장 잠재력과 함께 외국인 소유권 제한, 법적 불확실성이라는 이중적인 특성을 가진다. 2026년 현재 각국 상황을 살펴보면 다음과 같다.</p>
+
+    <p>베트남은 2023년 개정된 부동산사업법에 따라 외국인의 주택 소유 기간 연장(최초 50년 후 추가 50년 갱신 가능)이 법제화됐다. 호찌민시와 하노이의 고급 콘도 시장은 한국계 건설사(롯데, 포스코이앤씨 등)가 개발한 단지를 중심으로 한국인 투자자의 관심이 높다. 다만 2025년 이후 분양 시장 과열을 우려한 베트남 정부가 외국인 소유 한도(한 단지 내 30%)를 엄격히 관리하고 있어, 원하는 단지에서 쿼터가 소진된 경우 취득이 불가능한 상황도 발생한다.</p>
+
+    <p>태국 방콕과 치앙마이는 'Thailand Elite' 비자 프로그램 등과 연계해 외국인 장기 거주 수요가 꾸준하다. 콘도미니엄은 외국인도 구분소유권(49% 이내) 취득이 가능하지만 토지 소유는 불가하다. 태국 부동산은 임대 수익률보다는 '은퇴 후 거주' 또는 '세컨드 홈' 목적의 실수요 투자 성격이 강하다. 필리핀은 BGC(보니파시오 글로벌 시티)와 마카티를 중심으로 임대 수익률이 5~7% 수준으로 매력적이지만, 정치적 리스크와 페소화 약세가 지속적인 우려 요인이다.</p>
+
+    <div class="quote-block">
+      <p>"동남아 부동산 투자의 실패 원인 1위는 현지 법률 무지입니다. 외국인이 법적으로 소유권을 완전하게 보호받지 못하는 구조에서 투자하는 것은 신뢰할 수 있는 현지 파트너 없이는 극도로 위험합니다. 수익률 숫자에 현혹되지 마십시오."</p>
+      <cite>— 해외부동산 투자 전문 자문가 인터뷰 (2026년 4월)</cite>
+    </div>
+
+    <h2>기관 투자자는 어디를 보고 있나: 글로벌 자본의 이동 경로</h2>
+
+    <p>개인 투자자보다 한발 앞서 움직이는 글로벌 기관 투자자(연기금·리츠 등)의 자산 배분 트렌드를 보면 방향이 보인다. 2026년 들어 기관들은 전통적인 오피스 중심의 상업용 부동산에서 벗어나 산업·물류, 데이터 센터, 그리고 미국과 유럽의 임대주택(멀티패밀리)으로 자금을 이동하고 있다. 전자상거래 성장과 AI 데이터 수요가 이 두 섹터를 구조적으로 뒷받침하기 때문이다.</p>
+
+    <p>한국 개인 투자자 입장에서 이 트렌드를 직접 따라가기는 어렵다. 하지만 미국 부동산 리츠(REITs)에 대한 간접 투자는 접근 방법 중 하나다. 직접 물건을 소유하는 것보다 환금성이 높고, 관리 부담도 없다. 현재 물류·데이터 센터 리츠는 2025년 조정 이후 밸류에이션이 일부 회복 중이며, 장기 보유 관점에서의 매수 기회로 평가되고 있다. 단, 리츠 투자도 금리 변동성에 민감하다는 점은 유의해야 한다.</p>
+
+    <h2>한국인 해외 부동산 투자의 세금 함정</h2>
+
+    <p>해외 부동산 투자에서 수익률 못지않게 중요한 것이 세금이다. 한국 거주자가 해외 부동산을 취득·보유·처분할 경우, 국내 세법과 해당국 세법이 동시에 적용된다. 특히 주의해야 할 점은 해외 부동산에서 발생하는 임대소득은 국내 종합소득세 신고 대상이며, 처분 시 양도소득도 국내 신고 의무가 있다는 것이다. 국가 간 조세조약에 따라 이중과세를 피할 수 있지만, 신고 절차를 누락하면 가산세 폭탄을 맞을 수 있다. 미국의 경우 FIRPTA(외국인 부동산 투자세)로 매각 대금의 15%가 원천징수되는 구조도 있어, 엑시트 전략 단계에서 반드시 세무 전문가와 협의해야 한다.</p>
+
+    <h2>실수요자·투자자 시사점</h2>
+
+    <ul>
+      <li><strong>미국 투자는 지역 선별이 핵심 :</strong> 텍사스·플로리다 등 재고 과잉 지역은 피하고, 공급 제한적인 뉴욕·LA 핵심 지역 또는 데이터 센터·물류 리츠로 우회 투자하는 전략이 현실적이다.</li>
+      <li><strong>환율 사이클 반드시 체크 :</strong> 미국 투자는 달러 강세 때 취득 비용이 높고, 일본 투자는 엔화 약세 시 기회다. 현재 엔화는 강세 전환 중이므로, 신규 일본 매수보다는 기존 물건 관리 또는 차익 실현에 집중하라.</li>
+      <li><strong>동남아는 현지 파트너 없이는 진입 금지 :</strong> 법률 리스크가 높은 동남아 시장에서 믿을 수 있는 현지 법인·파트너 없이 단독 진입하는 것은 극도로 위험하다. 신뢰 네트워크 구축이 선행되어야 한다.</li>
+      <li><strong>리츠(REITs) 간접 투자 적극 검토 :</strong> 직접 취득이 부담스럽다면, 미국·일본·싱가포르 리츠에 대한 간접 투자로 글로벌 부동산 포트폴리오를 구축할 수 있다. 환금성과 분산 효과 면에서 직접 투자보다 우월한 경우가 많다.</li>
+      <li><strong>세금 신고 절대 누락 금지 :</strong> 해외 부동산 임대·처분 소득은 국내 신고 의무가 있다. 세무사와 연간 계획을 수립하고, FIRPTA 등 해당국 원천징수 규정도 사전에 파악하라.</li>
+      <li><strong>장기 보유를 전제로 한 현금흐름 모델 구축 :</strong> 해외 부동산은 단기 시세차익보다 장기 임대 수익 모델이 안전하다. 공실·환율·관리비를 모두 반영한 실질 수익률 시뮬레이션을 반드시 사전에 수행하라.</li>
+    </ul>
+
+    <h2>결론: 2026년 해외 부동산, '어디든 좋다'는 이미 과거의 말</h2>
+
+    <p>불과 3~4년 전만 해도 '해외 부동산'이라는 단어 자체가 기회의 동의어처럼 쓰였다. 그러나 2026년의 글로벌 부동산 시장은 관세 충격, 금리 불확실성, 각국 외국인 규제 강화, 초양극화라는 네 가지 구조적 변화 앞에 서 있다. 이제 '해외에 산다'는 것 자체가 수익을 보장하지 않는다. 어느 나라, 어느 지역, 어떤 유형의 자산을 어떤 조건에 취득하느냐—이 디테일이 수익과 손실을 가른다.</p>
+
+    <p>미국은 지역 선별과 환율 관리, 일본은 수익 실현 또는 신중한 엑시트 타이밍, 동남아는 파트너십과 법률 리스크 관리에 집중해야 한다. 관세 전쟁이 만들어 낸 불확실성은 단기적으로 시장 변동성을 높이지만, 장기적으로는 핵심 자산의 희소성을 더욱 부각시킬 것이다. 지금은 공격보다 수비가 먼저다. 기존 해외 포트폴리오를 점검하고, 신규 투자는 철저한 준비를 갖춘 한 건에 집중하라.</p>
+
+    <div class="disclaimer">
+      <strong>⚠ 면책 고지</strong><br>
+      본 기사는 일반적인 정보 제공을 목적으로 작성된 분석 콘텐츠입니다. 특정 국가 또는 자산의 매수·매도를 권유하거나 투자 수익을 보장하지 않습니다. 해외 부동산 투자는 환율 변동, 현지 법률·세제, 정치적 리스크 등 다양한 요인으로 인해 원금 손실이 발생할 수 있으며, 반드시 현지 전문가·국내 세무사 등과 충분한 상담 후 독자 스스로 판단하시기 바랍니다. 본 기사에 포함된 수치 및 전망은 공개된 자료를 기반으로 하며, 실제 상황과 다를 수 있습니다.
+    </div>
+  </article>
+
+  <aside>
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li><span class="bullet-dot">▸</span> 트럼프 관세가 미국 주택 공급 비용↑·수요 심리↓ 이중 압박</li>
+        <li><span class="bullet-dot">▸</span> 일본 BOJ 금리 인상 → 엔화 강세 전환, 신규 매수 신중해야</li>
+        <li><span class="bullet-dot">▸</span> 베트남·태국·필리핀, 법률·파트너십 없이 진입은 위험</li>
+        <li><span class="bullet-dot">▸</span> 리츠(REITs) 간접 투자로 글로벌 포트폴리오 분산 가능</li>
+        <li><span class="bullet-dot">▸</span> 해외 부동산 임대·양도 소득 국내 세금 신고 필수</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🔗 관련 기사</h3>
+      <ul class="related-list">
+        <li>
+          <a href="#"><span class="related-tag">미국</span>관세 전쟁 속 미국 부동산, 지역별 온도차 극명</a>
+        </li>
+        <li>
+          <a href="#"><span class="related-tag">일본</span>BOJ 금리 인상 가속화, 도쿄 맨션 가격에 미칠 영향</a>
+        </li>
+        <li>
+          <a href="#"><span class="related-tag">베트남</span>한국인 베트남 콘도 쿼터 소진 속속, 투자 전략 변화</a>
+        </li>
+        <li>
+          <a href="#"><span class="related-tag">세금</span>해외 부동산 팔 때 FIRPTA 원천징수 피하는 법</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🌍 국가별 투자 매력도 비교 (2026.04)</h3>
+      <table class="country-table">
+        <thead>
+          <tr><th>국가</th><th>투자 매력</th><th>주의 사항</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>미국</strong><br>핵심 지역</td>
+            <td><span class="badge badge-yellow">중립</span></td>
+            <td>환율·관세 변수</td>
+          </tr>
+          <tr>
+            <td><strong>일본</strong><br>도쿄·오사카</td>
+            <td><span class="badge badge-yellow">차익 실현</span></td>
+            <td>엔화 강세 전환</td>
+          </tr>
+          <tr>
+            <td><strong>베트남</strong><br>호찌민·하노이</td>
+            <td><span class="badge badge-green">관심</span></td>
+            <td>소유권 한도 확인</td>
+          </tr>
+          <tr>
+            <td><strong>태국</strong><br>방콕·치앙마이</td>
+            <td><span class="badge badge-green">실거주 적합</span></td>
+            <td>토지 소유 불가</td>
+          </tr>
+          <tr>
+            <td><strong>필리핀</strong><br>BGC·마카티</td>
+            <td><span class="badge badge-red">주의</span></td>
+            <td>정치·환율 리스크</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.75rem; color:#aaa; margin-top:0.5rem;">※ 편집부 분석 기준 (투자 환경 종합 평가)</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> &copy; 2026 · 본 콘텐츠는 정보 제공 목적이며 투자 권유가 아닙니다.
+</footer>
+
+</body>
+</html>

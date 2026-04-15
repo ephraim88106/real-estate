@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 30,
+    url: 'article_20260415_1_investment.html',
+    category: '투자분석',
+    title: '경매 낙찰가율 38% 폭락, 지금이 진짜 매수 타이밍인가?',
+    summary: '수도권 아파트 경매 낙찰률 38.1%, 낙찰가율 90% 붕괴. 4월 17일 다주택자 주담대 만기연장 금지 시행을 앞두고 진공 상태에 빠진 시장에서 옥석을 가리는 냉정한 투자 분석.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-15',
+    title_en: 'Auction Sale Rate Plunges 38% — Is Now the Real Buying Moment?',
+    summary_en: "Seoul metro apartment auction winning rate falls to 38.1% and sale price ratio breaks below 90%. With the multi-home owner mortgage extension ban starting April 17, a sober investment analysis for separating opportunity from risk."
+  },
+  {
+    id: 29,
+    url: 'article_20260415_2_overseas.html',
+    category: '해외',
+    title: '관세 전쟁이 뒤흔드는 글로벌 부동산 지형도 — 한국인 투자자의 선택은?',
+    summary: '트럼프 고율 관세가 키우는 글로벌 불확실성 속, 미국 주택 재고 급증·일본 엔저 기회·베트남·태국 외국인 규제 변화까지. 2026년 해외 부동산 투자의 새 지형도를 나라별로 냉정히 분석한다.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 해외투자팀',
+    date: '2026-04-15',
+    title_en: 'Tariff Wars Reshape the Global Real Estate Map — What Should Korean Investors Choose?',
+    summary_en: "Trump's steep tariffs ratchet up global uncertainty while US housing inventory surges, Japan's weak yen opens a window, and Vietnam and Thailand tighten foreign rules. A country-by-country look at the new 2026 overseas investment landscape."
+  },
+  {
     id: 28,
     url: 'article_20260414_5_redevelopment.html',
     category: '재개발',
