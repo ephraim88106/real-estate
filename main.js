@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 34,
+    url: 'article_20260416_1_column.html',
+    category: '칼럼',
+    title: '입주 28% 감소·양도세 데드라인·금리 불안… 세 개의 시한폭탄이 동시에 터진다',
+    summary: '2026년 봄, 한국 부동산 시장은 공급 절벽·양도세 중과 유예 종료·금리 불안이라는 세 개의 시한폭탄이 동시에 째깍거리는 교차로에 서 있다. 단순 상승·하락이 아닌 시장 구조와 양극화의 가속을 정밀 해부한다.',
+    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-16',
+    title_en: "Three Time Bombs Tick Together: Supply Cliff, Capital Gains Tax Deadline, and Rate Uncertainty",
+    summary_en: "In the spring of 2026, Korean real estate stands at a crossroads where a supply cliff, the expiry of the multi-home capital gains tax exemption, and lingering rate uncertainty all detonate at once. A structural read beyond simple up-or-down narratives."
+  },
+  {
+    id: 33,
+    url: 'article_20260416_2_market.html',
+    category: '시장동향',
+    title: '강남도 무너졌다 — 양도세 폭탄 피하려는 다주택자 급매, 서울 집값 7개월 만에 하락 전환',
+    summary: '5월 9일 양도세 중과 유예 데드라인이 다가오자 강남 3구마저 약세로 돌아섰다. 서울 실거래가격지수 전월 대비 −0.59%, 강남구 −0.39%. 급매 출회의 진짜 의미와 이 흐름이 언제까지 이어질지 숫자 뒤 시장 구조를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-16',
+    title_en: "Even Gangnam Cracks: Multi-Home Owner Fire Sales Push Seoul Prices Down for the First Time in Seven Months",
+    summary_en: "As the May 9 capital gains tax deadline nears, even the Gangnam Three Districts have turned weak. Seoul's actual transaction price index fell 0.59% MoM and Gangnam-gu 0.39% — a structural look at what the fire-sale wave really means and how long it will last."
+  },
+  {
     id: 32,
     url: 'article_20260415_4_overseas.html',
     category: '해외',
