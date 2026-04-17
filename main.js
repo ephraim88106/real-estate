@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 36,
+    url: 'article_20260417_2_presale.html',
+    category: '분양',
+    title: '"서초보다 비싼 노량진"…4월 4.7만가구 폭발, 2030 청약 대혼란의 서막',
+    summary: '평당 8,000만 원 시대, 분상제 역설이 만든 기이한 청약 지도 — 장위·흑석·노량진 3개 대단지를 동시에 열어보다. 2030세대 실수요자가 반드시 물어야 할 세 가지 질문.',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-17',
+    title_en: '"Noryangjin More Expensive Than Seocho": 47,000 Units Flood April, Prelude to 2030 Subscription Chaos',
+    summary_en: 'The era of 80M KRW per pyeong — the paradox of the price cap system creates a bizarre subscription map. A simultaneous deep-dive into three landmark complexes in Jangwi, Heukseok, and Noryangjin.'
+  },
+  {
+    id: 35,
+    url: 'article_20260417_1_policy.html',
+    category: '정책',
+    title: '오늘부터 수도권 다주택자 \'대출 시한폭탄\' 터진다…2.7조원 매물 시장에 쏟아지나',
+    summary: '4월 17일 시행 \'주담대 만기연장 원칙 금지\'의 실체와 파급력 — 이재명 정부 부동산 규제의 분기점을 읽는다. 2조 7,000억 원 만기 도래 물량의 행방은.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-17',
+    title_en: 'Multi-Home Owner "Loan Time Bomb" Detonates Today: Will 2.7 Trillion KRW in Properties Flood the Market?',
+    summary_en: 'The reality and ripple effects of the mortgage extension ban effective April 17 — reading the inflection point of the Lee Jae-myung administration\'s real estate regulations.'
+  },
+  {
     id: 34,
     url: 'article_20260416_1_column.html',
     category: '칼럼',
