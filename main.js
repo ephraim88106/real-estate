@@ -75,6 +75,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 38,
+    url: 'article_20260418_2_investment.html',
+    category: '투자분석',
+    title: '4월 17일, 갭투자의 시대가 조용히 끝났다 – 낙찰가율 92%의 역설과 \'옥석 가리기\'가 시작되는 경매장',
+    summary: '다주택자 수도권 주담대 만기 연장 금지. 한 문장으로 요약된 이 정책이 경매장·갭투자·세컨드하우스 시장의 판을 바꾸고 있다. 낙찰가율은 이미 1월 125%에서 3월 92%로 고꾸라졌고, 투자자들은 "수익률"이 아니라 "잔금 마련"을 먼저 묻기 시작했다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-18',
+    title_en: 'April 17: The Era of Gap Investment Quietly Ended — The Paradox of 92% Winning Bid Rate and the Start of Separating Wheat from Chaff',
+    summary_en: 'The ban on mortgage extension for multi-home owners in the Seoul metro area. This single policy is reshaping the auction, gap investment, and second home markets. Winning bid rates have already plunged from 125% in January to 92% in March.'
+  },
+  {
+    id: 37,
+    url: 'article_20260418_1_redevelopment.html',
+    category: '재개발',
+    title: '"80조 수주 전쟁"의 서막 – 강남·여의도·분당, 2026년 정비사업 지도를 뒤흔드는 자는 누구인가',
+    summary: '압구정 6개 구역·여의도 대교·삼부·시범·진주, 그리고 분당 선도지구 2차전. 대형 건설사는 지금 숨을 죽이고 있지만, 조합의 칼자루는 그 어느 때보다 날카롭다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-18',
+    title_en: 'Prelude to the "80 Trillion KRW Contract War" — Who Will Reshape the 2026 Redevelopment Map of Gangnam, Yeouido, and Bundang?',
+    summary_en: 'Six Apgujeong zones, Yeouido\'s Daegyo, Sambu, Sibeom, and Jinju, plus Bundang\'s second-round lead district battle. Major builders hold their breath as unions wield sharper negotiating power than ever.'
+  },
+  {
     id: 36,
     url: 'article_20260417_2_presale.html',
     category: '분양',
