@@ -41,8 +41,38 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.02em;
 }
 .topbar-inner { display: flex; justify-content: space-between; align-items: center; height: 34px; }
-.topbar-links a { margin-left: 18px; color: #d6d9dd; }
+.topbar-links { display: flex; align-items: center; gap: 18px; }
+.topbar-links a { color: #d6d9dd; }
 .topbar-links a:hover { color: #fff; }
+.topbar-subscribe {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.topbar-subscribe input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+  width: 140px;
+  font-family: var(--sans);
+}
+.topbar-subscribe input::placeholder { color: rgba(255, 255, 255, 0.45); }
+.topbar-subscribe input:focus { border-color: var(--gold); }
+.topbar-subscribe button {
+  background: var(--gold);
+  color: #fff;
+  border: 0;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.topbar-subscribe button:hover { background: #c09a34; }
 
 .masthead {
   text-align: center;

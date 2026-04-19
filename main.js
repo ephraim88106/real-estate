@@ -499,7 +499,8 @@ function updateUI() {
   const t = i18n[state.lang];
   
   // Header
-  $('#link-subscribe').textContent = state.subscribed ? t.subscribed : t.subscribe;
+  $('#topbar-subscribe-email').placeholder = t.newsletter_placeholder;
+  $('#topbar-subscribe-btn').textContent = t.subscribe;
   $('#link-report').textContent = t.report;
   $('#link-lang').textContent = t.lang;
   $('#important-notice .container').innerHTML = t.notice;
@@ -637,10 +638,25 @@ function renderRanking() {
 // ============================================================
 // 이벤트 핸들러
 // ============================================================
-$('#link-subscribe').addEventListener('click', (e) => {
+$('#topbar-subscribe-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  state.subscribed = !state.subscribed;
+  const email = $('#topbar-subscribe-email').value;
+
+  if (db) {
+    try {
+      await db.collection('subscribers').add({
+        email: email,
+        timestamp: new Date()
+      });
+    } catch (error) {
+      console.error("Error adding subscriber: ", error);
+    }
+  }
+
+  state.subscribed = true;
+  $('#topbar-subscribe-form').reset();
   updateUI();
+  alert(i18n[state.lang].nl_cta_done);
 });
 
 $('#link-lang').addEventListener('click', (e) => {

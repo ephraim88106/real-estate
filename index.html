@@ -38,7 +38,10 @@
       <div class="container topbar-inner">
         <span id="current-date"></span>
         <nav class="topbar-links">
-          <a href="#" id="link-subscribe">구독</a>
+          <form class="topbar-subscribe" id="topbar-subscribe-form">
+            <input type="email" required placeholder="이메일 구독" aria-label="이메일 구독" id="topbar-subscribe-email" />
+            <button type="submit" id="topbar-subscribe-btn">구독</button>
+          </form>
           <a href="#" id="link-report">제보하기</a>
           <a href="#" id="link-lang">English</a>
         </nav>
