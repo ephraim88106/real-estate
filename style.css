@@ -318,6 +318,79 @@ img { max-width: 100%; display: block; }
 
 .empty-state { text-align: center; padding: 60px 0; color: var(--ink-soft); }
 
+/* ===== Newsletter CTA ===== */
+.nl-cta {
+  margin-bottom: 56px;
+  padding: 0;
+}
+.nl-cta-inner {
+  background: linear-gradient(135deg, var(--accent) 0%, #1a3a5c 100%);
+  border-radius: 10px;
+  padding: 44px 48px;
+  text-align: center;
+  color: #fff;
+}
+.nl-cta-text h2 {
+  font-family: var(--serif);
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 900;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.nl-cta-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 28px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nl-cta-form {
+  display: flex;
+  gap: 0;
+  max-width: 460px;
+  margin: 0 auto;
+}
+.nl-cta-form input {
+  flex: 1;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 14px 18px;
+  font-size: 15px;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  font-family: var(--sans);
+}
+.nl-cta-form input::placeholder { color: rgba(255, 255, 255, 0.5); }
+.nl-cta-form input:focus { border-color: var(--gold); background: rgba(255, 255, 255, 0.15); }
+.nl-cta-form button {
+  background: var(--gold);
+  color: #fff;
+  border: 0;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 0 6px 6px 0;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.nl-cta-form button:hover { background: #c09a34; }
+.nl-cta-note {
+  color: var(--gold);
+  font-weight: 600;
+  margin: 16px 0 0;
+  font-size: 14px;
+}
+@media (max-width: 560px) {
+  .nl-cta-inner { padding: 32px 24px; }
+  .nl-cta-form { flex-direction: column; gap: 10px; }
+  .nl-cta-form input, .nl-cta-form button { border-radius: 6px; }
+}
+
 /* ===== Sidebar Row ===== */
 .sidebar-row {
   display: grid;

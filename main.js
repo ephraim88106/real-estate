@@ -37,7 +37,12 @@ const i18n = {
     report_btn: '제보 완료',
     report_success: '제보가 성공적으로 접수되었습니다.',
     notice: '<span class="badge">[중요]</span> 2026년 하반기 수도권 공공분양 사전청약 일정이 공고되었습니다. (비구독자 전용 공지)',
-    empty: '검색 결과가 없습니다.'
+    empty: '검색 결과가 없습니다.',
+    nl_cta_title: '매일 아침, 부동산 시장을 한눈에',
+    nl_cta_desc: '부동산인사이트가 엄선한 핵심 뉴스와 시장 분석을 매일 아침 이메일로 받아보세요. 무료 구독.',
+    nl_cta_placeholder: '이메일 주소를 입력하세요',
+    nl_cta_btn: '무료 구독',
+    nl_cta_done: '구독 신청이 완료되었습니다. 감사합니다!'
   },
   en: {
     subscribe: 'Subscribe',
@@ -69,7 +74,12 @@ const i18n = {
     report_btn: 'Submit',
     report_success: 'Your report has been received.',
     notice: '<span class="badge">[URGENT]</span> 2H 2026 Public Presale schedule announced. (Non-subscribers only)',
-    empty: 'No results found.'
+    empty: 'No results found.',
+    nl_cta_title: 'Your morning real estate briefing',
+    nl_cta_desc: 'Get curated news and market analysis from RE Insight delivered to your inbox every morning. Free.',
+    nl_cta_placeholder: 'Enter your email address',
+    nl_cta_btn: 'Subscribe Free',
+    nl_cta_done: 'Subscription complete. Thank you!'
   }
 };
 
@@ -505,7 +515,14 @@ function updateUI() {
   });
   
   $('#search-input').placeholder = t.search;
-  
+
+  // Newsletter CTA
+  $('#nl-cta-title').textContent = t.nl_cta_title;
+  $('#nl-cta-desc').textContent = t.nl_cta_desc;
+  $('#nl-cta-email').placeholder = t.nl_cta_placeholder;
+  $('#nl-cta-btn').textContent = t.nl_cta_btn;
+  $('#nl-cta-note').textContent = t.nl_cta_done;
+
   // Sidebar
   $('.ranking h3').textContent = t.ranking;
   $('.newsletter h3').textContent = t.newsletter_title;
@@ -681,7 +698,7 @@ $('#search-form').addEventListener('submit', (e) => {
 $('#newsletter-form').addEventListener('submit', async (e) => {
   e.preventDefault();
   const email = $('#newsletter-form input').value;
-  
+
   if (db) {
     try {
       await db.collection('subscribers').add({
@@ -696,6 +713,26 @@ $('#newsletter-form').addEventListener('submit', async (e) => {
   $('#newsletter-form').reset();
   $('#newsletter-note').hidden = false;
   setTimeout(() => { $('#newsletter-note').hidden = true; }, 4000);
+});
+
+$('#nl-cta-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const email = $('#nl-cta-email').value;
+
+  if (db) {
+    try {
+      await db.collection('subscribers').add({
+        email: email,
+        timestamp: new Date()
+      });
+    } catch (error) {
+      console.error("Error adding subscriber: ", error);
+    }
+  }
+
+  $('#nl-cta-form').reset();
+  $('#nl-cta-note').hidden = false;
+  setTimeout(() => { $('#nl-cta-note').hidden = true; }, 4000);
 });
 
 // 현재 날짜
