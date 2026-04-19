@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 40,
+    url: 'article_20260419_2_column.html',
+    category: '칼럼',
+    title: '"서울만 오른다"는 말의 진짜 의미 — 2026 공급 절벽과 \'신축 20억 vs 구축 14억\'의 비대칭 시장',
+    summary: '2026년 서울 아파트 입주물량은 1만 6,412가구, 10년 만에 최저. 전문가 10인 전원이 "서울은 오른다"고 답했다. 그 문장에는 이미 구축과 외곽이 지워져 있었다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-19',
+    title_en: 'What "Only Seoul Goes Up" Really Means — The 2026 Supply Cliff and the Asymmetric Market of New 2B vs Old 1.4B KRW',
+    summary_en: 'Seoul apartment supply in 2026 hits a 10-year low at 16,412 units. All 10 experts surveyed said "Seoul will rise." But that sentence had already erased old stock and the outskirts.'
+  },
+  {
+    id: 39,
+    url: 'article_20260419_1_overseas.html',
+    category: '해외',
+    title: '"강남 한 채 팔아 도쿄 세 채"…한국 큰손 일본 부동산 쇼핑이 멈추지 않는 이유',
+    summary: '엔저·금리차·외국인 무규제 3박자… 도쿄 23구 거래의 30% 이상이 외국인. 그러나 일본은행이 금리 인상에 시동을 거는 2026년, "지금이 막차냐 함정이냐"의 분수령에 섰다.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-19',
+    title_en: '"Sell One Gangnam Apartment, Buy Three in Tokyo": Why Korean Big Money Won\'t Stop Shopping for Japanese Real Estate',
+    summary_en: 'Weak yen, rate gap, and zero foreign restrictions — over 30% of Tokyo 23-ward transactions are by foreigners. But as the BOJ signals rate hikes in 2026, the question is: last chance or trap?'
+  },
+  {
     id: 38,
     url: 'article_20260418_2_investment.html',
     category: '투자분석',
