@@ -638,25 +638,11 @@ function renderRanking() {
 // ============================================================
 // 이벤트 핸들러
 // ============================================================
-$('#topbar-subscribe-form').addEventListener('submit', async (e) => {
+const SUBSCRIBE_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeCzoyfzDvustiDdaqUIKnPdtS_2kajmRkadPogcUdOylkUWQ/viewform?usp=publish-editor';
+
+$('#topbar-subscribe-form').addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = $('#topbar-subscribe-email').value;
-
-  if (db) {
-    try {
-      await db.collection('subscribers').add({
-        email: email,
-        timestamp: new Date()
-      });
-    } catch (error) {
-      console.error("Error adding subscriber: ", error);
-    }
-  }
-
-  state.subscribed = true;
-  $('#topbar-subscribe-form').reset();
-  updateUI();
-  alert(i18n[state.lang].nl_cta_done);
+  window.open(SUBSCRIBE_URL, '_blank');
 });
 
 $('#link-lang').addEventListener('click', (e) => {
@@ -711,44 +697,14 @@ $('#search-form').addEventListener('submit', (e) => {
   renderGrid();
 });
 
-$('#newsletter-form').addEventListener('submit', async (e) => {
+$('#newsletter-form').addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = $('#newsletter-form input').value;
-
-  if (db) {
-    try {
-      await db.collection('subscribers').add({
-        email: email,
-        timestamp: new Date()
-      });
-    } catch (error) {
-      console.error("Error adding subscriber: ", error);
-    }
-  }
-
-  $('#newsletter-form').reset();
-  $('#newsletter-note').hidden = false;
-  setTimeout(() => { $('#newsletter-note').hidden = true; }, 4000);
+  window.open(SUBSCRIBE_URL, '_blank');
 });
 
-$('#nl-cta-form').addEventListener('submit', async (e) => {
+$('#nl-cta-form').addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = $('#nl-cta-email').value;
-
-  if (db) {
-    try {
-      await db.collection('subscribers').add({
-        email: email,
-        timestamp: new Date()
-      });
-    } catch (error) {
-      console.error("Error adding subscriber: ", error);
-    }
-  }
-
-  $('#nl-cta-form').reset();
-  $('#nl-cta-note').hidden = false;
-  setTimeout(() => { $('#nl-cta-note').hidden = true; }, 4000);
+  window.open(SUBSCRIBE_URL, '_blank');
 });
 
 // 현재 날짜
