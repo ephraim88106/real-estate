@@ -21,9 +21,11 @@ const i18n = {
     overseas: '해외부동산',
     column: '칼럼',
     search: '기사 검색',
-    ranking: '가장 많이 본 기사',
-    newsletter_title: '매일 아침 부동산 브리핑',
-    newsletter_desc: '주요 시황과 정책을 한 통의 메일로 받아보세요.',
+    briefing_title: '오늘의 브리핑',
+    briefing_text: '오늘 부동산인사이트가 주목한 핵심 이슈를 전합니다. 카테고리를 선택하면 관심 분야만 모아볼 수 있습니다.',
+    today: '오늘의 뉴스',
+    cta_title: '매일 아침 부동산 브리핑',
+    cta_desc: '주요 시황과 정책을 한 통의 메일로 받아보세요.',
     newsletter_placeholder: '이메일 주소',
     newsletter_btn: '구독 신청',
     newsletter_done: '구독 신청이 완료되었습니다.',
@@ -36,7 +38,6 @@ const i18n = {
     report_placeholder_content: '구체적인 내용을 적어주세요. 기사화 시 개별 연락드립니다.',
     report_btn: '제보 완료',
     report_success: '제보가 성공적으로 접수되었습니다.',
-    notice: '<span class="badge">[중요]</span> 2026년 하반기 수도권 공공분양 사전청약 일정이 공고되었습니다. (비구독자 전용 공지)',
     empty: '검색 결과가 없습니다.'
   },
   en: {
@@ -53,9 +54,11 @@ const i18n = {
     overseas: 'Global',
     column: 'Column',
     search: 'Search Articles',
-    ranking: 'Most Read',
-    newsletter_title: 'Daily Briefing',
-    newsletter_desc: 'Get key market updates in your inbox.',
+    briefing_title: "Today's Briefing",
+    briefing_text: "Here are the key issues RE Insight is watching today. Use the category filters to focus on what matters to you.",
+    today: "Today's News",
+    cta_title: 'Daily Briefing',
+    cta_desc: 'Get key market updates in your inbox.',
     newsletter_placeholder: 'Email address',
     newsletter_btn: 'Sign Up',
     newsletter_done: 'Subscription complete.',
@@ -68,7 +71,6 @@ const i18n = {
     report_placeholder_content: 'Please provide details. We will contact you for follow-ups.',
     report_btn: 'Submit',
     report_success: 'Your report has been received.',
-    notice: '<span class="badge">[URGENT]</span> 2H 2026 Public Presale schedule announced. (Non-subscribers only)',
     empty: 'No results found.'
   }
 };
@@ -437,7 +439,7 @@ const articles = [
 ];
 
 // ============================================================
-// Firebase 초기화 (본인의 Firebase Config로 교체하세요)
+// Firebase 초기화
 // ============================================================
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
@@ -448,7 +450,6 @@ const firebaseConfig = {
   appId: "YOUR_APP_ID"
 };
 
-// Firebase 초기화 (설정이 유효한 경우에만)
 let db = null;
 if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
   firebase.initializeApp(firebaseConfig);
@@ -464,9 +465,19 @@ const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 const formatDate = (iso) => {
   const d = new Date(iso);
   const lang = state.lang === 'ko';
-  return lang 
+  return lang
     ? `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`
     : d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+};
+
+const formatDateGroup = (iso) => {
+  const d = new Date(iso);
+  if (state.lang === 'ko') {
+    const days = ['일', '월', '화', '수', '목', '금', '토'];
+    return `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일 ${days[d.getDay()]}요일`;
+  }
+  const enDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  return `${enDays[d.getDay()]}, ${d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
 };
 
 let activeCategory = 'all';
@@ -485,15 +496,40 @@ function filteredArticles() {
   });
 }
 
+function groupByDate(list) {
+  const groups = {};
+  list.forEach(a => {
+    if (!groups[a.date]) groups[a.date] = [];
+    groups[a.date].push(a);
+  });
+  return Object.entries(groups).sort((a, b) => b[0].localeCompare(a[0]));
+}
+
+function renderArticleItem(a, num) {
+  const getT = (a) => state.lang === 'ko' ? a.title : (a.title_en || a.title);
+  const getS = (a) => state.lang === 'ko' ? a.summary : (a.summary_en || a.summary);
+
+  return `
+    <div class="nl-article-item" data-url="${a.url}">
+      <span class="nl-article-number">${String(num).padStart(2, '0')}</span>
+      <div class="nl-article-body">
+        <span class="nl-article-cat">${a.category}</span>
+        <h4 class="nl-article-title">${getT(a)}</h4>
+        <p class="nl-article-summary">${getS(a)}</p>
+        <p class="nl-article-meta">${a.author} · ${formatDate(a.date)}</p>
+      </div>
+    </div>
+  `;
+}
+
 function updateUI() {
   const t = i18n[state.lang];
-  
+
   // Header
   $('#link-subscribe').textContent = state.subscribed ? t.subscribed : t.subscribe;
   $('#link-report').textContent = t.report;
   $('#link-lang').textContent = t.lang;
-  $('#important-notice .container').innerHTML = t.notice;
-  
+
   if (state.subscribed) document.body.classList.add('subscribed');
   else document.body.classList.remove('subscribed');
 
@@ -503,17 +539,23 @@ function updateUI() {
   navBtns.forEach((btn, i) => {
     if (catKeys[i]) btn.textContent = t[catKeys[i]];
   });
-  
+
   $('#search-input').placeholder = t.search;
-  
-  // Sidebar
-  $('.ranking h3').textContent = t.ranking;
-  $('.newsletter h3').textContent = t.newsletter_title;
-  $('.newsletter p').textContent = t.newsletter_desc;
-  $('.newsletter input').placeholder = t.newsletter_placeholder;
-  $('.newsletter button').textContent = t.newsletter_btn;
+
+  // Briefing
+  $('#briefing-title').textContent = t.briefing_title;
+  $('#briefing-text').textContent = t.briefing_text;
+
+  // Section titles
+  $('#section-today-title').textContent = t.today;
+
+  // Subscribe CTA
+  $('#cta-title').textContent = t.cta_title;
+  $('#cta-desc').textContent = t.cta_desc;
+  $('.nl-subscribe-form input').placeholder = t.newsletter_placeholder;
+  $('.nl-subscribe-form button').textContent = t.newsletter_btn;
   $('#newsletter-note').textContent = t.newsletter_done;
-  
+
   // Report Modal
   $('#report-modal-title').textContent = t.report_title;
   $('#report-modal-desc').textContent = t.report_desc;
@@ -524,95 +566,83 @@ function updateUI() {
   $('#report-content').placeholder = t.report_placeholder_content;
   $('#report-email').placeholder = t.newsletter_placeholder;
   $('#btn-report-submit').textContent = t.report_btn;
-  
+
   $('#empty-state').textContent = t.empty;
 
-  renderHero();
-  renderGrid();
-  renderRanking();
+  renderContent();
   updateDate();
 }
 
-function renderHero() {
+function renderContent() {
   const list = filteredArticles();
-  const hero = $('#hero');
-  if (list.length === 0) { hero.innerHTML = ''; return; }
-  const [main, ...rest] = list;
-  const sideArticles = rest.slice(0, 3);
-  
-  const getT = (a) => state.lang === 'ko' ? a.title : (a.title_en || a.title);
-  const getS = (a) => state.lang === 'ko' ? a.summary : (a.summary_en || a.summary);
-
-  hero.innerHTML = `
-    <article class="hero-main" data-id="${main.id}">
-      <div class="thumb"><img src="${main.image}" alt="${getT(main)}" loading="lazy" /></div>
-      <p class="category">${state.lang === 'ko' ? main.category : main.category}</p>
-      <h2>${getT(main)}</h2>
-      <p>${getS(main)}</p>
-      <p class="meta">${main.author} · ${formatDate(main.date)}</p>
-    </article>
-    <div class="hero-side">
-      ${sideArticles.map(a => `
-        <article data-id="${a.id}">
-          <p class="category">${a.category}</p>
-          <h3>${getT(a)}</h3>
-          <p class="meta">${a.author} · ${formatDate(a.date)}</p>
-        </article>
-      `).join('')}
-    </div>
-  `;
-
-  hero.querySelectorAll('[data-id]').forEach(el => {
-    el.addEventListener('click', () => {
-      const a = articles.find(x => x.id === Number(el.dataset.id));
-      if (a && a.url) window.location.href = a.url;
-    });
-  });
-}
-
-function renderGrid() {
-  const list = filteredArticles().slice(4);
-  const grid = $('#news-grid');
+  const headline = $('#nl-headline');
+  const todayList = $('#nl-today-list');
+  const todaySection = $('#nl-today');
+  const archive = $('#nl-archive');
   const empty = $('#empty-state');
 
-  if (filteredArticles().length === 0) {
-    grid.innerHTML = '';
+  if (list.length === 0) {
+    headline.innerHTML = '';
+    todayList.innerHTML = '';
+    archive.innerHTML = '';
+    todaySection.style.display = 'none';
     empty.hidden = false;
     return;
   }
+
   empty.hidden = true;
+  todaySection.style.display = '';
 
   const getT = (a) => state.lang === 'ko' ? a.title : (a.title_en || a.title);
   const getS = (a) => state.lang === 'ko' ? a.summary : (a.summary_en || a.summary);
 
-  grid.innerHTML = list.map(a => `
-    <article class="news-card" data-id="${a.id}">
-      <div class="thumb"><img src="${a.image}" alt="${getT(a)}" loading="lazy" /></div>
-      <p class="category">${a.category}</p>
-      <h3>${getT(a)}</h3>
-      <p class="summary">${getS(a)}</p>
-      <p class="meta">${a.author} · ${formatDate(a.date)}</p>
-    </article>
-  `).join('');
+  // Headline (first article)
+  const main = list[0];
+  headline.innerHTML = `
+    <div class="nl-headline-article" data-url="${main.url}">
+      <span class="nl-headline-category">${main.category}</span>
+      <h2 class="nl-headline-title">${getT(main)}</h2>
+      <p class="nl-headline-summary">${getS(main)}</p>
+      <p class="nl-headline-meta">${main.author} · ${formatDate(main.date)}</p>
+      <div class="nl-headline-thumb"><img src="${main.image}" alt="${getT(main)}" loading="lazy" /></div>
+    </div>
+  `;
 
-  grid.querySelectorAll('.news-card').forEach(el => {
-    el.addEventListener('click', () => {
-      const a = articles.find(x => x.id === Number(el.dataset.id));
-      if (a && a.url) window.location.href = a.url;
-    });
+  headline.querySelector('[data-url]').addEventListener('click', () => {
+    window.location.href = main.url;
   });
-}
 
-function renderRanking() {
-  const top = [...articles].slice(0, 5);
-  const getT = (a) => state.lang === 'ko' ? a.title : (a.title_en || a.title);
-  $('#ranking-list').innerHTML = top.map(a => `
-    <li data-id="${a.id}"><span class="rank-title">${getT(a)}</span></li>
+  // Group remaining articles by date
+  const remaining = list.slice(1);
+  const groups = groupByDate(remaining);
+
+  if (groups.length === 0) {
+    todayList.innerHTML = '';
+    archive.innerHTML = '';
+    todaySection.style.display = 'none';
+    return;
+  }
+
+  // First date group goes into "today" section
+  const [firstDate, firstArticles] = groups[0];
+  $('#section-today-title').textContent = formatDateGroup(firstDate);
+  let counter = 1;
+  todayList.innerHTML = firstArticles.map(a => renderArticleItem(a, counter++)).join('');
+
+  // Remaining date groups
+  archive.innerHTML = groups.slice(1).map(([date, dateArticles]) => `
+    <section class="nl-section">
+      <h3 class="nl-date-header">${formatDateGroup(date)}</h3>
+      <div class="nl-article-list">
+        ${dateArticles.map(a => renderArticleItem(a, counter++)).join('')}
+      </div>
+    </section>
   `).join('');
-  $$('#ranking-list li').forEach(el => {
+
+  // Add click handlers for all article items
+  $$('.nl-article-item[data-url]').forEach(el => {
     el.addEventListener('click', () => {
-      const a = articles.find(x => x.id === Number(el.dataset.id));
-      if (a && a.url) window.location.href = a.url;
+      window.location.href = el.dataset.url;
     });
   });
 }
@@ -666,22 +696,20 @@ $$('#category-nav button').forEach(btn => {
     $$('#category-nav button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     activeCategory = btn.dataset.category;
-    renderHero();
-    renderGrid();
+    renderContent();
   });
 });
 
 $('#search-form').addEventListener('submit', (e) => {
   e.preventDefault();
   searchQuery = $('#search-input').value;
-  renderHero();
-  renderGrid();
+  renderContent();
 });
 
 $('#newsletter-form').addEventListener('submit', async (e) => {
   e.preventDefault();
   const email = $('#newsletter-form input').value;
-  
+
   if (db) {
     try {
       await db.collection('subscribers').add({
@@ -706,6 +734,17 @@ const updateDate = () => {
   $('#current-date').textContent = state.lang === 'ko'
     ? `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일 ${days[d.getDay()]}요일`
     : `${enDays[d.getDay()]}, ${d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
+
+  // Issue bar
+  const issueNum = Math.floor((d - new Date('2026-01-01')) / (1000 * 60 * 60 * 24)) + 1;
+  const el = $('#edition-left');
+  if (el) el.textContent = state.lang === 'ko' ? `제${issueNum}호` : `Issue #${issueNum}`;
+  const issueDate = $('#issue-date');
+  if (issueDate) {
+    issueDate.textContent = state.lang === 'ko'
+      ? `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일`
+      : d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  }
 };
 
 // 초기화
