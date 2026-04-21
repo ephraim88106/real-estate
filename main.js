@@ -85,8 +85,56 @@ const i18n = {
 
 const articles = [
   {
+    id: 44,
+    url: 'article_20260421_2_pilotdistrict_v2.html',
+    category: '재개발',
+    title: '80조 시장 문 열렸다…1기 신도시 \'선도지구\' 시공사 쟁탈전, 누가 웃고 누가 우나',
+    summary: '분당·일산·평촌·산본·중동 3만5,897호. 2026년 시공사 선정이 본격화되며 도시정비사업 시장은 80조 규모로 팽창했다. 그러나 같은 타이틀 아래, 분당은 질주하고 일산은 정체한다. 양극화를 가른 변수는 브랜드가 아니라 사업성이다.',
+    image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-21',
+    title_en: 'The 80 Trillion KRW Market Opens — 1st Gen New City Pilot District Contractor Battle: Who Wins, Who Loses?',
+    summary_en: 'Bundang, Ilsan, Pyeongchon, Sanbon, Jungdong — 35,897 units. As contractor selection ramps up in 2026, the urban redevelopment market has ballooned to 80 trillion KRW. But under the same title, Bundang races ahead while Ilsan stalls.'
+  },
+  {
+    id: 43,
+    url: 'article_20260421_1_acrodeseocho_v2.html',
+    category: '분양',
+    title: '17억 로또 \'아크로 드 서초\' 1099대1 폭발…상한제의 역설이 만든 서울 청약 新역사',
+    summary: '30가구에 3만3천명. 생애최초 특공 1897대1. 서울 민간분양 역대 최고 경쟁률을 갈아치운 아크로 드 서초는 단일 단지의 이벤트가 아니다. 분양가 상한제가 \'로또 청약\'을 제도화한 구조, 그리고 상급지로 수요가 몰리는 수급 왜곡의 결정판이다.',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-21',
+    title_en: '1.7B KRW Lottery: Acro de Seocho Explodes at 1099:1 — The Paradox of Price Caps Rewrites Seoul Subscription History',
+    summary_en: '33,000 applicants for 30 units. First-time buyer special at 1897:1. Acro de Seocho shattered Seoul\'s all-time private presale record. This is not a single-complex event — it is the culmination of price cap policy institutionalizing "lottery subscriptions."'
+  },
+  {
+    id: 42,
+    url: 'article_20260420_2_policy_v2.html',
+    category: '정책',
+    title: '10.15 대책 6개월, 집값은 잡혔나…주담대 가중치·DSR 3단계 \'초강수\'의 성적표',
+    summary: '서울 전역 토지거래허가구역, 2년 실거주 의무, 스트레스 금리 3%로 두 배 상향, 주담대 위험가중치 20% 조기 시행까지 — 2026년 4월 현재, 정부 \'3차 대책\'의 실효는 어디까지 왔나. 숫자와 현장을 교차 검증한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-20',
+    title_en: 'Six Months After the 10.15 Measures: Have Home Prices Been Tamed? The Scorecard of Mortgage Weight Hikes and DSR Stage 3',
+    summary_en: 'Seoul-wide land transaction permits, 2-year residency mandates, stress rate doubled to 3%, and early mortgage risk weight hikes — as of April 2026, how far have the government\'s third-round measures actually worked?'
+  },
+  {
+    id: 41,
+    url: 'article_20260420_1_market_v2.html',
+    category: '시장동향',
+    title: '거래는 60% 뚝 끊겼는데 신고가는 터진다…2026년 봄 서울 부동산의 기막힌 역설',
+    summary: '강남 국평 26억 시대, 마용성 신고가 행진 vs 노도강 \'비명\'. 4주 연속 오름폭은 둔화, 그러나 핵심지는 폭주 — \'거래 절벽 속 가격 급등\'이 만들어낸 2026년 4월 서울의 두 얼굴을 정밀 해부한다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-20',
+    title_en: 'Transactions Down 60% Yet Record Highs Keep Coming — The Stunning Paradox of Seoul Real Estate in Spring 2026',
+    summary_en: 'Gangnam national-size flats hit 2.6B KRW, Mayongseong sets new highs while Nodogang cries out. Four straight weeks of slowing gains, yet core areas are surging — dissecting the two faces of Seoul in April 2026.'
+  },
+  {
     id: 40,
-    url: 'article_20260419_2_column.html',
+    url: 'article_20260419_2_column_v2.html',
     category: '칼럼',
     title: '"서울만 오른다"는 말의 진짜 의미 — 2026 공급 절벽과 \'신축 20억 vs 구축 14억\'의 비대칭 시장',
     summary: '2026년 서울 아파트 입주물량은 1만 6,412가구, 10년 만에 최저. 전문가 10인 전원이 "서울은 오른다"고 답했다. 그 문장에는 이미 구축과 외곽이 지워져 있었다.',
@@ -98,7 +146,7 @@ const articles = [
   },
   {
     id: 39,
-    url: 'article_20260419_1_overseas.html',
+    url: 'article_20260419_1_overseas_v2.html',
     category: '해외',
     title: '"강남 한 채 팔아 도쿄 세 채"…한국 큰손 일본 부동산 쇼핑이 멈추지 않는 이유',
     summary: '엔저·금리차·외국인 무규제 3박자… 도쿄 23구 거래의 30% 이상이 외국인. 그러나 일본은행이 금리 인상에 시동을 거는 2026년, "지금이 막차냐 함정이냐"의 분수령에 섰다.',
