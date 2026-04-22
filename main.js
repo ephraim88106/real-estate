@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 46,
+    url: 'article_20260422_2_overseas_v2.html',
+    category: '해외',
+    title: '도쿄 신축 아파트 40%가 외국인 손에…엔저 끝물 속 한국인의 도쿄 쇼핑은 언제까지 유효한가',
+    summary: '도쿄 평균 주거 가격 9,140만 엔, 전년 대비 10.7% 급등. 2025년 일본 매매의 27%가 외국인 매수. BOJ가 금리를 올리고 엔이 되돌림을 시작한 지금, 한국인의 \'도쿄 쇼핑\'은 아직 기회일까, 이미 정점일까.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-22',
+    title_en: 'Tokyo New Apartments: 40% Go to Foreigners — How Long Will Korean Shopping in Tokyo Remain Valid as the Weak Yen Fades?',
+    summary_en: 'Tokyo average residential price hits 91.4M yen, up 10.7% YoY. 27% of 2025 Japanese transactions were foreign buyers. With BOJ raising rates and the yen rebounding, is Korean "Tokyo shopping" still opportunity or already the peak?'
+  },
+  {
+    id: 45,
+    url: 'article_20260422_1_investment_v2.html',
+    category: '투자분석',
+    title: '갭투자 시대 사망 선고? 4·17 만기 연장 금지로 뒤흔들린 수도권 경매판…현금흐름 없는 투자는 살 수 없다',
+    summary: '수도권 아파트 경매 낙찰률 38.1%까지 주저앉았다. 4월 17일 다주택자 주담대 만기 연장 금지가 불러올 강제 매도 파동. 옥석이 아니라 생존을 가리는 시장이 열렸다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-22',
+    title_en: 'Death Sentence for Gap Investment? The 4.17 Loan Extension Ban Shakes Up the Seoul Metro Auction Market — No Cash Flow, No Survival',
+    summary_en: 'Seoul metro apartment auction winning rate drops to 38.1%. The multi-home owner mortgage extension ban starting April 17 triggers a forced-sale wave. This market now tests survival, not selection.'
+  },
+  {
     id: 44,
     url: 'article_20260421_2_pilotdistrict_v2.html',
     category: '재개발',
