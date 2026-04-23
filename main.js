@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 48,
+    url: 'article_20260423_2_market_v2.html',
+    category: '시장동향',
+    title: '입주전망지수 69.3, 15개월 만의 최저치 — \'공급 절벽\' 경고등이 켜졌다',
+    summary: '2026년 4월 전국 아파트 입주전망지수가 69.3으로 떨어지며 15개월 만에 70선이 붕괴됐다. 전월 대비 25.1p 급락, 입주 예정 물량은 전년 대비 28% 감소. 공급 절벽이 시장에 남길 흔적을 데이터로 해부한다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 데이터팀',
+    date: '2026-04-23',
+    title_en: 'Housing Supply Outlook Index Hits 69.3, Lowest in 15 Months — The Supply Cliff Warning Light Is On',
+    summary_en: 'The nationwide apartment move-in outlook index plunged to 69.3 in April 2026, breaking below 70 for the first time in 15 months. A 25.1-point drop from the previous month, with scheduled supply down 28% YoY. Dissecting the supply cliff\'s impact with data.'
+  },
+  {
+    id: 47,
+    url: 'article_20260423_1_column_v2.html',
+    category: '칼럼',
+    title: '강남은 멈추고 강북은 뛴다, 서울 \'두 개의 시장\' 시대가 던지는 6가지 질문',
+    summary: '2026년 4월, 강남권은 숨 고르기에 들어가고 강북·외곽은 가파르게 상승하는 \'두 개의 시장\' 현상이 고착화되고 있다. 단순한 풍선효과를 넘어 공시가격·대출규제·공급 구조가 만들어낸 구조적 분절의 의미를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-04-23',
+    title_en: 'Gangnam Stalls, Gangbuk Surges — 6 Questions Posed by Seoul\'s "Two Markets" Era',
+    summary_en: 'In April 2026, Gangnam cools while Gangbuk and outer areas surge. Beyond simple balloon effects, dissecting the structural fragmentation created by assessed values, lending rules, and supply dynamics.'
+  },
+  {
     id: 46,
     url: 'article_20260422_2_overseas_v2.html',
     category: '해외',
