@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 50,
+    url: 'article_20260424_2_subscription_v2.html',
+    category: '분양',
+    title: '아크로드서초 6,710대 1의 이면 — 4월 4만 7천 가구 쏟아진 분양 대란, 청약의 공식이 바뀌었다',
+    summary: '4월 한 달 전국 47,062가구 공급, 서울은 재개발·재건축 중심 3천 가구, 추첨제 경쟁률은 최고 6,710대 1. 공급 폭주 속 \'상급지 집중 수요\'가 만든 새로운 청약 방정식.',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-24',
+    title_en: 'Behind Acro de Seocho\'s 6,710:1 — 47,000 Units Flood April\'s Presale Market, Rewriting the Subscription Formula',
+    summary_en: '47,062 units supplied nationwide in April, with Seoul focused on 3,000 redevelopment units and lottery competition peaking at 6,710:1. The new subscription equation created by demand concentration in premium areas amid supply overflow.'
+  },
+  {
+    id: 49,
+    url: 'article_20260424_1_policy_v2.html',
+    category: '정책',
+    title: '4·17 만기연장 금지 시행 — 다주택자 1만 2,000가구, \'매물 폭탄의 서곡\'인가 \'역풍의 시작\'인가',
+    summary: '4월 17일부터 수도권·규제지역 2주택 이상 보유자와 임대사업자의 주담대 만기연장이 원칙 금지된다. 총 4.1조 원, 1만 7천 가구 규모의 \'만기 절벽\'이 시장에 던진 세 가지 질문.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-24',
+    title_en: '4.17 Mortgage Extension Ban Takes Effect — 12,000 Multi-Home Owner Units: Prelude to a Listing Bomb or Start of Blowback?',
+    summary_en: 'Starting April 17, mortgage extensions are banned for owners of 2+ homes in the Seoul metro and regulated areas. Three questions posed by the 4.1 trillion KRW, 17,000-unit "maturity cliff."'
+  },
+  {
     id: 48,
     url: 'article_20260423_2_market_v2.html',
     category: '시장동향',
