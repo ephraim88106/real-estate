@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 52,
+    url: 'article_20260425_2_investment_v2.html',
+    category: '투자분석',
+    title: '경매 낙찰가율 90.2%, 갭투자는 사라졌다…4월 17일 이후 시장이 보여준 진짜 신호',
+    summary: '다주택자 만기연장 금지가 시작된 4월 17일 이후, 수도권 경매 낙찰가율은 90.2%로 떨어지고 인천은 80.2%까지 무너졌다. 경매·갭투자 시장의 진짜 변화와 옥석 가리기 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-25',
+    title_en: 'Auction Winning Rate at 90.2%, Gap Investment Is Dead — The Real Signal the Market Showed After April 17',
+    summary_en: 'After the multi-home owner mortgage extension ban took effect on April 17, the Seoul metro auction winning rate dropped to 90.2% and Incheon collapsed to 80.2%. Analyzing the real changes in the auction and gap investment market and strategies for separating wheat from chaff.'
+  },
+  {
+    id: 51,
+    url: 'article_20260425_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '1기 신도시 재건축, 4월 21일부터 가속 페달…분담금 산정도 문턱 낮춰진다',
+    summary: '노후계획도시 특별법 시행령 개정으로 분당·일산·평촌·산본·중동 1기 신도시 재정비 속도가 빨라진다. 분담금 산정 절차 간소화와 재건축진단 규제 완화의 의미를 짚는다.',
+    image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-25',
+    title_en: '1st Gen New City Reconstruction Hits the Gas from April 21 — Contribution Assessments Get Easier Too',
+    summary_en: 'Amendments to the Aging Planned City Special Act enforcement decree accelerate redevelopment in Bundang, Ilsan, Pyeongchon, Sanbon, and Jungdong. Examining the significance of simplified contribution assessments and relaxed reconstruction diagnostic regulations.'
+  },
+  {
     id: 50,
     url: 'article_20260424_2_subscription_v2.html',
     category: '분양',
