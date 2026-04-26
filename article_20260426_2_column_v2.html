@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>[칼럼] 서울 입주물량 '반토막' 시대, 누가 살아남나 — 2026 부동산 옥석가리기 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #f7f5f0; line-height: 1.75; }
+  a { color: inherit; text-decoration: none; }
+
+  /* Header */
+  header.site { position: sticky; top: 0; z-index: 100; background: #0D2B55; color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+  .head-inner { max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-weight: 900; font-size: 1.55rem; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav.gnb ul { list-style: none; display: flex; gap: 24px; flex-wrap: wrap; }
+  nav.gnb a { font-size: 0.95rem; font-weight: 500; opacity: 0.92; transition: opacity .15s; }
+  nav.gnb a:hover { opacity: 1; color: #F4A52D; }
+
+  /* Hero */
+  .hero { background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%); color: #fff; padding: 70px 24px 80px; }
+  .hero-inner { max-width: 1100px; margin: 0 auto; }
+  .cat-tag { display: inline-block; padding: 6px 16px; background: #6A6A10; color: #fff; font-size: 0.82rem; font-weight: 700; border-radius: 30px; margin-bottom: 22px; letter-spacing: 0.5px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-weight: 900; font-size: 2.55rem; line-height: 1.32; letter-spacing: -1px; margin-bottom: 22px; }
+  .hero .lead { font-size: 1.12rem; line-height: 1.85; opacity: 0.96; max-width: 880px; }
+  .meta-line { margin-top: 28px; font-size: 0.88rem; opacity: 0.85; }
+
+  /* Layout */
+  .container { max-width: 1200px; margin: 0 auto; padding: 50px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 50px; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; padding: 36px 18px; gap: 36px; } .hero h1 { font-size: 1.85rem; } .hero { padding: 48px 18px 56px; } }
+
+  article { background: #fff; padding: 50px 48px; border-radius: 8px; box-shadow: 0 2px 18px rgba(0,0,0,0.06); }
+  @media (max-width: 900px) { article { padding: 30px 22px; } }
+  article p { margin-bottom: 1.25em; font-size: 1.04rem; }
+  article h2 { font-family: 'Noto Serif KR', serif; font-weight: 800; font-size: 1.6rem; margin: 2.2em 0 1em; padding-left: 16px; border-left: 4px solid #6A6A10; line-height: 1.4; color: #2A2A0A; }
+  article h3 { font-weight: 700; font-size: 1.18rem; margin: 1.8em 0 0.7em; color: #4A4A10; }
+  article ul, article ol { margin: 1em 0 1.5em 1.4em; }
+  article li { margin-bottom: 0.65em; }
+  article strong { color: #6A6A10; font-weight: 700; }
+
+  /* Data box */
+  .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 32px 0; }
+  @media (max-width: 700px) { .data-grid { grid-template-columns: 1fr; } }
+  .data-card { background: linear-gradient(135deg, #F7F7E3 0%, #ECECC8 100%); padding: 22px; border-radius: 8px; border-top: 3px solid #6A6A10; }
+  .data-card .label { font-size: 0.82rem; color: #4A4A10; font-weight: 600; margin-bottom: 8px; letter-spacing: 0.3px; }
+  .data-card .value { font-family: 'Noto Serif KR', serif; font-size: 1.85rem; font-weight: 900; color: #2A2A0A; line-height: 1.15; }
+  .data-card .sub { font-size: 0.78rem; color: #555; margin-top: 6px; }
+
+  /* Pull quote */
+  .pullquote { background: #F8F8E0; border-left: 5px solid #6A6A10; padding: 26px 30px; margin: 30px 0; font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.18rem; line-height: 1.7; color: #2A2A0A; border-radius: 0 8px 8px 0; }
+  .pullquote .who { display: block; margin-top: 12px; font-style: normal; font-family: 'Noto Sans KR', sans-serif; font-size: 0.92rem; color: #6A6A10; font-weight: 600; }
+
+  /* Disclaimer */
+  .disclaimer { margin-top: 40px; padding: 18px 22px; background: #f0f0ed; border-radius: 6px; font-size: 0.86rem; color: #555; line-height: 1.7; }
+
+  /* Sidebar */
+  aside { display: flex; flex-direction: column; gap: 22px; }
+  .widget { background: #fff; padding: 24px 22px; border-radius: 8px; box-shadow: 0 1px 10px rgba(0,0,0,0.05); }
+  .widget h4 { font-family: 'Noto Serif KR', serif; font-size: 1.08rem; font-weight: 800; color: #2A2A0A; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #6A6A10; }
+  .summary-box { background: linear-gradient(180deg, #FAFAE8 0%, #fff 100%); }
+  .summary-box ul { list-style: none; padding: 0; margin: 0; }
+  .summary-box li { font-size: 0.9rem; padding: 8px 0 8px 22px; border-bottom: 1px dashed #ECECC8; position: relative; line-height: 1.55; }
+  .summary-box li::before { content: "▶"; color: #6A6A10; position: absolute; left: 0; top: 8px; font-size: 0.7rem; }
+  .summary-box li:last-child { border-bottom: none; }
+  .related-list { list-style: none; padding: 0; margin: 0; }
+  .related-list li { font-size: 0.9rem; padding: 10px 0; border-bottom: 1px solid #eee; line-height: 1.5; }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list .tag { font-size: 0.72rem; color: #6A6A10; font-weight: 700; display: block; margin-bottom: 4px; }
+
+  /* Strategy ladder */
+  .ladder { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  .ladder-row { display: grid; grid-template-columns: 70px 1fr; gap: 10px; align-items: center; padding: 10px 0; border-bottom: 1px dashed #ECECC8; }
+  .ladder-row:last-child { border-bottom: none; }
+  .ladder-row .lvl { background: #6A6A10; color: #fff; font-weight: 700; font-size: 0.78rem; padding: 6px 8px; border-radius: 4px; text-align: center; }
+  .ladder-row .desc { font-size: 0.85rem; line-height: 1.5; color: #2A2A0A; }
+
+  /* Tags */
+  .tags { margin-top: 30px; padding-top: 22px; border-top: 1px solid #eee; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags span { background: #F8F8E0; color: #6A6A10; padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; }
+
+  /* Footer */
+  footer { background: #0D2B55; color: rgba(255,255,255,0.85); padding: 36px 24px; margin-top: 60px; text-align: center; font-size: 0.88rem; line-height: 1.7; }
+  footer .copy { margin-top: 12px; opacity: 0.6; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="head-inner">
+    <div class="logo">부동산<span>인사이트</span></div>
+    <nav class="gnb"><ul>
+      <li><a href="#">시장동향</a></li>
+      <li><a href="#">정책·규제</a></li>
+      <li><a href="#">투자분석</a></li>
+      <li><a href="#">법률·세금</a></li>
+      <li><a href="#">칼럼</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">칼럼·해설</span>
+    <h1>[칼럼] 서울 입주물량 '반토막' 시대, 누가 살아남나 — 2026 부동산 옥석가리기</h1>
+    <p class="lead">2026년 서울 입주물량 1.6만 가구, 한 해 전 대비 -48%. 6개 자치구는 신규 입주가 단 한 채도 없다. 입주 가뭄이 만든 '한정판 시장'에서 강남 3구·한강벨트는 다시 뛰는데, 지방은 60%가 하락을 점친다. 똘똘한 한 채와 옥석가리기, 진부한 단어들이 다시 살아나는 이유.</p>
+    <div class="meta-line">2026년 4월 26일 발행 · 부동산인사이트 칼럼 데스크 · 약 9분 분량</div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="label">2026년 서울 아파트 입주물량</div>
+        <div class="value">1.6만</div>
+        <div class="sub">전년 대비 -48%, 19년 만 최저 수준</div>
+      </div>
+      <div class="data-card">
+        <div class="label">전국 입주전망지수 (4월)</div>
+        <div class="value">69.3</div>
+        <div class="sub">15개월 만 70선 붕괴, 공급 우려 상징</div>
+      </div>
+      <div class="data-card">
+        <div class="label">전문가 컨센서스 (서울 매매)</div>
+        <div class="value">+3~5%</div>
+        <div class="sub">조사기관 20인 전원 상승 전망 (지방 -)</div>
+      </div>
+    </div>
+
+    <p>2026년 봄, 서울 부동산 시장의 키워드는 분명하다. <strong>'공급 가뭄'</strong>과 <strong>'양극화'</strong>. 두 단어는 사실 새로운 것도, 자극적인 것도 아니다. 부동산 시장에서 가장 진부한 어휘이기 때문이다. 그러나 진부함이 곧 무용함을 뜻하지 않는다. 익숙한 단어가 다시 살아나는 데에는 그만한 데이터적 근거가 있다는 의미다.</p>
+
+    <p>주택산업연구원의 4월 입주전망지수가 69.3을 기록했다. 70선이 무너진 것은 15개월 만이다. 동시에 서울 자치구 25개 중 6곳—<strong>관악·금천·성동·용산·종로·중랑</strong>—은 2026년 신규 아파트 입주가 단 한 가구도 없다. 입주물량의 87%가 재개발·재건축 등 정비사업에서 나온다는 사실은, 정책 의지와 무관하게 신규 택지 공급이 사실상 멈춰 있다는 구조적 현실을 드러낸다. 이런 환경에서 가격이 어떻게 움직일 것인가는 사실 묻기 민망한 질문이다.</p>
+
+    <h2>① '공급 가뭄'은 어떻게 만들어졌나 — 누구도 단독 책임자가 아닌 결과</h2>
+    <p>2026년의 공급 절벽을 '특정 정부의 실책'으로 단순화하는 것은 부정확하다. 현재 입주물량 부족은 짧게는 2022~2023년의 PF 위기와 자재값 폭등, 중기적으로는 2018~2020년의 분양가 상한제 강화와 재건축 초과이익환수, 길게는 2010년대 중반 도시정비사업 인허가 적체가 누적된 결과다. 즉, 한 정권이 만든 결과가 아니라, 약 7~10년의 정책·금융·자재 가격 사이클이 동시에 한 시점에 도달한 산물이다.</p>
+
+    <p>이 점은 향후 정책 평가에서도 동일하게 적용된다. 지금 추진되는 1기 신도시 재정비 마스터플랜, 정비사업 절차 단축, 공공정비 확대—이 정책들이 '효과를 내는 시점'은 빨라야 2030년대 초반이다. 누구도 단독 책임자가 아니듯이, 어느 정부도 단독으로 단기간에 해결할 수 없다는 것 또한 인정해야 한다.</p>
+
+    <h2>② '집값은 무조건 오른다'는 결론과 '그래서 어디?'의 거리</h2>
+    <p>전문가 컨센서스가 +3~5%라고 해서 모든 서울 아파트가 그만큼 오른다는 뜻이 아니다. 같은 조사에서 상승률 최고 지역으로 꼽힌 곳은 강남 3구(46.1%)와 한강벨트 서부·중심(20.4%), 동북측(20.4%)이다. 반대로 지방은 응답자의 59.6%가 하락을 예상했다. <strong>'서울이 오른다'는 평균값 뒤에는 강남·한강벨트의 가파른 상승과 지방 일부의 두 자릿수 하락이 동시에 숨어 있다.</strong></p>
+
+    <div class="pullquote">
+      "공급 가뭄과 양극화를 진부하다고 비웃기는 쉽다. 그러나 시장은 진부한 데이터를 진부한 결과로 응답한다. 익숙한 어휘를 무시하는 사람이 가장 비싼 수업료를 낸다."
+      <span class="who">— 부동산인사이트 칼럼 데스크</span>
+    </div>
+
+    <h2>③ '똘똘한 한 채' 신화의 재림 — 그 빛과 그늘</h2>
+    <p>2025년 말부터 다시 회자되는 '똘똘한 한 채' 전략에는 명백한 합리적 근거가 있다. 다주택 보유세 부담, 정비사업 우선순위, 학군지·역세권의 한정성, 그리고 입주물량 절벽이 만드는 희소성—이 네 가지가 한 채의 가격을 한쪽으로 몰아준다. 동시에 한 채로 자산이 집중된다는 것은 분산투자 원칙의 정반대다. 한 채가 매매 가능한 매물이 되기까지 1~2년의 시간이 걸리고, 그 동안 시장이 어떻게 변할지는 누구도 보장하지 못한다.</p>
+
+    <p>'똘똘한 한 채'를 이미 가지고 있는 사람과, 지금 만들어가려는 사람의 입장은 전혀 다르다. 전자에게는 '잘 지키고 잘 갈아타기'가 과제이고, 후자에게는 '그 한 채를 무리 없이 만들 수 있는가'가 본질이다. 후자에게 무리한 LTV 70% 영끌은 2022~2023년의 학습이 보여줬듯 가장 위험한 선택지가 될 수 있다.</p>
+
+    <h2>④ '지방은 끝났다'는 단정도 같은 함정</h2>
+    <p>지방 60% 하락 전망은 사실 '평균'의 함정이기도 하다. 지방 광역시 안에서도 부산·대전·광주의 일부 핵심 권역은 입주물량 정상화 후 회복 시그널이 보인다. 반면 도심 외곽 신축, 인구 감소 도시의 신축 단지는 분양가 대비 상당 폭의 하락이 이미 진행 중이다. 즉, 지방도 양극화의 예외가 아니다. '서울만 산다'는 외침에는 통계적 정당성이 있지만, 그 외침이 모든 지방 자산의 즉각 매각을 정당화하지는 않는다.</p>
+
+    <h2>⑤ 정책 변화 평가 — '핀셋 규제'의 피로와 '공급 패키지'의 시간차</h2>
+    <p>지난 3년간 정책 무게추는 '핀셋 규제'에서 '공급 패키지'로 분명하게 이동했다. LTV·DSR 완화, 정비사업 인허가 단축, 공공정비 확대, 1기 신도시 재정비 등은 방향 자체로는 시장이 요구하던 처방에 가깝다. 그러나 두 가지 한계가 분명하다.</p>
+    <ul>
+      <li><strong>시간차의 비대칭</strong> — 규제 완화의 효과(거래 활성화·가격 자극)는 즉각적이지만, 공급 효과(준공·입주)는 5~7년 뒤에 나타난다. 이 사이의 격차가 단기 가격 자극으로 작용한다.</li>
+      <li><strong>지역별 효과의 차이</strong> — 같은 정책이 강남·한강벨트에는 강한 자극으로, 지방·외곽에는 약한 자극으로 작동한다. '평균 정책'이 양극화를 줄이지 못하고 오히려 키울 수 있다.</li>
+    </ul>
+
+    <p>그렇다고 공급 정책 자체를 비판할 수만은 없다. 공급 사이클을 정상화하지 않으면 5년 뒤의 양극화는 지금보다 훨씬 깊어질 것이기 때문이다. <strong>옳은 방향이지만, 그 방향이 단기 변동성을 만든다는 사실 또한 인정해야 한다.</strong> 둘은 양립한다.</p>
+
+    <div class="pullquote">
+      "공급 정책의 시간차를 인정하지 않은 채 단기 가격을 비난하는 것도, 단기 가격 상승만 보고 공급 정책을 비난하는 것도 같은 종류의 게으름이다."
+      <span class="who">— 부동산인사이트 칼럼 데스크</span>
+    </div>
+
+    <h2>⑥ 실수요자·투자자를 위한 시사점</h2>
+    <ul>
+      <li><strong>'서울이 오른다'는 평균값에 속지 않는다</strong> — 25개 자치구를 한 묶음으로 보지 말고, 권역별 입주물량·정비사업 단계·학군 변수로 쪼개 본다.</li>
+      <li><strong>한 채를 만들 때 LTV 70%대 영끌 회피</strong> — 가격 변동성이 줄어든 것이 아니다. 입주물량이 늘어나는 2030년 전후의 가격 조정 국면을 견딜 수 있는 자금구조인지 점검한다.</li>
+      <li><strong>지방을 '일괄 매각' 대상으로 보지 않는다</strong> — 같은 광역시 안에서도 권역별 차이가 크다. '평균 하락'에 자기 자산을 일괄 적용하지 않는다.</li>
+      <li><strong>전·월세 시장 가뭄에 대비</strong> — 신규 입주 가뭄과 임대차 규제가 겹치며 전세난·월세난 동시 진행 가능성. 임차인은 갱신청구권 행사 타이밍, 임대인은 보증보험 한도 변화를 점검한다.</li>
+      <li><strong>해외 자산 분산은 옵션이지 정답이 아니다</strong> — 미국 부동산 직구가 모두에게 답은 아니다. 직접보유보다 달러표시 펀드·리츠가 5~10억 자산대에 합리적일 수 있다.</li>
+    </ul>
+
+    <h2>⑦ 결론 — '진부한 단어'를 다시 진지하게</h2>
+    <p>공급 가뭄, 양극화, 똘똘한 한 채, 옥석가리기. 모두 진부한 단어들이다. 그러나 진부하다는 것은 효과가 없다는 뜻이 아니라, 너무 자주 맞아서 사람들이 무뎌졌다는 뜻이다. 2026년 서울 아파트 입주물량이 1.6만 가구라는 단 한 줄의 수치는, 그 진부한 단어들을 다시 진지하게 쓰는 것이 가장 합리적인 선택임을 알려준다. 시장은 새로운 어휘가 아니라, 익숙한 어휘를 정확하게 쓰는 사람에게 보상을 한다.</p>
+
+    <div class="disclaimer">
+      ※ 본 칼럼은 공개된 시장 데이터와 연구기관 보고서, 언론 보도를 종합해 작성된 견해 콘텐츠입니다. 특정 지역·단지·자산에 대한 매매 권유가 아니며, 모든 투자·매매 결정은 본인의 책임 아래 이뤄져야 합니다. 본 콘텐츠는 작성 시점의 데이터를 기준으로 하며, 정책·금리·공급 환경 변화에 따라 견해가 수정될 수 있습니다.
+    </div>
+
+    <div class="tags">
+      <span>#서울아파트</span>
+      <span>#입주물량</span>
+      <span>#양극화</span>
+      <span>#똘똘한한채</span>
+      <span>#공급가뭄</span>
+      <span>#부동산칼럼</span>
+      <span>#정책평가</span>
+      <span>#옥석가리기</span>
+    </div>
+
+  </article>
+
+  <aside>
+    <div class="widget summary-box">
+      <h4>핵심 요약 5</h4>
+      <ul>
+        <li>서울 입주물량 1.6만 가구—전년 대비 -48%, 19년 만 최저</li>
+        <li>관악·금천·성동·용산·종로·중랑 6개 자치구 신규 입주 전무</li>
+        <li>전문가 20인 전원 서울 +3~5% 상승 전망, 지방은 60%가 하락 예측</li>
+        <li>핀셋규제→공급패키지로 정책 무게추 이동, 효과 시간차 5~7년</li>
+        <li>'똘똘한 한 채'는 이미 보유자에게 유효, 만드는 사람에게는 영끌 함정</li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <h4>2026 매수 전략 사다리</h4>
+      <div class="ladder">
+        <div class="ladder-row"><span class="lvl">상위</span><span class="desc">정비사업 본격화 단지 + 학군·교통 트리플 매칭</span></div>
+        <div class="ladder-row"><span class="lvl">중상</span><span class="desc">한강벨트 외곽 + 입주물량 0인 자치구 신축</span></div>
+        <div class="ladder-row"><span class="lvl">중위</span><span class="desc">서울 외곽 1기·2기 신도시 핵심 권역 갈아타기</span></div>
+        <div class="ladder-row"><span class="lvl">하위</span><span class="desc">지방 광역시 핵심 권역 (광주·대전·부산 일부)</span></div>
+        <div class="ladder-row"><span class="lvl">제외</span><span class="desc">인구 감소 도시 신축, 분양가 고점 외곽 단지</span></div>
+      </div>
+    </div>
+
+    <div class="widget">
+      <h4>관련 기사</h4>
+      <ul class="related-list">
+        <li><span class="tag">시장동향</span>입주전망지수 69.3—15개월 만 70선 붕괴, 무엇을 말하나</li>
+        <li><span class="tag">정책</span>1기 신도시 재정비 마스터플랜의 시간차와 부담</li>
+        <li><span class="tag">재개발재건축</span>정비사업 인허가 단축, 어디서 먼저 효과 나올까</li>
+        <li><span class="tag">투자분석</span>'똘똘한 한 채' 다시 회자되는 4가지 데이터적 이유</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  부동산인사이트 · 발행처 부동산인사이트 데스크 · 문의 namho1123@gmail.com
+  <div class="copy">© 2026 부동산인사이트. 본 칼럼은 분석·견해를 포함한 콘텐츠로, 투자 결정의 단독 근거로 사용하실 수 없습니다.</div>
+</footer>
+
+</body>
+</html>
