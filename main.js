@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 54,
+    url: 'article_20260426_2_column_v2.html',
+    category: '칼럼',
+    title: '서울 입주물량 \'반토막\' 시대, 누가 살아남나 — 2026 부동산 옥석가리기',
+    summary: '2026년 서울 입주물량 1.6만 가구, 한 해 전 대비 -48%. 6개 자치구는 신규 입주가 단 한 채도 없다. 입주 가뭄이 만든 \'한정판 시장\'에서 강남 3구·한강벨트는 다시 뛰는데, 지방은 60%가 하락을 점친다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 칼럼 데스크',
+    date: '2026-04-26',
+    title_en: 'Seoul Move-in Supply Cut in Half — Who Survives in the 2026 Real Estate Sorting',
+    summary_en: 'Seoul move-in supply at 16,000 units in 2026, down 48% YoY. Six districts have zero new move-ins. In the limited market created by supply drought, Gangnam 3 and Han River belt surge while 60% of regional markets face decline.'
+  },
+  {
+    id: 53,
+    url: 'article_20260426_1_overseas_v2.html',
+    category: '해외',
+    title: '美 모기지 6%대 안착, 한국 자산가 \'미국 직구\' 골든타임 왔나 — 2026 해외부동산 양극화 시대',
+    summary: '3년 반 만에 5%대를 두드린 미국 모기지 금리, \'바이어 마켓\'으로 돌아선 美 주택시장. 마이애미·피닉스에서는 1년 새 17% 폭락 사례가 속출. 한국 자산가에게 지금 미국 부동산은 기회의 창인가, 뒤늦은 폭탄돌리기인가.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 해외부동산 데스크',
+    date: '2026-04-26',
+    title_en: 'US Mortgage Settles at 6% — Golden Time for Korean Investors to Buy American Real Estate?',
+    summary_en: 'US mortgage rates hitting 5% range for the first time in 3.5 years as the housing market shifts to a buyer\'s market. Miami and Phoenix see 17% crashes. Is US real estate a window of opportunity or a late-stage hot potato for Korean investors?'
+  },
+  {
     id: 52,
     url: 'article_20260425_2_investment_v2.html',
     category: '투자분석',
