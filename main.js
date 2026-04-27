@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 56,
+    url: 'article_20260427_2_policy_v2.html',
+    category: '정책',
+    title: 'D-12, 다주택자 \'매도 시계\' 째깍째깍…양도세 중과 유예 5월 9일 종료, 무엇이 달라지나',
+    summary: '5월 9일 다주택자 양도세 중과 유예가 종료된다. 4월 17일자 만기연장 금지까지 겹쳐 매물 압력이 임계점에 도달했다. 2주택 +20%p, 3주택 +30%p 중과 부활이 시장에 던지는 3가지 질문.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-27',
+    title_en: 'D-12: Multi-Home Owner Countdown — Capital Gains Tax Surcharge Returns May 9, What Changes?',
+    summary_en: 'The multi-home owner capital gains tax exemption expires May 9. Combined with the April 17 mortgage extension ban, selling pressure reaches a tipping point. Three questions the +20~30%p surcharge revival poses to the market.'
+  },
+  {
+    id: 55,
+    url: 'article_20260427_1_market_v2.html',
+    category: '시장동향',
+    title: '송파 9주 만에 \'V자\' 반등…강북 외곽까지 번진 갭 매우기, 시장은 진짜 돌아선 걸까',
+    summary: '4월 3주 서울 아파트 0.15% 상승, 9주 연속 하락하던 송파가 반등하고 강서·관악·성북 외곽이 0.3% 가까이 뛰었다. 갭 매우기인가, 추세 전환인가. 데이터로 풀어본 시장 체온의 진짜 의미.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-04-27',
+    title_en: 'Songpa\'s V-Shaped Rebound After 9 Weeks — Gap Filling Spreads to Northern Seoul, Is the Market Really Turning?',
+    summary_en: 'Seoul apartments rise 0.15% in the third week of April. Songpa rebounds after 9 weeks of decline, outer districts like Gangseo and Gwanak jump nearly 0.3%. Gap filling or trend reversal? A data-driven analysis.'
+  },
+  {
     id: 54,
     url: 'article_20260426_2_column_v2.html',
     category: '칼럼',
