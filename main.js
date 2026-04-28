@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 58,
+    url: 'article_20260428_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '분당 양지마을 첫 깃발…1기 신도시 80조 재건축 시장 \'대격돌\' 시작됐다',
+    summary: '분당이 1기 신도시 첫 특별정비구역을 잡으며 질주하고, 일산은 일정이 1년 밀리면서 격차가 벌어진다. 12조 미래도시펀드와 80조 정비사업 시장을 둘러싼 시공사 수주전, 그리고 분담금이 만들 진짜 승자의 조건을 분석했다.',
+    image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1200&q=80',
+    author: '부동산인사이트 정비사업 데스크',
+    date: '2026-04-28',
+    title_en: 'Bundang Yangji Village Raises the First Flag — The 80 Trillion KRW 1st Gen New City Reconstruction \'Clash\' Begins',
+    summary_en: 'Bundang races ahead as the first special redevelopment zone in 1st gen new cities, while Ilsan\'s schedule slips by a year. Analyzing the contractor bidding wars around the 12 trillion Future City Fund and 80 trillion redevelopment market, and the real conditions for winners determined by contribution assessments.'
+  },
+  {
+    id: 57,
+    url: 'article_20260428_1_subscription_v2.html',
+    category: '분양',
+    title: '4월 분양 폭탄 4만7천 가구…아크로 드 서초 6,710대 1, \'청약 광풍\'의 진실',
+    summary: '물량은 3월 대비 1.8배 폭증, 그러나 가점 100만 명이 동시에 몰리는 \'추첨제 광풍\'은 강남에 집중된다. 6월 지방선거 전 행정 일정을 노린 4·7월 공급 집중과 분양가 양극화의 구조를 데이터로 풀었다.',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
+    author: '부동산인사이트 분양·청약 데스크',
+    date: '2026-04-28',
+    title_en: 'April Presale Bomb: 47,000 Units — Acro de Seocho 6,710:1, The Truth Behind the \'Subscription Frenzy\'',
+    summary_en: 'Supply surges 1.8x vs March, but the lottery frenzy concentrating on Gangnam. Data-driven analysis of the April-July supply concentration timed before the June local elections and the polarization of presale prices.'
+  },
+  {
     id: 56,
     url: 'article_20260427_2_policy_v2.html',
     category: '정책',
