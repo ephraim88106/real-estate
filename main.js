@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 60,
+    url: 'article_20260429_2_overseas_v2.html',
+    category: '해외',
+    title: '"강남 한 채 팔면 도쿄 두 채" 엔저·달러강세에 한국 자본이 떠나기 시작했다',
+    summary: '2026년 도쿄 도심 5구 주거자산은 외국인 수요로 견조한 상승, 하노이는 회복기 진입. 다주택 규제로 출구 막힌 한국 투자자들의 해외 부동산 러시를 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 해외부동산 데스크',
+    date: '2026-04-29',
+    title_en: '"Sell One Gangnam Apartment, Buy Two in Tokyo" — Korean Capital Begins to Flee Amid Weak Yen and Strong Dollar',
+    summary_en: 'Tokyo\'s central 5-ward residential assets rise steadily on foreign demand, while Hanoi enters recovery. Analyzing the overseas real estate rush by Korean investors blocked by multi-home regulations.'
+  },
+  {
+    id: 59,
+    url: 'article_20260429_1_investment_v2.html',
+    category: '투자분석',
+    title: '"이젠 진짜 도망갈 길이 없다" 4·17 만기연장 금지가 강남 경매를 무너뜨렸다',
+    summary: '2026년 4월 17일 다주택자 주담대 만기연장 금지 시행 이후 강남 낙찰가율 6.1%p 급락. 갭투자 시대의 종언과 실수요 중심 경매 시장 재편을 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 투자분석 데스크',
+    date: '2026-04-29',
+    title_en: '"No Way Out Now" — The 4.17 Mortgage Extension Ban Crushed Gangnam Auctions',
+    summary_en: 'After the multi-home owner mortgage extension ban took effect on April 17, 2026, Gangnam auction winning rates plunged 6.1%p. Analyzing the end of the gap investment era and the market\'s shift to real-demand-driven auctions.'
+  },
+  {
     id: 58,
     url: 'article_20260428_2_redevelopment_v2.html',
     category: '재개발',
