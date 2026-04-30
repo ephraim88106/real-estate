@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>금리·세금·공급 삼중 압박... 2026년 봄, 부동산 시장은 정말 위기인가 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.8; color: #222; background: #f7f7f5; }
+h1, h2, h3, .serif { font-family: 'Noto Serif KR', serif; }
+
+/* Header */
+.site-header { background: #0D2B55; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.header-inner { max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.logo { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 22px; color: #fff; text-decoration: none; }
+.nav { display: flex; gap: 22px; flex-wrap: wrap; }
+.nav a { color: #cfd8e3; text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
+.nav a:hover { color: #F4A52D; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%); color: #fff; padding: 64px 24px 56px; }
+.hero-inner { max-width: 1200px; margin: 0 auto; }
+.cat-tag { display: inline-block; background: #6A6A10; color: #fff; padding: 5px 14px; font-size: 12px; font-weight: 700; letter-spacing: 1px; border-radius: 2px; margin-bottom: 18px; }
+.hero h1 { font-size: 38px; line-height: 1.35; margin-bottom: 20px; font-weight: 700; }
+.hero-meta { font-size: 14px; color: #e0e0c8; }
+.hero-meta span { margin-right: 14px; }
+
+/* Layout */
+.container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+.article { background: #fff; padding: 44px 48px; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+
+/* Article body */
+.lead { font-size: 19px; line-height: 1.8; color: #1a1a1a; font-weight: 500; margin-bottom: 30px; padding-bottom: 24px; border-bottom: 1px solid #eee; }
+.article p { font-size: 16.5px; margin-bottom: 18px; color: #2a2a2a; }
+.article h2 { font-size: 25px; margin: 38px 0 18px; padding-left: 14px; border-left: 4px solid #6A6A10; line-height: 1.4; color: #1a1a1a; }
+.article h3 { font-size: 19px; margin: 26px 0 12px; color: #2a2a0a; }
+.article ul { margin: 12px 0 22px 22px; }
+.article ul li { margin-bottom: 9px; line-height: 1.75; font-size: 16px; }
+
+/* Data box */
+.data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0 32px; }
+.data-card { background: #f4f4e0; border-top: 3px solid #6A6A10; padding: 18px 16px; border-radius: 4px; text-align: center; }
+.data-card .label { font-size: 12px; color: #5a5a08; font-weight: 700; letter-spacing: .5px; }
+.data-card .value { font-size: 26px; font-weight: 700; font-family: 'Noto Serif KR', serif; color: #2A2A0A; margin: 6px 0 4px; }
+.data-card .desc { font-size: 12px; color: #555; }
+
+/* Pull quote */
+.pull-quote { background: #f7f7e8; border-left: 5px solid #6A6A10; padding: 22px 26px; margin: 28px 0; font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 19px; line-height: 1.7; color: #2a2a0a; border-radius: 0 4px 4px 0; }
+
+/* Disclaimer */
+.disclaimer { margin-top: 36px; padding: 18px 22px; background: #f0f0ec; border-radius: 4px; font-size: 13px; color: #666; line-height: 1.7; }
+
+/* Sidebar */
+.sidebar { display: flex; flex-direction: column; gap: 22px; }
+.widget { background: #fff; border-radius: 6px; padding: 22px 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+.widget h4 { font-family: 'Noto Serif KR', serif; font-size: 16px; color: #6A6A10; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #6A6A10; letter-spacing: .5px; }
+.widget ul { list-style: none; }
+.widget ul li { font-size: 14px; padding: 8px 0; border-bottom: 1px dashed #e8e8e0; line-height: 1.55; }
+.widget ul li:last-child { border-bottom: none; }
+.widget ul li.bullet::before { content: "■"; color: #6A6A10; margin-right: 8px; font-size: 10px; }
+.related-list a { color: #333; text-decoration: none; }
+.related-list a:hover { color: #6A6A10; }
+.compare-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.compare-table th, .compare-table td { padding: 7px 6px; border-bottom: 1px solid #eee; text-align: left; }
+.compare-table th { background: #f7f7e8; color: #6A6A10; font-weight: 700; }
+
+/* Footer */
+.site-footer { background: #0D2B55; color: #cfd8e3; padding: 36px 24px 24px; margin-top: 60px; text-align: center; }
+.site-footer .logo { color: #fff; font-size: 18px; }
+.site-footer p { font-size: 13px; margin-top: 12px; line-height: 1.7; color: #9faec0; }
+
+/* Mobile */
+@media (max-width: 900px) {
+  .container { grid-template-columns: 1fr; padding: 24px 16px; gap: 28px; }
+  .article { padding: 28px 22px; }
+  .hero h1 { font-size: 26px; }
+  .hero { padding: 40px 18px; }
+  .data-box { grid-template-columns: 1fr; }
+  .nav { gap: 14px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span style="color:#F4A52D">인사이트</span></a>
+    <nav class="nav">
+      <a href="#">시장동향</a><a href="#">정책·규제</a><a href="#">투자분석</a><a href="#">법률·세금</a><a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">칼럼·해설</span>
+    <h1>금리·세금·공급 삼중 압박... 2026년 봄, 부동산 시장은 정말 위기인가</h1>
+    <div class="hero-meta">
+      <span>📅 2026년 4월 30일</span><span>✍️ 부동산인사이트 논설위원</span><span>⏱ 읽는시간 9분</span>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+<article class="article">
+
+<p class="lead">2026년 4월의 부동산 시장은 한 마디로 '복합 압박(Complex Pressure) 국면'이다. 주담대 금리 상단이 7%를 돌파했고, 5월 9일 다주택자 양도세 중과 유예가 종료되며, 입주 물량은 전년 대비 28% 급감한다. 세 변수가 동시에 시장의 기초 체력을 시험하는, 지난 10년에서 보기 드문 형국이다. 그러나 단순히 '위기'라는 한 단어로 묶어버리기에는 시장의 결이 지나치게 갈라져 있다. 강남에서는 신고가가 쏟아지고, 지방에서는 미분양이 쌓이며, 서울 외곽에서는 매물이 사라진다. 본 칼럼은 이 시장이 정말 위기인지, 아니면 구조적 재편의 통과의례인지에 대한 진단을 시도한다. <strong>(분석·견해)</strong></p>
+
+<div class="data-box">
+  <div class="data-card"><div class="label">주담대 금리 상단</div><div class="value">7.05%</div><div class="desc">2026년 4월 시중은행 평균</div></div>
+  <div class="data-card"><div class="label">아파트 입주전망지수</div><div class="value">69.3</div><div class="desc">15개월 만에 70선 붕괴</div></div>
+  <div class="data-card"><div class="label">2026년 입주물량</div><div class="value">17.2만</div><div class="desc">전년 대비 ▲28% 감소</div></div>
+</div>
+
+<p>주택산업연구원이 4월 발표한 아파트 입주전망지수는 전월(94.4) 대비 25.1포인트 급락한 69.3을 기록했다. 70선이 무너진 것은 15개월 만이다. 통상 100을 기준으로 그 위면 입주 여건이 양호함을, 아래면 비관적임을 의미한다. 70선 붕괴는 <strong>시장 참여자가 '잔금 마련에 어려움을 겪고 있다'</strong>는 신호다. 그 뒤에는 세 가지 거시적 압력이 있다. 금리, 세금, 그리고 공급이다. <strong>(사실 보도)</strong></p>
+
+<p>금융위원회는 4월 17일부로 다주택자와 임대사업자가 보유한 수도권·규제지역 아파트 담보대출의 만기 연장을 원칙적으로 금지하는 조치를 시행했다. 같은 시기 주택신용보증기금 출연요율도 대출액 구간별로 차등 적용되기 시작했다. 평균 대출액 이하는 0.05%, 평균의 2배 초과는 0.3%로, 고액 대출자에 대한 비용 부담이 6배까지 벌어진다. 시장은 이를 '준 LTV 강화'로 해석한다. <strong>(사실 보도)</strong></p>
+
+<h2>1. 금리: 7%의 심리적 분기점, 단순한 비용 문제가 아니다</h2>
+
+<p>2026년 봄을 기점으로 주담대 금리 상단이 7%를 돌파한 것은 단순한 금융 비용의 증가를 넘어선다. 이는 가계의 가처분 소득을 잠식하고, 부동산 투자의 기대 수익률을 근본적으로 훼손하는 결정적 계기다. 5억 원을 30년 원리금균등 상환으로 빌렸다고 가정해보자. 금리 4%에서는 월 상환액이 약 239만 원이지만, 7%에서는 약 333만 원으로 증가한다. 매월 94만 원, 연간 1,128만 원이 더 빠져나간다. 이는 평균적인 4인 가구의 외식·여가비를 통째로 가져가는 수준이다. <strong>(분석)</strong></p>
+
+<p>더 중요한 점은 '심리적 분기점'이다. 7%라는 숫자는 한국 가계 부채의 평균 가중 금리가 한 번도 안정적으로 머물러 본 적이 없는 영역이다. 지난 10년간 가계는 4~5%대 금리를 가정한 위에 자산 포트폴리오를 짰고, 부동산 투자의 기대 수익률 역시 그 가정 위에 올라가 있다. 7%가 고착화되면 이 가정 자체가 무너진다.</p>
+
+<div class="pull-quote">
+"7%는 단순한 금리가 아니다. 지난 10년간 한국 가계가 자산을 굴려온 운영체제(OS)가 더 이상 작동하지 않는다는 신호다. 시장은 새 운영체제를 찾기 전까지 격렬히 흔들릴 것이다."
+</div>
+
+<h2>2. 세금: 5월 9일이라는 절벽, 진짜 압력은 그 다음에 온다</h2>
+
+<p>다주택자 양도세 중과 유예가 5월 9일 종료된다. 매도하려면 그 전에 계약을 마쳐야 하고, 4~6개월 안에 잔금과 등기까지 끝내야 중과를 피한다. 정부는 토지거래허가 신청분도 예외로 인정하는 보완책을 내놨지만, 시장의 핵심 질문은 다른 곳에 있다. <strong>유예 종료 후, 다주택자가 '버티기'를 선택할 것인가, '던지기'를 선택할 것인가</strong>다. <strong>(분석)</strong></p>
+
+<p>역사적으로 보면, 단기 절벽 효과는 짧다. 5월 9일 직전까지는 급매가 일부 출회되겠지만, 이후에는 오히려 매물이 잠긴다. 중과세를 감수하면서까지 팔 이유가 사라지기 때문이다. 결국 양도세 중과 부활은 단기적으로는 '급매 출회'를, 중기적으로는 '매물 동결'을 동시에 만든다. 매도자에게는 부담이지만, 시장 전체 거래량은 오히려 줄어드는 역설이 발생한다. <strong>(견해)</strong></p>
+
+<h3>'버티기'를 선택하는 다주택자가 더 많을 이유</h3>
+
+<p>현재 한국의 다주택자 상당수는 60대 이상이고, 자산의 70~80%가 부동산에 묶여 있다. 양도차익이 큰 강남권 보유자라면 중과세를 감수하고 매도할 경우 차익의 절반 이상을 세금으로 내야 한다. 이런 상황에서 합리적 선택은 '상속이나 증여까지 보유'다. 정부가 의도한 '매물 출회 → 가격 안정' 시나리오가 작동하지 않는 이유다.</p>
+
+<h2>3. 공급: 28% 감소라는 시한폭탄, 2027년 봄에 터진다</h2>
+
+<p>2026년 연간 전국 아파트 입주 물량은 17만 2,270세대로, 2025년(23만 8,372세대) 대비 28% 감소한다. 이는 단순한 공급 가뭄이 아니다. <strong>2~3년 전 분양가상한제와 PF(프로젝트 파이낸싱) 경색으로 신규 인허가가 급감한 결과가 이제 입주물량으로 현실화되는 것</strong>이다. 더 큰 문제는 2027년이다. 2026년에 인허가를 받지 못한 단지는 2028~2029년 입주 절벽으로 이어진다. <strong>(분석)</strong></p>
+
+<p>공급 감소는 전세시장에 가장 먼저 충격을 준다. 4월 둘째 주 서울 전셋값이 0.16% 상승하며 매매가 상승률을 추월한 것은 이 신호다. 매매는 금리 부담으로 둔화되지만, 전세는 공급 부족으로 오른다. 결과는 전세가율 상승, 그리고 갭투자 부활의 토양 조성이다. 정부가 가장 경계해야 할 시나리오다. <strong>(견해)</strong></p>
+
+<div class="pull-quote">
+"공급 가뭄과 금리 고착이 동시에 진행되는 시장은 한 번도 본 적이 없다. 매매는 차갑게, 전세는 뜨겁게 — 우리는 한 시장의 두 얼굴을 동시에 마주하게 될 것이다."
+</div>
+
+<h2>4. 정책 평가: 정부의 '균형 잡힌 메시지'는 균형이 아니다</h2>
+
+<p>정부는 4월 들어 두 갈래 신호를 동시에 보내고 있다. 한쪽으로는 다주택자 대출 만기 연장 금지, 출연요율 차등화로 '돈줄'을 죈다. 다른 쪽으로는 양도세 유예 종료의 보완책, 1주택 실수요자 대상 잔금대출 우대 등 '숨통'을 열어준다. 표면적으로는 정교하지만, 실제로는 <strong>다주택자에게는 출구를, 무주택자에게는 입구를 좁히는 결과</strong>를 낳는다. <strong>(견해)</strong></p>
+
+<p>대출 규제의 강화는 결과적으로 현금 부자에게 유리한 시장 구조를 만든다. 7% 금리에 30년 대출을 일으키느니, 보유 현금으로 외곽 중저가 매물을 사들이는 자산가들이 늘고 있다. 4월 도봉·강북·관악 9억 원 미만 단지가 1.1~1.3% 오른 것은 그 결과다. 정책의 의도와 시장의 반응이 어긋나는 전형적인 사례다. <strong>(분석)</strong></p>
+
+<h2>5. 실수요자·투자자가 지금 점검해야 할 것</h2>
+
+<ul>
+<li><strong>대출 시뮬레이션을 7%, 8% 시나리오로 다시 돌려보라.</strong> 5%로 계산한 가계 현금흐름은 더 이상 유효하지 않다. 2년 후 금리 인하를 가정한 베팅은 지난 10년의 감각이지, 지금의 감각이 아니다.</li>
+<li><strong>다주택 보유자라면 5월 9일 이전 매도를 '꼭 매도해야 하는 물건'에 한정하라.</strong> 차익이 작거나 임대 수익이 약한 물건이 우선이다. 핵심 자산은 중과세를 감수하더라도 보유가 합리적일 가능성이 높다.</li>
+<li><strong>전세시장의 변동을 매매보다 먼저 추적하라.</strong> 입주물량 감소는 전세에 6~9개월 먼저 영향을 준다. 전세가율이 70%를 넘는 지역은 다음 사이클의 매매 상승 후보지다.</li>
+<li><strong>지방 vs 수도권의 양극화를 인정하라.</strong> 지방 중소도시는 공급 과잉 조정이 길게 이어질 가능성이 높다. '평균 시장'은 더 이상 존재하지 않는다.</li>
+<li><strong>현금 비중을 늘리되, 너무 오래 들고 있지 말라.</strong> 2026년 하반기~2027년 상반기는 양극화된 매수 기회의 창이 열릴 가능성이 있다. 무리한 베팅보다는 준비된 베팅이다.</li>
+<li><strong>임대차 시장 정책 변화를 주시하라.</strong> 전월세 상한제, 등록임대 부활 논의가 다시 정치권에서 떠오를 가능성이 있다. 임대차 관련 규제는 갭투자와 직접 연동된다.</li>
+</ul>
+
+<h2>결론: 이것은 위기인가, 통과의례인가</h2>
+
+<p>2026년 봄 부동산 시장을 단순한 '위기'로 묶는 것은 부정확하다. 강남과 마용성에서는 신고가가 쏟아지고 있고, 외곽 중저가 단지들도 1%대 상승을 이어간다. 동시에 지방과 일부 수도권 외곽에서는 거래 절벽과 미분양이 쌓인다. 이는 위기라기보다는 <strong>'시장이 두 개로 갈라지는 구조적 재편'</strong>에 가깝다. <strong>(견해)</strong></p>
+
+<p>금리·세금·공급의 삼중 압박은 약한 자산을 시장 밖으로 밀어내고, 강한 자산은 더욱 강하게 만드는 양극화의 가속 페달이다. 무주택 실수요자에게 이 시기는 가혹하다. 그러나 동시에 한국 부동산 시장이 '평균의 시대'에서 '선택의 시대'로 넘어가는 분기점이기도 하다. 위기와 기회는 같은 동전의 양면이고, 그 동전을 어느 쪽으로 던지느냐는 결국 정보의 질과 판단의 속도에 달려 있다. 봄은 뜨겁지만, 정신은 차가워야 한다. <strong>(견해)</strong></p>
+
+<div class="disclaimer">
+※ 본 기사는 공개된 통계와 정책 발표를 기초로 작성된 칼럼입니다. 시장 전망 및 정책 평가는 필자의 견해이며, 투자 자문이 아닙니다. 모든 투자 판단의 책임은 독자 본인에게 있으며, 구체적 거래·세무 결정은 반드시 공인중개사·세무사 등 전문가와 상의하시기 바랍니다.
+</div>
+
+</article>
+
+<aside class="sidebar">
+
+<div class="widget">
+<h4>핵심 요약</h4>
+<ul>
+<li class="bullet">주담대 7% 시대, 가계 OS가 더 이상 작동하지 않는다</li>
+<li class="bullet">5월 9일 양도세 중과 부활 → 단기 급매, 중기 매물 동결</li>
+<li class="bullet">2026년 입주물량 17.2만 세대, 전년 대비 28% 급감</li>
+<li class="bullet">매매는 차갑게, 전세는 뜨겁게 — 한 시장의 두 얼굴</li>
+<li class="bullet">위기가 아니라 양극화의 가속, '평균의 시대'는 끝</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>관련 기사</h4>
+<ul class="related-list">
+<li><a href="#">강남 신고가 vs 강북 거래절벽, 4월 시장의 분열</a></li>
+<li><a href="#">5·9 양도세 데드라인, 다주택자 매도 전략은</a></li>
+<li><a href="#">입주전망지수 69.3, 15개월 만의 최저치 의미</a></li>
+<li><a href="#">금리 7% 시대의 가계 현금흐름 시뮬레이션</a></li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>3대 압력 비교</h4>
+<table class="compare-table">
+<tr><th>변수</th><th>현재값</th><th>1년 전</th></tr>
+<tr><td>주담대 상단</td><td>7.05%</td><td>5.40%</td></tr>
+<tr><td>입주전망</td><td>69.3</td><td>87.5</td></tr>
+<tr><td>입주물량</td><td>17.2만</td><td>23.8만</td></tr>
+<tr><td>다주택 양도세</td><td>중과 임박</td><td>유예중</td></tr>
+</table>
+</div>
+
+</aside>
+
+</main>
+
+<footer class="site-footer">
+<div class="logo">부동산<span style="color:#F4A52D">인사이트</span></div>
+<p>한국 부동산 시장의 깊이 있는 분석과 전문가 견해<br>© 2026 RealEstate Insight. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
