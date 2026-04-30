@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 62,
+    url: 'article_20260430_2_market_v2.html',
+    category: '시장동향',
+    title: '강남은 신고가, 강북은 거래절벽... 4월 서울 아파트 시장의 \'두 개의 그래프\'',
+    summary: '강남·용산·성동 핵심 지역은 분기 누적 상승률 2%를 넘기며 신고가가 쏟아지는 반면, 강북 외곽과 노원·도봉에서는 거래량이 절반으로 꺾였다. 같은 서울이지만 두 개의 시장이 동시에 진행되는 4월 시장을 데이터로 해부한다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 시장동향 취재팀',
+    date: '2026-04-30',
+    title_en: 'Gangnam Hits Record Highs While Gangbuk Faces Transaction Cliff — Seoul\'s April Apartment Market in Two Graphs',
+    summary_en: 'Core areas like Gangnam, Yongsan, and Seongdong exceed 2% quarterly cumulative gains with record-high transactions, while Gangbuk outskirts and Nowon-Dobong see volumes halved. A data-driven dissection of two simultaneous markets within Seoul.'
+  },
+  {
+    id: 61,
+    url: 'article_20260430_1_column_v2.html',
+    category: '칼럼',
+    title: '금리·세금·공급 삼중 압박... 2026년 봄, 부동산 시장은 정말 위기인가',
+    summary: '주담대 금리 상단 7% 돌파, 5월 9일 양도세 중과 유예 종료, 입주물량 28% 급감. 세 변수가 동시에 시장을 시험하지만, 단순히 \'위기\'로 묶기엔 시장의 결이 지나치게 갈라져 있다. 구조적 재편의 통과의례인가.',
+    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=80',
+    author: '부동산인사이트 논설위원',
+    date: '2026-04-30',
+    title_en: 'Interest Rates, Taxes, Supply — Triple Pressure: Is Korea\'s Spring 2026 Real Estate Market Truly in Crisis?',
+    summary_en: 'Mortgage rates breach 7%, the capital gains tax surcharge exemption expires May 9, and move-in supply drops 28%. Three variables test the market simultaneously, but the fractures run too deep for a simple crisis label. Is this a structural transition rite of passage?'
+  },
+  {
     id: 60,
     url: 'article_20260429_2_overseas_v2.html',
     category: '해외',
