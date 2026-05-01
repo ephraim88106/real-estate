@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 64,
+    url: 'article_20260501_2_subscription_v2.html',
+    category: '분양',
+    title: '5월 청약 대전 개막! 1.1만 가구 쏟아지는데…서울 입주 절벽 \'57% 급감\'의 진짜 의미',
+    summary: '2분기 수도권 공공분양 1만 1,514가구 쏟아진다. 5월 성남 낙생·고덕국제·화성동탄2 등 알짜 단지 줄줄이 등장. 서울 입주물량은 57% 급감. 청약자에게 가장 중요한 건 무엇인가.',
+    image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
+    author: '부동산인사이트 분양·청약 취재팀',
+    date: '2026-05-01',
+    title_en: 'May Subscription Battle Begins! 11,000 Units Flooding In While Seoul Move-in Supply Plunges 57%',
+    summary_en: 'Over 11,514 public presale units hit the metropolitan area in Q2. Prime complexes including Seongnam Naksaeng, Godeok International, and Hwaseong Dongtan 2 line up in May. Seoul move-in supply drops 57%. What matters most for applicants.'
+  },
+  {
+    id: 63,
+    url: 'article_20260501_1_taxregulation_v2.html',
+    category: '정책',
+    title: 'D-9 양도세 중과 부활 카운트다운…25억 주담대 2억 시대, 다주택자 매물폭탄 터지나?',
+    summary: '2026년 5월 9일 다주택자 양도세 중과배제 종료, 25억 초과 주택 주담대 2억 한도, 1주택자 전세대출 DSR 산입까지. 정책 규제 3종 세트가 시장을 어떻게 흔들고 있는지 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 정책 취재팀',
+    date: '2026-05-01',
+    title_en: 'D-9 Capital Gains Tax Surcharge Countdown — With 2.5B KRW Mortgage Cap at 200M, Will Multi-Home Owners Trigger a Listing Bomb?',
+    summary_en: 'The multi-home owner capital gains tax surcharge exemption ends May 9, 2026. Combined with the 200M mortgage cap for homes over 2.5B KRW and jeonse loan DSR inclusion for single-home owners, this triple regulatory package is shaking the market.'
+  },
+  {
     id: 62,
     url: 'article_20260430_2_market_v2.html',
     category: '시장동향',
