@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 66,
+    url: 'article_20260505_2_redevelop_v2.html',
+    category: '재개발',
+    title: '압여목성 시대의 서막 — 토허구역 연장과 시공사 선정, 서울 재건축의 뜨거운 봄',
+    summary: '압구정·여의도·목동·성수 4대 재건축 선도지구의 시공사 선정, 토지거래허가구역 연장, 80조 정비사업 시장의 실체를 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1200&q=80',
+    author: '부동산인사이트 정비사업 취재팀',
+    date: '2026-05-05',
+    title_en: 'Dawn of the AYMS Era — Land Transaction Zone Extensions and Constructor Selection in Seoul\'s Hot Reconstruction Spring',
+    summary_en: 'Analyzing constructor selection for the four major reconstruction pilot districts — Apgujeong, Yeouido, Mokdong, and Seongsu — along with land transaction permit zone extensions and the reality of the 80 trillion KRW redevelopment market.'
+  },
+  {
+    id: 65,
+    url: 'article_20260505_1_cheongak_v2.html',
+    category: '분양',
+    title: '고분양가도 못 막는다 — 5월 수도권 분양 빅매치 완전 해부',
+    summary: '써밋 더힐·장위 푸르지오 마크원·공공분양까지, 5월 수도권 분양 시장을 완전 분석합니다. 고분양가 시대 청약 전략과 실수요자 시사점까지.',
+    image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
+    author: '부동산인사이트 분양·청약 취재팀',
+    date: '2026-05-05',
+    title_en: 'High Presale Prices Can\'t Stop Them — Complete Dissection of May\'s Metropolitan Area Presale Big Match',
+    summary_en: 'From Summit The Hill to Jangwi Prugio Mark One to public presale, a complete analysis of May\'s metropolitan presale market. Subscription strategies and implications for real-demand buyers in the era of high presale prices.'
+  },
+  {
     id: 64,
     url: 'article_20260501_2_subscription_v2.html',
     category: '분양',
