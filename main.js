@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 68,
+    url: 'article_20260506_2_overseas_v2.html',
+    category: '해외',
+    title: '미국도 일본도 다 오른다…한국인이 해외 부동산에 눈 돌리는 진짜 이유',
+    summary: '국내 규제와 세제 부담이 한계에 달하면서 해외 부동산으로 눈을 돌리는 한국 투자자들이 늘고 있다. 미국·일본·동남아 시장의 현황과 진짜 기회, 그리고 반드시 알아야 할 리스크까지 낱낱이 살펴본다.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-06',
+    title_en: 'The US, Japan — Everything\'s Rising… The Real Reason Koreans Are Turning to Overseas Real Estate',
+    summary_en: 'As domestic regulations and tax burdens reach their limits, more Korean investors are turning to overseas real estate. A thorough look at the US, Japan, and Southeast Asian markets — real opportunities and risks you must know.'
+  },
+  {
+    id: 67,
+    url: 'article_20260506_1_investment_v2.html',
+    category: '투자분석',
+    title: '갭투자는 죽었나? 2026년 부동산 투자 생존 전략의 모든 것',
+    summary: '고강도 규제와 금리 불확실성이 공존하는 지금, 부동산 시장의 \'옥석 가리기\'는 더욱 치열해졌다. 수익률 지형이 바뀐 2026년, 살아남는 투자자의 전략은 무엇이 다른가.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-06',
+    title_en: 'Is Gap Investment Dead? Everything About Surviving Real Estate Investment Strategies in 2026',
+    summary_en: 'With intense regulations and interest rate uncertainty coexisting, the real estate market\'s separation of wheat from chaff has intensified. What makes surviving investors\' strategies different in 2026\'s changed yield landscape?'
+  },
+  {
     id: 66,
     url: 'article_20260505_2_redevelop_v2.html',
     category: '재개발',
