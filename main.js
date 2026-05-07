@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 70,
+    url: 'article_20260507_2_시장동향_v2.html',
+    category: '시장동향',
+    title: '서울 전세 6.8억 돌파, 25개 자치구 전역 상승 — 공급 절벽이 불 지핀 전세 대란의 실체',
+    summary: '2026년 5월 서울 아파트 평균 전세값이 역대 최고치를 돌파했다. 강남·강북 구분 없이 전 자치구에서 동반 상승하는 배경과 수도권 매매 시장의 흐름을 데이터로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-07',
+    title_en: 'Seoul Jeonse Breaks 680M KRW, All 25 Districts Rising — The Reality of the Supply Cliff-Fueled Jeonse Crisis',
+    summary_en: 'In May 2026, average Seoul apartment jeonse prices hit an all-time high. With simultaneous rises across all districts regardless of Gangnam or Gangbuk, we analyze the background and metropolitan housing market trends with data.'
+  },
+  {
+    id: 69,
+    url: 'article_20260507_1_칼럼_v2.html',
+    category: '칼럼',
+    title: '공급 절벽이 바꾸는 부동산 판 — 2026년 5월, 지금 시장에서 무엇을 읽어야 하는가',
+    summary: '공급은 3분의 1 줄고, 전세값은 역대 최고, 금리는 되레 올랐다. 이 세 가지 악재가 동시에 맞물린 지금, 시장의 속살을 해부한다.',
+    image: 'https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-07',
+    title_en: 'The Supply Cliff Is Changing the Real Estate Game — May 2026, What to Read in the Market Now',
+    summary_en: 'Supply cut by a third, jeonse prices at all-time highs, and interest rates rising instead. With these three headwinds converging, we dissect the market\'s inner workings.'
+  },
+  {
     id: 68,
     url: 'article_20260506_2_overseas_v2.html',
     category: '해외',
