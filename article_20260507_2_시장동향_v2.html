@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 아파트 전세 6.8억 돌파, 25개 자치구 전역 상승 — 공급 절벽이 불 지핀 전세 대란의 실체 | 부동산인사이트</title>
+<meta name="description" content="2026년 5월 서울 아파트 평균 전세값이 역대 최고치를 돌파했습니다. 강남·강북 구분 없이 전 자치구에서 동반 상승하는 배경과 수도권 매매 시장의 흐름을 데이터로 분석합니다.">
+<meta name="keywords" content="서울 아파트 전세값, 수도권 부동산, 시장동향, 아파트 매매, 2026 부동산, 전세 대란, 공급부족">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #1A4D8F;
+    --accent-light: #3A70CC;
+    --accent-pale: #EBF1FA;
+    --header-bg: #0D2B55;
+    --text-main: #1a1a1a;
+    --text-muted: #555;
+    --border: #d0dde8;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; color: var(--text-main); background: #f5f7fa; line-height: 1.8; }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--header-bg);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 62px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.45rem; font-weight: 900; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.82); text-decoration: none;
+    padding: 6px 14px; border-radius: 4px; font-size: 0.82rem; font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+  }
+  nav a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+  nav a.active { background: rgba(26,77,143,0.6); color: #A8CAFF; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 72px 24px 64px;
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M40 0L0 40L40 80L80 40L40 0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-cat {
+    display: inline-block;
+    background: var(--accent-light); color: #fff;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px;
+    padding: 4px 14px; border-radius: 20px; margin-bottom: 18px;
+    text-transform: uppercase; font-family: 'Noto Sans KR', sans-serif;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 900; color: #fff;
+    line-height: 1.35; margin-bottom: 20px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    max-width: 820px; margin-left: auto; margin-right: auto;
+  }
+  .hero-sub { color: rgba(255,255,255,0.78); font-size: 1rem; max-width: 640px; margin: 0 auto 24px; }
+  .hero-meta { color: rgba(255,255,255,0.6); font-size: 0.82rem; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media(max-width:900px){ .container { grid-template-columns: 1fr; } .sidebar { order: 2; } }
+
+  /* ── DATA BOX ── */
+  .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 40px; }
+  @media(max-width:600px){ .data-grid { grid-template-columns: 1fr; } }
+  .data-card {
+    background: var(--accent-pale); border: 1px solid #b0caeb;
+    border-radius: 10px; padding: 20px 18px; text-align: center;
+    border-left: 4px solid var(--accent);
+  }
+  .data-card .val { font-family: 'Noto Serif KR', serif; font-size: 1.9rem; font-weight: 900; color: var(--accent); line-height: 1.1; }
+  .data-card .label { font-size: 0.75rem; color: var(--text-muted); margin-top: 6px; font-weight: 500; }
+  .data-card .change { font-size: 0.8rem; font-weight: 700; margin-top: 4px; color: #c0392b; }
+  .data-card .change.up { color: #c0392b; }
+  .data-card .change.dn { color: #1e8449; }
+
+  /* ── ARTICLE BODY ── */
+  .article-body h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.3rem; font-weight: 700;
+    color: var(--text-main); margin: 40px 0 16px;
+    border-left: 4px solid var(--accent); padding-left: 14px;
+    line-height: 1.4;
+  }
+  .article-body p { margin-bottom: 18px; font-size: 1rem; color: #222; }
+  .article-body ul { margin: 12px 0 20px 0; padding-left: 0; list-style: none; }
+  .article-body ul li {
+    padding: 9px 12px 9px 34px; margin-bottom: 8px;
+    background: #f0f5fc; border-radius: 6px; font-size: 0.96rem;
+    position: relative; border: 1px solid #c8daf0;
+  }
+  .article-body ul li::before { content: '▸'; position: absolute; left: 12px; color: var(--accent); font-weight: 700; }
+
+  /* ── QUOTE BOX ── */
+  .quote-box {
+    background: var(--accent-pale);
+    border-left: 5px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 24px 28px; margin: 32px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem;
+    color: #0a1f3a; line-height: 1.85;
+  }
+  .quote-box cite { display: block; margin-top: 12px; font-size: 0.8rem; font-style: normal; color: var(--accent); font-weight: 700; }
+
+  /* ── REGION TABLE ── */
+  .region-table-wrap { overflow-x: auto; margin: 24px 0 32px; }
+  .region-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  .region-table thead tr { background: var(--accent); color: #fff; }
+  .region-table th { padding: 11px 14px; text-align: left; font-weight: 600; }
+  .region-table td { padding: 10px 14px; border-bottom: 1px solid #e0eaf5; color: #222; }
+  .region-table tr:nth-child(even) td { background: #f0f5fc; }
+  .region-table tr:last-child td { border-bottom: none; }
+  .up-text { color: #c0392b; font-weight: 700; }
+  .dn-text { color: #1e8449; font-weight: 700; }
+
+  /* ── POLICY BOX ── */
+  .policy-eval {
+    background: #061b3a; color: #c8daf0;
+    border-radius: 12px; padding: 28px 30px; margin: 36px 0;
+  }
+  .policy-eval h3 { color: #A8CAFF; font-family: 'Noto Serif KR', serif; font-size: 1.05rem; margin-bottom: 14px; }
+  .policy-eval p { font-size: 0.95rem; line-height: 1.85; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer {
+    background: #f0f0f0; border: 1px solid #ddd; border-radius: 8px;
+    padding: 16px 20px; margin-top: 40px;
+    font-size: 0.78rem; color: #777; line-height: 1.7;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar-card {
+    background: #fff; border: 1px solid var(--border);
+    border-radius: 12px; padding: 22px 20px; margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .sidebar-card h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem; font-weight: 700;
+    color: var(--accent); margin-bottom: 14px;
+    padding-bottom: 10px; border-bottom: 2px solid var(--accent-pale);
+  }
+  .sidebar-card ul { list-style: none; padding: 0; }
+  .sidebar-card ul li { padding: 7px 0; border-bottom: 1px solid #e8f0f8; font-size: 0.84rem; color: #333; display: flex; align-items: flex-start; gap: 8px; }
+  .sidebar-card ul li::before { content: '✦'; color: var(--accent); flex-shrink: 0; font-size: 0.7rem; margin-top: 3px; }
+  .sidebar-card ul li:last-child { border-bottom: none; }
+  .related-list a { text-decoration: none; color: #222; font-size: 0.85rem; display: block; padding: 9px 0; border-bottom: 1px solid #e8f0f8; line-height: 1.5; transition: color 0.2s; }
+  .related-list a:hover { color: var(--accent); }
+  .related-list a:last-child { border-bottom: none; }
+
+  /* ── SUPPLY CHART (CSS-based) ── */
+  .supply-bar-wrap { margin-top: 8px; }
+  .supply-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 0.8rem; }
+  .supply-row .yr { width: 36px; color: var(--text-muted); font-weight: 600; flex-shrink: 0; }
+  .supply-row .bar-bg { flex: 1; background: #e0eaf5; border-radius: 4px; height: 18px; overflow: hidden; }
+  .supply-row .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; transition: width 0.3s; display: flex; align-items: center; justify-content: flex-end; padding-right: 6px; }
+  .supply-row .bar-fill span { color: #fff; font-size: 0.7rem; font-weight: 700; white-space: nowrap; }
+  .supply-row .bar-fill.low { background: #c0392b; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.55); padding: 40px 24px; margin-top: 60px; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; gap: 32px; flex-wrap: wrap; justify-content: space-between; }
+  .footer-brand .logo { font-size: 1.2rem; margin-bottom: 10px; display: block; }
+  .footer-brand p { font-size: 0.8rem; line-height: 1.7; max-width: 280px; }
+  .footer-links h4 { color: rgba(255,255,255,0.75); font-size: 0.82rem; margin-bottom: 10px; }
+  .footer-links a { display: block; color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.8rem; margin-bottom: 6px; }
+  .footer-links a:hover { color: rgba(255,255,255,0.8); }
+  .footer-bottom { max-width: 1200px; margin: 24px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.75rem; text-align: center; }
+  #hashtags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+  #hashtags span { background: var(--accent-pale); color: var(--accent); border: 1px solid #a0c0e8; border-radius: 20px; padding: 4px 12px; font-size: 0.78rem; font-weight: 600; }
+  .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 28px; }
+  .breadcrumb span { color: var(--accent); }
+  .highlight-box {
+    background: linear-gradient(135deg, #EBF1FA, #d0e4f8);
+    border: 1px solid #a0c0e8; border-radius: 10px;
+    padding: 20px 24px; margin: 28px 0;
+  }
+  .highlight-box strong { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#" class="active">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-cat">시장동향</div>
+  <h1>서울 전세 6.8억 돌파, 25개 자치구 전역 상승 — 공급 절벽이 불 지핀 전세 대란의 실체</h1>
+  <p class="hero-sub">역대 최고치를 경신한 서울 아파트 전세값, 강남·강북 구분도 없다. 지역별 매매·전세 흐름과 수도권·지방 디커플링의 최신 데이터를 분석한다.</p>
+  <div class="hero-meta">
+    <span>🗓 2026년 5월 7일</span>
+    <span>✍ 부동산인사이트 편집부</span>
+    <span>⏱ 읽는 시간 약 8분</span>
+    <span>📂 시장동향</span>
+  </div>
+</section>
+
+<!-- MAIN LAYOUT -->
+<div class="container">
+
+  <!-- ARTICLE -->
+  <main>
+    <div class="breadcrumb">홈 &rsaquo; <span>시장동향</span> &rsaquo; 2026년 5월 서울·수도권 동향</div>
+
+    <!-- DATA BOX -->
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="val">6.8억</div>
+        <div class="label">서울 아파트 평균 전세값 (2026.5)</div>
+        <div class="change up">▲ 역대 최고, 전 자치구 동반 상승</div>
+      </div>
+      <div class="data-card">
+        <div class="val">+1.9%</div>
+        <div class="label">수도권 아파트 매매가격지수 전년 대비</div>
+        <div class="change up">▲ 101.5 기록 (지방 –1.7% 대조)</div>
+      </div>
+      <div class="data-card">
+        <div class="val">28,984</div>
+        <div class="label">2026년 서울 아파트 입주 예정 (가구)</div>
+        <div class="change up">▼ 전년 42,684 대비 32% 급감</div>
+      </div>
+    </div>
+
+    <!-- ARTICLE BODY -->
+    <div class="article-body">
+
+      <p>2026년 5월, 서울 부동산 시장이 또 하나의 역사적 기록을 새겼다. 서울 아파트 평균 전세값이 6.8억 원을 돌파, 역대 최고치를 경신한 것이다. 더 주목해야 할 사실은 상승의 범위다. 강남3구나 한강변 고가 단지에 국한된 것이 아니라, 서울 25개 자치구 전역에서 동시 상승이 확인됐다. 임차 시장의 압박이 구조적·전면적으로 전환됐다는 강력한 신호다.</p>
+
+      <p>이번 기사에서는 지역별 전세·매매 흐름의 세부 데이터를 해체해 살펴보고, 수도권 전체 시장의 방향성과 지방과의 격차 구조를 종합적으로 분석한다.</p>
+
+      <h2>① 서울 전세 시장: '품귀' 그 자체가 뉴스다</h2>
+
+      <p>전세 시장의 이상 과열은 수치보다 현장에서 더 명확하게 드러난다. 매물이 올라오면 하루 이틀 안에 계약이 끝나고, 임차인은 사실상 선택의 여지가 없다. 이는 과거 전형적인 '수요 급증형' 전세난과는 달리, '공급 소멸형' 전세난의 특징이다. 신규 공급이 사라진 자리를 기존 단지들이 감당하지 못하는 상황이 만들어 낸 구조적 품귀다.</p>
+
+      <div class="quote-box">
+        "지금의 전세 시장은 가격이 문제가 아니라 물건이 없는 것이 문제다. 이는 금리를 내린다고 해결되는 것이 아니고, 임대차 3법을 고친다고 단기에 해결되는 것도 아니다. 공급이 돌아오기 전까지 임차인의 고통은 구조적으로 지속될 것이다."
+        <cite>— 부동산인사이트 편집부 분석 (2026.5)</cite>
+      </div>
+
+      <p>임대차 3법(계약갱신청구권, 전월세상한제, 전월세신고제)의 도입 이후 전세 공급 축소가 가속화됐다는 분석도 있다. 집주인들이 갱신 계약에 묶이는 대신 아예 월세 전환을 선택하는 경향이 늘고 있기 때문이다. 전세의 월세화는 임차 시장 내 선택지를 줄이고, 남은 전세 매물에 더 강한 수요를 집중시키는 역설적 효과를 낳는다.</p>
+
+      <h2>② 지역별 전세·매매 동향: 강남·강북 경계를 허문 동반 상승</h2>
+
+      <p>아래 표는 2026년 5월 기준 서울 주요 자치구별 전세 및 매매 변동률을 정리한 것이다. (한국부동산원 주간아파트가격동향 참고, 편집부 추정치 포함)</p>
+
+      <div class="region-table-wrap">
+        <table class="region-table">
+          <thead>
+            <tr>
+              <th>자치구</th>
+              <th>전세 변동률</th>
+              <th>매매 변동률</th>
+              <th>특이사항</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>송파구</td><td class="up-text">+0.30%</td><td class="up-text">+0.25%</td><td>재건축 단지 중심 강세</td></tr>
+            <tr><td>동작구</td><td class="up-text">+0.36%</td><td class="up-text">+0.28%</td><td>흑석·동작 재건축 기대감</td></tr>
+            <tr><td>성동구</td><td class="up-text">+0.32%</td><td class="up-text">+0.22%</td><td>하왕십리·성수 직주근접 수요</td></tr>
+            <tr><td>중구</td><td class="up-text">+0.36%</td><td class="up-text">+0.20%</td><td>신당·황학 중소형 품귀</td></tr>
+            <tr><td>강남구</td><td class="up-text">+0.24%</td><td class="up-text">+0.18%</td><td>압구정 재건축 신고가</td></tr>
+            <tr><td>서초구</td><td class="up-text">+0.22%</td><td class="up-text">+0.16%</td><td>반포 대단지 전세 재공급 감소</td></tr>
+            <tr><td>마포구</td><td class="up-text">+0.28%</td><td class="up-text">+0.19%</td><td>공덕·아현 직장인 수요 집중</td></tr>
+            <tr><td>노원구</td><td class="up-text">+0.18%</td><td class="up-text">+0.10%</td><td>상대적 저가 단지 갭 메우기</td></tr>
+            <tr><td>강북구</td><td class="up-text">+0.15%</td><td class="up-text">+0.08%</td><td>외곽이지만 수요 유입</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>표에서 확인되듯, 전통적으로 강세를 보이는 강남3구뿐 아니라 중구·동작구 등 상대적으로 비(非)선호 입지로 분류되던 지역도 강한 상승률을 기록하고 있다. 이는 수요가 핵심 입지를 벗어나 외연 확장 중임을 시사한다.</p>
+
+      <h2>③ 입주 물량 절벽: 공급 달력이 말해주는 2년의 고통</h2>
+
+      <p>서울 아파트 입주 물량은 2024년 4만2,684가구에서 2026년 2만8,984가구로 32% 감소하며, 이 추세는 2027년까지 이어질 전망이다. 공급 달력을 보면 현재의 전세난이 단기에 해결될 수 없다는 것이 명확해진다.</p>
+
+      <!-- SUPPLY CHART (CSS) -->
+      <div class="sidebar-card" style="margin: 16px 0;">
+        <h3 style="color: var(--accent); font-size:0.9rem; margin-bottom: 14px; padding-bottom:8px; border-bottom: 2px solid var(--accent-pale);">📊 서울 아파트 연도별 입주 물량 추이 (가구)</h3>
+        <div class="supply-bar-wrap">
+          <div class="supply-row">
+            <div class="yr">2023</div>
+            <div class="bar-bg"><div class="bar-fill" style="width:85%"><span>3.6만</span></div></div>
+          </div>
+          <div class="supply-row">
+            <div class="yr">2024</div>
+            <div class="bar-bg"><div class="bar-fill" style="width:100%"><span>4.3만</span></div></div>
+          </div>
+          <div class="supply-row">
+            <div class="yr">2025</div>
+            <div class="bar-bg"><div class="bar-fill" style="width:78%"><span>3.3만</span></div></div>
+          </div>
+          <div class="supply-row">
+            <div class="yr">2026</div>
+            <div class="bar-bg"><div class="bar-fill low" style="width:68%"><span>2.9만</span></div></div>
+          </div>
+          <div class="supply-row">
+            <div class="yr">2027</div>
+            <div class="bar-bg"><div class="bar-fill low" style="width:55%"><span>2.3만(예)</span></div></div>
+          </div>
+        </div>
+        <p style="font-size:0.72rem;color:#999;margin-top:10px;">※ 2027년은 현재 착공 물량 기반 추정치. 빨간 막대 = 공급 부족 경고 구간.</p>
+      </div>
+
+      <p>2022~2023년 착공이 급격히 위축되면서 그 여파는 지금 입주 단계에서 고스란히 드러나고 있다. 건설사들은 고금리와 원자재 가격 상승으로 신규 착공을 꺼렸고, 정부의 공공분양 물량 확대 발표에도 불구하고 실제 공급에 닿기까지는 최소 3~4년이 더 필요하다.</p>
+
+      <div class="quote-box">
+        "공급 절벽은 하루아침에 만들어지지 않는다. 2022년 착공을 멈춘 대가를 2026년 세입자가 치르고 있다. 이 구조를 이해하지 못하면, 전세난의 끝을 예단할 수 없다."
+        <cite>— 부동산인사이트 편집부 분석 (2026.5)</cite>
+      </div>
+
+      <h2>④ 수도권 매매 시장: '상승'이 아니라 '버티기'의 계속</h2>
+
+      <p>수도권 아파트 매매가격지수는 2025년 9월 기준 101.5로, 전년 대비 1.9% 상승을 기록하고 있다. 수치 자체는 완만해 보이지만, 내부를 보면 이른바 '상승'보다 '하방 지지력 강화'의 성격이 더 강하다. 거래량은 여전히 역사적 저수준에 머물고 있으며, 급매물이 소화된 이후 신고가 거래가 산발적으로 이어지는 패턴이 반복되고 있다.</p>
+
+      <p>거래 절벽 속에서도 가격이 내리지 않는 이유는 세 가지로 요약된다. 첫째, 매도자의 '버티기'가 이어지고 있다. 갈아타기 수요는 있지만, 매도 후 재매수 시점을 가늠하기 어려워 시장 이탈을 꺼린다. 둘째, 전세값 급등이 매매가의 하방을 지탱한다. 셋째, 공급이 줄어들수록 기존 보유자의 협상력이 강해진다.</p>
+
+      <div class="highlight-box">
+        <strong>핵심 인사이트:</strong> 지금 수도권 매매 시장은 '가격 상승 모멘텀'보다 '가격 하락 저항력'에 주목해야 한다. 거래량이 늘어나지 않는 한 급격한 상승도, 급격한 하락도 일어나기 어렵다. 시장은 '조용한 강세' 구간에 진입했다.
+      </div>
+
+      <h2>⑤ 지방 시장: -1.7%가 숨기는 진짜 위기</h2>
+
+      <p>지방 아파트 매매가격지수는 99.3으로, 전년 대비 1.7% 하락하고 있다. 단순 수치보다 더 심각한 것은 하락의 확산 속도다. 대구·세종·부산 일부 지역은 2~3년 연속 하락세를 이어가고 있으며, 미입주 물량과 청약 취소 사례도 증가하고 있다.</p>
+
+      <p>지방 시장의 부진은 단순히 수요 감소 때문만이 아니다. 제조업 고용 감소, 지역 인구의 수도권 이탈, 지방 대학 입학 정원 감소 등이 중장기 수요 기반 자체를 훼손하고 있다. 이는 가격 조정 이후 반등이 어렵다는 것을 의미한다. 수도권과의 디커플링은 일시적 현상이 아닌, 구조적 절연의 시작으로 읽어야 한다.</p>
+
+      <div class="policy-eval">
+        <h3>📊 시장 진단: 수도권 vs. 지방의 구조적 디커플링</h3>
+        <p>수도권은 공급 부족과 인구 집중의 수혜 속에서 가격 하방이 막혀 있는 반면, 지방은 공급 과잉과 수요 이탈이 동시에 작동하며 가격 반등의 동력이 사라지고 있다. 이 구조는 단기 정책 개입으로 역전되기 어렵다. 부동산 시장의 '두 개의 한국'이 고착화되는 국면이다.</p>
+      </div>
+
+      <h2>⑥ 전세→매매 전환 가능성: 지금이 기회인가, 함정인가</h2>
+
+      <p>전세 구하기가 극도로 어려워지면서 '차라리 사는 게 낫겠다'는 심리가 확산되고 있다. 실제로 전세가율이 높은 단지를 중심으로 매수 전환 사례가 늘고 있다. 그러나 이 선택이 모든 상황에서 합리적인 것은 아니다.</p>
+
+      <ul>
+        <li>전세가율 70% 이상 단지에서 전세→매매 전환 시, 실질 추가 자기자본 투입은 매매가의 30% 내외로 제한된다는 점은 긍정적 변수다.</li>
+        <li>단, 주담대 금리 4%대에서 3억 원 대출 시 월 이자만 약 100만 원 이상 발생하므로, 임대료 대비 실질 비용 비교가 필수다.</li>
+        <li>갱신 계약 만료 후 신규 전세 계약 시 보증금 급등이 불가피한 상황이라면, 매수 전환을 적극적으로 검토할 시점이다.</li>
+        <li>반면, 직장·가족 상황 등으로 거주 이전 가능성이 높은 경우라면 높은 매수 비용은 환금성 리스크로 돌아온다.</li>
+        <li>스트레스 DSR 2단계 적용 이후 대출 한도가 축소됐음을 감안, 실제 가용 자금 범위를 먼저 확인해야 한다.</li>
+      </ul>
+
+      <h2>⑦ 5월 시장을 결정짓는 3가지 핵심 변수</h2>
+
+      <p>앞으로 수개월간 시장의 방향성을 결정할 변수를 세 가지로 압축한다.</p>
+
+      <p><strong>① 금리 방향:</strong> 한국은행의 기준금리 결정이 3분기 중 예정되어 있다. 인하 시그널이 나온다면 매수 심리 회복의 촉매가 될 수 있다. 반대로 동결 또는 추가 인상 시사 시, 거래 절벽이 더 길어질 것이다.</p>
+
+      <p><strong>② 공급 정책:</strong> 정부가 공공분양·공공임대 물량을 얼마나 신속하게 현실화하느냐가 전세 시장 안정의 핵심이다. 인허가 통계가 살아나야 2~3년 후 공급 회복을 기대할 수 있다.</p>
+
+      <p><strong>③ 양도세 정책 변화:</strong> 유예 종료 이후 다주택자의 행동 양식 변화가 매물 시장에 영향을 줄 것이다. 특히 상속·증여 절세 수요가 일부 고가 단지의 매물 출회로 이어질 수 있다.</p>
+
+      <ul>
+        <li>실수요 매수 희망자: 본인의 자금 계획과 거주 안정성을 최우선으로 두고, 과열 분위기에 휩쓸리지 말 것</li>
+        <li>임차인: 계약갱신청구권이 남아 있다면 적극 활용, 신규 계약은 보증금 반환 보증 가입 필수</li>
+        <li>투자자: 전세가율 높은 단지보다 실거주 수요가 탄탄한 입지 우선 선별 권고</li>
+        <li>지방 보유자: 하락세가 멈추지 않는 한 추가 매입 자제, 손실 최소화 전략으로 전환 검토</li>
+        <li>청약 대기자: 공공분양 물량 일정을 주기적으로 체크, 청약 자격 유지·관리 필수</li>
+      </ul>
+
+      <h2>결론: 6.8억 전세는 증상이다, 원인은 공급에 있다</h2>
+
+      <p>2026년 5월 서울 전세 6.8억은 숫자 이상의 의미를 담고 있다. 이것은 단순히 '비싸진 전세'가 아니라, 한국 주택 공급 시스템이 수년에 걸쳐 쌓아온 구조적 실패의 가시화다. 공급이 회복되지 않는 한 이 숫자는 2027년에는 7억, 2028년에는 그 이상을 향해 올라갈 가능성이 있다.</p>
+
+      <p>지금 시장 참여자에게 필요한 것은 공포도, 탐욕도 아니다. 공급 달력을 읽고, 금리 경로를 추적하며, 본인의 자금 흐름에 맞는 냉정한 판단이다. 시장이 제공하는 압박을 전략으로 전환하는 사람만이 이 국면을 유리하게 헤쳐나갈 수 있다.</p>
+
+      <!-- HASHTAGS -->
+      <div id="hashtags">
+        <span>#서울아파트시세</span>
+        <span>#전세대란2026</span>
+        <span>#수도권부동산</span>
+        <span>#시장동향</span>
+        <span>#공급절벽</span>
+        <span>#아파트매매</span>
+        <span>#부동산인사이트</span>
+        <span>#전세값역대최고</span>
+      </div>
+
+      <!-- DISCLAIMER -->
+      <div class="disclaimer">
+        ※ 본 기사는 한국부동산원, KB부동산 등 공개 통계 자료와 취재 내용을 바탕으로 작성됐습니다. 일부 지역별 수치는 편집부 추정치를 포함하며, 실제 시장과 다소 차이가 있을 수 있습니다. 이 기사의 내용은 투자를 권유하거나 특정 자산의 매수·매도를 추천하는 것이 아닙니다. 모든 투자 결정은 본인의 책임 하에 이루어져야 하며, 전문 자격을 갖춘 상담사와 반드시 검토하시기 바랍니다.
+      </div>
+
+    </div><!-- /article-body -->
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- 핵심 요약 -->
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약 5가지</h3>
+      <ul>
+        <li>서울 아파트 평균 전세 6.8억 원 — 역대 최고치, 25개 자치구 전역 동반 상승</li>
+        <li>동작구·중구 전세 변동률 0.36%로 서울 최고, 강남3구도 강세 유지</li>
+        <li>2026년 서울 입주물량 2.9만 가구, 32% 급감 — 2027년도 2.3만 예상</li>
+        <li>수도권 매매가격 전년 대비 +1.9% vs. 지방 –1.7%, 구조적 디커플링 심화</li>
+        <li>전세 품귀로 매수 전환 수요 증가, 실질 비용 계산 후 신중한 판단 필요</li>
+      </ul>
+    </div>
+
+    <!-- 관련 기사 -->
+    <div class="sidebar-card">
+      <h3>📰 관련 기사</h3>
+      <div class="related-list">
+        <a href="#">공급 절벽의 구조 — 2022년 착공 중단이 2026년 전세난이 됐다</a>
+        <a href="#">강남3구 재건축 단지, 아직도 신고가를 경신하는 이유</a>
+        <a href="#">지방 부동산 낙수 효과 기대는 옛날 얘기 — 구조적 디커플링 분석</a>
+        <a href="#">2026년 청약 달력 — 수도권 분양 예정 단지 총정리</a>
+      </div>
+    </div>
+
+    <!-- 지역별 체크리스트 -->
+    <div class="sidebar-card">
+      <h3>🏠 매수 전 체크리스트</h3>
+      <ul>
+        <li>본인 DSR·LTV 한도를 은행에서 사전 확인했는가?</li>
+        <li>해당 단지의 전세가율이 60% 이상인가?</li>
+        <li>입주 예정일·하자 이력 확인했는가?</li>
+        <li>임박한 재개발·재건축 이슈 여부 파악했는가?</li>
+        <li>주변 공급 예정 물량으로 가격 하방이 열려 있지 않은가?</li>
+      </ul>
+    </div>
+
+  </aside>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">부동산<span>인사이트</span></a>
+      <p>한국 부동산 시장의 흐름을 전문가 시각으로 분석합니다. 실수요자와 투자자 모두를 위한 깊이 있는 콘텐츠를 매일 제공합니다.</p>
+    </div>
+    <div class="footer-links">
+      <h4>카테고리</h4>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제 분석</a>
+      <a href="#">분양·청약 분석</a>
+      <a href="#">재개발·재건축</a>
+    </div>
+    <div class="footer-links">
+      <h4>서비스</h4>
+      <a href="#">투자 인사이트</a>
+      <a href="#">해외부동산</a>
+      <a href="#">칼럼·해설</a>
+      <a href="#">이용약관</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 부동산인사이트. All rights reserved. | 본 사이트의 모든 콘텐츠는 저작권법의 보호를 받습니다. | 투자는 본인 책임 하에 이루어져야 합니다.
+  </div>
+</footer>
+
+</body>
+</html>

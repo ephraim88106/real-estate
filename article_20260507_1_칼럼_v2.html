@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공급 절벽이 바꾸는 부동산 판 — 2026년 5월, 지금 시장에서 무엇을 읽어야 하는가 | 부동산인사이트</title>
+<meta name="description" content="2026년 공급 쇼크와 전세난이 동시에 엄습한 지금, 한국 부동산 시장의 구조적 변화를 심층 해설합니다. 실수요자·투자자 모두에게 필요한 전략적 시각을 제시합니다.">
+<meta name="keywords" content="부동산 칼럼, 공급쇼크, 전세난, 서울 아파트, 2026 부동산 전망, 주택시장 분석">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #6A6A10;
+    --accent-light: #B5B52A;
+    --accent-pale: #F4F4DA;
+    --header-bg: #0D2B55;
+    --text-main: #1a1a1a;
+    --text-muted: #555;
+    --border: #e0e0d0;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; color: var(--text-main); background: #fafaf5; line-height: 1.8; }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--header-bg);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 62px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.45rem; font-weight: 900; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.82); text-decoration: none;
+    padding: 6px 14px; border-radius: 4px; font-size: 0.82rem; font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+  }
+  nav a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+  nav a.active { background: rgba(106,106,16,0.5); color: #F4D47C; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+    padding: 72px 24px 64px;
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-cat {
+    display: inline-block;
+    background: var(--accent); color: #fff;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px;
+    padding: 4px 14px; border-radius: 20px; margin-bottom: 18px;
+    text-transform: uppercase; font-family: 'Noto Sans KR', sans-serif;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 900; color: #fff;
+    line-height: 1.35; margin-bottom: 20px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    max-width: 800px; margin-left: auto; margin-right: auto;
+  }
+  .hero-sub { color: rgba(255,255,255,0.78); font-size: 1rem; max-width: 640px; margin: 0 auto 24px; }
+  .hero-meta { color: rgba(255,255,255,0.6); font-size: 0.82rem; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media(max-width:900px){ .container { grid-template-columns: 1fr; } .sidebar { order: 2; } }
+
+  /* ── DATA BOX ── */
+  .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 40px; }
+  @media(max-width:600px){ .data-grid { grid-template-columns: 1fr; } }
+  .data-card {
+    background: var(--accent-pale); border: 1px solid #d4d480;
+    border-radius: 10px; padding: 20px 18px; text-align: center;
+    border-left: 4px solid var(--accent);
+  }
+  .data-card .val { font-family: 'Noto Serif KR', serif; font-size: 1.9rem; font-weight: 900; color: var(--accent); line-height: 1.1; }
+  .data-card .label { font-size: 0.75rem; color: var(--text-muted); margin-top: 6px; font-weight: 500; }
+  .data-card .change { font-size: 0.8rem; font-weight: 700; margin-top: 4px; color: #c0392b; }
+
+  /* ── ARTICLE BODY ── */
+  .article-body h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.3rem; font-weight: 700;
+    color: var(--text-main); margin: 40px 0 16px;
+    border-left: 4px solid var(--accent); padding-left: 14px;
+    line-height: 1.4;
+  }
+  .article-body p { margin-bottom: 18px; font-size: 1rem; color: #222; }
+  .article-body ul { margin: 12px 0 20px 0; padding-left: 0; list-style: none; }
+  .article-body ul li {
+    padding: 9px 12px 9px 34px; margin-bottom: 8px;
+    background: #f9f9f0; border-radius: 6px; font-size: 0.96rem;
+    position: relative; border: 1px solid #e5e5c0;
+  }
+  .article-body ul li::before { content: '▸'; position: absolute; left: 12px; color: var(--accent); font-weight: 700; }
+
+  /* ── QUOTE BOX ── */
+  .quote-box {
+    background: var(--accent-pale);
+    border-left: 5px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 24px 28px; margin: 32px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem;
+    color: #3a3a0a; line-height: 1.85;
+  }
+  .quote-box cite { display: block; margin-top: 12px; font-size: 0.8rem; font-style: normal; color: var(--accent); font-weight: 700; }
+
+  /* ── POLICY BOX ── */
+  .policy-eval {
+    background: #1a1a00; color: #e8e8c0;
+    border-radius: 12px; padding: 28px 30px; margin: 36px 0;
+  }
+  .policy-eval h3 { color: #F4D47C; font-family: 'Noto Serif KR', serif; font-size: 1.05rem; margin-bottom: 14px; }
+  .policy-eval p { font-size: 0.95rem; line-height: 1.85; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer {
+    background: #f0f0f0; border: 1px solid #ddd; border-radius: 8px;
+    padding: 16px 20px; margin-top: 40px;
+    font-size: 0.78rem; color: #777; line-height: 1.7;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar-card {
+    background: #fff; border: 1px solid var(--border);
+    border-radius: 12px; padding: 22px 20px; margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .sidebar-card h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem; font-weight: 700;
+    color: var(--accent); margin-bottom: 14px;
+    padding-bottom: 10px; border-bottom: 2px solid var(--accent-pale);
+  }
+  .sidebar-card ul { list-style: none; padding: 0; }
+  .sidebar-card ul li { padding: 7px 0; border-bottom: 1px solid #f0f0e8; font-size: 0.84rem; color: #333; display: flex; align-items: flex-start; gap: 8px; }
+  .sidebar-card ul li::before { content: '✦'; color: var(--accent); flex-shrink: 0; font-size: 0.7rem; margin-top: 3px; }
+  .sidebar-card ul li:last-child { border-bottom: none; }
+  .related-list a { text-decoration: none; color: #222; font-size: 0.85rem; display: block; padding: 9px 0; border-bottom: 1px solid #f0f0e8; line-height: 1.5; transition: color 0.2s; }
+  .related-list a:hover { color: var(--accent); }
+  .related-list a:last-child { border-bottom: none; }
+
+  /* ── RATE TABLE ── */
+  .rate-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-top: 8px; }
+  .rate-table th { background: var(--accent); color: #fff; padding: 8px 10px; text-align: left; font-weight: 600; }
+  .rate-table td { padding: 8px 10px; border-bottom: 1px solid #eee; color: #333; }
+  .rate-table tr:last-child td { border-bottom: none; }
+  .rate-table tr:nth-child(even) td { background: #f9f9f2; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.55); padding: 40px 24px; margin-top: 60px; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; gap: 32px; flex-wrap: wrap; justify-content: space-between; }
+  .footer-brand .logo { font-size: 1.2rem; margin-bottom: 10px; display: block; }
+  .footer-brand p { font-size: 0.8rem; line-height: 1.7; max-width: 280px; }
+  .footer-links h4 { color: rgba(255,255,255,0.75); font-size: 0.82rem; margin-bottom: 10px; }
+  .footer-links a { display: block; color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.8rem; margin-bottom: 6px; }
+  .footer-links a:hover { color: rgba(255,255,255,0.8); }
+  .footer-bottom { max-width: 1200px; margin: 24px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.75rem; text-align: center; }
+  #hashtags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+  #hashtags span { background: var(--accent-pale); color: var(--accent); border: 1px solid #c8c840; border-radius: 20px; padding: 4px 12px; font-size: 0.78rem; font-weight: 600; }
+  .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 28px; }
+  .breadcrumb span { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#" class="active">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-cat">칼럼·해설</div>
+  <h1>공급 절벽이 바꾸는 부동산 판 — 2026년 5월, 지금 시장에서 무엇을 읽어야 하는가</h1>
+  <p class="hero-sub">공급은 3분의 1 줄고, 전세값은 역대 최고, 금리는 되레 올랐다. 이 세 가지 악재가 동시에 맞물린 지금, 시장의 속살을 해부한다.</p>
+  <div class="hero-meta">
+    <span>🗓 2026년 5월 7일</span>
+    <span>✍ 부동산인사이트 편집부</span>
+    <span>⏱ 읽는 시간 약 9분</span>
+    <span>📂 칼럼·해설</span>
+  </div>
+</section>
+
+<!-- MAIN LAYOUT -->
+<div class="container">
+
+  <!-- ARTICLE -->
+  <main>
+    <div class="breadcrumb">홈 &rsaquo; <span>칼럼·해설</span> &rsaquo; 2026년 5월 시장 심층 해설</div>
+
+    <!-- DATA BOX -->
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="val">6.8억</div>
+        <div class="label">서울 아파트 평균 전세값 (2026.5)</div>
+        <div class="change">▲ 역대 최고치 경신</div>
+      </div>
+      <div class="data-card">
+        <div class="val">21만</div>
+        <div class="label">2026년 전국 아파트 입주물량 (가구)</div>
+        <div class="change">▼ 2024년 36만 대비 –42%</div>
+      </div>
+      <div class="data-card">
+        <div class="val">4.34%</div>
+        <div class="label">주택담보대출 평균 금리 (2026.3)</div>
+        <div class="change">▲ 2년 4개월 만에 최고</div>
+      </div>
+    </div>
+
+    <!-- ARTICLE BODY -->
+    <div class="article-body">
+
+      <p>부동산 시장에는 이따금 '퍼펙트 스톰'이라 불릴 만한 국면이 온다. 지금이 바로 그 시기다. 2026년 5월, 한국 주택시장은 공급 절벽·전세 폭등·고금리라는 세 파고가 동시에 정점을 향해 달려가고 있다. 그런데 아이러니하게도, 이 세 악재는 서로 다른 방향으로 시장 참여자를 옥죄는 구조를 만들어 내고 있다. 매수자는 금리 때문에, 임차인은 전세 품귀 때문에, 그리고 매도자는 여전히 가격 기대를 낮추지 않는 이상한 방정식이 펼쳐지고 있는 것이다.</p>
+
+      <p>이 글은 단순한 데이터 나열이 아니다. 시장이 왜 이 구조를 만들어 냈는지, 그 안에서 어떤 신호를 읽어야 하는지, 그리고 실수요자와 투자자가 각각 어떤 전략적 관점을 가져야 하는지를 심층적으로 해설하고자 한다.</p>
+
+      <h2>① 공급 절벽의 구조: 숫자가 말해주는 불편한 진실</h2>
+
+      <p>2026년 전국 아파트 입주물량은 약 21만 가구로, 2024년 36만 가구 대비 무려 42% 급감한다. 특히 서울은 올해 4만2,684가구에서 내년 2만8,984가구로 32% 줄어든다. 이 숫자가 의미하는 것은 단순한 '물량 감소'가 아니다. 2022~2023년 고금리 충격과 인허가 위축이 지금 현실로 부메랑처럼 돌아오고 있는 것이다.</p>
+
+      <p>인허가에서 준공까지는 통상 3~4년이 걸린다. 2022~2023년 금리 폭등 시기에 멈췄던 착공이 2026~2027년 입주 물량 공백으로 이어지는 것은 경제학적으로 필연이다. 한국부동산원 데이터에 따르면, 2024년 기준 전국 아파트 인허가 물량은 이미 2020년 수준을 밑돌고 있다. 즉, 공급 부족은 2026년에 그치지 않고 2027~2028년까지 지속될 가능성이 높다는 뜻이다.</p>
+
+      <div class="quote-box">
+        "집이 부족한 게 아니라 집이 지어지지 않고 있다는 것이 핵심이다. 고금리가 건설 착공을 막고, 착공 감소가 입주를 막고, 입주 감소가 전세를 밀어올리고, 전세 상승이 매매 저항을 높인다. 악순환의 고리는 이미 완성됐다."
+        <cite>— 부동산인사이트 편집부 분석 (2026.5)</cite>
+      </div>
+
+      <h2>② 전세 6.8억의 해부: 전세 시장이 흔들리면 매매 시장도 흔들린다</h2>
+
+      <p>2026년 5월 기준 서울 아파트 평균 전세값은 6.8억 원으로 역대 최고치를 경신했다. 이 수치는 단순한 임차 시장의 이슈가 아니다. 전세값이 오르면 통상 두 가지 경로로 매매 시장에 영향을 준다. 첫째, '갭(gap) 줄이기'를 통해 매수 유인이 강화된다. 전세가율이 높아질수록 실질적인 자기자본 투자액은 줄어들기 때문이다. 둘째, 전세 부담을 피해 매수로 전환하는 수요자가 늘어난다. 특히 지금처럼 전세 매물 자체가 없어 '전세 전쟁'이 벌어지는 환경에서는, 적잖은 임차인이 '차라리 사자'는 결론에 도달하게 된다.</p>
+
+      <p>강북권에서는 중구(0.36%), 성동구(0.32%)가 강세를 보이고, 강남권에서는 동작구(0.36%), 송파구(0.30%)의 재건축 단지들이 높은 상승률을 기록하고 있다. 지역의 편차는 있지만, 25개 자치구 전역에서 전세값 상승이 나타난다는 사실은 이것이 단순한 국지적 현상이 아님을 방증한다.</p>
+
+      <h2>③ 고금리의 역설: 왜 가격은 내리지 않는가</h2>
+
+      <p>2026년 3월 기준 주담대 평균 금리는 연 4.34%로, 2년 4개월 만에 최고 수준이다. 통상적인 경제 논리라면 금리 인상은 매수 수요를 억제해 가격을 하락시켜야 한다. 그런데 서울 시장은 그 논리를 따르지 않는다. 왜인가?</p>
+
+      <p>답은 공급의 비탄력성과 수요의 구조적 특성에 있다. 서울의 주택 수요는 소득 탄력성이 높은 '상위 소득층 대기 수요'와 직주근접을 포기할 수 없는 '실거주 필수 수요'로 구성된다. 이들은 금리가 올라도 매수를 후회하지 않는 세대다. 오히려 금리 상승으로 중간 소득층이 시장에서 이탈하면, 경쟁자가 줄어든 자리를 자본력이 높은 수요자가 채우는 구조가 반복된다.</p>
+
+      <div class="quote-box">
+        "금리가 집값을 내린다는 통설은 서울 상급지에서는 반만 옳다. 금리는 수요의 '양'은 줄이지만, 수요의 '질'을 높인다. 자금력 있는 수요자만 남게 되면, 오히려 프리미엄 입지의 가격 하방 지지력은 더 강해진다."
+        <cite>— 부동산인사이트 편집부 분석 (2026.5)</cite>
+      </div>
+
+      <h2>④ 정책의 전환점: 양도세 유예 종료와 대선 이후 규제 변수</h2>
+
+      <p>2026년 5월 9일, 다주택자 양도세 중과 유예가 만료됐다. 이 조치는 지난 2년간 매물 잠김 현상을 완화하는 데 기여했다는 평가를 받는다. 유예 기간 동안 일부 다주택자들이 서울 외곽 또는 지방 주택을 정리하는 흐름이 있었다. 그러나 정작 핵심 수요가 몰리는 서울 상급지는 양도세 부담에도 불구하고 매도 포기 경향이 강하다.</p>
+
+      <p>유예 종료 이후 시장은 두 갈래로 나뉠 가능성이 높다. 양도 차익이 크지 않은 다주택자는 중과세 부담으로 매도를 다시 미룰 것이고, 반대로 부동산 포트폴리오 정리를 고민하던 고령 투자자는 증여나 법인 전환 등의 대안을 택할 것이다. 어느 쪽이든 시장에 매물이 급증하는 시나리오보다는, 매물 동결이 이어지면서 전세·매매 가격의 상방 압력이 지속되는 시나리오가 더 설득력을 갖는다.</p>
+
+      <div class="policy-eval">
+        <h3>📋 정책 평가: 양도세 유예 종료의 시장 영향 진단</h3>
+        <p>양도세 중과 유예는 단기 매물 증가 효과는 있었으나, 핵심 입지의 매물 잠김을 해소하는 데는 역부족이었다. 유예 종료 이후에는 이른바 '버티기 전략'이 재강화될 가능성이 크다. 정부가 다주택자 세제를 근본적으로 개편하지 않는 한, 이 구조는 반복될 것이다. 시장은 정책의 유예와 만료 사이에서 소모적 관망을 반복하고 있으며, 이는 결국 실수요자의 피해로 귀결된다.</p>
+      </div>
+
+      <h2>⑤ 수도권·지방의 디커플링: 양극화가 아니라 '절연'이다</h2>
+
+      <p>2025년 9월 기준 수도권 매매가격지수는 101.5로 전년 대비 1.9% 상승한 반면, 지방은 99.3으로 1.7% 하락을 기록했다. 이 숫자는 단순한 '격차'가 아니라, 두 시장이 아예 다른 경제권으로 분리되고 있음을 시사한다. 수도권은 공급 부족과 인구 집중의 구조적 수혜를 받지만, 지방은 제조업 경기 침체와 인구 유출이 겹치며 부동산 회복의 동력 자체가 사라지고 있다.</p>
+
+      <p>이러한 디커플링은 두 가지 함의를 갖는다. 첫째, 분산 투자 차원에서 지방 부동산을 포트폴리오에 넣는 전략은 당분간 재검토가 필요하다. 둘째, 서울·수도권 집중 투자 경향이 심화될수록, 해당 지역의 가격 상방 압력은 자기강화적으로 작동할 것이다.</p>
+
+      <h2>⑥ 2026년 하반기 시장 전망: 세 가지 시나리오</h2>
+
+      <p>현재의 변수들을 토대로 2026년 하반기 시장을 세 가지 시나리오로 정리할 수 있다.</p>
+
+      <p><strong>기본 시나리오 (확률 약 55%):</strong> 금리가 소폭 내려가고 공급 부족이 지속되면서, 서울·수도권 아파트 매매가격은 연간 2~3% 수준의 완만한 상승세를 이어간다. 전세는 4~5% 상승 유지.</p>
+
+      <p><strong>상승 시나리오 (확률 약 25%):</strong> 대선 이후 규제 완화, DSR 기준 조정, 재건축 규제 해제 등 정책 모멘텀이 겹치면서 서울 핵심지 중심으로 5~8% 급등 가능성이 열린다.</p>
+
+      <p><strong>하락 조정 시나리오 (확률 약 20%):</strong> 경기 침체 심화, 금리 추가 인상, 미국 부동산 시장 충격의 파급 효과가 동시에 나타날 경우 10% 이상 하락도 배제할 수 없다. 그러나 이 경우에도 서울 핵심지보다는 외곽과 지방이 더 큰 타격을 받을 것이다.</p>
+
+      <h2>⑦ 실수요자·투자자를 위한 전략적 시사점</h2>
+      <ul>
+        <li>실수요자라면 금리보다 공급 타이밍을 먼저 보라 — 2026~2027년이 공급 저점이므로, 지금 매수를 결정하는 것이 3년 후 공급 회복기보다 유리할 수 있다.</li>
+        <li>전세 세입자는 갱신 계약을 최대한 활용하라 — 신규 계약보다 최대 5%로 제한되는 계약갱신청구권이 여전히 핵심 방어 수단이다.</li>
+        <li>투자자는 '수익률'보다 '유동성'을 먼저 검토하라 — 거래 절벽 환경에서 환금성이 낮은 자산은 가격 하락 시 치명적 리스크가 된다.</li>
+        <li>다주택자는 양도세 중과 종료 이후 보유 전략을 전면 재검토하라 — 법인 전환, 증여, 장기 임대 등록 등 대안을 세무사와 함께 점검할 시점이다.</li>
+        <li>지방 투자는 최소 5년 이상 장기 보유가 가능한 경우에만 진입하라 — 단기 시세차익 기대는 현 구조에서 성립하기 어렵다.</li>
+        <li>청약 시장은 분양가 상한제 적용 단지 중심으로 선별하라 — 고분양가 프리미엄을 기대하는 비규제 단지 청약은 신중을 요한다.</li>
+      </ul>
+
+      <h2>결론: 변화의 속도보다 구조를 읽어라</h2>
+
+      <p>2026년 5월의 부동산 시장은 단기적 가격 등락보다 훨씬 깊은 구조적 변화의 한복판에 있다. 공급 절벽은 인위적으로 해결될 수 없고, 금리 변수는 글로벌 통화정책에 귀속되어 있으며, 인구 구조의 변화는 장기 수요의 지형 자체를 바꾸고 있다.</p>
+
+      <p>이런 국면에서 '지금 사야 하나, 팔아야 하나'라는 단기적 질문보다 중요한 것은 '내가 어떤 시장에 참여하고 있는가'를 냉정하게 진단하는 것이다. 핵심 입지·실수요·유동성 — 이 세 가지가 충족되는 자산이라면 2026년 하반기는 진입 기회일 수 있다. 하지만 세 조건 중 하나라도 빠진다면, 기다림의 미학이 더 현명한 전략이 될 것이다.</p>
+
+      <p>시장은 기회를 숨기지 않는다. 다만 공포와 탐욕의 소음 뒤에 가려 둘 뿐이다. 구조를 읽는 자가 결국 시장을 이긴다.</p>
+
+      <!-- HASHTAGS -->
+      <div id="hashtags">
+        <span>#부동산칼럼</span>
+        <span>#공급쇼크</span>
+        <span>#전세난2026</span>
+        <span>#서울아파트</span>
+        <span>#주택시장전망</span>
+        <span>#양도세유예</span>
+        <span>#부동산투자전략</span>
+        <span>#수도권부동산</span>
+      </div>
+
+      <!-- DISCLAIMER -->
+      <div class="disclaimer">
+        ※ 본 칼럼은 공개된 통계 자료와 취재 내용을 바탕으로 작성된 편집부 분석 의견입니다. 개별 부동산 투자에 대한 법적·재무적 조언이 아니며, 실제 투자 결정은 전문 자격을 갖춘 세무사·변호사·공인중개사와 상담하시기 바랍니다. 본 매체는 기사 내용의 정확성에 최선을 다하지만, 이를 근거로 발생하는 투자 손실에 대해 법적 책임을 지지 않습니다.
+      </div>
+
+    </div><!-- /article-body -->
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- 핵심 요약 -->
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약 5가지</h3>
+      <ul>
+        <li>2026년 전국 입주물량 21만 가구, 2024년 대비 42% 급감으로 공급 절벽 확정</li>
+        <li>서울 평균 전세값 6.8억 원 역대 최고 — 25개 자치구 전역 상승</li>
+        <li>주담대 금리 4.34%로 2년 4개월 최고, 매수 부담 확대</li>
+        <li>양도세 중과 유예 5월 9일 종료 — 매물 잠김 재강화 전망</li>
+        <li>수도권과 지방의 시장 디커플링 심화, 사실상 '절연' 국면</li>
+      </ul>
+    </div>
+
+    <!-- 관련 기사 -->
+    <div class="sidebar-card">
+      <h3>📰 관련 기사</h3>
+      <div class="related-list">
+        <a href="#">서울 전세값 6.8억 돌파 — 역대 최고치 경신의 구조적 원인</a>
+        <a href="#">2026년 아파트 입주물량 급감, 서울 32% 줄어든다</a>
+        <a href="#">양도세 중과 유예 종료 이후, 다주택자 어떻게 움직이나</a>
+        <a href="#">고금리에도 서울 아파트 안 떨어지는 이유 — 수요의 '질적 변화'</a>
+      </div>
+    </div>
+
+    <!-- 금리 비교 위젯 -->
+    <div class="sidebar-card">
+      <h3>💰 은행별 주담대 금리 현황 (2026.05 기준)</h3>
+      <table class="rate-table">
+        <thead>
+          <tr><th>은행</th><th>금리 범위</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>KB국민</td><td>4.10 ~ 4.65%</td></tr>
+          <tr><td>신한</td><td>4.05 ~ 4.70%</td></tr>
+          <tr><td>하나</td><td>4.15 ~ 4.60%</td></tr>
+          <tr><td>우리</td><td>4.20 ~ 4.75%</td></tr>
+          <tr><td>농협</td><td>4.00 ~ 4.55%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.72rem;color:#999;margin-top:8px;">※ 신용등급·상품조건에 따라 변동. 참고용 데이터.</p>
+    </div>
+
+  </aside>
+
+</div><!-- /container -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">부동산<span>인사이트</span></a>
+      <p>한국 부동산 시장의 흐름을 전문가 시각으로 분석합니다. 실수요자와 투자자 모두를 위한 깊이 있는 콘텐츠를 매일 제공합니다.</p>
+    </div>
+    <div class="footer-links">
+      <h4>카테고리</h4>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제 분석</a>
+      <a href="#">분양·청약 분석</a>
+      <a href="#">재개발·재건축</a>
+    </div>
+    <div class="footer-links">
+      <h4>서비스</h4>
+      <a href="#">투자 인사이트</a>
+      <a href="#">해외부동산</a>
+      <a href="#">칼럼·해설</a>
+      <a href="#">이용약관</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 부동산인사이트. All rights reserved. | 본 사이트의 모든 콘텐츠는 저작권법의 보호를 받습니다. | 투자는 본인 책임 하에 이루어져야 합니다.
+  </div>
+</footer>
+
+</body>
+</html>
