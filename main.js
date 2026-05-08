@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 72,
+    url: 'article_20260508_2_분양청약_v2.html',
+    category: '분양',
+    title: '5월 수도권 1만4천 가구 쏟아진다…용산 로또 줍줍까지, 지금이 청약 황금기인가',
+    summary: '5월 수도권 분양 1만4,330가구가 쏟아진다. 용산 호반써밋 에이디션 84㎡ 최고 524:1 경쟁률을 기록하며 청약 열기가 뜨겁다. 고분양가 시대, 실수요자와 투자자 모두에게 필요한 청약 전략을 완전 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-05-08',
+    title_en: '14,000 Units Flood the Metropolitan Area in May — From Yongsan Lotto Picks to the Golden Age of Subscriptions',
+    summary_en: '14,330 presale units hit the metropolitan area in May. With Yongsan Hoban Summit Edition 84㎡ recording a 524:1 competition ratio, subscription fever runs high. A complete analysis of subscription strategies for both end-users and investors in the era of high presale prices.'
+  },
+  {
+    id: 71,
+    url: 'article_20260508_1_정책_v2.html',
+    category: '정책',
+    title: '양도세 중과 유예 D-1: 다주택자의 마지막 탈출구가 닫힌다',
+    summary: '2026년 5월 9일 양도세 중과 유예가 공식 종료된다. 2주택 +20%p, 3주택 +30%p 중과가 재가동되면서 다주택자의 세금 부담이 급격히 늘어난다. 마지막 탈출구가 닫히기 전, 시장의 변화와 대응 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-05-08',
+    title_en: 'Capital Gains Tax Surcharge Exemption D-1: The Last Exit for Multi-Home Owners Is Closing',
+    summary_en: 'The capital gains tax surcharge exemption officially ends on May 9, 2026. With surcharges of +20%p for 2 homes and +30%p for 3+ homes reactivating, tax burdens for multi-home owners surge dramatically. Analyzing market changes and response strategies before the last exit closes.'
+  },
+  {
     id: 70,
     url: 'article_20260507_2_시장동향_v2.html',
     category: '시장동향',
