@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 74,
+    url: 'article_20260509_2_투자분석_v2.html',
+    category: '투자분석',
+    title: '양도세 중과 D-Day… 지금 부동산 경매에 뛰어들어야 할까?',
+    summary: '2026년 5월 9일 양도세 중과 유예가 종료됐다. 낙찰가율이 꺾이고 갭투자가 사라진 지금, 경매 시장의 판도가 바뀌고 있다. 실수요자에게는 기회일까, 함정일까.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-05-09',
+    title_en: 'Capital Gains Tax Surcharge D-Day… Should You Jump Into Real Estate Auctions Now?',
+    summary_en: 'The capital gains tax surcharge exemption ended on May 9, 2026. With successful bid rates declining and gap investments disappearing, the auction market landscape is shifting. Is this an opportunity or a trap for end-users?'
+  },
+  {
+    id: 73,
+    url: 'article_20260509_1_재개발재건축_v2.html',
+    category: '재개발',
+    title: '서울 8만5천 호 재건축 착공 선언… 정비사업 대전(大戰)의 서막인가',
+    summary: '서울시가 3년간 85개 구역, 8만5천 호 재건축·재개발 조기 착공을 공식 선언했다. 양도세 중과 유예 종료와 맞물린 이 시점, 정비사업 시장의 판도가 바뀌고 있다.',
+    image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1200&q=80',
+    author: '부동산인사이트 편집국',
+    date: '2026-05-09',
+    title_en: 'Seoul Declares 85,000-Unit Reconstruction Groundbreaking… Is This the Prelude to a Redevelopment War?',
+    summary_en: 'Seoul officially declared early groundbreaking for 85 zones and 85,000 reconstruction and redevelopment units over 3 years. At this juncture coinciding with the end of the capital gains tax surcharge exemption, the redevelopment market landscape is changing.'
+  },
+  {
     id: 72,
     url: 'article_20260508_2_분양청약_v2.html',
     category: '분양',
