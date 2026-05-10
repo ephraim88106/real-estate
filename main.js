@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 76,
+    url: 'article_20260510_2_column_v2.html',
+    category: '칼럼',
+    title: '전세 6.8억 시대, 공급 절벽이 낳은 서울 부동산의 역설 — 지금 사야 하는가, 기다려야 하는가',
+    summary: '2026년 5월, 서울 전셋값 역대 최고 경신… \'집이 없어서 오르는\' 시장에서 실수요자의 생존 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?w=1200&q=80',
+    author: '부동산인사이트 편집장 칼럼',
+    date: '2026-05-10',
+    title_en: 'The Jeonse 680M KRW Era: The Paradox of Seoul Real Estate Born from the Supply Cliff — Buy Now or Wait?',
+    summary_en: 'In May 2026, Seoul jeonse prices hit all-time highs. Analyzing survival strategies for end-users in a market that rises because there are no homes.'
+  },
+  {
+    id: 75,
+    url: 'article_20260510_1_overseas_v2.html',
+    category: '해외',
+    title: '미국은 조정, 일본은 금리 인상… 2026년 한국인의 해외 부동산 투자지도 완전 해부',
+    summary: '6%대 모기지 금리와 플로리다 폭락, 도쿄 초강세… 지금 어디에 돈을 넣어야 하는가? 미국·일본·동남아 3대 시장을 완전 해부한다.',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 해외투자팀',
+    date: '2026-05-10',
+    title_en: 'The US Corrects, Japan Raises Rates… A Complete Dissection of Korean Overseas Real Estate Investment Map in 2026',
+    summary_en: 'With 6% mortgage rates and Florida\'s crash alongside Tokyo\'s super-strength — where should you invest now? A complete dissection of the US, Japan, and Southeast Asian markets.'
+  },
+  {
     id: 74,
     url: 'article_20260509_2_투자분석_v2.html',
     category: '투자분석',
