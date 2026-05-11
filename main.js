@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 78,
+    url: 'article_20260511_2_policy_v2.html',
+    category: '정책',
+    title: '스트레스 DSR 3단계 전면 도입 — 당신의 대출 한도, 지금 당장 얼마나 줄었나?',
+    summary: '다주택자 양도세 중과 재개·스트레스 DSR 3단계·조정대상지역 규제 삼중 압박 속 내 집 마련 전략을 정밀 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-05-11',
+    title_en: 'Stress DSR Phase 3 Fully Implemented — How Much Has Your Loan Limit Actually Shrunk?',
+    summary_en: 'A precise analysis of home-buying strategies amid the triple squeeze of capital gains tax surcharge reinstatement, Stress DSR Phase 3, and speculation-cooling zone regulations.'
+  },
+  {
+    id: 77,
+    url: 'article_20260511_1_market_v2.html',
+    category: '시장동향',
+    title: '막차 탄 다주택자, 급매물이 쏟아진다 — 양도세 중과 유예 종료 후 서울 부동산 대격변',
+    summary: '5월 9일 다주택자 양도세 중과 유예가 끝났다. 급매물 출회, 강남권 가격 방어, 하반기 매물 잠김 시나리오까지 — 서울 부동산 시장의 대전환을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-05-11',
+    title_en: 'Multi-Home Owners Rush to Sell as Fire Sales Pour In — Seoul Real Estate Upheaval After Capital Gains Tax Surcharge Exemption Ends',
+    summary_en: 'The multi-home owner capital gains tax surcharge exemption ended on May 9. Analyzing the great transformation of Seoul\'s real estate market — from fire sale listings to Gangnam price defense to the second-half supply freeze scenario.'
+  },
+  {
     id: 76,
     url: 'article_20260510_2_column_v2.html',
     category: '칼럼',
