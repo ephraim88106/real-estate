@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 80,
+    url: 'article_20260512_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '1기 신도시 재건축 \'폭풍 전야\' — 분당·평촌의 기회와 당신이 모르는 함정',
+    summary: '분당·평촌 선도지구 구역지정 승인, 세운4구역 높이 규제 논란, 양도세 유예 종료. 2026년 정비사업 판도를 뒤흔드는 세 가지 변수를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-12',
+    title_en: 'First-Gen New Town Reconstruction \'Calm Before the Storm\' — Opportunities in Bundang & Pyeongchon and the Pitfalls You Don\'t Know',
+    summary_en: 'Bundang and Pyeongchon pilot district zoning approved, Sewoon 4 district height regulation controversy, capital gains tax exemption ends. Dissecting three variables shaking the 2026 redevelopment landscape.'
+  },
+  {
+    id: 79,
+    url: 'article_20260512_1_chungyak_v2.html',
+    category: '분양',
+    title: '"시세보다 2억 싸다"는데 왜 당첨이 안 될까 — 청약 양극화의 민낯과 생존 전략',
+    summary: 'LH 공공분양 263대 1, 추첨제 아파트 6,710대 1. 청약 시장은 지금 두 개의 세계로 쪼개지고 있다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-12',
+    title_en: '"2 Billion KRW Cheaper Than Market" But Why Can\'t You Win? — The Bare Face of Subscription Polarization and Survival Strategies',
+    summary_en: 'LH public housing 263:1, lottery apartments 6,710:1. The subscription market is now splitting into two worlds.'
+  },
+  {
     id: 78,
     url: 'article_20260511_2_policy_v2.html',
     category: '정책',
