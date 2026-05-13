@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 82,
+    url: 'article_20260513_2_해외부동산_v2.html',
+    category: '해외',
+    title: '강남 아파트 1채로 도쿄 3채 산다? — 엔저·미국금리가 바꾼 해외 부동산 판도',
+    summary: '국내 규제와 세금 부담에 지친 한국인 투자자들이 일본·미국·동남아로 눈을 돌리고 있다. 2026년 해외 부동산 투자, 기회는 어디에 있고 함정은 무엇인가?',
+    image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-13',
+    title_en: 'Buy 3 Tokyo Apartments with 1 Gangnam Apartment? — How the Weak Yen and US Interest Rates Reshaped Global Real Estate',
+    summary_en: 'Korean investors weary of domestic regulations and tax burdens are turning to Japan, the US, and Southeast Asia. Where are the opportunities and pitfalls in 2026 overseas real estate investment?'
+  },
+  {
+    id: 81,
+    url: 'article_20260513_1_투자분석_v2.html',
+    category: '투자분석',
+    title: '경매로 몰리는 \'스마트 머니\'… 갭투자 규제 뚫은 새 투자법의 명암',
+    summary: '양도세 중과 유예 종료, 토허제 겹규제 속에서도 서울 경매 낙찰률 5개월 만에 반등. 규제의 빈틈을 파고드는 경매 투자, 지금 들어가도 안전한가?',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-13',
+    title_en: 'Smart Money Flocking to Auctions — The Light and Shadow of New Investment Methods Bypassing Gap Investment Regulations',
+    summary_en: 'Seoul auction success rates rebound after 5 months despite capital gains tax surcharge reinstatement and overlapping regulations. Is it safe to enter auction investing now?'
+  },
+  {
     id: 80,
     url: 'article_20260512_2_redevelopment_v2.html',
     category: '재개발',
