@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 84,
+    url: 'article_20260514_2_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 매물 \'썰물\'… 양도세 중과 쇼크가 만든 이중시장의 민낯',
+    summary: '양도세 중과 재개 나흘, 서울 아파트 매물 5,000건 증발. 강동·성북·강서 중심 매물 회수 본격화. 지역별 수급 불균형과 거래 동결이 동시에 진행 중인 서울 주택시장의 현주소를 데이터로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-14',
+    title_en: 'Seoul Apartment Listings Drain Away — The Bare Face of the Dual Market Created by Capital Gains Tax Surcharge Shock',
+    summary_en: 'Four days after the capital gains tax surcharge reinstatement, 5,000 Seoul apartment listings vanished. Analyzing the current state of Seoul\'s housing market where regional supply-demand imbalance and transaction freezes are happening simultaneously.'
+  },
+  {
+    id: 83,
+    url: 'article_20260514_1_column_v2.html',
+    category: '칼럼',
+    title: '세금으로 집값 못 잡는다 — 양도세 중과 부활이 드러낸 한국 부동산의 구조적 딜레마',
+    summary: '다주택자 양도세 중과가 재개된 지 불과 나흘 만에 서울 아파트 매물 5,000건이 사라졌다. 정부의 세금 정책이 시장을 통제하기보다 오히려 \'이중 잠금\' 구조를 고착화하고 있다는 분석을 심층 해설한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-14',
+    title_en: 'Taxes Can\'t Tame Housing Prices — The Structural Dilemma of Korean Real Estate Revealed by Capital Gains Tax Surcharge Revival',
+    summary_en: 'Just four days after the multi-home owner capital gains tax surcharge was reinstated, 5,000 Seoul apartment listings disappeared. An in-depth analysis of how the government\'s tax policy is solidifying a \'double lock\' structure rather than controlling the market.'
+  },
+  {
     id: 82,
     url: 'article_20260513_2_해외부동산_v2.html',
     category: '해외',
