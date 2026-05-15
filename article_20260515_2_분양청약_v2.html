@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5월 수도권 1만4330가구 분양 대전쟁 — 장위·흑석·검단, 어디를 잡아야 하나 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #f4f6f4; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0A3A0A 0%, #2E7D2E 55%, #0A3A0A 100%);
+    padding: 72px 24px 60px;
+    color: #fff;
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: #1A7F4D;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 5px 14px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    word-break: keep-all;
+  }
+  .hero-meta {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .hero-meta span { display: flex; align-items: center; gap: 6px; }
+
+  /* LAYOUT */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+  }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+  /* ARTICLE */
+  article { background: #fff; border-radius: 8px; padding: 48px 44px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+  @media (max-width: 600px) { article { padding: 28px 20px; } }
+
+  /* DATA BOX */
+  .data-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #f0faf4;
+    border: 1px solid #b2dfc2;
+    border-top: 4px solid #1A7F4D;
+    border-radius: 8px;
+    padding: 20px 16px;
+    text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #1A7F4D;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .data-card .label {
+    font-size: 0.8rem;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* BODY TEXT */
+  article p {
+    font-size: 1.02rem;
+    color: #333;
+    margin-bottom: 22px;
+    word-break: keep-all;
+  }
+
+  /* H2 */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.38rem;
+    font-weight: 700;
+    color: #0A3A0A;
+    border-left: 4px solid #1A7F4D;
+    padding-left: 16px;
+    margin: 44px 0 20px;
+    line-height: 1.5;
+  }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: #f0faf4;
+    border-left: 5px solid #1A7F4D;
+    border-radius: 0 8px 8px 0;
+    padding: 24px 28px;
+    margin: 32px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.08rem;
+    color: #0a2a1a;
+    margin: 0;
+    line-height: 1.9;
+  }
+  .quote-box .source {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+    font-size: 0.82rem;
+    color: #1A7F4D;
+    margin-top: 10px;
+    display: block;
+  }
+
+  /* UL */
+  article ul {
+    padding-left: 0;
+    margin-bottom: 24px;
+    list-style: none;
+  }
+  article ul li {
+    font-size: 1rem;
+    color: #333;
+    padding: 8px 8px 8px 28px;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  article ul li::before {
+    content: '▸';
+    color: #1A7F4D;
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    font-size: 0.9rem;
+  }
+
+  /* COMPLEX TABLE */
+  .apt-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin: 24px 0 32px;
+  }
+  .apt-table th {
+    background: #0A3A0A;
+    color: #fff;
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .apt-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e8f5ee;
+    color: #333;
+    vertical-align: top;
+  }
+  .apt-table tr:nth-child(even) td { background: #f6fcf8; }
+  .apt-table td:first-child { font-weight: 600; color: #0A3A0A; }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box {
+    background: linear-gradient(135deg, #e8f8ef 0%, #d4f0e0 100%);
+    border: 1px solid #1A7F4D;
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin: 28px 0;
+  }
+  .highlight-box h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0A3A0A;
+    margin-bottom: 12px;
+  }
+  .highlight-box p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 48px;
+  }
+  .disclaimer p {
+    font-size: 0.82rem;
+    color: #888;
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  /* HASHTAGS */
+  .hashtags { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtags span {
+    background: #e8f8ef;
+    color: #1A7F4D;
+    font-size: 0.82rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #b2dfc2;
+  }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 28px; }
+  .sidebar-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .sidebar-box h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #0A3A0A;
+    border-bottom: 2px solid #1A7F4D;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+    font-size: 0.9rem;
+    color: #333;
+    border-bottom: 1px solid #f0f8f4;
+    line-height: 1.6;
+  }
+  .summary-list li::before {
+    content: '●';
+    color: #1A7F4D;
+    font-size: 0.6rem;
+    position: absolute;
+    left: 2px;
+    top: 12px;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { border-bottom: 1px solid #f0f8f4; }
+  .related-list li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 0.88rem;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  .related-list li a:hover { color: #1A7F4D; }
+
+  /* CHECKLIST */
+  .checklist { list-style: none; padding: 0; }
+  .checklist li {
+    padding: 8px 0 8px 26px;
+    position: relative;
+    font-size: 0.88rem;
+    color: #333;
+    border-bottom: 1px solid #f0f8f4;
+    line-height: 1.5;
+  }
+  .checklist li::before {
+    content: '✔';
+    color: #1A7F4D;
+    font-size: 0.9rem;
+    position: absolute;
+    left: 2px;
+    top: 8px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 0.82rem;
+  }
+  footer span { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">분양·청약 분석</span>
+    <h1>5월 수도권 1만4330가구 분양 대전쟁<br>— 장위·흑석·검단, 당신의 청약 전략은 준비됐나</h1>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 15일</span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>⏱ 약 10분 읽기</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <span class="num">14,330가구</span>
+        <span class="label">2026년 5월 수도권 분양 예정 물량</span>
+      </div>
+      <div class="data-card">
+        <span class="num">+31%</span>
+        <span class="label">전년 동월(9,082가구) 대비 공급 증가율</span>
+      </div>
+      <div class="data-card">
+        <span class="num">3.3㎡당<br>5,100만~</span>
+        <span class="label">장위푸르지오마크원 예상 분양가</span>
+      </div>
+    </div>
+
+    <p>2026년 5월, 수도권 분양 시장이 오랜만에 대규모 물량 공세를 맞이하고 있다. 서울 성북구 장위푸르지오마크원(1,931가구), 동작구 흑석 써밋더힐(1,515가구), 인천 서구 더샵검단레이크파크(2,800가구), 경기 화성동탄2 공공분양 등 굵직한 단지들이 줄줄이 청약 일정을 앞두고 있다. 지난해 5월 9,082가구와 비교하면 올해는 약 58% 늘어난 수치로, 시장에서는 "2026년 상반기 최대 분양 시즌"이라는 말이 나올 정도다.</p>
+
+    <p>공급 물량만 늘어난 것이 아니다. 단지별 성격도 뚜렷이 갈린다. 서울 도심 재개발 사업지는 희소성과 브랜드 프리미엄이 맞물려 높은 분양가에도 수요가 집중되는 반면, 수도권 외곽 택지지구는 상대적으로 합리적인 분양가를 무기로 실수요자를 공략하고 있다. 단순히 '청약을 넣는다'는 전략보다 단지별 특성과 자신의 청약 자격을 정밀하게 분석하는 것이 어느 때보다 중요한 시점이다.</p>
+
+    <h2>① 이달의 핵심 단지 분석</h2>
+
+    <p>5월 수도권 분양에서 가장 주목받는 단지들의 현황을 비교해보자.</p>
+
+    <table class="apt-table">
+      <thead>
+        <tr>
+          <th>단지명</th>
+          <th>위치</th>
+          <th>세대수</th>
+          <th>예상 분양가</th>
+          <th>특이사항</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>장위푸르지오마크원</td>
+          <td>서울 성북구 장위동</td>
+          <td>1,931가구</td>
+          <td>3.3㎡당 약 5,100만~5,200만원</td>
+          <td>장위10구역 재개발, 최고 35층</td>
+        </tr>
+        <tr>
+          <td>흑석 써밋더힐</td>
+          <td>서울 동작구 흑석동</td>
+          <td>1,515가구</td>
+          <td>3.3㎡당 약 5,500만원 이상 예상</td>
+          <td>흑석재정비촉진구역, 한강 조망 가능</td>
+        </tr>
+        <tr>
+          <td>더샵검단레이크파크</td>
+          <td>인천 서구 검단신도시</td>
+          <td>약 2,800가구</td>
+          <td>3.3㎡당 약 1,700만~1,900만원 예상</td>
+          <td>수도권 최대 단지 중 하나, 가격 메리트</td>
+        </tr>
+        <tr>
+          <td>화성동탄2 공공분양</td>
+          <td>경기 화성시</td>
+          <td>일부 물량</td>
+          <td>시세 대비 저렴한 공공 분양가</td>
+          <td>신생아 특례·청년 우선공급 포함</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>② 서울 도심 재개발 분양의 명암: 장위·흑석</h2>
+
+    <p>장위푸르지오마크원은 성북구 장위10구역 재개발 사업의 산물로, 지하 4층~지상 35층 22개 동 규모의 대단지다. 장위동은 과거 서울 내 낙후 주거지 중 하나였으나, 장기간 재개발이 추진되며 주거 환경이 빠르게 정비되고 있다. 지하철 6호선 돌곶이·상월곡역이 도보권에 있어 강북 출퇴근 수요에 적합하고, 분양가 상한제 적용 여부에 따라 가격 메리트가 갈릴 것으로 보인다.</p>
+
+    <p>흑석 써밋더힐은 동작구 흑석동의 재정비 사업지로, 한강을 바라볼 수 있는 조망권과 지하철 9호선 흑석역 초역세권이라는 입지 프리미엄이 두드러진다. 서울 주요 업무지구까지의 접근성이 탁월해 30~40대 실수요자와 투자 수요 모두의 관심을 받고 있다. 그러나 예상 분양가가 3.3㎡당 5,500만원을 상회할 경우, 실거주 목적의 무주택자보다는 자산가 계층의 수요로 집중되면서 청약 경쟁률이 양극화될 수 있다.</p>
+
+    <div class="quote-box">
+      <p>"서울 재개발 분양은 입지와 브랜드가 집약된 '희소재'다. 분양가가 높아도 시세 차익 기대감이 수요를 지탱하는 구조이며, 특히 한강 조망권 단지는 장기 보유 시 희소성이 점점 강해지는 경향이 있다."</p>
+      <span class="source">— 부동산 리서치 전문가 인터뷰 (2026년 5월)</span>
+    </div>
+
+    <h2>③ 인천 검단의 반전 — 가격 메리트로 실수요 공략</h2>
+
+    <p>더샵검단레이크파크는 인천 서구 검단신도시에 공급되는 약 2,800가구 규모의 대단지다. 검단신도시는 한때 '너무 멀다'는 이유로 외면받았지만, GTX-D 노선 계획과 인천 2호선 연장 논의가 이어지며 교통 개선 기대감이 서서히 반영되고 있다. 분양가가 3.3㎡당 1,700만~1,900만원대로 서울 단지의 3분의 1 수준이어서, 실수요 무주택자 입장에서는 초기 자금 부담이 크게 줄어드는 장점이 있다.</p>
+
+    <p>특히 신생아 특례대출·청년 전세자금 대출 등 정부 금융 지원이 중저가 분양 단지와 결합할 때 시너지가 크다는 점에서 검단은 주목할 만하다. 다만, 실제 GTX-D 착공 일정이 불확실하고, 주변 상권과 교육 인프라 성숙에 수년이 더 걸릴 수 있다는 점은 리스크 요인이다. 장기 거주를 전제로 자금 계획을 세우는 실수요자에게는 분명한 대안이지만, 단기 시세 차익을 기대하기에는 무리가 있다.</p>
+
+    <div class="quote-box">
+      <p>"검단은 지금 서울 시장이 너무 과열됐다고 느끼는 실수요자들이 눈을 돌리는 곳이다. 분양가 자체는 합리적이지만, 입주 후 5년 이상을 내다볼 수 있는 사람에게 어울리는 선택이다."</p>
+      <span class="source">— 인천 부동산 전문 중개법인 대표 인터뷰 (2026년 5월)</span>
+    </div>
+
+    <h2>④ 공공분양의 귀환: 화성동탄2와 신생아 특례</h2>
+
+    <p>5월 수도권 분양에서 또 하나의 키워드는 공공분양의 확대다. 이재명 정부는 LH 중심의 공공분양 물량을 공격적으로 확대하는 한편, 신생아 특례공급과 청년·무주택자 우선 공급 비율을 높이는 방식으로 실수요자 접근성을 강화하고 있다. 화성동탄2 공공분양은 그 대표적인 사례로, 시세보다 현저히 낮은 분양가와 장기 모기지 지원을 결합해 중산층 무주택 가구를 직접 겨냥한다.</p>
+
+    <p>공공분양의 장점은 분양가가 시세보다 저렴하다는 것 외에도 전매 제한이 완화되는 시점 이후 시세 차익 실현 가능성이 있다는 점이다. 그러나 공공분양은 소득·자산 기준이 까다롭고 가점 경쟁도 치열해, 청약 자격 요건을 먼저 꼼꼼히 확인해야 한다. 신생아 특례는 2023년 1월 이후 출생한 자녀가 있는 가구에 우선 공급 혜택을 주는 만큼, 해당 요건을 갖춘 가구에게는 지금이 청약 기회의 황금기일 수 있다.</p>
+
+    <h2>⑤ 분양 시장의 구조적 변화: 공급 증가가 무조건 가격 하락을 의미하지 않는다</h2>
+
+    <p>5월 분양 물량이 전년 대비 58% 늘어났지만, 이것이 곧 분양가 하락이나 미분양 증가로 이어지는 것은 아니다. 서울 도심 재개발 물량은 사업성과 입지가 검증된 단지들로, 분양가가 높더라도 수요가 뒷받침된다. 문제는 수도권 외곽과 지방 광역시다. 인천·경기 일부 지역에서는 이미 미분양 단지가 적지 않게 쌓여 있어, 같은 수도권 내에서도 '옥석 가리기'가 절실하다.</p>
+
+    <p>또한 금리 환경도 변수다. 한국은행이 기준금리를 최근 수차례 인하하며 모기지 부담이 줄어든 것은 분양 수요 회복에 우호적인 배경이다. 하지만 금리 인하의 혜택이 분양 시장에 고르게 스며들기까지는 시차가 존재하며, 고분양가 단지에서 대출 한도 제한(DSR 규제)이 실질적인 수요 억제 요인으로 작용할 수 있다.</p>
+
+    <h2>⑥ 청약 전략: 지금 당장 점검해야 할 것들</h2>
+
+    <ul>
+      <li>청약홈(apply.lh.or.kr)에서 자신의 청약 가점과 세대원 구성을 최신 기준으로 다시 확인하고, 1순위 요건(청약 통장 납입 횟수·금액)이 충족되는지 점검할 것</li>
+      <li>서울 분양 단지는 가점제 비율이 높아 무주택 기간·부양가족 수가 핵심 변수이며, 가점이 낮은 청약자는 추첨제 물량이 많은 단지나 특별공급을 노리는 전략이 유효함</li>
+      <li>신생아 특례공급(2023년 1월 이후 출생 자녀 보유 가구) 자격이 있다면 공공분양과 민간 특별공급 모두 검토하되, 자산 기준(순자산 3억 5천만원 이하 등)을 사전에 확인할 것</li>
+      <li>검단·동탄 등 수도권 외곽 단지 청약 시에는 향후 교통 인프라 개선 일정과 인근 미분양 현황을 함께 점검해 단지의 실질 가치를 판단해야 함</li>
+      <li>분양가 상한제 적용 여부와 전매 제한 기간, 거주의무기간을 반드시 확인하여 입주 후 자금 계획과 거주 의무 이행 계획을 미리 수립해야 함</li>
+      <li>공공분양은 청약 당첨 후 계약 포기 시 일정 기간 청약 제한이 생길 수 있으므로, 실제 자금 조달 가능성을 확신한 뒤 청약에 나설 것</li>
+    </ul>
+
+    <div class="highlight-box">
+      <h3>💡 이달의 청약 핵심 포인트</h3>
+      <p>5월은 서울 도심 재개발 물량(고분양가·고경쟁)과 수도권 택지지구 물량(합리적 가격·실수요)이 동시에 출시되는 '양극화 장세'다. 자신의 가점, 자금력, 거주 목적을 냉정하게 파악하고 단지를 선택하는 것이 핵심이다. 조급함보다 '한 번의 신중한 선택'이 장기적으로 더 유리하다.</p>
+    </div>
+
+    <h2>결론: 공급이 늘어도 '어디'가 핵심이다</h2>
+
+    <p>5월 수도권 분양 대전은 실수요자에게 반가운 기회의 달이지만, 물량이 많다고 모든 선택지가 동등한 가치를 갖는 것은 아니다. 서울 도심 재개발 단지는 희소성 프리미엄이 분양가를 정당화하지만 접근 자금이 크다는 장벽이 있고, 검단·동탄 같은 수도권 외곽은 분양가 메리트를 장기적 인내심으로 담보해야 한다.</p>
+
+    <p>분양 시장의 구조적 양극화는 당분간 지속될 가능성이 높다. 정부의 공급 확대 정책이 빠르게 실행될수록 수도권 외곽과 지방 일부 지역에서는 미분양 리스크가 커지고, 서울 핵심 입지는 오히려 희소성이 강화될 수 있다. 결국 청약 시장에서의 성공 전략은 시장 전체를 보는 것이 아니라 '내가 살 수 있는 가격대에서 가장 좋은 입지'를 고르는 것으로 귀결된다. 이번 5월, 청약 기회가 넘치는 시장에서 오히려 더 냉정한 분석이 필요한 이유다.</p>
+
+    <div class="hashtags">
+      <span>#분양청약2026</span>
+      <span>#장위푸르지오마크원</span>
+      <span>#흑석써밋더힐</span>
+      <span>#검단신도시</span>
+      <span>#수도권분양</span>
+      <span>#5월청약</span>
+      <span>#신생아특례</span>
+      <span>#재개발분양</span>
+      <span>#부동산투자</span>
+    </div>
+
+    <div class="disclaimer">
+      <p>⚠️ <strong>면책 고지:</strong> 본 기사는 공개된 분양 정보 및 언론 보도를 바탕으로 작성된 정보성 콘텐츠입니다. 분양가·세대수·일정은 변경될 수 있으며, 실제 청약 전 청약홈 공식 공고문을 반드시 확인하시기 바랍니다. 본 내용은 투자 권유가 아니며, 청약 결과에 대한 책임은 청약자 본인에게 있습니다.</p>
+    </div>
+  </article>
+
+  <aside>
+    <div class="sidebar-box">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>5월 수도권 분양 1만4330가구 — 전년 동월 대비 58% 증가</li>
+        <li>서울 장위(1,931가구)·흑석(1,515가구) 재개발 분양 주목</li>
+        <li>인천 검단 더샵 약 2,800가구, 가격 메리트로 실수요 공략</li>
+        <li>신생아 특례·청년 우선공급 통한 공공분양 확대 기조</li>
+        <li>고분양가 vs. 실수요 단지의 명확한 전략 분리가 필요</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>🗞 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="#">2026년 상반기 수도권 입주 예정 아파트 총정리</a></li>
+        <li><a href="#">분양가 상한제 적용 단지 어디까지? 범위와 효과 분석</a></li>
+        <li><a href="#">청약 가점 계산기 — 내 점수 정확히 계산하는 법</a></li>
+        <li><a href="#">신생아 특례공급 완벽 가이드 — 자격과 절차 총정리</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>✅ 청약 전 체크리스트</h3>
+      <ul class="checklist">
+        <li>청약통장 납입 횟수·금액 확인</li>
+        <li>무주택 기간 계산 (세대원 포함)</li>
+        <li>부양가족 수 및 나이 기준 확인</li>
+        <li>소득·자산 기준 적격 여부</li>
+        <li>특별공급 자격 (신생아·다자녀·노부모)</li>
+        <li>분양가 상한제·전매 제한 확인</li>
+        <li>모기지 한도 사전 조회 (DSR)</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 <span>부동산인사이트</span> — 전문적 시각, 정확한 정보</p>
+  <p style="margin-top:6px; font-size:0.78rem;">본 사이트의 모든 콘텐츠는 정보 제공 목적으로 작성되었으며 투자 권유가 아닙니다.</p>
+</footer>
+
+</body>
+</html>
