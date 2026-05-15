@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 86,
+    url: 'article_20260515_2_분양청약_v2.html',
+    category: '분양',
+    title: '5월 수도권 1만4330가구 분양 대전쟁 — 장위·흑석·검단, 어디를 잡아야 하나',
+    summary: '5월 수도권 분양 1만4330가구, 전년 동월 대비 58% 증가. 서울 장위·흑석 재개발과 인천 검단 대단지까지, 고분양가 vs. 실수요 단지의 전략 분리가 필요한 분양 대전의 현장을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-15',
+    title_en: 'May Capital Region 14,330-Unit Presale Battle — Jangwi, Heukseok, Geomdan: Where Should You Aim?',
+    summary_en: 'May capital region presale reaches 14,330 units, up 58% year-over-year. From Seoul\'s Jangwi and Heukseok redevelopment to Incheon Geomdan mega-complex — analyzing the presale battlefield where high-price vs. end-user strategy separation is essential.'
+  },
+  {
+    id: 85,
+    url: 'article_20260515_1_정책_v2.html',
+    category: '정책',
+    title: '토허제 실거주 유예 확대, 시장 활성화인가 규제 후퇴인가 — 이재명 정부 부동산 정책 해부',
+    summary: '토허구역 실거주 유예 대상이 \'세입자 있는 모든 주택\'으로 확대됐다. 매물 출회 기대와 강남권 가격 자극 리스크가 공존하는 이번 조치의 실효성과 한계를 정밀 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-15',
+    title_en: 'Transaction Permit Zone Residency Deferral Expansion — Market Activation or Regulatory Retreat? Dissecting the Lee Administration\'s Real Estate Policy',
+    summary_en: 'The residency deferral for transaction permit zones has been expanded to all homes with tenants. A precise analysis of the effectiveness and limitations of this measure where expectations of increased listings and Gangnam price stimulation risks coexist.'
+  },
+  {
     id: 84,
     url: 'article_20260514_2_market_v2.html',
     category: '시장동향',
