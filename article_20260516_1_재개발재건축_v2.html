@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 재건축·재개발 '8만 5천호 신속착공' 선언 — 정비사업 80조 시대가 열린다 | 부동산인사이트</title>
+<meta name="description" content="서울시가 85개 구역, 8만 5천호 신속착공 계획을 공식 선언했다. 6종 패키지 제도와 함께 80조원 규모의 정비사업 시장이 본격화된다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #7B4A9E;
+    --accent-light: #f0e8fa;
+    --accent-mid: #c3a0e0;
+    --header-bg: #0D2B55;
+    --text: #1a1a2e;
+    --muted: #666;
+    --border: #e0e0e0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: var(--text); background: #f8f9fb; font-size: 16px; line-height: 1.85; }
+
+  /* HEADER */
+  header {
+    background: var(--header-bg);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 24px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%);
+    color: #fff; padding: 72px 24px 64px;
+  }
+  .hero-inner { max-width: 820px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: var(--accent); color: #fff;
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em;
+    padding: 5px 14px; border-radius: 20px; margin-bottom: 18px; text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+    font-weight: 700; line-height: 1.4; margin-bottom: 20px;
+  }
+  .hero-sub { font-size: 1.05rem; opacity: 0.88; line-height: 1.7; }
+  .hero-meta { margin-top: 28px; font-size: 0.82rem; opacity: 0.7; display: flex; gap: 18px; flex-wrap: wrap; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; padding: 48px 0; }
+  @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* DATA BOX */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: linear-gradient(135deg, #f5eeff, #ede0ff);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px; padding: 20px 18px;
+    text-align: center;
+  }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 700; color: var(--accent); }
+  .data-card .label { font-size: 0.78rem; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+
+  /* ARTICLE BODY */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem; font-weight: 700;
+    border-left: 4px solid var(--accent);
+    padding-left: 16px; margin: 44px 0 18px;
+    color: #1a0a2e;
+  }
+  article p { margin-bottom: 18px; color: #333; font-size: 0.97rem; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 5px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 24px 28px; margin: 32px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem; line-height: 1.8; color: #3a1a5e;
+  }
+  .quote-box cite { display: block; margin-top: 12px; font-style: normal; font-size: 0.82rem; color: var(--muted); font-family: 'Noto Sans KR', sans-serif; }
+
+  /* IMPLICATIONS */
+  .implications { background: #fff; border-radius: 12px; border: 1px solid var(--border); padding: 28px 32px; margin: 32px 0; }
+  .implications h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 16px; color: var(--accent); }
+  .implications ul { padding-left: 0; list-style: none; }
+  .implications ul li {
+    padding: 10px 0 10px 28px; position: relative;
+    border-bottom: 1px solid var(--border); font-size: 0.93rem;
+  }
+  .implications ul li:last-child { border-bottom: none; }
+  .implications ul li::before {
+    content: "▶"; position: absolute; left: 0;
+    color: var(--accent); font-size: 0.7rem; top: 13px;
+  }
+
+  /* POLICY EVAL */
+  .policy-eval { background: #fff; border-radius: 12px; padding: 28px; margin: 32px 0; border-top: 4px solid var(--accent); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .policy-eval h3 { font-size: 1rem; font-weight: 700; margin-bottom: 14px; color: var(--text); }
+  .eval-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 600px) { .eval-grid { grid-template-columns: 1fr; } }
+  .eval-card { padding: 16px; border-radius: 8px; }
+  .eval-card.pos { background: #eeffee; border-left: 3px solid #2e7d2e; }
+  .eval-card.neg { background: #fff0f0; border-left: 3px solid #c0392b; }
+  .eval-card h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 8px; }
+  .eval-card p { font-size: 0.83rem; margin: 0; }
+
+  /* DISCLAIMER */
+  .disclaimer { background: #f0f0f0; border-radius: 8px; padding: 18px 20px; margin: 40px 0 0; font-size: 0.78rem; color: #888; line-height: 1.7; }
+
+  /* SIDEBAR */
+  aside { }
+  .sidebar-box { background: #fff; border-radius: 12px; border: 1px solid var(--border); padding: 22px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+  .sidebar-box h3 { font-size: 0.9rem; font-weight: 700; color: var(--accent); border-bottom: 2px solid var(--accent-light); padding-bottom: 10px; margin-bottom: 14px; }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li { font-size: 0.82rem; padding: 7px 0 7px 18px; border-bottom: 1px solid #f0f0f0; position: relative; color: #333; }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before { content: "●"; position: absolute; left: 0; color: var(--accent); font-size: 0.6rem; top: 10px; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { font-size: 0.82rem; padding: 9px 0; border-bottom: 1px solid #f5f5f5; color: #333; line-height: 1.45; }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list li a { color: #333; text-decoration: none; }
+  .related-list li a:hover { color: var(--accent); }
+  .district-table { width: 100%; font-size: 0.77rem; border-collapse: collapse; }
+  .district-table th { background: var(--accent-light); color: var(--accent); font-weight: 700; padding: 7px 8px; text-align: left; }
+  .district-table td { padding: 7px 8px; border-bottom: 1px solid #f0f0f0; }
+  .district-table tr:last-child td { border-bottom: none; }
+
+  /* FOOTER */
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.7); padding: 36px 24px; margin-top: 60px; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.82rem; }
+  .footer-logo { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; color: #fff; font-weight: 700; }
+  .footer-logo span { color: #F4A52D; }
+
+  /* HASHTAGS */
+  .hashtags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { background: var(--accent-light); color: var(--accent); font-size: 0.78rem; padding: 4px 12px; border-radius: 20px; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">재개발·재건축</div>
+    <h1>서울 재건축·재개발 '8만 5천호 신속착공' 대선언 — 정비사업 80조 시대, 지금 어디를 봐야 하는가</h1>
+    <p class="hero-sub">서울시가 2026~2028년 85개 구역·8만 5천호의 신속착공 계획을 공식화했다. 6종 패키지 지원책과 180억원 저리융자가 더해지며 정비사업 시장이 격변의 분기점에 섰다.</p>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 16일</span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>🏷️ 재개발·재건축</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="layout">
+    <main>
+      <!-- DATA BOX -->
+      <div class="data-box">
+        <div class="data-card">
+          <div class="num">85,000호</div>
+          <div class="label">2026~2028 신속착공 목표<br>(85개 구역)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">80조원</div>
+          <div class="label">2026년 정비사업 시장<br>예상 규모</div>
+        </div>
+        <div class="data-card">
+          <div class="num">180억원</div>
+          <div class="label">서울시 정비사업<br>저리융자 지원 총액</div>
+        </div>
+      </div>
+
+      <article>
+        <p>2026년 봄, 서울 정비사업 시장이 사상 최대 규모의 판을 펼쳐놓고 있다. 서울시는 지난 4월 재개발·재건축을 통해 2026년부터 2028년까지 3년간 총 85개 구역에서 8만 5천호를 조기 착공하겠다고 공식 선언했다. 당초 목표인 7만 9천호보다 6천호가 늘어난 이 수치는, 서울 주택 공급 정상화를 향한 강한 정책 의지를 담고 있다. 동시에 업계에서는 올해 정비사업 시장 규모가 최대 80조원까지 확대될 것이라는 전망이 쏟아지며, 시공사들 간의 수주 전쟁도 이미 시작됐다.</p>
+
+        <p>그러나 화려한 숫자 뒤에는 냉정한 현실이 있다. 조합 갈등, 이주 지연, 금리 환경, 공사비 분쟁이라는 4대 난관이 여전히 사업 속도를 가로막고 있으며, 신속착공 지구로 선정된 구역들조차 실제 착공까지는 험난한 여정이 기다린다. 이번 글에서는 정책의 구체적 내용과 그 실효성을 해부하고, 실수요자·투자자가 주목해야 할 옥석 가리기의 기준을 제시한다.</p>
+
+        <h2>8만 5천호 신속착공 계획의 구체적 내용</h2>
+        <p>서울시가 공개한 85개 구역의 착공 목표 연도를 분석해보면 내용이 더욱 선명해진다. 2026년에는 한남3구역, 갈현1구역, 중계본동 백사마을 등 24개 구역이 착공을 목표로 하며, 2027년에는 이문4구역, 노량진1구역, 불광5구역 등 31개 구역이, 2028년에는 개포주공6·7단지, 상계2구역, 정릉골 등 30개 구역이 착공 예정이다. 이들 구역은 이미 사업 절차가 일정 수준 이상 진행된 곳들로, 서울시가 '착공 가능 구역'으로 직접 검증한 목록이라는 점에서 신뢰도를 갖는다.</p>
+
+        <p>눈여겨볼 점은 선정 기준이 단순 행정 단계가 아니라 실제 이주 준비 여부와 사업 추진력에 기반하고 있다는 것이다. 즉, 명단에 오른 구역은 단순히 '지정만 된' 곳이 아니라 실질적 착공 가능성이 확인된 곳들이다. 이는 과거의 장밋빛 공급 계획이 행정 단계에서 막혀 실현되지 못했던 전철을 밟지 않겠다는 의지이기도 하다.</p>
+
+        <div class="quote-box">
+          "서울 정비사업 시장이 연간 80조원 규모로 확대될 것이라는 전망은, 단순한 수치가 아니다. 이는 공급 병목이 해소되는 속도와 직결되며, 결국 서울 주택 가격 안정화의 시간표를 결정할 핵심 변수다."
+          <cite>— 부동산인사이트 편집 노트, 2026년 5월</cite>
+        </div>
+
+        <h2>'신속착공 6종 패키지' — 병목을 뚫는 제도적 수술</h2>
+        <p>서울시는 이번 계획에 단순한 목표치 제시를 넘어 구체적인 제도 개선 묶음인 '신속착공 6종 패키지'를 함께 발표했다. 각 항목은 과거 정비사업 지연의 주요 원인을 직접 겨냥하고 있다는 점에서 주목할 만하다.</p>
+        <p>첫째, 전자총회 활성화 및 비용 전액 보조다. 조합원 총회는 정비사업 진행의 핵심 관문이지만, 현장 소집 비용과 정족수 문제가 상시적인 지연 원인이었다. 전자총회를 전액 지원함으로써 이 병목을 직접 해소한다. 둘째, 이주 개시 조합을 대상으로 해체심의에 필요한 전문가 자문을 지원한다. 셋째, 구조심의와 굴토심의를 통합하여 심의 절차를 단축시킨다. 넷째, 이주·해체·착공 단계별 기한을 공사표준계약서에 명문화해 계약 상 책임감을 부여한다. 다섯째, 사업시행인가 완료 사업에 착공 전 공사변경 계약 컨설팅을 지원한다. 마지막으로 2027년부터 '정비사업 공정관리 캘린더' 앱을 개발·배포해 조합원 누구나 사업 일정을 실시간으로 추적할 수 있게 한다.</p>
+
+        <h2>180억원 저리융자의 의미와 한계</h2>
+        <p>서울시는 정비사업 조합의 재정 부담 완화를 위해 총 180억원 규모의 저리융자 지원계획도 공고했다. 담보대출은 연 2.5%, 신용대출은 연 4.0%의 금리를 적용한다. 현재 시중 대출금리와 비교하면 상당한 혜택이나, 전체 정비사업 자금 수요에 비하면 상징적 수준이라는 한계도 분명하다.</p>
+        <p>이 융자 지원의 진정한 의미는 금액의 크기보다 조합이 초기 행정 비용(측량, 감정평가, 법률 자문 등) 조달에 어려움을 겪어 사업이 지연되는 패턴을 차단하는 데 있다. 소규모 조합이나 추진력이 약한 구역에서 이 지원은 사업 지속 여부를 가르는 결정적 버팀목이 될 수 있다.</p>
+
+        <div class="quote-box">
+          "조합 운영 비용 지원은 단순한 복지가 아니다. 사업 초기의 금융 충격을 완충함으로써, 결국 더 많은 주택이 더 빨리 공급되는 정책 목표를 앞당기는 투자다."
+          <cite>— 서울시 주택정책 관계자 발언 취지 인용</cite>
+        </div>
+
+        <h2>정책 평가: 야심 찬 계획이 실현되려면</h2>
+        <div class="policy-eval">
+          <h3>신속착공 6종 패키지 정책 평가</h3>
+          <div class="eval-grid">
+            <div class="eval-card pos">
+              <h4>✅ 긍정적 측면</h4>
+              <p>사업 지연의 실질 원인(총회 비용, 심의 중복, 조합원 정보 접근성)을 직접 겨냥한 제도 설계. 착공 가능 구역을 명단화하여 투자·입주 수요의 예측 가능성을 높임. 저리융자로 초기 비용 조달 장벽 완화.</p>
+            </div>
+            <div class="eval-card neg">
+              <h4>⚠️ 우려 사항</h4>
+              <p>공사비 분쟁이 해소되지 않으면 착공 일정이 다시 밀릴 위험. 조합 내부 갈등(찬성·반대 진영 분쟁)은 제도적 지원만으로 해결 불가. 금리 환경 변화에 따른 이주비 대출 접근성 문제가 복병.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>실수요자·투자자가 챙겨야 할 5가지 시사점</h2>
+        <div class="implications">
+          <h3>투자·실수요 체크리스트</h3>
+          <ul>
+            <li><strong>착공 명단 확인이 최우선:</strong> 서울시가 공개한 85개 구역 명단과 연도별 착공 일정을 반드시 확인하라. 명단에 있다는 것은 행정 검증을 통과했다는 의미이며, 이주·전세 타이밍 계획을 세울 수 있다.</li>
+            <li><strong>2026년 착공 24개 구역에 집중:</strong> 한남3, 갈현1, 백사마을 등 2026년 착공 목표 구역 주변 전세·매매 수요를 추적하라. 이주 수요가 집중되는 지역의 전세가 상승이 선행지표로 작동한다.</li>
+            <li><strong>전자총회 지원의 수혜 구역 파악:</strong> 전자총회 비용 지원을 받는 조합은 총회 개최 빈도가 높아지고 사업 속도가 빨라질 가능성이 크다. 조합의 전자총회 전환 여부를 체크하라.</li>
+            <li><strong>공사비 분쟁 여부 확인 필수:</strong> 어떤 구역이든 시공사와의 공사비 분쟁이 지속 중이라면 착공 명단에 올랐더라도 일정 지연 위험이 상존한다. 조합 공고문, 주민설명회 결과를 주기적으로 모니터링하라.</li>
+            <li><strong>경쟁 분양 시기의 중복 리스크:</strong> 2027~2028년에 착공 구역이 집중된 만큼, 같은 시기 분양·입주 물량이 몰리는 구역의 프리미엄은 중단기적으로 희석될 수 있다. 단지별 입지 차별화를 기준으로 선별적 접근이 필요하다.</li>
+          </ul>
+        </div>
+
+        <h2>결론: 80조원 시장의 진짜 수혜자는 누구인가</h2>
+        <p>서울 정비사업 시장이 80조원 규모로 커진다는 것은 단순히 건설업의 호황을 의미하지 않는다. 이는 수십만 가구의 주거 환경이 바뀌고, 서울 도심의 주택 공급 지도가 다시 그려진다는 것을 뜻한다. 8만 5천호 신속착공 선언은, 잘 집행된다면 2028~2030년 서울 공급 절벽을 일정 부분 완충할 수 있는 중요한 정책 조각이다.</p>
+        <p>그러나 제도는 현장에서 살아 움직이는 조합원 간의 합의, 시공사와의 현실적 계약, 금리 환경이라는 변수들과 맞닥뜨린다. 화려한 계획이 공급 현실로 이어지려면, 숫자보다 '이행 감시 체계'가 더 중요하다. 앞으로 분기별로 착공 진행률을 추적하고, 지연 구역에 대한 서울시의 실질적 개입 의지를 확인해 가는 과정이 필요하다. 부동산인사이트는 이를 지속 모니터링할 것이다.</p>
+
+        <div class="hashtags">
+          <span class="hashtag">#재건축</span>
+          <span class="hashtag">#재개발</span>
+          <span class="hashtag">#서울정비사업</span>
+          <span class="hashtag">#신속착공</span>
+          <span class="hashtag">#8만5천호</span>
+          <span class="hashtag">#한남3구역</span>
+          <span class="hashtag">#갈현1구역</span>
+          <span class="hashtag">#부동산정책</span>
+        </div>
+
+        <div class="disclaimer">
+          <strong>면책 고지:</strong> 본 기사는 공개된 정보와 취재를 바탕으로 한 분석·의견이며, 특정 투자를 권유하거나 보증하지 않습니다. 부동산 투자에는 원금 손실 위험이 있으며, 투자 결정은 반드시 본인의 판단과 책임 하에 이루어져야 합니다. 법률·세무·재무 관련 사항은 전문가 상담을 권장합니다.
+        </div>
+      </article>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside>
+      <div class="sidebar-box">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>서울시, 2026~2028년 85개 구역·8만 5천호 신속착공 선언 (당초 목표 대비 +6천호)</li>
+          <li>2026년 24개, 2027년 31개, 2028년 30개 구역 순차 착공 목표</li>
+          <li>전자총회 지원·통합심의 등 '신속착공 6종 패키지' 도입</li>
+          <li>180억원 저리융자 (담보 2.5%, 신용 4.0%) 지원</li>
+          <li>정비사업 시장 올해 최대 80조원 규모 전망</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>📰 관련 기사</h3>
+        <ul class="related-list">
+          <li><a href="#">한남3구역 재개발 — 사업 속도와 분양가 전망</a></li>
+          <li><a href="#">갈현1구역 재개발, 이주민 수급 동향 분석</a></li>
+          <li><a href="#">서울 정비사업 공사비 분쟁 현황 총정리</a></li>
+          <li><a href="#">2026년 재건축 초과이익환수제 적용 구역 전망</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🗓️ 2026년 착공 목표 주요 구역</h3>
+        <table class="district-table">
+          <tr><th>구역명</th><th>유형</th><th>목표 연도</th></tr>
+          <tr><td>한남3구역</td><td>재개발</td><td>2026</td></tr>
+          <tr><td>갈현1구역</td><td>재개발</td><td>2026</td></tr>
+          <tr><td>백사마을</td><td>재개발</td><td>2026</td></tr>
+          <tr><td>이문4구역</td><td>재개발</td><td>2027</td></tr>
+          <tr><td>노량진1구역</td><td>재개발</td><td>2027</td></tr>
+          <tr><td>개포주공6·7단지</td><td>재건축</td><td>2028</td></tr>
+          <tr><td>상계2구역</td><td>재개발</td><td>2028</td></tr>
+        </table>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">부동산<span>인사이트</span></div>
+    <div>© 2026 부동산인사이트. 본 기사의 무단 전재 및 재배포를 금합니다.</div>
+  </div>
+</footer>
+
+</body>
+</html>
