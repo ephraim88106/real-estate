@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 88,
+    url: 'article_20260516_2_투자분석_v2.html',
+    category: '투자분석',
+    title: '감정가 9억이 16억에 낙찰… 경매가 \'규제 우회로\'가 된 2026년, 지금 뛰어들어도 되는가',
+    summary: '2026년 서울 아파트 경매 낙찰가율이 107%를 넘었다가 3월에 100% 아래로 꺾였다. 경매 갭투자 열풍과 옥석 가리기 심화의 교차점에서 투자 전략을 점검한다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-16',
+    title_en: 'Appraised at 900M KRW, Sold at 1.6B — Auctions Became a \'Regulatory Bypass\' in 2026, Is It Safe to Jump In Now?',
+    summary_en: 'Seoul apartment auction sale-to-appraisal ratios exceeded 107% before dropping below 100% in March 2026. Examining investment strategies at the crossroads of auction gap-investment fever and intensifying quality screening.'
+  },
+  {
+    id: 87,
+    url: 'article_20260516_1_재개발재건축_v2.html',
+    category: '재개발',
+    title: '서울 재건축·재개발 \'8만 5천호 신속착공\' 선언 — 정비사업 80조 시대가 열린다',
+    summary: '서울시가 85개 구역, 8만 5천호 신속착공 계획을 공식 선언했다. 6종 패키지 제도와 함께 80조원 규모의 정비사업 시장이 본격화된다.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-16',
+    title_en: 'Seoul Declares \'85,000-Unit Fast-Track Construction\' for Reconstruction & Redevelopment — The 80 Trillion KRW Redevelopment Era Begins',
+    summary_en: 'Seoul officially announced a fast-track construction plan for 85 districts and 85,000 units. The 80 trillion KRW redevelopment market is set to take off with a six-type package system.'
+  },
+  {
     id: 86,
     url: 'article_20260515_2_분양청약_v2.html',
     category: '분양',
