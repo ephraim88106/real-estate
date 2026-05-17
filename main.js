@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 90,
+    url: 'article_20260517_2_column_v2.html',
+    category: '칼럼',
+    title: '양도세 폭탄 터진 날, 서울 집값은 왜 올랐나 — 매물 잠김 시대의 역설',
+    summary: '다주택자 양도세 중과 부활 직후 서울 아파트 매물이 6.8% 급감하며 오히려 집값이 상승했다. 세금 정책의 역설과 매물 잠김 시대의 투자 시사점을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-17',
+    title_en: 'The Day the Capital Gains Tax Bomb Dropped, Why Did Seoul Home Prices Rise — The Paradox of the Locked-Listing Era',
+    summary_en: 'After the reinstatement of heavy capital gains tax on multi-homeowners, Seoul apartment listings dropped 6.8% and prices paradoxically rose. Analyzing the tax policy paradox and investment implications of the locked-listing era.'
+  },
+  {
+    id: 89,
+    url: 'article_20260517_1_overseas_v2.html',
+    category: '해외',
+    title: '엔저 황금기가 저문다 — 2026년 해외 부동산 투자, 지금이 마지막 기회인가',
+    summary: '일본 BOJ 금리 인상으로 엔저 수혜가 마무리 국면에 접어든다. 일본·미국·베트남 3대 시장의 기회와 리스크를 비교 분석하며, 한국 투자자를 위한 글로벌 투자 판단 기준을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-17',
+    title_en: 'The Weak-Yen Golden Age Fades — Is 2026 the Last Chance for Overseas Real Estate Investment?',
+    summary_en: 'With BOJ rate hikes ending the weak-yen advantage, we compare opportunities and risks across Japan, US, and Vietnam markets, presenting a global investment framework for Korean investors.'
+  },
+  {
     id: 88,
     url: 'article_20260516_2_투자분석_v2.html',
     category: '투자분석',
