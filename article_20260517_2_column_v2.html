@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>양도세 폭탄 터진 날, 서울 집값은 왜 올랐나 — 매물 잠김 시대의 역설 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #f5f5f0; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    padding: 0 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: #fff; text-decoration: none; letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 6px; }
+  nav a {
+    color: rgba(255,255,255,0.78);
+    text-decoration: none; font-size: 0.82rem;
+    padding: 6px 12px; border-radius: 4px;
+    transition: background 0.2s;
+  }
+  nav a:hover { background: rgba(255,255,255,0.12); color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+    padding: 80px 20px 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M20 20.5V18H0v5h5v5H0v5h20v-2.5h20V20.5H20zm-2 4.5h-1v-1h1v1zm-1-6h1v1h-1v-1z'/%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .hero-inner { max-width: 800px; margin: 0 auto; position: relative; }
+  .cat-tag {
+    display: inline-block;
+    background: #6A6A10; color: #fff;
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px;
+    padding: 5px 14px; border-radius: 20px; margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    color: #fff; line-height: 1.4;
+    margin-bottom: 18px; font-weight: 700;
+  }
+  .hero-sub { color: rgba(255,255,255,0.82); font-size: 1rem; margin-bottom: 24px; }
+  .hero-meta { color: rgba(255,255,255,0.55); font-size: 0.82rem; }
+  .hero-meta span { margin-right: 18px; }
+
+  /* LAYOUT */
+  .main-wrap {
+    max-width: 1200px; margin: 0 auto;
+    padding: 40px 20px;
+    display: grid; grid-template-columns: 1fr 300px; gap: 32px;
+  }
+  @media (max-width: 900px) {
+    .main-wrap { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+
+  /* ARTICLE */
+  article { background: #fff; border-radius: 8px; padding: 40px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+
+  /* DATA BOXES */
+  .data-boxes {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+    margin-bottom: 36px;
+  }
+  @media (max-width: 600px) { .data-boxes { grid-template-columns: 1fr; } }
+  .data-box {
+    background: #f8f7e8; border-radius: 8px;
+    padding: 20px 16px; text-align: center;
+    border-top: 4px solid #6A6A10;
+  }
+  .data-box .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.8rem; font-weight: 700;
+    color: #5A5A08; line-height: 1.2;
+  }
+  .data-box .label { font-size: 0.78rem; color: #555; margin-top: 6px; }
+
+  /* BODY TEXT */
+  article p { margin-bottom: 20px; font-size: 1rem; color: #222; }
+
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.3rem; font-weight: 700;
+    color: #2A2A0A; margin: 36px 0 14px;
+    border-left: 4px solid #6A6A10; padding-left: 14px;
+    line-height: 1.5;
+  }
+
+  /* PULL QUOTE */
+  .pull-quote {
+    background: #f3f2dc;
+    border-radius: 8px; padding: 24px 28px;
+    margin: 28px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem;
+    color: #3D3D0A; line-height: 1.8;
+    position: relative;
+  }
+  .pull-quote::before {
+    content: '\201C';
+    position: absolute; top: -4px; left: 16px;
+    font-size: 4rem; color: #6A6A10; opacity: 0.35;
+    font-family: Georgia, serif; line-height: 1;
+  }
+
+  /* IMPLICATIONS */
+  article ul {
+    padding-left: 0; list-style: none;
+    margin: 14px 0 24px;
+  }
+  article ul li {
+    padding: 10px 14px 10px 40px;
+    margin-bottom: 8px; border-radius: 6px;
+    background: #f8f7e8;
+    position: relative; font-size: 0.95rem;
+  }
+  article ul li::before {
+    content: '→';
+    position: absolute; left: 14px;
+    color: #6A6A10; font-weight: 700;
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box {
+    background: #2A2A0A; color: #f0f0d8;
+    border-radius: 8px; padding: 20px 24px;
+    margin: 24px 0; font-size: 0.92rem; line-height: 1.8;
+  }
+  .highlight-box strong { color: #F4A52D; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0; border-radius: 6px;
+    padding: 16px 20px; margin-top: 36px;
+    font-size: 0.78rem; color: #777; line-height: 1.7;
+  }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-box {
+    background: #fff; border-radius: 8px;
+    padding: 22px; box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  .sidebar-box h3 {
+    font-size: 0.9rem; font-weight: 700;
+    color: #2A2A0A; margin-bottom: 14px;
+    padding-bottom: 10px; border-bottom: 2px solid #6A6A10;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 8px 0 8px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.85rem; color: #333;
+    position: relative;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: '▸'; position: absolute; left: 0;
+    color: #6A6A10; font-size: 0.75rem; top: 10px;
+  }
+
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 9px 0; border-bottom: 1px solid #eee; }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { text-decoration: none; font-size: 0.84rem; color: #1a4d7a; line-height: 1.5; }
+  .related-list a:hover { text-decoration: underline; }
+
+  /* TAX TABLE */
+  .tax-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  .tax-table th { background: #5A5A08; color: #fff; padding: 8px 10px; text-align: left; }
+  .tax-table td { padding: 8px 10px; border-bottom: 1px solid #eee; color: #333; }
+  .tax-table tr:last-child td { border-bottom: none; }
+  .tax-table tr:nth-child(even) td { background: #f8f7e8; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 24px 20px;
+    font-size: 0.8rem; margin-top: 40px;
+  }
+  footer strong { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="cat-tag">칼럼·해설</div>
+    <h1>양도세 폭탄 터진 날, 서울 집값은 왜 올랐나<br>— 매물 잠김 시대의 역설</h1>
+    <p class="hero-sub">다주택자 중과 부활 이후 공급·수요 방정식의 역전: 정책이 의도와 반대로 작동하는 메커니즘을 해부한다</p>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 17일</span>
+      <span>✍️ 부동산인사이트 편집국</span>
+      <span>📝 칼럼·해설</span>
+    </div>
+  </div>
+</section>
+
+<div class="main-wrap">
+  <article>
+    <!-- DATA BOXES -->
+    <div class="data-boxes">
+      <div class="data-box">
+        <div class="num">82.5%</div>
+        <div class="label">3주택 이상 다주택자 최고 실효 양도세율<br>(지방소득세 포함)</div>
+      </div>
+      <div class="data-box">
+        <div class="num">6.8%</div>
+        <div class="label">중과 부활 직후 서울 아파트 매물 감소율<br>(머니투데이, 2026.5.16)</div>
+      </div>
+      <div class="data-box">
+        <div class="num">+0.28%</div>
+        <div class="label">서울 아파트 주간 매매가 상승률<br>(1월말 이후 최고폭 기록)</div>
+      </div>
+    </div>
+
+    <p>2026년 5월 10일, 약 4년간 유지되어 온 다주택자 양도소득세 중과 유예 조치가 종료됐다. 정부는 이 조치를 통해 다주택자들이 매물을 내놓아 시장에 공급이 늘어나고, 집값이 안정되기를 기대했다. 그런데 정책이 시행된 직후 시장의 반응은 예상과 정반대였다. 매물은 오히려 6.8% 급감했고, 서울 아파트 주간 상승률은 1월 말 이후 최고치를 기록했다. 강남 3구는 물론 성북구와 종로구에서는 통계 집계 사상 역대 최고 주간 상승률이라는 수치가 나왔다.</p>
+
+    <p>이것은 단순한 시장의 변덕이 아니다. 세금 설계와 부동산 시장의 작동 원리 사이에서 반복적으로 발생하는 구조적 패턴이다. 이 글은 '왜 양도세 중과가 오히려 집값을 올리는가'라는 역설을 풀고, 향후 시장이 어디로 향할지를 냉철하게 짚어본다.</p>
+
+    <h2>세금 폭탄의 역설: '팔 수도, 살 수도 없는' 시장</h2>
+
+    <p>다주택자 양도세 중과의 논리는 간명하다. 집을 많이 가진 사람에게 높은 세금을 부과함으로써 매각을 유도하고, 시장에 매물이 늘어나 가격이 안정된다는 것이다. 그러나 이 논리는 한 가지 전제를 빠뜨린다. '세금이 높아도 팔 사람은 판다'는 가정이다.</p>
+
+    <p>현실에서는 반대 메커니즘이 작동한다. 3주택 이상 보유자에게 적용되는 최고 실효 양도세율이 82.5%에 달하면, 이미 상당한 자본 이득을 실현한 다주택자들은 간단한 산수를 한다. "팔면 이익의 대부분을 세금으로 낸다. 그러면 굳이 팔 이유가 없다." 이른바 '동결 효과(Lock-in Effect)'다. 매도를 통해 손에 쥘 수 있는 실질 수익이 너무 작거나, 매도 후 재투자 수익이 보유 수익에 미치지 못한다고 판단되면 매물은 자연스럽게 잠긴다.</p>
+
+    <div class="pull-quote">
+      "세금으로 시장을 통제하려는 모든 시도는 시장 참여자들의 행동 변화로 반드시 되돌아온다. 다주택자 양도세 중과는 매물을 시장에 공급하게 만드는 것이 아니라, 버티게 만드는 제도다. 이것은 설계의 실패가 아니라, 인센티브 구조의 필연적 결과다."
+    </div>
+
+    <p>그 결과는 수요·공급의 단순 법칙이 지배한다. 매물이 줄면 희소성이 커지고, 희소성이 커지면 가격이 오른다. 더 극적인 것은 이 매물 잠김이 구매자의 심리에도 영향을 미친다는 점이다. "지금 안 사면 더 비싸진다"는 조급감이 잔존 수요를 자극하면서, 양도세 중과 시행과 동시에 매수 심리가 오히려 반등하는 아이러니가 연출된다.</p>
+
+    <h2>중과 유예 종료가 촉발한 두 갈래 흐름</h2>
+
+    <p>2022년부터 4년 가까이 유지된 양도세 중과 유예는 시장에 두 가지 흐름을 만들었다. 첫 번째는 '유예 만료 전 막판 매도' 흐름이다. 4~5월 초, 중과 재개를 앞두고 일부 다주택자들이 절세 목적으로 급매를 내놓으며 단기 거래량이 증가하고 가격 하락 압력이 생겼다. "세금만 31억"이라는 언론 보도가 나올 만큼 보유 자산이 큰 다주택자들이 이 시기에 집중적으로 매도하거나, 그것이 어렵다면 자녀에게 증여하는 방식을 택했다.</p>
+
+    <p>두 번째는 5월 10일 이후 곧바로 시작된 '매물 잠김' 흐름이다. 유예 기간에 팔 수 있었던 매물이 소진되고, 중과 세율이 부과되는 시장에서는 다주택자들이 집을 내놓지 않는다. 공급이 빠지면서 잔존 매수 수요가 줄어든 공급과 충돌해 가격이 다시 상승 압력을 받기 시작한 것이다. 서울 집값이 중과 시행 직후 오히려 오른 것은 이 두 번째 흐름이 첫 번째를 빠르게 압도했음을 보여준다.</p>
+
+    <h2>정책의 의도와 결과 사이: 무엇을 놓쳤나</h2>
+
+    <p>이 역설은 사실 새롭지 않다. 2018~2019년에도 다주택자 중과가 강화되자 매물이 줄고 오히려 가격이 뛰는 패턴이 반복됐다. 정부는 그때마다 규제 강도를 높이는 방식으로 대응했고, 시장은 그때마다 같은 방향으로 반응했다. 이 순환 고리가 반복되는 이유는 하나다. 세금 정책은 '공급을 늘리는 도구'가 아니라 '수요를 억제하는 도구'이기 때문이다. 공급 문제를 세금으로 해결하려는 접근 자체가 구조적 한계를 안고 있다.</p>
+
+    <div class="pull-quote">
+      "부동산 시장에서 세금 정책의 유효성은 결국 '버티는 비용'과 '파는 비용'의 비교에서 결정된다. 지금의 세율 구조에서 버티는 것이 더 유리하다면, 다주택자들은 버틸 것이다. 그리고 시장은 그들이 내놓지 않는 매물만큼 더 귀해지고, 더 비싸진다."
+    </div>
+
+    <p>이와 함께 주목해야 할 것은 수요 측 변수다. 2026년 5월 현재, 서울 주택매매 소비심리지수는 124.9로 '상승 국면'에 위치한다. 실수요자들의 매수 의지는 여전히 강하다. 인구가 빠져나가는 지방과 달리, 서울은 직주 근접 수요와 학군 수요가 구조적으로 유지되는 시장이다. 이 수요가 급감하지 않는 한, 공급 충격 없이 집값을 잡는 것은 사실상 불가능하다.</p>
+
+    <h2>향후 시장 전망: 단기 상승 후 방향 갈림길</h2>
+
+    <p>단기적으로 서울 아파트 가격은 매물 잠김 효과로 추가 상승 압력이 지속될 가능성이 높다. 특히 강남권과 용산·마포·성동 등 핵심 생활권은 공급 희소성이 더욱 두드러질 것이다. 그러나 이 상승이 지속 가능한 펀더멘털에 기반한 것인지는 별개의 문제다. 경제 성장 둔화, 가계부채 부담, 인구구조 변화라는 세 가지 구조적 역풍은 2026년 하반기 이후 시장의 상단을 제한할 수 있다.</p>
+
+    <p>정부 입장에서는 딜레마가 깊어진다. 다주택자 중과를 완화하면 '집부자 특혜' 비판을 받고, 유지하면 매물 잠김이 심화된다. 근본적인 해법은 결국 공급 확대뿐이다. 그러나 공급 효과가 시장에 반영되기까지는 통상 2~5년의 리드타임이 필요하다. 그 공백을 세금 정책만으로 메우려는 시도는, 이미 수차례의 반복 실험으로 효과가 제한적임이 증명됐다.</p>
+
+    <h2>실수요자와 투자자를 위한 시사점</h2>
+
+    <ul>
+      <li><strong>매물 잠김은 단기 현상이 아닐 수 있다:</strong> 세율 구조가 바뀌지 않는 한 다주택자의 자발적 매도는 기대하기 어렵다. 급매를 기다리는 전략은 이 환경에서 유효성이 낮다.</li>
+      <li><strong>실수요 매수는 여전히 입지 중심으로:</strong> 가격 변동성이 큰 시기일수록 직주근접·학군·대중교통 접근성이 우수한 핵심 입지 중심의 매수가 안전하다. 수요 기반이 탄탄한 입지는 조정 국면에서도 낙폭이 제한된다.</li>
+      <li><strong>다주택 보유자는 장기 보유 전략으로 재정비:</strong> 현행 세율 구조에서 매도를 통한 차익 실현은 매우 불리하다. 임대 수익률 관리와 증여 설계를 중심으로 포트폴리오를 재점검할 시점이다.</li>
+      <li><strong>정책 리스크를 상수로 가정하라:</strong> 한국 부동산 시장의 특성상 정책 변화는 언제든 예고 없이 발생한다. 어느 한 정책 변수에 과도하게 의존한 투자 계획은 수정 위험이 크다.</li>
+      <li><strong>전월세 시장 혼란에 주목:</strong> 매물 잠김은 매매시장만의 문제가 아니다. 임대 공급 부족으로 전셋값·월세도 상승 압력을 받을 수 있다. 임차인 입장에서는 계약 갱신 청구권 활용과 계약 시기 분산을 적극 검토해야 한다.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <strong>⚡ 핵심 판단:</strong> 2026년 서울 부동산은 '오르는 시장'과 '잠긴 시장'이 동시에 존재한다. 가격은 올라도 거래는 되지 않는 이 이중 구조는, 실수요자에게 기회이자 함정이 동시에 될 수 있다. 지금 가장 필요한 것은 유행처럼 번지는 낙관론도, 두려움에 기반한 비관론도 아니다. 정확한 입지 분석과 세금 설계에 기반한 냉정한 계산이다.
+    </div>
+
+    <h2>결론: 정책은 시장을 이길 수 없다, 다만 방향을 틀 수 있다</h2>
+
+    <p>다주택자 양도세 중과 부활 이후 서울 집값이 오른 것은 정부의 실패이기도 하지만, 동시에 부동산 시장의 논리가 얼마나 강한지를 다시 한번 확인시켜 주는 사건이다. 시장 참여자들은 세금 구조 변화에 합리적으로 반응한다. 그 반응이 정책 의도와 다를 때, 우리는 그것을 '역설'이라 부른다. 그러나 이 역설은 예측 가능한 역설이다.</p>
+
+    <p>정책이 시장을 영구적으로 이길 수는 없다. 그러나 정책은 시장의 방향에 영향을 줄 수 있고, 그 방향이 바뀌는 변곡점에서 정보와 판단력을 가진 사람은 다른 선택지를 만들어낸다. 지금은 그 변곡점이다. 세금 정책의 역설 속에서, 시장의 구조를 이해하는 사람만이 이 혼란을 기회로 바꿀 수 있다.</p>
+
+    <div class="disclaimer">
+      ⚠️ <strong>면책 고지:</strong> 본 글은 정보 제공 및 시론적 견해를 목적으로 작성된 칼럼이며, 특정 투자 행위를 권유하거나 법률·세무 자문을 제공하지 않습니다. 부동산 관련 세금 및 법률 사항은 공인된 세무사·변호사와 반드시 개별 상담하시기 바랍니다. 인용된 통계 수치는 작성 시점 기준이며, 이후 상황에 따라 달라질 수 있습니다.
+    </div>
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sidebar-box">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>다주택자 양도세 중과(5월 10일~) 재개로 3주택 이상 최고 세율 82.5% 적용</li>
+        <li>중과 부활 직후 서울 아파트 매물 6.8% 급감, '매물 잠김' 현상 본격화</li>
+        <li>매물 감소 → 희소성 증가 → 가격 상승이라는 역설적 메커니즘 작동</li>
+        <li>서울 매매 소비심리지수 124.9로 상승 국면 지속, 수요 기반 여전히 견고</li>
+        <li>세금 정책만으로는 공급 문제 해결 불가; 공급 확대가 근본 해법임을 재확인</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="#">양도세 중과 부활 후 서울 매물 동향 실시간 추적</a></li>
+        <li><a href="#">다주택자 증여 급증: 절세 설계 최신 전략</a></li>
+        <li><a href="#">성북·종로 역대 최고 상승, 과열 지구 지정 가능성은</a></li>
+        <li><a href="#">전세시장 긴장감 고조, 임차인 대응 전략 5가지</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>📊 다주택자 양도세 세율표</h3>
+      <table class="tax-table">
+        <thead>
+          <tr><th>보유 주택 수</th><th>중과 가산세율</th><th>최고 실효세율*</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1주택(비과세 미충족)</td><td>—</td><td>49.5%</td></tr>
+          <tr><td>2주택 (규제지역)</td><td>+20%p</td><td>66.0%</td></tr>
+          <tr><td>3주택 이상</td><td>+30%p</td><td>82.5%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.72rem; color:#888; margin-top:8px;">* 지방소득세(10%) 포함 기준</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> — 전문적 분석과 시장 견해를 전달합니다<br>
+  <span style="font-size:0.75rem; margin-top:6px; display:block;">© 2026 부동산인사이트. 본 콘텐츠는 정보 제공 목적이며 투자 권유가 아닙니다.</span>
+</footer>
+
+</body>
+</html>
