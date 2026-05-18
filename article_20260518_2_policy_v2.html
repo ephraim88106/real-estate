@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>다주택자 양도세 중과 유예 종료 — 집값을 잡을까, 되레 불을 지를까 - 부동산인사이트</title>
+<meta name="description" content="2026년 5월 9일 다주택자 양도소득세 중과 유예가 종료됐다. 4년간의 유예 종료가 부동산 시장에 미치는 구조적 영향과 정책의 실효성을 날카롭게 분석한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f4f4f2; color: #1a1a1a; line-height: 1.8; }
+  header {
+    background: #0D2B55; position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 40px; height: 60px; box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 64px 40px 56px; color: #fff;
+  }
+  .hero-inner { max-width: 1100px; margin: 0 auto; }
+  .cat-tag {
+    display: inline-block; background: #C8401A; color: #fff; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 3px; letter-spacing: 0.08em;
+    text-transform: uppercase; margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.3);
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.5rem);
+    font-weight: 900; line-height: 1.35; margin-bottom: 18px;
+    border-left: 5px solid #C8401A; padding-left: 20px;
+  }
+  .hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.65); margin-top: 10px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.88); margin-top: 14px; max-width: 780px; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media(max-width: 820px) { .grid { grid-template-columns: 1fr; } nav { display: none; } }
+  .data-box { display: flex; gap: 16px; margin-bottom: 40px; flex-wrap: wrap; }
+  .data-card {
+    flex: 1; min-width: 180px; background: #fde8e0; border-radius: 10px; padding: 20px;
+    border-top: 4px solid #C8401A; text-align: center;
+  }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 900; color: #C8401A; }
+  .data-card .label { font-size: 0.8rem; color: #555; margin-top: 6px; line-height: 1.4; }
+  article { background: #fff; border-radius: 12px; padding: 40px; }
+  article p { margin-bottom: 1.4em; font-size: 1.02rem; color: #2a2a2a; }
+  article h2 {
+    font-family: 'Noto Serif KR', serif; font-size: 1.3rem; font-weight: 700;
+    border-left: 4px solid #C8401A; padding-left: 14px; margin: 36px 0 16px; color: #7a1a06;
+  }
+  .quote-box {
+    background: #fde8e0; border-left: 5px solid #C8401A;
+    padding: 22px 28px; border-radius: 0 8px 8px 0; margin: 32px 0;
+  }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.08rem; color: #7a1a06; margin: 0; line-height: 1.7; }
+  .quote-box cite { display: block; font-size: 0.8rem; color: #666; margin-top: 10px; font-style: normal; }
+  .implications { background: #fef2ee; border-radius: 10px; padding: 28px 32px; margin: 32px 0; }
+  .implications h3 { font-family: 'Noto Serif KR', serif; font-size: 1.1rem; color: #7a1a06; margin-bottom: 14px; }
+  .implications ul { padding-left: 20px; }
+  .implications li { margin-bottom: 10px; color: #333; font-size: 0.97rem; }
+  .policy-timeline { background: #fff8f6; border: 1px solid #f0c0a8; border-radius: 10px; padding: 24px; margin: 32px 0; }
+  .policy-timeline h3 { font-size: 0.95rem; color: #C8401A; margin-bottom: 16px; font-weight: 700; }
+  .timeline-item { display: flex; gap: 16px; margin-bottom: 14px; }
+  .timeline-date { min-width: 80px; font-size: 0.8rem; font-weight: 700; color: #C8401A; padding-top: 2px; }
+  .timeline-desc { font-size: 0.88rem; color: #444; line-height: 1.5; }
+  .disclaimer { background: #f0f0ee; border-radius: 8px; padding: 18px 22px; margin-top: 40px; }
+  .disclaimer p { font-size: 0.78rem; color: #777; margin: 0; line-height: 1.6; }
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card { background: #fff; border-radius: 12px; padding: 24px; }
+  .sidebar-card h4 { font-family: 'Noto Serif KR', serif; font-size: 1rem; color: #7a1a06; border-bottom: 2px solid #C8401A; padding-bottom: 10px; margin-bottom: 16px; }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li { padding: 8px 0; border-bottom: 1px solid #eee; font-size: 0.88rem; color: #333; padding-left: 18px; position: relative; }
+  .summary-list li::before { content: '▸'; color: #C8401A; position: absolute; left: 0; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid #eee; }
+  .related-list li a { font-size: 0.86rem; color: #C8401A; text-decoration: none; line-height: 1.4; }
+  .related-list li a:hover { text-decoration: underline; }
+  .tax-table { width: 100%; font-size: 0.8rem; border-collapse: collapse; }
+  .tax-table th { background: #C8401A; color: #fff; padding: 8px 12px; text-align: left; }
+  .tax-table td { padding: 8px 12px; border-bottom: 1px solid #f0c0a8; color: #333; }
+  .tax-table tr:last-child td { border-bottom: none; }
+  .tax-table tr:nth-child(even) { background: #fff8f6; }
+  .highlight { color: #C8401A; font-weight: 700; }
+  footer { background: #0D2B55; color: rgba(255,255,255,0.6); text-align: center; padding: 30px; margin-top: 60px; font-size: 0.8rem; }
+  footer strong { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">부동산<span>인사이트</span></a>
+  <nav>
+    <a href="#">시장동향</a>
+    <a href="#">정책·규제</a>
+    <a href="#">투자분석</a>
+    <a href="#">법률·세금</a>
+    <a href="#">칼럼</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">정책·규제 분석</span>
+    <h1>다주택자 양도세 중과 유예 종료<br>집값을 잡을까, 되레 불을 지를까</h1>
+    <p class="hero-sub">4년간 지속된 양도소득세 중과 유예가 5월 9일 종료됐다. 정부는 시장 안정을 기대하지만, 현장에서는 오히려 매물 잠김과 가격 상승이 나타나고 있다. 정책의 설계와 현실의 간극을 날카롭게 짚는다.</p>
+    <p class="hero-meta">부동산인사이트 정책팀 | 2026년 5월 18일 | #양도세중과 #다주택자 #부동산정책 #매물잠김 #부동산규제</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid">
+    <main>
+      <div class="data-box">
+        <div class="data-card">
+          <div class="num">+30%P</div>
+          <div class="label">3주택 이상<br>조정지역 양도세<br>중과 부담 상한</div>
+        </div>
+        <div class="data-card">
+          <div class="num">4년</div>
+          <div class="label">다주택자 양도세<br>중과 유예 기간<br>(2022.5 ~ 2026.5.9)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">6개월</div>
+          <div class="label">신규 조정지역<br>계약일 기준<br>중과 유예 완충기간</div>
+        </div>
+      </div>
+
+      <article>
+        <p>
+          2022년 5월, 문재인 정부에서 윤석열 정부로 교체되던 시점에 단행된 대표적 규제 완화 조치가 있다. 바로 다주택자에 대한 양도소득세 중과 배제 유예다. 당시 정부는 다주택자 매물을 시장에 풀어 주택 공급 효과를 기대했다. 그렇게 1년으로 시작된 유예는 두 차례, 세 차례 연장을 거듭하다 2026년 5월 9일 마침내 공식 종료됐다. 4년이라는 긴 세월이 지났다.
+        </p>
+        <p>
+          그렇다면 이 정책의 종료가 시장에 어떤 충격을 줄까? 직관적으로는 다주택자들이 "이제는 버티기 어렵다"며 매물을 대거 출회할 것 같다. 그러나 현실은 역설적이다. 유예 종료는 오히려 매물 잠김을 심화시키고, 가격 상승의 새로운 촉매가 되고 있다는 분석이 잇따른다. 왜 이런 역설이 발생하는지, 그리고 이 정책이 진정 시장 안정을 위한 올바른 처방인지 이 글에서 냉정하게 따져본다.
+        </p>
+
+        <div class="policy-timeline">
+          <h3>⏱ 다주택자 양도세 중과 유예 — 4년의 역사</h3>
+          <div class="timeline-item">
+            <div class="timeline-date">2022년 5월</div>
+            <div class="timeline-desc">윤석열 정부 출범과 함께 조정대상지역 다주택자 양도세 중과 1년 유예 시행</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023년 5월</div>
+            <div class="timeline-desc">시장 여건 고려, 2년 추가 연장 발표 (2025.5까지)</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025년 5월</div>
+            <div class="timeline-desc">1년 재연장으로 2026.5.9까지 유예 지속</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2026년 5월 9일</div>
+            <div class="timeline-desc"><strong>최종 종료.</strong> 보완책(계약일 기준 유예, 임대주택 실거주 의무 완화) 병행 시행</div>
+          </div>
+        </div>
+
+        <h2>① 양도세 중과란 무엇인가: 구조부터 이해해야 한다</h2>
+        <p>
+          양도소득세 중과는 조정대상지역 내 주택을 팔 때 기본세율에 추가세율을 얹는 제도다. 2주택자는 기본세율+20%P, 3주택 이상은 기본세율+30%P의 세율이 적용된다. 소득세 최고세율이 45%이고 여기에 30%P가 더해지면 실효 양도세율이 75%에 육박할 수 있다. 취득가액과 양도가액의 차이(양도차익)가 클수록 납부 세금은 기하급수적으로 늘어난다.
+        </p>
+        <p>
+          문제는 부동산 가격이 지난 10년간 크게 오른 탓에, 오래전에 매입한 다주택자의 경우 양도차익이 수억 원에서 수십억 원에 달한다는 점이다. 이 경우 양도세 중과까지 더해지면 집을 팔아서 남는 돈보다 세금으로 내는 돈이 더 클 수 있다. 단순히 집을 팔기가 싫어서가 아니라, 팔면 오히려 손해가 나는 구조가 형성되는 것이다. 이것이 '매물 잠김'의 경제적 실체다.
+        </p>
+
+        <div class="quote-box">
+          <p>"집을 팔면 세금을 내야 하는데, 그 세금이 양도차익의 70%라면 누가 팔겠는가. 다주택자들은 팔지 않고 버티면서 임대 소득이나 전세를 유지하는 게 훨씬 유리하다. 중과세는 매물을 풀기보다 오히려 잠그는 효과를 낸다."</p>
+          <cite>— 세무 전문가 의견 종합</cite>
+        </div>
+
+        <h2>② 유예 종료의 역설: 왜 집값이 오히려 뛰나</h2>
+        <p>
+          이론적으로는 양도세 부담이 강해지면 다주택자들이 서둘러 팔 것 같다. 그러나 실제로는 그렇지 않다. 유예 종료 전인 4~5월 초, 일부 급매물이 시장에 나오면서 거래가 활발해졌다. 이 급매물들은 주로 유예 기간의 '마지막 열차'를 타려는 다주택자들의 물건이었다. 그런데 이 물건들이 빠르게 소진되고 나자, 시장의 매물 총량은 오히려 줄어버렸다.
+        </p>
+        <p>
+          유예 종료 이후 남은 다주택자들은 계산기를 두드렸다. 지금 팔면 70% 가까운 세금을 내야 하지만, 계속 보유하면 전세나 임대를 통해 월 수백만 원의 현금 흐름을 유지할 수 있다. 집값이 계속 오른다면 양도세 부담에도 불구하고 장기 보유가 유리하다. 결국 '팔지 않겠다'는 결정이 확산되면서 매물이 더 줄어들고, 줄어든 매물은 남은 수요를 자극해 호가를 끌어올렸다. 전형적인 역설적 정책 효과다.
+        </p>
+
+        <h2>③ 정부의 보완책: 충분한가</h2>
+        <p>
+          정부는 유예 종료 충격을 완화하기 위해 몇 가지 보완책을 내놨다. 핵심은 계약일 기준 유예다. 5월 9일 이전에 매매 계약을 체결했다면, 잔금일이 이후가 되더라도 중과 적용을 받지 않는다. 이를 통해 이미 거래를 추진 중이던 당사자들의 불측의 손해를 방지한다.
+        </p>
+        <p>
+          지역별 완충 기간도 다르다. 강남 4구(강남·서초·송파·용산)는 계약일로부터 4개월 내 양도 시 중과 면제, 지난해 10월 신규 지정된 조정대상지역은 6개월 이내 양도 시 면제다. 또한 임대 중인 주택에 대해서는 실거주 의무 이행 시점을 기존 임대차 계약 종료일까지 유예(최장 2028년 2월 11일)하여 임대 중인 집도 거래가 원활히 이루어지도록 했다.
+        </p>
+        <p>
+          그러나 이 보완책이 구조적 문제를 해결하지는 못한다. 보완책의 혜택을 받는 대상은 유예 종료 직전에 이미 거래를 추진하던 소수다. 장기 보유 다주택자들의 매물 잠김을 해제하기에는 역부족이다. 결국 보완책은 급격한 충격을 줄이는 쿠션일 뿐, 정책의 핵심 모순인 '높은 세금 → 매물 잠김 → 공급 감소 → 가격 상승'의 악순환을 끊지는 못한다.
+        </p>
+
+        <div class="quote-box">
+          <p>"양도세 중과는 집값을 잡기 위한 수요 억제책이 아니라, 공급 억제를 통한 가격 지지책으로 작동하고 있다. 정책의 설계 의도와 시장의 반응이 정반대 방향을 가리키고 있다."</p>
+          <cite>— 부동산 정책 연구자 견해 종합</cite>
+        </div>
+
+        <h2>④ 스트레스 DSR 3단계와의 상호작용</h2>
+        <p>
+          2026년 들어 스트레스 DSR 3단계가 본격 적용됐다. 스트레스 금리 하한을 3%로 설정함으로써, 저금리 국면에서도 차주의 대출 한도가 과도하게 늘어나지 않도록 하는 장치다. 주택담보대출 한도가 이전보다 평균 10~20% 감소한 사례가 속출하고 있다. 서울·경기 12곳의 고가 주택(25억 원 초과)에 대해서는 주담대가 2억 원까지만 허용되는 규제도 병행 중이다.
+        </p>
+        <p>
+          이처럼 양도세 중과(공급 억제)와 DSR 규제(수요 억제)가 동시에 작동하는 상황에서 시장은 어떻게 반응할까? 공급은 줄고, 수요도 줄어드는 '거래량 급감' 시나리오다. 실제로 서울 아파트 월별 거래량은 여전히 최근 5년 평균을 밑돈다. 가격은 오르지만 거래가 활발하지 않은, 전형적인 '거래 절벽 + 가격 상승' 패턴이다. 이는 실수요자에게 이중고다. 집을 사고 싶어도 대출이 제한되고, 급매물도 없어서 진입 자체가 어렵다.
+        </p>
+
+        <h2>⑤ 정책 평가: 옳은 방향인가</h2>
+        <p>
+          다주택자 양도세 중과 정책의 근본 취지에는 동의할 수 있다. 주택을 투기 자산으로 보유하는 행위를 세금으로 억제하겠다는 의도는 정당하다. 그러나 이 정책이 실제로 주거 안정에 기여하는지는 별개의 문제다.
+        </p>
+        <p>
+          핵심 문제는 시장이 정책의 의도대로 반응하지 않는다는 점이다. 다주택자들은 팔지 않고 버틴다. 매물이 줄면 가격이 오른다. 가격이 오르면 남은 다주택자들의 보유 의욕은 더 강해진다. 이 악순환을 끊으려면 '파는 게 유리한 조건'을 만들어야 한다. 그러나 현 세제는 정반대다. 오래 가지고 있을수록, 또는 장기 임대 등록을 하면 세 부담이 줄어드는 구조가 오히려 보유를 장려한다.
+        </p>
+        <p>
+          전문가들은 실효성 있는 공급 확대 없이 수요 억제와 세제 강화만으로는 서울 집값을 안정시킬 수 없다고 지적한다. 재건축·재개발 규제 완화, 3기 신도시 공급 가속화, 임대주택 공급 확대 등 공급 측면의 근본 처방이 병행돼야 한다는 것이다. 이 관점에서 보면 양도세 중과 유예 종료는 절반의 처방에 불과하다.
+        </p>
+
+        <div class="implications">
+          <h3>📌 정책 변화에 따른 실수요자·투자자 대응 전략 5</h3>
+          <ul>
+            <li><strong>계약일 기준 완충 기간 활용:</strong> 5월 9일 이전 계약을 체결했다면 잔금 일정을 조정해 완충기간(4~6개월) 내 거래 완료가 가능하다. 담당 세무사에게 반드시 확인할 것.</li>
+            <li><strong>다주택자 매물 협상력 높아져:</strong> 중과 부담으로 매도 여력이 줄어든 다주택자 매물은 가격 협상보다 조건(잔금 일정, 하자 보수 등) 협상에 집중하는 전략이 유효하다.</li>
+            <li><strong>조정대상지역 여부 최신 확인 필수:</strong> 지난해 10월 신규 지정된 조정지역이 있다. 매수 예정 단지가 조정지역인지, 중과 대상인지 반드시 최신 고시문을 확인해야 한다.</li>
+            <li><strong>장기 보유 전략의 세제 유불리 분석:</strong> 1주택자 장기보유특별공제(최대 80%)는 다주택 중과와 전혀 다른 구조다. 다주택자라면 어느 집을 먼저 팔지, 종합부동산세와 양도세를 통합해 시뮬레이션할 것.</li>
+            <li><strong>정부 추가 규제 모니터링:</strong> 집값이 상승 국면에 진입하면 정부가 조정대상지역 추가 지정, LTV 강화 등 추가 조치를 취할 가능성이 있다. 매수 계획이 있다면 규제 발표 시점 전에 검토를 마치는 것이 유리하다.</li>
+          </ul>
+        </div>
+
+        <h2>결론: 정책의 의도와 시장의 현실 사이에서</h2>
+        <p>
+          다주택자 양도세 중과 유예 종료는 주거 정의 실현이라는 측면에서는 방향성이 옳다. 주택을 투기 자산으로 대량 보유하는 행위에 세금을 부과하는 것은 사회적 합의가 가능한 정책이다. 그러나 이 정책이 현실에서 작동하는 방식은 설계 의도와 상이하다.
+        </p>
+        <p>
+          매물 잠김, 공급 감소, 가격 상승이라는 역설적 효과가 반복되는 한, 세제 강화만으로는 서울 주택 시장을 안정시킬 수 없다. 공급을 획기적으로 늘리지 않는 이상, 어떤 수요 억제 정책도 가격 압력을 완전히 해소하기 어렵다는 것이 시장의 냉정한 반응이다. 정책 당국은 이 불편한 진실을 직시하고, 공급 확대와 세제 개편을 함께 설계하는 종합 처방으로 나아가야 한다.
+        </p>
+
+        <div class="disclaimer">
+          <p>⚠️ <strong>면책 고지:</strong> 본 기사는 공개된 통계자료, 정부 발표 및 전문가 견해를 바탕으로 작성된 정보·분석 콘텐츠이며, 특정 부동산 상품의 매수·매도 또는 세무 처리를 권유하지 않습니다. 양도세 및 부동산 관련 세제는 개인 상황에 따라 상이하며, 반드시 전문 세무사·법무사에게 상담받으시기 바랍니다. 본 기사의 내용은 작성 시점의 정보를 기반으로 하며, 이후 법령 개정이나 정책 변화에 따라 달라질 수 있습니다.</p>
+        </div>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h4>📋 핵심 요약</h4>
+        <ul class="summary-list">
+          <li>다주택자 양도세 중과 유예 5.9 최종 종료</li>
+          <li>3주택 이상 최대 기본세율+30%P 중과 재개</li>
+          <li>계약일 기준 완충기간(4~6개월) 보완책 병행</li>
+          <li>유예 종료 후 역설적으로 매물 감소·가격 상승</li>
+          <li>DSR 규제와 맞물려 '거래절벽+가격상승' 패턴 심화</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>🔗 관련 기사</h4>
+        <ul class="related-list">
+          <li><a href="#">서울 아파트 15주 만에 최대 상승, 왜?</a></li>
+          <li><a href="#">스트레스 DSR 3단계, 내 대출 한도는?</a></li>
+          <li><a href="#">토지거래허가구역 실거주 유예 완화 내용</a></li>
+          <li><a href="#">다주택자 종부세·양도세 통합 시뮬레이션</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>📊 양도세 중과세율 비교</h4>
+        <table class="tax-table">
+          <thead>
+            <tr><th>구분</th><th>기본세율</th><th>중과 시</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1주택 (2년 이상)</td><td>6~45%</td><td>해당 없음</td></tr>
+            <tr><td>2주택 (조정지역)</td><td>6~45%</td><td class="highlight">+20%P</td></tr>
+            <tr><td>3주택 이상 (조정지역)</td><td>6~45%</td><td class="highlight">+30%P</td></tr>
+            <tr><td>단기 보유 (1년 미만)</td><td>70%</td><td>-</td></tr>
+            <tr><td>단기 보유 (2년 미만)</td><td>60%</td><td>-</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.72rem;color:#888;margin-top:8px;">※ 개인별 상황 상이. 세무 전문가 상담 필수</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <p><strong>부동산인사이트</strong> | 분석과 통찰로 부동산을 읽다</p>
+  <p style="margin-top:8px;">본 콘텐츠는 정보 제공 목적으로 작성되었으며 투자·세무 권유가 아닙니다. © 2026 부동산인사이트</p>
+</footer>
+
+</body>
+</html>
