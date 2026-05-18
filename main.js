@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 92,
+    url: 'article_20260518_2_policy_v2.html',
+    category: '정책',
+    title: '다주택자 양도세 중과 유예 종료 — 집값을 잡을까, 되레 불을 지를까',
+    summary: '4년간 지속된 양도소득세 중과 유예가 5월 9일 종료됐다. 정부는 시장 안정을 기대하지만, 현장에서는 오히려 매물 잠김과 가격 상승이 나타나고 있다. 정책의 설계와 현실의 간극을 날카롭게 짚는다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 정책팀',
+    date: '2026-05-18',
+    title_en: 'End of Capital Gains Tax Reprieve for Multi-Homeowners — Will It Tame Prices or Fan the Flames?',
+    summary_en: 'The four-year capital gains tax reprieve for multi-homeowners ended on May 9. While the government expects market stabilization, the reality shows locked listings and rising prices. A sharp analysis of the gap between policy design and market reality.'
+  },
+  {
+    id: 91,
+    url: 'article_20260518_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트값, 15주 만에 최대 상승폭 — "공급 쇼크 + 매물 잠김 + 매수 심리 반등" 삼중 충격',
+    summary: '양도세 중과 유예 종료 직후 급매물이 빠르게 소화된 뒤 서울 집값이 다시 가파르게 달리기 시작했다. 25개 자치구 전체가 동반 상승하는 이례적 신호와 그 구조적 원인을 해부한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-05-18',
+    title_en: 'Seoul Apartment Prices Post Largest Weekly Gain in 15 Weeks — Triple Shock of Supply Crisis, Locked Listings, and Buyer Sentiment Rebound',
+    summary_en: 'After the end of the capital gains tax reprieve, fire-sale listings were quickly absorbed and Seoul home prices resumed steep climbs. Analyzing the unprecedented signal of all 25 districts rising simultaneously and its structural causes.'
+  },
+  {
     id: 90,
     url: 'article_20260517_2_column_v2.html',
     category: '칼럼',
