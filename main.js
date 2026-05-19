@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 94,
+    url: 'article_20260519_2_재개발재건축_v2.html',
+    category: '재개발',
+    title: '재건축 패스트트랙 시대 — 안전진단 벽 허물자 서울이 들썩인다',
+    summary: '30년 노후 아파트, 이제 안전진단 없이 재건축 착수 가능. 서울시 85개 구역 착공 로드맵 공개와 500억 이주비 융자 지원의 의미, 투자자·실수요자 시사점을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+    author: '부동산인사이트 재개발·재건축 분석 팀',
+    date: '2026-05-19',
+    title_en: 'The Reconstruction Fast-Track Era — Seoul Stirs as Safety Inspection Barriers Fall',
+    summary_en: 'Apartments over 30 years old can now start reconstruction without safety inspections. Analyzing the implications of Seoul\'s 85-district construction roadmap and 50 billion KRW relocation loan support for investors and end-users.'
+  },
+  {
+    id: 93,
+    url: 'article_20260519_1_분양청약_v2.html',
+    category: '분양',
+    title: '"국평 30억 시대" 개막 — 분양가 폭주, 실수요자는 어디로 가야 하나',
+    summary: '서울 비분상제 단지 84㎡가 30억 코앞까지 치솟았다. 분양가 폭등의 배경, 분상제 vs 비분상제 양극화, 그리고 실수요자의 냉정한 청약 전략을 짚는다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 분양·청약 분석 팀',
+    date: '2026-05-19',
+    title_en: 'The "3 Billion KRW National Standard" Era Begins — Where Should End-Users Go Amid Soaring Presale Prices?',
+    summary_en: 'Seoul non-price-capped 84㎡ units are nearing 3 billion KRW. Analyzing the background of presale price surges, the polarization between price-capped and non-capped complexes, and rational subscription strategies for end-users.'
+  },
+  {
     id: 92,
     url: 'article_20260518_2_policy_v2.html',
     category: '정책',
