@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 96,
+    url: 'article_20260520_2_overseas_v2.html',
+    category: '해외',
+    title: '미국·일본·베트남, 어디서 살아야 돈이 되나? — 2026 한국인 해외부동산 투자 완전 분석',
+    summary: '달러 자산, 엔화 메리트, 동남아 성장 기대감까지. 2026년 한국인 해외부동산 투자 3대 시장을 전략적으로 비교 분석한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 해외부동산 분석 팀',
+    date: '2026-05-20',
+    title_en: 'USA, Japan, Vietnam — Where Should You Buy to Make Money? A Complete 2026 Analysis of Korean Overseas Real Estate Investment',
+    summary_en: 'Dollar assets, yen advantages, and Southeast Asian growth potential. A strategic comparative analysis of the three major markets for Korean overseas real estate investment in 2026.'
+  },
+  {
+    id: 95,
+    url: 'article_20260520_1_investment_v2.html',
+    category: '투자분석',
+    title: '경매 낙찰가율 108% 돌파, 지금이 진짜 기회인가? — 2026 부동산 투자 옥석 가리기',
+    summary: '서울 아파트 경매 낙찰가율이 4년 만에 최고치를 기록하며 투자 수요가 급증하고 있다. DSR 규제와 갭투자 제한 속에서 살아남는 투자 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 투자분석 팀',
+    date: '2026-05-20',
+    title_en: 'Auction Winning Bid Rate Breaks 108% — Is This the Real Opportunity? Separating Wheat from Chaff in 2026 Real Estate Investment',
+    summary_en: 'Seoul apartment auction winning bid rates hit a 4-year high as investment demand surges. An in-depth analysis of survival strategies amid DSR regulations and gap investment restrictions.'
+  },
+  {
     id: 94,
     url: 'article_20260519_2_재개발재건축_v2.html',
     category: '재개발',
