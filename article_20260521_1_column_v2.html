@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공급이 틀렸다 — 정책의 실패가 만든 2026년 집값 역설 | 부동산인사이트</title>
+<meta name="description" content="2026년 5월, 서울 집값이 다시 뛰고 있다. 공급 절벽과 정책 공백이 어떻게 지금의 시장을 만들었는지 심층 해설한다.">
+<meta name="keywords" content="부동산 칼럼, 공급절벽, 2026 집값, 서울 아파트, 부동산 정책, 양도세">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #6A6A10;
+    --accent-light: #b8b830;
+    --accent-bg: #f5f5e0;
+    --accent-border: #9a9a20;
+    --header-bg: #0D2B55;
+    --text-dark: #1a1a1a;
+    --text-mid: #3a3a3a;
+    --text-light: #6a6a6a;
+    --bg-main: #f9f9f6;
+    --bg-white: #ffffff;
+    --border: #e0e0d8;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg-main); color: var(--text-dark); line-height: 1.8; font-size: 16px; }
+
+  /* HEADER */
+  header { background: var(--header-bg); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 22px; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; font-weight: 500; letter-spacing: 0.3px; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%); padding: 80px 24px 60px; color: #fff; }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; padding: 5px 14px; border-radius: 2px; text-transform: uppercase; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(26px, 4vw, 40px); font-weight: 700; line-height: 1.35; margin-bottom: 18px; word-break: keep-all; }
+  .hero-sub { font-size: 17px; color: rgba(255,255,255,0.82); line-height: 1.7; margin-bottom: 28px; word-break: keep-all; }
+  .hero-meta { display: flex; gap: 20px; align-items: center; font-size: 13px; color: rgba(255,255,255,0.65); flex-wrap: wrap; }
+  .hero-meta span::before { content: ''; }
+
+  /* LAYOUT */
+  .content-wrap { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 48px; }
+  @media (max-width: 860px) { .content-wrap { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article { background: var(--bg-white); border-radius: 4px; padding: 48px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+
+  /* DATA BOX */
+  .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  @media (max-width: 600px) { .data-grid { grid-template-columns: 1fr; } }
+  .data-card { background: #f8f8e8; border: 1px solid #d8d870; border-radius: 6px; padding: 20px 16px; text-align: center; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 28px; font-weight: 700; color: var(--accent); display: block; margin-bottom: 6px; }
+  .data-card .label { font-size: 12px; color: var(--text-light); line-height: 1.5; }
+
+  /* BODY TEXT */
+  article p { color: var(--text-mid); margin-bottom: 20px; word-break: keep-all; font-size: 16px; }
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 22px; font-weight: 700; color: var(--text-dark); margin: 40px 0 16px; padding-left: 16px; border-left: 4px solid var(--accent); word-break: keep-all; }
+
+  /* QUOTE BOX */
+  .quote-box { background: #f8f8e8; border-left: 4px solid var(--accent-light); margin: 32px 0; padding: 24px 28px; border-radius: 0 6px 6px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 18px; color: #4a4a10; margin-bottom: 10px; }
+  .quote-box cite { font-size: 13px; color: var(--text-light); font-style: normal; }
+
+  /* INSIGHT LIST */
+  .insight-list { background: #fafaf0; border: 1px solid var(--border); border-radius: 6px; padding: 24px 28px; margin: 32px 0; }
+  .insight-list h3 { font-size: 15px; font-weight: 700; color: var(--accent); margin-bottom: 16px; }
+  .insight-list ul { list-style: none; }
+  .insight-list ul li { padding: 8px 0; border-bottom: 1px solid #e8e8d0; font-size: 15px; color: var(--text-mid); padding-left: 20px; position: relative; }
+  .insight-list ul li:last-child { border-bottom: none; }
+  .insight-list ul li::before { content: '▸'; color: var(--accent); position: absolute; left: 0; }
+
+  /* DISCLAIMER */
+  .disclaimer { background: #f0f0f0; border-radius: 6px; padding: 18px 22px; margin-top: 40px; }
+  .disclaimer p { font-size: 12px; color: var(--text-light); line-height: 1.6; margin: 0; }
+
+  /* HASHTAG */
+  .hashtags { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { font-size: 13px; color: var(--accent); background: var(--accent-bg); padding: 5px 12px; border-radius: 30px; font-weight: 500; }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-box { background: var(--bg-white); border-radius: 4px; padding: 24px; box-shadow: 0 1px 6px rgba(0,0,0,0.06); }
+  .sidebar-box h4 { font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); border-bottom: 2px solid var(--accent-bg); padding-bottom: 10px; margin-bottom: 16px; }
+  .summary-list { list-style: none; }
+  .summary-list li { font-size: 14px; color: var(--text-mid); padding: 8px 0; border-bottom: 1px solid var(--border); line-height: 1.6; padding-left: 18px; position: relative; word-break: keep-all; }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before { content: '•'; color: var(--accent); position: absolute; left: 0; font-size: 16px; }
+  .related-list { list-style: none; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; color: var(--text-mid); line-height: 1.55; word-break: keep-all; cursor: pointer; }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list li:hover { color: var(--accent); }
+  .related-tag { display: inline-block; font-size: 10px; font-weight: 700; color: #fff; background: var(--accent); padding: 2px 7px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+  .stat-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .stat-table th { background: var(--accent-bg); color: var(--accent); font-weight: 700; padding: 8px 10px; text-align: left; border-bottom: 2px solid var(--accent-border); }
+  .stat-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); color: var(--text-mid); }
+  .stat-table tr:last-child td { border-bottom: none; }
+  .up { color: #c00; font-weight: 700; }
+
+  /* FOOTER */
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.6); text-align: center; padding: 32px 24px; font-size: 13px; line-height: 1.8; margin-top: 40px; }
+  footer strong { color: rgba(255,255,255,0.9); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">칼럼 · 해설</span>
+    <h1>공급이 틀렸다 — 정책의 실패가 만든<br>2026년 집값 역설</h1>
+    <p class="hero-sub">규제로 수요를 묶었지만 공급은 더 늦어졌다. 그 결과 서울 집값은 5월에 다시 뛰고 있다. 왜 한국 부동산 정책은 늘 반복되는 실수를 멈추지 못하는가.</p>
+    <div class="hero-meta">
+      <span>2026년 5월 21일</span>
+      <span>칼럼·해설</span>
+      <span>부동산인사이트 편집부</span>
+    </div>
+  </div>
+</section>
+
+<div class="content-wrap">
+  <article>
+
+    <!-- 데이터 박스 -->
+    <div class="data-grid">
+      <div class="data-card">
+        <span class="num">0.28%</span>
+        <span class="label">5월 2주차 서울 아파트<br>매매가격 주간 상승률</span>
+      </div>
+      <div class="data-card">
+        <span class="num">−55.9%</span>
+        <span class="label">2026년 1월 서울<br>주택 인허가 감소율(전년 동월비)</span>
+      </div>
+      <div class="data-card">
+        <span class="num">−30%↑</span>
+        <span class="label">2026년 수도권 신축<br>입주물량 감소(전년 대비)</span>
+      </div>
+    </div>
+
+    <p>2026년 5월의 서울 부동산 시장을 한 문장으로 요약하면 이렇다. <strong>"수요는 눌렸지만 공급도 막혔고, 결국 가격만 다시 오르기 시작했다."</strong> 5월 둘째 주 서울 아파트 매매가격은 전주 대비 0.28% 상승했다. 1월 마지막 주 이후 가장 가파른 상승이다. 성북구(0.54%), 서대문구(0.45%), 송파구(0.35%)가 앞장섰고, 경기권에서는 안양 동안구(0.69%), 광명(0.67%)이 전국 최고 수준의 주간 상승률을 기록했다. 이것이 단순한 반등인가, 아니면 구조적 문제의 표면화인가. 이 칼럼은 후자에 무게를 둔다.</p>
+
+    <h2>규제는 수요를 묶었지만, 공급은 더 늦어졌다</h2>
+
+    <p>지난 수년간 한국 정부는 부동산 시장을 수요 측면에서 통제하는 데 집중했다. LTV·DSR 강화, 다주택자 취득세·양도세 중과, 조정대상지역 지정 등이 대표적이다. 이 중 일부는 단기적으로 거래량을 줄이는 데 기여했다. 그러나 문제는 반대편에 있었다. 공급이다.</p>
+
+    <p>2026년 1월 서울 주택 인허가 건수는 1,226호로, 전년 동월 대비 55.9% 급감했다. 2026년 수도권 전체 신축 입주 물량도 2025년 16만 1,300호에서 11만 1,700호로 30% 이상 줄어들 전망이다. 이는 단순한 시장 사이클이 아니다. 높은 공사비와 분양가 규제, 인·허가 지연이 복합적으로 작용한 결과다. 수요는 규제로 누르고 공급은 구조적 장벽으로 막아버린 셈이다. 시장은 이 모순을 가격으로 표현하고 있다.</p>
+
+    <div class="quote-box">
+      <p>"정책은 수요를 잡으려 했지만, 공급이 무너지면서 결국 가격을 밀어 올리는 역설을 만들어냈다. 이것은 예측 가능한 실패였다."</p>
+      <cite>— 복수의 부동산 시장 전문가 종합 의견 (2026. 5)</cite>
+    </div>
+
+    <h2>5월 9일 양도세 중과 유예 종료 — 급매물이 사라지다</h2>
+
+    <p>2026년 5월 9일은 다주택자 양도소득세 중과 유예가 종료된 시점이다. 이 유예 기간 동안 조정대상지역 내 다주택자들은 추가 세율 없이 주택을 처분할 수 있었다. 유예 만료를 앞두고 시장에는 상당한 급매물이 출현했고, 실수요자들은 이 매물을 빠르게 소화했다. 유예가 끝나자마자 급매물 출구가 닫혔다. 매물은 급감하고, 이미 사라진 물량 위에 새로운 호가가 올라붙었다.</p>
+
+    <p>서울 아파트 매물 건수는 5월 8일 6만 9,175건에서 5월 11일 6만 5,682건으로 불과 사흘 만에 3,493건(약 5.1%) 감소했다. 강동구는 9.3%로 가장 큰 낙폭을 보였다. 이처럼 정책 이벤트(유예 종료)가 매물 구조를 단숨에 바꿔버린 것이다. 부동산 정책은 '타이밍의 예술'이기도 하지만, 지금처럼 유예와 연장을 반복하다 갑작스럽게 끊을 경우 시장에 급격한 충격을 줄 수 있다는 교훈을 이번 사태는 다시 한번 확인시켜줬다.</p>
+
+    <h2>'똘똘한 한 채' — 선택이 아닌 생존 전략이 된 시대</h2>
+
+    <p>시장은 지금 선별적 상승 국면에 있다. 아무 데나 오르는 장이 아니다. 실거주 선호도가 높고, 재건축·재개발 기대감이 있으며, 교통 인프라 개선이 가시화된 지역이 먼저 움직이고 있다. 성북구와 종로구는 부동산원 통계 집계 이래 역대 최고 주간 상승률을 기록했다. 이런 분화 현상은 전형적인 공급 부족 시장의 특성이다.</p>
+
+    <p>다주택에 대한 세금 부담이 높아진 상황에서 투자자들은 분산보다 집중을 선택한다. 자금이 몇몇 핵심 지역으로 집중될수록, 해당 지역의 가격 상승 압력은 더욱 커진다. '똘똘한 한 채'는 이제 개인의 취향이 아니라, 세제와 규제가 만들어낸 구조적 결과물이다. 정부가 다주택을 규제할수록, 시장은 역설적으로 더 비싼 입지에 수요를 집중시킨다.</p>
+
+    <div class="quote-box">
+      <p>"2026년의 매수 전략은 싸게 사는 것이 아니라, '못 사는 일'을 피하는 것으로 전환해야 한다. 기회는 줄었지만, 리스크도 선별할 수 있다."</p>
+      <cite>— KB부동산 시장 전망 보고서 (2026) 요약 재인용</cite>
+    </div>
+
+    <h2>정책 당국이 직면한 세 가지 딜레마</h2>
+
+    <p>현 시장 상황은 정책 당국에 세 가지 딜레마를 동시에 던지고 있다.</p>
+
+    <p><strong>첫째, 공급 확대와 분양가 통제의 모순.</strong> 정부는 공급을 늘리겠다고 하지만, 고분양가 논란을 의식해 분양가 상한제를 유지하고 있다. 그러나 높은 공사비 환경에서 분양가가 통제될수록 민간 시행사의 사업성은 악화되고, 공급은 더욱 위축된다. 결국 정부 주도 공급(3기 신도시 등)에 의존할 수밖에 없는데, 이 물량이 시장에 나오기까지는 수년이 더 필요하다.</p>
+
+    <p><strong>둘째, 금리 인하와 대출 규제의 충돌.</strong> 한국은행의 금리 인하 기조는 매수 심리를 자극하는 반면, 스트레스 DSR 강화는 실제 대출 한도를 줄이고 있다. 수요를 억제하려는 금융 규제와 경기 부양을 위한 통화 정책이 서로 반대 방향으로 당기고 있는 셈이다. 이 갈등 구조에서 시장은 방향을 잡지 못하고 단기 이벤트에 민감하게 반응한다.</p>
+
+    <p><strong>셋째, 수도권 집중과 지방 소멸의 심화.</strong> 서울·수도권 아파트는 주간 0.14~0.28% 상승하는 반면, 지방은 -0.02%로 하락세를 이어가고 있다. 부동산 시장의 양극화는 이미 경제적 문제를 넘어 사회적 문제로 번지고 있다. 수도권 집중을 해소할 지방 분산 정책 없이 부동산 가격 안정만을 추구하는 것은 구조적 한계를 가진다.</p>
+
+    <h2>실수요자와 투자자를 위한 시사점</h2>
+
+    <div class="insight-list">
+      <h3>📌 지금 시장에서 꼭 확인해야 할 5가지</h3>
+      <ul>
+        <li>매물 감소와 급매물 소진 이후 호가가 오른 시장에서는 추격 매수보다 '적정가 확인' 후 진입해야 한다 — 단기 상승분은 언제든 되돌아올 수 있다.</li>
+        <li>2026년 하반기 이후 예정된 금리 추가 인하 가능성은 모기지 부담 완화로 이어지지만, DSR 규제 내에서의 실질 대출 한도를 반드시 먼저 시뮬레이션해야 한다.</li>
+        <li>양도세 중과 유예 종료로 다주택자 매도 출구가 좁아진 만큼, 하반기 강제 매물(세금 부담 임계 도달, 경매)이 일부 출현할 가능성에 주목할 필요가 있다.</li>
+        <li>3기 신도시 사전청약 당첨자의 본청약·입주 일정 지연이 이어지고 있다 — 대기 수요가 다시 기존 주택 시장으로 유입될 수 있다.</li>
+        <li>지방 또는 외곽 투자는 인구 감소와 수요 위축이라는 구조적 역풍을 감안해야 하며, '저렴한 가격'이 곧 투자 기회가 아닐 수 있다는 점을 명심해야 한다.</li>
+      </ul>
+    </div>
+
+    <h2>결론 — 시장은 정직하다, 정책은 다시 시험대에</h2>
+
+    <p>2026년 5월의 집값 재상승은 시장의 탐욕이 아니라, 구조적 공급 부족과 정책적 공백이 낳은 결과다. 규제와 세금으로 시장을 통제하려는 시도는 반복됐지만, 공급을 늘리는 근본 대책은 매번 지연됐다. 그 결과물이 지금 우리가 보고 있는 역설이다 — 억눌렸던 수요가 공급 공백 속에서 다시 분출하고 있다.</p>
+
+    <p>시장은 거짓말을 하지 않는다. 인허가가 줄고, 입주 물량이 감소하고, 급매물이 소진되면 가격은 오른다. 이것은 경제학 교과서의 기본 명제다. 문제는 정책이 이 단순한 원리를 얼마나 오래 무시해왔느냐에 있다. 지금이라도 실질적인 공급 확대, 분양가 현실화, 장기적 도시계획에 기반한 주거 안정 정책으로 전환하지 않는다면, 2026년 5월의 재상승은 더 큰 폭등의 서막이 될 수도 있다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#부동산칼럼</span>
+      <span class="hashtag">#공급절벽</span>
+      <span class="hashtag">#2026집값</span>
+      <span class="hashtag">#서울아파트</span>
+      <span class="hashtag">#양도세중과</span>
+      <span class="hashtag">#부동산정책실패</span>
+      <span class="hashtag">#똘똘한한채</span>
+      <span class="hashtag">#DSR</span>
+    </div>
+
+    <div class="disclaimer">
+      <p>※ 본 칼럼은 부동산 시장에 대한 편집부의 분석적 견해를 담은 것으로, 특정 투자 상품 또는 지역에 대한 매수·매도 추천이 아닙니다. 부동산 투자는 개인의 재무 상황, 세금, 법적 조건 등을 종합적으로 고려해 신중하게 결정하시기 바랍니다. 본 콘텐츠에 포함된 통계 및 수치는 발행 시점 기준이며, 이후 변동될 수 있습니다. 투자의 최종 판단과 책임은 투자자 본인에게 있습니다.</p>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sidebar-box">
+      <h4>핵심 요약</h4>
+      <ul class="summary-list">
+        <li>5월 2주차 서울 아파트 주간 상승률 0.28% — 3개월 만에 최대폭</li>
+        <li>양도세 중과 유예 종료로 급매물 소진, 매물 3일 만에 5.1% 급감</li>
+        <li>서울 인허가 전년 동월 대비 -55.9% — 공급 절벽 심화 진행 중</li>
+        <li>'똘똘한 한 채' 현상은 세제 규제가 만든 구조적 수요 집중</li>
+        <li>수도권 vs 지방 양극화 지속 — 부동산 불평등 사회화 우려</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>관련 기사</h4>
+      <ul class="related-list">
+        <li><span class="related-tag">시장</span>성북구·종로구 역대 최고 주간 상승률… 서울 집값 재상승 신호</li>
+        <li><span class="related-tag">정책</span>양도세 중과 유예 종료 이후 다주택자 출구 전략은?</li>
+        <li><span class="related-tag">공급</span>3기 신도시 입주 지연 — 대기 수요 어디로 향하나</li>
+        <li><span class="related-tag">금융</span>스트레스 DSR 3단계, 실질 대출 한도 얼마나 줄었나</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h4>5월 3주차 지역별 상승률</h4>
+      <table class="stat-table">
+        <thead>
+          <tr><th>지역</th><th>주간 변동률</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>성북구</td><td class="up">+0.54%</td></tr>
+          <tr><td>서대문구</td><td class="up">+0.45%</td></tr>
+          <tr><td>송파구</td><td class="up">+0.35%</td></tr>
+          <tr><td>동대문구</td><td class="up">+0.33%</td></tr>
+          <tr><td>용산구</td><td class="up">+0.21%</td></tr>
+          <tr><td>강남구</td><td class="up">+0.19%</td></tr>
+          <tr><td>지방 평균</td><td style="color:#666">−0.02%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong><br>
+  전문적 시각으로 읽는 한국 부동산 시장 분석 매체<br>
+  © 2026 부동산인사이트. All rights reserved.<br>
+  본 콘텐츠의 무단 전재 및 재배포를 금합니다.
+</footer>
+
+</body>
+</html>
