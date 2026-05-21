@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 98,
+    url: 'article_20260521_2_market_v2.html',
+    category: '시장동향',
+    title: '"지금 사야 하나?" — 2026년 5월 서울·수도권 아파트 시세 완전 분석',
+    summary: '서울 아파트 매매가 주간 0.28% 급등, 성북·서대문 역대 최고 상승. 지금 시장을 움직이는 4가지 힘과 하반기 전망을 데이터로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 시장동향 분석 팀',
+    date: '2026-05-21',
+    title_en: '"Should I Buy Now?" — A Complete Analysis of May 2026 Seoul & Metropolitan Apartment Market Prices',
+    summary_en: 'Seoul apartment prices surge 0.28% weekly, with Seongbuk and Seodaemun posting record gains. A data-driven analysis of the four forces driving the market and the outlook for the second half.'
+  },
+  {
+    id: 97,
+    url: 'article_20260521_1_column_v2.html',
+    category: '칼럼',
+    title: '공급이 틀렸다 — 정책의 실패가 만든 2026년 집값 역설',
+    summary: '2026년 5월, 서울 집값이 다시 뛰고 있다. 공급 절벽과 정책 공백이 어떻게 지금의 시장을 만들었는지 심층 해설한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 칼럼 팀',
+    date: '2026-05-21',
+    title_en: 'The Supply Was Wrong — The 2026 Housing Price Paradox Created by Policy Failure',
+    summary_en: 'In May 2026, Seoul home prices are rising again. An in-depth analysis of how the supply cliff and policy vacuum created today\'s market.'
+  },
+  {
     id: 96,
     url: 'article_20260520_2_overseas_v2.html',
     category: '해외',
