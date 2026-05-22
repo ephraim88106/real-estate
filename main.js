@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 100,
+    url: 'article_20260522_2_분양청약_v2.html',
+    category: '분양',
+    title: '5월 수도권 1.4만 가구 쏟아진다 — 써밋더힐 27억, 장위 1913세대 분양가의 진실',
+    summary: '2026년 5월 수도권 분양 예정 가구 수 14,330가구, 전년 동기 대비 76% 증가. 써밋더힐·장위푸르지오 등 핵심 단지 분양가와 청약 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-22',
+    title_en: '14,000 Units Flood the Seoul Metro in May — The Truth Behind Summit The Hill\'s 2.7B KRW and Jangwi\'s 1,913-Unit Presale Prices',
+    summary_en: '14,330 units scheduled for presale in the Seoul metropolitan area in May 2026, a 76% increase year-over-year. Analyzing presale prices and subscription strategies for key complexes including Summit The Hill and Jangwi Prugio.'
+  },
+  {
+    id: 99,
+    url: 'article_20260522_1_정책_v2.html',
+    category: '정책',
+    title: '양도세 폭탄 터지고, 갭투자 문 살짝 열렸다 — 2026년 5월 부동산 정책의 두 얼굴',
+    summary: '다주택자 양도세 중과 유예 종료와 토지거래허가 실거주의무 유예가 동시에 시행되며 시장에 이중 충격을 주고 있다. DSR 규제 강화 속 정책의 모순과 시사점을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-22',
+    title_en: 'Capital Gains Tax Bomb Drops While Gap Investment Door Cracks Open — The Two Faces of May 2026 Real Estate Policy',
+    summary_en: 'The end of capital gains tax reprieve for multi-homeowners and the suspension of land transaction permit residency requirements hit the market simultaneously. Analyzing the contradictions and implications of policy amid tightened DSR regulations.'
+  },
+  {
     id: 98,
     url: 'article_20260521_2_market_v2.html',
     category: '시장동향',
