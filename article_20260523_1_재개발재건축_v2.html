@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>압구정·한남·신반포 동시다발 재건축 — 서울 정비사업 '빅뱅'의 서막 | 부동산인사이트</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: #f4f4f0; color: #1a1a1a; line-height: 1.8; }
+
+    /* ─── HEADER ─── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: #0D2B55; padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px; box-shadow: 0 2px 12px rgba(0,0,0,.4);
+    }
+    .logo { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; color: #fff; text-decoration: none; }
+    .logo span { color: #F4A52D; }
+    nav { display: flex; gap: 1.6rem; }
+    nav a { color: #ccc; font-size: .82rem; text-decoration: none; letter-spacing: .04em; }
+    nav a:hover { color: #F4A52D; }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%);
+      padding: 72px 5% 60px;
+      color: #fff;
+    }
+    .category-tag {
+      display: inline-block;
+      background: #7B4A9E; color: #fff;
+      font-size: .75rem; font-weight: 700; letter-spacing: .1em;
+      padding: 4px 14px; border-radius: 20px; margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 900; line-height: 1.35;
+      margin-bottom: 18px;
+    }
+    .hero-sub {
+      font-size: 1rem; color: rgba(255,255,255,.8);
+      max-width: 680px; margin-bottom: 28px;
+    }
+    .hero-meta { font-size: .78rem; color: rgba(255,255,255,.6); }
+    .hero-meta span { margin-right: 20px; }
+
+    /* ─── LAYOUT ─── */
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 5%; }
+    .grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; padding: 50px 0; }
+    @media(max-width:860px){ .grid { grid-template-columns: 1fr; } }
+
+    /* ─── DATA BOX ─── */
+    .data-box { display: flex; gap: 16px; margin-bottom: 40px; flex-wrap: wrap; }
+    .data-card {
+      flex: 1; min-width: 140px;
+      background: #f0e8fa; border-left: 4px solid #7B4A9E;
+      border-radius: 6px; padding: 16px 18px;
+    }
+    .data-card .num { font-size: 1.7rem; font-weight: 700; color: #7B4A9E; }
+    .data-card .lbl { font-size: .78rem; color: #555; margin-top: 4px; }
+
+    /* ─── ARTICLE ─── */
+    article { background: #fff; border-radius: 10px; padding: 44px 48px; }
+    @media(max-width:600px){ article { padding: 28px 20px; } }
+    article h2 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.3rem; font-weight: 700;
+      border-left: 4px solid #7B4A9E;
+      padding-left: 14px; margin: 38px 0 16px;
+      color: #1a1a1a;
+    }
+    article p { margin-bottom: 18px; font-size: .96rem; color: #2d2d2d; }
+    article ul { padding-left: 20px; margin-bottom: 20px; }
+    article ul li { margin-bottom: 10px; font-size: .95rem; color: #2d2d2d; }
+
+    .quote-box {
+      background: #f7f0ff;
+      border-left: 5px solid #7B4A9E;
+      border-radius: 0 8px 8px 0;
+      padding: 22px 28px; margin: 32px 0;
+      font-family: 'Noto Serif KR', serif;
+      font-style: italic; font-size: 1.05rem; color: #3d2060;
+      line-height: 1.7;
+    }
+    .quote-box cite { display: block; font-size: .8rem; font-style: normal; color: #888; margin-top: 10px; }
+
+    .policy-box {
+      background: #2A0A4A; color: #e8d8ff;
+      border-radius: 8px; padding: 28px 32px; margin: 32px 0;
+    }
+    .policy-box h3 { font-family: 'Noto Serif KR', serif; font-size: 1.1rem; color: #c8a0ff; margin-bottom: 12px; }
+    .policy-box p { font-size: .92rem; line-height: 1.85; }
+    .policy-box .verdict {
+      margin-top: 16px; padding: 12px 16px;
+      background: rgba(123,74,158,.35);
+      border-radius: 6px; font-size: .9rem; font-weight: 500; color: #e8d8ff;
+    }
+
+    .disclaimer {
+      margin-top: 40px; padding: 18px 22px;
+      background: #f5f5f5; border-radius: 6px;
+      font-size: .78rem; color: #888; line-height: 1.7;
+    }
+
+    /* ─── SIDEBAR ─── */
+    .sidebar { display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-card { background: #fff; border-radius: 10px; padding: 22px 24px; }
+    .sidebar-card h4 {
+      font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700;
+      border-bottom: 2px solid #7B4A9E; padding-bottom: 10px; margin-bottom: 16px;
+      color: #1a1a1a;
+    }
+    .sidebar-card ul { padding-left: 0; list-style: none; }
+    .sidebar-card ul li {
+      padding: 7px 0; border-bottom: 1px solid #f0f0f0;
+      font-size: .86rem; color: #444;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .sidebar-card ul li::before { content: '●'; color: #7B4A9E; font-size: .6rem; margin-top: 5px; flex-shrink: 0; }
+    .related-list { list-style: none; padding-left: 0; }
+    .related-list li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; font-size: .86rem; color: #333; }
+    .related-list li a { color: #333; text-decoration: none; }
+    .related-list li a:hover { color: #7B4A9E; }
+
+    .timeline { list-style: none; padding-left: 0; }
+    .timeline li {
+      display: flex; gap: 14px; padding: 10px 0;
+      border-bottom: 1px dashed #e0e0e0; font-size: .85rem;
+    }
+    .tl-year { font-weight: 700; color: #7B4A9E; min-width: 48px; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #0D2B55; color: rgba(255,255,255,.5);
+      text-align: center; padding: 32px 5%;
+      font-size: .8rem; margin-top: 60px;
+    }
+    footer strong { color: #F4A52D; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">부동산<span>인사이트</span></a>
+  <nav>
+    <a href="#">시장동향</a>
+    <a href="#">정책·규제</a>
+    <a href="#">투자분석</a>
+    <a href="#">법률·세금</a>
+    <a href="#">칼럼</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="container">
+    <div class="category-tag">재개발·재건축</div>
+    <h1>압구정·한남·신반포 동시다발 착공<br>서울 정비사업 역대급 '빅뱅'의 서막이 열렸다</h1>
+    <p class="hero-sub">5월 한 달 공사비 합산 10조 원 넘는 사업들이 시공사 선정 총회를 줄줄이 개최. 20년 표류 끝에 본궤도에 오른 서울 핵심 정비사업의 현주소와 투자자가 반드시 알아야 할 리스크를 짚는다.</p>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 23일</span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>🏷️ #재건축 #한남3구역 #압구정 #신반포 #정비사업</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid">
+
+    <main>
+      <!-- 데이터 박스 -->
+      <div class="data-box">
+        <div class="data-card">
+          <div class="num">8.5만 호</div>
+          <div class="lbl">서울시 핵심공급 전략사업 목표 세대수(2026~2028 착공)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">10조+</div>
+          <div class="lbl">5월 시공사 선정 단지들의 공사비 합산 추정액</div>
+        </div>
+        <div class="data-card">
+          <div class="num">85개 구역</div>
+          <div class="lbl">서울시 신속착공 공개 구역 수 (당초 목표比 +6천 호 초과)</div>
+        </div>
+      </div>
+
+      <article>
+
+        <h2>5월의 서울 정비사업 — 왜 '대격전'이라 부르는가</h2>
+        <p>2026년 5월은 서울 부동산 정비사업 역사에 굵직한 이정표가 될 것이다. 강남권 재건축 최대 격전지로 꼽히는 압구정 3·4·5구역의 시공사 선정 총회가 이달 연이어 예정된 가운데, 신반포 19·25차, 잠원동 일부 단지까지 5월 한 달에만 합산 공사비 10조 원이 넘는 사업들이 줄줄이 기지개를 켜고 있다.</p>
+        <p>특히 압구정 4구역은 5월 23일 총회가 예정되어 있어, 현대건설·삼성물산·대우건설 3파전이 예고됐다. 신반포19·25차는 5월 30일 총회 일정이 확정됐으며, 현대건설과 GS건설이 수주 경쟁을 벌이고 있다. 이들 단지의 공사비 규모와 미래 가치를 고려하면, 지금 이 순간 서울 최고급 주거 입지의 패권이 결정되고 있다고 해도 과언이 아니다.</p>
+
+        <div class="quote-box">
+          "한남3구역은 철거율 90%를 넘어 2026년 착공을 목전에 두고 있으며, 잔여 세대는 명도소송이 마무리 단계에 진입했다. 분양가 3.3㎡당 1억 원 돌파 가능성이 현실화되고 있다."
+          <cite>— 금융경제신문 현장 르포, 2026년 5월</cite>
+        </div>
+
+        <h2>한남3구역, '끝판왕' 재개발의 현황</h2>
+        <p>한남3구역은 서울 용산구 한남동 일대에 위치한 국내 최대 단일 재개발 구역으로, 총 5,816세대(임대 포함) 규모의 고급 주거지로 탈바꿈할 예정이다. 2026년 5월 현재, 이주율 99%를 초과 달성하고 철거율도 90%를 돌파하며 사실상 착공 초읽기에 돌입했다.</p>
+        <p>현대건설이 시공을 맡는 '디에이치 한남'은 2026년 착공, 2029년 입주를 목표로 하고 있다. 단지 내 최고층은 28층으로 설계됐으며, 커뮤니티·조경 수준이 기존 강남권 프리미엄 단지를 훌쩍 뛰어넘을 것으로 기대된다. 한국경제 보도에 따르면 한남뉴타운 3구역이 이르면 연말 일반분양에 나설 가능성이 있으며, 분양가 상한제 적용 여부에 따라 시장에 미치는 파급력이 크게 달라질 전망이다.</p>
+
+        <h2>압구정 재건축, 20년 표류의 끝</h2>
+        <p>압구정동 재건축은 지난 20여 년간 정책 리스크와 조합 내부 갈등으로 지지부진했다. 그러나 2024년 재건축 안전진단 기준 완화, 초과이익환수제 면제 기준 상향(3,000만 원→8,000만 원)을 비롯한 규제 완화 패키지가 시행되면서 사업 속도가 급격히 빨라졌다.</p>
+        <p>압구정3구역은 2026년 정비계획 고시 완료 이후 2조 6,000억 원 규모의 소송 리스크가 부각됐음에도 시장의 기대감이 꺾이지 않고 있다. 이는 한강 조망 입지의 희소성과 고소득 수요층의 견고한 매수 의지가 맞물린 결과다. 압구정 재건축 조합들은 현대건설·삼성물산·대우건설 등 대형 건설사들의 수주 경쟁을 유리하게 이용, 설계 조건과 공사비 협상에서 유례없이 강력한 발언권을 확보하고 있다.</p>
+
+        <div class="quote-box">
+          "20년 만의 본격 추진, 이번엔 다르다. 정부의 규제 완화 의지와 시공사들의 필사적 수주 경쟁이 겹치면서 2026년은 압구정 재건축의 진짜 원년이 될 것이다."
+          <cite>— 부동산 전문 애널리스트 인터뷰 (2026년 5월)</cite>
+        </div>
+
+        <h2>서울시 '8만 5천 호 신속착공' 선언의 속내</h2>
+        <p>서울시는 2026~2028년까지 착공 가능한 85개 구역, 8만 5,000호의 명단과 일정을 공개했다. 이는 당초 목표(7만 9,000호)보다 6,000호가 늘어난 수치다. 연도별로는 2026년 24개 구역(한남3·갈현1·중계본동 백사마을 등), 2027년 31개 구역, 2028년 30개 구역으로 배분됐다.</p>
+        <p>또한 서울시는 올해 주택진흥기금 500억 원을 편성, 이주비 융자를 지원하며 5월 집행을 목표로 하고 있다. 신속통합기획 후보지와 모아타운 10개소에 대해서는 토지거래허가구역 신규 지정(2026년 5월 19일~2027년 8월 30일)을 완료, 투기 억제와 사업 촉진의 균형을 도모하고 있다.</p>
+
+        <div class="policy-box">
+          <h3>📋 재건축 초과이익환수제 2026년 현황 평가</h3>
+          <p>2024년 3월 개정 재건축초과이익환수법은 △면제기준 3,000만→8,000만 원 상향 △부과 개시시점 조합설립 인가일 변경 △고령자 납부유예 △장기 1주택자 감면 등 실수요자 보호 방향으로 크게 완화됐다. 2026년 5월 현재 68개 구역 평균 1억 5,000만 원 수준의 부담금이 예고된 상황으로, 일부 조합원들은 납부 거부 움직임을 보이고 있다.</p>
+          <div class="verdict">⚖️ 전문가 평가: 면제 기준 상향은 중소 규모 재건축 조합에 유리하지만, 강남권 핵심 단지에는 여전히 수천만~수억 원대 부담금이 예상된다. '사업성 개선'과 '초과이익 환수' 사이의 정책적 긴장은 2026년 하반기 주요 화두가 될 것이다.</div>
+        </div>
+
+        <h2>투자자가 반드시 봐야 할 리스크 5가지</h2>
+        <p>정비사업 투자는 기대수익 만큼이나 리스크 관리가 중요하다. 현재 시장에서 표면화된 리스크를 아래와 같이 정리한다.</p>
+        <ul>
+          <li><strong>공사비 급등 리스크:</strong> 시공사 선정 후 설계·시방서 확정 과정에서 공사비 증액 요구가 빈번하다. 압구정·신반포 등 고급 단지일수록 자재 스펙과 커뮤니티 수준이 높아 최초 제안가 대비 20~30% 이상 공사비가 오를 수 있다.</li>
+          <li><strong>초과이익환수 부담금 리스크:</strong> 강남권 주요 단지는 조합원 1인당 1억~3억 원대 부담금이 예상된다. 부담금이 조합원 수익성을 크게 훼손할 경우 사업 지연이나 내분으로 이어질 수 있다.</li>
+          <li><strong>소송·법적 분쟁 리스크:</strong> 압구정3구역 2조 6,000억 원 규모 소송 사례처럼, 정비사업은 조합원-시공사-제3자 간 소송이 빈발한다. 판결 결과에 따라 입주 시기와 분양가가 크게 흔들릴 수 있다.</li>
+          <li><strong>토지거래허가구역 규제:</strong> 신규 지정 구역 내에서는 실거주 목적이 아닌 매수가 사실상 차단된다. 갭투자 목적의 단기 투자는 진입 자체가 불가능해졌다.</li>
+          <li><strong>분양가 상한제 적용 여부:</strong> 한남3구역 등 일반분양 물량에 분양가 상한제가 적용될 경우 조합원 추가 분담금이 증가하고 사업 경제성이 악화될 수 있다. 정부의 최종 결정이 시장 방향성을 좌우할 것이다.</li>
+        </ul>
+
+        <h2>실수요자를 위한 체크리스트</h2>
+        <p>실거주 목적으로 정비사업 단지를 검토 중인 수요자라면 다음 사항을 반드시 점검해야 한다.</p>
+        <ul>
+          <li>해당 구역의 관리처분계획 인가 여부 — 인가 이전 단계라면 사업 기간이 5년 이상 더 소요될 수 있다.</li>
+          <li>조합원 추가 분담금 예상액 — 최근 공사비 상승으로 분담금이 당초 예상 대비 2~3배 증가한 사례가 속출하고 있다.</li>
+          <li>이주비 대출 조건 — 금리 환경에 따라 이자 부담이 수년간 지속되므로 자금 계획 수립이 필수다.</li>
+          <li>입주 예정 시기의 현실성 — 시공사 선정 이후 착공까지도 통상 2~3년이 소요된다. 공식 일정보다 1~2년 여유를 두고 계획하라.</li>
+          <li>토지거래허가구역 해당 여부 — 해당 구역이라면 잔금 납부 전 실거주 계획이 확정되어야 한다.</li>
+        </ul>
+
+        <h2>결론: 2026년은 서울 정비사업의 임계점</h2>
+        <p>2026년 서울 정비사업 시장은 표면적으로는 '훈풍'이다. 규제 완화, 시공사 수주 경쟁 과열, 서울시의 강력한 공급 의지가 맞물리며 20년 넘게 지연됐던 사업들이 속속 착공 단계에 진입하고 있다. 압구정·한남·신반포라는 '서울 부동산의 얼굴'들이 동시에 탈피를 시작했다는 사실은 단순히 주택 공급 이슈를 넘어, 서울 도시 경관과 부동산 시장 질서의 근본적 재편을 예고한다.</p>
+        <p>그러나 낙관론 뒤에는 공사비 급등, 소송 리스크, 초과이익환수 부담이라는 그림자가 짙게 드리워져 있다. 조합원이든 외부 투자자든, 지금 이 시장에서 요구되는 덕목은 흥분이 아니라 냉철한 숫자 계산과 시나리오별 리스크 관리다. 서울 정비사업의 빅뱅은 분명 시작됐다. 하지만 그 빅뱅의 수혜자가 될지 피해자가 될지는 오롯이 정보와 판단력에 달려 있다.</p>
+
+        <div class="disclaimer">
+          ⚠️ <strong>면책 고지:</strong> 본 기사는 공개된 보도 자료 및 시장 정보를 바탕으로 작성된 일반적 정보 제공 목적의 에세이입니다. 투자 권유나 법적·재정적 조언이 아니며, 최종 투자 결정은 반드시 개인의 재무 상황과 전문가 상담을 바탕으로 이루어져야 합니다. 부동산 시장은 정책·금리·경기 변동에 따라 예측과 다르게 움직일 수 있습니다.
+        </div>
+      </article>
+    </main>
+
+    <!-- ─── SIDEBAR ─── -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h4>📌 핵심 요약</h4>
+        <ul>
+          <li>5월 압구정 3·4·5구역 + 신반포19·25차 시공사 선정 총회 연속 개최, 공사비 합산 10조 원+</li>
+          <li>한남3구역 철거 90% 완료, 이주율 99% 초과 — 2026년 착공·2029년 입주 목표</li>
+          <li>서울시 85개 구역 8.5만 호 신속착공 로드맵 공개, 목표 세대 6,000호 초과 달성</li>
+          <li>재건축초과이익환수 면제기준 8,000만 원으로 상향, 강남권 단지는 1억~3억 원대 부담금 여전</li>
+          <li>신속통합기획 후보지·모아타운 10곳 토지거래허가구역 신규 지정 — 갭투자 차단</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>🔗 관련 기사</h4>
+        <ul class="related-list">
+          <li><a href="#">한남3구역 철거 끝판왕 — 공사비 얼마나 올랐나</a></li>
+          <li><a href="#">압구정 재건축 조합이 현대건설에 요구한 조건들</a></li>
+          <li><a href="#">재건축 부담금 68개 구역 평균 1.5억 — 어느 구역이 제일 높나</a></li>
+          <li><a href="#">신속통합기획 토거구역 지정 완벽 가이드 2026</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>📅 한남3구역 사업 타임라인</h4>
+        <ul class="timeline">
+          <li><span class="tl-year">2020</span> 시공사(현대건설) 선정 완료</li>
+          <li><span class="tl-year">2024</span> 관리처분계획 인가 완료</li>
+          <li><span class="tl-year">2025</span> 이주·철거 본격화 (이주율 99%+)</li>
+          <li><span class="tl-year">2026</span> 착공 예정 (이르면 연말 분양)</li>
+          <li><span class="tl-year">2029</span> 입주 예정 (5,816세대)</li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<footer>
+  <p><strong>부동산인사이트</strong> — 매일 오후 11시 발간 | 전문가 시각으로 읽는 한국 부동산</p>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+</footer>
+
+</body>
+</html>
