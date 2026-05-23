@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 102,
+    url: 'article_20260523_2_투자분석_v2.html',
+    category: '투자분석',
+    title: '공급 절벽 + 경매 낙찰가율 반등 — 지금 서울 아파트, 사야 할까 더 기다려야 할까',
+    summary: '2026년 수도권 입주물량 30% 급감, 서울 경매 낙찰가율 100% 재돌파. 금리 인하 기대와 대출 규제의 벽이 팽팽히 맞서는 지금, 냉철한 숫자로 투자 타이밍을 짚는다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-23',
+    title_en: 'Supply Cliff + Auction Bid Rate Rebound — Should You Buy Seoul Apartments Now or Wait?',
+    summary_en: '2026 metropolitan area move-in volume drops 30%, Seoul auction winning bid rate breaks 100% again. Analyzing investment timing with cold numbers amid the tug-of-war between rate cut expectations and loan regulation barriers.'
+  },
+  {
+    id: 101,
+    url: 'article_20260523_1_재개발재건축_v2.html',
+    category: '재개발',
+    title: '압구정·한남·신반포 동시다발 착공 — 서울 정비사업 역대급 \'빅뱅\'의 서막이 열렸다',
+    summary: '5월 한 달 공사비 합산 10조 원 넘는 사업들이 시공사 선정 총회를 줄줄이 개최. 20년 표류 끝에 본궤도에 오른 서울 핵심 정비사업의 현주소와 투자자가 반드시 알아야 할 리스크를 짚는다.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-23',
+    title_en: 'Apgujeong, Hannam, Sinbanpo Simultaneous Groundbreaking — The Curtain Rises on Seoul\'s Biggest-Ever Redevelopment Big Bang',
+    summary_en: 'Projects totaling over 10 trillion KRW in construction costs hold contractor selection meetings throughout May. Examining the current state of Seoul\'s core redevelopment projects back on track after 20 years and the risks investors must know.'
+  },
+  {
     id: 100,
     url: 'article_20260522_2_분양청약_v2.html',
     category: '분양',
