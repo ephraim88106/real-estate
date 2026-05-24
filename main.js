@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 104,
+    url: 'article_20260524_2_column_v2.html',
+    category: '칼럼',
+    title: '집값이 다시 오르는데 왜 아무것도 못 사나? — 2026년 한국 부동산 시장의 세 가지 딜레마',
+    summary: '규제·공급·세금이 얽힌 구조적 모순 — 정책의 의도와 시장의 반응 사이에서 무엇을 읽어야 하는가',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-24',
+    title_en: 'Why Can\'t Anyone Buy Even as Prices Rise Again? — Three Dilemmas of Korea\'s 2026 Real Estate Market',
+    summary_en: 'Structural contradictions entangling regulation, supply, and taxes — what to read between policy intent and market response.'
+  },
+  {
+    id: 103,
+    url: 'article_20260524_1_overseas_v2.html',
+    category: '해외',
+    title: '엔저 일본 vs 금리 인하 미국 vs 성장하는 동남아 — 2026년 해외 부동산 투자의 황금 삼각지대',
+    summary: '한국 투자자들이 눈을 돌리는 세 가지 시장 — 진입 전 반드시 알아야 할 리스크와 기회',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-24',
+    title_en: 'Weak-Yen Japan vs Rate-Cut USA vs Growing Southeast Asia — The Golden Triangle of 2026 Overseas Real Estate Investment',
+    summary_en: 'Three markets Korean investors are turning to — risks and opportunities you must know before entry.'
+  },
+  {
     id: 102,
     url: 'article_20260523_2_투자분석_v2.html',
     category: '투자분석',
