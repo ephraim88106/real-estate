@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 106,
+    url: 'article_20260525_2_policy_v2.html',
+    category: '정책',
+    title: '토허제 유예·DSR 3%·주담대 한도 축소… 2026년 5월 부동산 정책 3대 충돌',
+    summary: '시장 안정과 실수요자 보호 사이에서 갈팡질팡하는 정부 — 토허제 유예 확대, 스트레스 DSR 3% 강화, 고가 주택 대출 한도 축소를 동시에 시행한 정책의 의도와 시장 영향을 해부한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-25',
+    title_en: 'Land Transaction Permit Deferral, DSR 3%, Mortgage Limit Cut — Three Policy Collisions in May 2026',
+    summary_en: 'Dissecting the government\'s simultaneous easing and tightening — expanded land transaction permit deferral, strengthened stress DSR at 3%, and slashed high-value mortgage limits.'
+  },
+  {
+    id: 105,
+    url: 'article_20260525_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 전 자치구 동반 상승… \'선별장\'에서 \'전면전\'으로 전환됐나',
+    summary: '3개월 만의 최대 주간 상승폭 0.31%, 성북·종로는 역대 최고 기록. 25개 구 전부 플러스를 기록한 시장의 구조적 전환 신호를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-25',
+    title_en: 'All 25 Seoul Districts Rise Together — Has the Market Shifted from Selective to All-Out?',
+    summary_en: 'Largest weekly gain in 3 months at 0.31%, with Seongbuk and Jongno posting all-time highs. Analyzing the structural shift signal as all 25 districts turn positive.'
+  },
+  {
     id: 104,
     url: 'article_20260524_2_column_v2.html',
     category: '칼럼',
