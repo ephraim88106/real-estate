@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>토허제 유예·DSR 3%·주담대 한도 축소… 2026년 5월 부동산 정책 3대 충돌 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #1a1a1a; line-height: 1.8; }
+
+  /* 헤더 */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem; font-weight: 900; color: #fff;
+    text-decoration: none; letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a {
+    color: rgba(255,255,255,0.78); font-size: 0.82rem;
+    text-decoration: none; font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* 히어로 */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 72px 24px 60px;
+    color: #fff;
+    border-bottom: 4px solid #C8401A;
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: #C8401A; border: 1px solid rgba(255,255,255,0.3);
+    color: #fff; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 14px; border-radius: 20px;
+    letter-spacing: 1px; margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.55rem, 4vw, 2.45rem);
+    font-weight: 900; line-height: 1.35;
+    margin-bottom: 18px; letter-spacing: -0.5px;
+  }
+  .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.82); margin-bottom: 24px; }
+  .hero-meta { font-size: 0.8rem; color: rgba(255,255,255,0.6); }
+  .hero-meta span { margin-right: 16px; }
+
+  /* 레이아웃 */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media(max-width: 860px) { .layout { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* 데이터 카드 */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media(max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #fdecea; border-left: 4px solid #C8401A;
+    border-radius: 8px; padding: 20px 16px; text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem; font-weight: 900; color: #C8401A;
+  }
+  .data-card .label { font-size: 0.8rem; color: #555; margin-top: 4px; }
+
+  /* 본문 */
+  article p { margin-bottom: 20px; font-size: 1.02rem; line-height: 1.85; }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem; font-weight: 700;
+    border-left: 4px solid #C8401A;
+    padding-left: 14px; margin: 36px 0 16px;
+    color: #5a1a08; letter-spacing: -0.3px;
+  }
+
+  /* 인용 박스 */
+  .quote-box {
+    background: #fef5f3; border-left: 5px solid #C8401A;
+    padding: 22px 24px; margin: 28px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem;
+    color: #5a1a08; margin-bottom: 6px;
+    line-height: 1.75;
+  }
+  .quote-box cite { font-size: 0.8rem; color: #666; font-style: normal; }
+
+  /* 정책 비교표 */
+  .policy-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+  .policy-table th { background: #C8401A; color: #fff; padding: 10px 12px; text-align: center; }
+  .policy-table td { padding: 10px 12px; border: 1px solid #e0d0cc; vertical-align: top; }
+  .policy-table tr:nth-child(even) td { background: #fef5f3; }
+
+  /* 목록 */
+  article ul { padding-left: 22px; margin-bottom: 20px; }
+  article ul li { margin-bottom: 10px; font-size: 1rem; line-height: 1.75; }
+
+  /* 면책 */
+  .disclaimer {
+    background: #f0f0f0; border-radius: 8px;
+    padding: 18px 20px; margin-top: 36px;
+    font-size: 0.8rem; color: #777; line-height: 1.6;
+  }
+
+  /* 사이드바 */
+  .sidebar-box {
+    background: #fff; border-radius: 10px;
+    padding: 22px; margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+  .sidebar-box h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem; font-weight: 700;
+    color: #5a1a08; border-bottom: 2px solid #C8401A;
+    padding-bottom: 8px; margin-bottom: 14px;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 7px 0; border-bottom: 1px solid #eee;
+    font-size: 0.88rem; color: #333;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: "▪"; color: #C8401A; font-size: 0.8rem;
+    flex-shrink: 0; margin-top: 2px;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li {
+    padding: 9px 0; border-bottom: 1px solid #eee;
+    font-size: 0.85rem;
+  }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { color: #5a1a08; text-decoration: none; font-weight: 500; }
+  .related-list a:hover { color: #C8401A; text-decoration: underline; }
+
+  /* 정책 체크리스트 */
+  .checklist { list-style: none; padding: 0; }
+  .checklist li {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 8px 0; border-bottom: 1px solid #eee; font-size: 0.86rem;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist .icon { color: #C8401A; font-size: 1rem; flex-shrink: 0; }
+
+  /* 푸터 */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 32px 24px;
+    font-size: 0.82rem; margin-top: 60px;
+  }
+  footer strong { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">⚖️ 정책·규제 분석</span>
+    <h1>토허제 유예 확대·DSR 3%·대출 한도 축소<br>— 정부가 동시에 풀고 조이는 이유</h1>
+    <p class="hero-sub">시장 안정과 실수요자 보호 사이에서 갈팡질팡? 2026년 5월 부동산 3대 정책을 해부한다</p>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 25일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>🏷️ #부동산정책 #DSR #토지거래허가구역 #주담대규제</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="layout">
+    <main>
+
+      <!-- 데이터 카드 -->
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="num">3%</div>
+          <div class="label">스트레스 DSR 강화<br>수도권·규제지역 주담대</div>
+        </div>
+        <div class="data-card">
+          <div class="num">2억</div>
+          <div class="label">25억 초과 주택 주담대 한도<br>(기존 대비 대폭 축소)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">5월말</div>
+          <div class="label">토허제 실거주 유예 시행<br>시행령 개정 완료 시점</div>
+        </div>
+      </div>
+
+      <article>
+        <p>
+          2026년 5월, 정부의 부동산 정책 스탠스는 겉으로 보면 모순적이다.
+          한편으로는 토지거래허가구역의 실거주 유예를 확대해 시장의 숨통을 틔워주면서,
+          다른 한편으로는 스트레스 DSR 상한을 3%로 올리고 고가 주택 주담대 한도를 대폭 축소하는 조치를 동시에 시행하고 있다.
+          이 얼핏 모순적인 정책 조합은 사실 '실수요자 살리고 투기 수요 차단'이라는 하나의 목표 아래 설계된 것이다.
+          하지만 시장이 이 의도대로 움직일지는 전혀 다른 문제다.
+        </p>
+
+        <h2>토지거래허가구역 실거주 유예 — 무엇이 달라지나</h2>
+        <p>
+          가장 주목받는 변화는 토지거래허가구역 실거주 유예 확대다. 기존에는 토허구역 내 주택을
+          매수하면 실거주 의무가 즉시 발생했다. 임차인이 살고 있는 집이라도 매수 후 곧바로 실거주를
+          해야 했기 때문에, 임차인 보호와 충돌하는 문제가 반복됐다. 이번 시행령 개정으로 임대차
+          계약 잔존 기간 동안 입주를 늦출 수 있게 됐다.
+        </p>
+        <p>
+          이 변화는 두 가지 효과가 기대된다. 첫째, 토허구역 내 매물 물량이 일부 늘어날 수 있다.
+          기존에는 세입자가 있는 집을 팔고 싶어도 매수자의 즉시 실거주 의무 때문에 거래가 성사되기
+          어려웠다. 둘째, 무주택 실수요자의 접근성이 높아진다. 바로 입주 가능한 매물이 아니어도
+          계약을 체결할 수 있게 됐기 때문이다. 단, 중요한 조건이 있다. 매수자는 발표일(2026년 5월 12일)부터
+          허가 신청일까지 계속 무주택 상태여야 한다. 1주택자가 이 유예를 활용하려다 낭패를 볼 수 있다.
+        </p>
+
+        <div class="quote-box">
+          <p>
+            "토허제 유예 확대는 규제 완화가 아니라 '실수요자 중심 재편'이다.
+            무주택자에게만 문을 열어주는 방식으로 투기 수요를 차단하면서도
+            정상적인 거래 흐름은 살리겠다는 의도다."
+          </p>
+          <cite>— 정책 취지 분석 (취재 종합)</cite>
+        </div>
+
+        <h2>스트레스 DSR 3% — 실수요자에게 얼마나 영향이 클까</h2>
+        <p>
+          금융당국은 수도권·규제지역 주담대에 한해 스트레스 금리 하한을 3%로 높였다.
+          기존에는 대출금리에 1.5%를 가산한 스트레스 금리를 적용했는데, 수도권·규제지역은 그 하한이
+          3%로 상향된 것이다. 이 의미는 무엇인가. 실제로 받는 금리가 낮더라도 DSR 계산 시에는
+          3% 이상의 금리로 계산하겠다는 뜻이다. 결과적으로 같은 소득이라도 빌릴 수 있는 돈이 줄어든다.
+        </p>
+        <p>
+          예를 들어 연소득 6,000만 원인 직장인이 수도권 아파트를 살 때, 스트레스 DSR 강화 전과
+          강화 후의 대출 가능 금액은 수천만 원 차이가 날 수 있다. 특히 맞벌이 부부나 중간 소득층이
+          '딱 맞춰' 대출받을 수 있었던 구간에서 가장 큰 타격을 받는다.
+          실수요자 보호를 표방하는 정책이 오히려 실수요자의 접근을 막는 역설이 발생할 수 있다는 비판도 있다.
+        </p>
+
+        <h2>주택담보대출 한도 축소 — 고가 주택 시장에 실질 제동</h2>
+        <p>
+          이번 정책에서 가장 직접적인 규제는 주담대 한도 축소다. 15억 원 이하 주택은 기존과 동일한
+          한도가 유지되지만, 15억~25억 원 이하는 최대 4억 원, 25억 원 초과 주택은 2억 원까지만
+          대출이 가능해졌다. 서울 주요 지역 아파트 가격대를 감안하면 이 제한은 적지 않다.
+        </p>
+        <p>
+          특히 25억 원 초과 주택에 2억 원 한도는 사실상 '현금 부자'가 아니면 접근 불가능하게 만드는 조치다.
+          강남·서초·용산 등 고가 주택 밀집 지역 거래에는 실질적인 제동이 걸릴 가능성이 있다.
+          반면, 이 지역의 실수요 매수층은 이미 대부분 자산 기반이 탄탄하기 때문에 정책 효과가
+          제한적일 수 있다는 반론도 있다. 현금 부자에게는 규제가 통하지 않는다.
+        </p>
+
+        <div class="quote-box">
+          <p>
+            "규제 강화와 완화를 동시에 가져가는 것은 시장 혼란을 줄이기보다
+            정책 시그널을 흐리게 만드는 역효과를 낳을 수 있다.
+            분명하고 일관된 방향 제시가 시장 안정의 전제 조건이다."
+          </p>
+          <cite>— 정책 효과 비판적 시각 (취재 종합)</cite>
+        </div>
+
+        <h2>세 정책의 충돌 — 시장에 미치는 복합 영향</h2>
+        <p>
+          세 정책을 동시에 놓고 보면 방향이 엇갈린다. 토허제 유예 확대는 거래 활성화 신호,
+          DSR 강화와 주담대 한도 축소는 거래 억제 신호다. 시장 참여자 입장에서는 어떤 신호에
+          더 반응하는가가 중요한데, 일반적으로 규제 완화 신호가 더 빠르게 시장에 반영된다.
+          실제로 토허제 유예 확대 발표 이후 토허구역 인근 단지 호가가 올랐다는 보고가 있다.
+        </p>
+        <p>
+          반면 DSR 강화와 주담대 한도 축소는 시차를 두고 시장을 냉각시킬 가능성이 있다.
+          자금 조달이 어려워지는 매수자가 늘어나면 시간이 지날수록 수요가 줄어든다.
+          문제는 이 두 효과가 충돌하는 시기에 시장이 단기 과열 → 급랭 패턴을 반복할 수 있다는 것이다.
+          이런 패턴은 투자자에게는 리스크이자 기회이지만, 실수요자에게는 타이밍 잡기가 매우 어려운 환경을 만든다.
+        </p>
+
+        <h2>정책 평가 — 의도는 좋지만 설계는 아쉽다</h2>
+        <p>
+          솔직하게 평가하자면, 이번 정책 패키지의 의도는 이해할 수 있다. 실수요자 중심 시장 재편,
+          투기 수요 억제, 고가 주택 거래 제한. 모두 합리적인 목표다. 하지만 설계 측면에서 두 가지 문제가 있다.
+        </p>
+        <p>
+          첫째, 정책 간 상충 효과다. 토허제 유예로 심리를 풀어놓으면서 DSR 강화로 자금을 막는 것은
+          기름과 물을 동시에 붓는 격이다. 시장에 명확한 방향을 줘야 예측 가능성이 높아지는데,
+          이번 패키지는 방향이 너무 복합적이다. 둘째, 실수요자 타깃 정밀도 문제다.
+          스트레스 DSR 강화는 가장 대출이 절박한 중간 소득층에 역효과를 낼 수 있다.
+          부자는 현금이 있고, 고소득자는 DSR 여유가 있다. 규제의 압박을 가장 크게 받는 것은
+          아이러니하게도 '정책이 보호하려는' 실수요 중산층이다.
+        </p>
+
+        <h2>실수요자·투자자를 위한 행동 지침</h2>
+        <ul>
+          <li><strong>토허구역 매수 계획자는 무주택 자격 요건을 먼저 확인하라.</strong> 발표일 이후 무주택 유지 조건을 위반하면 유예 혜택을 받지 못한다. 1주택자는 처음부터 적용 대상이 아니다.</li>
+          <li><strong>수도권 주담대 계획이 있다면 대출 가능 금액을 재산정하라.</strong> 스트레스 DSR 3% 적용으로 기존 계획보다 수천만 원 이상 대출이 줄 수 있다. 금융기관 사전 상담이 필수다.</li>
+          <li><strong>25억 초과 주택 매수자는 자금 계획을 전면 재검토하라.</strong> 주담대 2억 원 한도는 사실상 현금 조달을 전제로 한다. 브릿지론, 신용대출 등 대체 수단도 DSR에 합산된다.</li>
+          <li><strong>전세 세입자로 이 정책에 해당되지 않는다면 시장을 관망하라.</strong> 정책이 시장에 완전히 반영되려면 3~6개월이 걸린다. 지금은 급매물 여부를 살피는 시기다.</li>
+          <li><strong>투자자라면 단기 변동성보다 정책 방향성 트렌드를 읽어라.</strong> 단기 정책 이벤트에 일희일비하기보다, 2026년 하반기~2027년 공급·금리 흐름에 집중하는 것이 유리하다.</li>
+        </ul>
+
+        <h2>결론 — 정책은 도구일 뿐, 시장이 심판한다</h2>
+        <p>
+          정부가 동시에 내놓은 세 가지 정책은 각각 타당한 목표를 가지고 있지만,
+          복합적인 시장 신호가 자칫 혼란과 단기 과열을 부추길 수 있다는 위험을 내포한다.
+          역사적으로 부동산 정책이 시장에 미치는 영향은 항상 의도와 결과가 달랐다.
+          규제가 오히려 희소성 신호로 작동해 가격을 올리고, 완화 조치가 수요를 자극해 같은 결과를 내는
+          아이러니가 반복돼 왔다. 지금이 바로 그런 전환점에 서 있다.
+          중요한 것은 정책의 단기 효과가 아니라, 장기적인 공급·수요 균형이다.
+          그 관점에서 시장을 바라볼 때, 지금의 정책 노이즈에 흔들리지 않는 의사결정이 가능해진다.
+        </p>
+
+        <div class="disclaimer">
+          <strong>⚠️ 면책 고지</strong><br>
+          본 에세이는 공개된 정책 자료와 시장 분석을 바탕으로 작성된 정보 제공 목적의 콘텐츠입니다.
+          법률·세무·금융 관련 내용은 개인 상황에 따라 다를 수 있으며, 반드시 전문가(법무사, 세무사, 금융전문가)와
+          상담 후 의사결정하시기 바랍니다. 본 내용은 투자 권유나 수익 보장을 목적으로 하지 않습니다.
+        </div>
+      </article>
+    </main>
+
+    <!-- 사이드바 -->
+    <aside>
+      <div class="sidebar-box">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>토허제 실거주 유예: 무주택자에 한해 임대차 잔존기간 동안 입주 유예 허용</li>
+          <li>스트레스 DSR 3%: 수도권·규제지역 주담대 DSR 계산 시 금리 하한 3% 적용</li>
+          <li>주담대 한도 축소: 25억 초과 주택 최대 2억 원만 대출 가능</li>
+          <li>정책 방향 상충: 완화(토허제)와 규제(DSR·한도) 동시 작동</li>
+          <li>실수요 중산층이 DSR 강화에 가장 취약 — 정책 역설 지적</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🗞️ 관련 기사</h3>
+        <ul class="related-list">
+          <li><a href="#">서울 아파트 25개 구 전부 상승, 전면전 전환 신호인가</a></li>
+          <li><a href="#">2026년 하반기 입주 물량 급감, 전세가 어디로</a></li>
+          <li><a href="#">대출 한도 줄었는데 집값은 올랐다 — 현금 부자의 시대</a></li>
+          <li><a href="#">토허구역 무주택 자격 확인 절차 Q&A 총정리</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>✅ 매수 전 정책 체크리스트</h3>
+        <ul class="checklist">
+          <li><span class="icon">□</span> 무주택 자격 여부 확인 (토허구역 대상)</li>
+          <li><span class="icon">□</span> 스트레스 DSR 기반 대출 한도 재계산</li>
+          <li><span class="icon">□</span> 주택 가격대별 주담대 한도 확인</li>
+          <li><span class="icon">□</span> 투기과열지구·토허구역 지정 여부 조회</li>
+          <li><span class="icon">□</span> 임대차 잔존기간·세입자 현황 파악</li>
+          <li><span class="icon">□</span> 브릿지론·신용대출의 DSR 합산 여부 확인</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> — 전문가의 시각으로 읽는 한국 부동산<br>
+  <span style="margin-top:8px;display:inline-block">© 2026 부동산인사이트. 본 콘텐츠의 무단 복제 및 배포를 금합니다.</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 아파트 전 자치구 동반 상승… '선별장'에서 '전면전'으로 전환됐나 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #1a1a1a; line-height: 1.8; }
+
+  /* 헤더 */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem; font-weight: 900; color: #fff;
+    text-decoration: none; letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a {
+    color: rgba(255,255,255,0.78); font-size: 0.82rem;
+    text-decoration: none; font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* 히어로 */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 72px 24px 60px;
+    color: #fff;
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: #1A4D8F; border: 1px solid rgba(255,255,255,0.35);
+    color: #fff; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 14px; border-radius: 20px;
+    letter-spacing: 1px; margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    font-weight: 900; line-height: 1.35;
+    margin-bottom: 18px; letter-spacing: -0.5px;
+  }
+  .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.82); margin-bottom: 24px; }
+  .hero-meta { font-size: 0.8rem; color: rgba(255,255,255,0.6); }
+  .hero-meta span { margin-right: 16px; }
+
+  /* 레이아웃 */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media(max-width: 860px) { .layout { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* 데이터 박스 */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media(max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #e8f0fb; border-left: 4px solid #1A4D8F;
+    border-radius: 8px; padding: 20px 16px; text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem; font-weight: 900; color: #1A4D8F;
+  }
+  .data-card .label { font-size: 0.8rem; color: #555; margin-top: 4px; }
+
+  /* 본문 */
+  article { }
+  article p { margin-bottom: 20px; font-size: 1.02rem; line-height: 1.85; }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem; font-weight: 700;
+    border-left: 4px solid #1A4D8F;
+    padding-left: 14px; margin: 36px 0 16px;
+    color: #0D2B55; letter-spacing: -0.3px;
+  }
+
+  /* 인용 박스 */
+  .quote-box {
+    background: #eef3fb; border-left: 5px solid #1A4D8F;
+    padding: 22px 24px; margin: 28px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem;
+    color: #1a3360; margin-bottom: 6px;
+    line-height: 1.75;
+  }
+  .quote-box cite { font-size: 0.8rem; color: #666; font-style: normal; }
+
+  /* 목록 */
+  article ul { padding-left: 22px; margin-bottom: 20px; }
+  article ul li { margin-bottom: 10px; font-size: 1rem; line-height: 1.75; }
+
+  /* 면책 */
+  .disclaimer {
+    background: #f0f0f0; border-radius: 8px;
+    padding: 18px 20px; margin-top: 36px;
+    font-size: 0.8rem; color: #777; line-height: 1.6;
+  }
+
+  /* 사이드바 */
+  aside { }
+  .sidebar-box {
+    background: #fff; border-radius: 10px;
+    padding: 22px; margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+  .sidebar-box h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem; font-weight: 700;
+    color: #0D2B55; border-bottom: 2px solid #1A4D8F;
+    padding-bottom: 8px; margin-bottom: 14px;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 7px 0; border-bottom: 1px solid #eee;
+    font-size: 0.88rem; color: #333;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: "▪"; color: #1A4D8F; font-size: 0.8rem;
+    flex-shrink: 0; margin-top: 2px;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li {
+    padding: 9px 0; border-bottom: 1px solid #eee;
+    font-size: 0.85rem;
+  }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { color: #1a3360; text-decoration: none; font-weight: 500; }
+  .related-list a:hover { color: #1A4D8F; text-decoration: underline; }
+  .region-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .region-table th { background: #1A4D8F; color: #fff; padding: 6px 8px; text-align: center; }
+  .region-table td { padding: 6px 8px; border-bottom: 1px solid #eee; text-align: center; }
+  .region-table tr:nth-child(even) td { background: #f4f7fc; }
+  .up { color: #c00; font-weight: 700; }
+  .down { color: #0055aa; font-weight: 700; }
+
+  /* 푸터 */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 32px 24px;
+    font-size: 0.82rem; margin-top: 60px;
+  }
+  footer strong { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">📊 시장동향</span>
+    <h1>서울 아파트, 25개 구 전부 올랐다<br>— '선별장'에서 '전면전'으로 바뀐 이유</h1>
+    <p class="hero-sub">3개월 만의 최대 주간 상승폭 0.31%, 성북·종로는 역대 최고 기록. 단순 반등인가, 구조적 전환인가</p>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 25일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>🏷️ #서울아파트 #시세동향 #수도권부동산</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="layout">
+    <main>
+
+      <!-- 데이터 카드 -->
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="num">0.31%</div>
+          <div class="label">서울 주간 아파트 매매 상승률<br>(5월 셋째 주 기준)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">25/25</div>
+          <div class="label">서울 전 자치구 동시 상승<br>(2026년 5월 현재)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">0.54%</div>
+          <div class="label">성북구 주간 상승률<br>(역대 주간 최고치)</div>
+        </div>
+      </div>
+
+      <article>
+        <p>
+          지난 몇 달간 부동산 시장을 두고 전문가들은 '선별적 상승장'이라는 표현을 즐겨 썼다.
+          재건축 기대감이 있는 곳, 교통 호재가 확실한 곳, 학군 프리미엄이 붙은 몇몇 단지만 오르는 시장이라는 의미였다.
+          그러나 2026년 5월 셋째 주 한국부동산원 주간 아파트 가격동향 통계가 발표되면서 이 공식이 흔들리기 시작했다.
+          서울 25개 자치구가 모두 플러스를 기록한 것이다. 전 자치구 동반 상승은 시장의 성격이 달라지고 있다는 강력한 신호다.
+        </p>
+
+        <h2>숫자가 말하는 것 — 상승의 깊이와 넓이</h2>
+        <p>
+          주간 기준으로 서울 아파트 매매가격은 0.31% 올랐다. 전주(0.28%)보다 상승 폭이 더 확대됐고,
+          이는 올해 1월 말 이후 가장 가파른 주간 상승률이다. 전세가격도 0.28%로 매매와 거의 같은 속도로 올랐다.
+          매매와 전세가 동시에, 비슷한 속도로 오른다는 것은 시장 심리가 매우 긍정적으로 쏠려 있다는 뜻이다.
+        </p>
+        <p>
+          지역별 수치를 보면 더 흥미롭다. 강남구가 0.20%, 서초구가 0.26%, 송파구가 0.38%를 기록하며
+          강남 3구의 상승세가 확대됐다. 그런데 주목해야 할 숫자는 성북구(0.54%)와 종로구(0.36%)다.
+          이들 지역은 부동산원이 통계를 집계한 이래 주간 기준 역대 최고 상승률이다.
+          이른바 '강북 외곽'으로 불리던 지역까지 시장이 뜨겁게 달아오르고 있다는 의미다.
+        </p>
+
+        <div class="quote-box">
+          <p>
+            "매매 수요가 강남권에서 출발해 강북 중저가 단지로 옮겨 붙는 '온도 전이' 현상이 뚜렷하다.
+            과거 사이클에서도 강남이 먼저 오르고 6~12개월 시차를 두고 외곽이 따라왔는데,
+            이번에는 그 시차가 극도로 짧아졌다."
+          </p>
+          <cite>— 한 시장 전문가의 시각 (취재 종합)</cite>
+        </div>
+
+        <h2>왜 지금 전 자치구가 동시에 오르는가</h2>
+        <p>
+          몇 가지 구조적 요인이 동시에 맞물려 있다. 첫째, 공급 부재다. 2022~2024년 착공 감소로 인해
+          2026~2027년 입주 물량이 크게 줄어드는 시점이 다가오고 있다. 수요 대비 공급 부족에 대한
+          선제적 매수 심리가 작동 중이다. 둘째, 전세 시장의 압박이다. 전세가가 매매가와 같은 속도로 오르면
+          전세 거주자들이 '차라리 사자'는 쪽으로 전환한다. 갭이 좁혀지면 갭 투자 매력도 높아진다.
+        </p>
+        <p>
+          셋째는 심리적 요인이다. '지금 안 사면 더 오른다'는 공포, 이른바 FOMO(Fear of Missing Out)가
+          시장 전체에 퍼지기 시작하면 일부 지역의 이슈가 전 지역으로 확산된다.
+          성북구와 종로구의 역대 최고 상승률은 바로 이 심리 확산의 결과일 가능성이 크다.
+        </p>
+
+        <h2>경기도는 어디가 뜨겁나 — 수도권 전체 지형도</h2>
+        <p>
+          서울만의 현상이 아니다. 경기도 안양 동안구(0.69%)와 광명(0.67%)은 이번 주 전국 상위권
+          상승률을 기록했다. 두 지역 모두 GTX 및 지하철 연장 호재, 정비사업 기대감이 복합적으로 작용한
+          대표적인 수도권 수혜 지역이다. 반면 지방 아파트값은 -0.02%로 여전히 하락 중이다.
+          수도권과 지방의 양극화는 더욱 심화되는 추세다.
+        </p>
+        <p>
+          전국 기준으로 아파트 매매가격은 0.14% 상승했다. 서울이 0.31%이고, 수도권 전체는 0.14%,
+          지방이 마이너스라는 것은 수도권으로의 자원 쏠림이 극단적으로 전개되고 있음을 보여준다.
+          이 구조는 단기에 바뀌기 어렵다. 수도권 일자리 집중, 교육 인프라 격차, 인구 이동 패턴 모두가
+          수도권 집중을 지속시키는 방향으로 작동하고 있다.
+        </p>
+
+        <div class="quote-box">
+          <p>
+            "거래량이 폭발하지 않아도 가격이 오를 수 있다.
+            매물이 없는 상황에서 소수의 거래가 신고가를 만들고, 그 신고가가 호가 기준점이 되면서
+            인근 단지 전체가 호가를 올리는 연쇄 작용이 일어나는 것이다."
+          </p>
+          <cite>— 부동산 시장 구조 분석 (취재 종합)</cite>
+        </div>
+
+        <h2>거래량 없는 가격 상승 — 지속 가능한가</h2>
+        <p>
+          현재 시장의 가장 큰 모순은 '거래량이 많지 않은데 가격이 오른다'는 점이다.
+          실거래 건수 기준으로 서울 아파트 거래량은 평년 대비 회복세에 있지만 폭발적인 수준은 아니다.
+          소량의 거래가 신고가를 형성하고, 그 신고가가 인근 호가를 끌어올리는 구조다.
+          이런 시장은 특성상 하락 전환도 빠를 수 있다. 매수자 심리가 조금만 식으면 거래가 급감하고,
+          가격 지지선이 무너지는 속도도 빠르다.
+        </p>
+        <p>
+          반면 현재의 상승세가 공급 부족에 기반한 구조적 현상이라면 단기 조정이 있더라도
+          중장기 우상향 추세는 유지된다는 시각도 있다. 2026년 하반기 입주 물량 급감이 현실화되면
+          전세 및 매매 모두 추가 상승 압력이 생길 수밖에 없다는 논리다.
+        </p>
+
+        <h2>전문가 시각 — 이 상승, 어떻게 봐야 하나</h2>
+        <p>
+          이번 시장 상승을 바라보는 전문가 시각은 크게 둘로 갈린다. 하나는 '일시적 과열'론이다.
+          대출 규제가 강화되고 있는 상황에서 실수요가 받쳐주지 않는 가격 상승은 지속성이 없다는 것이다.
+          실제로 정부는 25억 원 초과 고가 주택 주담대 한도를 2억 원으로 제한하고 스트레스 DSR 강화를
+          단행했다. 자금 조달이 어려워지면 수요가 꺾일 수 있다.
+        </p>
+        <p>
+          다른 하나는 '구조적 전환' 론이다. 지금의 상승은 금리 인하 사이클 진입 기대, 공급 부족,
+          전세 불안에 따른 실수요 전환이 복합적으로 작용하는 것으로, 단기 정책 하나로는
+          꺾기 어려운 힘이라는 주장이다. 어느 쪽이 맞든, 시장은 분명히 방향을 바꾸고 있다.
+        </p>
+
+        <h2>실수요자·투자자가 지금 주목해야 할 것들</h2>
+        <ul>
+          <li><strong>매수 타이밍보다 입지 본질 점검이 먼저다.</strong> 전 자치구 상승이라는 뉴스에 흥분하기보다, 해당 단지가 10년 후에도 선호될 입지인지 냉철하게 따져야 한다.</li>
+          <li><strong>대출 한도를 먼저 확인하라.</strong> 스트레스 DSR 강화로 예상 대출 가능 금액이 달라졌다. 금융기관 상담 없이 매수 결정을 내리는 것은 금물이다.</li>
+          <li><strong>경기도 GTX 수혜 지역은 실현 시점을 반드시 체크하라.</strong> 호재가 선반영된 가격대가 많다. 실제 개통 시점까지의 기회비용을 고려해야 한다.</li>
+          <li><strong>전세 갭 투자자라면 역전세 리스크를 재점검하라.</strong> 전세가 오르는 지역에서 갭 투자가 유리해 보이지만, 시장이 꺾이면 역전세가 가장 먼저 취약해진다.</li>
+          <li><strong>매도자라면 호가 올리기 전에 실거래가 확인부터 하라.</strong> 호가와 실거래가 사이의 괴리가 클 경우 시간이 지나도 팔리지 않는 '허수 매물'이 될 수 있다.</li>
+        </ul>
+
+        <h2>결론 — 흥분보다 냉정이 필요한 시점</h2>
+        <p>
+          서울 25개 구 전부 상승, 성북·종로 역대 최고 주간 상승률, 경기도 0.6%대 지역 속출.
+          숫자만 보면 분명히 강력한 시장 신호다. 하지만 거래량이 뒷받침되지 않은 가격 상승, 여전히
+          강화 중인 대출 규제, 글로벌 경기 불확실성이라는 변수도 함께 존재한다.
+          지금은 시장의 방향을 확인하되, 레버리지를 극도로 당기는 전략보다는 본인의 재무 여건과
+          거주 목적에 맞는 의사결정이 가장 현명한 선택임을 잊지 말아야 한다.
+        </p>
+
+        <div class="disclaimer">
+          <strong>⚠️ 면책 고지</strong><br>
+          본 에세이는 공개된 통계 데이터와 시장 분석을 바탕으로 작성된 정보 제공 목적의 콘텐츠입니다.
+          특정 자산의 매수·매도를 권유하거나 투자 수익을 보장하는 내용이 아닙니다.
+          부동산 투자는 원금 손실 위험이 있으며, 모든 투자 결정은 본인의 판단과 책임 하에 이루어져야 합니다.
+          세부 법률·세무 사항은 반드시 전문가와 상담하시기 바랍니다.
+        </div>
+      </article>
+    </main>
+
+    <!-- 사이드바 -->
+    <aside>
+      <div class="sidebar-box">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>서울 25개 자치구 전부 주간 상승 — 전면전 전환</li>
+          <li>주간 상승률 0.31%, 3개월 만의 최대 폭</li>
+          <li>성북구 0.54%·종로구 0.36% 역대 최고 주간 기록</li>
+          <li>경기도 안양 동안구 0.69%, 광명 0.67% 수도권 상위권</li>
+          <li>지방은 -0.02% 하락 지속, 수도권·지방 양극화 심화</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🗞️ 관련 기사</h3>
+        <ul class="related-list">
+          <li><a href="#">토지거래허가구역 실거주 유예 5월 말 시행, 무엇이 달라지나</a></li>
+          <li><a href="#">스트레스 DSR 3% 시대, 실수요자 대출 전략 총정리</a></li>
+          <li><a href="#">2026년 하반기 입주 물량 급감 예고, 전세 어디로</a></li>
+          <li><a href="#">안양·광명 GTX 수혜 단지, 지금 사도 늦지 않을까</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>📊 주요 지역 주간 상승률</h3>
+        <table class="region-table">
+          <thead>
+            <tr><th>지역</th><th>매매</th><th>전세</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>서울 전체</td><td class="up">+0.31%</td><td class="up">+0.28%</td></tr>
+            <tr><td>성북구</td><td class="up">+0.54%</td><td>—</td></tr>
+            <tr><td>송파구</td><td class="up">+0.38%</td><td class="up">+0.50%</td></tr>
+            <tr><td>서초구</td><td class="up">+0.26%</td><td>—</td></tr>
+            <tr><td>종로구</td><td class="up">+0.36%</td><td>—</td></tr>
+            <tr><td>강남구</td><td class="up">+0.20%</td><td>—</td></tr>
+            <tr><td>안양 동안</td><td class="up">+0.69%</td><td>—</td></tr>
+            <tr><td>광명</td><td class="up">+0.67%</td><td>—</td></tr>
+            <tr><td>지방 평균</td><td class="down">-0.02%</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> — 전문가의 시각으로 읽는 한국 부동산<br>
+  <span style="margin-top:8px;display:inline-block">© 2026 부동산인사이트. 본 콘텐츠의 무단 복제 및 배포를 금합니다.</span>
+</footer>
+
+</body>
+</html>
