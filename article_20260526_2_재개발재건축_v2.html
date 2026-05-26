@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공사비 10조 압구정 대격전… '자금력'이 브랜드 넘어선 재건축 新패러다임 | 부동산인사이트</title>
+<meta name="description" content="압구정 재건축 3·4·5구역 시공사 선정 총회가 잇달아 열린다. 삼성물산·현대건설·GS건설 등 대형 3사 중심의 재건축 수주 구도 변화와 입찰보증금 2000억 요구의 의미를 심층 분석한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #7B4A9E;
+    --accent-light: #f3edf9;
+    --accent-mid: #9b6fc0;
+    --dark: #2A0A4A;
+    --text: #1a1a1a;
+    --text-sub: #555;
+    --border: #ddd;
+    --bg: #f8f6fb;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; color: var(--text); background: var(--bg); font-size: 16px; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 1000;
+    padding: 0 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.35rem; font-weight: 900; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%);
+    padding: 72px 24px 60px;
+    color: #fff;
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; }
+  .cat-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+    font-weight: 900;
+    line-height: 1.35;
+    margin-bottom: 18px;
+    max-width: 820px;
+  }
+  .hero-meta { font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+  .hero-meta span { margin-right: 16px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 48px; }
+  @media (max-width: 820px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article { min-width: 0; }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 40px 0 16px;
+    padding-left: 16px;
+    border-left: 4px solid var(--accent);
+    color: #2a0a4a;
+    line-height: 1.4;
+  }
+  article p { margin-bottom: 18px; color: #333; }
+  article ul { margin: 16px 0 20px 0; padding-left: 0; list-style: none; }
+  article ul li { padding: 8px 0 8px 28px; position: relative; border-bottom: 1px solid #ede6f5; font-size: 0.95rem; }
+  article ul li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+  /* DATA BOX */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border: 1px solid #cdb0e8; border-radius: 10px; padding: 20px 16px; text-align: center; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.8rem; font-weight: 900; color: var(--accent); line-height: 1.1; }
+  .data-card .label { font-size: 0.8rem; color: var(--text-sub); margin-top: 6px; line-height: 1.4; }
+
+  /* QUOTE */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 5px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 24px 28px;
+    margin: 32px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #2a0a4a;
+    margin-bottom: 8px;
+  }
+  .quote-box cite { font-size: 0.82rem; color: var(--text-sub); }
+
+  /* DISCLAIMER */
+  .disclaimer { background: #f0f0f0; border: 1px solid #ccc; border-radius: 8px; padding: 18px 20px; margin-top: 48px; font-size: 0.8rem; color: #666; line-height: 1.7; }
+
+  /* SIDEBAR */
+  aside { min-width: 0; }
+  .sidebar-box { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 22px 20px; margin-bottom: 24px; }
+  .sidebar-box h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; color: #2a0a4a; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); }
+  .sidebar-box ul { list-style: none; padding: 0; }
+  .sidebar-box ul li { padding: 7px 0 7px 20px; position: relative; font-size: 0.88rem; border-bottom: 1px solid #f0eaf7; }
+  .sidebar-box ul li::before { content: "●"; position: absolute; left: 0; color: var(--accent); font-size: 0.6rem; top: 11px; }
+  .related-item { padding: 10px 0; border-bottom: 1px solid #f0eaf7; font-size: 0.86rem; }
+  .related-item:last-child { border-bottom: none; }
+  .related-cat { font-size: 0.72rem; color: var(--accent); font-weight: 700; display: block; margin-bottom: 3px; }
+
+  /* TABLE */
+  .comp-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.88rem; }
+  .comp-table th { background: var(--accent); color: #fff; padding: 10px 12px; text-align: center; }
+  .comp-table td { padding: 9px 12px; text-align: center; border-bottom: 1px solid #ede6f5; }
+  .comp-table tr:nth-child(even) td { background: var(--accent-light); }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,0.7); text-align: center; padding: 32px 24px; font-size: 0.82rem; margin-top: 60px; }
+  footer a { color: #F4A52D; text-decoration: none; }
+
+  /* TAGS */
+  .tag-row { margin: 24px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { background: var(--accent-light); color: var(--accent); font-size: 0.78rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; border: 1px solid #cdb0e8; }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box { background: linear-gradient(135deg, #2A0A4A, #5a2080); color: #fff; border-radius: 12px; padding: 24px 28px; margin: 32px 0; }
+  .highlight-box h4 { font-family: 'Noto Serif KR', serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; color: #e8d5ff; }
+  .highlight-box p { color: rgba(255,255,255,0.9); margin-bottom: 0; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">재개발·재건축</span>
+    <h1>공사비 10조 압구정 대격전…<br>'자금력'이 브랜드 넘어선 재건축 新패러다임</h1>
+    <div class="hero-meta">
+      <span>2026년 5월 26일</span>
+      <span>부동산인사이트 편집부</span>
+      <span>#재건축 #압구정 #정비사업 #대형건설사</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<article>
+
+  <!-- DATA BOX -->
+  <div class="data-box">
+    <div class="data-card">
+      <div class="num">10조+</div>
+      <div class="label">압구정 3~5구역<br>합산 예상 공사비</div>
+    </div>
+    <div class="data-card">
+      <div class="num">2,000억</div>
+      <div class="label">압구정3구역<br>입찰보증금 조건</div>
+    </div>
+    <div class="data-card">
+      <div class="num">1~1.2만</div>
+      <div class="label">압구정 6개 구역<br>총 예상 공급 가구</div>
+    </div>
+  </div>
+
+  <p>서울 강남구 압구정동, 한국 부동산 시장의 영원한 '최고 입지'. 그 압구정 재건축이 2026년 5월 마침내 결전의 국면으로 접어들었다. 6개 구역 중 3·4·5구역의 시공사 선정 총회가 이달 연이어 예정되면서, 국내 최대 건설사들이 총력전을 펼치고 있다. 그런데 이번 압구정 수주전의 양상은 과거와 근본적으로 다르다. 브랜드 경쟁을 넘어 막대한 자금력이 새로운 진입 장벽이 됐다. 이 변화가 재건축 시장 전체에 어떤 의미를 가지는지 짚어본다.</p>
+
+  <h2>압구정 재건축 6개 구역 — 얼마나 큰 사업인가</h2>
+
+  <p>압구정 재건축은 강남구 압구정동 일대 현대아파트·한양아파트 등 노후 단지들을 6개 구역으로 나누어 전면 재건축하는 국내 최대 규모의 정비사업이다. 6개 구역 전체 가구 수는 최종 1만1000~1만2000가구 수준으로, 단일 재건축 사업 최대 규모에 해당한다.</p>
+  <p>이 중 이번에 시공사 선정 절차를 밟는 3~5구역의 합산 공사비는 10조 원을 초과할 것으로 추정된다. 업계에서는 이를 '부동산 역사상 최대 단일 수주 기회'로 평가한다. 삼성물산, 현대건설, GS건설, DL이앤씨 등 국내 최상위 건설사들이 전사 역량을 투입하는 이유다.</p>
+
+  <div class="highlight-box">
+    <h4>압구정 재건축 구역별 현황 (2026년 5월 기준)</h4>
+    <p>3구역: 시공사 선정 총회 임박 — 현대건설·삼성물산 2파전 양상 / 4구역: GS건설·삼성물산 경합 / 5구역: DL이앤씨 단독 진출설 vs 현대건설 참여 검토 / 1·2·6구역: 추진위 단계, 본격 수주전 시간 필요</p>
+  </div>
+
+  <h2>입찰보증금 2000억원 — 수주전의 새로운 룰</h2>
+
+  <p>이번 압구정 재건축 수주전에서 가장 주목해야 할 변화는 입찰보증금의 규모다. 압구정3구역 조합이 제시한 입찰보증금은 2000억 원. 여의도 시범아파트도 500억 원 현금 입찰보증금을 요구했다. 이는 단순한 서류 제출이나 상징적 보증금이 아니라, 실제 현금 납부 능력을 검증하는 실질적 진입 장벽이다.</p>
+  <p>2000억 원의 현금을 즉각 동원할 수 있는 건설사는 국내에 손에 꼽힌다. 삼성물산, 현대건설, GS건설, 포스코이앤씨, DL이앤씨, 대우건설 정도가 현실적인 입찰 참여자다. 한때 정비사업 시장을 빛냈던 롯데건설, 호반건설, 중흥건설 등 중대형사는 이 문턱을 넘기 어렵다.</p>
+
+  <div class="quote-box">
+    <p>"재건축 입찰보증금이 수백억, 심지어 2000억 원까지 올라가면서, 사실상 상위 3~4개 건설사만의 리그가 됐다. 브랜드 파워는 기본이고, 이제는 자금 동원력이 곧 시공권이다. 중견 건설사들은 서울 핵심지 재건축 수주전에서 구조적으로 배제되는 현실이다."</p>
+    <cite>— 건설업계 M&A·자금 담당 임원, 언론 인터뷰 내용 재구성</cite>
+  </div>
+
+  <h2>왜 보증금이 이렇게 커졌나 — 조합의 논리와 건설사의 딜레마</h2>
+
+  <p>조합 입장에서는 입찰보증금 상향이 합리적 선택이다. 과거 입찰보증금이 낮았을 때 시공사가 수주만 해놓고 착공을 지연하거나, 공사비 인상을 빌미로 조합을 압박하는 사례가 반복됐기 때문이다. 강력한 보증금은 시공사 이행 담보력을 높이고, 사업 의지가 없는 들러리 입찰을 차단하는 기능을 한다.</p>
+  <p>그러나 건설사 입장에서는 이 구조가 부담스럽다. 고금리·원자재값 상승으로 이미 수익률이 얇아진 상황에서, 2000억 원을 현금으로 묶어두는 자금 부담은 여간 큰 것이 아니다. 낙찰되지 못하면 그 기회비용도 크다. 일부 건설사들이 컨소시엄(공동 수주) 구성을 검토하는 이유다.</p>
+  <p>이 현상은 단지 압구정만의 문제가 아니다. 신반포·반포 주요 재건축 구역, 여의도 한강변 단지들도 유사한 방향으로 입찰 조건을 강화하고 있다. 서울 핵심지 정비사업 수주는 점점 '그들만의 리그'가 돼가고 있다.</p>
+
+  <h2>중견사는 어디로 가야 하는가 — 시장의 재편</h2>
+
+  <p>서울 핵심지 재건축 수주전에서 대형사에 밀린 중견 건설사들은 새로운 시장을 개척하고 있다. 크게 세 가지 방향이다.</p>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th>전략 방향</th>
+        <th>주요 사업 유형</th>
+        <th>대표 사례</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>공공정비사업 특화</td>
+        <td>공공재개발·공공재건축</td>
+        <td>LH 연계 공공정비</td>
+      </tr>
+      <tr>
+        <td>모아타운·소규모정비</td>
+        <td>가로주택·소규모재건축</td>
+        <td>서울 빌라촌 모아타운</td>
+      </tr>
+      <tr>
+        <td>수도권 외곽 특화</td>
+        <td>인천·경기 재개발</td>
+        <td>인천 구도심·수원 팔달구</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>두산건설, 금호건설, 계룡건설 등 일부 중견사들은 수도권 핵심지를 포기하는 대신 인천·경기권 재개발 수주에 집중하며 틈새시장을 공략하고 있다. 모아타운(소규모 주택정비사업)은 대형사가 입찰 참여를 꺼리는 소규모 사업이라 중견사에게 상대적으로 유리한 경쟁 환경을 제공한다.</p>
+
+  <h2>압구정 이후 — 신반포·여의도 수주전이 온다</h2>
+
+  <p>압구정 재건축이 시공사 선정을 마무리하면 다음 격전지는 신반포와 여의도다. 신반포 15차, 반포 1단지, 여의도 시범아파트 등이 줄줄이 시공사 선정 절차에 돌입할 예정이다. 여의도 시범아파트는 이미 입찰보증금 500억 원 현금 조건을 내걸어 대형사 중심의 입찰구도가 형성됐다.</p>
+  <p>이들 사업지는 압구정과 마찬가지로 서울 최상급 입지라는 점에서, 조합원 입장에서는 최고 브랜드를 원하고 건설사 입장에서는 포트폴리오 최고 레퍼런스를 원하는 이해관계가 맞아떨어진다. 다만 조합원 간 내부 갈등(분담금 규모, 시공사 선호 차이)이 사업 지연 변수로 항상 존재한다는 점을 간과해서는 안 된다.</p>
+
+  <div class="quote-box">
+    <p>"압구정, 신반포, 여의도 — 이 세 지역의 재건축이 성공적으로 마무리되면 서울 강남·여의도 주택 공급의 새 장이 열린다. 하지만 조합 내부 갈등과 공사비 갈등을 어떻게 관리하느냐가 사업 성패를 가를 것이다. 10조짜리 사업도 내부 분열 하나면 수십 년 지연될 수 있다."</p>
+    <cite>— 서울시 정비사업 자문위원, 전문가 포럼 발언 재구성</cite>
+  </div>
+
+  <h2>재건축 수혜 지역 투자자가 알아야 할 핵심 변수</h2>
+
+  <p>재건축 추진 단지에 투자하는 수요자가 반드시 체크해야 할 변수들이 있다. 화려한 입지와 브랜드 뒤에 숨어 있는 리스크를 제대로 읽어야 손실을 피할 수 있다.</p>
+
+  <ul>
+    <li><strong>조합원 분담금 규모 파악:</strong> 재건축 사업의 수익성은 분담금이 결정한다. 고급 브랜드일수록 공사비도 높아져 분담금이 수억 원에 달하는 경우가 많다 — 시세 상승분이 분담금을 충분히 상쇄하는지 반드시 계산하라.</li>
+    <li><strong>사업 단계별 리스크 차별화:</strong> 추진위 단계 → 조합 설립 → 사업시행인가 → 관리처분인가 → 착공 단계로 갈수록 리스크가 줄고 가격이 오른다 — 초기 단계일수록 싸지만 지연 리스크가 크다.</li>
+    <li><strong>재당첨 금지·1세대 1주택 요건 확인:</strong> 규제지역 정비사업에서 2건 이상 보유 시 후순위 사업지는 현금 청산될 수 있다 — 다수 재건축 지분 보유자는 법무·세무 전문가 상담 필수.</li>
+    <li><strong>이주비 대출 요건 변화 모니터링:</strong> 정비사업 이주비 대출은 별도 규정 적용으로 일반 주담대와 다르다 — DSR 규제 변화가 이주비 조달 비용에 영향을 미칠 수 있다.</li>
+    <li><strong>공사비 갈등 구조 파악:</strong> 최근 건설사들이 착공 후 공사비 인상을 요구하며 공사를 중단하는 사례가 급증하고 있다 — 이미 조합과 건설사 간 분쟁 이력이 있는 단지는 주의가 필요하다.</li>
+    <li><strong>입주권 vs 분양권 세금 차이 이해:</strong> 재건축 조합원 입주권과 일반 분양권의 양도소득세 과세 방식이 다르다 — 특히 비규제지역 전환 여부에 따라 세금 부담이 크게 달라질 수 있다.</li>
+  </ul>
+
+  <h2>결론 — '자금력' 경쟁이 바꾸는 정비사업 생태계</h2>
+
+  <p>압구정 재건축 수주전은 한국 정비사업 시장의 구조 변화를 압축적으로 보여준다. 브랜드는 이제 기본 중의 기본이 됐고, 수천억 원의 자금 동원력이 새로운 경쟁의 본질이 됐다. 이 변화는 대형 건설사로의 수주 집중을 심화시키고, 중견사들의 생존 전략 전환을 강제하고 있다.</p>
+  <p>조합원 입장에서는 브랜드 파워와 자금력을 갖춘 시공사를 선택하는 것이 분담금 리스크를 낮추는 최선의 방법이다. 그러나 '그들만의 리그'가 고착화될수록 시공사 선택지가 줄어들고, 장기적으로 경쟁 부재가 공사비 상승을 더 심화시킬 수 있다는 역설도 잊지 말아야 한다.</p>
+  <p>5월 압구정 시공사 선정 결과는 단순한 수주 뉴스가 아니다. 앞으로 10년 이상 서울 강남의 스카이라인과 주택시장 판도를 결정짓는 역사적 분기점이다. 그 결과를 주목해야 하는 이유가 여기에 있다.</p>
+
+  <div class="tag-row">
+    <span class="tag">#압구정재건축</span>
+    <span class="tag">#정비사업</span>
+    <span class="tag">#대형건설사</span>
+    <span class="tag">#입찰보증금</span>
+    <span class="tag">#삼성물산</span>
+    <span class="tag">#현대건설</span>
+    <span class="tag">#서울재건축</span>
+    <span class="tag">#조합원분담금</span>
+  </div>
+
+  <div class="disclaimer">
+    <strong>면책 고지:</strong> 본 에세이는 부동산 시장에 대한 정보 제공 및 분석을 목적으로 작성되었으며, 특정 부동산 상품 또는 투자 행위를 권유하는 것이 아닙니다. 모든 부동산 투자 및 의사 결정은 개인의 재무 상황, 위험 감수 능력, 전문가 상담을 바탕으로 독자적으로 이루어져야 합니다. 본 기사의 내용은 작성 시점(2026년 5월 26일) 기준이며, 이후 시장 변화나 정책 변경으로 내용이 달라질 수 있습니다. 편집부는 본 기사 내용으로 인한 투자 손실에 대해 어떠한 법적 책임도 지지 않습니다.
+  </div>
+
+</article>
+
+<aside>
+  <div class="sidebar-box">
+    <h3>📌 핵심 요약</h3>
+    <ul>
+      <li>압구정 3~5구역 시공사 선정 총회 임박 — 합산 공사비 10조 원 초과</li>
+      <li>입찰보증금 최대 2000억 원 — 대형 3~4사만의 수주 구도 굳어져</li>
+      <li>자금력이 브랜드를 넘어선 新경쟁 변수로 부상</li>
+      <li>중견사는 모아타운·공공정비·수도권 외곽으로 전략 전환</li>
+      <li>신반포·여의도가 다음 수주 격전지로 예고</li>
+    </ul>
+  </div>
+
+  <div class="sidebar-box">
+    <h3>📰 관련 기사</h3>
+    <div class="related-item">
+      <span class="related-cat">정책·규제</span>
+      서울시 재건축 규제 완화 2026년 완전 정리 — 안전진단·신통기획 핵심 변화
+    </div>
+    <div class="related-item">
+      <span class="related-cat">투자 인사이트</span>
+      재건축 조합원 입주권 양도세 계산법 — 알아야 손해 안 본다
+    </div>
+    <div class="related-item">
+      <span class="related-cat">시장동향</span>
+      압구정·한남 재건축 기대감에 강남 아파트 호가 다시 꿈틀
+    </div>
+    <div class="related-item">
+      <span class="related-cat">재개발·재건축</span>
+      경기 정비사업 2026년 대형사 격돌 예고 — 인천·수원이 뜨겁다
+    </div>
+  </div>
+
+  <div class="sidebar-box">
+    <h3>⚠️ 재건축 투자 단계별 리스크</h3>
+    <table style="width:100%; font-size:0.82rem; border-collapse:collapse;">
+      <thead>
+        <tr style="background:var(--accent);color:#fff;">
+          <th style="padding:8px 6px;">사업 단계</th>
+          <th style="padding:8px 6px;">리스크</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #ede6f5;">
+          <td style="padding:7px 6px;">추진위·조합설립</td>
+          <td style="padding:7px 6px; color:#c0392b;">★★★★★ 최고</td>
+        </tr>
+        <tr style="background:var(--accent-light); border-bottom:1px solid #ede6f5;">
+          <td style="padding:7px 6px;">사업시행인가</td>
+          <td style="padding:7px 6px; color:#e67e22;">★★★★ 높음</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ede6f5;">
+          <td style="padding:7px 6px;">관리처분인가</td>
+          <td style="padding:7px 6px; color:#f1c40f;">★★★ 중간</td>
+        </tr>
+        <tr style="background:var(--accent-light); border-bottom:1px solid #ede6f5;">
+          <td style="padding:7px 6px;">착공·이주</td>
+          <td style="padding:7px 6px; color:#27ae60;">★★ 낮음</td>
+        </tr>
+        <tr>
+          <td style="padding:7px 6px;">준공·입주</td>
+          <td style="padding:7px 6px; color:#2980b9;">★ 최저</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <p style="margin-bottom:6px;">© 2026 부동산인사이트 | <a href="#">개인정보처리방침</a> | <a href="#">이용약관</a></p>
+  <p>본 사이트의 모든 콘텐츠는 정보 제공 목적으로만 작성됩니다. 투자 결정은 반드시 전문가와 상의하세요.</p>
+</footer>
+
+</body>
+</html>
