@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 108,
+    url: 'article_20260526_2_재개발재건축_v2.html',
+    category: '재개발',
+    title: '공사비 10조 압구정 대격전… \'자금력\'이 브랜드 넘어선 재건축 新패러다임',
+    summary: '압구정 재건축 3·4·5구역 시공사 선정 총회가 잇달아 열린다. 삼성물산·현대건설·GS건설 등 대형 3사 중심의 재건축 수주 구도 변화와 입찰보증금 2000억 요구의 의미를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-26',
+    title_en: 'Apgujeong\'s 10 Trillion KRW Construction Battle — The New Reconstruction Paradigm Where Capital Trumps Brand',
+    summary_en: 'Apgujeong reconstruction zones 3, 4, and 5 hold successive contractor selection meetings. Analyzing the shifting dynamics among Samsung C&T, Hyundai E&C, and GS E&C, and what the 200 billion KRW bid deposit demand means.'
+  },
+  {
+    id: 107,
+    url: 'article_20260526_1_분양청약_v2.html',
+    category: '분양',
+    title: '5월 수도권 1.4만 가구 쏟아진다… 분양가상한제 활용한 \'전략 청약\'이 답',
+    summary: '2026년 5월 수도권 분양 물량이 1만4330가구로 급증했다. 분양가상한제 단지·무순위 청약·추첨제 전략으로 가점 낮은 실수요자도 당첨 기회를 잡는 방법을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-26',
+    title_en: '14,000 Units Flood Seoul Metro in May — Strategic Subscription Using Price Cap System Is the Answer',
+    summary_en: 'Seoul metropolitan presale volume surges to 14,330 units in May 2026. An in-depth analysis of how low-score end-users can win through price-capped complexes, non-ranked subscriptions, and lottery strategies.'
+  },
+  {
     id: 106,
     url: 'article_20260525_2_policy_v2.html',
     category: '정책',
