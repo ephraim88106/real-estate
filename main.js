@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 110,
+    url: 'article_20260527_2_해외부동산_v2.html',
+    category: '해외',
+    title: '엔저 끝물인가 황금기인가 — 2026 일본 부동산 투자 완전 분석',
+    summary: '엔화 약세가 이어지는 2026년, 한국인의 일본 부동산 투자가 급증하고 있다. 도쿄·오사카 수익률 분석부터 환율 리스크, 세금 구조까지 한국인이 꼭 알아야 할 핵심 정보를 정리했다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-27',
+    title_en: 'End of Weak Yen or Golden Era? — Complete Analysis of 2026 Japan Real Estate Investment',
+    summary_en: 'As yen weakness continues in 2026, Korean investment in Japanese real estate is surging. From Tokyo and Osaka yield analysis to currency risk and tax structures — essential information for Korean investors.'
+  },
+  {
+    id: 109,
+    url: 'article_20260527_1_투자분석_v2.html',
+    category: '투자분석',
+    title: '갭투자 막히자 경매로 몰린다 — 2026 부동산 투자 생존 전략',
+    summary: '토지거래허가구역 전면 확대로 갭투자가 봉쇄된 2026년, 경매 낙찰가율 반등과 수익형 부동산으로 투자 전략이 재편되고 있다. 실전 투자자를 위한 심층 분석.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-27',
+    title_en: 'Gap Investment Blocked, Investors Flock to Auctions — 2026 Real Estate Investment Survival Strategy',
+    summary_en: 'With gap investment blocked by expanded land transaction permit zones in 2026, investment strategies are shifting toward auction bid rate rebounds and income-generating properties. An in-depth analysis for practical investors.'
+  },
+  {
     id: 108,
     url: 'article_20260526_2_재개발재건축_v2.html',
     category: '재개발',
