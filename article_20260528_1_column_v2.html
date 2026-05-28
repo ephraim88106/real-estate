@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>다주택자 양도세 중과 부활, 시장은 응답했는가 — 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #6A6A10;
+    --accent-light: #f0f0d0;
+    --accent-mid: #9a9a20;
+    --dark: #1a1a1a;
+    --text: #2d2d2d;
+    --muted: #666;
+    --bg: #fafaf6;
+    --white: #ffffff;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.35rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 1.5rem; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color .2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+    padding: 4rem 2rem;
+    color: #fff;
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 3px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    max-width: 800px;
+  }
+  .hero-meta { font-size: 0.85rem; color: rgba(255,255,255,0.7); display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  .hero-meta span { display: flex; align-items: center; gap: 0.4rem; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 3rem auto; padding: 0 2rem; display: grid; grid-template-columns: 1fr 300px; gap: 3rem; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article { min-width: 0; }
+
+  /* DATA BOX */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 1.2rem;
+    border-radius: 6px;
+  }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.8rem; font-weight: 700; color: var(--accent); line-height: 1.2; }
+  .data-card .label { font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.4; }
+
+  /* BODY TEXT */
+  article p { margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.9; color: var(--text); }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent);
+    color: var(--dark);
+  }
+  article h3 { font-size: 1.05rem; font-weight: 700; margin: 1.8rem 0 0.8rem; color: var(--dark); }
+
+  /* QUOTE */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 5px solid var(--accent);
+    padding: 1.5rem 1.8rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #3a3a10;
+    margin: 0;
+    line-height: 1.8;
+  }
+  .quote-box cite { display: block; margin-top: 0.8rem; font-size: 0.82rem; color: var(--muted); font-style: normal; }
+
+  /* BULLET LIST */
+  article ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+  article ul li { margin-bottom: 0.6rem; font-size: 1rem; line-height: 1.8; }
+  article ul li::marker { color: var(--accent); }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.78rem;
+    color: #888;
+    margin-top: 3rem;
+    line-height: 1.7;
+  }
+
+  /* TAGS */
+  .tags { margin: 2rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tag { background: #eee; color: var(--muted); padding: 4px 10px; border-radius: 20px; font-size: 0.78rem; }
+
+  /* SIDEBAR */
+  aside { min-width: 0; }
+  .sidebar-widget {
+    background: var(--white);
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .sidebar-widget h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--accent);
+    color: var(--dark);
+  }
+  .sidebar-widget ul { list-style: none; padding: 0; }
+  .sidebar-widget ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .sidebar-widget ul li:last-child { border-bottom: none; }
+  .summary-bullet { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.7rem; }
+  .summary-bullet::before { content: "▶"; color: var(--accent); font-size: 0.7rem; flex-shrink: 0; margin-top: 0.3rem; }
+  .summary-bullet span { font-size: 0.85rem; line-height: 1.5; }
+
+  /* POLICY TABLE */
+  .policy-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .policy-table th { background: var(--accent); color: #fff; padding: 0.5rem 0.7rem; text-align: left; }
+  .policy-table td { padding: 0.5rem 0.7rem; border-bottom: 1px solid #e8e8e8; }
+  .policy-table tr:nth-child(even) td { background: #f8f8f0; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,0.6); text-align: center; padding: 2rem; font-size: 0.82rem; margin-top: 4rem; }
+  footer strong { color: rgba(255,255,255,0.9); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">📝 칼럼·해설</span>
+    <h1>다주택자 양도세 중과 부활, 시장은 응답했는가<br>— 이재명 정부 2년 차 부동산 정책 냉정 진단</h1>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 28일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>📖 약 10분 읽기</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">2026.5.9</div>
+        <div class="label">다주택자 양도소득세<br>중과 유예 공식 종료일</div>
+      </div>
+      <div class="data-card">
+        <div class="num">+11.26%</div>
+        <div class="label">서울 아파트 매매가격<br>2025년 한 해 연간 상승률</div>
+      </div>
+      <div class="data-card">
+        <div class="num">74%</div>
+        <div class="label">전문가 중 서울 집값<br>추가 상승 전망 비율</div>
+      </div>
+    </div>
+
+    <p>
+      2026년 5월 9일, 이재명 정부는 다주택자 양도소득세 중과 유예 종료를 공식 선언했다. 사실상 출범 이후 1년여 만에 내린 이 결정은 집값 안정을 명분으로 내걸었지만, 시장 반응은 정부의 기대와는 사뭇 다른 방향으로 흘렀다. 규제 강화 발표 직후 매물은 오히려 줄었고, 매매수급지수는 2021년 이후 5년 만에 최고점을 찍었다. 수요는 꺾이지 않고, 집주인들은 세금 부담이 커진 만큼 가격을 더 높이 불렀다. 정책의 설계 의도와 시장의 작동 원리 사이에서 생긴 이 간극은, 역대 정부가 반복해온 패턴과 묘하게 닮아 있다.
+    </p>
+
+    <h2>정책의 논리: 왜 지금 중과 부활인가</h2>
+    <p>
+      이재명 정부가 다주택자 양도세 중과 유예를 종료한 배경에는 두 가지 논리가 공존한다. 첫째는 조세 형평성의 회복이다. 문재인 정부 시절 도입된 다주택자 중과 세율은 이후 윤석열 정부에서 한시 유예로 전환됐고, 이재명 정부 출범 후에도 시장 상황을 이유로 몇 차례 연장됐다. 유예가 길어질수록 "규제가 무력화됐다"는 신호가 시장에 각인됐다는 지적이 제기됐다.
+    </p>
+    <p>
+      둘째는 매물 유도 전략이다. 보유세와 양도세 중과를 동시에 강화하면, 다주택자로서는 보유 비용이 커지는 만큼 매도 압력이 높아진다는 것이 정책 설계의 핵심 가정이었다. 이 논리는 표면적으로는 매끄럽다. 하지만 역대 사례를 돌이켜보면 이 전제가 언제나 성립하지는 않는다.
+    </p>
+
+    <div class="quote-box">
+      <p>"세금이 올라가면 팔겠다는 사람도 있지만, 더 올려서 세금 내고도 남게 팔겠다는 사람도 있습니다. 공급이 없는 상황에서 세금 강화는 매물보다 가격을 먼저 올립니다."</p>
+      <cite>— 한 수도권 공인중개사 인터뷰 발언 (2026년 5월)</cite>
+    </div>
+
+    <h2>시장의 논리: 공급 공백이 모든 것을 삼킨다</h2>
+    <p>
+      2026년 현재 수도권 시장이 처한 근본 문제는 공급 절벽이다. 한국건설산업연구원에 따르면 2026년 수도권 신축 입주물량은 약 11만 1,700호로, 2025년 16만 1,300호에 비해 30% 이상 감소가 예상된다. 이는 2021~2022년 인허가·착공 급감의 후폭풍이 3~4년의 시차를 두고 현실화되는 국면이다.
+    </p>
+    <p>
+      공급이 부족한 시장에서 세금 정책만으로 가격을 누르는 데는 구조적 한계가 있다. 기존 주택 보유자들은 종합부동산세와 재산세 부담이 늘어나는 상황에서도 매도보다는 버티기를 선택하는 경향이 강하다. 특히 서울 강남권처럼 희소성이 높은 지역일수록 이 현상이 두드러진다. 결국 세금 강화는 기존 보유자의 보유 의사를 꺾기보다, 신규 진입자의 비용 부담만 높이는 역설적 결과를 낳기도 한다.
+    </p>
+
+    <h2>이재명 정부 부동산 정책의 궤적과 평가</h2>
+    <p>
+      이재명 정부는 출범 이후 크게 세 차례의 굵직한 정책 패키지를 발표했다. 6·27 대출 규제, 9·7 공급 대책, 10·15 안정화 대책이다. 각 대책은 발표 직후 단기적으로 시장 심리를 누르는 효과를 가져왔으나, 지속 효과는 제한적이었다. 대출 규제는 실수요자와 투기 수요를 구분하지 못한 채 매수 여력 전반을 축소시키는 부작용을 낳았고, 공급 대책은 실현까지 수년이 소요되는 구조적 시차 문제를 안고 있다.
+    </p>
+    <p>
+      전문가 74%가 서울 집값 추가 상승을 전망하는 현실은, 시장이 정책을 어떻게 읽고 있는지를 단적으로 보여준다. 규제 발표 → 단기 관망 → 매물 소화 → 재상승이라는 사이클은 2000년대 이후 반복된 패턴이며, 이번에도 예외가 아닌 것으로 보인다.
+    </p>
+
+    <div class="quote-box">
+      <p>"부동산 정책의 성패는 발표 시점이 아니라 3~5년 후에 평가됩니다. 공급 확대가 실제로 시장에 나오는 시점에서 규제가 맞물려야 효과가 납니다. 지금은 정책이 너무 앞서가거나, 혹은 공급이 너무 뒤처져 있습니다."</p>
+      <cite>— 부동산 시장 전문 연구기관 보고서 요약 (2026년 5월)</cite>
+    </div>
+
+    <h2>비판적 시각: 정책이 놓친 것들</h2>
+    <p>
+      이재명 정부 부동산 정책에 대한 가장 핵심적인 비판은 '공급의 타이밍'이다. 공급 대책은 발표됐지만, 실제 입주까지는 최소 3~5년이 소요된다. 그 공백기에 수요는 지속적으로 존재하는 반면 공급은 오히려 줄어드는 역설이 지금 현실이다. 양도세 중과 부활이 매물을 유도할 수 있다는 기대는 일부 타당하나, 그 매물이 시장에 나와 가격을 끌어내릴 수 있는 물량인지는 별개의 문제다.
+    </p>
+    <p>
+      또한 세제 변화의 불확실성 자체가 시장 교란 요인이 된다는 점도 주목해야 한다. 잦은 정책 변화는 실수요자들의 계획을 불안정하게 만들고, 역설적으로 "지금 사지 않으면 규제가 더 강해질 수 있다"는 불안 매수 심리를 자극하기도 한다.
+    </p>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+    <ul>
+      <li><strong>양도세 중과 복귀 직후 단기 매물 소화기 가능성:</strong> 일부 다주택자들이 유예 종료 전 마지막 타이밍을 활용해 매도한 물량이 5월 전후로 소화될 수 있다. 이 시기 급매 형성 여부를 모니터링할 필요가 있다.</li>
+      <li><strong>보유세 부담 재점검:</strong> 종합부동산세 및 재산세 산정 기준 변화를 개인 포트폴리오에 맞게 재계산하고, 보유 비용이 실질 수익률을 초과하는 자산은 정리를 검토할 시점이다.</li>
+      <li><strong>공급 타이밍 파악이 핵심:</strong> 신규 분양 및 입주 물량 감소가 예상되는 2026~2027년은 기존 주택 희소성이 높아지는 구간이다. 실수요 관점에서 지금 진입이 유리한지를 중기 관점으로 판단해야 한다.</li>
+      <li><strong>전세 가격 상승의 매매 전환 심리 경계:</strong> 전세가가 치솟으면서 "차라리 사겠다"는 수요가 매매 시장을 자극하고 있다. 이 흐름이 가격을 더 밀어올릴 수 있으나, 금리 변화 등 외부 변수에 취약하다는 점을 함께 고려해야 한다.</li>
+      <li><strong>정책 모니터링 지속:</strong> 하반기 추경 및 9월 이후 부동산 관련 세제 개편 논의가 예상되는 만큼, 법 개정 동향을 지속적으로 추적하는 것이 선행과제다.</li>
+    </ul>
+
+    <h2>결론: 정책의 의도와 시장의 현실 사이에서</h2>
+    <p>
+      이재명 정부의 다주택자 양도세 중과 부활은 분명 '조세 정상화'라는 관점에서 방향성은 옳다. 그러나 정책의 방향성이 옳다고 해서 결과가 원하는 대로 나오는 것은 아니다. 공급이 충분하지 않은 상황에서 세금 규제만 강화되면, 그 비용은 결국 시장을 통해 수요자에게 전가된다.
+    </p>
+    <p>
+      부동산 시장은 단기적 정책 신호에 민감하게 반응하지만, 중장기적으로는 수요·공급의 기본 원리로 수렴한다. 지금 필요한 것은 규제의 완급 조절이 아니라, 공급이 실제로 시장에 도달하는 타이밍에 맞춘 정밀한 정책 설계다. 그 정밀함이 갖춰지기 전까지, 시장은 정부보다 빠르게 움직일 것이다.
+    </p>
+
+    <div class="tags">
+      <span class="tag">#다주택자양도세</span>
+      <span class="tag">#이재명정부부동산</span>
+      <span class="tag">#부동산정책평가</span>
+      <span class="tag">#공급절벽</span>
+      <span class="tag">#세제개편</span>
+      <span class="tag">#칼럼</span>
+      <span class="tag">#부동산인사이트</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지</strong><br>
+      본 기사는 공개된 통계 자료와 뉴스 보도를 바탕으로 작성된 분석·논평으로, 특정 투자 자산의 매수·매도를 권유하거나 보증하지 않습니다. 부동산 투자 및 세무 관련 의사결정은 반드시 공인 전문가(공인중개사, 세무사, 법무사 등)와 개별 상담 후 진행하시기 바랍니다. 본 내용에 따른 투자 손실에 대해 부동산인사이트는 법적 책임을 지지 않습니다.
+    </div>
+
+  </article>
+
+  <aside>
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <div class="summary-bullet"><span>2026년 5월 9일 다주택자 양도세 중과 유예가 공식 종료됐다</span></div>
+      <div class="summary-bullet"><span>서울 집값은 2025년 한 해만 11.26% 올랐으며 66주 연속 상승 중</span></div>
+      <div class="summary-bullet"><span>전문가 74%가 서울 집값 추가 상승을 전망한다</span></div>
+      <div class="summary-bullet"><span>수도권 2026년 신축 입주 물량은 전년比 30% 이상 감소 예상</span></div>
+      <div class="summary-bullet"><span>세금 강화 단독으로는 공급 부족을 해소할 수 없다는 전문가 지적 다수</span></div>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>📰 관련 기사</h3>
+      <ul>
+        <li>서울 아파트 매매수급지수, 5년 만에 최고치 돌파</li>
+        <li>다주택자 양도세 중과 종료 후 급매물 현황은</li>
+        <li>이재명 정부 3대 부동산 대책, 6개월 효과 점검</li>
+        <li>2026 수도권 분양 물량 급감… 내 집 마련 전략은</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>📊 이재명 정부 주요 부동산 정책 일지</h3>
+      <table class="policy-table">
+        <thead>
+          <tr><th>시기</th><th>정책</th><th>평가</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2025.06</td><td>6·27 대출 규제</td><td>단기 관망</td></tr>
+          <tr><td>2025.09</td><td>9·7 공급 대책</td><td>실효 미지수</td></tr>
+          <tr><td>2025.10</td><td>10·15 안정화</td><td>일시 진정</td></tr>
+          <tr><td>2026.05</td><td>양도세 중과 복귀</td><td>시장 재반응 중</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> · 본 매체는 공개 데이터와 언론 보도를 기반으로 하며 투자 권유를 목적으로 하지 않습니다.<br>
+  © 2026 부동산인사이트. All rights reserved.
+</footer>
+
+</body>
+</html>

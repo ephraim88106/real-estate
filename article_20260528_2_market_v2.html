@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 아파트 66주 연속 상승·전세 10년 만에 최고… 이 상승, 언제까지 가나 — 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #1A4D8F;
+    --accent-light: #dce8f8;
+    --accent-mid: #2a6abf;
+    --dark: #1a1a1a;
+    --text: #2d2d2d;
+    --muted: #666;
+    --bg: #f6f8fc;
+    --white: #ffffff;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.35rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 1.5rem; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color .2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 4rem 2rem;
+    color: #fff;
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: var(--accent-mid);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 3px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    max-width: 850px;
+  }
+  .hero-meta { font-size: 0.85rem; color: rgba(255,255,255,0.7); display: flex; gap: 1.5rem; flex-wrap: wrap; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 3rem auto; padding: 0 2rem; display: grid; grid-template-columns: 1fr 300px; gap: 3rem; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article { min-width: 0; }
+
+  /* DATA BOX */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 1.2rem;
+    border-radius: 6px;
+  }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.8rem; font-weight: 700; color: var(--accent); line-height: 1.2; }
+  .data-card .label { font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.4; }
+
+  /* BODY TEXT */
+  article p { margin-bottom: 1.5rem; font-size: 1rem; line-height: 1.9; color: var(--text); }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent);
+    color: var(--dark);
+  }
+  article h3 { font-size: 1.05rem; font-weight: 700; margin: 1.8rem 0 0.8rem; color: var(--dark); }
+
+  /* QUOTE */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 5px solid var(--accent);
+    padding: 1.5rem 1.8rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #0D2B55;
+    margin: 0;
+    line-height: 1.8;
+  }
+  .quote-box cite { display: block; margin-top: 0.8rem; font-size: 0.82rem; color: var(--muted); font-style: normal; }
+
+  /* BULLET LIST */
+  article ul { padding-left: 1.5rem; margin-bottom: 1.5rem; }
+  article ul li { margin-bottom: 0.6rem; font-size: 1rem; line-height: 1.8; }
+  article ul li::marker { color: var(--accent); }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box {
+    background: linear-gradient(135deg, #f0f5ff, #e8f0ff);
+    border: 1px solid #c8d8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+  }
+  .highlight-box h3 { font-size: 0.95rem; color: var(--accent); margin-bottom: 0.8rem; }
+  .highlight-box p { margin: 0; font-size: 0.92rem; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.78rem;
+    color: #888;
+    margin-top: 3rem;
+    line-height: 1.7;
+  }
+
+  /* TAGS */
+  .tags { margin: 2rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tag { background: #e8f0ff; color: var(--accent); padding: 4px 10px; border-radius: 20px; font-size: 0.78rem; border: 1px solid #c8d8f0; }
+
+  /* SIDEBAR */
+  aside { min-width: 0; }
+  .sidebar-widget {
+    background: var(--white);
+    border: 1px solid #e0eaf8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .sidebar-widget h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--accent);
+    color: var(--dark);
+  }
+  .sidebar-widget ul { list-style: none; padding: 0; }
+  .sidebar-widget ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .sidebar-widget ul li:last-child { border-bottom: none; }
+  .summary-bullet { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.7rem; }
+  .summary-bullet::before { content: "▶"; color: var(--accent); font-size: 0.7rem; flex-shrink: 0; margin-top: 0.3rem; }
+  .summary-bullet span { font-size: 0.85rem; line-height: 1.5; }
+
+  /* STAT TABLE */
+  .stat-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .stat-table th { background: var(--accent); color: #fff; padding: 0.5rem 0.7rem; text-align: left; }
+  .stat-table td { padding: 0.5rem 0.7rem; border-bottom: 1px solid #e8e8e8; }
+  .stat-table tr:nth-child(even) td { background: #f0f5ff; }
+  .up { color: #c8401a; font-weight: 700; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,0.6); text-align: center; padding: 2rem; font-size: 0.82rem; margin-top: 4rem; }
+  footer strong { color: rgba(255,255,255,0.9); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">📈 시장동향</span>
+    <h1>서울 아파트 66주 연속 상승·전세 10년 6개월 만에 최고<br>— 이 상승장, 언제까지 이어지나</h1>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 28일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>📖 약 10분 읽기</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">66주</div>
+        <div class="label">서울 아파트 매매가격<br>연속 상승 (2025.2~2026.5)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">+0.28%</div>
+        <div class="label">5월 둘째 주 서울 전세<br>10년 6개월 만의 최고 주간 상승</div>
+      </div>
+      <div class="data-card">
+        <div class="num">108.3</div>
+        <div class="label">서울 매매수급지수<br>(2021년 3월 이후 5년 최고)</div>
+      </div>
+    </div>
+
+    <p>
+      2026년 5월, 서울 아파트 시장은 숫자로 말한다. 매매가격은 2025년 2월 첫째 주 상승 전환 이후 66주 연속 오름세를 이어가고 있다. 전셋값은 5월 둘째 주 기준 주간 0.28% 상승으로, 2015년 11월 이후 약 10년 6개월 만의 최고 상승률을 기록했다. 매매수급지수는 108.3으로 2021년 3월 이후 5년 만에 최고점을 찍었다. 이 숫자들이 한꺼번에 모인다는 것은 우연이 아니다. 공급은 줄고, 수요는 여전히 살아 있으며, 정책은 시장을 완전히 꺾지 못하고 있다는 신호다.
+    </p>
+
+    <h2>매매시장: 66주 상승의 의미와 구조</h2>
+    <p>
+      서울 아파트 매매가격 66주 연속 상승은 단순한 숫자 이상의 의미를 갖는다. 지난해 초 정부의 6·27 대출 규제 등 강도 높은 억제책이 잇따라 나왔음에도 상승세가 꺾이지 않았다는 점은, 이 시장의 수요 기반이 정책 리스크를 흡수할 만큼 두텁다는 뜻이다.
+    </p>
+    <p>
+      특히 주목할 것은 상승의 지역 확산이다. 초기에는 마포·용산·성동 등 이른바 '마용성' 일대에서 먼저 불이 붙었지만, 2025년 하반기 이후 성북구(+0.54%), 종로구(+0.36%) 등 강북 외곽권까지 확산됐다. 5월에는 강남구(+0.19%), 서초구(+0.17%), 송파구(+0.35%) 등 강남권도 반등에 성공하며 서울 25개 자치구 '전 지역 동반 상승'이라는 이례적 국면이 연출됐다.
+    </p>
+
+    <div class="quote-box">
+      <p>"서울 전역이 동시에 오르는 장세는 투기 수요보다 실수요 기반의 공급 부족 현상으로 보아야 합니다. 특정 지역에만 수요가 몰리는 것이 아니라, 전반적으로 물량이 없는 상태입니다."</p>
+      <cite>— 수도권 부동산 시장 분석 리포트 인용 (2026년 5월)</cite>
+    </div>
+
+    <h2>전세시장: 10년 만의 최고 상승이 보내는 경고</h2>
+    <p>
+      전세시장의 이상 과열은 매매 시장보다 더 걱정스러운 신호다. 서울 아파트 전셋값의 주간 상승률 0.28%는 2015년 11월 이후 가장 가파른 속도다. 연간으로 환산하면 약 14% 이상의 전세가 상승에 해당한다. 이는 전세를 살고 있는 세입자들에게 직접적인 부담이 될 뿐만 아니라, 중장기적으로 매매 전환 수요를 자극하는 핵심 요인이 된다.
+    </p>
+    <p>
+      전세 물량 감소의 원인은 복합적이다. 첫째, 집주인들이 전세를 월세로 전환하는 흐름이 가속화되면서 전통적 전세 공급이 줄고 있다. 둘째, 신규 입주 물량이 감소하면서 이사 수요를 흡수할 새 전세 물건이 절대적으로 부족하다. 셋째, 전세 사기 피해 이후 임차인들의 전세 선호도 자체가 변화하고 있지만, 월세 부담도 만만치 않아 결국 전세 시장에 여전히 수요가 집중되는 모순 상황이 이어진다.
+    </p>
+
+    <h2>수급지수 5년 만의 최고, 무엇이 수요를 끌어당기나</h2>
+    <p>
+      매매수급지수 108.3, 전세수급지수 113.7은 모두 2021년 3월 이후 약 5년 만의 최고치다. 수급지수가 100을 넘는다는 것은 시장에 매물보다 수요가 많다는 뜻이며, 이 수치가 높을수록 가격 상승 압력이 강하다는 의미다.
+    </p>
+    <p>
+      지금 서울 매수 수요를 끌어당기는 요인은 크게 세 가지로 정리된다. 첫째는 전세가 상승에 따른 '갭 축소 효과'다. 전세가가 올라갈수록 매매가와 전세가의 차액(갭)이 줄어들고, 실수요자 입장에서는 "이럴 바에 사는 게 낫다"는 판단이 서기 쉬워진다. 둘째는 주식 시장에서의 차익 실현 자금의 부동산 유입이다. 최근 국내외 증시 상승으로 수익을 낸 자금 일부가 안전 자산으로서의 서울 아파트로 이동하는 흐름이 포착되고 있다. 셋째는 공급 감소에 대한 선제적 매수 심리다. 2026~2027년 신축 입주 물량이 급감한다는 전망이 알려지면서, "지금 사지 않으면 더 비싸질 것"이라는 불안 심리가 시장을 자극하고 있다.
+    </p>
+
+    <div class="quote-box">
+      <p>"전셋값이 10년 만에 최고 속도로 오른다는 것은 결국 '살 곳이 없다'는 신호입니다. 이 신호가 지속되면 전세 수요는 매매 수요로 전환될 수밖에 없고, 이는 다시 매매가를 끌어올리는 악순환이 됩니다."</p>
+      <cite>— 부동산 시장 전문 연구자 발언 인용 (2026년 5월)</cite>
+    </div>
+
+    <h2>지역별 차별화: 강남·마용성 이후 '전방위 상승'</h2>
+    <p>
+      지금 서울 시장의 또 다른 특징은 상승의 고른 분산이다. 과거 상승장에서는 강남3구와 일부 주요 지역이 먼저 오르고 외곽이 후행하는 패턴이 일반적이었다. 그러나 2026년 5월 현재는 강남·강북·외곽 구분 없이 25개 자치구 전역이 동시에 오르고 있다.
+    </p>
+    <p>
+      이는 공급 부족이 특정 지역의 문제가 아니라 서울 전체의 구조적 문제임을 보여준다. 성북구의 주간 역대 최고 상승률 기록은 단순한 추격 매수의 결과가 아니라, 그 지역 자체에서도 살 만한 물량이 턱없이 부족하다는 뜻이다.
+    </p>
+
+    <div class="highlight-box">
+      <h3>📊 2026년 5월 서울 아파트 시장 주요 지표 (5월 둘째 주 기준)</h3>
+      <p>매매가 주간 상승률 +0.28% (15주 최고) · 전세 주간 상승률 +0.28% (545주 최고) · 매매수급지수 108.3 · 전세수급지수 113.7 · 성북구 주간 매매 +0.54% (역대 최고) · 종로구 +0.36% (역대 최고) · 강남3구 전 지역 동반 반등</p>
+    </div>
+
+    <h2>상승의 지속 가능성: 꺾일 변수와 이어갈 동력</h2>
+    <p>
+      시장의 최대 관심사는 이 상승이 언제까지 이어지느냐다. 한 수도권 전문 분석 매체는 "지금은 오른다, 하지만 6개월 후엔 꺾인다"는 전망을 내놓으며 '부작용 상승'이라는 표현을 사용했다. 공급 부족에 의한 상승은 지속 기반이 약하고, 외부 충격에 취약하다는 진단이다.
+    </p>
+    <p>
+      상승을 멈출 수 있는 변수는 크게 세 가지다. 첫째, 금리 인상 또는 대출 추가 규제다. 금리가 오르면 레버리지 비용이 높아져 매수 심리가 꺾인다. 둘째, 정부의 추가 공급 대책이 시장 기대보다 빠르게 실현될 경우다. 셋째, 경기 침체나 고용 악화로 인한 소득 감소다. 반면 상승을 이어갈 동력은 구조적이다. 공급 부족은 단기간에 해소되지 않으며, 서울 집중 수요는 인구 구조가 바뀌지 않는 한 지속된다.
+    </p>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+    <ul>
+      <li><strong>전세 재계약 세입자:</strong> 전세가가 빠르게 오르는 만큼 2년 전 계약 대비 큰 폭의 증액 요구에 대비해야 한다. 전세금 보호를 위한 전세보증보험 가입 여부를 재확인하고, 급격한 갱신 거절에 대한 법적 권리(계약갱신청구권)도 숙지해야 한다.</li>
+      <li><strong>내 집 마련 실수요자:</strong> 수급지수가 5년 만에 최고라는 것은 지금 매물을 잡기가 쉽지 않다는 의미다. 급하게 움직이기보다, 본인의 실거주 목적에 맞는 지역과 단지를 미리 좁혀두고 매물이 나오는 타이밍을 기다리는 전략이 유효하다.</li>
+      <li><strong>투자자:</strong> 66주 연속 상승한 시장에서의 진입은 고점 리스크를 내포한다. 개별 단지의 실질 가치(전세가율, 수익률, 공급 계획)를 꼼꼼히 따져야 하며, 레버리지 의존도를 낮추는 보수적 접근이 필요하다.</li>
+      <li><strong>다주택자:</strong> 양도세 중과 유예 종료 후 첫 달인 만큼 세금 구조를 재검토해야 한다. 비선호 자산 정리와 핵심 자산 집중을 통한 포트폴리오 재편이 실익 측면에서 유리할 수 있다.</li>
+      <li><strong>전세→매매 전환 고민 중인 수요자:</strong> 전세가와 매매가의 갭이 줄었다는 사실은 전환 비용이 낮아졌다는 뜻이기도 하다. 단, 지금 가격이 고점일 수 있다는 점과 금리 변동 리스크를 반드시 감안해야 한다.</li>
+    </ul>
+
+    <h2>결론: 시장은 공급을 기다린다</h2>
+    <p>
+      서울 아파트 시장의 현재 상승은 투기에 의한 버블이라기보다 구조적 공급 부족에서 비롯된 현상에 가깝다. 66주 연속 상승, 전세가 10년 최고, 수급지수 5년 최고라는 세 가지 신호는 모두 같은 방향을 가리킨다. 공급이 부족하고 수요는 남아 있다.
+    </p>
+    <p>
+      이 상승이 언제 멈출지는 아무도 정확히 알 수 없다. 그러나 분명한 것은, 이 시장이 정책 신호 하나나 금리 변화 하나에 즉각적으로 방향을 바꾸기에는 이미 구조적 이유가 너무 깊이 자리 잡았다는 사실이다. 시장이 진짜로 안정되는 시점은 새 물량이 실제로 사람들의 손에 닿는 날이다. 그 날이 오기 전까지, 서울 아파트 시장의 상승 압력은 쉽게 사라지지 않을 것이다.
+    </p>
+
+    <div class="tags">
+      <span class="tag">#서울아파트</span>
+      <span class="tag">#66주연속상승</span>
+      <span class="tag">#전세최고</span>
+      <span class="tag">#매매수급지수</span>
+      <span class="tag">#공급절벽</span>
+      <span class="tag">#시장동향</span>
+      <span class="tag">#부동산인사이트</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지</strong><br>
+      본 기사는 공개된 통계 자료(한국부동산원, KB부동산 등)와 언론 보도를 바탕으로 작성된 분석 기사로, 특정 자산의 매수·매도를 권유하거나 보증하지 않습니다. 부동산 투자 및 세무·법률 관련 의사결정은 반드시 공인 전문가와 개별 상담 후 진행하시기 바랍니다. 본 내용에 따른 투자 손실에 대해 부동산인사이트는 법적 책임을 지지 않습니다.
+    </div>
+
+  </article>
+
+  <aside>
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <div class="summary-bullet"><span>서울 아파트 매매가격 66주 연속 상승 진행 중</span></div>
+      <div class="summary-bullet"><span>전세가 주간 상승률 0.28%, 10년 6개월 만의 최고</span></div>
+      <div class="summary-bullet"><span>매매·전세 수급지수 모두 2021년 이후 5년 최고</span></div>
+      <div class="summary-bullet"><span>강남3구 반등 성공, 서울 25개 자치구 전 지역 동반 상승</span></div>
+      <div class="summary-bullet"><span>2026년 수도권 입주 물량 전년比 30% 이상 감소 전망</span></div>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>📊 서울 주요 지역 주간 매매 상승률</h3>
+      <table class="stat-table">
+        <thead>
+          <tr><th>자치구</th><th>주간 상승률</th><th>특이사항</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>성북구</td><td class="up">+0.54%</td><td>역대 최고</td></tr>
+          <tr><td>종로구</td><td class="up">+0.36%</td><td>역대 최고</td></tr>
+          <tr><td>송파구</td><td class="up">+0.35%</td><td>강남권 반등</td></tr>
+          <tr><td>강남구</td><td class="up">+0.19%</td><td>반등 성공</td></tr>
+          <tr><td>서초구</td><td class="up">+0.17%</td><td>강남권 반등</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>📰 관련 기사</h3>
+      <ul>
+        <li>주식 차익 자금 부동산 유입 본격화되나</li>
+        <li>전세→매매 전환 수요, 어느 지역으로 향하나</li>
+        <li>수도권 2026~2027년 입주 물량 전망</li>
+        <li>금리 변동이 서울 아파트 가격에 미치는 영향</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> · 본 매체는 공개 데이터와 언론 보도를 기반으로 하며 투자 권유를 목적으로 하지 않습니다.<br>
+  © 2026 부동산인사이트. All rights reserved.
+</footer>
+
+</body>
+</html>
