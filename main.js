@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 112,
+    url: 'article_20260528_2_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 66주 연속 상승·전세 10년 6개월 만에 최고… 이 상승장, 언제까지 이어지나',
+    summary: '서울 아파트 매매가격이 66주 연속 상승하고, 전세 주간 상승률이 10년 6개월 만에 최고치를 기록했다. 매매·전세 수급지수 모두 2021년 이후 5년 최고, 강남3구 반등과 25개 자치구 동반 상승 속에서 상승장의 지속 가능성을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-28',
+    title_en: 'Seoul Apartments Rise 66 Consecutive Weeks, Jeonse Hits 10.5-Year High — How Long Will This Rally Last?',
+    summary_en: 'Seoul apartment prices mark 66 consecutive weeks of gains while weekly jeonse growth hits its highest in 10.5 years. With supply-demand indices at 5-year highs and all 25 districts rising together, we analyze the sustainability of this rally.'
+  },
+  {
+    id: 111,
+    url: 'article_20260528_1_column_v2.html',
+    category: '칼럼',
+    title: '다주택자 양도세 중과 부활, 시장은 응답했는가 — 이재명 정부 2년 차 부동산 정책 냉정 진단',
+    summary: '2026년 5월 다주택자 양도세 중과 유예가 종료됐다. 서울 집값 66주 연속 상승과 전문가 74%의 추가 상승 전망 속에서, 세금 강화만으로 공급 부족을 해소할 수 있는지 냉정하게 진단한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-28',
+    title_en: 'Multi-Home Capital Gains Tax Surcharge Returns — Has the Market Responded? A Cold Diagnosis of Year-2 Real Estate Policy',
+    summary_en: 'The multi-home capital gains tax surcharge deferral ended in May 2026. With Seoul prices rising 66 consecutive weeks and 74% of experts forecasting further gains, we critically assess whether tax tightening alone can solve the supply shortage.'
+  },
+  {
     id: 110,
     url: 'article_20260527_2_해외부동산_v2.html',
     category: '해외',
