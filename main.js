@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 114,
+    url: 'article_20260529_2_apt_sale_v2.html',
+    category: '분양',
+    title: '"당첨되면 5억 차익"…3기 신도시 본청약 폭발, 2026 로또 청약 전쟁 총정리',
+    summary: '3기 신도시 본청약 열기가 최고조에 달한 2026년, 고양창릉 410:1·남양주왕숙 109:1 경쟁률에 이어 서울 강남권 로또 분양이 줄줄이 대기 중입니다. 청약 전략과 시장 구조를 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-29',
+    title_en: '"5 Billion KRW Profit If You Win" — 3rd New Town Main Subscription Explodes, 2026 Lottery Subscription War Summary',
+    summary_en: 'In 2026, the 3rd new town main subscription frenzy peaks with Goyang Changneung at 410:1 and Namyangju Wangsuk at 109:1 competition ratios, while Gangnam-area lottery presales line up. Analyzing subscription strategies and market structure.'
+  },
+  {
+    id: 113,
+    url: 'article_20260529_1_policy_v2.html',
+    category: '정책',
+    title: '토허제 실거주 유예 전면 확대, 오늘부터 시행…"세입자 낀 집, 이제 살 수 있다"',
+    summary: '2026년 5월 29일부터 토지거래허가구역 실거주 의무 유예 대상이 세입자 있는 주택 전체로 확대됩니다. 규제의 실효성과 시장 영향, 실수요자 전략을 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-29',
+    title_en: 'Land Transaction Permit Zone Residency Deferral Fully Expanded, Effective Today — "Now You Can Buy Homes With Tenants"',
+    summary_en: 'Starting May 29, 2026, the residency obligation deferral in land transaction permit zones expands to all homes with existing tenants. Analyzing regulatory effectiveness, market impact, and strategies for end-users.'
+  },
+  {
     id: 112,
     url: 'article_20260528_2_market_v2.html',
     category: '시장동향',
