@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>80조 정비사업 전쟁 시작: 1기 신도시 선도지구, 당신이 모르는 숨겨진 리스크 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #222; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    padding: 0 2rem;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; color: #fff; font-weight: 700; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 1.5rem; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%);
+    padding: 5rem 2rem 4rem;
+    color: #fff;
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: #7B4A9E;
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.2rem;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.7rem, 3.5vw, 2.6rem); font-weight: 700; line-height: 1.4; margin-bottom: 1rem; }
+  .hero-meta { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
+  .hero-meta span { margin-right: 1.5rem; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 2.5rem 2rem; display: grid; grid-template-columns: 1fr 300px; gap: 2.5rem; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article { background: #fff; border-radius: 8px; padding: 2.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+
+  /* DATA BOX */
+  .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; }
+  @media (max-width: 600px) { .data-grid { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #f3eafc;
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+    border-top: 4px solid #7B4A9E;
+  }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 700; color: #7B4A9E; }
+  .data-card .label { font-size: 0.82rem; color: #555; margin-top: 0.3rem; }
+
+  /* HEADINGS */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-left: 4px solid #7B4A9E;
+    padding-left: 0.9rem;
+    margin: 2.5rem 0 1rem;
+    color: #1a1a2e;
+  }
+  article p { margin-bottom: 1.1rem; font-size: 1rem; color: #333; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: #f3eafc;
+    border-left: 5px solid #7B4A9E;
+    border-radius: 4px;
+    padding: 1.5rem 1.8rem;
+    margin: 2rem 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #3a2060;
+    line-height: 1.9;
+  }
+  .quote-box cite { display: block; font-size: 0.82rem; font-style: normal; color: #7B4A9E; margin-top: 0.7rem; font-weight: 700; }
+
+  /* BULLET LIST */
+  .insight-list { background: #faf8fc; border-radius: 8px; padding: 1.5rem 1.8rem; margin: 1.5rem 0; }
+  .insight-list li { list-style: none; padding: 0.5rem 0; padding-left: 1.5rem; position: relative; font-size: 0.97rem; border-bottom: 1px solid #ede8f5; }
+  .insight-list li:last-child { border-bottom: none; }
+  .insight-list li::before { content: '▶'; position: absolute; left: 0; color: #7B4A9E; font-size: 0.7rem; top: 0.7rem; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0;
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin-top: 2.5rem;
+    font-size: 0.78rem;
+    color: #777;
+    line-height: 1.7;
+  }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 1.5rem; }
+  .sidebar-card { background: #fff; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .sidebar-card h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; color: #7B4A9E; border-bottom: 2px solid #7B4A9E; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+  .sidebar-card ul { list-style: none; }
+  .sidebar-card ul li { padding: 0.45rem 0; border-bottom: 1px dashed #e0d6f0; font-size: 0.88rem; }
+  .sidebar-card ul li:last-child { border-bottom: none; }
+  .sidebar-card ul li::before { content: '• '; color: #7B4A9E; font-weight: 700; }
+
+  .sidebar-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  .sidebar-table th { background: #7B4A9E; color: #fff; padding: 0.5rem; text-align: center; font-size: 0.8rem; }
+  .sidebar-table td { padding: 0.4rem 0.5rem; border-bottom: 1px solid #ede8f5; text-align: center; }
+  .sidebar-table tr:nth-child(even) td { background: #f8f5ff; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,0.7); text-align: center; padding: 2rem; font-size: 0.82rem; }
+  footer strong { color: #F4A52D; }
+
+  /* HASHTAGS */
+  .hashtags { margin: 1.5rem 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .hashtag { background: #f3eafc; color: #7B4A9E; border-radius: 20px; padding: 0.25rem 0.8rem; font-size: 0.8rem; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">재개발·재건축</div>
+    <h1>80조 정비사업 전쟁 시작: 1기 신도시 선도지구,<br>당신이 모르는 숨겨진 리스크</h1>
+    <div class="hero-meta">
+      <span>📅 2026년 5월 30일</span>
+      <span>✍️ 부동산인사이트 분석팀</span>
+      <span>⏱ 예상 독서 시간 8분</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="num">80조</div>
+        <div class="label">2026년 정비사업 예상 시장 규모</div>
+      </div>
+      <div class="data-card">
+        <div class="num">3.6만</div>
+        <div class="label">1기 신도시 선도지구 가구 수</div>
+      </div>
+      <div class="data-card">
+        <div class="num">70%</div>
+        <div class="label">재건축 조합설립 동의율 완화 기준</div>
+      </div>
+    </div>
+
+    <p>한국 부동산 시장에 '정비사업 슈퍼사이클'이 도래했다. 2026년 전국 정비사업 시장 규모가 최대 80조 원을 넘볼 것이라는 전망이 쏟아지는 가운데, 분당·일산·평촌·중동·산본 등 5개 1기 신도시 선도지구 사업이 30여 년의 노후화를 뒤로하고 드디어 '실행 단계'에 돌입했다. 건설사들의 수주 전쟁은 이미 불꽃을 튀기고 있으며, 투자자와 실수요자 모두 시장의 판을 흔들 이 메가 이벤트에서 눈을 떼지 못하고 있다.</p>
+
+    <p>그러나 화려한 숫자의 이면에는 냉정하게 짚어봐야 할 리스크가 공존한다. 속도전에 쫓기는 재건축 시장, 형평성 문제로 들끓는 재개발 현장, 그리고 공사비 폭등이라는 복병까지. 이 글은 2026년 정비사업 시장의 흐름을 데이터와 정책 분석을 토대로 냉철하게 해부한다.</p>
+
+    <h2>1. 2026년 정비사업, 왜 지금이 변곡점인가</h2>
+
+    <p>정비사업 업계는 2024~2025년을 '준비의 시간'으로 규정한다. 법령 정비, 패스트트랙 입법, 선도지구 지정 등 제도적 토대 마련에 집중했던 2년이었다면, 2026년은 그 모든 준비를 현장에 구현해야 하는 '실행의 해'다. 국토교통부는 2026년을 1기 신도시 특별정비계획 완성과 구역 지정의 원년으로 선언했고, 15개 선도지구 중 이미 8곳이 특별정비계획 입안제안서 접수를 마쳤다.</p>
+
+    <p>제도적 측면에서도 중요한 변화가 있었다. 재건축 조합설립 동의율이 기존 75%에서 70%로 완화되면서 수십 년간 '동의율 장벽'에 막혀 있던 단지들이 새로운 숨통을 틔우게 됐다. 패스트트랙 제도의 입법 완료는 사업 속도를 획기적으로 단축할 수 있는 제도적 기반을 마련했다는 점에서 업계의 기대감을 키우고 있다.</p>
+
+    <div class="quote-box">
+      "2024~2025년이 법령 정비와 제도 마련의 시간이었다면, 2026년은 정비사업이 실제 물리적 변화를 만들어내야 하는 실행의 원년이다. 속도가 관건이 됐다."
+      <cite>— 2026년 정비사업 키워드 분석, 하우징헤럴드</cite>
+    </div>
+
+    <h2>2. 1기 신도시 선도지구: 기회와 변수의 공존</h2>
+
+    <p>1기 신도시 재건축은 한국 주택 역사상 가장 대규모로 동시에 진행되는 정비사업이다. 분당 4곳(양지마을·샛별마을·시범단지·목련마을), 평촌 2곳(귀인마을·민백마을), 산본 2곳(자이백합·한양백두) 등 8개 구역이 이미 특별정비구역 입안제안서를 제출했으며, 첫 착공은 2027년, 첫 입주는 2030년을 목표로 한다.</p>
+
+    <p>규모의 압도감은 수치로 확인된다. 고양 일산 2만4,800호, 성남 분당 1만2,000호, 부천 중동 2만2,200호, 안양 평촌 7,200호, 군포 산본 3,400호 등 2026년 구역 지정만으로도 수십만 가구의 주거 환경이 재편될 전망이다. 내년에는 시공사 선정이 본격화될 예정이어서 경기 지역 정비사업 수주액이 현재 12조~15조 원에서 20조 원 시대로 확대될 수 있다는 분석도 나온다.</p>
+
+    <p>그러나 변수도 적지 않다. 특별정비계획 수립이 지연될 경우 착공 일정이 줄줄이 밀릴 수 있으며, 주민 간 사업방식 이견—철거재건축 대 리모델링—을 조율하는 과정에서 사업이 좌초될 위험도 상존한다. 역대 정비사업에서 반복된 '동의율 통과 후 분쟁'이라는 고질적 패턴을 1기 신도시가 피해갈 수 있을지는 미지수다.</p>
+
+    <h2>3. 재건축 vs. 재개발: 불거지는 형평성 논란</h2>
+
+    <p>2026년 정비사업 시장의 또 다른 뇌관은 재건축과 재개발 사이의 형평성 문제다. 재건축이 패스트트랙 입법, 동의율 완화 등 연이은 규제 완화의 수혜를 입는 반면, 재개발 조합들은 여전히 높은 의무를 지면서 이에 상응하는 지원을 받지 못하고 있다고 반발하고 있다.</p>
+
+    <p>공익사업으로서의 성격을 갖는 재개발은 기부채납과 임대주택 비율 부담이 재건축보다 높다. 그럼에도 조합 설립 동의율 완화 혜택에서는 소외됐다. 업계 관계자들은 "재건축엔 인센티브를 주면서 재개발엔 의무만 지운다"는 비판을 쏟아내고 있으며, 이 갈등이 장기화될 경우 재개발 사업장의 추진력을 약화시킬 수 있다.</p>
+
+    <div class="quote-box">
+      "재건축 동의율은 완화됐는데, 공익성이 더 높은 재개발은 왜 혜택이 없는가. 의무만 많고 지원은 없는 구조에서 조합원들의 피로감이 극에 달하고 있다."
+      <cite>— 서울 주요 재개발 조합 관계자 발언 종합</cite>
+    </div>
+
+    <h2>4. 공사비 폭등과 시공사 선정 경쟁의 이면</h2>
+
+    <p>정비사업 수주 경쟁이 치열해질수록 반드시 살펴봐야 할 것이 공사비 문제다. 2024년 이후 건설 자재비와 인건비가 급등하면서, 정비사업 현장의 공사비 갈등이 빈번해졌다. 조합과 시공사 간 공사비 증액 협상이 결렬되어 사업이 중단된 사례가 서울 곳곳에서 목격됐다.</p>
+
+    <p>2026년 80조 원 규모의 시장이 열린다고 하더라도, 공사비 폭등이라는 구조적 문제가 해결되지 않는 한 실제 착공으로 이어지는 사업지 수는 예상보다 적을 수 있다. 대형 건설사들이 수주 경쟁에서 낮은 공사비를 제시한 후 이후 증액을 요구하는 패턴—이른바 '저가 수주 후 증액'—이 반복될 가능성도 배제할 수 없다.</p>
+
+    <h2>5. 투자자와 실수요자를 위한 정비사업 전략</h2>
+
+    <p>1기 신도시와 서울 정비사업 시장이 들썩이는 시점에서 투자자와 실수요자가 반드시 알아야 할 핵심 포인트를 정리한다.</p>
+
+    <ul class="insight-list">
+      <li><strong>선도지구 지정 단계에서의 매수는 최고 리스크 구간</strong> — 사업이 본궤도에 오르기까지 최소 5~10년이 소요되며, 그 사이 금리·정책·조합 내부 변수 등 리스크가 누적된다. 기대감만으로 매수하면 장기 묶임 자산이 될 수 있다.</li>
+      <li><strong>공사비 증액 이력을 반드시 확인하라</strong> — 이미 시공사가 선정된 단지라면 최초 공사비 대비 증액 요구 규모와 조합의 처리 방식을 체크해야 한다. 분쟁 이력이 있는 단지는 주의가 필요하다.</li>
+      <li><strong>재건축 vs. 재개발 중 어디에 투자할 것인가</strong> — 재건축은 규제 완화로 속도가 빠르지만 진입 가격이 높다. 재개발은 형평성 논란으로 제도적 지원이 늦어질 수 있으나, 분양가 상한제 적용 단지의 경우 시세 차익을 노릴 수 있다.</li>
+      <li><strong>실수요자라면 입주 시점(2030년 이후)을 역산해 계획하라</strong> — 1기 신도시 선도지구의 첫 입주는 빨라도 2030년이다. 전세 계약·이사 시점 등을 역산해 생활 계획을 세우는 것이 현실적이다.</li>
+      <li><strong>정비구역 지정 전 투기적 매수는 세제 불이익 수반</strong> — 조정대상지역 내 정비사업 관련 매수는 양도세, 취득세, 보유세 부담이 일반 거래보다 높을 수 있다. 세무사 상담을 반드시 선행하라.</li>
+    </ul>
+
+    <h2>결론: 슈퍼사이클의 흥분 속에서 냉정함을 유지해야</h2>
+
+    <p>2026년 정비사업 시장의 80조 원 시대는 분명 현실이 되고 있다. 1기 신도시 선도지구의 사업화, 재건축 패스트트랙, 서울 대형 정비사업의 본격 수주전은 시장에 새로운 활력을 불어넣고 있다. 그러나 이 흥분의 이면에는 공사비 폭등, 재개발-재건축 형평성 문제, 사업 지연 리스크, 금리와 세제 변수 등 다층적인 위험 요인이 도사리고 있다.</p>
+
+    <p>역사적으로 정비사업은 언제나 기대보다 더 오래 걸렸고, 예상보다 더 많은 비용이 들었다. 슈퍼사이클의 물결을 타되, 개별 사업지의 진행 단계와 재무 건전성, 정책 환경을 꼼꼼히 따져 판단하는 것이 2026년 정비사업 시장에서 살아남는 법이다. 시장의 흥분에 휩쓸리지 않는 냉정한 투자자만이 이 80조의 게임에서 진정한 수혜자가 될 수 있다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#재건축</span>
+      <span class="hashtag">#재개발</span>
+      <span class="hashtag">#1기신도시</span>
+      <span class="hashtag">#선도지구</span>
+      <span class="hashtag">#정비사업</span>
+      <span class="hashtag">#분당재건축</span>
+      <span class="hashtag">#부동산투자</span>
+      <span class="hashtag">#80조시장</span>
+    </div>
+
+    <div class="disclaimer">
+      ※ 본 기사는 공개된 자료와 언론 보도를 바탕으로 작성된 분석·견해이며, 특정 부동산의 매수·매도를 권유하지 않습니다. 부동산 투자에는 원금 손실 위험이 있으며, 투자 결정은 반드시 전문가 상담 후 본인의 판단으로 이루어져야 합니다.
+    </div>
+
+  </article>
+
+  <aside>
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약</h3>
+      <ul>
+        <li>2026년 정비사업 시장 80조 원 규모 전망</li>
+        <li>1기 신도시 선도지구 8곳 입안제안서 접수 완료</li>
+        <li>재건축 조합설립 동의율 75%→70% 완화</li>
+        <li>재개발 형평성 문제, 새로운 갈등 구조로 부상</li>
+        <li>공사비 폭등·사업 지연 리스크 공존, 냉철한 접근 필요</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📰 관련 기사</h3>
+      <ul>
+        <li>서울 재건축 패스트트랙 적용 첫 사례 등장</li>
+        <li>분당 목련마을, 시공사 선정 절차 돌입</li>
+        <li>공사비 증액 분쟁, 서울 10곳 이상 동시다발</li>
+        <li>재개발 임대주택 비율 완화 논의 본격화</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📊 1기 신도시 선도지구 현황</h3>
+      <table class="sidebar-table">
+        <thead>
+          <tr><th>지역</th><th>구역 수</th><th>목표 가구</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>고양 일산</td><td>3곳</td><td>24,800호</td></tr>
+          <tr><td>성남 분당</td><td>4곳</td><td>12,000호</td></tr>
+          <tr><td>부천 중동</td><td>2곳</td><td>22,200호</td></tr>
+          <tr><td>안양 평촌</td><td>3곳</td><td>7,200호</td></tr>
+          <tr><td>군포 산본</td><td>3곳</td><td>3,400호</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> &nbsp;|&nbsp; 본 콘텐츠는 정보 제공 목적으로 작성되었으며 투자 권유가 아닙니다.<br>
+  © 2026 부동산인사이트. All rights reserved.
+</footer>
+
+</body>
+</html>
