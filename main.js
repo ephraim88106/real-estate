@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 116,
+    url: 'article_20260530_2_투자분석_v2.html',
+    category: '투자분석',
+    title: '양도세 중과 유예 종료의 충격파: 지금 집 팔면 얼마나 손해인가?',
+    summary: '2년간 유지됐던 다주택자 양도세 중과 유예가 종료되며 2주택 이상 보유자에게 20~30%p 중과세율이 적용되기 시작했다. 세금 폭탄 시나리오가 현실이 된 지금, 매도 타이밍과 절세 전략을 데이터 기반으로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 분석팀',
+    date: '2026-05-30',
+    title_en: 'Shockwave of Capital Gains Tax Surcharge Reinstatement: How Much Do You Lose Selling Now?',
+    summary_en: 'The 2-year multi-home capital gains tax surcharge deferral has ended, applying 20-30%p surcharges on multi-home sellers in regulated areas. With the tax bomb scenario now reality, we analyze optimal selling timing and tax-saving strategies with data.'
+  },
+  {
+    id: 115,
+    url: 'article_20260530_1_재개발재건축_v2.html',
+    category: '재개발',
+    title: '80조 정비사업 전쟁 시작: 1기 신도시 선도지구, 당신이 모르는 숨겨진 리스크',
+    summary: '2026년 정비사업 시장 규모가 80조 원을 넘볼 전망이다. 1기 신도시 선도지구 사업이 실행 단계에 돌입했으나, 공사비 폭등·재개발-재건축 형평성 문제·사업 지연 리스크 등 숨겨진 위험 요인을 데이터와 정책 분석으로 해부한다.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-30',
+    title_en: '80 Trillion KRW Redevelopment War Begins: Hidden Risks of 1st-Gen New Town Pilot Districts',
+    summary_en: 'The 2026 redevelopment market is projected to exceed 80 trillion KRW. While 1st-generation new town pilot districts enter execution phase, we dissect hidden risks including soaring construction costs, redevelopment equity issues, and project delay risks.'
+  },
+  {
     id: 114,
     url: 'article_20260529_2_apt_sale_v2.html',
     category: '분양',
