@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 118,
+    url: 'article_20260531_2_column_v2.html',
+    category: '칼럼',
+    title: '다주택자 \'버티기\' 선언 이후, 서울 집값은 이제 어디로 가는가',
+    summary: '양도세 중과 재적용·공급 절벽·전세 급등... 5월 시장의 불편한 진실을 해부한다. 다주택자 매도 회피와 전세 전환 확산 속에서 서울 부동산 시장의 구조적 리스크를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-31',
+    title_en: 'After Multi-Home Owners Declare "Hold" — Where Do Seoul Home Prices Go Now?',
+    summary_en: 'Capital gains tax surcharge reinstatement, supply cliff, jeonse surge — dissecting the uncomfortable truths of the May market. Analyzing structural risks in Seoul real estate amid multi-home owner sell avoidance and jeonse conversion spread.'
+  },
+  {
+    id: 117,
+    url: 'article_20260531_1_overseas_v2.html',
+    category: '해외',
+    title: '엔저·달러·동화... 한국인 해외 부동산 투자, 2026년 지금 어느 나라가 정답인가?',
+    summary: '미국·일본·베트남 3국 비교 분석 — 환율·수익률·리스크, 숫자로 따져본다. 엔저 시대의 일본, 금리 인하 기대의 미국, 성장세의 베트남 중 최적의 투자처를 데이터로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-05-31',
+    title_en: 'Weak Yen, Dollar, Dong... Korean Overseas Real Estate Investment — Which Country Is the Answer in 2026?',
+    summary_en: 'Comparative analysis of USA, Japan, and Vietnam — examining exchange rates, yields, and risks by the numbers. Data-driven analysis of optimal investment destinations among weak-yen Japan, rate-cut-expected USA, and growing Vietnam.'
+  },
+  {
     id: 116,
     url: 'article_20260530_2_투자분석_v2.html',
     category: '투자분석',
