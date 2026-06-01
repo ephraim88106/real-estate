@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 120,
+    url: 'article_20260601_2_policy_v2.html',
+    category: '정책',
+    title: '대출 한도 또 줄었다…스트레스 DSR 3단계 완전 해부, 내 집 마련 전략은?',
+    summary: '스트레스 DSR 3단계 시행으로 대출 한도가 약 1억 2,000만 원 줄었다. 연소득 1억 원 기준 주담대 한도 변화, 전세대출 DSR 포함, 지역별 차등 적용 등 규제의 실체를 해부하고 실수요자·투자자를 위한 대응 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-01',
+    title_en: 'Loan Limits Shrink Again — Full Breakdown of Stress DSR Phase 3 and Home-Buying Strategies',
+    summary_en: 'Stress DSR Phase 3 cuts mortgage limits by approximately 120 million won. Analyzing the real impact on loan caps, jeonse loan inclusion, regional differentiation, and presenting response strategies for end-users and investors.'
+  },
+  {
+    id: 119,
+    url: 'article_20260601_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 19년 만에 최대 폭 상승 후 급반전…이 침묵이 더 무섭다',
+    summary: '5월 2주 서울 아파트 0.28% 상승, 성북·종로 역대 최고 기록 후 넷째 주 0.25%로 둔화. 전세 거래량 10년 만에 최저인 6,000건대로 추락. 매물 실종과 지역별 양극화 속 하반기 시장 전망을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-01',
+    title_en: 'Seoul Apartments Surge Most in 19 Years Then Reverse — This Silence Is More Frightening',
+    summary_en: 'Seoul apartments rose 0.28% in May week 2, with Seongbuk and Jongno hitting all-time highs, before slowing to 0.25%. Jeonse transactions plunge to 6,000-level, lowest in a decade. Analyzing market outlook amid vanishing listings and regional polarization.'
+  },
+  {
     id: 118,
     url: 'article_20260531_2_column_v2.html',
     category: '칼럼',
