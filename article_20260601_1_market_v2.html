@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 아파트 19년 만에 최대 폭 상승 후 급반전…이 침묵이 더 무섭다 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f6f8; color: #1a1a2e; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 24px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.5rem; font-weight: 700; color: #fff;
+    text-decoration: none; letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    font-size: 0.875rem; font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 64px 24px;
+    color: #fff;
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: #1A4D8F; color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 5px 14px; border-radius: 20px;
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.7rem, 4vw, 2.6rem);
+    font-weight: 700; line-height: 1.4;
+    margin-bottom: 16px;
+  }
+  .hero-sub {
+    font-size: 1.05rem; color: rgba(255,255,255,0.85);
+    max-width: 700px; margin-bottom: 24px; line-height: 1.7;
+  }
+  .meta { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+  .meta span { margin-right: 16px; }
+
+  /* LAYOUT */
+  .container {
+    max-width: 1200px; margin: 0 auto; padding: 40px 24px;
+    display: grid; grid-template-columns: 1fr 300px; gap: 36px;
+  }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+  /* ARTICLE */
+  article { background: #fff; border-radius: 12px; padding: 40px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+
+  /* DATA BOX */
+  .data-box {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-bottom: 36px;
+  }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #e8f0fb; border-left: 4px solid #1A4D8F;
+    border-radius: 8px; padding: 18px 16px;
+    text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.7rem; font-weight: 700; color: #1A4D8F; display: block;
+  }
+  .data-card .label { font-size: 0.8rem; color: #555; margin-top: 4px; }
+
+  /* BODY TEXT */
+  article p { margin-bottom: 1.4em; font-size: 1.0rem; color: #2c2c40; }
+
+  /* H2 */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    border-left: 4px solid #1A4D8F;
+    padding-left: 14px; margin: 36px 0 16px;
+    color: #0D2B55;
+  }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: #eef3fc; border-left: 5px solid #1A4D8F;
+    border-radius: 0 8px 8px 0;
+    padding: 22px 24px; margin: 28px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem;
+    color: #1a2e5a; margin: 0;
+  }
+  .quote-source { font-size: 0.82rem; color: #666; margin-top: 8px; font-style: normal; }
+
+  /* UL */
+  article ul { padding-left: 0; margin: 16px 0 24px; list-style: none; }
+  article ul li {
+    padding: 10px 14px 10px 36px;
+    position: relative; margin-bottom: 8px;
+    background: #f7f9fd; border-radius: 6px;
+    font-size: 0.97rem; color: #2c2c40;
+  }
+  article ul li::before {
+    content: '▶';
+    position: absolute; left: 12px; top: 11px;
+    color: #1A4D8F; font-size: 0.7rem;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0; border-radius: 8px;
+    padding: 18px 20px; margin-top: 36px;
+    font-size: 0.82rem; color: #777; line-height: 1.6;
+  }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+
+  .sidebar-card {
+    background: #fff; border-radius: 12px; padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .sidebar-card h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1rem; font-weight: 700;
+    border-bottom: 2px solid #1A4D8F;
+    padding-bottom: 8px; margin-bottom: 14px;
+    color: #0D2B55;
+  }
+
+  /* SUMMARY BOX */
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 8px 0; border-bottom: 1px solid #eef2f8;
+    font-size: 0.88rem; color: #333; display: flex; gap: 8px;
+  }
+  .summary-list li::before { content: '◆'; color: #1A4D8F; flex-shrink: 0; font-size: 0.7rem; margin-top: 3px; }
+
+  /* RELATED ARTICLES */
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 8px 0; border-bottom: 1px solid #eef; }
+  .related-list a { font-size: 0.875rem; color: #1A4D8F; text-decoration: none; line-height: 1.5; }
+  .related-list a:hover { text-decoration: underline; }
+
+  /* MINI TABLE */
+  .mini-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+  .mini-table th { background: #1A4D8F; color: #fff; padding: 7px 10px; text-align: center; }
+  .mini-table td { padding: 7px 10px; border-bottom: 1px solid #e8edf5; text-align: center; color: #333; }
+  .mini-table tr:nth-child(even) td { background: #f4f7fc; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 28px 20px;
+    font-size: 0.82rem; margin-top: 24px;
+  }
+  footer strong { color: #F4A52D; }
+
+  /* HASHTAGS */
+  .hashtags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag {
+    background: #e8f0fb; color: #1A4D8F;
+    padding: 4px 12px; border-radius: 20px;
+    font-size: 0.8rem; font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">시장동향</span>
+    <h1>서울 아파트 19년 만에 최대 폭 상승 후 급반전…<br>이 침묵이 더 무섭다</h1>
+    <p class="hero-sub">성북·종로 역대 최고 상승률을 기록하더니 불과 한 달 만에 관망세로 전환. 전세 거래량은 10년 만에 최저. 서울 부동산 시장, 지금 무슨 일이 벌어지고 있나?</p>
+    <div class="meta">
+      <span>📅 2026년 6월 1일</span>
+      <span>✍ 부동산인사이트 시장분석팀</span>
+      <span>⏱ 읽는 시간 약 7분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <span class="num">+0.28%</span>
+        <div class="label">5월 2주 서울 아파트 주간 상승률<br>(매매·전세 동반)</div>
+      </div>
+      <div class="data-card">
+        <span class="num">6,000건</span>
+        <div class="label">5월 서울 전세 거래량<br>(10년 만에 최저)</div>
+      </div>
+      <div class="data-card">
+        <span class="num">-45.4%</span>
+        <div class="label">마포구 전세 거래량 감소율<br>(전월 대비)</div>
+      </div>
+    </div>
+
+    <p>2026년 5월, 서울 부동산 시장은 두 얼굴을 드러냈다. 한 주에는 19년 만에 최대 폭 상승을 기록하며 시장 참여자들을 흥분시켰고, 불과 몇 주 후에는 상승세가 뚜렷하게 꺾이며 관망의 침묵이 시장을 덮쳤다. 이 이상한 진동은 단순한 계절적 변동이 아니다. 수급 구조의 변화, 금융 규제, 정치적 불확실성이 복잡하게 얽히며 만들어낸 구조적 단층의 신호다.</p>
+
+    <p>한국부동산원 통계에 따르면, 5월 2주 서울 아파트 매매가격과 전세가격이 동시에 0.28% 올랐다. 이는 1월 마지막 주 이후 가장 가파른 주간 상승폭이었다. 특히 성북구(0.54%)와 종로구(0.36%)는 부동산원이 통계를 집계한 이래 주간 기준 역대 최고 상승률을 경신했다. 시장은 잠시 들떴다. 그러나 5월 넷째 주, 서울 매매가격 상승폭은 0.25%로 내려앉았고, 전세 거래량은 역사적 저수준인 월 6,000건대로 추락했다.</p>
+
+    <h2>🔥 불꽃처럼 타오른 성북·종로, 그 실체는</h2>
+    <p>성북구와 종로구의 급등은 단순한 투기 수요만으로 설명되지 않는다. 이 지역들은 오랜 기간 저평가된 구축 아파트 밀집 지역이며, 재건축·재개발 기대감과 실거주 선호가 맞물린 복합 수요가 한꺼번에 터진 것으로 분석된다. 특히 성북구 길음·미아 뉴타운 일대에서는 정비사업 추진 소식이 이어지면서 '지금이 마지막 기회'라는 심리가 확산됐다. 종로구는 도심 접근성과 생활인프라를 갖춘 소형 아파트에 30~40대 실수요층이 집중되면서 일시적으로 거래가 폭발했다.</p>
+
+    <p>그러나 이 상승의 이면을 들여다보면 거래 건수가 극히 제한적이었다는 점이 눈에 띈다. 통계의 '역대 최고' 타이틀은 소수의 거래가 이끈 착시일 수 있다. 매물 자체가 없는 상태에서 몇 건의 신고가 거래가 평균치를 끌어올린 구조다. 시장이 깊어지지 않은 얕은 상승이었던 것이다.</p>
+
+    <div class="quote-box">
+      <p>"매물이 없는 상승은 진정한 상승이 아닙니다. 지금 서울 일부 지역의 급등은 수요 증가가 아니라 공급 실종에 가깝습니다."</p>
+      <div class="quote-source">— 국내 부동산 리서치 전문가 분석 (2026년 5월)</div>
+    </div>
+
+    <h2>📉 전세 대란의 경고: 10년 만에 최저 거래량</h2>
+    <p>더 심각한 시그널은 매매가 아닌 전세 시장에서 나왔다. 5월 서울 아파트 전세 거래량이 6,000건대로 떨어지며 2015년 이후 가장 낮은 수준을 기록했다. 지난해 월 1만 건 이상을 넘나들던 거래량이 2월 9,884건, 4월 8,612건에 이어 5월 6,000건대로 급락한 것이다. 마포구는 전월 대비 45.4%나 거래량이 급감했다.</p>
+
+    <p>전세 거래량 급감은 단순한 수요 부진이 아니다. 구조적 배경이 있다. 첫째, 스트레스 DSR 3단계 시행으로 전세대출 한도가 줄면서 세입자들의 자금 조달 능력이 약해졌다. 둘째, 전세가 대비 매매가 비율인 전세가율이 높아지면서 갭이 줄어들자 집주인들이 전세를 월세로 전환하는 움직임이 강해졌다. 셋째, 고금리 환경에서 전세 보증 리스크를 회피하려는 집주인 심리도 반영됐다.</p>
+
+    <div class="quote-box">
+      <p>"전세 거래량 감소는 전세 시장 붕괴의 서막일 수 있습니다. 세입자들은 선택지가 줄어들고 있고, 이는 결국 매매 수요로 전환될 수밖에 없습니다."</p>
+      <div class="quote-source">— 서울 주거 시장 분석 리포트 (2026년 6월)</div>
+    </div>
+
+    <h2>🗺️ 지역별 양극화: 강남 3구 vs. 노·도·강의 엇갈린 운명</h2>
+    <p>서울 25개 자치구는 지금 같은 시간대를 살면서 전혀 다른 시장을 경험하고 있다. 강남구·서초구·송파구 등 이른바 '강남 3구'는 전세 거래량 감소에서 오히려 증가세를 보이는 예외 지역으로 분류됐다. 고가 아파트 선호 세입자층이 두텁고, 외국인 임차 수요도 일정 수준을 유지하기 때문이다.</p>
+
+    <p>반면 노원·도봉·강북 등 이른바 '노도강' 지역은 매물 감소와 거래 부진이 동시에 나타나는 딜레마에 빠졌다. 재건축 기대감이 높지 않고, 새 아파트 공급은 제한적이며, 교통 인프라 개선 속도도 더디다. 이 지역에서 상승을 기대한다면 아직은 특정 단지의 개발 호재를 제외하고는 인내가 필요한 시점이다.</p>
+
+    <h2>📊 거래량이 증언하는 시장의 진실</h2>
+    <p>부동산 시장을 분석할 때 가격만큼 중요한 것이 거래량이다. 지금 서울 시장의 거래량 신호는 복잡하다. 매매 거래량은 2025년 하반기 저점 대비 회복세에 있지만, 여전히 2021년 거래 호황기의 절반 수준에 그친다. 거래가 일어나고 있지만 폭발적이지 않고, 일부 지역의 급등은 '거래 없는 호가 상승'에 가깝다.</p>
+
+    <p>이런 환경에서 실수요자가 취해야 할 자세는 명확하다. 호가에 흔들리지 않고 실거래 데이터를 철저히 분석해야 한다. 국토교통부 실거래가 공개시스템에서 최근 3개월 내 거래 건수와 실제 거래 가격을 확인하고, 그것이 현재 매물 호가와 괴리가 있다면 협상의 여지가 있다는 의미다.</p>
+
+    <h2>🔮 하반기 전망: 상승 재점화인가, 횡보 장기화인가</h2>
+    <p>2026년 하반기 서울 부동산 시장의 방향성은 세 가지 변수에 달려 있다. 첫째는 금리 경로다. 한국은행의 기준금리 추가 인하 여부가 수요의 폭발적 회복을 이끌 수 있는 가장 강력한 촉매다. 현재 시장은 하반기 1~2회 인하 가능성을 일부 선반영하고 있다. 둘째는 공급 일정이다. 이재명 정부의 '9.7 주택공급 확대방안'으로 수도권 연간 27만 가구 착공을 목표로 하지만, 실제 착공까지는 시차가 있다. 단기적으로는 공급 부족 상황이 지속된다. 셋째는 정책 신뢰도다. 정부의 대출 규제가 흔들림 없이 유지된다면 급등세는 제한되고, 규제 완화 신호가 나오는 순간 시장은 다시 달아오를 수 있다.</p>
+
+    <h2>💡 실수요자·투자자를 위한 시사점</h2>
+    <ul>
+      <li>지금 서울 일부 지역의 급등은 거래량을 동반하지 않은 '얕은 상승'일 가능성이 높다. 호가만 보지 말고 실거래 건수와 금액을 반드시 확인하라.</li>
+      <li>전세 대란이 심화되면 전세 세입자 중 일부가 매매로 전환할 가능성이 있다. 내 집 마련 타이밍을 저울질하고 있다면 전세 시장 흐름을 더 주시해야 한다.</li>
+      <li>성북·종로 등 급등 지역에서 뒤늦게 추격 매수를 하는 것은 위험하다. 역대 최고 상승률을 기록한 바로 다음 주에 상승 둔화가 나타난 것은 시사하는 바가 크다.</li>
+      <li>강남 3구는 전세 거래도 상대적으로 견조한 반면, 노도강 지역은 전세·매매 모두 약세다. 포트폴리오 목적이라면 지역 선택이 성패를 가른다.</li>
+      <li>하반기 기준금리 인하가 현실화되면 서울 중저가 아파트 시장에서 가장 먼저 거래량 회복이 나타날 것으로 예상된다. 이 타이밍을 준비하는 것이 현명하다.</li>
+    </ul>
+
+    <h2>📝 결론: 시장은 멈췄지만 준비는 멈추지 말아야</h2>
+    <p>서울 부동산 시장은 지금 '뜨거운 침묵' 속에 있다. 19년 만의 최대 상승이라는 헤드라인이 나왔지만, 시장 내부는 매물 실종, 전세 거래 급감, 지역별 양극화로 복잡하다. 이 복잡함 속에서 성급한 추격 매수도, 지나친 공포에 의한 관망도 모두 위험하다.</p>
+
+    <p>지금은 시장을 관찰하면서 자신의 조건—소득, 대출 여력, 거주 목적, 투자 기간—을 냉정하게 점검해야 할 시기다. 하반기에는 금리, 공급, 정책이라는 세 변수가 어떻게 배열되느냐에 따라 시장의 방향이 결정될 것이다. 준비된 자만이 그 타이밍을 잡을 수 있다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#서울아파트</span>
+      <span class="hashtag">#부동산시장동향</span>
+      <span class="hashtag">#전세대란</span>
+      <span class="hashtag">#아파트시세</span>
+      <span class="hashtag">#성북구급등</span>
+      <span class="hashtag">#부동산전망</span>
+      <span class="hashtag">#2026부동산</span>
+      <span class="hashtag">#실수요자</span>
+    </div>
+
+    <div class="disclaimer">
+      ⚠️ <strong>면책 고지:</strong> 본 기사는 일반적인 정보 제공 목적으로 작성되었으며, 특정 부동산 매수·매도를 권유하거나 투자를 조언하는 것이 아닙니다. 부동산 투자는 다양한 위험 요소를 포함하며, 개인의 재정 상황과 전문가 상담을 바탕으로 의사결정을 내려야 합니다. 본 기사의 내용은 작성 시점 기준이며, 이후 시장 상황에 따라 변경될 수 있습니다.
+    </div>
+
+  </article>
+
+  <aside>
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>5월 2주 서울 아파트 0.28% 상승, 성북·종로 역대 최고 기록</li>
+        <li>5월 넷째 주 0.25%로 둔화, 높은 호가에 수요 관망</li>
+        <li>전세 거래량 5월 6,000건대로 추락, 10년 만에 최저</li>
+        <li>마포구 전세 거래량 45.4% 급감, 강남구만 예외</li>
+        <li>하반기 금리 인하 여부가 최대 변수</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="#">강남 3구 전세 시장, 나홀로 견조한 이유</a></li>
+        <li><a href="#">성북·종로 역대 최고 상승, 재건축 기대의 실체</a></li>
+        <li><a href="#">스트레스 DSR 3단계와 전세 수요 위축 연결고리</a></li>
+        <li><a href="#">이재명 정부 수도권 27만 가구 공급, 현실은?</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📊 서울 구별 시장 온도</h3>
+      <table class="mini-table">
+        <thead>
+          <tr><th>지역</th><th>매매</th><th>전세</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>성북·종로</td><td>🔥 급등</td><td>보합</td></tr>
+          <tr><td>강남 3구</td><td>완만↑</td><td>견조</td></tr>
+          <tr><td>마포·용산</td><td>보합</td><td>📉 급감</td></tr>
+          <tr><td>노원·도봉</td><td>약보합</td><td>약세</td></tr>
+          <tr><td>강서·구로</td><td>소폭↑</td><td>보합</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> | 한국 부동산 시장 전문 분석 미디어<br>
+  <span style="margin-top:8px;display:block;">© 2026 부동산인사이트. 본 콘텐츠의 무단 복제 및 배포를 금합니다.</span>
+</footer>
+
+</body>
+</html>
