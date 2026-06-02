@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 122,
+    url: 'article_20260602_2_재개발재건축_v2.html',
+    category: '재개발',
+    title: '6.3 지방선거 후 재건축·재개발은 어디로 가나 — 세 후보 공약 해부',
+    summary: '서울시장 선거 이후 정비사업 판도가 바뀐다. 정원오·오세훈·김정철 세 후보의 재건축·재개발 공약을 해부하고, 조합원과 실수요자가 알아야 할 시사점을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-02',
+    title_en: 'Where Will Redevelopment Go After the June 3 Local Elections — Dissecting Three Candidates\' Pledges',
+    summary_en: 'The redevelopment landscape shifts after the Seoul mayoral election. Analyzing the reconstruction and redevelopment pledges of three candidates and their implications for union members and end-users.'
+  },
+  {
+    id: 121,
+    url: 'article_20260602_1_분양청약_v2.html',
+    category: '분양',
+    title: '로또청약의 민낯: 분양가 상한제가 만든 기회와 불평등',
+    summary: '2026년 서울 핵심지 분양 열풍의 이면을 짚는다. 135대 1, 360대 1을 기록한 청약 경쟁의 구조적 원인과 실수요자의 현실적 대응 전략.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-02',
+    title_en: 'The True Face of Lottery Subscriptions: Opportunity and Inequality Created by Price Cap Policy',
+    summary_en: 'Examining the flip side of the 2026 Seoul presale frenzy. Analyzing the structural causes behind 135:1 and 360:1 competition ratios and realistic strategies for end-users.'
+  },
+  {
     id: 120,
     url: 'article_20260601_2_policy_v2.html',
     category: '정책',
