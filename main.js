@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 124,
+    url: 'article_20260603_2_overseas_v2.html',
+    category: '해외',
+    title: '엔저와 신법령이 열어준 창 — 지금 일본·베트남 부동산에 투자해야 하는 진짜 이유',
+    summary: '도쿄 8~10% 상승률, 엔화 약세, 베트남 토지법 개정… 한국 부동산 규제 피로가 낳은 해외 투자 분산의 논리와 리스크를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-03',
+    title_en: 'The Window Opened by Weak Yen and New Laws — The Real Reasons to Invest in Japan and Vietnam Real Estate Now',
+    summary_en: 'Tokyo 8-10% price gains, yen weakness, Vietnam land law reform — analyzing the logic and risks of overseas investment diversification driven by Korean regulatory fatigue.'
+  },
+  {
+    id: 123,
+    url: 'article_20260603_1_investment_v2.html',
+    category: '투자분석',
+    title: '경매 법정이 뜨겁다 — 토지거래허가제가 만든 역설, 투자자들은 왜 법원으로 향하는가',
+    summary: '규제의 빈틈에서 피어난 경매 열풍, 낙찰가율 107%의 의미와 지금 이 시점 투자자가 알아야 할 진실을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-03',
+    title_en: 'Auction Courts Are Heating Up — The Paradox Created by Land Transaction Permits, Why Investors Head to Court',
+    summary_en: 'The auction boom born from regulatory gaps — analyzing the meaning of 107% winning bid rates and what investors need to know right now.'
+  },
+  {
     id: 122,
     url: 'article_20260602_2_재개발재건축_v2.html',
     category: '재개발',
