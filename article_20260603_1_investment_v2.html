@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>경매 시장의 역설 — 규제가 만든 틈새, 투자자들은 왜 법원으로 향하는가 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #8B1A1A;
+    --accent-light: #f5e6e6;
+    --accent-mid: #c94040;
+    --header-bg: #0D2B55;
+    --text-main: #1a1a1a;
+    --text-sub: #555;
+    --bg: #f8f7f5;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text-main); line-height: 1.8; }
+
+  /* HEADER */
+  header { background: var(--header-bg); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.03em; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1A0505 0%, #8B1A1A 55%, #2A0808 100%);
+    padding: 80px 24px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-cat { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #fff; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; padding: 6px 18px; border-radius: 20px; margin-bottom: 20px; text-transform: uppercase; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 3.5vw, 2.6rem); font-weight: 700; color: #fff; line-height: 1.4; max-width: 760px; margin: 0 auto 20px; }
+  .hero .subtitle { color: rgba(255,255,255,0.75); font-size: 1rem; max-width: 600px; margin: 0 auto 28px; }
+  .hero-meta { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+  .hero-meta span { display: flex; align-items: center; gap: 6px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 48px; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* DATA BOX */
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0 40px; }
+  @media (max-width: 640px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border: 1px solid #e0b0b0; border-radius: 10px; padding: 20px; text-align: center; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; }
+  .data-card .unit { font-size: 0.8rem; color: var(--accent-mid); font-weight: 500; margin: 4px 0; }
+  .data-card .label { font-size: 0.82rem; color: var(--text-sub); line-height: 1.4; }
+
+  /* ARTICLE BODY */
+  .article-body { font-size: 1rem; }
+  .article-body p { margin-bottom: 20px; color: #2a2a2a; }
+  .article-body h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-main);
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin: 40px 0 16px;
+  }
+  .article-body h3 { font-size: 1.05rem; font-weight: 700; color: var(--accent); margin: 24px 0 10px; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 5px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 24px 28px;
+    margin: 32px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #3a1010;
+    margin: 0 0 8px;
+    line-height: 1.7;
+  }
+  .quote-box cite { font-size: 0.82rem; color: var(--accent-mid); font-style: normal; font-weight: 600; }
+
+  /* INSIGHT LIST */
+  .insight-list { background: #fff; border: 1px solid #e8d5d5; border-radius: 10px; padding: 24px 28px; margin: 32px 0; }
+  .insight-list h3 { color: var(--accent); font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .insight-list ul { list-style: none; }
+  .insight-list ul li { padding: 8px 0 8px 20px; position: relative; border-bottom: 1px dashed #e8d5d5; font-size: 0.95rem; color: #2a2a2a; }
+  .insight-list ul li:last-child { border-bottom: none; }
+  .insight-list ul li::before { content: '▶'; position: absolute; left: 0; color: var(--accent); font-size: 0.7rem; top: 12px; }
+
+  /* DISCLAIMER */
+  .disclaimer { background: #f0f0f0; border-radius: 8px; padding: 16px 20px; margin-top: 40px; font-size: 0.8rem; color: #777; line-height: 1.6; }
+
+  /* SIDEBAR */
+  aside { }
+  .sidebar-card { background: #fff; border-radius: 10px; padding: 22px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .sidebar-card h4 { font-family: 'Noto Serif KR', serif; font-size: 0.95rem; font-weight: 700; color: var(--accent); border-bottom: 2px solid var(--accent-light); padding-bottom: 10px; margin-bottom: 14px; }
+  .sidebar-card ul { list-style: none; }
+  .sidebar-card ul li { padding: 6px 0 6px 16px; position: relative; font-size: 0.85rem; color: #333; border-bottom: 1px solid #f0f0f0; line-height: 1.5; }
+  .sidebar-card ul li:last-child { border-bottom: none; }
+  .sidebar-card ul li::before { content: '•'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .related-article { padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+  .related-article:last-child { border-bottom: none; }
+  .related-article a { font-size: 0.85rem; color: #333; text-decoration: none; line-height: 1.5; display: block; }
+  .related-article a:hover { color: var(--accent); }
+  .related-article .cat-tag { font-size: 0.72rem; color: var(--accent); font-weight: 600; display: block; margin-bottom: 3px; }
+
+  /* TABLE */
+  .data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 16px 0; }
+  .data-table th { background: var(--accent); color: #fff; padding: 10px 12px; text-align: center; font-weight: 600; }
+  .data-table td { padding: 9px 12px; border-bottom: 1px solid #e8d5d5; text-align: center; }
+  .data-table tr:nth-child(even) td { background: var(--accent-light); }
+  .data-table .highlight { font-weight: 700; color: var(--accent); }
+
+  /* FOOTER */
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.6); text-align: center; padding: 36px 24px; font-size: 0.82rem; margin-top: 48px; }
+  footer strong { color: #fff; }
+  .hashtags { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { background: rgba(139,26,26,0.1); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; border: 1px solid rgba(139,26,26,0.2); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-cat">📈 투자 인사이트</div>
+  <h1>경매 법정이 뜨겁다 — 토지거래허가제가 만든 역설, 투자자들은 왜 법원으로 향하는가</h1>
+  <p class="subtitle">규제의 빈틈에서 피어난 경매 열풍, 낙찰가율 107%의 의미와 지금 이 시점 투자자가 알아야 할 진실</p>
+  <div class="hero-meta">
+    <span>📅 2026년 6월 3일</span>
+    <span>✍️ 부동산인사이트 편집부</span>
+    <span>⏱ 약 8분 소요</span>
+  </div>
+</section>
+
+<div class="container">
+  <main class="article-body">
+
+    <div class="data-cards">
+      <div class="data-card">
+        <div class="num">107.8%</div>
+        <div class="unit">2026년 1월 낙찰가율</div>
+        <div class="label">서울 아파트 경매<br>사상 최고 수준 기록</div>
+      </div>
+      <div class="data-card">
+        <div class="num">15억</div>
+        <div class="unit">감정가 9억 물건 낙찰가</div>
+        <div class="label">경매 과열의 상징<br>감정가 대비 167% 낙찰</div>
+      </div>
+      <div class="data-card">
+        <div class="num">100.5%</div>
+        <div class="unit">2026년 5월 낙찰가율</div>
+        <div class="label">3월 냉각 후 재반등<br>경매 수요 지속 확인</div>
+      </div>
+    </div>
+
+    <p>2026년 상반기 한국 부동산 시장의 가장 뜨거운 무대는 아파트 단지 앞이 아니라 법원 경매 법정이었다. 토지거래허가구역(토허제) 확대, 대출 규제 강화, 조정대상지역 재지정이라는 삼중 규제의 벽이 일반 매매 시장의 숨통을 조이는 사이, 이 규제들의 적용을 비껴갈 수 있는 경매 시장으로 투자 수요가 대거 이동했다. 그 결과 2026년 1월 서울 아파트 경매 낙찰가율은 107.8%를 기록하며 이른바 '피크 오버히팅(Peak Overheating)' 국면에 진입했다.</p>
+
+    <p>이 현상은 단순한 경매 시장의 과열이 아니다. 규제 설계의 구조적 허점이 낳은, 예고된 결과다. 토지거래허가구역에서는 실거주 의무가 부과되고 대출도 사실상 막히지만, 경매는 토지거래허가 없이 낙찰이 가능하다는 점에서 법원 경매가 '합법적 우회로'로 기능하고 있다. 갭투자 역시 경매를 통해서는 여전히 가능하다. 투자자들은 이 틈을 놓치지 않았다.</p>
+
+    <h2>경매 시장으로 이동한 수요 — 규제가 만든 역설</h2>
+
+    <p>정부의 연속적인 규제 강화는 직접 매매 시장의 거래를 얼어붙게 만들었다. 서울 25개 전 자치구와 과천·성남·광명·하남 등 경기 12개 지역이 조정대상지역 및 투기과열지구로 묶이면서, 주택담보대출비율(LTV)과 총부채원리금상환비율(DSR) 규제가 일제히 강화됐다. 실수요자조차 자금 조달에 어려움을 겪는 상황이다.</p>
+
+    <p>그런데 바로 이 시점에 경매 시장은 역주행하기 시작했다. 경매는 낙찰 후 법원 허가로 소유권이 이전되기 때문에, 조정대상지역의 토지거래허가 조건을 충족하지 않아도 된다. 또한 전세를 낀 갭투자가 여전히 허용되며, 감정가가 낮게 책정된 물건은 실거래가 대비 상대적으로 저렴하게 매입할 여지가 남아 있다. 규제가 강화될수록 경매로의 쏠림이 강해지는 역설이다.</p>
+
+    <div class="quote-box">
+      <p>"경매 법정은 규제의 그림자가 만든 새로운 투자 무대다. 토허제가 일반 매매 시장을 틀어막을수록 경매로의 쏠림은 더욱 가속화될 수밖에 없다. 그러나 그 과정에서 낙찰가율이 감정가를 크게 초과할 때, 투자자는 자신이 '규제를 피하려다 비싸게 산 것'인지를 냉정하게 따져봐야 한다."</p>
+      <cite>— 부동산인사이트 수석 분석위원</cite>
+    </div>
+
+    <h2>낙찰가율 107%의 이면 — 과열인가, 가격 재발견인가</h2>
+
+    <p>낙찰가율 107.8%가 무엇을 의미하는가. 감정가보다 7.8% 비싸게 낙찰됐다는 뜻이다. 경매 감정가는 보통 감정 시점(6~12개월 전)의 시세를 기준으로 산정되므로, 시세 상승이 빠른 시기에는 낙찰가가 감정가를 웃도는 것 자체가 이상한 일은 아니다. 그러나 2025년 하반기부터 이어진 가파른 낙찰가율 상승 — 10월 97%에서 이듬해 1월 107.8%로 단 3개월 만에 11%포인트 급등 — 은 단순한 가격 재발견을 넘어 투기적 경쟁의 성격이 짙다.</p>
+
+    <p>실제로 2026년 2월에는 감정가 9억 원짜리 서울 아파트가 15억 원에 낙찰되는 사례가 나왔다. 낙찰가율 167%. 이 가격이면 일반 매매 시장의 실거래가와 큰 차이가 없거나, 오히려 경매에서 더 비싸게 산 셈이 될 수 있다. 경매가 '저렴한 부동산 매입 수단'이라는 고정관념은 이미 깨진 지 오래다.</p>
+
+    <div class="quote-box">
+      <p>"경매 낙찰가율이 100%를 넘는다는 것은, 입찰자들이 감정가 이상을 기꺼이 지불할 의사가 있다는 뜻이다. 이는 시장 참여자들이 현 시세를 감정가 대비 높게 평가하고 있다는 신호지만, 동시에 '묻지마 입찰'의 위험 신호이기도 하다. 철저한 권리분석과 시세 분석 없이 따라가다간 감정가의 150%에 물건을 사는 결과를 초래할 수 있다."</p>
+      <cite>— 한국부동산원 경매 시장 분석 보고서 (2026)</cite>
+    </div>
+
+    <h2>3월 냉각, 5월 재반등 — 시장은 어디로 가는가</h2>
+
+    <p>1월 정점 이후 경매 시장에도 조정이 찾아왔다. 2026년 3월 서울 아파트 경매 낙찰가율은 6개월 만에 100% 아래로 내려갔으며, 낙찰률도 43.5%로 하락했다. 오버히팅 이후 투자자들이 숨을 고르는 국면이었다. 그러나 이 냉각은 오래가지 않았다. 5월에는 낙찰가율이 다시 100.5%를 기록하며 반등 조짐을 보였다.</p>
+
+    <p>이 패턴은 중요한 시장 심리를 반영한다. 낙찰가율이 100% 이하로 내려오면 '저가 매수 기회'를 노리는 투자자들이 다시 몰려들어 낙찰가율을 끌어올리는 순환 구조다. 즉, 경매 시장의 기저 수요는 여전히 견고하며, 당분간 100% 전후에서 등락하는 국면이 이어질 가능성이 높다.</p>
+
+    <h2>NPL 시장 — 경매의 숨은 기회를 찾아라</h2>
+
+    <p>경매 경쟁이 치열해질수록, 투자자들은 보다 정교한 전략으로 이동하고 있다. 그 중 하나가 NPL(Non-Performing Loan, 부실채권) 투자다. 금리 상승 파고를 넘지 못한 상업용 부동산(근린상가, 다가구주택 등)의 채권이 시장에 대거 공급되면서, 경쟁이 덜한 비주거 자산에서 고수익 기회가 모색되고 있다.</p>
+
+    <p>2026년 3월 대구 경매 법정에서는 유찰 물건이 급증하며 NPL 투자자들의 관심이 집중됐다. 유찰은 낙찰가를 낮추는 요인이지만, 역으로 충분한 권리분석을 갖춘 투자자에게는 저가 매입의 기회다. 주거용 아파트 경매에 몰리는 일반 투자자들이 놓치는 틈새 시장이다.</p>
+
+    <h2>투자자가 반드시 점검해야 할 리스크</h2>
+
+    <p>경매 투자의 매력이 부각되는 이 시점에, 냉정한 리스크 점검이 필요하다. 첫째, 경매 물건의 권리분석은 일반 매매보다 훨씬 복잡하다. 임차인의 대항력, 선순위 채권, 유치권 신고 여부 등을 꼼꼼히 확인하지 않으면 낙찰 후 예상치 못한 채무를 떠안을 수 있다. 둘째, 낙찰가율이 높은 국면에서는 '경매 프리미엄'이 사라져 일반 매매 대비 가격 메리트가 없을 수 있다. 셋째, 명도 과정에서의 법적 분쟁과 시간 비용을 반드시 고려해야 한다.</p>
+
+    <div class="insight-list">
+      <h3>📌 실수요자·투자자 체크리스트 — 경매 참여 전 필수 확인 사항</h3>
+      <ul>
+        <li><strong>권리분석 우선:</strong> 낙찰 전 등기부등본, 전입세대 확인, 임차인 대항력, 유치권 여부를 반드시 점검할 것</li>
+        <li><strong>감정가 대비 시세 비교:</strong> 낙찰가율 100% 초과 물건은 인근 실거래가와 1:1 비교 후 메리트를 재산정할 것</li>
+        <li><strong>유찰 물건 역발상:</strong> 경쟁이 집중된 1회 유찰 이하 물건보다, 2~3회 유찰된 비주거 자산에서 옥석 가리기</li>
+        <li><strong>NPL 접근:</strong> 상업용 부동산 부실채권 공급 증가 국면에서 NPL 투자 전략 병행 검토</li>
+        <li><strong>명도 비용 내재화:</strong> 낙찰가 외 명도 소송 비용, 이사비, 공실 기간 등을 수익률 계산에 반드시 포함</li>
+        <li><strong>토허제 지역 별도 확인:</strong> 경매는 토지거래허가 면제이나, 낙찰 후 자금 조달 방식(대출 제한) 이중 확인 필수</li>
+      </ul>
+    </div>
+
+    <h2>정책 평가 — 규제가 만든 경매 버블, 정부의 책임</h2>
+
+    <p>현 상황을 정책 관점에서 평가하면, 규제의 설계 불완전성이 시장 왜곡을 낳고 있다고 볼 수 있다. 토지거래허가제는 특정 지역의 투기 수요를 억제하려는 의도로 설계됐으나, 결과적으로 경매 시장으로의 수요 이전을 유발하고 있다. 규제의 효과가 규제 밖으로 새는 '풍선 효과'의 전형적인 사례다.</p>
+
+    <p>정부가 진정으로 투기 수요를 억제하려면 경매 시장에도 일관된 규제 적용을 검토해야 한다. 그러나 이는 경매의 사법적 특수성과 충돌하는 복잡한 문제로, 단기적 해법은 쉽지 않다. 결국 당분간 경매 시장의 과열은 제도적으로 방치된 채 이어질 가능성이 높다. 투자자로서는 이 구조적 현실을 인식하고, 냉정한 가격 분석을 바탕으로 접근해야 한다.</p>
+
+    <h2>결론 — 경매는 기회인가, 함정인가</h2>
+
+    <p>경매 시장은 분명 기회를 제공한다. 그러나 낙찰가율 107%의 국면에서 '경매가 싸다'는 환상을 품고 무분별하게 입찰하는 것은 위험하다. 진짜 기회는 철저한 권리분석과 시세 비교를 갖춘 투자자에게만 열려 있다. 지금 경매 법정이 뜨겁다는 사실은, 동시에 그 온도가 식을 가능성도 배제할 수 없다는 경고다. 시장의 열기에 휩쓸리기보다, 냉철한 숫자 분석으로 옥석을 가리는 것이 2026년 하반기 경매 투자의 핵심 전략이다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#경매투자</span>
+      <span class="hashtag">#낙찰가율</span>
+      <span class="hashtag">#토지거래허가</span>
+      <span class="hashtag">#부동산투자전략</span>
+      <span class="hashtag">#NPL투자</span>
+      <span class="hashtag">#갭투자</span>
+      <span class="hashtag">#서울아파트경매</span>
+      <span class="hashtag">#부동산규제</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지:</strong> 본 글에 포함된 부동산 시장 분석 및 투자 관련 내용은 공개된 데이터와 편집부의 견해를 바탕으로 작성된 정보 제공 목적의 글입니다. 특정 투자 종목이나 물건에 대한 매수·매도 권유가 아니며, 실제 투자 결정 시에는 법률·세무 전문가의 상담을 반드시 받으시기 바랍니다. 부동산 시장은 다양한 변수에 의해 변동되므로 본 글의 내용이 실제 시장 상황과 다를 수 있습니다.
+    </div>
+  </main>
+
+  <aside>
+    <div class="sidebar-card">
+      <h4>📋 핵심 요약</h4>
+      <ul>
+        <li>2026년 1월 서울 아파트 경매 낙찰가율 107.8% — 사상 최고 수준</li>
+        <li>토허제·대출 규제가 경매로 투자 수요를 이동시키는 구조적 풍선 효과 발생</li>
+        <li>경매는 토지거래허가 없이 가능, 갭투자도 허용 — 합법적 우회로 기능</li>
+        <li>5월 반등(100.5%)으로 기저 수요 여전히 견고 확인</li>
+        <li>NPL·유찰 물건 등 틈새 전략으로 수익률 극대화 가능</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>📰 관련 기사</h4>
+      <div class="related-article">
+        <span class="cat-tag">정책·규제</span>
+        <a href="#">토지거래허가구역 확대 — 서울 전역 규제의 실효성 논란</a>
+      </div>
+      <div class="related-article">
+        <span class="cat-tag">시장동향</span>
+        <a href="#">2026년 상반기 서울 아파트 거래량 급감 — 규제의 그림자</a>
+      </div>
+      <div class="related-article">
+        <span class="cat-tag">투자분석</span>
+        <a href="#">NPL 투자 입문 — 부실채권에서 수익을 찾는 법</a>
+      </div>
+      <div class="related-article">
+        <span class="cat-tag">법률·세금</span>
+        <a href="#">경매 낙찰 후 명도소송 — 절차와 비용 완벽 가이드</a>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <h4>📊 서울 아파트 낙찰가율 추이</h4>
+      <table class="data-table">
+        <thead>
+          <tr><th>월</th><th>낙찰가율</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2025.10</td><td>97.0%</td></tr>
+          <tr><td>2025.11</td><td>101.4%</td></tr>
+          <tr><td>2025.12</td><td>102.9%</td></tr>
+          <tr><td>2026.01</td><td class="highlight">107.8%</td></tr>
+          <tr><td>2026.03</td><td>99.3%</td></tr>
+          <tr><td>2026.04</td><td>100.5%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.75rem;color:#999;margin-top:8px;">※ 출처: 법원 경매 공개 데이터 기반 편집부 재구성</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> — 전문적 시각, 깊이 있는 분석<br>
+  <span style="margin-top:8px;display:inline-block;">© 2026 부동산인사이트. 본 콘텐츠의 무단 복제·배포를 금합니다.</span>
+</footer>
+
+</body>
+</html>
