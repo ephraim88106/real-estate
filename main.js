@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 126,
+    url: 'article_20260604_2_market_v2.html',
+    category: '시장동향',
+    title: '강남은 식고 강북은 뜬다—서울 아파트 \'두 개의 시장\' 완전 분석',
+    summary: '주간 0.25% 상승, 동대문·성동·강북이 견인… 공시가 폭탄 맞은 강남 3구는 숨 고르기. 수도권 양극화가 심화되는 이 순간, 어디에 기회가 있나.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-04',
+    title_en: 'Gangnam Cools, Gangbuk Rises — A Complete Analysis of Seoul Apartments\' Two Markets',
+    summary_en: 'Weekly 0.25% rise led by Dongdaemun, Seongdong, and Gangbuk. Gangnam 3 districts pause under assessed value shock. Where are the opportunities as metropolitan polarization deepens?'
+  },
+  {
+    id: 125,
+    url: 'article_20260604_1_column_v2.html',
+    category: '칼럼',
+    title: '입주 반토막, 전세 대란 카운트다운—공급 절벽이 부른 재앙, 지금 당장 피난처를 찾아라',
+    summary: '서울 입주물량 48% 급감, 전세매물 26% 증발… 규제는 쏟아지는데 집은 없다. 공급 절벽의 구조적 원인과 실수요자가 취해야 할 선택을 짚는다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-04',
+    title_en: 'Move-ins Halved, Jeonse Crisis Countdown — The Catastrophe of Supply Cliff, Find Shelter Now',
+    summary_en: 'Seoul move-in supply plunges 48%, jeonse listings vanish by 26%. Regulations pile up but homes are gone. Analyzing the structural causes of supply cliff and the choices end-users must make.'
+  },
+  {
     id: 124,
     url: 'article_20260603_2_overseas_v2.html',
     category: '해외',
