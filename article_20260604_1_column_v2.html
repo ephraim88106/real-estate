@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>입주 반토막, 전세 대란 카운트다운—공급 절벽이 부른 재앙, 지금 당장 피난처를 찾아라 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #6A6A10;
+    --accent-light: #f5f5e0;
+    --accent-mid: #9a9a20;
+    --header-bg: #0D2B55;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #f8f8f6; line-height: 1.8; }
+
+  header {
+    background: var(--header-bg);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 64px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 22px; color: #fff; text-decoration: none; font-weight: 700; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 500; }
+
+  .hero {
+    background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+    padding: 72px 24px 60px; color: #fff;
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block; background: #6A6A10; color: #fff;
+    font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 20px;
+    letter-spacing: 1px; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(24px, 3.5vw, 38px); font-weight: 700; line-height: 1.4; margin-bottom: 20px;
+  }
+  .hero-subtitle { font-size: 17px; color: rgba(255,255,255,0.85); margin-bottom: 28px; line-height: 1.7; }
+  .hero-meta { font-size: 13px; color: rgba(255,255,255,0.65); }
+  .hero-meta span { margin-right: 20px; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0 40px; }
+  .data-card {
+    background: #f5f5e0; border: 1px solid #c8c850; border-top: 4px solid #6A6A10;
+    padding: 20px; border-radius: 8px; text-align: center;
+  }
+  .data-card .num { font-size: 32px; font-weight: 700; color: #6A6A10; font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 13px; color: #555; margin-top: 6px; }
+  .data-card .sub { font-size: 12px; color: #888; margin-top: 4px; }
+
+  article p { font-size: 16px; line-height: 1.9; margin-bottom: 20px; color: #2a2a2a; }
+
+  h2.section-title {
+    font-family: 'Noto Serif KR', serif; font-size: 22px; font-weight: 700;
+    border-left: 4px solid #6A6A10; padding-left: 16px; margin: 48px 0 20px; color: #1a1a1a;
+  }
+
+  .quote-box {
+    background: #f5f5e0; border-left: 5px solid #6A6A10;
+    padding: 24px 28px; margin: 32px 0; border-radius: 0 8px 8px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif; font-style: italic;
+    font-size: 17px; line-height: 1.8; color: #333; margin: 0;
+  }
+  .quote-box cite { display: block; font-size: 13px; color: #777; margin-top: 12px; font-style: normal; }
+
+  .insight-list { padding-left: 0; list-style: none; margin: 16px 0 24px; }
+  .insight-list li {
+    padding: 10px 0 10px 28px; border-bottom: 1px solid #e8e8d8;
+    font-size: 15px; position: relative;
+  }
+  .insight-list li::before { content: '▶'; color: #6A6A10; position: absolute; left: 0; font-size: 12px; top: 13px; }
+
+  .disclaimer {
+    background: #f0f0f0; border: 1px solid #ddd;
+    padding: 16px 20px; border-radius: 6px; margin-top: 40px;
+    font-size: 12px; color: #888; line-height: 1.7;
+  }
+
+  .tags { margin-top: 36px; }
+  .tags span {
+    display: inline-block; background: #f0f0e8; color: #555;
+    font-size: 12px; padding: 4px 12px; border-radius: 20px; margin: 4px;
+  }
+
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card {
+    background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .sidebar-card h3 {
+    font-size: 14px; font-weight: 700;
+    border-bottom: 2px solid #6A6A10; padding-bottom: 8px; margin-bottom: 16px; margin-top: 0;
+    color: #6A6A10;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li { font-size: 14px; padding: 8px 0 8px 20px; border-bottom: 1px solid #f0f0e8; position: relative; }
+  .summary-list li::before { content: '•'; color: #6A6A10; position: absolute; left: 0; font-size: 18px; line-height: 1; top: 8px; }
+
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { border-bottom: 1px solid #f0f0e8; }
+  .related-list li a { display: block; padding: 10px 0; font-size: 13px; color: #333; text-decoration: none; line-height: 1.5; }
+
+  .table-widget { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .table-widget th { background: #6A6A10; color: #fff; padding: 8px 10px; text-align: left; }
+  .table-widget td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+  .table-widget tr:nth-child(even) td { background: #fafaf0; }
+
+  footer { background: #0D2B55; color: rgba(255,255,255,0.65); text-align: center; padding: 32px 24px; font-size: 13px; margin-top: 60px; }
+  footer strong { color: #F4A52D; }
+
+  @media (max-width: 768px) {
+    .layout { grid-template-columns: 1fr; }
+    .data-cards { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">칼럼 · 해설</div>
+    <h1>입주 반토막, 전세 대란 카운트다운<br>공급 절벽이 부른 재앙—지금 당장 피난처를 찾아라</h1>
+    <p class="hero-subtitle">서울 입주물량 48% 급감, 전세매물 26% 증발… 규제는 쏟아지는데 집은 없다. 공급 절벽의 구조적 원인과 실수요자가 취해야 할 선택을 짚는다.</p>
+    <div class="hero-meta">
+      <span>📅 2026년 6월 4일</span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>⏱️ 읽는 시간 약 8분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="layout">
+    <main>
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="num">48%</div>
+          <div class="label">서울 아파트 입주물량 감소</div>
+          <div class="sub">2025년(3.2만호) → 2026년(1.6만호)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">26%</div>
+          <div class="label">서울 전세 매물 감소</div>
+          <div class="sub">1년 사이 3.2만건 → 2.4만건</div>
+        </div>
+        <div class="data-card">
+          <div class="num">4.2%</div>
+          <div class="label">서울 아파트 매매가 상승 전망</div>
+          <div class="sub">주택산업연구원 2026년 연간 전망</div>
+        </div>
+      </div>
+
+      <article>
+        <p>2026년 상반기가 저물어가는 지금, 한국 부동산 시장은 이상한 풍경을 연출하고 있다. 정부는 대출 규제와 세제 강화를 멈추지 않고 있다. 그런데 서울 아파트 매매가는 주간 0.25%씩 상승하고 있고, 전세 시장은 사상 최악의 매물 부족에 직면해 있다. 공급을 늘리지 못한 채 수요만 억누르면 어떤 일이 벌어지는지를 우리는 이미 2021년에 목격했다. 그런데 또다시 같은 길을 걷고 있는 건 아닐까.</p>
+
+        <p>이 칼럼은 '지금 시장이 왜 이 모양인지'를 구조적으로 해부하고, 실수요자와 투자자가 이 국면에서 어떤 판단을 내려야 하는지를 분석한다. 시장의 복잡한 방정식 속에서 핵심 변수는 언제나 단순하다: 공급과 수요, 그리고 정책의 시차(時差)다.</p>
+
+        <h2 class="section-title">① 왜 공급이 무너졌나: 2년 전 결정이 지금 폭탄이 됐다</h2>
+
+        <p>서울의 2026년 아파트 입주예정 물량은 1만 6,412가구다. 2025년(3만 1,856가구)의 절반 수준이다. 입주량이 이렇게 줄어든 배경은 단순하다. 2023~2024년 고금리 국면에서 착공이 대폭 줄었기 때문이다. 아파트는 착공 후 평균 2~3년이 지나야 입주가 이루어진다. 즉, 2022~2023년의 건설 위기는 2025~2026년의 입주 절벽으로 이어진다. 이것은 정책 실패가 아니라 물리적 시차의 문제다.</p>
+
+        <p>그러나 정책은 이 시차를 제대로 고려하지 않았다. 2022년 하반기부터 금리가 가파르게 오르자 건설사들의 미분양이 누적되고, 프로젝트파이낸싱(PF) 부실이 터졌다. 정부는 2023년 규제 완화와 PF 연착륙 지원을 병행했지만, 신규 착공은 여전히 부진했다. 착공 부진의 씨앗이 지금 '입주 반토막'이라는 결실로 나타나고 있다.</p>
+
+        <div class="quote-box">
+          <p>"공급 부족은 하루아침에 만들어지지 않는다. 2년 전 착공 포기가 지금의 전세난을 만들었고, 지금의 착공 지연은 2028년의 충격을 예약하고 있다."</p>
+          <cite>— 부동산인사이트 편집부 분석</cite>
+        </div>
+
+        <h2 class="section-title">② 전세 시장의 완벽한 폭풍: 세 가지 악재가 동시에</h2>
+
+        <p>2026년 전세 시장에는 삼중(三重)의 충격이 겹쳤다. 첫째, 신규 입주가 반 토막났다. 입주 물량이 줄면 새 집의 전세 공급도 함께 줄어든다. 둘째, 기존 임대인의 행동이 바뀌었다. 2017~2018년에 공급된 8년 의무임대 아파트가 순차적으로 만료되고 있다. 의무기간 종료 후 집주인들은 보유세 부담을 피하기 위해 매각이나 월세 전환을 선택한다. 전세 공급이 추가로 쪼그라드는 구조다. 셋째, 전세 매물 자체가 줄었다. 서울 전세 매물은 1년 만에 26% 줄어 2만 3,828건에 불과하다.</p>
+
+        <p>이 세 악재가 동시에 진행되면서 서울 전셋값은 주간 0.29%씩 오르고 있다. 주택산업연구원은 2026년 서울 전세가격이 연간 4.7% 상승할 것으로 전망했다. 소득 증가율을 훨씬 웃도는 수치다. 그것도 하반기로 갈수록 더 가팔라질 가능성이 높다.</p>
+
+        <h2 class="section-title">③ 규제의 역설: 억누를수록 가격이 오르는 이유</h2>
+
+        <p>정부는 집값 상승을 막기 위해 LTV·DSR 규제를 강화하고 세금 부담을 높였다. 그 결과는 어떠한가. 단기적으로는 거래량을 줄이는 효과가 있다. 하지만 중장기적으로는 오히려 공급을 억제하는 역효과를 낸다. 세 부담이 커진 다주택자들은 신규 임대 공급을 꺼리고, 재건축·재개발은 각종 규제로 사업성이 떨어져 착공이 미뤄진다.</p>
+
+        <p>결국 시장에는 기존 물량만 남는다. 공급은 막혀 있고 인구 유입과 세대 분리에 의한 수요는 꾸준하다. 이 상황에서 가격이 오르지 않는다면 그것이 오히려 이상한 일이다. 경제학 교과서에서 '가격상한제'의 폐해로 설명되는 장기적 공급 감소 현상이 한국 부동산 시장에서 천천히 재현되고 있다.</p>
+
+        <div class="quote-box">
+          <p>"시장은 규제를 피해 움직이는 게 아니라, 규제가 만들어놓은 새로운 균형점을 찾아 움직인다. 규제로 억누른 가격은 결국 더 큰 반동을 준비하고 있을 뿐이다."</p>
+          <cite>— 하나금융연구소 2026 부동산시장 전망 보고서 참고</cite>
+        </div>
+
+        <h2 class="section-title">④ 2026년 하반기의 변수: 지방선거와 세제개편 논의</h2>
+
+        <p>6월 지방선거 이후 정책 환경이 달라질 수 있다. 지방선거는 전통적으로 부동산 민심에 민감하게 반응하는 정치 이벤트다. 여당이 선거에서 성과를 내기 위해 거래 활성화나 세제 완화 카드를 꺼낼 가능성을 배제할 수 없다. 반대로 야당이 선전하면 현 정부는 '서민 주거 안정'을 명분으로 추가 규제를 강화할 수도 있다.</p>
+
+        <p>또한 종합부동산세와 양도소득세 개편 논의가 하반기에 본격화될 전망이다. 현재 다주택자 중과세 체계는 매물 잠김 현상을 심화시키고 있다는 비판을 받고 있다. 만약 중과세 완화가 이루어지면 잠겨 있던 매물이 시장에 나올 수 있다. 단기적으로는 거래량 증가, 중장기적으로는 가격 조정 압력이 가해질 수 있는 변수다.</p>
+
+        <h2 class="section-title">⑤ 전문가는 어떻게 보는가: 낙관론과 비관론 사이</h2>
+
+        <p>시장 전망은 두 진영으로 나뉜다. 낙관론 진영은 수도권 입주 부족→전세 상승→매매 동반 상승의 구조가 최소 2027년까지 이어진다고 본다. 한국건설산업연구원과 주택산업연구원 모두 2026년 서울 아파트값이 연간 2~4% 상승할 것으로 전망하고 있다. 공급 절벽이 구조적으로 고착화되면 이 상승폭은 더 커질 수 있다.</p>
+
+        <p>반면 비관론 진영은 고금리 장기화와 가계부채 한계를 주요 근거로 든다. DSR 40% 규제가 적용되는 상황에서 수도권 중간 소득자가 서울 아파트를 매수할 수 있는 여력은 이미 한계에 달했다는 것이다. 실수요 진입이 막히면 가격 상승은 지속되기 어렵다. 이 두 시나리오 중 어느 쪽이 현실이 되느냐는 금리 경로와 정부 정책의 방향에 달려 있다.</p>
+
+        <h2 class="section-title">⑥ 실수요자와 투자자를 위한 시사점</h2>
+
+        <ul class="insight-list">
+          <li><strong>전세 세입자라면 임박한 만료 전에 움직여라.</strong> 2026년 하반기로 갈수록 전세 매물은 더 줄고 가격은 더 오를 가능성이 높다. 갱신청구권 2년을 소진한 세입자라면 대안 마련이 시급하다.</li>
+          <li><strong>매수 타이밍을 고민하는 실수요자는 '공급 회복 시점'에 주목하라.</strong> 서울 입주 물량이 다시 늘어나는 2028~2029년이 일시적 가격 조정의 창구가 될 수 있다. 그 전에는 좋은 타이밍을 기대하기 어렵다.</li>
+          <li><strong>임대료 수익형 투자자는 전세보다 월세를 검토하라.</strong> 전세 시장이 불안정해질수록 보증금 반환 리스크가 커진다. 월세 전환 비중이 높아지는 구조적 변화에 올라타는 것이 더 안정적이다.</li>
+          <li><strong>지방 투자는 '회복 초입' 지역을 선별하라.</strong> 지방 아파트는 오랜 침체 끝에 꿈틀거리는 지역이 생기고 있다. 광역시 핵심 입지를 중심으로 가격이 바닥을 다지는 신호를 면밀히 체크할 시점이다.</li>
+          <li><strong>다주택자는 세제 개편 논의를 주시하라.</strong> 하반기 양도세·종부세 개편이 현실화된다면 보유 전략에 근본적인 변화를 주어야 할 수 있다. 섣불리 매도하기 전에 정책 방향을 확인하는 것이 우선이다.</li>
+        </ul>
+
+        <h2 class="section-title">결론: 시장은 늘 옳고, 우리만 틀린다</h2>
+
+        <p>시장은 거짓말을 하지 않는다. 공급이 부족하면 가격이 오르고, 매물이 사라지면 경쟁이 심해진다. 우리가 바라는 '안정된 집값'은 오직 충분한 공급과 적절한 수요 관리가 함께 이루어질 때만 가능하다. 규제 하나로 시장을 통제할 수 있다는 믿음은 30년 한국 부동산 역사가 반복해서 부정해온 환상이다.</p>
+
+        <p>2026년 하반기, 우리는 또다시 그 교훈을 눈앞에서 확인하게 될 것이다. 전세난이 심화되고, 수도권 매매가 상승이 이어지는 동안, 규제의 나사는 더 조여질 것이다. 하지만 역사가 보여주듯, 결국 시장은 공급을 만들어내고야 만다. 다만 그 고통의 시간을 누가 통과하느냐가 문제일 뿐이다. 준비된 자와 준비되지 않은 자의 차이는, 언제나 정보와 판단력의 차이에서 비롯된다.</p>
+
+        <div class="tags">
+          <span>#공급절벽</span><span>#전세난</span><span>#입주물량</span>
+          <span>#서울아파트</span><span>#부동산칼럼</span><span>#규제역설</span>
+          <span>#2026부동산</span><span>#주택시장전망</span>
+        </div>
+
+        <div class="disclaimer">
+          ⚠️ 면책 고지: 본 칼럼은 공개된 시장 데이터와 연구기관 자료를 바탕으로 작성된 분석·견해이며, 특정 부동산 상품에 대한 투자 권유가 아닙니다. 부동산 거래 및 투자 결정은 반드시 전문가 상담과 본인의 재무 상황을 고려하여 독립적으로 판단하시기 바랍니다. 시장 환경은 예고 없이 변동될 수 있으며, 본 매체는 투자 손실에 대한 책임을 지지 않습니다.
+        </div>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>2026년 서울 입주물량 전년 대비 48% 급감, 역대급 전세난 예고</li>
+          <li>서울 전세매물 1년 새 26% 감소, 공급 악순환 가속</li>
+          <li>규제 강화→공급 부족→가격 상승의 역설적 구조 고착화</li>
+          <li>6월 지방선거 이후 세제 개편 논의 본격화 전망</li>
+          <li>실수요자는 하반기 전세 만료 대비, 투자자는 월세 전환 주목</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>📰 관련 기사</h3>
+        <ul class="related-list">
+          <li><a href="#">서울 아파트 주간 0.25% 상승—한강벨트와 강북권이 주도</a></li>
+          <li><a href="#">8년 의무임대 만료 폭탄…전세 시장 '도미노 충격' 오나</a></li>
+          <li><a href="#">DSR 40% 규제, 중산층 매수 여력 얼마나 남았나</a></li>
+          <li><a href="#">지방 아파트 회복 신호?—광역시별 거래량 분석</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>📊 서울 연도별 입주 전망</h3>
+        <table class="table-widget">
+          <thead>
+            <tr><th>연도</th><th>입주(가구)</th><th>전년비</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>2024</td><td>31,856</td><td>—</td></tr>
+            <tr><td>2025</td><td>31,856</td><td>±0%</td></tr>
+            <tr><td>2026</td><td>16,412</td><td>▼48%</td></tr>
+            <tr><td>2027~</td><td>미정</td><td>추가 감소 전망</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <p><strong>부동산인사이트</strong> — 전문가 시각으로 읽는 한국 부동산</p>
+  <p>본 사이트의 모든 콘텐츠는 정보 제공 목적으로만 제공됩니다.</p>
+  <p style="margin-top:12px">© 2026 부동산인사이트. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

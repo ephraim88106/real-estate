@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>강남은 식고 강북은 뜬다—서울 아파트 '두 개의 시장' 완전 분석 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #1A4D8F;
+    --accent-light: #e8f0fb;
+    --header-bg: #0D2B55;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #f5f8fc; line-height: 1.8; }
+
+  header {
+    background: var(--header-bg); position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 64px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 22px; color: #fff; text-decoration: none; font-weight: 700; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 500; }
+
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 72px 24px 60px; color: #fff;
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block; background: #1A4D8F; color: #fff;
+    font-size: 12px; font-weight: 700; padding: 4px 14px; border-radius: 20px;
+    letter-spacing: 1px; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(24px, 3.5vw, 38px); font-weight: 700; line-height: 1.4; margin-bottom: 20px;
+  }
+  .hero-subtitle { font-size: 17px; color: rgba(255,255,255,0.85); margin-bottom: 28px; line-height: 1.7; }
+  .hero-meta { font-size: 13px; color: rgba(255,255,255,0.65); }
+  .hero-meta span { margin-right: 20px; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0 40px; }
+  .data-card {
+    background: #e8f0fb; border: 1px solid #9bb8e8; border-top: 4px solid #1A4D8F;
+    padding: 20px; border-radius: 8px; text-align: center;
+  }
+  .data-card .num { font-size: 32px; font-weight: 700; color: #1A4D8F; font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 13px; color: #555; margin-top: 6px; }
+  .data-card .sub { font-size: 12px; color: #888; margin-top: 4px; }
+
+  article p { font-size: 16px; line-height: 1.9; margin-bottom: 20px; color: #2a2a2a; }
+
+  h2.section-title {
+    font-family: 'Noto Serif KR', serif; font-size: 22px; font-weight: 700;
+    border-left: 4px solid #1A4D8F; padding-left: 16px; margin: 48px 0 20px; color: #1a1a1a;
+  }
+
+  .quote-box {
+    background: #e8f0fb; border-left: 5px solid #1A4D8F;
+    padding: 24px 28px; margin: 32px 0; border-radius: 0 8px 8px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif; font-style: italic;
+    font-size: 17px; line-height: 1.8; color: #1a2a3a; margin: 0;
+  }
+  .quote-box cite { display: block; font-size: 13px; color: #777; margin-top: 12px; font-style: normal; }
+
+  .insight-list { padding-left: 0; list-style: none; margin: 16px 0 24px; }
+  .insight-list li {
+    padding: 10px 0 10px 28px; border-bottom: 1px solid #dce8f5;
+    font-size: 15px; position: relative;
+  }
+  .insight-list li::before { content: '▶'; color: #1A4D8F; position: absolute; left: 0; font-size: 12px; top: 13px; }
+
+  .district-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0;
+  }
+  .district-card {
+    background: #fff; border: 1px solid #dce8f5; border-radius: 8px; padding: 16px;
+    border-top: 3px solid #1A4D8F;
+  }
+  .district-card .dname { font-weight: 700; font-size: 16px; color: #1A4D8F; margin-bottom: 6px; }
+  .district-card .drate { font-size: 22px; font-weight: 700; color: #c44; margin-bottom: 4px; }
+  .district-card .ddesc { font-size: 13px; color: #666; line-height: 1.5; }
+
+  .district-card.cool { border-top-color: #5577aa; }
+  .district-card.cool .drate { color: #5577aa; }
+
+  .disclaimer {
+    background: #f0f0f0; border: 1px solid #ddd;
+    padding: 16px 20px; border-radius: 6px; margin-top: 40px;
+    font-size: 12px; color: #888; line-height: 1.7;
+  }
+
+  .tags { margin-top: 36px; }
+  .tags span {
+    display: inline-block; background: #e8f0fb; color: #1A4D8F;
+    font-size: 12px; padding: 4px 12px; border-radius: 20px; margin: 4px;
+  }
+
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card {
+    background: #fff; border: 1px solid #dce8f5; border-radius: 10px; padding: 22px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .sidebar-card h3 {
+    font-size: 14px; font-weight: 700;
+    border-bottom: 2px solid #1A4D8F; padding-bottom: 8px; margin-bottom: 16px; margin-top: 0;
+    color: #1A4D8F;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li { font-size: 14px; padding: 8px 0 8px 20px; border-bottom: 1px solid #e8f0fb; position: relative; }
+  .summary-list li::before { content: '•'; color: #1A4D8F; position: absolute; left: 0; font-size: 18px; line-height: 1; top: 8px; }
+
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { border-bottom: 1px solid #e8f0fb; }
+  .related-list li a { display: block; padding: 10px 0; font-size: 13px; color: #333; text-decoration: none; line-height: 1.5; }
+
+  .table-widget { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .table-widget th { background: #1A4D8F; color: #fff; padding: 8px 10px; text-align: left; }
+  .table-widget td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+  .table-widget tr:nth-child(even) td { background: #f0f5fc; }
+  .up { color: #c44; font-weight: 700; }
+  .dn { color: #359; font-weight: 700; }
+
+  footer { background: #0D2B55; color: rgba(255,255,255,0.65); text-align: center; padding: 32px 24px; font-size: 13px; margin-top: 60px; }
+  footer strong { color: #F4A52D; }
+
+  @media (max-width: 768px) {
+    .layout { grid-template-columns: 1fr; }
+    .data-cards { grid-template-columns: 1fr; }
+    .district-grid { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">시장동향</div>
+    <h1>강남은 식고 강북은 뜬다<br>서울 아파트 '두 개의 시장' 완전 분석</h1>
+    <p class="hero-subtitle">주간 0.25% 상승, 동대문·성동·강북이 견인… 공시가 폭탄 맞은 강남 3구는 숨 고르기. 수도권 양극화가 심화되는 이 순간, 어디에 기회가 있나.</p>
+    <div class="hero-meta">
+      <span>📅 2026년 6월 4일</span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>⏱️ 읽는 시간 약 7분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="layout">
+    <main>
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="num">+0.25%</div>
+          <div class="label">서울 아파트 주간 매매가 상승률</div>
+          <div class="sub">2026년 6월 1주 기준 (한국부동산원)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">+0.37%</div>
+          <div class="label">동대문구 주간 최고 상승률</div>
+          <div class="sub">강북권 중저가 단지 주도</div>
+        </div>
+        <div class="data-card">
+          <div class="num">18.67%</div>
+          <div class="label">서울 공동주택 공시가격 평균 상승</div>
+          <div class="sub">강남 3구 24.7%로 세 부담 폭증</div>
+        </div>
+      </div>
+
+      <article>
+        <p>서울 아파트 시장이 '두 개의 시장'으로 분리되고 있다. 한쪽은 공시가격 폭등으로 세 부담이 커진 강남 3구가 숨을 고르고 있고, 다른 한쪽은 중저가 단지가 밀집한 동대문·성동·강북권이 빠르게 치고 올라오고 있다. 2026년 6월 첫째 주 기준 서울 아파트 매매가격은 주간 0.25% 상승했다. 수도권은 0.14%, 지방은 보합이다. 표면적으로는 온화한 숫자이지만, 내부를 들여다보면 지역별 온도 차이가 극명하다.</p>
+
+        <p>이 리포트는 구체적인 데이터를 토대로 지금 서울 부동산 시장에서 어떤 일이 벌어지고 있는지를 설명하고, 이 흐름이 앞으로 어디로 향할지를 분석한다.</p>
+
+        <h2 class="section-title">① 이번 주 시장의 상승을 이끈 지역들</h2>
+
+        <p>이번 주 서울 아파트 시장의 상승을 주도한 것은 강북권과 한강벨트 인접 지역이다. 특히 중저가 중소형 단지가 밀집한 구들이 두드러진 성과를 보였다.</p>
+
+        <div class="district-grid">
+          <div class="district-card">
+            <div class="dname">동대문구</div>
+            <div class="drate">+0.37%</div>
+            <div class="ddesc">중소형 단지 위주 상승. 한강 접근성보다 가격 메리트가 부각.</div>
+          </div>
+          <div class="district-card">
+            <div class="dname">성동구</div>
+            <div class="drate">+0.35%</div>
+            <div class="ddesc">하왕십리·금호동 중심 강세. 한강벨트 인접 프리미엄 재부각.</div>
+          </div>
+          <div class="district-card">
+            <div class="dname">강북구</div>
+            <div class="drate">+0.35%</div>
+            <div class="ddesc">외곽 저평가 단지 중심 회복세. 노도강 벨트 온기 확산.</div>
+          </div>
+          <div class="district-card">
+            <div class="dname">중구</div>
+            <div class="drate">+0.36%</div>
+            <div class="ddesc">신당·황학동 중소형 집중. 직주근접 수요 꾸준.</div>
+          </div>
+          <div class="district-card cool">
+            <div class="dname">강남구</div>
+            <div class="drate">±보합</div>
+            <div class="ddesc">공시가 24.7% 급등 따른 세 부담에 매수 관망세 지속.</div>
+          </div>
+          <div class="district-card cool">
+            <div class="dname">서초·송파</div>
+            <div class="drate">소폭 조정</div>
+            <div class="ddesc">종부세·양도세 부담 증가. 급매 위주 거래만 소화.</div>
+          </div>
+        </div>
+
+        <h2 class="section-title">② 왜 강남이 식고 강북이 뜨는가</h2>
+
+        <p>이 역전 현상의 핵심 원인은 세 부담의 역전이다. 2026년 공동주택 공시가격이 서울 평균 18.67% 오른 가운데, 강남 3구(강남·서초·송파)는 24.7%나 급등했다. 한강 인접 성동·용산 등도 23.13% 상승했다. 공시가격이 높아지면 종합부동산세와 재산세 부담이 동반 상승한다. 고가 아파트 보유자들의 세금 부담이 커지면 거래를 꺼리게 되고, 시장에는 '팔고 싶지도, 살 엄두도 못 내는' 교착 상태가 형성된다.</p>
+
+        <p>반면 강북권과 중저가 단지 밀집 지역은 공시가 상승률이 상대적으로 낮아 보유 부담이 덜하다. 여기에 DSR 40% 규제가 고가 주택 구매층을 막는 상황에서, 대출 한도 내에서 구매 가능한 중저가 단지로 수요가 집중되는 현상이 나타나고 있다. '살 수 있는 집을 산다'는 실수요 원칙이 강북 시장을 밀어 올리고 있는 것이다.</p>
+
+        <div class="quote-box">
+          <p>"강남 3구의 공시가 급등은 단순한 세금 문제가 아니다. 이는 부동산 보유의 기회비용을 높여 고가 주택 시장의 유동성을 억제하는 구조적 효과를 낳는다. 그 압력이 중저가 시장으로 수요를 밀어낸다."</p>
+          <cite>— KB부동산 2026 시장동향 참고 (편집부 재구성)</cite>
+        </div>
+
+        <h2 class="section-title">③ 전세 시장: 서울 전체가 들썩이는 이유</h2>
+
+        <p>매매 시장이 이원화되는 동안, 전세 시장은 방향성이 명확하다. 상승이다. 서울 아파트 전셋값은 이번 주 0.29% 상승했으며, 지난주에 비해 상승폭이 확대됐다. 이 수치는 단순한 계절적 요인이 아니다. 구조적 공급 부족이 전세 시장을 장악하고 있다.</p>
+
+        <p>2026년 서울 아파트 입주물량이 전년의 절반 수준인 1만 6,412가구에 그치면서, 새 전세 공급이 대폭 줄었다. 전세 매물은 1년 전보다 26% 줄어든 2만 3,828건에 불과하다. 게다가 8년 의무임대 기간이 만료된 집주인들이 전세를 월세로 전환하거나 매각하면서 전세 공급이 추가로 감소하고 있다. 하반기로 갈수록 전세 시장의 수급은 더 타이트해질 전망이다.</p>
+
+        <h2 class="section-title">④ 수도권 전반의 흐름과 지방의 조용한 신호</h2>
+
+        <p>수도권(서울·경기·인천)은 주간 0.14% 상승하며 꾸준한 우상향을 유지하고 있다. 경기도는 성남·과천·하남 등 서울 접경 지역과 직주근접 입지를 중심으로 강세가 이어지고 있다. 반면 외곽 지역은 여전히 미분양이 소화되지 않아 가격 회복이 더디다.</p>
+
+        <p>지방은 전체적으로 '보합'이지만, 내부에서는 미묘한 변화가 감지된다. 대구·부산 등 광역시 핵심 입지를 중심으로 침체의 바닥을 다지는 흐름이 포착되고 있다. 아직 '반등'이라고 부르기에는 이르지만, 거래량이 소폭 늘고 급매 위주의 시세가 형성되기 시작한 점은 주목할 만하다. 하반기 지방 주요 도시의 움직임을 체크해야 할 시점이다.</p>
+
+        <div class="quote-box">
+          <p>"지방 시장의 침체 탈출 신호는 보통 거래량 회복으로 먼저 나타난다. 가격 지표보다 거래량 데이터를 선행 지표로 삼아 흐름을 읽어야 한다."</p>
+          <cite>— 한국건설산업연구원 2026년 전망 보고서 참고</cite>
+        </div>
+
+        <h2 class="section-title">⑤ 하반기 매매 시장의 시나리오: 3가지 가능성</h2>
+
+        <p>2026년 하반기 서울·수도권 매매 시장은 크게 세 가지 시나리오로 전개될 수 있다. 첫 번째는 '상승 지속' 시나리오다. 공급 부족이 해소되지 않고 전셋값 상승이 매매로 전이되면, 서울 매매가는 연간 4% 이상 상승할 수 있다. 두 번째는 '보합·소폭 조정' 시나리오다. 정부의 추가 규제나 금리 인상이 이루어지면 거래량이 줄고 가격이 제자리를 맴돌 수 있다. 세 번째는 '급락' 시나리오다. 가계부채 폭발이나 글로벌 금융 충격이 겹치면 단기 급락이 발생할 수 있다. 다만 현재의 공급·수요 구조상 세 번째 시나리오의 확률은 가장 낮다.</p>
+
+        <h2 class="section-title">⑥ 실수요자와 투자자를 위한 시장 시사점</h2>
+
+        <ul class="insight-list">
+          <li><strong>강북·한강벨트 중저가 단지는 단기 모멘텀이 강하다.</strong> 동대문·성동·강북구의 상승세는 세 부담이 낮고 대출 한도 내 진입이 가능한 실수요가 지탱하고 있다. 이 모멘텀은 단기적으로 유효하다.</li>
+          <li><strong>강남 3구 진입은 세금 계획을 먼저 세워라.</strong> 공시가 급등으로 종부세·재산세가 대폭 오른 상황이다. 매수 전 보유 비용 시뮬레이션이 필수다. 급매 외에는 선뜻 진입하기 어려운 국면이다.</li>
+          <li><strong>전세 만료 임박자는 매수를 적극 검토할 시점이다.</strong> 전세 시장은 하반기로 갈수록 조건이 나빠진다. 매매가가 일부 조정된 단지에서는 전세 대신 매수가 더 유리할 수 있다.</li>
+          <li><strong>경기도 외곽과 미분양 지역은 여전히 신중하게.</strong> 수도권이라도 서울 접경이 아닌 외곽 지역의 회복은 더디다. 입주 후 미분양이 누적된 단지는 가격 저항이 클 수 있다.</li>
+          <li><strong>지방 광역시 핵심 입지는 '바닥 확인'후 접근하라.</strong> 대구·부산의 거래량 회복 신호를 확인한 뒤 진입하는 것이 안전하다. 섣불리 먼저 들어가는 것보다 데이터를 보고 추격하는 전략이 낫다.</li>
+        </ul>
+
+        <h2 class="section-title">결론: 양극화는 기회이기도 하다</h2>
+
+        <p>서울 부동산 시장의 양극화는 일견 위기처럼 보이지만, 반대로 정보가 있는 이에게는 기회다. 고가 단지가 숨을 고르는 동안, 저평가된 중저가 단지는 실수요에 의해 조용히 값을 올린다. 전세 시장이 타이트해지는 동안, 월세 전환이 늘어 임대 수익률의 구조가 바뀐다. 시장이 단일하게 움직이지 않을 때, 오히려 세밀한 분석과 빠른 판단이 빛을 발한다.</p>
+
+        <p>중요한 것은 '시장 전체'를 보는 눈이 아니라, '내가 진입할 수 있는 그 시장'을 보는 눈이다. 공급 데이터, 거래량 추이, 세금 구조를 복합적으로 이해하는 사람이 이 국면에서 올바른 선택을 할 수 있다. 지금은 분석의 시간이다.</p>
+
+        <div class="tags">
+          <span>#서울아파트</span><span>#시장동향</span><span>#강북강남</span>
+          <span>#한강벨트</span><span>#전세난</span><span>#양극화</span>
+          <span>#부동산2026</span><span>#매매가상승</span>
+        </div>
+
+        <div class="disclaimer">
+          ⚠️ 면책 고지: 본 기사는 공개된 시장 데이터와 연구기관 자료를 기반으로 작성된 분석·정보이며, 특정 부동산 상품에 대한 투자 권유가 아닙니다. 부동산 거래 및 투자 결정은 반드시 전문가 상담과 본인의 재무 상황을 고려하여 독립적으로 판단하시기 바랍니다. 시장 상황은 예고 없이 변동될 수 있으며, 본 매체는 투자 손실에 대한 책임을 지지 않습니다.
+        </div>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>서울 아파트 주간 0.25% 상승, 동대문·성동·강북이 주도</li>
+          <li>강남 3구는 공시가 24.7% 급등→세 부담 증가로 숨 고르기</li>
+          <li>서울 전세 주간 0.29% 상승, 매물 부족으로 하반기 심화 전망</li>
+          <li>수도권 0.14% 상승 지속, 지방은 보합 속 일부 광역시 바닥 신호</li>
+          <li>실수요 중심 중저가 단지 모멘텀 유효, 강남 진입은 세금 계획 먼저</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>📰 관련 기사</h3>
+        <ul class="related-list">
+          <li><a href="#">입주 반토막·전세 대란 카운트다운—공급 절벽의 역설</a></li>
+          <li><a href="#">2026 공시가격 급등, 강남 3구 보유세 얼마나 오르나</a></li>
+          <li><a href="#">한강벨트 상승 반전, '갈아타기' 수요 이동 분석</a></li>
+          <li><a href="#">대구·부산 아파트 바닥론, 진짜인가 허상인가</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>📊 서울 주요구 주간 변동률</h3>
+        <table class="table-widget">
+          <thead>
+            <tr><th>자치구</th><th>주간 변동</th><th>특이사항</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>동대문구</td><td class="up">+0.37%</td><td>중소형 주도</td></tr>
+            <tr><td>중구</td><td class="up">+0.36%</td><td>신당·황학동</td></tr>
+            <tr><td>성동구</td><td class="up">+0.35%</td><td>하왕십리 강세</td></tr>
+            <tr><td>강북구</td><td class="up">+0.35%</td><td>노도강 확산</td></tr>
+            <tr><td>강남구</td><td class="dn">보합</td><td>세부담 관망</td></tr>
+            <tr><td>서초·송파</td><td class="dn">소폭↓</td><td>급매 위주 소화</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <p><strong>부동산인사이트</strong> — 전문가 시각으로 읽는 한국 부동산</p>
+  <p>본 사이트의 모든 콘텐츠는 정보 제공 목적으로만 제공됩니다.</p>
+  <p style="margin-top:12px">© 2026 부동산인사이트. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
