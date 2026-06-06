@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 128,
+    url: 'article_20260606_2_투자전략_v2.html',
+    category: '투자분석',
+    title: '3중 규제의 덫, 어디서 살아남나—2026 하반기 부동산 투자 생존 전략',
+    summary: '양도세 중과 재시행·LTV 상한 붕괴·토지거래허가구역 확대. 이재명 정부 3중 규제 속에서 실수요자와 투자자가 살아남는 방법을 구체적으로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-06',
+    title_en: 'The Trap of Triple Regulation — A 2026 H2 Real Estate Investment Survival Strategy',
+    summary_en: 'Capital gains tax surcharge reinstatement, LTV cap collapse, land transaction permit zone expansion. A concrete analysis of how end-users and investors can survive the Lee Jae-myung administration\'s triple regulation.'
+  },
+  {
+    id: 127,
+    url: 'article_20260606_1_재건축이주비_v2.html',
+    category: '재개발',
+    title: '이주비 대출 \'제로\' 폭탄—서울 재건축 39곳·3만1천 가구 사업 올스톱 위기',
+    summary: '이재명 정부의 이주비 대출 규제로 서울 정비사업 90%가 사업 지연 위기에 빠졌다. 다주택자 LTV 0% 룰이 공약 이행과 공급 확대를 동시에 좌초시키는 역설을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-06',
+    title_en: 'Relocation Loan "Zero" Bomb — 39 Seoul Reconstruction Sites, 31,000 Households Face Shutdown',
+    summary_en: 'The Lee Jae-myung administration\'s relocation loan restrictions push 90% of Seoul redevelopment projects toward delay. An in-depth analysis of the paradox where the multi-home LTV 0% rule derails both pledge fulfillment and supply expansion.'
+  },
+  {
     id: 126,
     url: 'article_20260604_2_market_v2.html',
     category: '시장동향',
