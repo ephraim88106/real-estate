@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 130,
+    url: 'article_20260607_2_column_v2.html',
+    category: '칼럼',
+    title: '양도세 중과 부활 이후 시장은 어디로 가나—매물 잠김 vs. 급매 쏟아짐, 둘 중 하나가 틀렸다',
+    summary: '2026년 5월 다주택자 양도세 중과 유예 종료 이후 한국 부동산 시장의 구조적 변화를 심층 해설한다. 매물 잠김과 급매 출회라는 상반된 전망 중 어느 쪽이 현실이 될지 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-07',
+    title_en: 'Where Does the Market Go After the Capital Gains Tax Surcharge Returns? — Lock-up vs. Fire Sale, One of Them Is Wrong',
+    summary_en: 'An in-depth analysis of the structural shift in Korea\'s real estate market after the multi-home capital gains tax surcharge grace period ended in May 2026 — examining which of the two opposing scenarios, listing lock-up or a wave of distressed sales, will become reality.'
+  },
+  {
+    id: 129,
+    url: 'article_20260607_1_overseas_v2.html',
+    category: '해외',
+    title: '엔저의 끝? 아직 늦지 않았다—2026년 한국인 해외 부동산 투자, 지금이 마지막 기회인 이유',
+    summary: '2026년 하반기, 미국·일본·동남아 부동산 시장 최신 동향과 한국인 투자자를 위한 실전 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-07',
+    title_en: 'The End of the Weak Yen? Not Too Late Yet — Why 2026 Is the Last Chance for Koreans Investing in Overseas Real Estate',
+    summary_en: 'An in-depth analysis of the latest trends in the U.S., Japanese, and Southeast Asian real estate markets in H2 2026, with practical strategies for Korean investors.'
+  },
+  {
     id: 128,
     url: 'article_20260606_2_투자전략_v2.html',
     category: '투자분석',
