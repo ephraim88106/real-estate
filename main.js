@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 132,
+    url: 'article_20260608_2_policy_v2.html',
+    category: '정책',
+    title: '7월 스트레스DSR 3단계 폭탄 시작…"내 대출 한도 수천만 원 사라진다"',
+    summary: '2026년 7월 1일, 전 금융권 가계대출에 스트레스 금리 100% 적용이 시작된다. 연봉 1억 원 차주도 최대 4,800만 원이 줄어드는 이 규제, 집 살 계획이 있다면 지금 당장 대출 전략을 재점검해야 한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 정책팀',
+    date: '2026-06-08',
+    title_en: 'July\'s Stress DSR Phase 3 Bomb Begins — "Tens of Millions Wiped From My Loan Limit"',
+    summary_en: 'On July 1, 2026, a full 100% stress rate kicks in on household lending across all financial sectors. Even a borrower earning 100 million won loses up to 48 million won in capacity — if you plan to buy a home, reassess your loan strategy now.'
+  },
+  {
+    id: 131,
+    url: 'article_20260608_1_market_v2.html',
+    category: '시장동향',
+    title: '거래절벽 속 69주 연속 상승…서울 집값의 역설, 언제까지 계속되나',
+    summary: '다주택자 양도세 중과 부활로 거래량이 57% 폭락했지만, 오히려 집값은 상승세를 이어가고 있다. 공급 부족과 매물 잠김이 만들어낸 이 기이한 역설의 실체를 파헤친다.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-08',
+    title_en: 'A Transaction Cliff Yet 69 Straight Weeks of Gains — How Long Can Seoul\'s Housing Paradox Last?',
+    summary_en: 'The return of the multi-home capital gains tax surcharge sent transaction volume plunging 57%, yet home prices keep climbing. A deep dive into the strange paradox created by supply shortages and listing lock-up.'
+  },
+  {
     id: 130,
     url: 'article_20260607_2_column_v2.html',
     category: '칼럼',
