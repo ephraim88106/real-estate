@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7월 스트레스DSR 3단계 폭탄 시작…"내 대출 한도 수천만원 사라진다" | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #1a1a1a; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: #fff; text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    font-size: 0.8rem; font-weight: 500;
+    padding: 6px 12px; border-radius: 4px;
+    transition: all 0.2s;
+  }
+  nav a:hover, nav a.active { color: #fff; background: rgba(255,255,255,0.15); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 70px 24px 60px;
+    color: #fff;
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: #C8401A;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff; font-size: 0.72rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 20px;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    font-weight: 700; line-height: 1.35;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .hero h1 .highlight { color: #F4A52D; }
+  .hero-subtitle {
+    font-size: 1.05rem; color: rgba(255,255,255,0.85);
+    max-width: 720px; line-height: 1.7;
+    margin-bottom: 24px;
+  }
+  .hero-meta {
+    font-size: 0.78rem; color: rgba(255,255,255,0.6);
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 36px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+  /* DATA BOX */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #fdf0ec;
+    border: 1px solid #f0c8b8;
+    border-top: 4px solid #C8401A;
+    border-radius: 8px; padding: 20px;
+    text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.9rem; font-weight: 700; color: #C8401A;
+    line-height: 1;
+  }
+  .data-card .unit { font-size: 0.85rem; color: #555; margin-top: 4px; }
+  .data-card .label { font-size: 0.78rem; color: #888; margin-top: 8px; }
+
+  /* ARTICLE BODY */
+  article { background: #fff; border-radius: 12px; padding: 40px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem; font-weight: 700;
+    color: #0D2B55;
+    border-left: 4px solid #C8401A;
+    padding-left: 14px; margin: 36px 0 16px;
+  }
+  article p { font-size: 0.96rem; line-height: 1.9; color: #333; margin-bottom: 16px; }
+
+  .quote-box {
+    background: #fdf0ec;
+    border-left: 4px solid #C8401A;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin: 28px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.02rem;
+    color: #7a2010; line-height: 1.85; margin: 0;
+  }
+  .quote-box .qsource { font-size: 0.78rem; color: #888; margin-top: 8px; font-style: normal; font-family: 'Noto Sans KR', sans-serif; }
+
+  article ul { margin: 16px 0 20px 20px; }
+  article ul li { font-size: 0.94rem; line-height: 1.85; color: #333; margin-bottom: 8px; }
+
+  .info-box {
+    background: #f8f4ff;
+    border: 1px solid #d0c0e8;
+    border-radius: 8px; padding: 20px 24px;
+    margin: 24px 0;
+  }
+  .info-box h4 { font-size: 0.9rem; font-weight: 700; color: #4a1a8a; margin-bottom: 10px; }
+  .info-box p { font-size: 0.88rem; color: #444; margin-bottom: 0; line-height: 1.75; }
+
+  .disclaimer {
+    background: #f0f0f0; border-radius: 8px;
+    padding: 16px 20px; margin-top: 40px;
+    font-size: 0.78rem; color: #888; line-height: 1.7;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-widget {
+    background: #fff; border-radius: 10px;
+    padding: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+  .sidebar-widget h3 {
+    font-size: 0.88rem; font-weight: 700;
+    color: #0D2B55; border-bottom: 2px solid #C8401A;
+    padding-bottom: 8px; margin-bottom: 14px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    font-size: 0.85rem; color: #333;
+    padding: 7px 0; border-bottom: 1px solid #f0f0f0;
+    line-height: 1.6;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .summary-list li::before {
+    content: "▶"; color: #C8401A; font-size: 0.65rem;
+    margin-top: 5px; flex-shrink: 0;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { border-bottom: 1px solid #f0f0f0; padding: 10px 0; }
+  .related-list li a {
+    font-size: 0.83rem; color: #333; text-decoration: none;
+    line-height: 1.5; display: block;
+  }
+  .related-list li a:hover { color: #C8401A; }
+  .related-list li .rel-cat {
+    font-size: 0.7rem; color: #C8401A; font-weight: 700;
+    text-transform: uppercase; margin-bottom: 3px;
+  }
+
+  /* LOAN SIMULATION TABLE */
+  .loan-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .loan-table th, .loan-table td {
+    font-size: 0.77rem; padding: 8px 8px;
+    border: 1px solid #e0e0e0; text-align: center;
+  }
+  .loan-table th { background: #C8401A; color: #fff; }
+  .loan-table tr:nth-child(even) td { background: #fdf8f6; }
+  .loan-table .red { color: #c0392b; font-weight: 700; }
+
+  /* TIMELINE */
+  .timeline { position: relative; padding-left: 20px; margin: 10px 0; }
+  .timeline::before {
+    content: ''; position: absolute; left: 6px; top: 0; bottom: 0;
+    width: 2px; background: #C8401A; opacity: 0.3;
+  }
+  .timeline-item { position: relative; margin-bottom: 14px; }
+  .timeline-item::before {
+    content: ''; position: absolute; left: -18px; top: 6px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #C8401A;
+  }
+  .timeline-item .t-date { font-size: 0.72rem; color: #C8401A; font-weight: 700; }
+  .timeline-item .t-text { font-size: 0.82rem; color: #444; line-height: 1.5; }
+
+  /* HASHTAGS */
+  .hashtags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag {
+    display: inline-block; background: #fdf0ec;
+    color: #C8401A; font-size: 0.78rem; font-weight: 500;
+    padding: 4px 10px; border-radius: 20px;
+    text-decoration: none; transition: background 0.2s;
+  }
+  .hashtag:hover { background: #C8401A; color: #fff; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 30px 24px;
+    font-size: 0.8rem; margin-top: 60px;
+  }
+  footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+  footer .footer-logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.1rem; font-weight: 700; color: #fff;
+    margin-bottom: 8px;
+  }
+  footer .footer-logo span { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#" class="active">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">🏛 정책·규제 분석</span>
+    <h1>7월 스트레스DSR 3단계 폭탄 시작…<br><span class="highlight">"내 대출 한도 수천만 원 사라진다"</span></h1>
+    <p class="hero-subtitle">2026년 7월 1일, 전 금융권 가계대출에 스트레스 금리 100% 적용이 시작된다. 연봉 1억 원 차주도 최대 4,800만 원이 줄어드는 이 규제, 집 살 계획이 있다면 지금 당장 대출 전략을 재점검해야 한다.</p>
+    <div class="hero-meta">
+      <span>🗓 2026년 6월 8일</span>
+      <span>✍ 부동산인사이트 정책팀</span>
+      <span>⏱ 읽는 시간 약 9분</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid">
+    <main>
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="num">100%</div>
+          <div class="unit">스트레스 금리 적용 비율</div>
+          <div class="label">3단계 시행 후 전 금융권 적용</div>
+        </div>
+        <div class="data-card">
+          <div class="num">-4,800만</div>
+          <div class="unit">대출 한도 최대 감소액</div>
+          <div class="label">연봉 1억 수도권 차주 기준</div>
+        </div>
+        <div class="data-card">
+          <div class="num">3%</div>
+          <div class="unit">수도권 규제지역 스트레스 금리</div>
+          <div class="label">기존 1.5%에서 2배 상향</div>
+        </div>
+      </div>
+
+      <article>
+        <h2>1. 스트레스DSR 3단계란 무엇인가</h2>
+        <p>스트레스DSR(총부채원리금상환비율)은 대출 심사 시 현재 금리에 '스트레스 금리'를 더한 가상의 금리를 적용해 대출 한도를 산정하는 제도다. 금리가 오를 경우에도 상환 능력을 유지할 수 있는지를 미리 검증하는 안전장치다. 2024년 도입 이후 단계적으로 강화돼온 이 제도가 2026년 7월 1일 3단계 시행을 맞는다.</p>
+        <p>3단계의 핵심 변화는 두 가지다. 첫째, 스트레스 금리 적용 비율이 기존 50~75%에서 100%로 상향된다. 둘째, 신용대출 등 기타대출을 포함한 전 금융권 모든 가계대출로 적용 범위가 확대된다. 1·2단계가 주로 은행권 주담대에 초점을 맞췄다면, 3단계는 가계부채 전반을 촘촘하게 조인다.</p>
+
+        <div class="quote-box">
+          <p>"스트레스DSR 3단계는 단순한 대출 한도 축소가 아니다. 가계부채 총량을 구조적으로 관리하려는 금융당국의 장기 전략이며, 한 번 시행되면 쉽게 되돌리기 어렵다. 시장 참여자들은 이를 일시적 규제가 아닌 뉴노멀로 받아들여야 한다."</p>
+          <div class="qsource">— 금융 전문가 코멘트, 2026년 6월</div>
+        </div>
+
+        <h2>2. 얼마나 줄어드나: 구체적인 한도 변화</h2>
+        <p>가장 직접적인 영향은 대출 한도 감소다. 연봉 1억 원 차주가 수도권 규제지역에서 변동금리로 주택담보대출을 받는 경우를 기준으로 분석하면, 대출 한도가 약 5억 8,700만 원에서 5억 100만 원으로 약 14.7%, 금액으로는 약 8,600만 원 감소한다는 추산이 나온다. 조건에 따라 최대 4,800만 원 이상 줄어드는 사례도 보고된다.</p>
+        <p>중요한 것은 이 감소가 단순히 대출 한도만의 문제가 아니라는 점이다. 대출 가능 금액이 줄면 살 수 있는 집의 가격 상한선도 내려간다. 특히 수도권 중저가 아파트(5~10억 원대)를 타깃으로 하는 실수요자들에게 직접적인 매수력 위축으로 나타날 수 있다.</p>
+
+        <div class="info-box">
+          <h4>📌 스트레스DSR 단계별 진행 경과</h4>
+          <p>1단계(2024년 2월): 은행권 주담대에 스트레스 금리 25% 적용 → 2단계(2024년 9월): 주담대 50%, 신용대출 25% → 2.5단계(2025년 7월): 수도권 주담대 75%, 신용대출 50% → 3단계(2026년 7월): 전 금융권 전 가계대출에 100% 적용</p>
+        </div>
+
+        <h2>3. 지역별 차등 적용: 지방은 숨통 트인다</h2>
+        <p>3단계 시행이 전국 일률 적용은 아니다. 서울·경기·인천 수도권 규제지역에는 스트레스 금리 3%가 전면 적용되는 반면, 지방 주담대에는 2단계 스트레스 금리인 0.75%가 연말까지 유지된다. 수도권 집중 과열을 겨냥한 맞춤형 규제다.</p>
+        <p>이는 지방 부동산 시장에 상대적으로 숨통을 열어주는 조치이기도 하다. 부산·대구·광주 등 지방 대도시에서 대출 규제 부담이 수도권보다 적은 만큼, 지방 투자자들에게는 역설적으로 투자 기회가 될 수 있다. 단, 지방 미분양 해소 속도와 인구 유출 추세를 함께 고려해야 한다.</p>
+
+        <h2>4. 이중 규제의 충격: LTV 축소와의 복합 효과</h2>
+        <p>스트레스DSR 3단계는 이미 강화된 LTV(담보인정비율) 규제와 맞물려 이중 타격을 가한다. 2025년 하반기부터 시행된 수도권 주담대 한도 규제(25억 초과 주택 2억 원까지)와 스트레스DSR이 동시 적용되면, 소득이 높은 고가 주택 매수자들조차 이전보다 훨씬 적은 금액을 빌릴 수 있다.</p>
+        <p>결과적으로 서울 고가 아파트 시장의 매수 주체가 '대출 레버리지 없이 현금을 보유한 자산가'로 좁혀지는 효과가 나타난다. 이는 시장을 안정화시킬 수도 있지만, 동시에 자산 양극화를 심화시킬 수 있다는 우려도 제기된다.</p>
+
+        <div class="quote-box">
+          <p>"대출 한도가 줄어드는 것은 분명하다. 그러나 서울 집값이 스트레스DSR만으로 잡힐지는 의문이다. 공급 없이 수요만 억제하면, 돈 있는 사람만 사는 시장이 될 뿐이다."</p>
+          <div class="qsource">— 부동산 경제학자, 2026년 5월 세미나 발언</div>
+        </div>
+
+        <h2>5. 정책의 실효성 논란: 집값은 정말 잡힐까</h2>
+        <p>금융당국은 스트레스DSR 3단계를 통해 가계부채 증가율을 GDP 성장률 수준으로 억제한다는 목표를 세웠다. 이론적으로는 대출 한도 감소 → 매수 여력 감소 → 가격 하방 압력이라는 경로가 작동해야 한다. 그러나 현실은 녹록지 않다.</p>
+        <p>현재 서울 아파트 시장은 대출 없이 현금 또는 소액 대출로 매수 가능한 고자산가 비중이 증가하고 있고, 매도자들은 매물을 잠근 채 버티고 있다. 규제로 수요를 틀어막아도, 공급이 늘지 않는 한 가격은 쉽게 내려오지 않는다는 것이 시장의 현실이다. 정책 효과가 온전히 나타나려면 공급 대책과의 패키지 접근이 반드시 필요하다.</p>
+
+        <h2>실수요자·투자자를 위한 대응 전략</h2>
+        <ul>
+          <li><strong>7월 전 대출 실행 고려:</strong> 3단계 시행 전 대출을 실행하면 기존 조건이 적용된다. 단, 무리한 대출보다는 상환 능력 내에서 결정해야 한다.</li>
+          <li><strong>소득 증빙 최대화:</strong> DSR은 소득 기반 규제다. 건강보험료 납부액, 부업 소득, 임대 소득 등을 적법하게 신고해 소득을 최대화하면 대출 한도를 높일 수 있다.</li>
+          <li><strong>지방 투자자:</strong> 수도권보다 규제가 약한 지방 주요 도시의 입지 좋은 아파트를 노릴 기회다. 단, 지역 인구·일자리 트렌드 분석이 선행돼야 한다.</li>
+          <li><strong>전세 레버리지 전략 재검토:</strong> 전세보증금을 활용한 갭투자도 1주택자의 수도권 전세대출에 DSR이 적용되면서 예전만큼의 레버리지가 나오지 않는다.</li>
+          <li><strong>고정금리 vs. 변동금리:</strong> 스트레스 금리는 변동금리에 더 크게 적용된다. 장기 보유 계획이라면 고정금리로 초기에 한도를 최대화하는 전략을 검토할 것.</li>
+        </ul>
+
+        <h2>결론: 규제 강화는 시장 재편의 신호</h2>
+        <p>스트레스DSR 3단계는 단순한 대출 규제 강화가 아니라, 한국 부동산 시장의 참여 구조를 바꾸는 게임체인저다. 대출 레버리지에 의존한 투자자는 시장에서 밀려나고, 실질 자산을 보유한 층이 시장 주도권을 쥐는 구조로 재편된다. 이는 단기적으로 거래량 위축과 매수세 감소로 나타나겠지만, 중장기적으로는 가계부채 건전성을 높이는 긍정적 방향이기도 하다.</p>
+        <p>다만 공급 확대 없는 수요 억제만으로는 가격 안정의 한계가 명확하다. 7월 시행을 앞두고 지금 이 순간이 바로 자신의 재무 상황을 점검하고, 전략을 재수립해야 할 골든타임이다. 규제는 이미 예고됐다. 준비하지 않으면 그 충격은 고스란히 개인의 몫이 된다.</p>
+
+        <div class="hashtags">
+          <a href="#" class="hashtag">#스트레스DSR</a>
+          <a href="#" class="hashtag">#3단계시행</a>
+          <a href="#" class="hashtag">#대출한도감소</a>
+          <a href="#" class="hashtag">#부동산정책</a>
+          <a href="#" class="hashtag">#주담대규제</a>
+          <a href="#" class="hashtag">#LTV규제</a>
+          <a href="#" class="hashtag">#가계부채</a>
+          <a href="#" class="hashtag">#7월부동산</a>
+        </div>
+
+        <div class="disclaimer">
+          <strong>※ 면책 고지</strong><br>
+          본 아티클은 공개된 금융 규제 자료 및 언론 보도를 바탕으로 작성된 정보 제공 목적의 콘텐츠입니다. 실제 대출 한도는 금융기관의 내부 기준과 개인 신용 상황에 따라 달라질 수 있으며, 투자 권유나 금융·법률 자문이 아닙니다. 중요한 금융 결정 전 반드시 전문 금융기관 및 전문가와 상담하시기 바랍니다.
+        </div>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>2026년 7월 1일, 스트레스DSR 3단계 전 금융권 적용</li>
+          <li>수도권 규제지역 스트레스 금리 3%, 지방은 0.75% 유지</li>
+          <li>연봉 1억 차주 기준 한도 최대 4,800만 원 감소</li>
+          <li>LTV 규제와의 이중 타격으로 매수 여력 큰 폭 축소</li>
+          <li>공급 없는 수요 억제, 정책 실효성 논란 지속</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>🔗 관련 기사</h3>
+        <ul class="related-list">
+          <li>
+            <div class="rel-cat">시장동향</div>
+            <a href="#">거래절벽 속 69주 연속 상승…서울 집값의 역설</a>
+          </li>
+          <li>
+            <div class="rel-cat">법률·세금</div>
+            <a href="#">양도세 중과 유예 종료, 다주택자 절세 전략 총정리</a>
+          </li>
+          <li>
+            <div class="rel-cat">투자분석</div>
+            <a href="#">규제 강화 속 수익 내는 부동산 투자법 5가지</a>
+          </li>
+          <li>
+            <div class="rel-cat">정책·규제</div>
+            <a href="#">25억 초과 주택 대출 2억 상한, 고가 아파트 시장 영향</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>📊 대출 한도 시뮬레이션</h3>
+        <table class="loan-table">
+          <tr><th>연봉</th><th>2단계 한도</th><th>3단계 한도</th></tr>
+          <tr><td>5,000만</td><td>2억 8,000</td><td class="red">2억 3,500</td></tr>
+          <tr><td>7,000만</td><td>4억 1,000</td><td class="red">3억 5,000</td></tr>
+          <tr><td>1억</td><td>5억 8,700</td><td class="red">5억 100</td></tr>
+          <tr><td>1억 5,000</td><td>7억 2,000</td><td class="red">6억 1,000</td></tr>
+        </table>
+        <p style="font-size:0.7rem;color:#888;margin-top:6px;">※ 수도권 변동금리 주담대 기준 추정치</p>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>⏱ 주요 일정</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="t-date">2026년 5월 9일</div>
+            <div class="t-text">다주택자 양도세 중과 유예 종료</div>
+          </div>
+          <div class="timeline-item">
+            <div class="t-date">2026년 6월 현재</div>
+            <div class="t-text">서울 거래량 57% 급감, 가격 상승 지속</div>
+          </div>
+          <div class="timeline-item">
+            <div class="t-date">2026년 7월 1일</div>
+            <div class="t-text">스트레스DSR 3단계 전면 시행</div>
+          </div>
+          <div class="timeline-item">
+            <div class="t-date">2026년 12월 말</div>
+            <div class="t-text">지방 스트레스 금리 0.75% 특례 종료 예정</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p>© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:8px;"><a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> · <a href="#">광고문의</a></p>
+</footer>
+
+</body>
+</html>

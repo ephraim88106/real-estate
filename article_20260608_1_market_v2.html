@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>거래절벽 속 69주 연속 상승…서울 집값의 역설, 언제까지 계속되나 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #1a1a1a; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: #fff; text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    font-size: 0.8rem; font-weight: 500;
+    padding: 6px 12px; border-radius: 4px;
+    transition: all 0.2s;
+  }
+  nav a:hover, nav a.active { color: #fff; background: rgba(255,255,255,0.15); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 70px 24px 60px;
+    color: #fff;
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: #1A4D8F;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff; font-size: 0.72rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 20px;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    font-weight: 700; line-height: 1.35;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .hero-subtitle {
+    font-size: 1.05rem; color: rgba(255,255,255,0.85);
+    max-width: 720px; line-height: 1.7;
+    margin-bottom: 24px;
+  }
+  .hero-meta {
+    font-size: 0.78rem; color: rgba(255,255,255,0.6);
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 36px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+  /* DATA BOX */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: #e8f0fc;
+    border: 1px solid #c0d4f0;
+    border-top: 4px solid #1A4D8F;
+    border-radius: 8px; padding: 20px;
+    text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.9rem; font-weight: 700; color: #1A4D8F;
+    line-height: 1;
+  }
+  .data-card .unit { font-size: 0.85rem; color: #555; margin-top: 4px; }
+  .data-card .label { font-size: 0.78rem; color: #888; margin-top: 8px; }
+
+  /* ARTICLE BODY */
+  article { background: #fff; border-radius: 12px; padding: 40px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem; font-weight: 700;
+    color: #0D2B55;
+    border-left: 4px solid #1A4D8F;
+    padding-left: 14px; margin: 36px 0 16px;
+  }
+  article p { font-size: 0.96rem; line-height: 1.9; color: #333; margin-bottom: 16px; }
+
+  .quote-box {
+    background: #eef3fb;
+    border-left: 4px solid #1A4D8F;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin: 28px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.02rem;
+    color: #1A3060; line-height: 1.85; margin: 0;
+  }
+  .quote-box .qsource { font-size: 0.78rem; color: #888; margin-top: 8px; font-style: normal; font-family: 'Noto Sans KR', sans-serif; }
+
+  article ul { margin: 16px 0 20px 20px; }
+  article ul li { font-size: 0.94rem; line-height: 1.85; color: #333; margin-bottom: 8px; }
+
+  .disclaimer {
+    background: #f0f0f0; border-radius: 8px;
+    padding: 16px 20px; margin-top: 40px;
+    font-size: 0.78rem; color: #888; line-height: 1.7;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-widget {
+    background: #fff; border-radius: 10px;
+    padding: 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  }
+  .sidebar-widget h3 {
+    font-size: 0.88rem; font-weight: 700;
+    color: #0D2B55; border-bottom: 2px solid #1A4D8F;
+    padding-bottom: 8px; margin-bottom: 14px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    font-size: 0.85rem; color: #333;
+    padding: 7px 0; border-bottom: 1px solid #f0f0f0;
+    line-height: 1.6;
+    display: flex; align-items: flex-start; gap: 8px;
+  }
+  .summary-list li::before {
+    content: "▶"; color: #1A4D8F; font-size: 0.65rem;
+    margin-top: 5px; flex-shrink: 0;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { border-bottom: 1px solid #f0f0f0; padding: 10px 0; }
+  .related-list li a {
+    font-size: 0.83rem; color: #333; text-decoration: none;
+    line-height: 1.5; display: block;
+  }
+  .related-list li a:hover { color: #1A4D8F; }
+  .related-list li .rel-cat {
+    font-size: 0.7rem; color: #1A4D8F; font-weight: 700;
+    text-transform: uppercase; margin-bottom: 3px;
+  }
+
+  /* COMPARISON TABLE */
+  .compare-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  .compare-table th, .compare-table td {
+    font-size: 0.78rem; padding: 8px 10px;
+    border: 1px solid #e0e0e0; text-align: center;
+  }
+  .compare-table th { background: #0D2B55; color: #fff; }
+  .compare-table tr:nth-child(even) td { background: #f8f8f8; }
+  .compare-table .up { color: #c0392b; font-weight: 700; }
+  .compare-table .dn { color: #1a7f4d; font-weight: 700; }
+
+  /* HASHTAGS */
+  .hashtags { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag {
+    display: inline-block; background: #e8f0fc;
+    color: #1A4D8F; font-size: 0.78rem; font-weight: 500;
+    padding: 4px 10px; border-radius: 20px;
+    text-decoration: none; transition: background 0.2s;
+  }
+  .hashtag:hover { background: #1A4D8F; color: #fff; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 30px 24px;
+    font-size: 0.8rem; margin-top: 60px;
+  }
+  footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+  footer .footer-logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.1rem; font-weight: 700; color: #fff;
+    margin-bottom: 8px;
+  }
+  footer .footer-logo span { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#" class="active">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">📈 시장동향</span>
+    <h1>거래절벽 속 69주 연속 상승…<br>서울 집값의 역설, 언제까지 계속되나?</h1>
+    <p class="hero-subtitle">다주택자 양도세 중과 부활로 거래량이 57% 폭락했지만, 오히려 집값은 상승세를 이어가고 있다. 공급 부족과 매물 잠김이 만들어낸 이 기이한 역설의 실체를 파헤친다.</p>
+    <div class="hero-meta">
+      <span>🗓 2026년 6월 8일</span>
+      <span>✍ 부동산인사이트 편집부</span>
+      <span>⏱ 읽는 시간 약 8분</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid">
+    <main>
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="num">69주</div>
+          <div class="unit">서울 아파트 연속 상승</div>
+          <div class="label">2026년 6월 기준 (한국부동산원)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">-57.6%</div>
+          <div class="unit">거래량 감소율</div>
+          <div class="label">양도세 중과 재시행 전후 한 달 비교</div>
+        </div>
+        <div class="data-card">
+          <div class="num">+0.25%</div>
+          <div class="unit">주간 매매가 상승률</div>
+          <div class="label">2026년 6월 첫째 주 기준</div>
+        </div>
+      </div>
+
+      <article>
+        <h2>1. 역설의 시장: 거래는 얼고 가격은 뛴다</h2>
+        <p>부동산 시장의 기본 원리에 따르면 거래량 급감은 가격 하락의 전조다. 그러나 2026년 6월 서울 아파트 시장은 이 법칙을 정면으로 거부하고 있다. 다주택자 양도소득세 중과 유예가 5월 9일 종료된 이후, 한 달 동안 서울 아파트 거래량은 8,959건에서 3,799건으로 57.6% 폭락했다. 증여 건수마저 55.5% 줄었다. 시장 참여자들이 일제히 뒤로 물러선 것이다.</p>
+        <p>그런데 같은 기간 서울 아파트 매매가격지수는 전주 대비 0.25% 상승했고, 69주 연속 오름세를 기록했다. 거래가 없는데 가격이 오르는 이 기현상은 단순한 통계 착시가 아니다. 수요와 공급의 구조적 불균형이 만들어낸 필연적 결과다.</p>
+
+        <div class="quote-box">
+          <p>"양도세 중과 부활 이후 매도 물량이 대거 나올 것으로 예상됐지만, 집주인들은 움직이지 않고 있다. 서울 주요 지역 매물 부족 현상은 지속될 것이고, 가격이 쉽게 꺾이기는 어렵다."</p>
+          <div class="qsource">— 서울 주요 공인중개사무소 대표 인터뷰, 2026년 6월</div>
+        </div>
+
+        <h2>2. 매물 잠김 현상: 집주인들이 버티는 이유</h2>
+        <p>다주택자들이 양도세 중과를 피해 매도하지 않는 이유는 단순하다. 중과세를 내면서까지 팔 이유가 없기 때문이다. 2주택자 기준 조정대상지역 내 양도세 중과세율은 기본세율에 20%포인트가 추가된다. 서울 아파트 한 채에 수억 원의 차익이 발생한 다주택자에게 이 세금 부담은 천문학적 수준이다.</p>
+        <p>이들의 합리적 선택은 보유다. 전세를 주거나 월세 전환을 통해 현금 흐름을 만들면서 향후 규제 완화 또는 정권 교체를 기다리는 것이다. 결국 시장에서 매도 물량이 줄어들면, 가격을 지탱하는 가장 강력한 요인이 된다. 공급 없이는 하락도 없다는 논리다.</p>
+
+        <h2>3. 강남·강북 동반 상승: 온기 확산의 구조</h2>
+        <p>2026년 상반기 서울 집값 상승의 특이점은 강남 3구를 넘어 강북권까지 온기가 확산됐다는 것이다. 강남·서초·송파의 국민평형(전용 84㎡) 평균 매매가가 26억 원에 육박하는 가운데, 성북구·서대문구·강서구 등 중저가 지역의 오름폭이 오히려 더 크게 나타나고 있다. 이는 강남 진입 장벽이 높아진 실수요자들이 인접 중급지로 이동하는 갈아타기 수요 때문이다.</p>
+        <p>서울 25개 자치구가 모두 상승한 것은 단순한 투기 수요가 아니라, 실거주 목적의 매수세가 시장 전반을 떠받치고 있다는 신호다. 청약 대기 수요, 전세 만료 후 매매 전환 수요, 그리고 금리 인하 기대감이 복합적으로 작용하고 있다.</p>
+
+        <div class="quote-box">
+          <p>"서울 집값이 19년 만에 최대 폭으로 상승한 배경에는 향후 수년간 서울 내 신규 아파트 공급이 원활하지 못할 것이라는 시장의 뿌리 깊은 불신이 자리한다. 이 불신이 해소되지 않는 한 상승세는 쉽게 꺾이지 않는다."</p>
+          <div class="qsource">— 부동산 시장 분석가, 2026년 5월</div>
+        </div>
+
+        <h2>4. 공급 부족이라는 구조적 뇌관</h2>
+        <p>서울 아파트 가격의 가장 근본적인 상승 요인은 공급 부족이다. 재개발·재건축 사업이 각종 규제와 조합 분쟁으로 수년씩 지연되고, 신규 택지 개발 여지마저 제한적인 서울에서 입주 물량은 해마다 줄어들고 있다. 2025~2027년 서울 아파트 입주 예정 물량은 연평균 2만 가구 수준으로, 수요 대비 현저히 부족하다는 것이 업계의 공통된 분석이다.</p>
+        <p>공급 확충 없이 수요를 억제하는 금융·세제 규제만으로는 가격을 잡을 수 없다는 사실을 시장은 이미 증명하고 있다. 거래량 감소가 가격 하락으로 이어지지 않는 현 상황이 그 방증이다.</p>
+
+        <h2>5. 향후 시나리오: 상승 지속 vs. 조정 국면 진입</h2>
+        <p>현 시장의 방향성을 결정할 핵심 변수는 세 가지다. 첫째, 금리 방향이다. 한국은행의 추가 기준금리 인하가 현실화되면 대출 여력이 확대되며 매수 수요를 자극할 수 있다. 둘째, 스트레스DSR 3단계 시행이다. 7월부터 전 금융권 주담대에 스트레스 금리가 100% 적용되면 대출 한도가 추가로 줄어 매수세 위축으로 이어질 수 있다. 셋째, 공급 정책의 실효성이다. 정부가 공약한 서울 내 주택 공급 대책이 얼마나 빠르게 시장에 반영될지가 중장기 방향을 가른다.</p>
+
+        <h2>실수요자·투자자를 위한 시사점</h2>
+        <ul>
+          <li><strong>매수 타이밍 고민 중인 실수요자:</strong> 스트레스DSR 3단계(7월 시행) 전 대출 한도 확인이 필수다. 같은 소득·조건이라도 한도가 수천만 원 줄 수 있다.</li>
+          <li><strong>갈아타기 수요자:</strong> 거래량 감소로 매수·매도 양쪽이 조심스러운 시기다. 급매 출현 가능성은 낮지만, 협상력은 이전보다 개선됐다.</li>
+          <li><strong>전세 만료 앞둔 세입자:</strong> 매물 부족 속 전세가도 동반 상승 중이다. 재계약 vs. 매매 전환을 서둘러 검토할 필요가 있다.</li>
+          <li><strong>다주택 보유자:</strong> 중과세 부담으로 당장 매도보다는 보유 전략이 유리할 수 있으나, 향후 정책 변화에 민감하게 대응해야 한다.</li>
+          <li><strong>신규 투자자:</strong> 거래절벽 시기는 진짜 급매를 발굴할 기회이기도 하다. 단, 충분한 자기자본과 장기 보유 계획 없이는 진입을 자제할 것을 권고한다.</li>
+        </ul>
+
+        <h2>결론: 거래 없는 상승, 지속 가능한가</h2>
+        <p>거래절벽 속 69주 연속 상승은 서울 부동산 시장의 구조적 특수성을 압축적으로 보여주는 현상이다. 세제 규제가 오히려 매물을 잠가버리고, 공급 부족은 해소될 기미가 없다. 이 역설은 시장이 정책에 내성을 키웠다는 방증이기도 하다.</p>
+        <p>그러나 영원한 상승은 없다. 스트레스DSR 3단계, 미국 금리 동향, 경기 침체 우려 등 하방 리스크도 상존한다. 분명한 것은, 지금 이 시장은 '오를 것인가 내릴 것인가'가 아니라 '언제, 어떤 방식으로 속도를 조절할 것인가'의 문제에 직면해 있다는 사실이다. 냉정한 데이터와 구조적 분석에 기반한 의사결정만이 이 복잡한 시장에서 생존하는 길이다.</p>
+
+        <div class="hashtags">
+          <a href="#" class="hashtag">#서울아파트</a>
+          <a href="#" class="hashtag">#69주연속상승</a>
+          <a href="#" class="hashtag">#거래절벽</a>
+          <a href="#" class="hashtag">#양도세중과</a>
+          <a href="#" class="hashtag">#집값역설</a>
+          <a href="#" class="hashtag">#부동산시장동향</a>
+          <a href="#" class="hashtag">#매물잠김</a>
+          <a href="#" class="hashtag">#공급부족</a>
+        </div>
+
+        <div class="disclaimer">
+          <strong>※ 면책 고지</strong><br>
+          본 아티클은 공개된 통계 자료 및 언론 보도를 바탕으로 작성된 정보 제공 목적의 콘텐츠입니다. 투자 권유나 법률·세무 자문을 목적으로 하지 않으며, 실제 투자 결정은 전문가 상담을 통해 개인 상황에 맞게 이루어져야 합니다. 부동산 시장은 급변할 수 있으며, 본 콘텐츠의 정보가 항상 최신 상태임을 보장하지 않습니다.
+        </div>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>서울 아파트 69주 연속 상승, 역대 최장 랠리 수준</li>
+          <li>양도세 중과 재시행 후 거래량 57.6% 급감</li>
+          <li>매도 물량 실종…집주인 '버티기' 전략 지속</li>
+          <li>강남 3구 84㎡ 평균 26억 원 육박, 강북도 동반 상승</li>
+          <li>7월 스트레스DSR 3단계 시행이 최대 변수</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>🔗 관련 기사</h3>
+        <ul class="related-list">
+          <li>
+            <div class="rel-cat">정책·규제</div>
+            <a href="#">스트레스DSR 3단계 7월 시행, 내 대출 한도 얼마나 줄어드나</a>
+          </li>
+          <li>
+            <div class="rel-cat">투자분석</div>
+            <a href="#">거래절벽 시대의 급매 공략법: 진짜 저가 매물은 어디에 있나</a>
+          </li>
+          <li>
+            <div class="rel-cat">시장동향</div>
+            <a href="#">강북 상승세의 비밀: 중저가 아파트에 쏠리는 실수요 분석</a>
+          </li>
+          <li>
+            <div class="rel-cat">법률·세금</div>
+            <a href="#">다주택자 양도세 중과, 절세 전략 총정리 2026</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>📊 거래량 vs 가격 변화</h3>
+        <table class="compare-table">
+          <tr><th>구분</th><th>중과 유예 전</th><th>중과 재시행 후</th></tr>
+          <tr><td>월 거래량</td><td>8,959건</td><td class="dn">3,799건</td></tr>
+          <tr><td>거래 변화율</td><td>—</td><td class="dn">-57.6%</td></tr>
+          <tr><td>주간 가격 변동</td><td>+0.28%</td><td class="up">+0.25%</td></tr>
+          <tr><td>연속 상승 주수</td><td>67주</td><td class="up">69주</td></tr>
+        </table>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p>© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:8px;"><a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> · <a href="#">광고문의</a></p>
+</footer>
+
+</body>
+</html>
