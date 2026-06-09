@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 134,
+    url: 'article_20260609_2_재개발재건축_v2.html',
+    category: '재개발',
+    title: '80조 정비사업 시장, 이주비 대출 규제에 \'올스톱\' 위기—공급 절벽의 뇌관이 터진다',
+    summary: '2026년 서울 정비사업 80조원 시장이 이주비 대출 규제로 91%가 이주 차질. 재건축·재개발 올스톱 위기의 원인과 파장, 정책 해법을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-09',
+    title_en: 'An 80-Trillion-Won Redevelopment Market on the Brink as Relocation Loan Curbs Bite — The Supply-Cliff Detonator',
+    summary_en: 'Relocation loan restrictions have stalled 91% of Seoul\'s 80-trillion-won redevelopment market. An in-depth analysis of the causes and fallout of the reconstruction shutdown crisis and the policy fixes on the table.'
+  },
+  {
+    id: 133,
+    url: 'article_20260609_1_분양청약_v2.html',
+    category: '분양',
+    title: '서울 전용 84㎡ 평균 분양가 21억 돌파—\'20억 청약 시대\', 당신은 준비됐나?',
+    summary: '2026년 6월 분양전망지수 69.4로 급락, 서울 전용84㎡ 평균 분양가 21억 돌파. 공공분양 2.9만호 확대와 고분양가의 충돌 속 실수요자 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-09',
+    title_en: 'Seoul\'s Average 84㎡ Presale Price Tops 2.1 Billion Won — Are You Ready for the "2-Billion-Won Subscription Era"?',
+    summary_en: 'June 2026\'s presale outlook index plunged to 69.4 as Seoul\'s average 84㎡ presale price topped 2.1 billion won. An analysis of end-user strategy amid the clash between a 29,000-unit public presale expansion and soaring prices.'
+  },
+  {
     id: 132,
     url: 'article_20260608_2_policy_v2.html',
     category: '정책',
