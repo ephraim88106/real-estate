@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 136,
+    url: 'article_20260610_2_overseas_v2.html',
+    category: '해외',
+    title: '미국·일본·동남아 중 어디가 진짜 기회인가—2026년 한국인 해외 부동산 투자 완전 가이드',
+    summary: '국내 규제 강화로 해외로 눈 돌리는 한국인 투자자들이 늘고 있다. 미국 모기지 금리 하락, 일본 엔화 약세 지속, 동남아 신흥 시장 급성장… 지금 어디를 봐야 하는지 지역별 냉정한 분석을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-10',
+    title_en: 'Where Is the Real Opportunity — the U.S., Japan, or Southeast Asia? The Complete 2026 Guide to Overseas Real Estate for Korean Investors',
+    summary_en: 'As tighter domestic regulation pushes more Korean investors abroad, falling U.S. mortgage rates, a persistently weak yen, and surging Southeast Asian emerging markets all beckon. A clear-eyed, region-by-region analysis of where to look now.'
+  },
+  {
+    id: 135,
+    url: 'article_20260610_1_investment_v2.html',
+    category: '투자분석',
+    title: '갭투자 막혔다, 이제 진짜 고수들은 여기에 몰린다—2026년 부동산 투자 생존 전략 완전 해부',
+    summary: '서울 전역 토지거래허가구역 지정, 대출 규제 강화, 경매 낙찰가율 하락… 판이 완전히 바뀌었다. 규제의 파고 속에서 합리적 수익을 추구하는 2026년 부동산 투자 전략을 낱낱이 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-10',
+    title_en: 'Gap Investing Is Dead — Here\'s Where the Real Pros Are Moving: A Full Breakdown of 2026 Real Estate Survival Strategy',
+    summary_en: 'Citywide land transaction permit zones, tighter lending rules, falling auction winning-bid ratios — the game has completely changed. A thorough analysis of 2026 real estate strategies for pursuing rational returns amid the regulatory storm.'
+  },
+  {
     id: 134,
     url: 'article_20260609_2_재개발재건축_v2.html',
     category: '재개발',
