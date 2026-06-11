@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 138,
+    url: 'article_20260611_2_시장동향_v2.html',
+    category: '시장동향',
+    title: '서울만 오른다: 2026년 6월 부동산 양극화 쇼크 완전분석',
+    summary: '2026년 6월 서울 아파트 시세·거래량 최신 동향과 수도권-지방 양극화 심화의 구조적 원인을 짚는다. 거래는 줄었는데 서울 호가는 왜 안 내려오는지, 실수요자 대응 전략까지 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-11',
+    title_en: 'Only Seoul Rises: A Complete Analysis of the June 2026 Real Estate Polarization Shock',
+    summary_en: 'The latest June 2026 trends in Seoul apartment prices and transaction volumes, and the structural causes of deepening capital-region versus provincial polarization. Why Seoul asking prices stay high even as deals dry up — plus strategies for real demand buyers.'
+  },
+  {
+    id: 137,
+    url: 'article_20260611_1_칼럼_v2.html',
+    category: '칼럼',
+    title: '규제의 역설: 10·15 대책 8개월, 집값은 왜 안 잡히나',
+    summary: '10·15 부동산 대책 시행 8개월을 맞아 토지거래허가구역과 스트레스 DSR 3단계가 만들어낸 시장 왜곡의 실체를 심층 분석한다. 규제 3종 세트가 오히려 양극화를 키운 역설의 메커니즘을 해부한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-11',
+    title_en: 'The Paradox of Regulation: Eight Months After the Oct. 15 Measures, Why Won\'t Prices Cool?',
+    summary_en: 'Eight months into the Oct. 15 property measures, an in-depth look at the market distortions created by land-transaction permit zones and the third phase of stress DSR — dissecting the paradox by which a trio of regulations widened polarization instead.'
+  },
+  {
     id: 136,
     url: 'article_20260610_2_overseas_v2.html',
     category: '해외',
