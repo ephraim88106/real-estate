@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>규제의 역설: 10·15 대책 8개월, 집값은 왜 안 잡히나 | 부동산인사이트</title>
+<meta name="description" content="10·15 부동산 대책 시행 8개월을 맞아 토지거래허가구역과 스트레스 DSR 3단계가 만들어낸 시장 왜곡의 실체를 심층 분석한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #6A6A10;
+    --accent-light: #f5f5e0;
+    --accent-mid: #9a9a20;
+    --header-bg: #0D2B55;
+    --text: #1a1a1a;
+    --text-light: #555;
+    --border: #e0e0d0;
+    --bg: #fafaf5;
+    --card-bg: #ffffff;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: var(--header-bg);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between; height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.3rem; font-weight: 700; color: #fff; text-decoration: none;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none; padding: 6px 12px;
+    font-size: 0.82rem; border-radius: 4px; transition: all 0.2s;
+  }
+  nav a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+    padding: 64px 24px 52px;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner { max-width: 820px; margin: 0 auto; position: relative; }
+  .hero-category {
+    display: inline-block;
+    background: var(--accent); color: #fff;
+    padding: 4px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700;
+    color: #fff; line-height: 1.4; margin-bottom: 16px;
+  }
+  .hero-sub { color: rgba(255,255,255,0.75); font-size: 0.95rem; margin-bottom: 24px; }
+  .hero-meta { display: flex; gap: 20px; justify-content: center; color: rgba(255,255,255,0.6); font-size: 0.82rem; }
+  .hero-meta span { display: flex; align-items: center; gap: 5px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 36px; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+
+  /* DATA CARDS */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-bottom: 36px;
+  }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: var(--accent-light); border: 1px solid #d0d070;
+    border-radius: 10px; padding: 20px; text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem; font-weight: 700; color: var(--accent); display: block;
+  }
+  .data-card .label { font-size: 0.78rem; color: var(--text-light); margin-top: 4px; }
+  .data-card .desc { font-size: 0.72rem; color: #888; margin-top: 6px; line-height: 1.4; }
+
+  /* ARTICLE BODY */
+  article { background: var(--card-bg); border-radius: 12px; padding: 36px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.3rem; font-weight: 700; color: var(--text);
+    border-left: 4px solid var(--accent); padding-left: 14px;
+    margin: 36px 0 16px;
+  }
+  article h2:first-of-type { margin-top: 0; }
+  article p { color: var(--text); margin-bottom: 16px; font-size: 0.97rem; }
+  article ul { margin: 12px 0 20px 20px; }
+  article ul li { margin-bottom: 8px; font-size: 0.95rem; color: #333; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: var(--accent-light); border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px; margin: 28px 0;
+  }
+  .quote-box blockquote {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem; color: #3a3a10;
+    line-height: 1.8;
+  }
+  .quote-box cite { display: block; margin-top: 10px; font-size: 0.8rem; color: var(--text-light); font-style: normal; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px;
+    padding: 16px 20px; margin-top: 36px;
+    font-size: 0.78rem; color: #888; line-height: 1.7;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card {
+    background: var(--card-bg); border-radius: 12px; padding: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .sidebar-card h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 0.95rem; font-weight: 700; color: var(--text);
+    border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 14px;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 8px 0; border-bottom: 1px solid var(--border);
+    font-size: 0.85rem; color: #333; padding-left: 14px; position: relative;
+    line-height: 1.5;
+  }
+  .summary-list li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
+  .summary-list li:last-child { border-bottom: none; }
+
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { border-bottom: 1px solid var(--border); }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a {
+    display: block; padding: 10px 0; font-size: 0.83rem; color: #333;
+    text-decoration: none; line-height: 1.5;
+    transition: color 0.2s;
+  }
+  .related-list a:hover { color: var(--accent); }
+  .related-tag {
+    display: inline-block; background: var(--accent-light); color: var(--accent);
+    font-size: 0.68rem; font-weight: 700; padding: 1px 6px; border-radius: 3px; margin-right: 4px;
+  }
+
+  /* REGULATION TABLE */
+  .reg-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 12px; }
+  .reg-table th { background: var(--accent); color: #fff; padding: 8px 10px; text-align: left; }
+  .reg-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .reg-table tr:last-child td { border-bottom: none; }
+  .reg-table tr:nth-child(even) td { background: var(--accent-light); }
+
+  /* TAGS */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .tag {
+    background: var(--accent-light); color: var(--accent);
+    padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 500;
+  }
+
+  /* FOOTER */
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.6); padding: 32px 24px; margin-top: 48px; text-align: center; font-size: 0.82rem; line-height: 1.8; }
+  footer strong { color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-category">칼럼·해설</span>
+    <h1>규제의 역설: 10·15 대책 8개월,<br>집값은 왜 안 잡히나</h1>
+    <p class="hero-sub">토지거래허가구역·스트레스 DSR·규제지역 3종 세트가 만들어낸 시장 왜곡의 실체</p>
+    <div class="hero-meta">
+      <span>📅 2026년 6월 11일</span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>📖 예상 읽기 시간 10분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="grid">
+
+    <!-- MAIN ARTICLE -->
+    <main>
+      <article>
+
+        <!-- DATA CARDS -->
+        <div class="data-cards">
+          <div class="data-card">
+            <span class="num">-76%</span>
+            <div class="label">규제지역 거래량 감소</div>
+            <div class="desc">10·15 대책 이후 서울·수도권 규제지역 아파트 매매 거래 낙폭</div>
+          </div>
+          <div class="data-card">
+            <span class="num">+11.3%</span>
+            <div class="label">2025년 서울 아파트 상승률</div>
+            <div class="desc">전국 평균 1.22% 대비 9배 이상 상회한 서울 가격 상승</div>
+          </div>
+          <div class="data-card">
+            <span class="num">3%p</span>
+            <div class="label">스트레스 DSR 하한</div>
+            <div class="desc">수도권·규제지역 주담대 스트레스 금리 상향 (2026년 시행)</div>
+          </div>
+        </div>
+
+        <!-- 도입부 -->
+        <p>
+          지난해 10월 15일, 정부는 서울 전역과 경기도 12개 지역을 동시에 조정대상지역·투기과열지구·토지거래허가구역으로 지정하는 초강력 부동산 대책을 발표했다. 당시 국토교통부 장관은 "문재인 정부 때보다 강도가 높은 극약처방"이라고 자평했다. 8개월이 흘렀다. 거래량은 급감했지만, 집값은 잡혔을까? 대답은 불편하게도 "아니오"에 가깝다.
+        </p>
+        <p>
+          2025년 서울 아파트 매매가 상승률은 11.26%에 달했다. 전국 평균 1.22%의 무려 9배를 웃도는 수치다. 17개 광역 지역 중 서울, 경기, 울산, 세종, 전북 단 5곳만 집값이 올랐고 나머지 12개 지역은 하락했다. 규제는 시장을 식히는 데 실패한 동시에, 지역 간 불평등이라는 부작용만 키웠다는 평가가 나온다. 이 글은 그 구조적 원인을 해부하고, 실수요자와 투자자가 이 국면에서 취해야 할 태도를 짚는다.
+        </p>
+
+        <h2>규제는 어떻게 설계됐고, 무엇을 목표로 했나</h2>
+        <p>
+          10·15 대책의 핵심은 세 가지 규제의 동시 적용이다. 조정대상지역은 양도세 중과와 대출 한도 축소를, 투기과열지구는 전매 제한 및 재건축 조합원 자격 강화를, 토지거래허가구역은 매수 시 실거주 의무와 관할 구청장 허가를 요건으로 부과한다. 여기에 스트레스 DSR 3단계가 더해지며 수도권 주담대에는 최소 3%포인트의 가산 금리가 적용됐다. 25억 원 초과 주택은 대출 한도가 2억 원으로 사실상 '현금 거래'를 강제하는 수준이 됐다.
+        </p>
+        <p>
+          정책 설계의 기본 논리는 수요 억제였다. 대출을 막고 세금을 높이고 매수 허들을 높이면, 투기 수요가 빠지면서 가격이 안정된다는 이론이다. 단기적으로 거래량은 실제로 급감했다. 규제지역 거래량은 76% 줄었고, 비규제지역 거래량은 오히려 22% 늘었다. 풍선 효과가 즉각 나타난 셈이다.
+        </p>
+
+        <div class="quote-box">
+          <blockquote>
+            "거래량이 곧 가격이 아니다. 거래가 사라진 시장에서 잔존 매물의 호가는 오히려 올랐다. 팔 사람이 없으면 거래 가격은 급매 외에 형성이 안 되고, 매도자들은 급매를 내놓을 이유가 없다."
+          </blockquote>
+          <cite>— KB부동산 리서치센터 수석 연구원 견해 종합</cite>
+        </div>
+
+        <h2>규제가 역설적으로 집값을 받치는 메커니즘</h2>
+        <p>
+          수요 억제 정책이 가격을 올리는 역설은 이렇게 작동한다. 첫째, 매도 유인도 동시에 사라진다. 양도세 중과가 붙으면 팔 이유가 없다. 보유세 부담이 임계점을 넘지 않는 한 장기 보유가 최적 전략이 된다. 둘째, 전월세 시장에 수요가 몰린다. 매수를 못 하게 된 수요자들이 임대 시장으로 이동하면서 전셋값이 급등하고, 높아진 전세가는 다시 매매가의 하방을 지지한다. 셋째, 공급이 줄어든다. 2026년 수도권 신축 입주 물량은 11만 1700호로 2025년 대비 30% 이상 감소한다. 규제로 재건축·재개발 속도가 늦어진 결과다.
+        </p>
+        <p>
+          이 세 요인이 맞물리면 '거래는 없지만 호가는 높다'는 기묘한 시장이 완성된다. 실수요자는 비싸서 못 사고, 투자자는 규제 때문에 못 사고, 기존 보유자는 팔 이유가 없다. 시장은 동결되지만, 가격은 동결되지 않는다.
+        </p>
+
+        <div class="quote-box">
+          <blockquote>
+            "이미 내성이 생긴 시장에 단기적인 효과만 있을 뿐, 집값 상승세를 꺾기는 역부족이다. 실수요자 피해만 키울 수 있다."
+          </blockquote>
+          <cite>— 부동산 전문가 의견 (뉴스토마토, 2025.12)</cite>
+        </div>
+
+        <h2>DSR 3단계, '대출 절벽'이 만드는 새로운 계층 단절</h2>
+        <p>
+          스트레스 DSR 3단계는 단순한 대출 규제가 아니다. 그것은 자산 사다리의 특정 계단을 지워버리는 구조 변화다. 연 소득 7,000만 원 직장인이 스트레스 금리 3%를 적용하면 서울 평균 아파트를 살 수 있는 대출 한도는 4억 원 안팎에 불과하다. 서울 평균 아파트값이 12억 원을 넘어선 지금, 이 격차를 현금으로 메울 수 있는 중산층은 사실상 없다.
+        </p>
+        <p>
+          더 심각한 문제는 지방과의 이중 기준이다. 지방 주택담보대출에는 2단계 스트레스 금리 0.75%p가 2026년 6월 말까지만 적용된다. 지방 주택을 담보로 한 대출이 상대적으로 유리한 구조가 유지되고 있지만, 서울 집값 수준에서는 실질적 의미가 없다. 결국 DSR 3단계는 수도권 자가 취득의 문턱을 사실상 '세습 자산'이 있는 계층으로만 좁히는 효과를 낳고 있다.
+        </p>
+
+        <h2>시장이 보내는 실제 신호: 전세가율과 매물 움직임</h2>
+        <p>
+          전문가들이 주목하는 것은 가격 지수가 아닌 전세가율과 매물 동향이다. KB부동산 데이터에 따르면 서울 핵심지의 전세가율은 60%를 유지하며 하방 지지 역할을 하고 있다. 반면 매물은 눈에 띄게 줄었다. 매물이 적으면 수요가 줄어도 가격 하락이 크지 않다.
+        </p>
+        <p>
+          반대로 지방 광역시들의 신호는 위험하다. 전세가율이 80%를 넘는 지역이 늘고 있고, 역전세 리스크가 가시화되고 있다. 준공 후 미분양이 쌓이는 지방 중소도시에서 전세 보증금 반환 사고가 증가하고 있으며, 이는 세입자 피해와 금융기관 부실로 전이될 수 있는 구조적 위험이다.
+        </p>
+
+        <h2>정책 실효성에 대한 냉정한 평가</h2>
+        <p>
+          규제의 실효성을 평가할 때 "거래량 감소"를 성과로 보는 시각이 여전히 있다. 그러나 진정한 성과 지표는 '실수요자가 접근 가능한 수준으로 가격이 내려왔는가'여야 한다. 이 기준에서 10·15 대책은 낙제점에 가깝다.
+        </p>
+        <p>
+          더 근본적인 문제는 공급이다. 서울 도심의 신규 주택 공급은 재건축·재개발에 의존하는데, 규제 강화는 사업 불확실성을 높여 공급 속도를 더욱 늦추는 악순환을 낳는다. 수요 억제만으로는 수급 균형을 맞출 수 없다는 경제학의 기본 원리를 이번에도 다시 확인하고 있는 셈이다.
+        </p>
+
+        <h2>실수요자와 투자자에게 필요한 시사점</h2>
+        <ul>
+          <li><strong>실거주 목적이라면 무리한 '대출 한계'는 피할 것</strong> — 스트레스 DSR 하에서 대출 한도 근접 매수는 금리 변동기에 가계 부채 위기로 직결될 수 있다. 소득 대비 원리금 상환 비율 35% 이내를 지키는 것이 안전선이다.</li>
+          <li><strong>전세가율 60% 이상 지역에서 옥석 가리기</strong> — 전세가율이 높을수록 가격 하방이 지지된다. 매매가가 오르든 내리든 임대 수요가 받쳐주는 지역이 장기적으로 안정적이다.</li>
+          <li><strong>규제 지역 내 매수는 '보유 기간 설계'부터</strong> — 양도세 중과 면제 요건(1주택 2년 이상 보유·거주)을 충족하지 못하면 세후 수익률이 대폭 떨어진다. 최소 5년 이상의 보유 계획 없이 투자성 매수는 지양해야 한다.</li>
+          <li><strong>지방 고전세가율 지역은 역전세 리스크 주목</strong> — 전세가율 80% 이상인 지방 단지는 매매 하락 시 전세 보증금 반환 불능 사태가 발생할 수 있다. 세입자·임대인 모두 각별한 주의가 필요하다.</li>
+          <li><strong>공급 확대 신호에 주목하라</strong> — 정부의 규제 일변도 기조가 공급 확대 방향으로 선회하는 시점이 시장 변곡점이 될 수 있다. 선도지구 지정, 재건축 패스트트랙 등의 정책 신호를 지속적으로 모니터링해야 한다.</li>
+          <li><strong>해외 주요국 금리 변화는 여전히 변수</strong> — 미국 연준의 금리 인하가 한국 대출 시장에 미치는 영향은 즉각적이지 않지만, 시차를 두고 반영된다. 2026년 하반기 금리 환경 변화에 따라 매수 타이밍을 재점검할 필요가 있다.</li>
+        </ul>
+
+        <h2>결론: 규제를 넘어선 구조 개혁이 필요하다</h2>
+        <p>
+          10·15 대책의 8개월은 수요 억제 정책의 한계를 다시 한번 확인해주었다. 단기적인 거래 감소는 있었지만 가격 안정은 없었고, 실수요자의 접근성은 더 낮아졌으며, 지역 간 불균형은 심화됐다. 정책의 방향이 '규제와 처벌'에서 '공급과 접근성 확대'로 전환되지 않는 한, 이 역설의 고리는 끊어지지 않을 것이다.
+        </p>
+        <p>
+          부동산 시장은 결국 수요와 공급의 장기적 균형으로 돌아온다. 규제는 그 균형에 이르는 속도를 늦추거나 경로를 바꿀 수 있지만, 균형 자체를 부정할 수는 없다. 실수요자와 투자자 모두, 규제가 만드는 단기 노이즈에 흔들리지 말고 수급 구조의 근본 변화를 읽는 눈을 키우는 것이 지금 이 국면에서 가장 필요한 자세다.
+        </p>
+
+        <div class="tags">
+          <span class="tag">#10·15대책</span>
+          <span class="tag">#토지거래허가구역</span>
+          <span class="tag">#스트레스DSR</span>
+          <span class="tag">#집값안정</span>
+          <span class="tag">#규제역설</span>
+          <span class="tag">#부동산칼럼</span>
+          <span class="tag">#서울아파트</span>
+          <span class="tag">#공급부족</span>
+        </div>
+
+        <div class="disclaimer">
+          <strong>⚠️ 면책 고지:</strong> 본 기사는 공개된 데이터 및 전문가 의견을 바탕으로 작성된 분석·칼럼으로, 특정 부동산 상품이나 지역에 대한 투자 권유가 아닙니다. 부동산 거래는 개인의 재무 상황, 세금 환경, 시장 여건 등을 종합적으로 고려해야 하며, 실제 매수·매도 전에는 공인중개사·세무사·금융전문가와 반드시 상담하시기 바랍니다. 본 편집부는 본 기사를 근거로 발생한 재산상 손실에 대해 책임을 지지 않습니다.
+        </div>
+      </article>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>10·15 대책 8개월 후 규제지역 거래량 76% 급감, 그러나 서울 집값은 2025년 11.3% 상승</li>
+          <li>양도세 중과가 매도 유인을 소멸시켜 오히려 매물 잠김 → 가격 하방 지지</li>
+          <li>스트레스 DSR 3단계로 서울 아파트 접근 가능 계층이 사실상 고자산가로 한정</li>
+          <li>2026년 수도권 입주 물량 11만 호, 전년 대비 30% 이상 감소 → 공급 부족 지속</li>
+          <li>공급 확대 신호가 확인될 때까지 실수요 외 무리한 레버리지 투자는 자제 권고</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>📰 관련 기사</h3>
+        <ul class="related-list">
+          <li>
+            <a href="#">
+              <span class="related-tag">정책</span>
+              스트레스 DSR 3단계 전면 시행, 대출 한도 얼마나 줄었나
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="related-tag">시장</span>
+              서울 vs 지방, 부동산 양극화 지도 2026년판
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="related-tag">투자</span>
+              토지거래허가구역 내 매수, 실거주 의무 이렇게 피하라
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="related-tag">공급</span>
+              재건축 패스트트랙 추진 현황과 선도지구 총정리
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>📊 주요 규제 비교표</h3>
+        <table class="reg-table">
+          <thead>
+            <tr><th>규제</th><th>주요 내용</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>조정대상지역</td><td>양도세 중과, LTV·DTI 축소</td></tr>
+            <tr><td>투기과열지구</td><td>전매제한, 재건축 조합원 제한</td></tr>
+            <tr><td>토지거래허가구역</td><td>실거주 의무, 구청장 허가</td></tr>
+            <tr><td>스트레스 DSR 3단계</td><td>수도권 가산금리 최소 3%p</td></tr>
+            <tr><td>25억 초과 주택</td><td>담보대출 2억 원 한도</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong><br>
+  본 사이트의 콘텐츠는 정보 제공 목적으로만 작성됩니다. 투자 결정 전 반드시 전문가 상담을 받으시기 바랍니다.<br>
+  © 2026 부동산인사이트. All rights reserved.
+</footer>
+
+</body>
+</html>
