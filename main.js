@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 140,
+    url: 'article_20260613_2_investment_v2.html',
+    category: '투자분석',
+    title: '경매 냉각·양도세 일몰 이후 — 2026 하반기 부동산 투자 생존 전략',
+    summary: '1월 정점을 찍은 서울 경매 낙찰가율이 하락세로 전환됐다. 양도세 중과 배제 일몰 충격이 더해지는 지금, 어떤 자산을 사고 어떤 자산을 팔아야 하는가. 하반기 옥석 가리기 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-13',
+    title_en: 'After the Auction Chill and the Capital-Gains Tax Sunset — A 2026 Second-Half Real Estate Investment Survival Strategy',
+    summary_en: 'Seoul\'s auction winning-bid ratio, which peaked in January, has turned downward. With the sunset of the heavy capital-gains tax exemption adding to the shock, which assets should you buy and which should you sell? A strategy for separating the wheat from the chaff in the second half.'
+  },
+  {
+    id: 139,
+    url: 'article_20260613_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '"지금이 진입 타이밍?" — 77조 정비사업 시대, 속도전의 명과 암을 해부한다',
+    summary: '이재명 정부 출범 후 첫 지방선거가 강남·강북을 가릴 것 없이 \'정비사업 속도\'를 1호 공약으로 만들었다. 그러나 공공·민간의 방향이 어긋난 채 달리는 지금, 어디서 기회를 찾아야 하는가.',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-13',
+    title_en: 'Is Now the Time to Get In? Dissecting the Light and Shadow of the Speed War in the 77-Trillion-Won Redevelopment Era',
+    summary_en: 'The first local elections after the Lee Jae-myung administration took office made "redevelopment speed" the No. 1 pledge across both Gangnam and Gangbuk. But with public and private sectors racing in misaligned directions, where should one look for opportunity?'
+  },
+  {
     id: 138,
     url: 'article_20260611_2_시장동향_v2.html',
     category: '시장동향',
