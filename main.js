@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 142,
+    url: 'article_20260614_2_column_v2.html',
+    category: '칼럼',
+    title: '"집이 없으면 더 비싸게 사야 한다" — 서울 공급절벽이 만든 15억 시대의 역설',
+    summary: '수요를 억눌러도 공급이 없으면 가격은 버틴다. 공급절벽이 만든 15억 시대의 역설을 짚으며, 2026년 하반기 서울 부동산 시장이 보내는 신호를 냉정하게 해석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-14',
+    title_en: '"No Home Means Paying Even More" — The Paradox of the 1.5-Billion-Won Era Born of Seoul\'s Supply Cliff',
+    summary_en: 'Suppress demand all you like — without supply, prices hold. Reading the paradox of the 1.5-billion-won era created by the supply cliff, a clear-eyed interpretation of the signals Seoul\'s housing market is sending in the second half of 2026.'
+  },
+  {
+    id: 141,
+    url: 'article_20260614_1_overseas_v2.html',
+    category: '해외',
+    title: '달러·엔화 자산으로 분산하라 — 2026년 미·일 부동산 투자, 지금이 마지막 기회인가?',
+    summary: '금리 인하 사이클 진입과 엔화 반등 신호 사이에서, 한국인 투자자가 놓쳐서는 안 될 미국·일본 부동산 시장의 핵심 변수를 해부한다. 달러·엔화 자산 분산 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-14',
+    title_en: 'Diversify into Dollar and Yen Assets — Is Now the Last Chance for 2026 U.S. and Japan Real Estate?',
+    summary_en: 'Between the start of a rate-cutting cycle and signs of a yen rebound, a dissection of the key variables in the U.S. and Japanese property markets that Korean investors cannot afford to miss — with a strategy for diversifying into dollar- and yen-denominated assets.'
+  },
+  {
     id: 140,
     url: 'article_20260613_2_investment_v2.html',
     category: '투자분석',
