@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 아파트 16주 연속 상승…동탄·광명은 연초 대비 8% 넘었다 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f4f4f4; color: #222; line-height: 1.8; }
+
+  /* HEADER */
+  header { background: #0D2B55; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a { color: #ccd; font-size: 0.85rem; text-decoration: none; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%); padding: 72px 20px 60px; text-align: center; }
+  .category-tag { display: inline-block; background: #1A4D8F; color: #90BFFF; border: 1px solid #4A7FBF; padding: 4px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; margin-bottom: 20px; letter-spacing: 0.05em; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 700; color: #fff; line-height: 1.4; max-width: 860px; margin: 0 auto 16px; }
+  .hero .subtitle { color: #a0b8d8; font-size: 1rem; max-width: 700px; margin: 0 auto 24px; }
+  .meta { color: #7090b0; font-size: 0.82rem; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  @media(max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+  /* MAIN CONTENT */
+  main { background: #fff; border-radius: 8px; padding: 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+  /* DATA CARDS */
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0 36px; }
+  @media(max-width: 640px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card { background: #EAF0FB; border-left: 4px solid #1A4D8F; border-radius: 6px; padding: 18px; text-align: center; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 700; color: #1A4D8F; }
+  .data-card .label { font-size: 0.78rem; color: #555; margin-top: 4px; }
+
+  /* BODY TEXT */
+  main p { margin-bottom: 20px; font-size: 1rem; color: #333; }
+  main h2 { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; font-weight: 700; color: #0D2B55; border-left: 4px solid #1A4D8F; padding-left: 14px; margin: 36px 0 16px; }
+  main ul { margin: 12px 0 20px 20px; }
+  main ul li { margin-bottom: 10px; font-size: 0.97rem; color: #333; }
+
+  /* QUOTE BOX */
+  .quote-box { background: #EAF0FB; border-left: 4px solid #1A4D8F; border-radius: 0 6px 6px 0; padding: 20px 24px; margin: 28px 0; font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: #1A3A6A; line-height: 1.8; }
+  .quote-box cite { display: block; margin-top: 10px; font-size: 0.82rem; font-style: normal; color: #7090b0; }
+
+  /* DISCLAIMER */
+  .disclaimer { background: #f0f0f0; border-radius: 6px; padding: 16px 20px; margin-top: 40px; font-size: 0.8rem; color: #777; line-height: 1.7; }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-box { background: #fff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .sidebar-box h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; color: #0D2B55; border-bottom: 2px solid #1A4D8F; padding-bottom: 8px; margin-bottom: 14px; }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li { padding: 8px 0; border-bottom: 1px solid #eee; font-size: 0.88rem; color: #333; display: flex; gap: 8px; }
+  .summary-list li::before { content: "▶"; color: #1A4D8F; flex-shrink: 0; font-size: 0.75rem; margin-top: 3px; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid #eee; font-size: 0.85rem; color: #1A4D8F; cursor: pointer; }
+  .related-list li:hover { color: #F4A52D; }
+  .table-widget { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .table-widget th { background: #0D2B55; color: #fff; padding: 8px; text-align: left; }
+  .table-widget td { padding: 8px; border-bottom: 1px solid #ddd; color: #333; }
+  .table-widget tr:hover td { background: #EAF0FB; }
+  .up { color: #c0392b; font-weight: 700; }
+  .dn { color: #2471a3; font-weight: 700; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: #7090b0; text-align: center; padding: 30px 20px; font-size: 0.82rem; margin-top: 60px; }
+  footer strong { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="category-tag">📈 시장동향</span>
+  <h1>서울 아파트 16주 연속 상승…<br>동탄·광명은 연초 대비 8% 넘었다</h1>
+  <p class="subtitle">수도권 풍선효과가 본격화되는 지금, 지방과 수도권의 '두 개의 시장'이 뚜렷하게 갈리고 있다</p>
+  <div class="meta">2026년 6월 15일 · 부동산인사이트 편집부</div>
+</section>
+
+<div class="container">
+  <main>
+    <!-- DATA CARDS -->
+    <div class="data-cards">
+      <div class="data-card">
+        <div class="num">+8.19%</div>
+        <div class="label">광명시 연초 대비 누적 상승률</div>
+      </div>
+      <div class="data-card">
+        <div class="num">+1.98%</div>
+        <div class="label">화성 동탄구 주간 상승률 (6월 1주)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">16주</div>
+        <div class="label">서울 아파트 연속 상승 주수</div>
+      </div>
+    </div>
+
+    <p>한국부동산원이 발표한 2026년 6월 1주 기준 전국 주간 아파트가격 동향에 따르면, 전국 매매가격은 전주 대비 0.07% 상승했다. 표면적인 수치는 소폭처럼 보이지만, 내부를 들여다보면 서울과 수도권 주요 지역의 가격 상승이 16주째 쉼 없이 이어지고 있다. 반면 지방 광역시를 포함한 비수도권 지역은 대부분 보합 내지 미세 하락세를 기록 중이다. '하나의 부동산 시장'이라는 전제가 이미 오래전에 무너졌음을 이번 통계가 다시 한번 확인시켜 주고 있다.</p>
+
+    <p>특히 이번 주 가장 눈길을 끄는 지역은 화성 동탄구다. 단 한 주 만에 1.98%라는 폭발적인 상승률을 기록했다. 이는 서울 주요 재건축 단지들의 주간 상승폭과도 견줄 수 있는 수치다. 연초 기준으로는 광명(+8.19%)과 용인 수지(+8.56%)가 8%대를 돌파했고, 하남(+6.76%), 분당(+6.87%)도 6%대 후반을 기록 중이다.</p>
+
+    <div class="quote-box">
+      "서울 집값이 뛰면 '이번엔 다를 것'이라고 하지만, 결국 수도권 외곽으로 풍선이 이동하는 패턴은 2006년, 2010년대 중반, 2020~2021년 사이클과 판박이다. 다만 이번엔 GTX와 재건축 모멘텀이 결합되어 특정 지역의 상승 속도가 과거보다 훨씬 빠르다."
+      <cite>— 부동산 시장 전문가 인터뷰 종합</cite>
+    </div>
+
+    <h2>왜 지금 동탄과 광명인가</h2>
+    <p>동탄의 강세는 GTX-A 노선 개통 이후 서울 접근성이 획기적으로 개선된 데 따른 것이다. 동탄에서 수서까지 약 19분이면 닿는다는 사실은 '판교·강남권 직장인의 주거지'라는 포지셔닝을 현실로 만들었다. 여기에 동탄 신도시 자체의 인프라 성숙도가 높아지고, 상대적으로 저렴했던 가격이 서울 접근성 개선과 맞물리면서 매수 수요가 폭발한 것으로 분석된다.</p>
+    <p>광명의 경우는 조금 다른 맥락이다. 광명 시흥 공공주택지구 개발 이슈와 더불어 기존 원도심 재개발·재건축 기대감이 복합적으로 작용했다. 광명 소하·하안 지역의 재건축 추진이 본격화되면서 실거주 수요와 투자 수요가 동시에 유입되고 있다. 서울과 경계를 맞댄 지리적 이점도 수요 유입의 중요한 배경이다.</p>
+
+    <h2>서울 내부: 강남 신고가 행진 vs. 노도강 회복세</h2>
+    <p>서울 안에서도 지역별 온도차는 뚜렷하다. 강남권은 연속 신고가 행진이 이어지고 있다. 개포동 현대1차 전용 177㎡가 40억 원에 거래됐고, 반포·잠원 일대 대형 평형도 사상 최고가를 경신하는 사례가 속출하고 있다. 이 지역들은 공급 자체가 제한적인 데다 재건축 기대까지 겹치면서 '가격 천장'을 논하기 어려운 상황이 됐다.</p>
+    <p>반면 노원·도봉·강북 등 이른바 '노도강' 지역은 아직 본격 회복세에 접어들지 못했다. 다만 올해 초와 비교해 매수 문의가 뚜렷하게 늘고 있으며, 거래 절벽 현상이 완화되는 신호가 감지된다. 강남 상승의 온기가 외곽으로 확산되는 전형적인 패턴이 재현되고 있다는 분석이 나온다.</p>
+
+    <div class="quote-box">
+      "목동신시가지 7단지 전용 101㎡가 32억 5,000만 원에 거래됐다는 소식은, 재건축 기대가 반영된 '미래가치 프리미엄'의 크기를 여실히 보여준다. 실거주 가치만으로는 설명할 수 없는 가격이다."
+      <cite>— 서울 아파트 실거래 분석 리포트</cite>
+    </div>
+
+    <h2>목동의 존재감: 재건축이 집값에 미치는 힘</h2>
+    <p>목동신시가지는 수도권 부동산 시장에서 독특한 존재다. 학군 수요만으로도 탄탄한 가격 지지선이 형성돼 있는데, 여기에 재건축 기대감이 더해지면서 가격 상단이 빠르게 높아지고 있다. 목동 재건축은 서울시의 정비사업 인허가 절차와 맞물려 있어 속도가 느리지만, 그 기대감 자체가 이미 시세에 선반영되는 양상이다.</p>
+    <p>양천구 목동 일대 주요 단지는 2025년 말 대비 평균 8~12%의 가격 상승을 기록한 것으로 추정된다. 재건축 안전진단 기준 완화와 정비사업 규제 개선이 맞물리면 목동 가격은 추가적인 재평가를 받을 가능성이 크다.</p>
+
+    <h2>지방 시장: '보합'이라는 이름의 침묵</h2>
+    <p>지방 광역시 부동산 시장은 '보합'이라는 단어 뒤에 실상을 숨기고 있다. 부산·대구·광주·대전 등 주요 광역시들은 표면적으로 보합 내지 미세 등락을 기록하고 있지만, 내부적으로는 거래량 감소와 미분양 적체가 심화되고 있다. 미분양 주택이 줄지 않는 상황에서 지방 부동산의 회복을 논하기는 이르다는 게 시장 전문가들의 공통된 시각이다.</p>
+    <p>국토교통부 통계에 따르면 지방의 준공 후 미분양(악성 미분양)은 여전히 높은 수준을 유지하고 있으며, 이는 추가 가격 하락 압력으로 작용할 수 있다. 수도권과 지방 사이의 양극화가 구조적 현상으로 굳어지고 있다는 우려가 커지는 이유다.</p>
+
+    <h2>실수요자·투자자가 주목해야 할 시사점</h2>
+    <ul>
+      <li><strong>GTX 노선 수혜 지역 주시:</strong> 동탄의 급등이 보여주듯, 교통 인프라 개선은 단기간 내 폭발적인 가격 재평가를 촉발할 수 있다. GTX-B·C 개통 예정 지역 인근의 중장기 가치에 주목할 필요가 있다.</li>
+      <li><strong>재건축 기대감의 선반영 리스크:</strong> 목동·노원 등 재건축 추진 단지는 기대감이 가격에 과도하게 반영된 측면이 있다. 사업 지연이나 규제 강화 시 가격 조정 폭이 클 수 있음을 인지해야 한다.</li>
+      <li><strong>지방 투자 신중론:</strong> 지방 미분양 적체 상황에서 지방 아파트 투자는 출구 전략을 먼저 확보한 뒤 접근해야 한다. 장기 보유가 불가능한 투자자라면 진입을 재고할 시점이다.</li>
+      <li><strong>강남 신고가와 '계단 오르기' 현상:</strong> 강남이 신고가를 찍으면 6~18개월 뒤 강북·외곽 순으로 가격이 따라오는 패턴이 반복됐다. 중장기 실거주자라면 타이밍보다 입지를 우선하는 접근이 합리적이다.</li>
+      <li><strong>수급 불균형의 지속 가능성 점검:</strong> 서울·수도권 신규 공급 물량이 수요 대비 부족한 상황이 지속되는 한, 가격 상승 기조는 이어질 가능성이 높다. 다만 금리 변동과 정책 변수를 함께 고려해야 한다.</li>
+    </ul>
+
+    <h2>결론: 부동산 시장은 지금 '두 개의 얼굴'을 하고 있다</h2>
+    <p>2026년 6월 현재 한국 부동산 시장은 수도권·지방이라는 두 개의 판 위에서 전혀 다른 게임이 펼쳐지고 있다. 서울의 16주 연속 상승과 동탄·광명의 폭발적 반응은 공급 부족과 교통 인프라 개선이 결합될 때 얼마나 강력한 가격 동력이 발생하는지를 보여준다. 동시에 지방 시장의 침묵은 우리에게 부동산이 결코 '균등하게 오르거나 내리는' 자산이 아님을 다시 한번 일깨워 준다.</p>
+    <p>시장에 올라탈 것인지 관망할 것인지를 결정하기 전에, 자신이 바라보는 지역이 지금 어느 사이클의 어느 지점에 있는지를 냉정하게 진단해야 한다. 모두가 올라갈 때 사는 게 가장 위험하다는 교훈은, 항상 오른 뒤에야 가장 선명하게 보인다.</p>
+
+    <div class="disclaimer">
+      ※ 본 기사는 공개된 부동산 통계 자료 및 시장 분석을 바탕으로 작성된 정보 제공 목적의 에세이입니다. 특정 지역이나 부동산의 매수·매도를 권유하거나 투자 결과를 보장하지 않습니다. 부동산 투자 결정은 개인의 재무 상황과 전문가 상담을 바탕으로 신중하게 이루어져야 합니다.
+    </div>
+  </main>
+
+  <aside>
+    <div class="sidebar-box">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>서울 아파트 6월 1주 기준 16주 연속 상승세 유지</li>
+        <li>화성 동탄구 주간 +1.98% 폭발적 상승, GTX 효과 본격화</li>
+        <li>광명 연초 대비 +8.19%, 용인 수지 +8.56% 서울 초과</li>
+        <li>목동 재건축 기대 반영, 전용 101㎡ 32.5억 거래 성사</li>
+        <li>지방 광역시는 보합~미세 하락, 수도권·지방 양극화 심화</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li>GTX-A 개통 후 동탄 집값, 어디까지 오르나</li>
+        <li>광명 재개발 사업지 현황과 투자 포인트</li>
+        <li>목동 재건축 로드맵 2026 최신 업데이트</li>
+        <li>지방 미분양 적체 해소 방안과 시장 전망</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>📊 주간 지역별 상승률 (6월 1주)</h3>
+      <table class="table-widget">
+        <thead>
+          <tr><th>지역</th><th>주간</th><th>연초누적</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>화성 동탄</td><td class="up">+1.98%</td><td class="up">--</td></tr>
+          <tr><td>광명시</td><td class="up">+상승</td><td class="up">+8.19%</td></tr>
+          <tr><td>용인 수지</td><td class="up">+상승</td><td class="up">+8.56%</td></tr>
+          <tr><td>성남 분당</td><td class="up">+0.62%</td><td class="up">+6.87%</td></tr>
+          <tr><td>하남시</td><td class="up">+상승</td><td class="up">+6.76%</td></tr>
+          <tr><td>안양 동안</td><td class="up">+0.40%</td><td class="up">--</td></tr>
+          <tr><td>지방 광역</td><td class="dn">보합</td><td class="dn">보합</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> · 한국 부동산 시장 전문 분석 매체<br>
+  © 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.
+</footer>
+
+</body>
+</html>
