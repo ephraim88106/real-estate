@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 144,
+    url: 'article_20260616_2_재건축_v2.html',
+    category: '재개발',
+    title: '목동 재건축은 \'지금\'이 골든타임 — 10년 기다림이 가속 페달 밟은 이유',
+    summary: '14개 단지 전원 정비구역 지정 완료, 절반 이상 신탁 방식 전환, 이주 시점은 2027~2029년. 서울 서남권 최대 정비사업의 속도가 달라졌다.',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-16',
+    title_en: 'Mokdong Reconstruction Is in Its Golden Hour \'Now\' — Why a Decade-Long Wait Has Hit the Accelerator',
+    summary_en: 'All 14 complexes designated as redevelopment zones, more than half converted to the trust method, and relocation set for 2027–2029. The pace of southwestern Seoul\'s largest redevelopment project has changed.'
+  },
+  {
+    id: 143,
+    url: 'article_20260616_1_청약_v2.html',
+    category: '분양',
+    title: '3기 신도시 로또청약의 민낯 — 당신은 정말 당첨될 수 있나?',
+    summary: '고양 창릉 S2·S3·S4블록 3,387가구 본청약 임박. 분양가상한제가 만들어낸 \'반값 아파트\'의 기회와 함정을 전면 해부한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-16',
+    title_en: 'The Naked Truth of the Third-Phase New Town \'Lottery\' Subscription — Can You Really Win?',
+    summary_en: 'With the main subscription for 3,387 units in Goyang Changneung blocks S2, S3 and S4 imminent, a full dissection of the opportunities and traps of the \'half-price apartments\' created by the price-cap system.'
+  },
+  {
     id: 142,
     url: 'article_20260614_2_column_v2.html',
     category: '칼럼',
