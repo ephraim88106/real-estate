@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>목동 재건축은 '지금'이 골든타임 — 10년 기다림이 가속 페달 밟은 이유 | 부동산인사이트</title>
+<meta name="description" content="14개 단지 전원 정비구역 지정 완료, 신탁 방식 질주, 이주 타임라인까지 — 2026년 목동 재건축 완전 해부">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #7B4A9E;
+    --accent-light: #f3eefa;
+    --accent-mid: #9B6ABE;
+    --dark: #1a0a2e;
+    --text: #1a1a1a;
+    --muted: #666;
+    --border: #e0e0e0;
+    --bg: #faf9fc;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* HEADER */
+  header { background: #0D2B55; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; font-weight: 900; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%); padding: 70px 20px 60px; color: #fff; }
+  .hero-inner { max-width: 800px; margin: 0 auto; }
+  .category-tag { display: inline-block; background: var(--accent); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.5rem); font-weight: 900; line-height: 1.35; margin-bottom: 18px; }
+  .hero .subtitle { font-size: 1.05rem; color: rgba(255,255,255,0.85); margin-bottom: 28px; line-height: 1.7; }
+  .hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.65); display: flex; gap: 18px; flex-wrap: wrap; }
+  .hero-meta span::before { content: "• "; }
+  .hero-meta span:first-child::before { content: ""; }
+
+  /* LAYOUT */
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 768px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* DATA BOX */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 36px; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border-left: 4px solid var(--accent); padding: 18px 16px; border-radius: 8px; }
+  .data-card .label { font-size: 0.78rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+  .data-card .value { font-family: 'Noto Serif KR', serif; font-size: 1.6rem; font-weight: 900; color: var(--dark); }
+  .data-card .note { font-size: 0.78rem; color: var(--muted); margin-top: 4px; }
+
+  /* ARTICLE */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.35rem; font-weight: 700; margin: 36px 0 14px; border-left: 4px solid var(--accent); padding-left: 14px; color: var(--dark); line-height: 1.4; }
+  article p { margin-bottom: 18px; color: #2a2a2a; }
+  article ul { margin: 12px 0 20px 20px; }
+  article ul li { margin-bottom: 10px; color: #2a2a2a; }
+  article ul li::marker { color: var(--accent); }
+
+  .pullquote { background: var(--accent-light); border-left: 5px solid var(--accent); padding: 20px 24px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+  .pullquote p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; line-height: 1.75; color: #2a0a3e; margin: 0; }
+  .pullquote cite { display: block; font-size: 0.82rem; color: var(--accent); font-style: normal; font-weight: 700; margin-top: 10px; }
+
+  .timeline { position: relative; padding-left: 24px; margin: 20px 0 28px; }
+  .timeline::before { content: ''; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(to bottom, var(--accent), var(--accent-mid)); }
+  .tl-item { position: relative; margin-bottom: 18px; }
+  .tl-item::before { content: ''; position: absolute; left: -20px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid #fff; box-shadow: 0 0 0 2px var(--accent); }
+  .tl-year { font-size: 0.8rem; font-weight: 700; color: var(--accent); margin-bottom: 3px; }
+  .tl-desc { font-size: 0.9rem; color: #2a2a2a; }
+
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+  th { background: var(--accent); color: #fff; padding: 10px 14px; text-align: left; }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: #f6f0ff; }
+
+  .policy-box { background: #f6f0ff; border: 1px solid #c8a8e8; border-radius: 10px; padding: 22px 24px; margin: 28px 0; }
+  .policy-box h3 { font-family: 'Noto Serif KR', serif; font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 14px; }
+
+  .disclaimer { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 16px 20px; margin-top: 40px; font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); padding: 20px; }
+  .sidebar-card h3 { font-family: 'Noto Serif KR', serif; font-size: 0.95rem; font-weight: 700; color: var(--dark); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li { padding: 7px 0; border-bottom: 1px dashed var(--border); font-size: 0.88rem; color: #2a2a2a; padding-left: 16px; position: relative; }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before { content: "▶"; color: var(--accent); position: absolute; left: 0; font-size: 0.6rem; top: 11px; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list li a { color: var(--text); text-decoration: none; line-height: 1.5; }
+  .related-list li a:hover { color: var(--accent); }
+
+  .progress-bar { margin-bottom: 12px; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--muted); margin-bottom: 4px; }
+  .bar { height: 8px; background: #e0d0f0; border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--accent); border-radius: 4px; }
+
+  /* TAGS */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; }
+  .tag { background: var(--accent-light); color: var(--accent); border-radius: 20px; padding: 4px 12px; font-size: 0.78rem; font-weight: 600; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,0.65); text-align: center; padding: 30px 20px; font-size: 0.82rem; margin-top: 60px; }
+  footer span { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">재개발·재건축</span>
+    <h1>목동 재건축은 '지금'이 골든타임<br>— 10년 기다림이 가속 페달 밟은 이유</h1>
+    <p class="subtitle">14개 단지 전원 정비구역 지정 완료, 절반 이상 신탁 방식 전환, 이주 시점은 2027~2029년. 서울 서남권 최대 정비사업의 속도가 달라졌다</p>
+    <div class="hero-meta">
+      <span>2026년 6월 16일</span>
+      <span>재개발·재건축</span>
+      <span>부동산인사이트 편집부</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+    <!-- DATA BOX -->
+    <div class="data-box">
+      <div class="data-card">
+        <div class="label">목동 재건축 단지</div>
+        <div class="value">14개</div>
+        <div class="note">전원 정비구역 지정 완료</div>
+      </div>
+      <div class="data-card">
+        <div class="label">예상 이주 시점</div>
+        <div class="value">2027~29</div>
+        <div class="note">단지별 속도 차이 존재</div>
+      </div>
+      <div class="data-card">
+        <div class="label">서울 재건축 이주비 LTV</div>
+        <div class="value">70%까지</div>
+        <div class="note">서울시 정부 건의 내용</div>
+      </div>
+    </div>
+
+    <!-- 배경 1 -->
+    <h2>2026년, 목동이 다시 뛴다</h2>
+    <p>서울 양천구 목동 신시가지 아파트는 1980년대 후반 준공된 14개 단지, 총 2만 6,000여 가구 규모의 대단지 군집이다. 오랫동안 재건축 추진의 상징으로 거론되면서도 규제의 벽에 막혀 제자리를 맴돌던 이 단지들이 2026년 들어 명실공히 '속도 전'에 돌입했다.</p>
+    <p>2025년까지 14개 단지 전원이 서울시로부터 정비구역 지정을 완료했다. 과거에는 정비구역 지정 자체가 수년이 걸리는 관문이었지만, 이제 그 문은 통과됐다. 2026년 현재 절반 이상의 단지가 조합 방식 대신 신탁 방식을 선택하며 사업 속도를 높이고 있다. 신탁 방식은 전문 신탁사가 사업시행자로 참여해 조합 내분, 비리, 의사결정 지연 등 전통적인 조합 방식의 리스크를 상당 부분 줄여준다는 평가를 받는다.</p>
+
+    <div class="pullquote">
+      <p>"목동 재건축은 이제 '될 것인가'의 단계를 지났다. '언제, 얼마에'의 단계다. 이 질문에 답하기 위해서는 단지별 사업 속도와 분담금 구조를 냉철하게 비교해야 한다."</p>
+      <cite>— 부동산인사이트 재건축 전문 분석팀</cite>
+    </div>
+
+    <!-- 섹션 2 -->
+    <h2>신탁 방식이 바꾼 재건축의 판</h2>
+    <p>전통적인 조합 방식 재건축은 조합원들이 직접 사업을 운영한다. 조합 설립을 위한 동의서 징구, 창립총회, 임원 선출부터 시공사 선정, 관리처분계획 인가까지 수많은 단계에서 내부 갈등과 의사결정 지연이 발생한다. 실제로 서울 도심의 일부 재건축 사업지는 조합 내 분쟁으로 사업 일정이 5~10년씩 지연된 사례도 있다.</p>
+    <p>신탁 방식은 이 구조를 바꾼다. KB부동산신탁, 한국토지신탁 등 전문 신탁사가 사업시행자가 되어 인·허가, 시공사 선정, 자금 관리까지 맡는다. 조합원들은 의사결정에서 한 발 물러나지만, 사업 속도가 눈에 띄게 빨라진다. 목동에서 신탁 방식을 선택한 단지들이 조합 방식 단지들보다 먼저 조합 설립 단계를 건너뛰거나 병행 추진하는 이유다.</p>
+
+    <table>
+      <thead>
+        <tr><th>방식</th><th>사업시행자</th><th>속도</th><th>리스크</th><th>조합원 통제권</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>조합 방식</td><td>재건축 조합</td><td>느림 (내부 갈등 빈번)</td><td>高</td><td>높음</td></tr>
+        <tr><td>신탁 방식</td><td>전문 신탁사</td><td>빠름</td><td>中</td><td>낮음</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 섹션 3 -->
+    <h2>목동 7단지, 재건축의 바로미터</h2>
+    <p>목동 14개 단지 중 시장이 특히 주목하는 단지는 7단지다. 목동 내에서도 한강 접근성과 학군 수요가 집중되는 7단지는 재건축 추진 속도와 분담금 예측의 기준점이 된다. 2026년 2월 기준, 7단지는 정비구역 지정 완료 후 조합 설립을 향해 빠르게 달리고 있으며, 추진위원회 주도로 조합 설립 동의서 징구와 창립총회 준비가 막바지에 이른 것으로 알려졌다.</p>
+    <p>목동 재건축이 시장의 관심을 받는 또 다른 이유는 학군이다. 목동 7단지가 속한 양천구 목동 일대는 서울에서도 손꼽히는 교육 특구다. 재건축 완료 후 새 아파트의 희소성과 학군 프리미엄이 결합되면, 완공 시세는 현재 시세를 크게 웃돌 것이라는 기대가 선반영되고 있다. 실제로 최근 거래 사례에서 목동 7단지는 재건축 기대감이 가격에 선반영되는 흐름이 뚜렷하다.</p>
+
+    <div class="pullquote">
+      <p>"목동은 학군 수요가 재건축 사업성을 뒷받침하는 보기 드문 구조다. 입주 후 공급 희소성이 현실화될 때 가격 레벨이 비교불가 수준으로 뛸 수 있다."</p>
+      <cite>— 부동산인사이트 지역 분석</cite>
+    </div>
+
+    <!-- 섹션 4: 규제 완화 현황 -->
+    <h2>2026년 정비사업 정책 지형 — 무엇이 달라졌나</h2>
+    <p>2026년은 정비사업을 둘러싼 제도적 환경이 눈에 띄게 변화한 해다. 가장 주목할 변화는 「도시 및 주거환경정비법」 개정안이 2026년 7월 1일부로 시행된다는 점이다. 이 개정안은 소규모 정비사업(1만㎡ 미만)의 가로구역 기준을 완화하는 내용을 담고 있어, 대규모 재개발·재건축이 어려운 노후 저층 주거지의 정비를 촉진할 것으로 예상된다.</p>
+    <p>서울시도 적극적인 규제 완화 건의에 나섰다. 재건축 이주자를 위한 이주비 대출 LTV를 현행보다 높은 70%까지 확대해달라는 요청이 국토부에 제출됐다. 이주비 LTV 확대는 조합원들의 이주 부담을 줄여 사업 속도를 높이는 직접적인 효과가 있다. 더불어 2026년부터는 재건축 사업장 이주자에게도 버팀목 전세자금대출 혜택이 확대 적용된다. 기존에는 재개발 이주자에게만 제공되던 지원이 재건축 이주자까지 넓어진 것이다.</p>
+
+    <div class="policy-box">
+      <h3>📋 2026년 재건축·재개발 주요 정책 변화</h3>
+      <ul>
+        <li style="margin-bottom:10px;"><strong>7월 시행 「도정법」 개정:</strong> 소규모 정비사업 가로구역 기준 완화</li>
+        <li style="margin-bottom:10px;"><strong>이주비 지원 확대:</strong> 재건축 이주자도 버팀목 전세자금대출 가능 (소득 요건 충족 시)</li>
+        <li style="margin-bottom:10px;"><strong>서울시 건의:</strong> 이주비 LTV 70%로 상향 요청 (현재 심의 중)</li>
+        <li><strong>상계주공7단지:</strong> 안전진단 D등급 판정 — 재건축 첫 단추 완료</li>
+      </ul>
+    </div>
+
+    <!-- 섹션 5 -->
+    <h2>재건축 투자·실거주, 지금 알아야 할 5가지 판단 기준</h2>
+    <ul>
+      <li><strong>이주 시점과 입주 시점을 구분하라:</strong> 목동 단지들의 예상 이주 시점은 2027~2029년이지만, 실제 신축 입주는 이주 후 통상 4~6년이 걸린다. 즉 새 아파트 입주는 2031~2035년 이후 구간이다. 이 기간 동안의 임시 거처 비용과 금융 비용을 반드시 계산해야 한다.</li>
+      <li><strong>분담금 추정치를 현실적으로 확인하라:</strong> 재건축 분담금은 용적률, 일반분양가, 공사비, 사업비 등 수많은 변수에 따라 달라진다. 현재 떠도는 분담금 추정치는 공신력 있는 감정평가가 아닌 추산에 불과하므로, 조합 설립 후 사업시행인가 단계의 공식 수치를 확인해야 한다.</li>
+      <li><strong>신탁 방식의 단점도 직시하라:</strong> 신탁 방식은 사업 속도가 빠른 대신 조합원의 의사결정 권한이 제한된다. 신탁 수수료(통상 총 공사비의 1~2%)도 발생하며, 일부 조합원은 사업 방향에 대한 불만을 제기하기도 한다.</li>
+      <li><strong>학군 프리미엄의 지속 가능성을 점검하라:</strong> 목동의 교육 특구 프리미엄은 향후 입시 제도 변화, 새 학원가 등장 등에 따라 달라질 수 있다. '불변의 학군'이라는 전제를 맹신하지 말고 중장기 교육 환경 변화를 함께 고려해야 한다.</li>
+      <li><strong>법 개정 시행 시점을 체크하라:</strong> 2026년 7월 1일 시행되는 「도정법」 개정은 정비사업 전반에 영향을 미친다. 내가 투자·거주하려는 단지의 사업 단계가 이 법 개정의 수혜를 받는지, 아니면 기존 법 적용을 받는지를 전문가와 함께 확인해야 한다.</li>
+    </ul>
+
+    <!-- 섹션 6: 단지별 타임라인 -->
+    <h2>서울 재건축 사업지 주요 타임라인 (2026 기준)</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-year">2025년</div>
+        <div class="tl-desc">목동 14개 단지 전원 정비구역 지정 완료 / 절반 이상 신탁 방식 선택</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2026년 상반기</div>
+        <div class="tl-desc">목동 7단지 조합 설립 동의서 징구 막바지 / 상계주공7단지 안전진단 D등급 판정</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2026년 7월</div>
+        <div class="tl-desc">「도시 및 주거환경정비법」 개정안 시행 (소규모 정비사업 완화)</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2027~2029년</div>
+        <div class="tl-desc">목동 주요 단지 이주 예상 시점 / 관리처분계획 인가 후 이주 시작</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-year">2031년 이후</div>
+        <div class="tl-desc">목동 선도 단지 신축 입주 예상 시점 (공사 기간 포함)</div>
+      </div>
+    </div>
+
+    <!-- 결론 -->
+    <h2>결론: 재건축은 '인내의 자산'이다</h2>
+    <p>목동 재건축은 이제 '드디어 시작됐다'는 말이 과장이 아닌 현실이 됐다. 14개 단지 전원 정비구역 지정, 신탁 방식의 확산, 정부의 규제 완화 기조가 맞물리면서 사업 속도는 과거와 분명히 달라졌다.</p>
+    <p>그러나 재건축은 본질적으로 '인내의 자산'이다. 이주부터 입주까지 최소 5~8년의 시간이 필요하고, 그 과정에서 금융 비용과 분담금 납부, 임시 거처 비용이 발생한다. 완공 후의 시세 상승 기대는 현실적이지만, 그 기대가 실현되기까지의 과정을 버텨낼 재정 체력을 먼저 갖추는 것이 투자의 출발점이다.</p>
+    <p>재건축은 인내한 사람에게만 수익을 허락하는 시장이다. 2026년 지금이 골든타임인 이유는 사업이 빨라졌기 때문이기도 하지만, 입주 시점까지의 인내 기간을 계산했을 때 지금이 가장 합리적인 진입 구간이기 때문이기도 하다.</p>
+
+    <div class="tags">
+      <span class="tag">#목동재건축</span>
+      <span class="tag">#재개발재건축</span>
+      <span class="tag">#신탁방식</span>
+      <span class="tag">#정비사업</span>
+      <span class="tag">#도정법개정</span>
+      <span class="tag">#상계주공</span>
+      <span class="tag">#서울재건축</span>
+    </div>
+
+    <div class="disclaimer">
+      ⚠️ <strong>면책 고지</strong>: 본 기사는 공개된 자료와 시장 분석을 바탕으로 작성된 정보 제공 목적의 콘텐츠입니다. 특정 단지에 대한 투자·매수를 권유하지 않으며, 개인 상황에 따른 투자 결과에 대해 책임을 지지 않습니다. 재건축 투자 전 반드시 법무·세무 전문가 및 공식 정비사업 정보(서울시 정비사업 정보몽땅 cleanup.seoul.go.kr)를 통해 확인하시기 바랍니다.
+    </div>
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>목동 14개 단지 전원 정비구역 지정 완료</li>
+        <li>절반 이상 신탁 방식 선택, 사업 속도 급가속</li>
+        <li>이주 예상 시점 2027~2029년, 입주는 2031년~</li>
+        <li>2026년 7월 「도정법」 개정 — 정비사업 완화</li>
+        <li>서울시, 이주비 LTV 70% 상향 정부 건의 중</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📊 목동 단지별 사업 진행도</h3>
+      <div class="progress-bar">
+        <div class="progress-label"><span>목동 7단지</span><span>조합 설립 진행 중</span></div>
+        <div class="bar"><div class="bar-fill" style="width:60%"></div></div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-label"><span>목동 1·2단지</span><span>정비구역 지정 완료</span></div>
+        <div class="bar"><div class="bar-fill" style="width:40%"></div></div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-label"><span>목동 14단지</span><span>신탁 방식 추진 중</span></div>
+        <div class="bar"><div class="bar-fill" style="width:50%"></div></div>
+      </div>
+      <p style="font-size:0.75rem;color:var(--muted);margin-top:8px;">※ 진행도는 추정치이며, 실제와 다를 수 있음</p>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>🔗 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="#">상계주공 재건축, D등급 판정 이후 로드맵</a></li>
+        <li><a href="#">신탁 방식 재건축 장단점 완전 분석</a></li>
+        <li><a href="#">「도정법」 2026년 7월 개정 핵심 내용</a></li>
+        <li><a href="#">재건축 분담금, 어디까지 올라가나</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 <span>부동산인사이트</span> | 본 콘텐츠는 정보 제공 목적이며 투자 권유가 아닙니다.</p>
+</footer>
+
+</body>
+</html>
