@@ -85,6 +85,54 @@ const i18n = {
 
 const articles = [
   {
+    id: 148,
+    url: 'article_20260618_2_market_v2.html',
+    category: '시장동향',
+    title: '"될 곳만 된다" — 2026년 6월 서울 아파트 선별적 상승장의 해부',
+    summary: '매매·전세 동반 상승 속에서도 강남·재건축 기대 지역 중심으로 양극화가 심화됐다. 지역별 데이터로 \'선별 상승장\'의 실체를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-18',
+    title_en: '"Only the Chosen Rise" — Dissecting Seoul\'s Selective Apartment Rally of June 2026',
+    summary_en: 'Even as both sale and jeonse prices climbed, polarization deepened around Gangnam and reconstruction-expectant districts. A data-driven look at the reality of a selective rally.'
+  },
+  {
+    id: 147,
+    url: 'article_20260618_1_column_v2.html',
+    category: '칼럼',
+    title: '금리 내려도 대출은 막힌다 — 스트레스 DSR 3단계의 역설',
+    summary: '2026년 7월 스트레스 DSR 3단계 시행을 앞두고, 금리 인하 기대와 대출규제 강화가 충돌하는 시장의 실상을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-18',
+    title_en: 'Rates Fall, Yet Loans Stay Shut — The Paradox of Stress DSR Phase 3',
+    summary_en: 'Ahead of the July 2026 rollout of Stress DSR Phase 3, an in-depth analysis of a market where hopes for rate cuts collide with tightening lending rules.'
+  },
+  {
+    id: 146,
+    url: 'article_20260617_2_overseas_v2.html',
+    category: '해외',
+    title: '57조 원의 교훈 — 한국인 해외 부동산 투자, 미국·일본·베트남에서 살아남는 법',
+    summary: '국내 금융권 해외 부동산 대체투자 잔액 57조 원, 일부에서 기한이익상실(EOD) 발생. 글로벌 시장의 기회와 함정을 냉철하게 해부한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-17',
+    title_en: 'A 57-Trillion-Won Lesson — How Koreans Can Survive Overseas Property Investment in the US, Japan and Vietnam',
+    summary_en: 'With domestic financial firms holding 57 trillion won in overseas real estate, and some facing events of default, a cool-headed dissection of global market opportunities and traps.'
+  },
+  {
+    id: 145,
+    url: 'article_20260617_1_investment_v2.html',
+    category: '투자분석',
+    title: '갭투자의 황혼, 그리고 새로운 투자 공식 — 2026년 부동산 투자 생존 전략',
+    summary: '경매 낙찰가율 108% 피크 후 냉각, 토허제 강화, 증빙 의무화… 규제의 파도 속에서 살아남는 투자 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-17',
+    title_en: 'The Twilight of Gap Investing and a New Formula — A 2026 Real Estate Investment Survival Strategy',
+    summary_en: 'After auction win-rates peaked at 108% before cooling, with tighter permit zones and mandatory documentation, an analysis of strategies to survive the wave of regulation.'
+  },
+  {
     id: 144,
     url: 'article_20260616_2_재건축_v2.html',
     category: '재개발',
