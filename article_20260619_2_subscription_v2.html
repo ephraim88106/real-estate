@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 153대1 vs 지방 줄줄이 미달 — 청약 양극화의 민낯, 2026 하반기 분양 지도 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #F4F5F7; color: #1A1A2E; line-height: 1.8; }
+  header { background: #0D2B55; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.4); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 900; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+  nav a:hover { color: #F4A52D; }
+  .hero { background: linear-gradient(135deg, #0A3A0A 0%, #2E7D2E 55%, #0A3A0A 100%); padding: 72px 24px 60px; color: #fff; }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .category-tag { display: inline-block; background: #1A7F4D; color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 900; line-height: 1.4; margin-bottom: 20px; word-break: keep-all; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.82); line-height: 1.7; margin-bottom: 28px; max-width: 720px; word-break: keep-all; }
+  .hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.6); display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-meta span::before { content: "• "; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 860px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 40px; }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card { background: #fff; border: 1px solid #E0E0E0; border-top: 4px solid #1A7F4D; border-radius: 8px; padding: 20px 16px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 900; color: #1A7F4D; }
+  .data-card .label { font-size: 0.78rem; color: #666; margin-top: 6px; line-height: 1.4; }
+  article p { font-size: 0.98rem; line-height: 1.9; color: #2D2D3A; margin-bottom: 20px; word-break: keep-all; }
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.25rem; font-weight: 700; color: #0A3A0A; border-left: 4px solid #1A7F4D; padding-left: 16px; margin: 40px 0 20px; line-height: 1.5; word-break: keep-all; }
+  .pull-quote { background: rgba(26,127,77,0.06); border-left: 4px solid #1A7F4D; border-radius: 0 8px 8px 0; padding: 24px 28px; margin: 32px 0; }
+  .pull-quote p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: #1A1A2E; line-height: 1.7; margin-bottom: 10px !important; }
+  .pull-quote cite { font-size: 0.8rem; color: #1A7F4D; font-style: normal; font-weight: 700; }
+  .insight-list { background: #fff; border: 1px solid #E5E5E5; border-radius: 10px; padding: 28px 32px; margin: 32px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+  .insight-list h3 { font-family: 'Noto Serif KR', serif; font-size: 1.05rem; font-weight: 700; color: #0A3A0A; margin-bottom: 16px; }
+  .insight-list ul { list-style: none; }
+  .insight-list ul li { padding: 10px 0 10px 24px; position: relative; font-size: 0.93rem; color: #2D2D3A; border-bottom: 1px solid #F0F0F0; line-height: 1.7; word-break: keep-all; }
+  .insight-list ul li:last-child { border-bottom: none; }
+  .insight-list ul li::before { content: "▶"; position: absolute; left: 0; color: #1A7F4D; font-size: 0.7rem; top: 13px; }
+  .disclaimer { background: #F0F0F0; border: 1px solid #DDD; border-radius: 8px; padding: 20px 24px; margin-top: 40px; }
+  .disclaimer p { font-size: 0.78rem !important; color: #888 !important; margin-bottom: 0 !important; line-height: 1.6 !important; }
+  .summary-box { background: #0A3A0A; border-radius: 10px; padding: 24px; margin-bottom: 24px; color: #fff; }
+  .summary-box h3 { font-family: 'Noto Serif KR', serif; font-size: 0.95rem; font-weight: 700; color: #F4A52D; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.2); }
+  .summary-box ul { list-style: none; }
+  .summary-box ul li { font-size: 0.83rem; color: rgba(255,255,255,0.88); padding: 8px 0 8px 16px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.08); line-height: 1.5; word-break: keep-all; }
+  .summary-box ul li:last-child { border-bottom: none; }
+  .summary-box ul li::before { content: "•"; position: absolute; left: 0; color: #1A7F4D; font-weight: 900; }
+  .related-box { background: #fff; border: 1px solid #E5E5E5; border-radius: 10px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+  .related-box h3 { font-size: 0.88rem; font-weight: 700; color: #0A3A0A; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #1A7F4D; }
+  .related-box ul { list-style: none; }
+  .related-box ul li { padding: 9px 0; border-bottom: 1px solid #F0F0F0; font-size: 0.82rem; color: #333; line-height: 1.5; word-break: keep-all; }
+  .related-box ul li:last-child { border-bottom: none; }
+  .related-box ul li span { display: block; font-size: 0.72rem; color: #999; margin-top: 2px; }
+  .widget-box { background: #fff; border: 1px solid #E5E5E5; border-radius: 10px; padding: 20px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+  .widget-box h3 { font-size: 0.88rem; font-weight: 700; color: #0A3A0A; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #1A7F4D; }
+  .widget-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  .widget-table th { background: #F5F5F5; color: #555; padding: 8px 6px; text-align: left; font-weight: 600; border-bottom: 1px solid #E0E0E0; }
+  .widget-table td { padding: 8px 6px; border-bottom: 1px solid #F0F0F0; color: #333; vertical-align: top; line-height: 1.4; }
+  .tag-hot { color: #C8401A; font-weight: 700; }
+  .tag-cold { color: #999; font-weight: 700; }
+  .tag-warm { color: #1A7F4D; font-weight: 700; }
+  .hashtags { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { background: rgba(26,127,77,0.08); color: #1A7F4D; border: 1px solid rgba(26,127,77,0.25); border-radius: 20px; padding: 4px 12px; font-size: 0.78rem; font-weight: 500; }
+  footer { background: #0D2B55; color: rgba(255,255,255,0.6); text-align: center; padding: 32px 24px; font-size: 0.8rem; line-height: 1.7; }
+  footer strong { color: #F4A52D; }
+  .lotto-box { background: linear-gradient(135deg, #0A3A0A, #1A7F4D); border-radius: 10px; padding: 24px; margin: 32px 0; color: #fff; }
+  .lotto-box h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; color: #F4A52D; margin-bottom: 12px; }
+  .lotto-box p { font-size: 0.88rem; color: rgba(255,255,255,0.9); margin-bottom: 0 !important; line-height: 1.7; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">분양·청약 분석</span>
+    <h1>서울 153대1 vs 지방 줄줄이 미달<br>"청약 로또"는 서울만의 특권이 됐다</h1>
+    <p class="hero-sub">지난달 서울 1순위 경쟁률이 전국 평균의 24배를 넘어선 반면, 비수도권 8개 단지는 모두 1순위 마감에 실패했다. 2026년 분양시장은 한반도 지도를 양분하는 냉전 구조에 접어들었다.</p>
+    <div class="hero-meta">
+      <span>2026년 6월 19일</span>
+      <span>분양·청약 분석팀</span>
+      <span>부동산인사이트</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+    <div class="data-cards">
+      <div class="data-card">
+        <div class="num">153<small style="font-size:1rem">:1</small></div>
+        <div class="label">서울 아파트 1순위<br>평균 청약 경쟁률</div>
+      </div>
+      <div class="data-card">
+        <div class="num">8곳</div>
+        <div class="label">비수도권 단지 중<br>1순위 마감 실패 단지 수</div>
+      </div>
+      <div class="data-card">
+        <div class="num">2,388</div>
+        <div class="label">2026년 서울 입주 예정<br>세대 수 (전년 대비 급감)</div>
+      </div>
+    </div>
+
+    <p>분양 시장이 두 개의 나라로 쪼개지고 있다. 한쪽에서는 수백 대 일의 경쟁률이 연일 갱신되고 당첨만 되면 수억 원의 시세 차익이 보장되는 '로또 청약' 현상이 지속된다. 다른 한쪽에서는 수십만 원의 분양가 할인 혜택을 내걸어도 미달을 면치 못하는 단지들이 속출한다. 이 두 세계의 경계는 서울과 비서울, 수도권과 비수도권이다.</p>
+
+    <p>2026년 6월 현재, 서울 아파트 1순위 평균 청약 경쟁률은 153대 1로 집계되며, 이는 전국 평균의 24배에 달하는 수치다. 반면 비수도권에서는 같은 기간 청약을 진행한 8개 단지가 모두 1순위 마감에 실패했다. 같은 나라, 같은 분양 제도 아래서 이렇게 극단적인 격차가 발생한다는 것 자체가 한국 부동산 시장의 구조적 모순을 고스란히 드러낸다.</p>
+
+    <h2>서울 공급 절벽 — 2,388세대의 경고</h2>
+
+    <p>2026년 서울 입주 예정 세대는 약 2,388세대로 전년 대비 3만 세대 이상 급감한 것으로 집계된다. 서울은 이미 신축 아파트 공급이 극도로 부족한 도시가 됐다. 재건축·재개발 사업의 속도가 기대에 미치지 못하는 가운데, 신규 분양 단지에 대한 수요는 오히려 압축되고 있다.</p>
+
+    <p>공급은 줄고 수요는 여전한 상황에서 새 아파트 청약은 서울 입성의 마지막 관문으로 인식된다. 분양가 상한제가 적용되는 단지에서는 시세보다 수억 원 낮은 분양가로 새 아파트를 살 수 있다는 점에서 청약 경쟁은 앞으로도 격화될 것으로 전망된다.</p>
+
+    <div class="pull-quote">
+      <p>"서울 분양 단지에 청약하는 사람들 중 상당수는 실거주보다 프리미엄 차익을 노린다. 분양가 상한제가 유지되는 한 이 구조는 바뀌지 않는다. 청약 제도가 본래 취지와 달리 복권이 된 셈이다."</p>
+      <cite>— 부동산 분석 전문가 (2026년 6월)</cite>
+    </div>
+
+    <h2>2026년 6월 서울 주요 분양 단지 — 기회의 문은 좁다</h2>
+
+    <p>2026년 6월에는 장위푸르지오마크원, 드파인아르티아, 목동윤슬자이, 월계중흥S클래스리비에르, 써밋클라비온, 동작센트럴동문디이스트 등 관심 단지들이 분양을 진행하거나 준비 중이다. 이들 단지는 모두 서울의 핵심 생활 인프라와 가까운 곳에 위치해 있으며, 전문가들은 대부분 수십 대 일 이상의 경쟁률을 예상하고 있다.</p>
+
+    <p>특히 목동·월계·장위 등 과거 저평가됐던 서울 중외곽 지역의 브랜드 아파트들이 이번 분양에서 '로또 청약'의 주인공으로 부상하고 있다. 분양가 상한제 미적용 단지도 있어 분양가 수준은 단지별로 크게 다르지만, 서울이라는 이름 자체가 청약 흥행의 보증서가 된 현실은 변함없다.</p>
+
+    <h2>지방 미달의 구조 — 인구 감소와 투자 수요 이탈의 이중 충격</h2>
+
+    <p>지방 분양시장의 미달 행진은 단순한 경기 침체의 문제가 아니다. 구조적 인구 감소와 투자 수요 이탈이 겹치는 이중 충격이다. 스트레스 DSR 3단계 전국 확대로 지방 매수자들의 대출 한도가 줄어든 것도 수요 약화를 가속한다.</p>
+
+    <p>특히 지방 중소도시의 경우, 거주 인구 감소로 인해 미래 가격 상승 기대감이 낮고 임대 수요도 불안정하다. 여기에 분양가는 건설 원가 상승으로 오히려 높아지는 역설이 발생하면서 '비싸고 팔리지도 않는' 분양 단지들이 속출하고 있다. 건설사들은 지방 착공을 미루거나 사업을 포기하는 사례가 늘고 있어, 장기적으로 지방 공급 감소 → 일부 지역 반등이라는 시나리오도 완전히 배제할 수는 없다.</p>
+
+    <div class="pull-quote">
+      <p>"지방 미달의 핵심 원인은 투자 수요의 완전한 철수다. 과거에는 지방 청약도 '묻지마 투자' 수요가 받쳐줬지만 이제는 실수요자만 남았고, 그 실수요조차 인구 감소로 줄어들고 있다."</p>
+      <cite>— 주택연구원 선임연구원 (2026년 6월)</cite>
+    </div>
+
+    <h2>2026년 하반기 분양 물량 전망 — 수도권 공공분양 2.9만호의 행방</h2>
+
+    <p>2026년 수도권 공공분양은 약 2만 9천 호가 계획돼 있다. LH를 중심으로 GH(경기주택도시공사), iH(인천도시공사)가 주요 물량을 담당하며, 서울은 SH공사가 공급을 주도한다. 상반기에 물량이 집중됐고 하반기(8월 이후)에는 상대적으로 공급이 줄어드는 구조다.</p>
+
+    <p>수원시청(B2) 347세대(8월), 부천역세권(A2) 498세대(9월) 등 교통 요충지의 공공분양 단지들이 하반기에 등장할 예정이다. 민간분양은 서울 내 재건축 단지들이 이주·철거 일정에 따라 분양 시기를 조율 중이며, 분양가 인상 여부가 최대 변수로 꼽힌다.</p>
+
+    <h2>분양가 상승 가속 — 내 집 마련 비용이 끝없이 오른다</h2>
+
+    <p>2026년 서울 분양가는 2025년 대비 평균 5~10% 상승할 것으로 전문가들은 전망한다. 건설 원자재 가격 상승과 인건비 증가가 주된 요인이며, 토지비 상승까지 더해지면서 분양가 하락 요인은 사실상 없다. 재건축 단지는 조합원 분양가와 일반 분양가의 격차가 커지면서 일반 청약자의 진입 비용도 높아지고 있다.</p>
+
+    <p>이 상황에서 정부의 분양가 상한제는 일부 공공택지와 분양가 상한제 적용 단지에서 '가격 차익'을 만들어낸다. 하지만 상한제 미적용 민간 단지가 늘어나면서 전체 분양 시장에서 로또의 기회는 줄어드는 반면, 비싼 분양가로 내 집을 마련해야 하는 실수요자들의 부담은 증가하고 있다.</p>
+
+    <div class="lotto-box">
+      <h3>🎯 로또 청약이란?</h3>
+      <p>분양가 상한제가 적용되는 단지에서 분양받으면 주변 시세 대비 수억 원 이하로 새 아파트를 살 수 있다. 당첨 즉시 시세 차익이 발생하는 구조 때문에 청약 경쟁률이 수백 대 일에 달하는 현상을 '로또 청약'이라 부른다. 2026년에도 서울 일부 공공택지·재건축 단지에서 이런 단지들이 나올 것으로 예상된다.</p>
+    </div>
+
+    <div class="insight-list">
+      <h3>📌 청약 준비자·분양 투자자를 위한 핵심 시사점</h3>
+      <ul>
+        <li>서울 청약 가점을 꾸준히 관리하라. 청약 양극화가 심화될수록 가점 높은 무주택자의 실수요 청약은 유효한 전략이다. 특히 분양가 상한제 적용 단지는 놓치지 말아야 한다.</li>
+        <li>지방 청약은 투자 목적보다 실거주 목적으로만 접근해야 한다. 지방 미달이 상시화되는 현실에서 단기 차익을 기대하는 지방 청약 투자는 매우 위험하다.</li>
+        <li>스트레스 DSR 강화로 대출 가능액이 줄었다. 청약 당첨 전에 반드시 본인의 대출 한도를 시뮬레이션해보고 실제 납부 가능한 분양가 범위를 확인해야 한다.</li>
+        <li>2026년 하반기에는 수원·부천 등 수도권 공공분양 단지에 주목하라. 서울만큼 로또는 아니지만, 입지 대비 가격 경쟁력이 있는 단지들이 나올 수 있다.</li>
+        <li>재건축 분양은 일반 분양가가 빠르게 높아지고 있다. 입지를 냉정하게 따지고 청약 당첨 후 중도금·잔금 부담까지 계산한 뒤 접근해야 한다.</li>
+        <li>청약 당첨 후 전매제한·실거주 의무 기간을 반드시 확인하라. 규제 지역 내 단지는 전매제한 기간이 길어 유동성 리스크가 있다.</li>
+      </ul>
+    </div>
+
+    <h2>결론 — 청약 시장의 양극화는 부동산 시장 전체의 미래를 말한다</h2>
+
+    <p>서울과 지방의 청약 경쟁률 격차는 단순한 분양 시장의 문제가 아니다. 일자리, 교육, 인프라, 인구가 수도권으로 압축되는 한국 사회 구조의 반영이다. 청약 시장의 양극화를 해소하려면 분양 제도 개선만으로는 부족하다. 지방 거주의 경제적 매력을 높이는 근본적 균형 발전 정책이 병행되지 않는 한, 서울 로또와 지방 미달의 공존은 앞으로도 계속될 것이다.</p>
+
+    <p>지금 당장 청약을 준비하는 실수요자라면 냉정해져야 한다. 내가 실제로 거주할 수 있는 지역인지, 대출은 감당 가능한지, 전매제한은 얼마나 되는지를 꼼꼼히 따진 뒤 한 번뿐인 청약 기회를 써야 한다. 청약 시장은 로또지만, 당신의 주거는 도박이 아니다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#로또청약2026</span>
+      <span class="hashtag">#청약양극화</span>
+      <span class="hashtag">#서울분양경쟁률</span>
+      <span class="hashtag">#지방미달</span>
+      <span class="hashtag">#분양가상한제</span>
+      <span class="hashtag">#수도권공공분양</span>
+      <span class="hashtag">#내집마련2026</span>
+      <span class="hashtag">#청약가점</span>
+    </div>
+
+    <div class="disclaimer">
+      <p>※ 본 기사는 공개된 정보와 전문가 의견을 바탕으로 작성된 참고용 에세이이며, 청약 신청이나 분양 투자에 대한 자문이 아닙니다. 실제 청약 자격, 분양가, 전매제한, 대출 조건은 개별 단지 공고문과 금융기관을 통해 반드시 확인하시기 바랍니다.</p>
+    </div>
+  </article>
+
+  <aside>
+    <div class="summary-box">
+      <h3>📋 핵심 요약</h3>
+      <ul>
+        <li>서울 1순위 평균 경쟁률 153대1 — 전국 평균의 24배</li>
+        <li>비수도권 8개 단지 전부 1순위 마감 실패, 청약 양극화 심화</li>
+        <li>2026년 서울 입주 예정 2,388세대 — 전년 대비 3만 세대 감소</li>
+        <li>6월 주요 분양: 장위푸르지오, 목동윤슬자이, 월계중흥S클래스 등</li>
+        <li>2026 하반기 수도권 공공분양 수원·부천 등 교통 요충지 예정</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <h3>관련 기사</h3>
+      <ul>
+        <li>2026 서울 핵심 분양 TOP6 — 어디에 넣어야 할까<span>2026.06.15 · 분양·청약</span></li>
+        <li>청약 가점 최대화 전략 — 당첨 확률 높이는 법<span>2026.06.12 · 분양·청약</span></li>
+        <li>수도권 공공분양 2.9만호, 내가 받을 수 있는 단지는?<span>2026.06.10 · 분양·청약</span></li>
+        <li>분양가 상한제, 어떤 단지에 적용되나<span>2026.06.08 · 정책·규제</span></li>
+      </ul>
+    </div>
+
+    <div class="widget-box">
+      <h3>지역별 청약 시장 온도</h3>
+      <table class="widget-table">
+        <thead>
+          <tr><th>지역</th><th>경쟁률 수준</th><th>전망</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>서울 핵심</td><td>100대1+</td><td class="tag-hot">🔥 과열</td></tr>
+          <tr><td>서울 외곽</td><td>20~50대1</td><td class="tag-hot">▲ 강세</td></tr>
+          <tr><td>수도권 1기</td><td>5~20대1</td><td class="tag-warm">→ 안정</td></tr>
+          <tr><td>3기 신도시</td><td>3~10대1</td><td class="tag-warm">→ 관망</td></tr>
+          <tr><td>광역시</td><td>1대1 내외</td><td class="tag-cold">▼ 약세</td></tr>
+          <tr><td>지방 중소</td><td>미달 다수</td><td class="tag-cold">❄️ 침체</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> | 전문적 시각으로 부동산 시장을 읽는다<br>
+  © 2026 부동산인사이트. 본 콘텐츠는 정보 제공 목적으로 작성되었으며 투자 권유가 아닙니다.
+</footer>
+</body>
+</html>
