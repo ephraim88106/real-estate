@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 150,
+    url: 'article_20260619_2_subscription_v2.html',
+    category: '분양',
+    title: '서울 153대1 vs 지방 줄줄이 미달 — 청약 양극화의 민낯, 2026 하반기 분양 지도',
+    summary: '지난달 서울 1순위 경쟁률이 전국 평균의 24배를 넘어선 반면, 비수도권 8개 단지는 모두 1순위 마감에 실패했다. \'청약 로또\'가 서울만의 특권이 된 분양시장의 냉전 구조를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-19',
+    title_en: 'Seoul 153-to-1 vs Provincial Undersubscription — The Bare Face of Subscription Polarization and the H2 2026 Pre-Sale Map',
+    summary_en: 'Last month Seoul\'s first-priority competition ratio topped 24 times the national average, while all eight non-capital-region complexes failed to fill first-priority quotas. An analysis of a pre-sale market where the \'subscription lottery\' has become a Seoul-only privilege.'
+  },
+  {
+    id: 149,
+    url: 'article_20260619_1_policy_v2.html',
+    category: '정책',
+    title: '종부세 인상·DSR 3단계·다주택 대출 봉쇄 — 7월 세제 개편이 쏘아 올린 부동산 판도 변화',
+    summary: '취임 1년 만에 "보유세가 너무 낮다"고 선언한 이재명 정부. 7월 종합부동산세 인상과 스트레스 DSR 전국 확대가 동시에 닥치며 다주택자와 갭투자자는 더 이상 물러설 곳이 없다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-19',
+    title_en: 'Higher Property Tax, Stress DSR Phase 3, and a Multi-Home Loan Lockdown — How July\'s Tax Overhaul Reshapes the Property Landscape',
+    summary_en: 'A year into its term, the Lee Jae-myung administration declared that "holding taxes are too low." With July\'s comprehensive property-tax hike and a nationwide expansion of Stress DSR landing at once, multi-home owners and gap investors have nowhere left to retreat.'
+  },
+  {
     id: 148,
     url: 'article_20260618_2_market_v2.html',
     category: '시장동향',
