@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 152,
+    url: 'article_20260620_2_투자분석_v2.html',
+    category: '투자분석',
+    title: '지방선거 후 부동산 지도 뒤집힌다? 지금 \'경매\'로 돈 버는 사람들의 진짜 전략',
+    summary: '낙찰가율 100% 돌파 후 냉각, 토허제 완화 기대, 다주택자 양도세 유예 연장 논란까지 — 2026년 하반기 부동산 투자의 핵심 변수를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-20',
+    title_en: 'Property Map Flips After Local Elections? The Real Strategy Behind Those Making Money in Auctions Right Now',
+    summary_en: 'After auction win-rates topped 100% and then cooled, with hopes for eased transaction permits and controversy over multi-home capital-gains tax deferral extension — dissecting the key variables for second-half 2026 real estate investment.'
+  },
+  {
+    id: 151,
+    url: 'article_20260620_1_재건축_v2.html',
+    category: '재개발',
+    title: '안전진단 사실상 폐지, 목동·은마·잠실까지 뒤흔들다 — 2026 재건축 대격변의 진짜 의미',
+    summary: '재건축진단 제도 전면 개편·선도지구 확대·통합심의 도입… 30년 묵은 규제의 벽이 허물어지고 있다. 기대와 현실 사이, 어디에 기회가 있는가?',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-20',
+    title_en: 'Safety Diagnosis Effectively Abolished — Shaking Up Mokdong, Eunma, Jamsil and Beyond: The Real Meaning of the 2026 Reconstruction Upheaval',
+    summary_en: 'A sweeping overhaul of the reconstruction-diagnosis system, expanded pilot districts, and integrated review introduced — the 30-year wall of regulation is crumbling. Where does the opportunity lie between expectation and reality?'
+  },
+  {
     id: 150,
     url: 'article_20260619_2_subscription_v2.html',
     category: '분양',
