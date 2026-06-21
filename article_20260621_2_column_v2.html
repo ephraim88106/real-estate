@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>상반기를 모르면 하반기가 안 보인다 — 양도세 폭탄·공급 절벽·전세난의 교차점 | 부동산인사이트</title>
+<meta name="description" content="2026년 상반기 한국 부동산 시장을 뒤흔든 핵심 5대 이슈를 해부하고, 하반기 시장을 좌우할 세제·전세·금리 변수를 심층 분석한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #222; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 1.5rem; }
+  nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+    color: #fff;
+    padding: 80px 5% 70px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -60px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; position: relative; }
+  .category-tag {
+    display: inline-block;
+    background: #6A6A10;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    word-break: keep-all;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.7;
+    max-width: 680px;
+    word-break: keep-all;
+  }
+  .hero-meta {
+    margin-top: 28px;
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* LAYOUT */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 5%;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .container { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+
+  /* MAIN CONTENT */
+  article { background: #fff; border-radius: 12px; padding: 44px 40px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+  @media (max-width: 600px) { article { padding: 28px 20px; } }
+
+  /* DATA BOX */
+  .data-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 640px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: linear-gradient(135deg, #f0f0d0, #e0e0a0);
+    border-radius: 10px;
+    padding: 20px 16px;
+    text-align: center;
+    border-top: 3px solid #6A6A10;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #3A3A08;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .data-card .label {
+    font-size: 0.78rem;
+    color: #555;
+    word-break: keep-all;
+    line-height: 1.4;
+  }
+
+  /* SECTION HEADINGS */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #2A2A0A;
+    margin: 40px 0 16px;
+    padding-left: 16px;
+    border-left: 4px solid #6A6A10;
+    line-height: 1.4;
+    word-break: keep-all;
+  }
+  article h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #3A3A10;
+    margin: 24px 0 10px;
+  }
+  article p { margin-bottom: 16px; font-size: 0.97rem; word-break: keep-all; color: #333; }
+  article ul { padding-left: 1.4em; margin-bottom: 16px; }
+  article ul li { margin-bottom: 8px; font-size: 0.95rem; color: #333; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: linear-gradient(135deg, #f5f5d8, #ebebb0);
+    border-left: 5px solid #6A6A10;
+    border-radius: 0 10px 10px 0;
+    padding: 22px 26px;
+    margin: 32px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: #3A3A08;
+    margin: 0 0 8px;
+    line-height: 1.7;
+  }
+  .quote-box cite { font-size: 0.8rem; color: #666; font-style: normal; }
+
+  /* ISSUE BADGE */
+  .issue-badge {
+    display: inline-block;
+    background: #6A6A10;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+  }
+
+  /* HASHTAGS */
+  .hashtags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 36px; }
+  .hashtags span {
+    background: #f0f0d0;
+    color: #4A4A10;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f4f4f2;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #777;
+    line-height: 1.6;
+    border: 1px solid #e0e0e0;
+  }
+
+  /* H2 TABLE */
+  .h2-table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 0.9rem; }
+  .h2-table th { background: #6A6A10; color: #fff; padding: 10px 14px; text-align: left; }
+  .h2-table td { padding: 10px 14px; border-bottom: 1px solid #eee; color: #333; }
+  .h2-table tr:nth-child(even) td { background: #f9f9f0; }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .sidebar-card h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2A2A0A;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #6A6A10;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.85rem;
+    color: #333;
+    display: flex;
+    gap: 8px;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+  .summary-list li::before { content: '▶'; color: #6A6A10; flex-shrink: 0; font-size: 0.7rem; margin-top: 3px; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+  .related-list li a {
+    font-size: 0.85rem;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.5;
+    word-break: keep-all;
+    display: block;
+    transition: color 0.2s;
+  }
+  .related-list li a:hover { color: #6A6A10; }
+
+  /* TIMELINE */
+  .timeline { list-style: none; padding: 0; }
+  .timeline li {
+    padding: 10px 0 10px 20px;
+    border-left: 2px solid #d0d080;
+    position: relative;
+    font-size: 0.83rem;
+    color: #444;
+    margin-left: 10px;
+    word-break: keep-all;
+  }
+  .timeline li::before {
+    content: '';
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #6A6A10;
+    position: absolute;
+    left: -6px;
+    top: 14px;
+  }
+  .timeline li strong { color: #3A3A08; display: block; font-size: 0.78rem; margin-bottom: 3px; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 28px 5%;
+    font-size: 0.82rem;
+    line-height: 1.7;
+  }
+  footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">✍️ 칼럼·해설</span>
+    <h1>상반기를 모르면 하반기가 안 보인다<br>양도세 폭탄·공급 절벽·전세난의 교차점에 선 한국 부동산</h1>
+    <p class="hero-subtitle">2026년 절반이 지났다. 다주택자 양도세 중과 재개, 강남 10주 연속 하락, 비강남 신고가 경신, 역대 최고 분양가. 상반기를 달군 핵심 이슈를 해부하고, 하반기 시장을 결정할 세 가지 변수를 짚는다.</p>
+    <p class="hero-meta">2026년 6월 21일 | 부동산인사이트 편집부</p>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <span class="num">5.47%</span>
+        <span class="label">2026년 1~5월<br>서울 아파트 매매가격 상승률</span>
+      </div>
+      <div class="data-card">
+        <span class="num">1만 호↓</span>
+        <span class="label">2026년 서울<br>신규 입주 물량(역대 최저)</span>
+      </div>
+      <div class="data-card">
+        <span class="num">5,838만</span>
+        <span class="label">서울 민간아파트 평균 분양가<br>(3.3㎡당 원, 역대 최고)</span>
+      </div>
+    </div>
+
+    <p>어느덧 2026년의 절반이 지나갔다. 연초부터 시장은 쉴 새 없이 출렁였다. 정부는 다주택자 규제를 강화했고, 강남은 10주 연속 하락이라는 보기 드문 장면을 연출했으며, 비강남권은 오히려 신고가를 경신했다. 전세 시장은 매물 부족과 입주 물량 감소 속에 강세를 이어갔고, 청약 시장은 서울 분상제 단지로 수요가 집중되며 극단적인 양극화를 드러냈다. 상반기를 이해해야 하반기를 준비할 수 있다. 2026년 상반기 부동산 시장의 5대 이슈를 해부하고, 하반기를 결정할 핵심 변수를 짚는다.</p>
+
+    <h2>이슈 1 — 다주택자 양도세 중과 재개: 매물은 나왔나?</h2>
+    <div><span class="issue-badge">정책</span></div>
+    <p>2026년 상반기 부동산 시장의 최대 이슈는 단연 '다주택자 양도세 중과 재개'였다. 5월 10일부터 조정대상지역 내 주택을 양도할 때 2주택자에게는 기본세율에 20%포인트, 3주택 이상에게는 30%포인트가 추가 과세된다. 정책 목적은 다주택자의 매물을 시장에 끌어내 공급을 늘리는 것이었다.</p>
+    <p>결과는 복잡했다. 강남구 일부 단지에서는 절세 매물이 나오며 10주 연속 가격 하락이라는 이례적인 흐름이 나타났다. 그러나 시장 전반적으로는 예상했던 대규모 매물 출회는 일어나지 않았다. "팔면 세금이 크다"는 인식이 오히려 매물 잠김 현상을 강화하는 역설이 연출된 것이다. 중과세율이 높을수록 보유를 선택하는 심리—이는 부동산 정책의 고전적인 딜레마다.</p>
+    <p>하반기에도 이 흐름은 이어질 가능성이 높다. 지방선거 이후 세제 개편 논의가 재점화되면 양도세 부담 완화 기대감이 매물 회수를 더욱 부추길 수 있다. 다주택자의 '버티기'가 2026년 하반기 매물 시장을 좌우할 변수다.</p>
+
+    <div class="quote-box">
+      <p>"양도세 중과는 매물을 끌어내는 도구가 아니라, 때로는 매물을 묶는 자물쇠가 됩니다. 세금 부담이 과도하면 오히려 보유가 합리적인 선택이 되기 때문입니다."</p>
+      <cite>— 국내 부동산 세무 전문가 발언 (언론 인용)</cite>
+    </div>
+
+    <h2>이슈 2 — 비강남 vs 강남: 같은 서울, 다른 시장</h2>
+    <div><span class="issue-badge">시장</span></div>
+    <p>2026년 1~5월 서울 아파트 매매가격지수 변동률을 보면 서울 평균이 5.47%인데, 강남구는 단 0.71%에 그쳤다. 반면 관악구·동대문구·강서구·서대문구·성북구 등 비강남 지역은 평균을 훌쩍 웃도는 상승률을 기록했다. '강남 하락, 비강남 상승'이라는 구도는 표면적으로는 이해하기 어렵지만, 분석하면 명확하다.</p>
+    <p>강남은 대출 규제 강화와 고가 주택 매수 부담이 겹치며 상위 수요층이 관망세로 돌아섰다. 반면 비강남 지역은 전세 상승에 지친 세입자들이 매수로 전환하는 흐름, 신축 희소성, 그리고 상대적 저평가 인식이 맞물리며 가격을 밀어 올렸다. 즉 '강남 조정'이 아니라 '강남 숨고르기 + 비강남 추격 상승'이라는 표현이 더 정확하다.</p>
+    <p>이 구도는 하반기에도 지속될 가능성이 크다. 단, 기준금리 인상 가능성이 현실화되면 레버리지를 활용한 비강남 상승세가 꺾일 수 있다. 매수자라면 실거주 목적과 투자 목적을 명확히 분리한 후 접근해야 한다.</p>
+
+    <h2>이슈 3 — 공급 절벽과 전세난: 최악의 조합이 현실로</h2>
+    <div><span class="issue-badge">수급</span></div>
+    <p>2026년 서울 신규 입주 물량은 통계 작성 이래 최저치인 1만 호 미만으로 떨어졌다. 2021년 이후 인허가·착공이 급감한 여파가 본격적으로 발현되고 있는 것이다. 수도권 전체로 봐도 2026년 신축 입주 물량은 11만 1,700호로 2025년(16만 1,300호) 대비 30% 이상 줄었다.</p>
+    <p>전세 시장은 그 직격탄을 맞고 있다. 2026년 1~5월 서울 아파트 평균 전세가격지수는 3.49% 상승했으며, 강북·성북·노원·도봉구 등 강북 지역은 5% 이상 뛰었다. 전세 매물이 줄어들고 갱신 계약과 신규 계약 간 격차가 벌어지면서, 전세에서 매매로 돌아서는 수요가 비강남 가격 상승을 뒷받침하는 구조가 형성됐다.</p>
+    <p>하반기에는 1기 신도시 이주 수요가 겹쳐 전세난이 한층 심화될 전망이다. 세입자 입장에서는 반전세·월세 전환을 고려해야 할 시점이며, 임대인 입장에서는 보증보험 가입 의무화 등 제도적 리스크를 재검토할 필요가 있다.</p>
+
+    <h2>이슈 4 — 분양가 역대 최고, 청약 양극화 극심</h2>
+    <div><span class="issue-badge">청약·분양</span></div>
+    <p>2026년 4월 말 기준 서울 민간아파트 평균 분양가는 3.3㎡당 5,838만 3,000원으로 역대 최고를 경신했다. 공사비·금융비용 상승과 정비사업지 고분양가가 겹친 결과다. 30평형 아파트 한 채를 새 아파트로 분양받으려면 서울에서만 평균 17억 원 이상이 필요하다는 계산이 나온다.</p>
+    <p>그럼에도 청약 시장은 뜨거웠다. 서울 분상제 적용 단지, 특히 서초구 잠원동 오티에르반포 전용 59㎡에서 1,180.87 대 1의 경쟁률이 나왔고, 아크로드서초에서는 청약가점 84점 만점 당첨자까지 등장했다. 분양가상한제로 주변 시세보다 낮게 공급되는 단지에 수요가 집중되는 '로또 청약' 현상이 다시 심화됐다.</p>
+    <p>반면 지방과 수도권 외곽에서는 미달 단지가 속출했다. 수십 대 1의 경쟁률과 0.1 대 1 미달이 동시에 존재하는 것이 2026년 청약 시장의 현실이다. 청약을 준비 중이라면 지역·단지별 경쟁률 분석과 분양가 수준 파악이 전략의 출발점이어야 한다.</p>
+
+    <div class="quote-box">
+      <p>"서울 분양가가 3.3㎡당 6천만 원에 육박하는 상황에서도 청약 줄이 길다는 사실은, 결국 입지와 가격 경쟁력이 있는 공급이 절대적으로 부족하다는 방증입니다."</p>
+      <cite>— 부동산인사이트 청약 분석팀</cite>
+    </div>
+
+    <h2>하반기를 결정할 3대 변수</h2>
+    <p>하반기 부동산 시장을 좌우할 변수로 전문가들은 세제 개편, 전세 시장, 금리 방향 세 가지를 꼽는다. 이 세 축을 중심으로 하반기 시나리오를 살펴본다.</p>
+
+    <h3>① 세제 개편: 양도세 완화냐, 추가 강화냐</h3>
+    <p>지방선거가 끝난 이후 세제 개편 논의가 재점화될 가능성이 높다. 양도세 장기보유특별공제 축소, 종부세 공정시장가액비율 조정 등이 거론되고 있다. 세금 부담이 커지면 일부 매물이 나올 수 있지만, 역으로 보유 선호 심리가 강해지면 매물 잠김이 심화된다. 어느 방향으로 세제가 바뀌든, 발표 직전·직후의 시장 반응이 하반기 초반 가격 흐름을 결정할 가능성이 크다.</p>
+
+    <h3>② 전세 시장: 공급 절벽 + 1기 신도시 이주 수요의 충돌</h3>
+    <p>하반기 전세 시장은 더욱 빡빡해질 전망이다. 입주 물량 감소에 더해 1기 신도시(분당·일산·평촌 등) 재건축·리모델링 추진에 따른 이주 수요가 수도권 전세 시장에 추가 압박을 가할 것으로 예상된다. 전세가 오르면 매매가를 밀어 올리는 연쇄 반응이 일어날 수 있어, 무주택 실수요자는 하반기 초반에 의사결정을 서두를 필요가 있다.</p>
+
+    <h3>③ 기준금리: 인상 가능성과 매수 심리의 연결고리</h3>
+    <p>2026년 하반기 기준금리 인상 가능성이 거론되고 있다. 금리가 오르면 대출 이자 부담이 커지고 DSR 규제와 맞물려 매수 여력이 줄어든다. 그러나 전문가들의 중론은 "금리 인상이 일괄적인 집값 하락으로 이어지진 않는다"는 것이다. 공급이 절대적으로 부족한 서울·수도권 핵심지는 금리 상승에도 가격 방어력을 유지하는 반면, 지방과 비선호 지역은 약세가 심화되는 '극단적 양극화'가 전개될 가능성이 높다.</p>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+    <ul>
+      <li><strong>무주택 실수요자:</strong> 하반기 전세난 심화와 금리 인상 가능성을 감안하면, 자금 여력이 된다면 하반기 초반 분상제 적용 단지 또는 공공 공급 물량을 적극 검토할 것. 분양가가 시세보다 낮은 단지는 여전히 경쟁이 치열하지만 당첨 시 즉각적 자산 효과가 크다.</li>
+      <li><strong>1주택 갈아타기:</strong> 양도세 중과가 재개됐지만 1세대 1주택 비과세 요건(2년 보유·거주)을 갖춘 경우 절세 기회가 있다. 이사 수요가 활발한 비강남 신축으로의 갈아타기를 하반기 금리 변화 이전에 마무리하는 전략이 유효하다.</li>
+      <li><strong>다주택 투자자:</strong> 세제 개편 발표 전 매물 정리 vs 보유 여부를 명확히 결정해야 한다. 양도세 완화 기대로 버티다가 정책이 강화 방향으로 확정되면 타이밍을 놓칠 수 있다. 보유 자산별 수익성과 세금 구조를 개별 점검하라.</li>
+      <li><strong>전세 세입자:</strong> 하반기 전세 공급이 더욱 줄어드는 만큼, 현 계약 갱신권(계약갱신청구권) 사용 여부를 신중히 판단하라. 갱신권을 아껴두고 이사를 선택한다면 시장 전세가 대비 추가 비용이 크게 발생할 수 있다.</li>
+      <li><strong>청약 준비자:</strong> 서울 분상제 단지는 경쟁률이 1,000 대 1을 넘나드는 만큼 가점이 낮다면 현실적 전략이 필요하다. 경기·인천 수도권 1기 신도시 인근 공공택지 단지나 특별공급 자격 활용을 병행 검토하라.</li>
+    </ul>
+
+    <h2>결론: 시장은 '누구의 부동산이냐'를 묻고 있다</h2>
+    <p>2026년 상반기 한국 부동산 시장이 보내는 신호는 하나다. '같은 서울, 같은 수도권'이어도 입지·가격·수요층에 따라 전혀 다른 시장이 형성되고 있다. 강남의 숨고르기와 비강남의 추격 상승, 서울의 청약 광풍과 지방의 미달 행진이 동시에 진행되고 있다.</p>
+    <p>하반기 세 가지 변수—세제, 전세, 금리—는 이 양극화를 더욱 선명하게 만들 것이다. 지금 필요한 것은 시장 전체를 하나의 방향으로 읽는 '단순한 전망'이 아니라, 내 상황·목적·보유 자산에 맞는 '개별화된 전략'이다. 시장이 어떻게 움직이든, 준비된 사람이 기회를 잡는다.</p>
+
+    <div class="hashtags">
+      <span>#2026부동산</span>
+      <span>#양도세중과</span>
+      <span>#공급절벽</span>
+      <span>#전세난심화</span>
+      <span>#서울아파트</span>
+      <span>#청약양극화</span>
+      <span>#하반기부동산전망</span>
+      <span>#부동산칼럼</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>면책 고지:</strong> 본 기사는 공개된 통계자료 및 언론 보도를 바탕으로 작성된 일반적 정보 제공 목적의 칼럼입니다. 특정 부동산 상품에 대한 매수·매도 권유가 아니며, 개별 투자 의사 결정에 앞서 반드시 공인된 부동산·세무·금융 전문가의 조언을 구하시기 바랍니다. 본 기사에 사용된 수치와 통계는 작성 시점 기준이며 이후 변동될 수 있습니다.
+    </div>
+
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>다주택자 양도세 중과 재개(5/10)로 강남 10주 하락, 그러나 전국적 매물 출회는 제한적</li>
+        <li>서울 비강남권(관악·동대문·강서) 평균 5.47% 상승, 강남구는 0.71%에 그침</li>
+        <li>서울 신규 입주 역대 최저(1만 호↓), 전세가 3.49% 상승으로 전세난 현실화</li>
+        <li>서울 민간 분양가 3.3㎡당 5,838만원 역대 최고 경신, 청약 양극화 심화</li>
+        <li>하반기 변수: 세제 개편 방향, 전세 공급 추가 감소, 기준금리 인상 가능성</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="#">미국·일본·베트남 해외 부동산 2026년 투자 지도</a></li>
+        <li><a href="#">1기 신도시 이주 수요 급증, 수도권 전세 어디로</a></li>
+        <li><a href="#">분상제 청약 가점 84점 만점… 내가 당첨되려면</a></li>
+        <li><a href="#">다주택자 대출 만기연장 불허, 강남 매물 늘어날까</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📅 2026 상반기 주요 일지</h3>
+      <ul class="timeline">
+        <li><strong>4월</strong> 가계부채 관리 강화, 다주택자 수도권 담보대출 만기연장 불허</li>
+        <li><strong>5월 10일</strong> 다주택자 양도세 중과 재개 (2주택 +20%P, 3주택 이상 +30%P)</li>
+        <li><strong>5월</strong> 서울 민간아파트 분양가 3.3㎡당 5,838만원 역대 최고</li>
+        <li><strong>5월</strong> 강남구 아파트값 10주 연속 하락</li>
+        <li><strong>6월</strong> 지방선거 실시, 하반기 세제 개편 논의 재점화 예고</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 부동산인사이트 | 본 콘텐츠는 정보 제공 목적으로 작성되었으며 투자 권유가 아닙니다.</p>
+  <p style="margin-top:6px;"><a href="#">개인정보처리방침</a> | <a href="#">이용약관</a> | <a href="#">광고문의</a></p>
+</footer>
+
+</body>
+</html>
