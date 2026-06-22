@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>강남 하락 vs 강북 질주 — 서울 아파트 시장, 두 개의 속도로 달린다 | 부동산인사이트</title>
+<meta name="description" content="2026년 6월, 서울 아파트 시장은 강남 3구와 강북 외곽 사이에서 전례 없는 양극화 신호를 보내고 있다. 전세가율, 매매 변동률, 거래량 데이터로 시장의 이중 구조를 해부한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #1A4D8F;
+    --accent-light: #e8eef8;
+    --accent-mid: #3a6fba;
+    --header-bg: #0D2B55;
+    --text: #1a1a2e;
+    --muted: #555;
+    --border: #dde3ee;
+    --bg: #f7f8fc;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+  header { background: var(--header-bg); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.35); }
+  .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 64px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a { color: rgba(255,255,255,0.78); font-size: 0.82rem; padding: 6px 13px; border-radius: 4px; text-decoration: none; transition: all 0.2s; }
+  nav a:hover { background: rgba(255,255,255,0.12); color: #fff; }
+  nav a.active { background: var(--accent); color: #fff; }
+  .hero { background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%); padding: 72px 24px 64px; text-align: center; color: #fff; }
+  .hero-category { display: inline-block; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.7rem); font-weight: 700; line-height: 1.35; max-width: 820px; margin: 0 auto 18px; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+  .hero .subtitle { font-size: 1.05rem; color: rgba(255,255,255,0.82); max-width: 640px; margin: 0 auto 24px; }
+  .hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+  .hero-meta span { margin: 0 10px; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media(max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  @media(max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border: 1px solid #c5d5ee; border-left: 4px solid var(--accent); border-radius: 10px; padding: 20px 18px; text-align: center; }
+  .data-card .num { font-size: 1.9rem; font-weight: 700; color: var(--accent); font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 0.8rem; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+  article { background: #fff; border-radius: 14px; padding: 40px 44px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
+  @media(max-width: 600px) { article { padding: 24px 18px; } }
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.28rem; font-weight: 700; color: var(--text); border-left: 4px solid var(--accent); padding-left: 14px; margin: 40px 0 16px; }
+  article p { margin-bottom: 18px; font-size: 0.97rem; color: #2a2a2a; }
+  .quote-box { background: var(--accent-light); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 22px 26px; margin: 32px 0; font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: #1a2f5a; line-height: 1.7; }
+  .quote-box cite { display: block; font-size: 0.8rem; font-style: normal; color: var(--muted); margin-top: 10px; }
+  .insight-list { list-style: none; margin: 16px 0 24px; }
+  .insight-list li { padding: 10px 14px 10px 42px; position: relative; margin-bottom: 10px; background: var(--accent-light); border-radius: 8px; font-size: 0.92rem; }
+  .insight-list li::before { content: "▶"; position: absolute; left: 14px; color: var(--accent); font-size: 0.7rem; top: 13px; }
+  .disclaimer { background: #f0f0f0; border-radius: 8px; padding: 16px 20px; margin-top: 40px; font-size: 0.78rem; color: #666; line-height: 1.6; }
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-widget { background: #fff; border-radius: 12px; padding: 24px 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .sidebar-widget h3 { font-family: 'Noto Serif KR', serif; font-size: 0.95rem; font-weight: 700; color: var(--header-bg); margin-bottom: 16px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+  .summary-list { list-style: none; }
+  .summary-list li { padding: 8px 0 8px 18px; position: relative; font-size: 0.84rem; border-bottom: 1px solid var(--border); color: #2a2a2a; }
+  .summary-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .summary-list li:last-child { border-bottom: none; }
+  .related-list { list-style: none; }
+  .related-list li { border-bottom: 1px solid var(--border); padding: 10px 0; }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { font-size: 0.84rem; color: var(--text); text-decoration: none; line-height: 1.5; }
+  .related-list a:hover { color: var(--accent); }
+  .compare-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .compare-table th { background: var(--accent); color: #fff; padding: 8px 10px; text-align: left; }
+  .compare-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .compare-table tr:nth-child(even) td { background: var(--accent-light); }
+  .hashtags { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtags span { background: var(--accent-light); color: var(--accent); font-size: 0.78rem; padding: 4px 12px; border-radius: 20px; font-weight: 500; }
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.65); padding: 40px 24px; text-align: center; font-size: 0.82rem; margin-top: 60px; }
+  footer strong { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#" class="active">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-category">시장동향</div>
+  <h1>강남 하락 vs 강북 질주 — 서울 아파트 시장, 두 개의 속도로 달린다</h1>
+  <p class="subtitle">전세가율 63% vs 38%, 매매 변동률 0.24% vs -0.08%… 2026년 6월 서울 부동산 양극화의 민낯</p>
+  <div class="hero-meta">
+    <span>2026년 6월 22일</span>
+    <span>|</span>
+    <span>시장동향 분석</span>
+    <span>|</span>
+    <span>부동산인사이트 편집부</span>
+  </div>
+</section>
+
+<div class="container">
+  <div class="grid">
+    <main>
+      <article>
+        <div class="data-cards">
+          <div class="data-card">
+            <div class="num">0.24%</div>
+            <div class="label">노원구 주간 매매 변동률 (서울 평균 0.10% 대비 2.4배)</div>
+          </div>
+          <div class="data-card">
+            <div class="num">62.96%</div>
+            <div class="label">중랑구 전세가율 (강남구 37.65%와 25%p 격차)</div>
+          </div>
+          <div class="data-card">
+            <div class="num">26억</div>
+            <div class="label">강남 3구 국민평형(84㎡) 평균 매매가 (2026년 상반기)</div>
+          </div>
+        </div>
+
+        <p>2026년 6월, 서울 아파트 시장은 하나의 단일한 흐름이 아니라 서로 다른 두 개의 시계(時計)로 작동하고 있다. 강남 3구(강남·서초·송파)는 7주 연속 하락세를 이어가며 고점 피로감을 드러내고 있는 반면, 노원·성북·중랑·금천 등 강북 외곽 지역은 서울 평균을 두 배 이상 웃도는 속도로 오르고 있다. 같은 서울 안에서, 같은 6월에 이런 대립적 흐름이 동시에 나타나는 것은 이례적인 현상이다.</p>
+
+        <p>시장이 이처럼 갈라지는 이유는 복합적이다. 강남권은 이미 실질 구매력의 한계에 도달했고, 스트레스 DSR 3단계 전환과 규제지역 LTV 강화라는 금융 제약이 고가 주택 수요를 직접 억제하고 있다. 반면 강북 외곽은 상대적으로 저렴한 가격대와 높은 전세가율이 맞물려 갭투자 수요와 실수요가 동시에 유입되며 가격을 끌어올리고 있다. 이 격차는 단순한 가격 수준 차이가 아니라 시장의 구조적 이중화를 의미한다.</p>
+
+        <h2>전세가율이 말해주는 것: 두 개의 서울</h2>
+        <p>KB부동산 2026년 상반기 기준, 서울 평균 전세가율은 50.2%다. 그러나 이 평균 뒤에는 충격적인 격차가 숨어 있다. 중랑구는 62.96%, 금천구는 62.92%로 매매가 대비 전세가가 절반을 훌쩍 넘는다. 이 두 자치구에서는 전세를 끼고 주택을 구입할 경우 실투자금이 4,000만~6,000만 원 수준에 불과하다는 뜻이기도 하다. 이런 구조에서 갭투자는 사실상 '사라진' 것이 아니라 권역을 이동한 것이다.</p>
+
+        <p>반면 강남구의 전세가율은 37.65%, 서초구 41.55%, 송파구 39.41%로 역대 최저치를 경신하고 있다. 매매가가 워낙 높은 데 비해 전세 수요가 실제 거주 수요에 머물면서 전세가 상승이 매매가 상승 속도를 따라잡지 못하고 있다는 신호다. 역설적으로, 전세가율 하락은 강남권 자산이 '실거주 가치' 외에 '기대 수익(투기적 수요)'에 크게 의존하고 있다는 사실을 드러낸다.</p>
+
+        <div class="quote-box">
+          "서울 부동산 시장이 '단일 시장'이라는 인식은 이미 오래된 편견이다. 2026년의 서울은 전세가율·매매 변동률·거래 회전율 모든 지표에서 강남과 외곽이 사실상 다른 시장으로 분리되고 있다. 이를 하나의 잣대로 분석하면 반드시 오류에 빠진다."
+          <cite>— 서울 주요 부동산 시장 분석 전문가 논평 종합</cite>
+        </div>
+
+        <h2>강북 외곽 상승의 두 엔진: 갭투자 귀환과 실수요 유입</h2>
+        <p>노원구의 주간 매매 변동률 0.24%, 성북구 0.23%는 서울 평균 0.10%를 훨씬 웃도는 수치다. 이 지역들에서 어떤 일이 일어나고 있는가? 첫 번째 원인은 높은 전세가율을 활용한 갭투자의 귀환이다. 금융당국이 규제지역 대출을 조이고 있지만, 비규제 지역 또는 규제 강도가 낮은 지역에서는 여전히 소액 투자가 가능하다. 실투자금 1억 원 미만으로 서울 아파트를 취득할 수 있다는 매력은 투자자들을 강북 외곽으로 이끌고 있다.</p>
+
+        <p>두 번째 원인은 실수요의 이동이다. 강남권 국민평형이 26억 원 수준에 근접한 상황에서, 30대 실수요자들이 마포·용산·성동으로 이동하고, 그 연쇄 반응으로 이 지역에서 밀려난 수요가 다시 노원·성북·도봉으로 흘러들고 있다. 이른바 '실수요 도미노' 현상이다. 강남의 가격 인상이 결국 외곽의 가격 상승을 이끄는 구조적 연결고리는 이미 수십 년째 반복되어 온 패턴이지만, 2026년 현재 그 속도와 범위가 더욱 가팔라지고 있다는 점이 주목된다.</p>
+
+        <h2>강남 하락의 진짜 의미: 조정인가, 구조 전환인가</h2>
+        <p>강남 3구의 7주 연속 하락은 어떻게 해석해야 할까? 일각에서는 이를 단순한 기술적 조정으로 본다. 워낙 가파르게 오른 이후 숨 고르기에 불과하다는 시각이다. 그러나 이번 하락의 맥락에는 단순한 피로감 이상의 구조적 요인이 깔려 있다. 스트레스 DSR 3단계 적용으로 수도권 규제지역 내 주담대의 스트레스 금리 하한이 기존 1.5%에서 3%로 대폭 높아졌다. 이는 실질 대출 한도를 수천만 원 단위로 줄이는 효과를 낳아 고가 아파트 매수 여력을 직접 제한한다.</p>
+
+        <p>또한 이재명 정부가 7월 부동산 세제 개편을 예고하면서 종부세 인상, 장특공제 축소 등 보유 비용 증가가 확실시되는 상황이다. 이 같은 정책 불확실성은 강남권 고가 주택 매수를 망설이게 하는 관망 심리를 강하게 자극하고 있다. '팔자'가 아니라 '기다리자'는 심리가 시장을 지배하면서 거래 자체가 얼어붙고, 그 결과 호가 하락이 실거래 하락으로 이어지는 흐름이 나타나고 있다.</p>
+
+        <div class="quote-box">
+          "강남 하락은 끝의 시작이 아니라 숨 고르기에 가깝다. 그러나 7월 세제 개편의 강도에 따라 이 숨 고르기가 실질 하락 국면으로 전환될 가능성도 완전히 배제할 수 없다. 관건은 다주택자 양도세와 종부세 부담이 어느 수준까지 높아지느냐에 달려 있다."
+          <cite>— 시장 참여자 관점 종합</cite>
+        </div>
+
+        <h2>거래량 동향: 숨은 신호를 읽어라</h2>
+        <p>2026년 6월 서울 아파트 거래량은 전월 대비 소폭 감소한 상태다. 다만 이 수치를 단순히 '시장 침체'로 읽어서는 안 된다. 거래량 감소의 주요 원인이 강남권 고가 거래 급감에 기인하고 있기 때문이다. 강북 외곽의 거래량은 오히려 증가하는 추세로, 가격대별·권역별 거래 양상이 완전히 다른 방향을 가리키고 있다.</p>
+
+        <p>주목해야 할 또 다른 신호는 전세 거래량의 지속적 증가다. 서울 전체 전세 가격은 61주 이상 상승 행진을 이어왔다. 매매 시장이 관망으로 돌아선 반면 전세 수요는 여전히 강하게 유지되고 있다는 것은, 실거주 수요 자체는 강하지만 매매로 전환되지 않고 있다는 신호다. 이는 전세 가격 상승 압력이 지속될 것임을 예고하는 동시에, 향후 전세→매매 전환 수요가 특정 지역에서 폭발적으로 나타날 가능성을 시사한다.</p>
+
+        <h2>실수요자와 투자자를 위한 시장 독해법</h2>
+        <p>이중화된 시장에서 의사결정을 내려야 하는 실수요자와 투자자들에게 지금의 국면은 무엇을 의미하는가? 단순히 '오른다/내린다'는 방향성만으로는 부족하고, '어디서, 어떤 상품이, 어떤 이유로'라는 세분화된 분석이 필수적이다.</p>
+
+        <ul class="insight-list">
+          <li>강남 3구 고가 아파트는 7월 세제 개편 방향 확인 이후 매수 결정을 내리는 것이 합리적이다. 보유세 인상 폭에 따라 매도 물량이 급증할 가능성이 있다.</li>
+          <li>강북 외곽(노원·도봉·성북·중랑) 실수요자라면 전세가율이 높은 소형~중형 평형에 주목할 시점이다. 단, 갭투자 수요가 이미 유입된 단지는 추가 상승 여력을 신중히 재검토해야 한다.</li>
+          <li>전세가율 60% 이상 단지에 갭투자를 고려 중이라면, 향후 전세 가격 하락 시 갭 리스크(역전세)를 반드시 시뮬레이션해야 한다. 금리 인하 속도와 임대차 3법 완화 여부가 핵심 변수다.</li>
+          <li>마포·용산·성동 등 중간 권역은 두 시장의 경계선에 위치해 있어 변동성이 클 수 있다. 특히 재개발·재건축 기대감이 섞인 단지는 사업 추진 일정을 면밀히 확인한 후 진입해야 한다.</li>
+          <li>전반적으로 7월 세제 개편이 발표되는 시점까지는 시장의 불확실성이 높으므로, 급하지 않은 매수라면 관망 전략이 더 유효할 수 있다.</li>
+        </ul>
+
+        <h2>결론: 양극화는 위기가 아니라 선택의 문제다</h2>
+        <p>서울 아파트 시장의 양극화는 어제오늘의 일이 아니지만, 2026년 6월의 양극화는 그 깊이와 속도 면에서 전례와 다르다. 강남과 강북 외곽이 마치 다른 도시의 부동산처럼 움직이기 시작했다는 것은, 단순히 '비싼 동네와 싼 동네'의 문제가 아니라 수요 구조 자체가 분화되고 있다는 신호다.</p>
+
+        <p>이 시장에서 성공적인 의사결정을 내리려면 '서울 아파트'라는 하나의 카테고리로 뭉뚱그리지 말고, 권역별·상품별·수요 유형별로 시장을 쪼개어 분석하는 세밀한 접근이 필요하다. 가장 위험한 투자는 시장 전체가 오를 것이라는 막연한 낙관론이며, 가장 현명한 전략은 지금 이 순간 어디에 실질 수요가 집중되고 있는지를 데이터로 확인하는 일이다.</p>
+
+        <div class="hashtags">
+          <span>#서울아파트시세</span>
+          <span>#강남강북양극화</span>
+          <span>#전세가율</span>
+          <span>#부동산시장동향</span>
+          <span>#노원구아파트</span>
+          <span>#강남아파트하락</span>
+          <span>#2026부동산</span>
+          <span>#갭투자</span>
+          <span>#스트레스DSR</span>
+          <span>#부동산인사이트</span>
+        </div>
+
+        <div class="disclaimer">
+          ※ 본 기사는 공개된 통계 자료와 시장 동향을 바탕으로 작성된 분석·견해이며, 투자 권유나 특정 물건의 매수·매도를 권장하는 것이 아닙니다. 부동산 투자는 개인의 재무 상황과 리스크 감내 수준에 따라 신중히 결정하시기 바랍니다. 본 기사에 포함된 수치는 한국부동산원, KB부동산, 서울시 부동산정보광장 자료를 바탕으로 하며, 실제 시장 상황과 다소 차이가 있을 수 있습니다.
+        </div>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>강남 3구 7주 연속 하락 — 매수 관망 심리 확산</li>
+          <li>노원·성북 주간 변동률 0.24%·0.23%, 서울 평균 2배 상회</li>
+          <li>중랑·금천 전세가율 63% vs 강남 38% — 서울 내 두 개의 시장</li>
+          <li>스트레스 DSR 3단계 하한 3% → 강남 고가 대출 한도 급감</li>
+          <li>7월 세제 개편 발표 전 불확실성 최고조 — 관망 권고</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>📰 관련 기사</h3>
+        <ul class="related-list">
+          <li><a href="#">스트레스 DSR 3단계 시행, 내 대출 한도 얼마나 줄었나</a></li>
+          <li><a href="#">이재명 정부 7월 부동산 세제 개편 예고 — 종부세·장특공제 어떻게 바뀌나</a></li>
+          <li><a href="#">목동·여의도 재건축 기대감에 가격 재평가 진행 중</a></li>
+          <li><a href="#">성수동 효과 — 업무·주거 복합화가 아파트값을 올린다</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3>📊 권역별 시장 비교</h3>
+        <table class="compare-table">
+          <thead>
+            <tr><th>권역</th><th>전세가율</th><th>매매변동</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>강남구</td><td>37.65%</td><td>▼ 하락</td></tr>
+            <tr><td>서초구</td><td>41.55%</td><td>▼ 하락</td></tr>
+            <tr><td>송파구</td><td>39.41%</td><td>▼ 하락</td></tr>
+            <tr><td>노원구</td><td>~58%</td><td>▲ +0.24%</td></tr>
+            <tr><td>성북구</td><td>~57%</td><td>▲ +0.23%</td></tr>
+            <tr><td>중랑구</td><td>62.96%</td><td>▲ 상승</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> | 전문적 시각으로 읽는 한국 부동산 시장<br><br>
+  © 2026 부동산인사이트. 본 사이트의 콘텐츠는 정보 제공 목적으로만 사용되며 투자 조언이 아닙니다.
+</footer>
+
+</body>
+</html>
