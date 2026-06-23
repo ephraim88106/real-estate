@@ -85,6 +85,78 @@ const i18n = {
 
 const articles = [
   {
+    id: 158,
+    url: 'article_20260623_2_재건축안전진단_v2.html',
+    category: '재개발',
+    title: '30년 아파트, 이제 안전진단 없이 재건축 착수 가능…판도가 바뀐다',
+    summary: '1994년 도입 이후 30년간 \'재건축의 문지기\'였던 안전진단이 전면 개편됐다. 착수 요건에서 사업 인가 전 요건으로 위치가 바뀌면서 전국 수십만 세대의 노후 아파트에 새 바람이 불어오고 있다. 기회인가, 함정인가.',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-23',
+    title_en: '30-Year-Old Apartments Can Now Begin Reconstruction Without Safety Inspection — The Rules Have Changed',
+    summary_en: 'The safety inspection system that served as the \'gatekeeper of reconstruction\' for 30 years since 1994 has been overhauled. As it shifts from a startup requirement to a pre-approval condition, a new wave of opportunity is sweeping hundreds of thousands of aging apartments nationwide. Opportunity or trap?'
+  },
+  {
+    id: 157,
+    url: 'article_20260623_1_청약양극화_v2.html',
+    category: '분양',
+    title: '서울 153:1 vs 지방 줄미달…청약 시장의 \'두 얼굴\'이 말하는 것',
+    summary: '분양가 상한제라는 단 하나의 변수가 만들어낸 극단적 양극화. 서울은 청약 전쟁터가 됐고 지방은 미달의 늪에 빠졌다. 이 구조는 왜 생겼고, 실수요자는 어떻게 대응해야 하는가.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-23',
+    title_en: 'Seoul 153:1 vs Provincial Shortfalls — What the \'Two Faces\' of the Subscription Market Are Telling Us',
+    summary_en: 'A single variable — the presale price cap — has created extreme polarization. Seoul has become a subscription battleground while the provinces sink into a pool of undersubscription. Why did this structure emerge, and how should end-users respond?'
+  },
+  {
+    id: 156,
+    url: 'article_20260622_2_policy_v2.html',
+    category: '정책',
+    title: '"보유세가 낮다" 이재명 대통령의 선전포고 — 7월 부동산 세제 개편, 집주인이 알아야 할 모든 것',
+    summary: '이재명 정부가 7월 종합부동산세 인상과 양도세 장특공제 축소를 예고했다. 역대 가장 강도 높은 부동산 세제 개편이 될 수 있다는 이 대책, 구체적으로 무엇이 어떻게 바뀌고 시장에 어떤 파장을 일으킬까.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-22',
+    title_en: '"Holding Taxes Are Too Low" — President Lee\'s Declaration of War: Everything Homeowners Must Know About the July Real Estate Tax Overhaul',
+    summary_en: 'The Lee Jae-myung government has signaled a July hike to comprehensive real estate tax and a cut to the long-term holding deduction. What exactly changes and what market shockwaves will follow from what could be the most aggressive property-tax reform in history?'
+  },
+  {
+    id: 155,
+    url: 'article_20260622_1_market_v2.html',
+    category: '시장동향',
+    title: '강남 하락 vs 강북 질주 — 서울 아파트 시장, 두 개의 속도로 달린다',
+    summary: '2026년 6월, 서울 아파트 시장은 강남 3구와 강북 외곽 사이에서 전례 없는 양극화 신호를 보내고 있다. 전세가율, 매매 변동률, 거래량 데이터로 시장의 이중 구조를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-22',
+    title_en: 'Gangnam Falls, Gangbuk Surges — Seoul\'s Apartment Market Runs at Two Speeds',
+    summary_en: 'In June 2026, Seoul\'s apartment market is sending unprecedented polarization signals between the Gangnam 3 districts and the outer Gangbuk areas. Dissecting the market\'s dual structure through jeonse ratios, price-change rates, and transaction volume data.'
+  },
+  {
+    id: 154,
+    url: 'article_20260621_2_column_v2.html',
+    category: '칼럼',
+    title: '상반기를 모르면 하반기가 안 보인다 — 양도세 폭탄·공급 절벽·전세난의 교차점',
+    summary: '2026년 상반기 한국 부동산 시장을 뒤흔든 핵심 5대 이슈를 해부하고, 하반기 시장을 좌우할 세제·전세·금리 변수를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-21',
+    title_en: 'Blind to H1, Blind to H2 — At the Crossroads of Capital-Gains Bombs, Supply Cliffs, and a Jeonse Crisis',
+    summary_en: 'A dissection of the five key issues that shook Korea\'s real estate market in the first half of 2026, with an in-depth analysis of the tax, jeonse, and interest-rate variables that will define the second half.'
+  },
+  {
+    id: 153,
+    url: 'article_20260621_1_overseas_v2.html',
+    category: '해외',
+    title: '달러·엔·동(VND)의 삼각 전쟁 — 2026년 한국인 해외 부동산 투자 지도를 다시 그린다',
+    summary: '미국 모기지 금리 하락, 엔저 지속, 베트남 토지법 개정이 맞물린 2026년. 한국인 해외 부동산 투자자가 반드시 알아야 할 3개국 시장 분석과 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-21',
+    title_en: 'The Dollar-Yen-Dong Triangle War — Redrawing the 2026 Map of Korean Overseas Real Estate Investment',
+    summary_en: 'US mortgage rate cuts, a third year of yen weakness, and a sweeping revision of Vietnam\'s land law — 2026 is a pivotal year. A three-country market analysis and strategy guide every Korean overseas investor must read.'
+  },
+  {
     id: 152,
     url: 'article_20260620_2_투자분석_v2.html',
     category: '투자분석',
