@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 160,
+    url: 'article_20260624_2_overseas_v2.html',
+    category: '해외',
+    title: '엔화 약세 끝물인가, 기회의 마지막 창인가 — 한국인의 도쿄 부동산 투자 실전 분석 2026',
+    summary: '엔화 약세와 외국인 수요 급증으로 도쿄 주택 가격이 8~10% 상승하며 임대 수익률 2~7%를 기록 중이다. 엔화가 반등하기 전 마지막 매수 기회인지, 아니면 뒤늦은 진입인지 — 2026년 현재 도쿄 부동산의 냉정한 실전 분석.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-24',
+    title_en: 'Is the Weak Yen Fading or Is This the Last Window of Opportunity? — A Practical 2026 Analysis of Tokyo Real Estate for Korean Investors',
+    summary_en: 'Tokyo home prices have risen 8–10% on yen weakness and surging foreign demand, with rental yields hitting 2–7%. Is this the last buying window before the yen rebounds, or a belated entry? A clear-eyed 2026 field analysis of Tokyo real estate.'
+  },
+  {
+    id: 159,
+    url: 'article_20260624_1_investment_v2.html',
+    category: '투자분석',
+    title: '토허제 사각지대, 경매가 뚫었다 — 낙찰가율 110% 시대의 부동산 투자 생존 전략',
+    summary: '서울 15억 이하 아파트 낙찰가율이 104~112%로 고착화되며 경매 시장이 토허제 사각지대로 떠올랐다. 갭투자 수요가 몰리는 이 시장의 구조적 원인과 실전 투자 생존 전략을 해부한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-24',
+    title_en: 'Auctions Pierce the Blind Spot of Transaction Restrictions — Survival Strategies for the 110% Winning-Bid-Rate Era',
+    summary_en: 'Seoul apartments under KRW 1.5B are seeing winning bid rates locked in at 104–112%, making auctions a blind spot for transaction restrictions. Dissecting the structural causes behind this gap-investment rush and the real survival strategies for today\'s market.'
+  },
+  {
     id: 158,
     url: 'article_20260623_2_재건축안전진단_v2.html',
     category: '재개발',
