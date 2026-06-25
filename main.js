@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 162,
+    url: 'article_20260625_1_column_v2.html',
+    category: '칼럼',
+    title: '7월 세제 폭탄이 온다 — 이재명 정부의 \'불로소득 공화국\' 탈출 선언, 진짜인가?',
+    summary: '이재명 정부가 7월 세제 개편을 통해 종합부동산세 강화와 양도세 장특공제 축소를 예고했다. 실거주 중심 패러다임 전환의 의미와 시장 충격을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집위원',
+    date: '2026-06-25',
+    title_en: 'The July Tax Bomb Is Coming — Is the Lee Government\'s Declaration to Escape the \'Unearned Income Republic\' for Real?',
+    summary_en: 'The Lee Jae-myung government has signaled a July tax overhaul tightening the comprehensive real estate tax and cutting the long-term holding deduction. An in-depth analysis of the shift toward a residency-first paradigm and the market shock to follow.'
+  },
+  {
+    id: 161,
+    url: 'article_20260625_2_market_v2.html',
+    category: '시장동향',
+    title: '강남은 오르고, 지방은 가라앉는다 — 2026 상반기 서울·수도권 부동산 시장 총결산',
+    summary: '개포동 40억 신고가, 목동·여의도 재건축 기대 폭등, 전월세의 월세 전환 가속… 2026년 상반기 한국 부동산 시장의 선별적 강세와 양극화의 실체를 파헤친다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 시장팀',
+    date: '2026-06-25',
+    title_en: 'Gangnam Rises, Provinces Sink — A Full Recap of the Seoul and Metro Area Real Estate Market in H1 2026',
+    summary_en: 'Gaepo-dong hits a record KRW 4 billion, Mokdong and Yeouido surge on reconstruction expectations, and jeonse-to-monthly rent conversion accelerates. Uncovering the reality of selective strength and polarization in Korea\'s H1 2026 real estate market.'
+  },
+  {
     id: 160,
     url: 'article_20260624_2_overseas_v2.html',
     category: '해외',
