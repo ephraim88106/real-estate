@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 164,
+    url: 'article_20260626_1_policy_v2.html',
+    category: '정책',
+    title: '이재명 정부 부동산 규제 완전 해부 — 대출 6-4-2 원칙, 토허제 확대, 양도세 중과… 지금 집 사도 되는가?',
+    summary: '이재명 정부가 내놓은 6·27 대출 규제, 토지거래허가구역 확대, 양도세 중과 부활까지. 2026년 6월 기준 부동산 규제 전면 해부와 실수요자 대응 전략.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-26',
+    title_en: 'Full Anatomy of the Lee Government\'s Real Estate Regulations — The 6-4-2 Loan Rule, Expanded Transaction Permits, and Reinstated Capital-Gains Tax: Should You Buy Now?',
+    summary_en: 'From the 6·27 loan restrictions and expanded land-transaction permit zones to the reinstatement of capital-gains surcharges — a complete dissection of Korea\'s real estate regulations as of June 2026 and practical response strategies for end-users.'
+  },
+  {
+    id: 163,
+    url: 'article_20260626_2_subscription_v2.html',
+    category: '분양',
+    title: '3기 신도시 6월 청약 폭탄 — 고양창릉·남양주왕숙 5,600가구, 당첨만 되면 3억 번다?',
+    summary: '2026년 6월 고양창릉·남양주왕숙 공공분양 5,600가구 청약 일정·자격·전략 완전 정리. 분양가 시세 차익 얼마나 될까? 당첨 확률 높이는 실전 전략.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-26',
+    title_en: 'June Subscription Bomb in the 3rd-Generation New Towns — 5,600 Units in Goyang Changneung & Namyangju Wangsuk: Win and Pocket ₩300M?',
+    summary_en: 'A complete guide to the June 2026 public pre-sale of 5,600 units across Goyang Changneung and Namyangju Wangsuk: schedule, eligibility, and strategy. How large is the price-to-market-value gap, and what are the real tactics to boost your odds?'
+  },
+  {
     id: 162,
     url: 'article_20260625_1_column_v2.html',
     category: '칼럼',
