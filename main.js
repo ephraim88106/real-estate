@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 166,
+    url: 'article_20260627_2_investment_v2.html',
+    category: '투자분석',
+    title: '금리 인하 시대의 부동산 투자, 지금 \'영끌\'해도 될까? 2026 하반기 옥석 가리기 전략',
+    summary: '2026년 하반기 금리 인하 기대감이 부동산 투자 심리를 자극하고 있다. 다주택자 세제 변화, 경매 시장 양극화, 입지별 수익률 격차 — 지금 어디에 투자해야 하는가.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-27',
+    title_en: 'Real Estate Investment in the Rate-Cut Era — Should You Go All-In Now? H2 2026 Separating the Wheat from the Chaff',
+    summary_en: 'Rate-cut expectations in H2 2026 are stimulating real estate investment sentiment. Multi-home tax changes, auction market polarization, and location-based yield gaps — where should you invest right now?'
+  },
+  {
+    id: 165,
+    url: 'article_20260627_1_renewal_v2.html',
+    category: '재개발',
+    title: '서울 정비사업 8만5천호 착공 선언… 통합재건축이 게임 체인저가 될 수 있을까?',
+    summary: '서울시 85개 구역 신속착공 발표와 통합재건축 부상 — 공사비 폭등·사업성 악화로 멈춰 선 정비사업, 이제 어떻게 돌파할 것인가.',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-27',
+    title_en: 'Seoul Declares 85,000-Unit Fast-Track Construction — Can Integrated Reconstruction Be the Game Changer?',
+    summary_en: 'Seoul announces fast-track starts for 85 redevelopment zones as integrated reconstruction rises — how will stalled projects break through amid soaring construction costs and worsening feasibility?'
+  },
+  {
     id: 164,
     url: 'article_20260626_1_policy_v2.html',
     category: '정책',
