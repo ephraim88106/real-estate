@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>도쿄 vs 미국, 2026 한국인의 최적 해외 부동산 투자지는 어디인가 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f4f6f9; color: #1a1a2e; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 22px; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    padding: 6px 14px; border-radius: 4px;
+    font-size: 13px; font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+  }
+  nav a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #003A4A 0%, #006E8A 55%, #003A4A 100%);
+    color: #fff;
+    padding: 72px 24px 60px;
+    text-align: center;
+  }
+  .hero-category {
+    display: inline-block;
+    background: rgba(0,110,138,0.5);
+    border: 1px solid #006E8A;
+    color: #7ECFE0;
+    font-size: 13px; font-weight: 700; letter-spacing: 2px;
+    padding: 6px 18px; border-radius: 20px; margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(26px, 4vw, 42px);
+    font-weight: 700; line-height: 1.35;
+    max-width: 860px; margin: 0 auto 20px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  .hero-subtitle {
+    font-size: 16px; color: rgba(255,255,255,0.78);
+    max-width: 620px; margin: 0 auto 28px;
+  }
+  .hero-meta { font-size: 13px; color: rgba(255,255,255,0.55); }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+  /* ARTICLE BODY */
+  .article-body { background: #fff; border-radius: 12px; padding: 48px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
+
+  /* DATA BOX */
+  .data-box {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin: 32px 0;
+  }
+  @media (max-width: 640px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: linear-gradient(135deg, #e8f6fa 0%, #d0eef5 100%);
+    border-left: 4px solid #006E8A;
+    border-radius: 8px; padding: 20px;
+    text-align: center;
+  }
+  .data-card .number {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 28px; font-weight: 700; color: #006E8A;
+    display: block; margin-bottom: 6px;
+  }
+  .data-card .label { font-size: 13px; color: #555; line-height: 1.4; }
+
+  /* SECTION HEADING */
+  h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 22px; font-weight: 700;
+    border-left: 4px solid #006E8A;
+    padding-left: 16px; margin: 40px 0 16px;
+    color: #1a1a2e;
+  }
+  h3 { font-size: 17px; font-weight: 700; margin: 24px 0 10px; color: #006E8A; }
+
+  p { margin-bottom: 16px; font-size: 15.5px; color: #2c2c3e; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: linear-gradient(135deg, #e8f6fa 0%, #d0eef5 100%);
+    border-left: 5px solid #006E8A;
+    border-radius: 0 8px 8px 0;
+    padding: 24px 28px; margin: 32px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 16px; color: #003A4A;
+    line-height: 1.75;
+  }
+  .quote-box cite { display: block; margin-top: 10px; font-size: 13px; color: #006E8A; font-style: normal; font-weight: 600; }
+
+  /* INSIGHT LIST */
+  .insight-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+  .insight-list li {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 10px 0; border-bottom: 1px solid #eef2f5; font-size: 15px;
+  }
+  .insight-list li:last-child { border-bottom: none; }
+  .insight-list .icon { color: #006E8A; font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+
+  /* COMPARE TABLE */
+  .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+  .compare-table th {
+    background: #006E8A; color: #fff;
+    padding: 12px 16px; text-align: left; font-weight: 600;
+  }
+  .compare-table td { padding: 11px 16px; border-bottom: 1px solid #e8eef2; }
+  .compare-table tr:nth-child(even) td { background: #f4f9fb; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f5f5f5; border: 1px solid #ddd;
+    border-radius: 8px; padding: 20px 24px; margin-top: 40px;
+    font-size: 13px; color: #777; line-height: 1.7;
+  }
+  .disclaimer strong { color: #555; }
+
+  /* TAGS */
+  .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; }
+  .tag {
+    background: #e8f6fa; color: #006E8A;
+    padding: 5px 14px; border-radius: 20px;
+    font-size: 13px; font-weight: 500;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .sidebar-card h4 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 16px; font-weight: 700; margin-bottom: 14px;
+    border-bottom: 2px solid #006E8A; padding-bottom: 8px; color: #006E8A;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 7px 0; border-bottom: 1px solid #eef2f5;
+    font-size: 13.5px; color: #333; display: flex; gap: 8px;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list .bullet { color: #006E8A; font-weight: 700; flex-shrink: 0; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 8px 0; border-bottom: 1px solid #eef2f5; font-size: 13.5px; }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { color: #1a1a2e; text-decoration: none; }
+  .related-list a:hover { color: #006E8A; }
+  .invest-guide li { margin-bottom: 8px; font-size: 13.5px; color: #444; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,0.55); text-align: center; padding: 32px 24px; font-size: 13px; margin-top: 60px; }
+  footer strong { color: rgba(255,255,255,0.8); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-category">🌏 해외부동산</div>
+  <h1>도쿄 vs 미국, 2026년 한국인의 최적 해외 부동산 투자지는 어디인가?</h1>
+  <p class="hero-subtitle">엔저 기회와 달러 자산의 안정성 사이에서… 지금 당신의 돈은 어디로 가야 하는가</p>
+  <div class="hero-meta">2026년 6월 28일 | 해외부동산팀 | 읽기 약 8분</div>
+</section>
+
+<div class="container">
+  <div class="grid">
+    <main class="article-body">
+
+      <div class="data-box">
+        <div class="data-card">
+          <span class="number">6.3%</span>
+          <span class="label">2026년 미국 평균<br>모기지 금리 전망</span>
+        </div>
+        <div class="data-card">
+          <span class="number">7~8천만 원</span>
+          <span class="label">엔저로 낮아진<br>도쿄 소형 투자 진입비용</span>
+        </div>
+        <div class="data-card">
+          <span class="number">34%</span>
+          <span class="label">한국인 해외투자<br>1순위 지역: 동남아</span>
+        </div>
+      </div>
+
+      <p>2026년, 한국 투자자들 사이에서 해외 부동산에 대한 관심이 그 어느 때보다 뜨겁다. 국내 서울 아파트값이 19주 연속 상승세를 기록하면서 "국내에서는 더 이상 기회가 없다"는 피로감이 팽배해졌고, 동시에 글로벌 금리 정상화와 환율 변동이 해외 투자의 창을 새롭게 열어주고 있다. 특히 일본 엔화의 만성적 약세와 미국 연준의 금리 조정 기대감이 맞물리면서, 도쿄와 미국이 한국인 해외 부동산 투자의 양대 축으로 부상했다.</p>
+
+      <p>그렇다면 지금 이 시점, 어디가 더 나은 선택인가? 이 질문에는 단순한 수익률 계산을 넘어서, 환율 리스크, 법적 규제, 세금 구조, 그리고 장기적 자산 보전이라는 복합적 요인들이 얽혀 있다. 오늘은 두 시장의 핵심 변수를 정면으로 비교하고, 유형별 투자자에게 어떤 선택이 적합한지 구체적인 기준을 제시한다.</p>
+
+      <h2>엔저의 역설: 기회인가, 함정인가</h2>
+
+      <p>2023년부터 이어진 엔화 약세는 2026년 현재까지도 완전한 반전을 이루지 못하고 있다. 원화 대비 엔화 가치 하락으로 인해 과거 1억 원이 필요했던 도쿄 소형 원룸이 이제 7,000만~8,000만 원 수준으로 낮아졌다. 이는 한국 투자자 입장에서 명백한 진입 비용의 절감이다.</p>
+
+      <p>도쿄 도심 5구(千代田·中央·港·新宿·渋谷)를 중심으로 한 소형 주거 자산은 공급 제약, 건설비 상승, 외국인 수요 지속이라는 삼중 요인이 가격을 지지하고 있다. 1K·1DK 기준 2,000만~3,000만 엔(약 2억~3억 원) 범위에서 수익형 부동산을 매입하는 한국인 투자자가 늘고 있으며, 연간 임대 수익률은 입지에 따라 3.5%~5.5% 수준을 기록 중이다.</p>
+
+      <div class="quote-box">
+        "엔저 국면에서 도쿄 도심 소형 물건을 매입하는 전략은 여전히 유효하다. 다만 투자자가 간과해서는 안 될 핵심이 있다. 언제 엔화가 강세로 전환될지 모른다는 불확실성, 그리고 매각 시 환차손이 발생할 수 있다는 점이다. 엔화 자산은 '달러 분산'이 아닌 '또 다른 환율 리스크'임을 명심해야 한다."
+        <cite>— 해외 부동산 전문 컨설턴트 분석, 2026년 상반기</cite>
+      </div>
+
+      <p>그러나 엔저 투자에는 구조적 함정이 존재한다. 일본 정부와 일본은행은 2025년 하반기부터 점진적 금리 인상을 시사하고 있으며, 이는 엔화 강세로의 전환 압력을 높인다. 만약 엔/원 환율이 10~15% 이상 회복된다면, 임대 수익과 시세 차익을 감안해도 순환차 손실이 발생할 수 있다. 장기 보유를 전제로 하더라도 환율 리스크에 대한 헤지 전략 없이는 '비싼 공부'가 될 수 있다.</p>
+
+      <h2>미국 부동산: 고금리의 진통, 하지만 펀더멘털은 단단하다</h2>
+
+      <p>미국 부동산은 2023~2025년 동안 6%대 중반의 모기지 금리로 인해 거래량이 급감하는 혹독한 시기를 보냈다. 그러나 2026년 들어 분위기가 달라지고 있다. 주요 기관들은 2026년 연평균 모기지 금리가 6.0~6.3%로 완만하게 하락하며 '균형 장세'가 펼쳐질 것으로 전망한다.</p>
+
+      <p>NAR(전미부동산중개인협회)에 따르면 2026년 기존 주택 거래량은 전년 대비 약 14% 증가, 중위 주택 가격은 4% 내외 상승이 예상된다. 이는 급격한 반등이나 붕괴보다는 '매수자 우위 회복'에 가까운 신호다. 특히 한국인이 선호하는 LA, 뉴욕, 텍사스 등 대도시권은 고용 수요와 인구 유입이 가격을 지지하고 있다.</p>
+
+      <div class="quote-box">
+        "모기지 이자율이 6.5%인데도 집이 팔리고 있다는 것은 역설이 아니다. 3%대 금리에 묶인 기존 주택 보유자들이 매물을 내놓지 않는 '락인 효과(lock-in effect)'가 여전히 지속되면서, 공급 부족이 수요를 받쳐주고 있는 것이다."
+        <cite>— 미국 부동산 시장 분석가 코멘트, 2026년 6월</cite>
+      </div>
+
+      <p>미국 부동산 투자의 핵심 장점은 달러 자산이라는 점이다. 한국 원화 대비 달러는 구조적으로 강세 기조를 유지해왔으며, 미국 부동산은 인플레이션 헤지 자산으로서의 기능이 검증되어 있다. 특히 한국인 투자자들이 주목하는 멀티패밀리(다세대 임대용) 물건은 6~8% 수익률이 가능한 지역도 존재해, 장기 현금흐름 자산으로서의 매력이 높다.</p>
+
+      <h2>투자자 유형별 최적 선택 기준</h2>
+
+      <p>도쿄와 미국 중 어느 쪽이 낫다는 절대적 답은 없다. 투자자의 목적, 보유 기간, 리스크 성향에 따라 최적 답이 달라진다. 다음 비교표가 의사결정의 출발점이 될 수 있다.</p>
+
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>비교 항목</th>
+            <th>도쿄 부동산</th>
+            <th>미국 부동산</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>진입 비용</td>
+            <td>상대적 낮음 (엔저 효과)</td>
+            <td>중~높음 (지역별 편차)</td>
+          </tr>
+          <tr>
+            <td>환율 리스크</td>
+            <td>엔/원 변동 큼</td>
+            <td>달러/원 (상대적 안정)</td>
+          </tr>
+          <tr>
+            <td>임대 수익률</td>
+            <td>3.5~5.5% (도심 기준)</td>
+            <td>4~8% (지역별 편차)</td>
+          </tr>
+          <tr>
+            <td>외국인 규제</td>
+            <td>없음 (내국인과 동일)</td>
+            <td>주별 상이, 대체로 허용</td>
+          </tr>
+          <tr>
+            <td>세금 복잡도</td>
+            <td>중간 (고정자산세 등)</td>
+            <td>높음 (주·연방 이중과세)</td>
+          </tr>
+          <tr>
+            <td>장기 자산 보전</td>
+            <td>인구 감소 우려 있음</td>
+            <td>인구 증가 기조 (강점)</td>
+          </tr>
+          <tr>
+            <td>관리 용이성</td>
+            <td>현지 에이전트 한국어 가능</td>
+            <td>원격관리 서비스 발달</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>한국 투자자를 위한 실전 체크리스트</h2>
+
+      <p>해외 부동산 투자 전 반드시 확인해야 할 현실적 쟁점들이 있다. 이를 무시하고 수익률 숫자만 보고 투자에 나선다면 낭패를 볼 수 있다.</p>
+
+      <p>첫째, 신고 의무다. 한국 거주자가 해외 부동산을 취득할 경우 취득 후 3개월 이내 한국은행 또는 외국환은행에 신고해야 하며, 연간 해외 부동산 임대 소득은 국내 종합소득세 신고 대상이다. 이를 누락하면 과태료 처분을 받는다.</p>
+
+      <p>둘째, 현지 법률 리스크다. 특히 미국 일부 주는 최근 외국인의 부동산 매입을 제한하는 법안을 논의 중이며, 플로리다를 비롯한 몇몇 주에서는 중국·한국 등 특정 국적자에 대한 규제 법안이 발의된 바 있다. 투자 전 현지 법률 전문가 상담은 필수다.</p>
+
+      <p>셋째, 환율 타이밍의 함정이다. 엔저·달러 강세 국면을 매입 시점으로 활용하더라도, 환율은 장기적으로 평균 회귀하는 경향이 있다. 매수 시 저렴했던 환율이 매각 시 역전될 경우 수익이 사라질 수 있다.</p>
+
+      <h2>시사점: 단순 수익률보다 '포트폴리오 역할'을 먼저 정의하라</h2>
+
+      <p>2026년 한국인 해외 부동산 투자의 성패는 수익률 비교에 앞서 "이 자산이 내 포트폴리오에서 어떤 역할을 해야 하는가"를 먼저 정의하는 데서 갈린다. 달러 자산 분산이 목적이라면 미국이, 상대적으로 낮은 진입 비용으로 임대 현금흐름을 원한다면 도쿄가 현 시점에서 더 적합할 수 있다.</p>
+
+      <p>무엇보다 해외 부동산은 국내 부동산보다 훨씬 높은 정보 비대칭과 법적 복잡성을 가진다. 수익률만 좇는 투자가 아니라, 법적 의무와 리스크를 완전히 이해한 상태에서 진입하는 것이 현명한 투자자의 자세다.</p>
+
+      <ul class="insight-list">
+        <li><span class="icon">▶</span><span><strong>분산 투자 관점:</strong> 해외 부동산은 국내 자산과의 상관관계가 낮아 포트폴리오 분산 효과가 있으나, 단일 해외 물건에 집중 투자는 역설적으로 리스크 집중을 야기할 수 있다.</span></li>
+        <li><span class="icon">▶</span><span><strong>도쿄 투자자:</strong> 엔화 강세 전환 시나리오에 대한 시뮬레이션을 반드시 수행하고, 엔/원 환율 130~140원 수준을 스트레스 기준으로 설정해 수익성 재검토가 필요하다.</span></li>
+        <li><span class="icon">▶</span><span><strong>미국 투자자:</strong> 주별 외국인 부동산 규제 동향을 지속 모니터링하고, LLC 등 법인 구조를 통한 절세 및 부채 보호 전략을 전문가와 함께 설계해야 한다.</span></li>
+        <li><span class="icon">▶</span><span><strong>세금 신고:</strong> 해외 부동산 임대 소득은 국내 종합소득세 과세 대상이므로, 매년 5월 신고를 빠짐없이 이행하고 해외 세액공제 혜택을 활용해야 한다.</span></li>
+        <li><span class="icon">▶</span><span><strong>현지 네트워크:</strong> 한국어 서비스가 가능한 현지 부동산 에이전트·세무사 네트워크 구축이 성공적인 해외 투자의 전제 조건이며, 신뢰할 수 있는 관리 파트너 없이는 장기 보유 시 관리 리스크가 커진다.</span></li>
+      </ul>
+
+      <h2>결론: 2026년, 기회는 있다—하지만 철저한 준비 없인 없다</h2>
+
+      <p>2026년은 한국인 해외 부동산 투자자에게 실질적인 기회의 창이 열린 해다. 엔저로 인한 도쿄 진입 비용 절감, 미국 금리 하락 기대에 따른 거래 활성화 신호, 그리고 한국 내 공급 불안으로 인한 대안 자산 수요가 맞물리고 있다. 그러나 이 기회는 "준비된 투자자"에게만 유효하다.</p>
+
+      <p>도쿄를 선택하든, 미국을 선택하든, 혹은 동남아 신흥 시장으로 눈을 돌리든—투자 결정은 반드시 현지 법률 검토, 세금 구조 설계, 환율 리스크 시뮬레이션을 모두 완료한 뒤에 이루어져야 한다. 수익률 숫자는 언제나 조건부 숫자임을 잊지 말아야 한다.</p>
+
+      <div class="tag-list">
+        <span class="tag">#해외부동산</span>
+        <span class="tag">#도쿄투자</span>
+        <span class="tag">#미국부동산</span>
+        <span class="tag">#엔저투자</span>
+        <span class="tag">#2026부동산</span>
+        <span class="tag">#환율리스크</span>
+        <span class="tag">#해외투자전략</span>
+      </div>
+
+      <div class="disclaimer">
+        <strong>⚠️ 면책 고지:</strong> 본 기사는 투자 참고용 정보 제공을 목적으로 하며, 특정 자산에 대한 투자 권유 또는 법적 조언이 아닙니다. 해외 부동산 투자는 환율 리스크, 현지 법령, 세금 의무 등 다양한 리스크를 수반합니다. 모든 투자 결정은 투자자 본인의 책임 하에 이루어져야 하며, 반드시 현지 법률·세무 전문가와 상담하시기 바랍니다. 본 기사에 포함된 수치와 전망은 각종 공개 자료 기준으로 작성되었으며 실제 시장 상황과 다를 수 있습니다.
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h4>📌 핵심 요약</h4>
+        <ul class="summary-list">
+          <li><span class="bullet">①</span><span>엔저로 도쿄 소형 투자 진입 비용 7~8천만 원으로 절감</span></li>
+          <li><span class="bullet">②</span><span>미국 모기지 금리 2026년 6%대 하락 기대, 거래 활성화 신호</span></li>
+          <li><span class="bullet">③</span><span>도쿄: 엔화 강세 전환 시 환차손 위험 반드시 시뮬레이션 필요</span></li>
+          <li><span class="bullet">④</span><span>미국: 달러 자산 분산·인플레이션 헤지 효과 여전히 유효</span></li>
+          <li><span class="bullet">⑤</span><span>해외 부동산 임대소득, 국내 종합소득세 신고 의무 있음</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>📰 관련 기사</h4>
+        <ul class="related-list">
+          <li><a href="#">일본 부동산 투자 완벽 가이드 — 엔저와 안정성의 조화</a></li>
+          <li><a href="#">2026 한·미·일 부동산 시장 전망: 초양극화 시대의 선별적 기회</a></li>
+          <li><a href="#">외국인 부동산 쇼핑 제동 — 미국 규제 강화 현황</a></li>
+          <li><a href="#">해외 부동산 취득 신고 의무, 놓치면 과태료</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>🌐 해외투자 체크리스트</h4>
+        <ul class="invest-guide" style="list-style: none; padding: 0;">
+          <li style="padding: 7px 0; border-bottom: 1px solid #eef; font-size: 13.5px;">✅ 한국은행 해외투자 신고 (취득 후 3개월 내)</li>
+          <li style="padding: 7px 0; border-bottom: 1px solid #eef; font-size: 13.5px;">✅ 현지 세무사·법률가 자문 확보</li>
+          <li style="padding: 7px 0; border-bottom: 1px solid #eef; font-size: 13.5px;">✅ 환율 스트레스 시나리오 시뮬레이션</li>
+          <li style="padding: 7px 0; border-bottom: 1px solid #eef; font-size: 13.5px;">✅ 임대 관리 파트너 계약 체결</li>
+          <li style="padding: 7px 0; font-size: 13.5px;">✅ 연간 종합소득세 신고 일정 확인</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> | 전문적 시각으로 읽는 한국 부동산<br>
+  <span style="margin-top: 6px; display: block;">© 2026 부동산인사이트. 본 콘텐츠의 무단 복제 및 재배포를 금합니다.</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>지방선거 끝났다, 이재명 정부의 부동산 강공이 시작된다 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f4f6f9; color: #1a1a2e; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 22px; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    padding: 6px 14px; border-radius: 4px;
+    font-size: 13px; font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+  }
+  nav a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+    color: #fff;
+    padding: 72px 24px 60px;
+    text-align: center;
+  }
+  .hero-category {
+    display: inline-block;
+    background: rgba(106,106,16,0.45);
+    border: 1px solid #6A6A10;
+    color: #D4D464;
+    font-size: 13px; font-weight: 700; letter-spacing: 2px;
+    padding: 6px 18px; border-radius: 20px; margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(26px, 4vw, 42px);
+    font-weight: 700; line-height: 1.35;
+    max-width: 860px; margin: 0 auto 20px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  .hero-subtitle {
+    font-size: 16px; color: rgba(255,255,255,0.78);
+    max-width: 620px; margin: 0 auto 28px;
+  }
+  .hero-meta { font-size: 13px; color: rgba(255,255,255,0.55); }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+  /* ARTICLE BODY */
+  .article-body { background: #fff; border-radius: 12px; padding: 48px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
+
+  /* DATA BOX */
+  .data-box {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin: 32px 0;
+  }
+  @media (max-width: 640px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: linear-gradient(135deg, #f5f5d0 0%, #eaea9a 100%);
+    border-left: 4px solid #6A6A10;
+    border-radius: 8px; padding: 20px;
+    text-align: center;
+  }
+  .data-card .number {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 28px; font-weight: 700; color: #6A6A10;
+    display: block; margin-bottom: 6px;
+  }
+  .data-card .label { font-size: 13px; color: #555; line-height: 1.4; }
+
+  /* SECTION HEADING */
+  h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 22px; font-weight: 700;
+    border-left: 4px solid #6A6A10;
+    padding-left: 16px; margin: 40px 0 16px;
+    color: #1a1a2e;
+  }
+  h3 { font-size: 17px; font-weight: 700; margin: 24px 0 10px; color: #6A6A10; }
+
+  p { margin-bottom: 16px; font-size: 15.5px; color: #2c2c3e; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: linear-gradient(135deg, #f5f5d0 0%, #eaea9a 100%);
+    border-left: 5px solid #6A6A10;
+    border-radius: 0 8px 8px 0;
+    padding: 24px 28px; margin: 32px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 16px; color: #2a2a05;
+    line-height: 1.75;
+  }
+  .quote-box cite { display: block; margin-top: 10px; font-size: 13px; color: #6A6A10; font-style: normal; font-weight: 600; }
+
+  /* INSIGHT LIST */
+  .insight-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+  .insight-list li {
+    display: flex; gap: 12px; align-items: flex-start;
+    padding: 10px 0; border-bottom: 1px solid #eef2e8; font-size: 15px;
+  }
+  .insight-list li:last-child { border-bottom: none; }
+  .insight-list .icon { color: #6A6A10; font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+
+  /* POLICY TABLE */
+  .policy-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; }
+  .policy-table th {
+    background: #6A6A10; color: #fff;
+    padding: 12px 16px; text-align: left; font-weight: 600;
+  }
+  .policy-table td { padding: 11px 16px; border-bottom: 1px solid #eef2e8; }
+  .policy-table tr:nth-child(even) td { background: #f9f9f0; }
+
+  /* ALERT BOX */
+  .alert-box {
+    background: #fffbe6; border: 1px solid #d4a000;
+    border-radius: 8px; padding: 20px 24px; margin: 24px 0;
+    font-size: 14.5px; color: #5a4000; line-height: 1.7;
+  }
+  .alert-box strong { color: #8a5e00; display: block; margin-bottom: 6px; font-size: 15px; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f5f5f5; border: 1px solid #ddd;
+    border-radius: 8px; padding: 20px 24px; margin-top: 40px;
+    font-size: 13px; color: #777; line-height: 1.7;
+  }
+  .disclaimer strong { color: #555; }
+
+  /* TAGS */
+  .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; }
+  .tag {
+    background: #f0f0d0; color: #6A6A10;
+    padding: 5px 14px; border-radius: 20px;
+    font-size: 13px; font-weight: 500;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .sidebar-card h4 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 16px; font-weight: 700; margin-bottom: 14px;
+    border-bottom: 2px solid #6A6A10; padding-bottom: 8px; color: #6A6A10;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 7px 0; border-bottom: 1px solid #eef2e8;
+    font-size: 13.5px; color: #333; display: flex; gap: 8px;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list .bullet { color: #6A6A10; font-weight: 700; flex-shrink: 0; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 8px 0; border-bottom: 1px solid #eef2e8; font-size: 13.5px; }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { color: #1a1a2e; text-decoration: none; }
+  .related-list a:hover { color: #6A6A10; }
+
+  /* TIMELINE */
+  .timeline { list-style: none; padding: 0; margin: 16px 0; }
+  .timeline li {
+    display: flex; gap: 14px; padding: 10px 0;
+    border-bottom: 1px solid #eef2e8; font-size: 13.5px;
+  }
+  .timeline li:last-child { border-bottom: none; }
+  .timeline .date { color: #6A6A10; font-weight: 700; flex-shrink: 0; min-width: 60px; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,0.55); text-align: center; padding: 32px 24px; font-size: 13px; margin-top: 60px; }
+  footer strong { color: rgba(255,255,255,0.8); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-category">✍️ 칼럼·해설</div>
+  <h1>지방선거 끝났다, 이재명 정부의 부동산 강공이 이제 시작된다</h1>
+  <p class="hero-subtitle">6·3 지방선거 완승 이후 '불로소득 공화국 탈출' 선언… 보유세 강화·세제 개편의 실체와 시장 충격 분석</p>
+  <div class="hero-meta">2026년 6월 28일 | 편집국 칼럼니스트 | 읽기 약 9분</div>
+</section>
+
+<div class="container">
+  <div class="grid">
+    <main class="article-body">
+
+      <div class="data-box">
+        <div class="data-card">
+          <span class="number">68주</span>
+          <span class="label">서울 아파트 평균 가격<br>연속 상승 (2025년 2월~)</span>
+        </div>
+        <div class="data-card">
+          <span class="number">2028년</span>
+          <span class="label">다음 전국단위 선거<br>(총선) — 정책 드라이브 적기</span>
+        </div>
+        <div class="data-card">
+          <span class="number">1.6만 세대</span>
+          <span class="label">2026년 서울 예상<br>입주 물량 (급감)</span>
+        </div>
+      </div>
+
+      <p>6월 4일, 이재명 정부가 지방선거에서 압승을 거뒀다. 전국 17개 광역단체장 가운데 집권 여당이 다수를 차지했고, 이 결과는 단순한 정치적 승리를 넘어 부동산 정책의 판도를 바꾸는 신호탄이 됐다. 선거 다음날부터 청와대와 국토부에서는 일제히 같은 말이 나오기 시작했다. "이제 제대로 간다."</p>
+
+      <p>이재명 대통령은 선거 직후 대국민 메시지에서 "망국적인 부동산 불로소득 공화국은 반드시 탈출할 것"이라고 천명했다. 단순한 정치적 수사가 아니다. 서울 아파트 평균가격이 지난해 2월 이후 68주 연속 상승하는 동안, 정부는 수차례 구두 경고는 했지만 실탄이 될 만한 정책 카드를 아껴왔다. 그 카드가 이제 본격적으로 꺼내질 참이다.</p>
+
+      <h2>왜 지금인가: 선거 이후 2년의 황금 창구</h2>
+
+      <p>한국 정치의 특성상 집권 여당은 전국단위 선거를 앞두고 강력한 부동산 규제를 내놓기를 주저한다. 집값 상승의 혜택을 입은 유주택자 유권자들이 이탈할 수 있기 때문이다. 그러나 6·3 지방선거가 끝난 지금, 다음 전국단위 선거는 2028년 총선이다. 무려 2년이라는 시간이 정부 앞에 펼쳐져 있다.</p>
+
+      <p>이 2년은 부동산 정책 입장에서 역사적인 기회다. 임기 초반처럼 정치적 부담 없이 구조 개혁에 나설 수 있고, 2028년 총선까지 정책 효과가 어느 정도 안착할 시간도 있다. 이재명 정부가 '강공 드라이브'를 선택한 배경에는 이 냉철한 정치 계산이 깔려 있다. 부동산 전문가들이 "지방선거 이후가 진짜 변곡점"이라고 일찍부터 경고한 이유가 바로 이것이다.</p>
+
+      <div class="quote-box">
+        "6·3 지방선거 이후 부동산 정책에 본격 드라이브가 걸릴 것이다. 정책 방향은 부동산을 통한 불로소득보다 기업 투자·기술 혁신 등 생산적 경제활동이 더 보상받는 구조를 만드는 데 초점이 맞춰질 것이다."
+        <cite>— 청와대 관계자 발언, 2026년 6월</cite>
+      </div>
+
+      <h2>예고된 정책 패키지: 무엇이 나오는가</h2>
+
+      <p>현재 정부가 공식·비공식적으로 시사한 정책 카드들은 크게 세 범주로 분류된다. 세제 강화, 공급 확대, 투기 차단 강화다.</p>
+
+      <h3>1. 보유세 강화: '실거주 중심 세제 개편'의 실체</h3>
+      <p>이재명 대통령은 선거 후 첫 대국민 담화에서 "보유세 의지"를 명확히 천명했다. 구체적으로는 종합부동산세(종부세) 기준의 재정비, 공시가격 현실화율 상향 재개, 다주택자 보유세 강화 등이 검토 중인 것으로 알려졌다. 윤석열 정부 시절 크게 완화된 보유세 부담이 이재명 정부 하에서 다시 강화 방향으로 선회할 가능성이 높다.</p>
+
+      <p>핵심 논리는 '실거주 중심' 세제로의 전환이다. 1주택 실거주자에 대해서는 세금 부담을 낮추는 대신, 다주택 투기성 보유에 대해서는 세금 비용을 높여 시장 왜곡을 줄이겠다는 것이다. 이는 노무현 정부의 종부세 도입 논리와 맥을 같이 하지만, 2026년의 시장 여건과 세수 구조는 당시와 다르다는 점을 유의해야 한다.</p>
+
+      <h3>2. 7월 세제 강화: 가시적 첫 단추</h3>
+      <p>7월부터는 구체적인 세제 강화 조치가 시행될 것으로 예고되어 있다. 이미 부동산 업계에서는 양도소득세 중과, DSR 3단계 완전 시행, 공시가격 현실화 로드맵 복원 등이 거론되고 있다. 시장은 이미 이를 선반영하여 일부 급등 지역에서 관망세가 형성되고 있다.</p>
+
+      <table class="policy-table">
+        <thead>
+          <tr>
+            <th>정책 방향</th>
+            <th>구체 내용 (예상)</th>
+            <th>시장 예상 영향</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>보유세 강화</td>
+            <td>종부세 기준 재조정, 공시가격 현실화 재개</td>
+            <td>다주택자 매물 출회 압박, 단기 조정 가능</td>
+          </tr>
+          <tr>
+            <td>양도세 조정</td>
+            <td>다주택자 중과 부활 또는 강화</td>
+            <td>매물 잠김 심화 가능성 (역설적 가격 지지)</td>
+          </tr>
+          <tr>
+            <td>DSR 규제 강화</td>
+            <td>스트레스 DSR 3단계 완전 적용</td>
+            <td>대출 가능액 축소, 매수 여력 감소</td>
+          </tr>
+          <tr>
+            <td>공급 정책</td>
+            <td>정비사업 속도 조정, 공공임대 확대</td>
+            <td>단기 공급 효과 제한적</td>
+          </tr>
+          <tr>
+            <td>투기 차단</td>
+            <td>불법 자금 유입 조사, 갭투자 모니터링</td>
+            <td>투기 수요 억제, 실수요 선별 매수</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>정책의 역설: 강공이 오히려 가격을 올릴 수도 있다</h2>
+
+      <p>이 지점에서 부동산 시장의 냉혹한 역설을 짚어야 한다. 역사적으로 다주택자 세금 강화 정책은 의도와 반대되는 결과를 낳는 경우가 많았다. 특히 양도세 중과가 실시될 경우, 다주택자들이 세금 부담 때문에 오히려 매물을 내놓지 않는 '매물 잠김' 현상이 발생한다. 공급이 줄어들면 가격은 더 오른다.</p>
+
+      <div class="quote-box">
+        "정부의 의도와 시장의 반응이 일치하지 않는 게 부동산 정책의 가장 큰 난제다. 세금을 올리면 '비용 증가→매물 증가→가격 하락'의 경로를 기대하지만, 실제로는 '비용 증가→매물 감소→가격 상승'으로 귀결되는 경우가 빈번했다. 이재명 정부의 정책 설계자들이 이 역설을 얼마나 정교하게 방어하는지가 관건이다."
+        <cite>— 부동산 정책 연구자 분석 논평, 2026년 6월</cite>
+      </div>
+
+      <p>실제로 노무현 정부 시절 대규모 부동산 세제 강화가 이루어졌음에도 서울 집값은 임기 내내 상승했다. 이는 세금이라는 수요 억제책만으로는 공급 부족이라는 구조적 문제를 해결할 수 없다는 것을 방증한다. 2026년 서울 입주 물량이 1.6만 세대로 급감한 상황에서, 세제 강화만으로 가격을 잡겠다는 전략이 얼마나 실효성이 있을지는 진지한 의문이 제기된다.</p>
+
+      <div class="alert-box">
+        <strong>⚡ 시장 주목 포인트: 공급 없는 세제 강화의 한계</strong>
+        2026년 서울 신규 입주 물량은 전년 대비 급감한 1.6만 세대 수준이다. 수요 억제(세금 강화·대출 규제)와 공급 확대가 동시에 진행되지 않는 한, 정책이 의도한 가격 안정 효과는 제한적일 가능성이 높다. 전문가들은 정비사업 인허가 속도 제고와 3기 신도시 입주 촉진이 병행되어야 함을 강조하고 있다.
+      </div>
+
+      <h2>실수요자와 투자자, 지금 무엇을 해야 하나</h2>
+
+      <p>정부의 정책 방향이 '보유세 강화·실거주 중심'으로 선회하고 있다면, 이에 대한 개인의 대응 전략도 달라져야 한다. 자산의 성격과 보유 구조를 점검하는 것이 급선무다.</p>
+
+      <ul class="insight-list">
+        <li><span class="icon">▶</span><span><strong>1주택 실거주자:</strong> 정부가 실거주 1주택자는 보호 대상으로 명확히 구분하고 있어 당장의 세부담 급등 가능성은 낮다. 다만 공시가격 현실화 재개 시 세금 부담이 점진적으로 늘어날 수 있어 중장기 재정 계획 점검이 필요하다.</span></li>
+        <li><span class="icon">▶</span><span><strong>다주택 투자자:</strong> 7월 세제 강화 전 포트폴리오 구조를 점검해야 한다. 무조건 매각보다는 보유 물건의 수익률과 세금 시뮬레이션을 비교해, 기회비용이 가장 낮은 물건부터 정리하는 전략적 접근이 필요하다.</span></li>
+        <li><span class="icon">▶</span><span><strong>무주택 실수요자:</strong> 단기적으로 정책 불확실성이 높지만, 서울 공급 부족이라는 구조적 요인은 변하지 않는다. 매수 타이밍을 기다리기보다 자금 조달 계획과 입지 기준을 명확히 설정하는 것이 우선이다.</span></li>
+        <li><span class="icon">▶</span><span><strong>전세 거주자:</strong> 2026년 전세 시장은 입주 물량 감소와 집주인 보유 부담 증가가 동시에 작용해 전셋값 강세가 지속될 가능성이 크다. 전세 계약 만기 전 갱신 여부와 상한선 협상 전략을 미리 준비해야 한다.</span></li>
+        <li><span class="icon">▶</span><span><strong>세금 대응:</strong> 보유세 강화 방향이 명확해진 만큼 부동산 세무사 상담을 선제적으로 받고, 증여·상속 구조 검토, 임대사업자 등록 여부 등 세금 최적화 전략을 재정비해야 한다.</span></li>
+      </ul>
+
+      <h2>결론: 정부는 의지를 갖췄고, 시장은 이미 알고 있다</h2>
+
+      <p>이재명 정부의 부동산 강공이 이번엔 진짜다. 과거와 다른 결정적 조건이 갖춰졌기 때문이다. 지방선거 완승으로 정치적 명분이 생겼고, 2028년 총선까지 시간적 여유가 있으며, 서울 집값 68주 연속 상승이라는 구체적 명분도 있다. 무엇보다 "불로소득 공화국 탈출"이라는 대통령의 공개 선언은 이제 정치적 레토릭이 아니라 정책 의지의 표명으로 읽어야 한다.</p>
+
+      <p>그러나 정책의 의지와 시장의 결과는 항상 같은 방향을 향하지 않는다. 공급이 따라오지 않는 세제 강화는 의도와 반대되는 결과를 낳을 수 있다. 시장 참여자들은 정책 방향성을 예의주시하되, 정책 효과에 대한 과신도 과소평가도 경계해야 한다. 이재명 정부의 부동산 대전환이 성공적 연착륙으로 끝날지, 아니면 또 하나의 실패 사례가 될지 — 그 판단은 7월 이후의 구체적 정책 내용과 집행 방식에 달려 있다.</p>
+
+      <div class="tag-list">
+        <span class="tag">#이재명정부</span>
+        <span class="tag">#부동산정책</span>
+        <span class="tag">#보유세강화</span>
+        <span class="tag">#지방선거</span>
+        <span class="tag">#2026부동산</span>
+        <span class="tag">#세제개편</span>
+        <span class="tag">#서울집값</span>
+        <span class="tag">#불로소득</span>
+      </div>
+
+      <div class="disclaimer">
+        <strong>⚠️ 면책 고지:</strong> 본 칼럼은 공개된 정부 발표 및 언론 보도를 바탕으로 한 분석적 견해로, 특정 투자 행동을 권유하거나 정책 효과를 확정적으로 예측하는 것이 아닙니다. 부동산 세제 및 정책은 국회 입법 과정과 시행령 개정 등을 거쳐 최종 확정되므로, 실제 내용과 다를 수 있습니다. 세금·법률 관련 사항은 반드시 공인 세무사·법무사와 상담하시기 바랍니다. 이 글의 어떤 내용도 법적·세무적 조언으로 해석되어서는 안 됩니다.
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h4>📌 핵심 요약</h4>
+        <ul class="summary-list">
+          <li><span class="bullet">①</span><span>6·3 지방선거 완승 후 이재명 정부 부동산 강공 본격화 예고</span></li>
+          <li><span class="bullet">②</span><span>보유세 강화·세제 개편·공시가격 현실화 재개 유력</span></li>
+          <li><span class="bullet">③</span><span>2028년 총선까지 2년, 구조 개혁 추진 최적 창구</span></li>
+          <li><span class="bullet">④</span><span>양도세 중과 시 매물 잠김 역설 가능성 — 정책 설계가 관건</span></li>
+          <li><span class="bullet">⑤</span><span>서울 1.6만 세대 입주 물량, 공급 없는 규제의 한계</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>📅 정책 일정 타임라인</h4>
+        <ul class="timeline">
+          <li><span class="date">6월 초</span><span>지방선거 완승, 부동산 강공 드라이브 예고</span></li>
+          <li><span class="date">6월 중</span><span>"불로소득 공화국 탈출" 대통령 공개 선언</span></li>
+          <li><span class="date">7월</span><span>세제 강화 조치 첫 단계 시행 예정</span></li>
+          <li><span class="date">하반기</span><span>보유세·공시가격 로드맵 정상화 구체안 발표</span></li>
+          <li><span class="date">2028년</span><span>총선 — 정책 효과 최종 평가 시점</span></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h4>📰 관련 기사</h4>
+        <ul class="related-list">
+          <li><a href="#">서울 아파트 68주 연속 상승, 정부의 선택은</a></li>
+          <li><a href="#">보유세 강화론 vs. 공급 우선론, 논쟁의 핵심</a></li>
+          <li><a href="#">DSR 3단계 완전 시행의 대출 규제 효과 분석</a></li>
+          <li><a href="#">역대 정부 부동산 정책 성패 비교 분석</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> | 전문적 시각으로 읽는 한국 부동산<br>
+  <span style="margin-top: 6px; display: block;">© 2026 부동산인사이트. 본 콘텐츠의 무단 복제 및 재배포를 금합니다.</span>
+</footer>
+
+</body>
+</html>
