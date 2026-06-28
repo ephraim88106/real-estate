@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 168,
+    url: 'article_20260628_1_해외부동산_v2.html',
+    category: '해외',
+    title: '도쿄 vs 미국, 2026년 한국인의 최적 해외 부동산 투자지는 어디인가?',
+    summary: '엔저 기회와 달러 자산의 안정성 사이에서 선택의 기로에 선 한국인 투자자들. 도쿄 소형 임대 수익형과 미국 멀티패밀리 자산의 핵심 변수를 정면 비교하고, 환율 리스크·수익률·투자자 유형별 최적 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-28',
+    title_en: 'Tokyo vs. the U.S.: Where Should Koreans Invest in Overseas Real Estate in 2026?',
+    summary_en: 'Korean investors stand at a crossroads between weak-yen opportunities and the stability of dollar assets. A head-to-head comparison of Tokyo small-unit rental yields and U.S. multifamily assets — currency risk, returns, and the optimal strategy by investor type.'
+  },
+  {
+    id: 167,
+    url: 'article_20260628_2_칼럼_v2.html',
+    category: '칼럼',
+    title: '지방선거 끝났다, 이재명 정부의 부동산 강공이 이제 시작된다',
+    summary: '6·3 지방선거 완승 이후 이재명 정부가 "불로소득 공화국 탈출"을 선언했다. 2028년 총선까지 2년, 보유세 강화·세제 개편·투기 차단 패키지의 실체와 68주 연속 상승 중인 서울 집값에 미칠 충격을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집위원',
+    date: '2026-06-28',
+    title_en: 'Local Elections Are Over — The Lee Government\'s Real Estate Crackdown Is Now Beginning',
+    summary_en: 'After a landslide win in the June 3 local elections, the Lee Jae-myung government declared its mission to escape the "unearned-income republic." With two years until the 2028 general election, an analysis of the coming tax-hike, zoning, and anti-speculation package — and the shock it will deliver to Seoul\'s 68-week price rally.'
+  },
+  {
     id: 166,
     url: 'article_20260627_2_investment_v2.html',
     category: '투자분석',
