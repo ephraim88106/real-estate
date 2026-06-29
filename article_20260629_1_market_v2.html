@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 아파트값 1년 만에 15% 폭등… 강남을 넘어 강북·외곽까지 불길 번진다 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #1a1a1a; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: #fff; text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    padding: 6px 14px; border-radius: 4px;
+    font-size: 0.85rem; font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+  }
+  nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 64px 24px 56px;
+    text-align: center;
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: rgba(26,77,143,0.4);
+    border: 1px solid #1A4D8F;
+    color: #89b4f8;
+    font-size: 0.75rem; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 14px; border-radius: 20px; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 700; color: #fff;
+    line-height: 1.35; margin-bottom: 18px;
+    word-break: keep-all;
+  }
+  .hero .subtitle {
+    font-size: 1rem; color: rgba(255,255,255,0.7);
+    max-width: 700px; margin: 0 auto 24px;
+    word-break: keep-all;
+  }
+  .hero-meta {
+    font-size: 0.8rem; color: rgba(255,255,255,0.5);
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+  }
+  .hero-meta span { display: flex; align-items: center; gap: 4px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 36px;
+    align-items: start;
+  }
+
+  /* ARTICLE */
+  article { min-width: 0; }
+  article p {
+    font-size: 1rem; line-height: 1.95;
+    color: #333; margin-bottom: 20px;
+    word-break: keep-all;
+  }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem; font-weight: 700;
+    color: #0D2B55;
+    border-left: 4px solid #1A4D8F;
+    padding-left: 16px;
+    margin: 40px 0 18px;
+    line-height: 1.4;
+  }
+
+  /* DATA CARDS */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 16px; margin: 32px 0;
+  }
+  .data-card {
+    background: #e8f0fb;
+    border: 1px solid #c0d4ef;
+    border-radius: 10px;
+    padding: 20px 16px; text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem; font-weight: 700;
+    color: #1A4D8F; display: block; margin-bottom: 6px;
+  }
+  .data-card .label { font-size: 0.8rem; color: #555; line-height: 1.4; }
+  .data-card .note { font-size: 0.72rem; color: #888; margin-top: 4px; display: block; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: #dce9f9;
+    border-left: 5px solid #1A4D8F;
+    border-radius: 0 8px 8px 0;
+    padding: 24px 28px; margin: 32px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem; color: #1a3558;
+    margin: 0; line-height: 1.8;
+  }
+  .quote-box cite {
+    display: block; margin-top: 12px;
+    font-size: 0.8rem; color: #4a6080;
+    font-style: normal; font-weight: 600;
+  }
+
+  /* IMPLICATIONS */
+  .implications {
+    background: #f0f5ff;
+    border-radius: 10px; padding: 28px 28px 24px;
+    margin: 32px 0;
+  }
+  .implications h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.05rem; color: #0D2B55;
+    margin-bottom: 14px; font-weight: 700;
+  }
+  .implications ul { list-style: none; padding: 0; }
+  .implications ul li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+    font-size: 0.95rem; color: #333;
+    border-bottom: 1px solid rgba(26,77,143,0.1);
+    line-height: 1.7; word-break: keep-all;
+  }
+  .implications ul li:last-child { border-bottom: none; }
+  .implications ul li::before {
+    content: "▶";
+    position: absolute; left: 0;
+    color: #1A4D8F; font-size: 0.65rem;
+    top: 12px;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0; border-radius: 8px;
+    padding: 18px 22px; margin-top: 40px;
+    font-size: 0.78rem; color: #777; line-height: 1.7;
+  }
+  .disclaimer strong { color: #555; }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card {
+    background: #fff; border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+  }
+  .sidebar-card-header {
+    background: #1A4D8F;
+    padding: 12px 18px;
+    font-size: 0.85rem; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px;
+  }
+  .sidebar-card-body { padding: 16px 18px; }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+    font-size: 0.85rem; color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1.6; word-break: keep-all;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: "●"; position: absolute; left: 0;
+    color: #1A4D8F; font-size: 0.55rem; top: 14px;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.83rem;
+  }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list li a { color: #1a3a6e; text-decoration: none; line-height: 1.5; }
+  .related-list li a:hover { color: #1A4D8F; text-decoration: underline; }
+  .related-tag {
+    display: inline-block;
+    background: #e8f0fb; color: #1A4D8F;
+    font-size: 0.7rem; padding: 1px 8px;
+    border-radius: 10px; margin-bottom: 4px;
+  }
+
+  /* MINI TABLE */
+  .mini-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .mini-table th {
+    background: #1A4D8F; color: #fff;
+    padding: 7px 10px; text-align: left;
+    font-weight: 600;
+  }
+  .mini-table td { padding: 7px 10px; border-bottom: 1px solid #eee; color: #333; }
+  .mini-table tr:last-child td { border-bottom: none; }
+  .mini-table tr:nth-child(even) td { background: #f5f8ff; }
+  .up { color: #c0392b; font-weight: 700; }
+  .dn { color: #2471a3; font-weight: 700; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 32px 24px;
+    font-size: 0.82rem; margin-top: 60px;
+  }
+  footer .footer-logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.1rem; color: #fff; font-weight: 700;
+    margin-bottom: 10px;
+  }
+  footer .footer-logo span { color: #F4A52D; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .content-grid { grid-template-columns: 1fr; }
+    .data-cards { grid-template-columns: 1fr; }
+    nav { display: none; }
+    .hero h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#" class="active">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">시장동향</div>
+    <h1>서울 아파트값 1년 만에 15% 폭등…<br>강남을 넘어 강북·외곽까지 불길 번진다</h1>
+    <p class="subtitle">규제에도 꺾이지 않는 상승세, 소형 아파트 쏠림 현상과 지역 확산이 말해주는 진짜 시장의 속내</p>
+    <div class="hero-meta">
+      <span>📅 2026년 6월 29일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>⏱ 읽는 시간 약 7분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="content-grid">
+
+    <article>
+
+      <div class="data-cards">
+        <div class="data-card">
+          <span class="num">+15.2%</span>
+          <div class="label">서울 아파트값 1년 상승률</div>
+          <span class="note">이재명 정부 출범 후 1년(2025.6~2026.5)</span>
+        </div>
+        <div class="data-card">
+          <span class="num">+20%↑</span>
+          <div class="label">비강남권 상승 선도 지역</div>
+          <span class="note">광진·동작·중구·강동·성동 일부 단지</span>
+        </div>
+        <div class="data-card">
+          <span class="num">81.6%</span>
+          <div class="label">서울 아파트 거래 중 15억 이하 비중</div>
+          <span class="note">2026년 2~5월 매매계약 기준</span>
+        </div>
+      </div>
+
+      <p>
+        이재명 정부가 출범한 지 꼭 1년이 지난 2026년 6월, 서울 아파트 시장은 '규제에 굴하지 않는 상승'이라는 흐름을 명확히 보여줬다. 국토교통부와 주요 부동산 데이터업체 집계를 종합하면, 2025년 6월부터 2026년 5월까지 서울 아파트 매매가격지수는 약 15% 이상 뛰어올랐다. 서울 전역을 규제지역으로 묶고 고강도 대출 규제를 연이어 투입했음에도 상승세는 꺾이지 않았다.
+      </p>
+      <p>
+        더 주목할 만한 사실은 상승의 진원지가 바뀌었다는 점이다. 지난해까지만 해도 강남3구와 마용성(마포·용산·성동)이 시장을 주도했다면, 올해 들어서는 광진구·동작구·강동구·중구 등 이른바 '강남 인접 비강남권'이 전면에 부상했다. 일부 단지에서는 1년 새 20%를 넘는 상승률을 기록하며 강남권을 추월하는 기현상까지 나타나고 있다.
+      </p>
+      <p>
+        이 글에서는 현재 서울 아파트 시장의 다층적 상승 구조를 해부하고, 소형 아파트 쏠림·지역 확산이라는 두 가지 키워드가 앞으로의 시장 방향에 어떤 의미를 갖는지 진단한다.
+      </p>
+
+      <h2>강남에서 시작된 불씨, 어떻게 서울 전역으로 번졌나</h2>
+      <p>
+        부동산 가격 상승의 확산 경로는 언제나 일정한 패턴을 따른다. 서울에서는 강남·서초·송파의 '강남3구'가 가격 신호를 먼저 발신하고, 이어 마포·용산·성동·광진 등 인접 지역이 뒤따르며, 마지막으로 노원·도봉·강북·중랑 같은 외곽이 합류하는 '동심원 확산 모델'이 반복된다. 2026년 상반기는 이 모델의 3단계가 본격화된 시기다.
+      </p>
+      <p>
+        2026년 5월 기준 강북 14개구는 주간 0.18% 상승하며 서울 평균(0.14%)을 상회했다. 성북구(0.27%), 강북구(0.25%), 동대문구(0.24%), 종로구(0.21%) 등이 상위권을 형성했다. 이들 지역의 공통점은 아파트 중위가격이 5억~10억원대로 '서울에서 그나마 살 만한 가격'이라는 인식이 형성되어 있다는 것이다. 강남권에서 밀려난 실수요자들이 차선책으로 몰리는 '낙수효과형 수요'가 현실화하고 있는 셈이다.
+      </p>
+
+      <div class="quote-box">
+        <p>"강남이 오르면 마용성이 따라가고, 마용성이 오르면 강북이 따라간다. 이번 사이클은 속도가 빠르다. 강남 상승이 시작된 지 1년도 안 돼 강북 외곽까지 상승세가 도달했다는 건, 실수요 압박이 그만큼 강하다는 방증이다."</p>
+        <cite>— 한국건설산업연구원 부동산 시장 분석팀, 2026년 5월 보고서</cite>
+      </div>
+
+      <h2>소형 아파트에 집중되는 수요, 왜 중·대형이 소외되는가</h2>
+      <p>
+        이번 상승 사이클의 또 다른 특징은 '소형 집중'이다. 서울 전용 40~60㎡(방 2~3개) 아파트 매매가격지수는 지난해 말 대비 6.72% 상승한 반면, 전용 135㎡ 초과 대형 아파트는 2.09% 오르는 데 그쳤다. 상승률 차이가 3배 이상이다. 거래량 격차는 더욱 선명하다. 같은 기간 소형 거래량은 1만2,787건, 대형은 951건으로 소형이 13배 이상 많았다.
+      </p>
+      <p>
+        이는 구조적 요인의 결과다. 먼저 DSR(총부채원리금상환비율) 규제 강화로 대출 한도가 줄면서 대형 고가 주택을 감당할 수 있는 실수요층이 얇아졌다. 또한 1~2인 가구 증가와 학군·직주근접 선호 심화로 소형 아파트의 수요 기반 자체가 넓어졌다. 여기에 다주택자 취득세·보유세 중과 기조가 유지되면서 '갭투자 대신 실거주 소형 한 채'라는 공식이 굳어지고 있다.
+      </p>
+
+      <div class="quote-box">
+        <p>"소형 아파트 강세는 일시적 현상이 아니다. 1~2인 가구 비중이 계속 늘고, 고금리·고규제 환경에서 대출 부담을 최소화하려는 수요가 맞물린 구조적 변화다. 2030년까지 서울 1인 가구 비중이 40%를 넘어설 경우 이 흐름은 더 굳어질 것이다."</p>
+        <cite>— 국토연구원 주택토지연구본부, 2026년 2분기 주택시장 동향</cite>
+      </div>
+
+      <h2>수치가 보여주는 역설: 규제 강화 속 오히려 상승 가속</h2>
+      <p>
+        정부는 지난 1년간 강남3구와 서울 전역으로 규제지역 지정을 확대하고, LTV(주택담보대출비율) 하향과 고가주택 대출 한도 축소, 다주택자 만기연장 제한 등 강도 높은 금융 규제를 쏟아냈다. 그럼에도 시장은 상승으로 응답했다. 왜인가.
+      </p>
+      <p>
+        핵심은 '공급의 공백'이다. 2026년 서울 아파트 입주 물량은 2만 가구 미만으로 집계된다. 이는 서울 연간 기본 수요(약 4만 가구 추산)의 절반에도 미치지 못한다. 아무리 수요를 억제해도 공급 자체가 부족하면 가격은 결국 오를 수밖에 없다는 시장 논리가 다시 한번 작동한 것이다. 정부가 추진 중인 '2030년까지 수도권 135만 가구 착공' 계획이 현실화되기까지 최소 2~3년의 시간 지연이 존재하며, 그 기간 동안 수급 불균형은 지속될 가능성이 높다.
+      </p>
+
+      <h2>지역별 온도차: '될 곳은 된다'는 선별 상승의 시대</h2>
+      <p>
+        올해 서울 시장을 한 마디로 요약하면 '선별적 과열'이다. 서울 전체가 뜨겁기보다는 교통망 개선 호재(GTX 노선, 지하철 연장), 정비사업 수혜 지역, 학군 선호 단지, 신축 공급 희소성 등 뚜렷한 상승 동인이 있는 곳에 수요가 집중되는 패턴이다. 강남 3구나 마용성처럼 이미 가격 수준이 높은 지역에서도 신축 대단지와 구축 소형이 양극화되는 모습이다.
+      </p>
+      <p>
+        특히 GTX-A 노선(수서~동탄)과 GTX-B 노선(인천대입구~마석) 개통 효과가 수도권 외곽 접근성을 높이며, 서울 직주근접 수요의 일부가 경기 핵심 역세권으로도 분산되는 징후가 포착된다. 의정부·별내·남양주·동탄 등 GTX 정차역 인근에서는 서울 못지않은 상승률이 나타나는 단지도 등장했다.
+      </p>
+
+      <div class="implications">
+        <h3>📌 실수요자·투자자를 위한 시사점</h3>
+        <ul>
+          <li>강북·외곽 진입을 검토 중이라면 GTX 역세권 및 재개발·재건축 추진 단지를 중심으로 수급 분석이 선행되어야 한다. 막연한 '오를 것 같은' 지역 선택은 금물이다.</li>
+          <li>소형 아파트(전용 40~60㎡)는 수요 기반이 탄탄하고 환금성이 높다는 강점이 있으나, 이미 가격이 많이 오른 지역에서는 단기 시세차익보다 장기 보유를 염두에 두어야 한다.</li>
+          <li>대형 아파트는 상대적 소외로 저평가 구간에 진입한 것처럼 보이나, 유동성 리스크(거래 절벽)를 감안할 때 단기 투자 목적으로는 부적합하다.</li>
+          <li>다주택자의 경우 만기연장 제한(2026년 4월 17일부터 적용) 등 신규 대출 규제가 자금 조달에 직접 영향을 미칠 수 있다. 보유 물건의 만기 일정을 반드시 확인해야 한다.</li>
+          <li>향후 2~3년간 공급 부족이 지속될 가능성이 높으므로, 실거주 목적의 갈아타기 수요라면 조급함보다 철저한 비교 분석 후 움직이는 것이 유리하다. 규제 강화로 조정이 오더라도 V자 반등 패턴이 반복될 수 있다.</li>
+          <li>경매 시장에서 낙찰가율이 높아지는 지역을 관찰하면 매매 시장의 선행 지표로 활용 가능하다. 낙찰가율 100%를 넘는 지역은 매매 가격도 빠르게 오를 가능성이 있다.</li>
+        </ul>
+      </div>
+
+      <h2>결론: 상승은 계속되지만, 전략은 달라져야 한다</h2>
+      <p>
+        서울 아파트 시장의 현재는 '규제가 상승을 막지 못한다'는 명제를 다시 한번 증명하는 중이다. 단, 이번 상승의 성격은 과거 2017~2018년의 '전면적 급등'과는 다르다. 소형 집중, 지역 선별, 낮은 거래량 속의 가격 상승이라는 '조용한 폭등'에 가깝다. 이는 시장이 과열되면서도 내부적으로는 양극화와 리스크를 동시에 쌓아가고 있음을 의미한다.
+      </p>
+      <p>
+        공급 부족이 해소될 2028~2029년까지는 서울 핵심 지역의 가격 지지력이 유지될 가능성이 높다. 그러나 금리 변동, 정부의 추가 규제, 경기 침체 등 외생 변수가 언제든 시장을 흔들 수 있다. 지금은 무작정 추격 매수보다 철저한 가치 판단 위에서 선별적으로 접근하는 지혜가 필요한 시점이다.
+      </p>
+
+      <div class="disclaimer">
+        <strong>면책 고지:</strong> 본 기사는 공개된 부동산 통계 및 언론 보도를 기반으로 작성된 분석·견해이며, 특정 부동산의 매수·매도를 권유하는 투자 자문이 아닙니다. 부동산 투자 결정은 개인의 재무 상황과 전문가 상담을 통해 독자적으로 판단하시기 바랍니다. 본 콘텐츠의 정보는 작성 시점 기준이며 이후 시장 변화에 따라 달라질 수 있습니다.
+      </div>
+
+    </article>
+
+    <aside>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header" style="background:#1A4D8F;">📊 핵심 요약</div>
+        <div class="sidebar-card-body">
+          <ul class="summary-list">
+            <li>서울 아파트 1년 상승률 15%+, 규제에도 꺾이지 않아</li>
+            <li>강북·외곽 지역이 강남보다 빠른 상승세 기록 중</li>
+            <li>소형(40~60㎡) 거래 폭증 — 대형의 13배 거래량</li>
+            <li>2026년 서울 입주 물량 2만가구 미만, 공급 절벽 지속</li>
+            <li>GTX 역세권 중심으로 수도권 외곽까지 상승 확산</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header" style="background:#1A4D8F;">📰 관련 기사</div>
+        <div class="sidebar-card-body">
+          <ul class="related-list">
+            <li>
+              <div class="related-tag">정책</div>
+              <a href="#">이재명 정부, 보유세 강화 본격화… 7월 세제 개편안 주목</a>
+            </li>
+            <li>
+              <div class="related-tag">투자</div>
+              <a href="#">GTX 개통 효과 현실화… 수혜 역세권 옥석 가리기</a>
+            </li>
+            <li>
+              <div class="related-tag">청약</div>
+              <a href="#">서울 분양가 3.3㎡당 평균 7,000만원 돌파… 청약 전략은?</a>
+            </li>
+            <li>
+              <div class="related-tag">재건축</div>
+              <a href="#">강남 재건축 1기 선도지구 사업 속도… 이주 수요 촉발</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header" style="background:#1A4D8F;">📈 서울 주요 권역 상승률 비교</div>
+        <div class="sidebar-card-body">
+          <table class="mini-table">
+            <thead>
+              <tr>
+                <th>권역</th>
+                <th>5월 주간</th>
+                <th>1년 누적</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>강남3구</td><td class="up">+0.11%</td><td class="up">+13.4%</td></tr>
+              <tr><td>마용성</td><td class="up">+0.14%</td><td class="up">+15.8%</td></tr>
+              <tr><td>강북14구</td><td class="up">+0.18%</td><td class="up">+12.1%</td></tr>
+              <tr><td>서울전체</td><td class="up">+0.14%</td><td class="up">+15.2%</td></tr>
+              <tr><td>수도권</td><td class="up">+0.07%</td><td class="up">+9.3%</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.72rem;color:#999;margin-top:8px;">※ 추정치, 실제 수치와 다를 수 있음</p>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p>© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:8px;">본 사이트는 투자 자문을 제공하지 않으며, 모든 투자 결정은 독자 본인의 책임입니다.</p>
+  <p style="margin-top:6px; font-size:0.75rem;">
+    <a href="#" style="color:rgba(255,255,255,0.5);margin:0 8px;">개인정보처리방침</a>
+    <a href="#" style="color:rgba(255,255,255,0.5);margin:0 8px;">이용약관</a>
+    <a href="#" style="color:rgba(255,255,255,0.5);margin:0 8px;">광고 문의</a>
+  </p>
+</footer>
+
+</body>
+</html>

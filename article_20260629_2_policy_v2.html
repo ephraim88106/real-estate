@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>규제로는 집값 못 잡는다… 이재명 정부 부동산 정책 1년의 민낯 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #1a1a1a; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: #fff; text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    padding: 6px 14px; border-radius: 4px;
+    font-size: 0.85rem; font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+  }
+  nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 64px 24px 56px;
+    text-align: center;
+    border-bottom: 4px solid #C8401A;
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: rgba(200,64,26,0.25);
+    border: 1px solid #C8401A;
+    color: #f4a08a;
+    font-size: 0.75rem; font-weight: 700;
+    letter-spacing: 2px; text-transform: uppercase;
+    padding: 4px 14px; border-radius: 20px; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 700; color: #fff;
+    line-height: 1.35; margin-bottom: 18px;
+    word-break: keep-all;
+  }
+  .hero .subtitle {
+    font-size: 1rem; color: rgba(255,255,255,0.7);
+    max-width: 700px; margin: 0 auto 24px;
+    word-break: keep-all;
+  }
+  .hero-meta {
+    font-size: 0.8rem; color: rgba(255,255,255,0.5);
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+  }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 36px;
+    align-items: start;
+  }
+
+  /* ARTICLE */
+  article { min-width: 0; }
+  article p {
+    font-size: 1rem; line-height: 1.95;
+    color: #333; margin-bottom: 20px;
+    word-break: keep-all;
+  }
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem; font-weight: 700;
+    color: #3a0e05;
+    border-left: 4px solid #C8401A;
+    padding-left: 16px;
+    margin: 40px 0 18px;
+    line-height: 1.4;
+  }
+
+  /* DATA CARDS */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 16px; margin: 32px 0;
+  }
+  .data-card {
+    background: #fbeee9;
+    border: 1px solid #e8b4a0;
+    border-radius: 10px;
+    padding: 20px 16px; text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.9rem; font-weight: 700;
+    color: #C8401A; display: block; margin-bottom: 6px;
+  }
+  .data-card .label { font-size: 0.8rem; color: #555; line-height: 1.4; }
+  .data-card .note { font-size: 0.72rem; color: #888; margin-top: 4px; display: block; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: #fbeee9;
+    border-left: 5px solid #C8401A;
+    border-radius: 0 8px 8px 0;
+    padding: 24px 28px; margin: 32px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem; color: #5c1a0a;
+    margin: 0; line-height: 1.8;
+  }
+  .quote-box cite {
+    display: block; margin-top: 12px;
+    font-size: 0.8rem; color: #904030;
+    font-style: normal; font-weight: 600;
+  }
+
+  /* POLICY TIMELINE */
+  .policy-timeline {
+    background: #fff; border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 24px 28px; margin: 32px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .policy-timeline h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1rem; color: #3a0e05;
+    margin-bottom: 18px; font-weight: 700;
+    border-bottom: 2px solid #C8401A; padding-bottom: 8px;
+  }
+  .tl-item {
+    display: flex; gap: 16px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .tl-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .tl-date {
+    min-width: 80px; font-size: 0.78rem;
+    font-weight: 700; color: #C8401A;
+    padding-top: 2px;
+  }
+  .tl-content { font-size: 0.88rem; color: #333; line-height: 1.6; }
+
+  /* IMPLICATIONS */
+  .implications {
+    background: #fff4f0;
+    border-radius: 10px; padding: 28px 28px 24px;
+    margin: 32px 0;
+  }
+  .implications h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.05rem; color: #3a0e05;
+    margin-bottom: 14px; font-weight: 700;
+  }
+  .implications ul { list-style: none; padding: 0; }
+  .implications ul li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+    font-size: 0.95rem; color: #333;
+    border-bottom: 1px solid rgba(200,64,26,0.1);
+    line-height: 1.7; word-break: keep-all;
+  }
+  .implications ul li:last-child { border-bottom: none; }
+  .implications ul li::before {
+    content: "▶";
+    position: absolute; left: 0;
+    color: #C8401A; font-size: 0.65rem;
+    top: 12px;
+  }
+
+  /* EVALUATION BOX */
+  .eval-box {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px; margin: 32px 0;
+  }
+  .eval-card {
+    border-radius: 10px; padding: 20px;
+  }
+  .eval-card.plus { background: #e8f8e8; border: 1px solid #a0d4a0; }
+  .eval-card.minus { background: #fce8e4; border: 1px solid #f0b0a0; }
+  .eval-card h4 {
+    font-size: 0.9rem; font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .eval-card.plus h4 { color: #1a6b1a; }
+  .eval-card.minus h4 { color: #a02010; }
+  .eval-card ul { list-style: none; padding: 0; }
+  .eval-card ul li {
+    font-size: 0.82rem; color: #444; line-height: 1.6;
+    padding: 4px 0 4px 16px; position: relative;
+  }
+  .eval-card.plus ul li::before { content: "✔"; position:absolute;left:0;color:#2e8b2e;font-size:0.75rem; }
+  .eval-card.minus ul li::before { content: "✘"; position:absolute;left:0;color:#c04030;font-size:0.75rem; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0; border-radius: 8px;
+    padding: 18px 22px; margin-top: 40px;
+    font-size: 0.78rem; color: #777; line-height: 1.7;
+  }
+  .disclaimer strong { color: #555; }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card {
+    background: #fff; border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+  }
+  .sidebar-card-header {
+    background: #C8401A;
+    padding: 12px 18px;
+    font-size: 0.85rem; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px;
+  }
+  .sidebar-card-body { padding: 16px 18px; }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+    font-size: 0.85rem; color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1.6; word-break: keep-all;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: "●"; position: absolute; left: 0;
+    color: #C8401A; font-size: 0.55rem; top: 14px;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.83rem;
+  }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list li a { color: #3a1a0a; text-decoration: none; line-height: 1.5; }
+  .related-list li a:hover { color: #C8401A; text-decoration: underline; }
+  .related-tag {
+    display: inline-block;
+    background: #fbeee9; color: #C8401A;
+    font-size: 0.7rem; padding: 1px 8px;
+    border-radius: 10px; margin-bottom: 4px;
+  }
+
+  /* MINI TABLE */
+  .mini-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .mini-table th {
+    background: #C8401A; color: #fff;
+    padding: 7px 10px; text-align: left;
+    font-weight: 600;
+  }
+  .mini-table td { padding: 7px 10px; border-bottom: 1px solid #eee; color: #333; }
+  .mini-table tr:last-child td { border-bottom: none; }
+  .mini-table tr:nth-child(even) td { background: #fff4f0; }
+  .badge {
+    display: inline-block; border-radius: 10px;
+    font-size: 0.7rem; padding: 1px 8px; font-weight: 600;
+  }
+  .badge-red { background: #fce8e4; color: #a02010; }
+  .badge-grn { background: #e8f8e8; color: #1a6b1a; }
+  .badge-ylw { background: #fff8e0; color: #8b6800; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 32px 24px;
+    font-size: 0.82rem; margin-top: 60px;
+  }
+  footer .footer-logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.1rem; color: #fff; font-weight: 700;
+    margin-bottom: 10px;
+  }
+  footer .footer-logo span { color: #F4A52D; }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .content-grid { grid-template-columns: 1fr; }
+    .data-cards { grid-template-columns: 1fr; }
+    .eval-box { grid-template-columns: 1fr; }
+    nav { display: none; }
+    .hero h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#" class="active">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">정책·규제 분석</div>
+    <h1>규제로는 집값 못 잡는다…<br>이재명 정부 부동산 정책 1년의 민낯</h1>
+    <p class="subtitle">보유세 강화 본격화, 공급 절벽, 대출 규제의 삼각 딜레마 — 정책은 어디로 가고 있는가</p>
+    <div class="hero-meta">
+      <span>📅 2026년 6월 29일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>⏱ 읽는 시간 약 8분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="content-grid">
+
+    <article>
+
+      <div class="data-cards">
+        <div class="data-card">
+          <span class="num">+15%</span>
+          <div class="label">정부 출범 후 서울 아파트 상승률</div>
+          <span class="note">규제 강화에도 지속된 1년간 상승</span>
+        </div>
+        <div class="data-card">
+          <span class="num">15%→20%</span>
+          <div class="label">주담대 위험가중치 상향</div>
+          <span class="note">은행권 대출 여력 추가 위축 효과</span>
+        </div>
+        <div class="data-card">
+          <span class="num">135만</span>
+          <div class="label">수도권 2030년까지 목표 착공 가구</div>
+          <span class="note">9·7 공급대책 핵심 수치</span>
+        </div>
+      </div>
+
+      <p>
+        이재명 정부는 출범 직후부터 '투기 억제와 실수요 보호'를 부동산 정책의 두 축으로 내세웠다. 규제지역 확대, LTV·DSR 강화, 다주택자 대출 만기연장 제한, 현장점검 강화 등 수요 억제 카드를 연속으로 꺼내들었다. 그러나 서울 아파트값은 정부 출범 이후 1년 동안 15% 이상 올랐다. 정책이 실패했다는 평가와, 공급 부족이라는 구조적 문제 앞에 어떤 규제도 단기 효과를 기대할 수 없다는 반론이 교차한다.
+      </p>
+      <p>
+        2026년 6월 8일, 이재명 대통령은 취임 1주년 기자회견에서 '보유세 강화'를 전면에 내세웠다. 종합부동산세 인상과 양도소득세 장기보유특별공제 조정을 골자로 한 7월 세제 개편안이 예고된 상황이다. 정부는 이를 '공급 대책과 보유 부담 강화의 두 트랙 병행 전략'이라고 설명하지만, 시장과 전문가들의 반응은 엇갈린다.
+      </p>
+      <p>
+        이 글은 이재명 정부 부동산 정책 1년을 시간 순으로 해부하고, 각 정책이 시장에 미친 실제 효과와 한계를 냉정하게 평가한다. 또한 보유세 강화가 집값을 잡을 수 있는지, 그 역사적·이론적 근거를 따져본다.
+      </p>
+
+      <h2>1년의 정책 타임라인: 무엇을 쏟아냈나</h2>
+
+      <div class="policy-timeline">
+        <h3>이재명 정부 부동산 주요 정책 일지 (2025.6 ~ 2026.6)</h3>
+        <div class="tl-item">
+          <div class="tl-date">2025.09</div>
+          <div class="tl-content"><strong>9·7 수도권 공급 대책</strong> — 2030년까지 수도권 135만 가구 착공 목표, 국토부 주택공급추진본부 발족 예고</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2025.10</div>
+          <div class="tl-content"><strong>10·15 규제지역 확대</strong> — 서울 전역 + 경기 일부 조정지역 재지정, 고가주택 대출 한도 강화</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026.01</div>
+          <div class="tl-content"><strong>주택공급추진본부 공식 출범</strong> — 택지·민간정비·노후신도시 재정비 기능 통합 실장급 조직 가동</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026.04</div>
+          <div class="tl-content"><strong>2026 가계부채 관리방안</strong> — 다주택자·임대사업자 수도권·규제지역 아파트 담보대출 만기연장 원칙 금지. 주담대 위험가중치 15%→20% 상향</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026.06</div>
+          <div class="tl-content"><strong>현장점검 강화 + 보유세 예고</strong> — 강남·마용성 88개 단지 실거주 확인·자금조달계획 검증. 7월 세제 개편 예고(종부세 인상, 장특공제 조정)</div>
+        </div>
+      </div>
+
+      <h2>규제가 집값을 못 잡은 이유: 공급 부재라는 원죄</h2>
+      <p>
+        어떤 정부도 공급 없이 수요 억제만으로 주택 가격을 장기적으로 낮춘 사례는 드물다. 이는 한국뿐 아니라 홍콩, 뉴욕, 런던 등 글로벌 주요 도시에서도 반복적으로 검증된 명제다. 2026년 서울의 아파트 입주 물량은 2만 가구 미만으로 추산된다. 이는 서울 연간 주택 수요의 절반 이하 수준이다. 수요를 아무리 강하게 억제해도 공급이 이를 뒷받침하지 못하면 가격 상승 압력은 언제든 분출될 수 있다.
+      </p>
+      <p>
+        9·7 공급 대책이 제시한 '2030년 수도권 135만 가구 착공'은 정책 목표로서는 방향성이 옳다. 그러나 착공이 실제 입주로 이어지기까지 통상 3~5년이 걸리는 것을 감안하면, 이 공급이 시장에 반영되는 시점은 2028~2032년이다. 그 사이 공급 공백은 메워지지 않는다.
+      </p>
+
+      <div class="quote-box">
+        <p>"공급 대책의 가장 큰 문제는 타임 래그(time-lag)다. 발표는 즉각적이지만 효과는 5년 뒤에 나타난다. 규제는 그 사이 수요를 억누를 수 있어도, 억눌린 수요는 규제가 조금만 풀려도 폭발적으로 분출된다. 지금이 바로 그 시점이다."</p>
+        <cite>— 한국경제연구원 부동산 정책 세미나, 2026년 5월</cite>
+      </div>
+
+      <h2>보유세 강화, 집값을 내릴 수 있는가</h2>
+      <p>
+        이재명 정부가 7월 세제 개편의 핵심으로 꺼내든 카드는 '보유세 강화'다. 종합부동산세 인상과 양도소득세 장기보유특별공제 축소(또는 폐지)가 핵심 내용으로 알려졌다. 정부의 논리는 단순하다. 집을 오래 가지고 있을수록 세금 부담이 커지면 다주택자들이 매물을 내놓을 것이고, 그러면 시장 공급이 늘어 가격이 안정된다는 것이다.
+      </p>
+      <p>
+        이 논리에는 몇 가지 반론이 뒤따른다. 첫째, 보유세 강화는 '버티기 전략'을 가속화할 수 있다. 세금이 올라도 집값 상승 기대가 크다면 매도보다 보유를 선택하는 다주택자가 많다는 것은 2018~2019년 문재인 정부 시절에도 확인된 패턴이다. 둘째, 장특공제 폐지는 오히려 매도를 막는 역효과를 낼 수 있다. 오래 보유할수록 세금 감면을 받던 구조가 사라지면, 이미 장기 보유 중인 1주택자들도 섣불리 매도하기 어려워진다. 셋째, 보유세 강화 자체가 임대료 상승으로 전가될 가능성이 있어, 세입자 부담이 커지는 역진성 문제도 지적된다.
+      </p>
+
+      <div class="quote-box">
+        <p>"보유세는 장기적으로 부동산 자산 배분을 바꾸는 데 유효한 수단이지만, 단기 가격 안정 효과는 기대하기 어렵다. 역대 정부의 경험상 공급이 뒷받침되지 않는 세금 강화는 시장 불확실성만 높이는 경우가 많았다."</p>
+        <cite>— 한국조세재정연구원, 2026년 부동산 세제 연구 보고서</cite>
+      </div>
+
+      <h2>정책 평가: 무엇이 옳았고 무엇이 틀렸나</h2>
+
+      <div class="eval-box">
+        <div class="eval-card plus">
+          <h4>✔ 긍정적 평가</h4>
+          <ul>
+            <li>공급 목표를 구체적 수치로 제시, 장기 방향성 명확화</li>
+            <li>다주택자 투기 자금 차단을 위한 대출 규제 일관성 유지</li>
+            <li>현장점검으로 허위 자금조달 및 갭투자 양성화 억제</li>
+            <li>주택공급추진본부 출범으로 부처 간 공급 컨트롤타워 마련</li>
+          </ul>
+        </div>
+        <div class="eval-card minus">
+          <h4>✘ 부정적 평가</h4>
+          <ul>
+            <li>출범 1년간 실제 공급 가시적 성과 미흡 — 입주 물량 오히려 감소</li>
+            <li>규제 강화 시 장특공제 폐지로 1주택자 피해 가능성</li>
+            <li>임대시장 개입 부재로 전세·월세 불안 심화</li>
+            <li>보유세 강화와 공급 부족의 동시 존재로 '공급 없는 수요 억제' 반복 우려</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="implications">
+        <h3>📌 정책 변화가 가져올 실수요자·투자자 체크리스트</h3>
+        <ul>
+          <li>7월 세제 개편 전에 다주택 보유 현황을 재점검하라. 종부세 인상 폭에 따라 연간 보유비용이 급격히 상승할 수 있으며, 양도 타이밍을 재조정해야 할 수 있다.</li>
+          <li>장기보유특별공제 축소·폐지가 현실화될 경우, 10년 이상 보유 주택을 처분하려는 실수요자의 세금 부담이 갑자기 커질 수 있다. 개편안 확정 전 세무사와 시뮬레이션을 돌려봐야 한다.</li>
+          <li>다주택자 대출 만기연장 금지는 담보대출 잔액이 많은 임대사업자에게 직접 타격이다. 잔여 만기와 재대출 가능성을 즉시 금융기관과 확인해야 한다.</li>
+          <li>1주택 실수요자라면 규제 강화 국면에서 매물 잠김이 심해지는 역설적 상황을 이해해야 한다. 공급 감소가 단기적으로 매입 희소성을 높여 가격 지지력을 강화하는 역효과가 나타날 수 있다.</li>
+          <li>임차인(세입자) 입장에서는 임대인의 보유세 부담 증가가 임대료 인상으로 전가될 가능성을 경계해야 한다. 전세 계약 갱신 시점이 도래한 경우 월세 전환 압력에 대비해야 한다.</li>
+          <li>공급 대책의 실행 여부를 지속적으로 모니터링하라. 3기 신도시 착공 진행 상황, 선도지구 선정 결과, GTX 개통 시점 등이 중장기 가격 수렴에 결정적 변수가 될 것이다.</li>
+        </ul>
+      </div>
+
+      <h2>결론: 지속형 압박인가, 반복되는 실패인가</h2>
+      <p>
+        이재명 정부의 부동산 정책은 '지속형 압박 전략'이라는 수식어를 달고 있다. 과거처럼 강력한 규제를 쏟아낸 뒤 시장 반발에 밀려 후퇴하는 패턴을 피하겠다는 의지다. 그 점에서 일관성은 인정할 수 있다. 그러나 집값이 15% 올랐다는 사실은 여전히 '정책이 시장을 이기지 못했다'는 결과를 보여준다.
+      </p>
+      <p>
+        핵심 문제는 정책의 의지가 아니라 구조에 있다. 공급이 수요를 따라가지 못하는 한, 어떤 규제도 일시적 숨 고르기 이상의 효과를 내기 어렵다. 7월 보유세 강화 발표 이후 시장이 어떻게 반응하는지가 이재명 정부 부동산 정책의 두 번째 변곡점이 될 것이다. 단기적으로 매물 출회와 거래 위축이 나타날 가능성이 있으나, 공급 증가가 병행되지 않는다면 이 효과도 오래 가지 않을 것이다. 시장은 지금도 정부의 다음 수를 기다리고 있다.
+      </p>
+
+      <div class="disclaimer">
+        <strong>면책 고지:</strong> 본 기사는 공개된 부동산 정책 자료, 학술 연구 및 언론 보도를 기반으로 작성된 분석·견해이며, 특정 부동산의 매수·매도를 권유하거나 세금 신고를 대행하는 자문이 아닙니다. 세금 및 금융 규제 관련 사항은 반드시 공인 전문가(세무사, 법무사, 금융기관)와 개별 상담하시기 바랍니다. 정책 내용은 추후 변경될 수 있으며, 최신 정보는 국토교통부 및 금융위원회 공식 발표를 확인하시기 바랍니다.
+      </div>
+
+    </article>
+
+    <aside>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header" style="background:#C8401A;">📊 핵심 요약</div>
+        <div class="sidebar-card-body">
+          <ul class="summary-list">
+            <li>출범 1년간 규제 9건+에도 서울 아파트 15% 상승</li>
+            <li>7월 세제 개편 예고: 종부세 인상 + 장특공제 조정</li>
+            <li>다주택자 대출 만기연장 금지 — 4월 17일부터 적용</li>
+            <li>공급 목표 135만가구, 그러나 2030년이 목표 시점</li>
+            <li>보유세 강화가 매물 잠김 유발할 수 있다는 반론 거세</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header" style="background:#C8401A;">📰 관련 기사</div>
+        <div class="sidebar-card-body">
+          <ul class="related-list">
+            <li>
+              <div class="related-tag">시장</div>
+              <a href="#">서울 아파트 1년 15% 폭등… 강남 넘어 강북까지</a>
+            </li>
+            <li>
+              <div class="related-tag">세금</div>
+              <a href="#">장기보유특별공제 폐지 시나리오 — 1주택자도 긴장해야 하는 이유</a>
+            </li>
+            <li>
+              <div class="related-tag">대출</div>
+              <a href="#">DSR 2단계 시행 이후 대출 한도 어떻게 달라졌나</a>
+            </li>
+            <li>
+              <div class="related-tag">공급</div>
+              <a href="#">3기 신도시 착공 일정 현황 — 진짜 공급은 언제?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header" style="background:#C8401A;">🏛 주요 규제 현황 체크</div>
+        <div class="sidebar-card-body">
+          <table class="mini-table">
+            <thead>
+              <tr><th>항목</th><th>현황</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>규제지역</td><td><span class="badge badge-red">서울전역</span></td></tr>
+              <tr><td>투기과열구역</td><td><span class="badge badge-red">강남·서초·송파 등</span></td></tr>
+              <tr><td>주담대 LTV</td><td><span class="badge badge-ylw">40~60%</span></td></tr>
+              <tr><td>DSR 기준</td><td><span class="badge badge-red">40% 상한</span></td></tr>
+              <tr><td>다주택 만기연장</td><td><span class="badge badge-red">원칙 금지</span></td></tr>
+              <tr><td>종부세</td><td><span class="badge badge-ylw">7월 개편 예정</span></td></tr>
+              <tr><td>장특공제</td><td><span class="badge badge-ylw">조정 검토 중</span></td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.72rem;color:#999;margin-top:8px;">※ 2026년 6월 기준, 추후 변경 가능</p>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p>© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:8px;">본 사이트는 투자 자문을 제공하지 않으며, 모든 투자 결정은 독자 본인의 책임입니다.</p>
+  <p style="margin-top:6px; font-size:0.75rem;">
+    <a href="#" style="color:rgba(255,255,255,0.5);margin:0 8px;">개인정보처리방침</a>
+    <a href="#" style="color:rgba(255,255,255,0.5);margin:0 8px;">이용약관</a>
+    <a href="#" style="color:rgba(255,255,255,0.5);margin:0 8px;">광고 문의</a>
+  </p>
+</footer>
+
+</body>
+</html>
