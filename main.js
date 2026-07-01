@@ -85,6 +85,54 @@ const i18n = {
 
 const articles = [
   {
+    id: 172,
+    url: 'article_20260701_2_overseas_v2.html',
+    category: '해외',
+    title: '엔저 끝물인가 황금기인가 — 2026 한국인의 일본·미국 부동산 진출 완전 해부',
+    summary: '엔화 약세와 미국 모기지 금리 하락이 겹치는 2026년, 도쿄 원룸 5% 수익률 vs. 미국 선별적 회복 — 어디에 베팅할 것인가. 한국인의 해외 부동산 투자 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-01',
+    title_en: 'Is the Weak Yen Fading or a Golden Age? — A Complete Breakdown of Korean Investment in Japan and U.S. Real Estate in 2026',
+    summary_en: 'With yen weakness and falling U.S. mortgage rates converging in 2026, Tokyo studio yields hit 5% while the U.S. shows selective recovery — where should you bet? An in-depth analysis of overseas real estate investment strategies for Korean investors.'
+  },
+  {
+    id: 171,
+    url: 'article_20260701_1_investment_v2.html',
+    category: '투자분석',
+    title: '서울 경매 낙찰가율 100% 재돌파… 2026 하반기 부동산 투자, 지금이 기회인가 함정인가',
+    summary: '2026년 5월 서울 아파트 경매 낙찰가율이 100%를 재돌파했다. 경매 시장 과열 신호 속 옥석 가리기 전략 완전 해부 — 진짜 수익률은 어디서 나오나.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-01',
+    title_en: 'Seoul Auction Win-Rate Retops 100% — Is H2 2026 Real Estate Investment an Opportunity or a Trap?',
+    summary_en: 'Seoul apartment auction winning-bid rates pierced 100% again in May 2026. A full breakdown of how to separate winners from losers amid overheating auction signals — where does real yield actually come from?'
+  },
+  {
+    id: 170,
+    url: 'article_20260629_2_policy_v2.html',
+    category: '정책',
+    title: '규제로는 집값 못 잡는다… 이재명 정부 부동산 정책 1년의 민낯',
+    summary: '보유세 강화 본격화, 공급 절벽, 대출 규제의 삼각 딜레마 — 정책은 어디로 가고 있는가. 이재명 정부 출범 1년, 규제 일변도 부동산 정책의 성과와 한계를 냉정하게 해부한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-06-29',
+    title_en: 'Regulations Can\'t Tame Home Prices — The Naked Truth of the Lee Government\'s One Year of Real Estate Policy',
+    summary_en: 'The triple dilemma of accelerating property-tax hikes, a supply cliff, and lending restrictions — where is policy headed? A cold-eyed dissection of the successes and limits of the Lee Jae-myung administration\'s regulation-first approach after one year.'
+  },
+  {
+    id: 169,
+    url: 'article_20260629_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트값 1년 만에 15% 폭등… 강남을 넘어 강북·외곽까지 불길 번진다',
+    summary: '규제에도 꺾이지 않는 상승세, 소형 아파트 쏠림 현상과 지역 확산이 말해주는 진짜 시장의 속내. 강남을 넘어 강북·외곽까지 번지는 상승 불길의 구조적 원인을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-06-29',
+    title_en: 'Seoul Apartment Prices Explode 15% in a Year — The Fire Spreads from Gangnam to Gangbuk and the Outskirts',
+    summary_en: 'An unstoppable rally despite regulations, a rush into small units, and geographic spread — what the market is really saying. Analyzing the structural causes behind price gains that are now spreading beyond Gangnam to Gangbuk and the city\'s outskirts.'
+  },
+  {
     id: 168,
     url: 'article_20260628_1_해외부동산_v2.html',
     category: '해외',
