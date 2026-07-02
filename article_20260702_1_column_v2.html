@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>72주의 침묵 — 멈추지 않는 집값, 이제 우리는 무엇을 직시해야 하나 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #222; font-size: 16px; line-height: 1.8; }
+
+  /* HEADER */
+  header { background: #0D2B55; color: #fff; padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,.35); }
+  .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 20px; }
+  nav a { color: rgba(255,255,255,.82); text-decoration: none; font-size: .82rem; font-weight: 500; transition: color .2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%); color: #fff; padding: 72px 24px 60px; text-align: center; }
+  .hero-inner { max-width: 800px; margin: 0 auto; }
+  .cat-tag { display: inline-block; background: #6A6A10; color: #fff; font-size: .72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 2px; margin-bottom: 22px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.4; margin-bottom: 18px; }
+  .hero p.subtitle { font-size: 1rem; color: rgba(255,255,255,.78); max-width: 620px; margin: 0 auto 28px; }
+  .hero-meta { font-size: .8rem; color: rgba(255,255,255,.6); }
+  .hero-meta span { margin: 0 8px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 860px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article { background: #fff; border-radius: 6px; padding: 44px 48px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+  @media (max-width: 640px) { article { padding: 28px 20px; } }
+
+  /* DATA BOX */
+  .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  @media (max-width: 600px) { .data-grid { grid-template-columns: 1fr; } }
+  .data-card { background: #f6f6e8; border-left: 4px solid #6A6A10; border-radius: 4px; padding: 18px 16px; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.7rem; font-weight: 700; color: #6A6A10; }
+  .data-card .label { font-size: .78rem; color: #555; margin-top: 4px; }
+
+  /* HEADINGS */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.25rem; font-weight: 700; margin: 40px 0 16px; padding-left: 14px; border-left: 4px solid #6A6A10; color: #1a1a0a; }
+  article p { margin-bottom: 18px; color: #333; }
+
+  /* QUOTE */
+  .quote-box { background: #f8f8ea; border-left: 5px solid #6A6A10; border-radius: 0 4px 4px 0; padding: 22px 28px; margin: 30px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: #3a3a10; margin: 0; line-height: 1.9; }
+  .quote-box cite { display: block; font-style: normal; font-size: .78rem; color: #888; margin-top: 10px; }
+
+  /* LIST */
+  article ul { padding-left: 20px; margin-bottom: 18px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li::marker { color: #6A6A10; }
+
+  /* DISCLAIMER */
+  .disclaimer { background: #f2f2f2; border-radius: 4px; padding: 16px 20px; margin-top: 40px; }
+  .disclaimer p { font-size: .76rem; color: #777; margin: 0; line-height: 1.6; }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+  .sb-card { background: #fff; border-radius: 6px; padding: 22px 20px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+  .sb-card h3 { font-size: .85rem; font-weight: 700; color: #0D2B55; border-bottom: 2px solid #6A6A10; padding-bottom: 8px; margin-bottom: 14px; letter-spacing: .5px; }
+  .sb-card ul { list-style: none; padding: 0; }
+  .sb-card ul li { font-size: .83rem; color: #444; padding: 7px 0; border-bottom: 1px solid #eee; display: flex; gap: 8px; }
+  .sb-card ul li::before { content: "▸"; color: #6A6A10; flex-shrink: 0; }
+  .sb-card ul li:last-child { border-bottom: none; }
+  .related a { display: block; font-size: .82rem; color: #333; text-decoration: none; padding: 8px 0; border-bottom: 1px solid #eee; transition: color .2s; }
+  .related a:hover { color: #6A6A10; }
+  .related a:last-child { border-bottom: none; }
+  .related .cat { font-size: .7rem; color: #6A6A10; font-weight: 700; display: block; margin-bottom: 2px; }
+
+  /* TABLE */
+  .sb-table { width: 100%; border-collapse: collapse; font-size: .8rem; }
+  .sb-table th { background: #6A6A10; color: #fff; padding: 7px 10px; text-align: left; }
+  .sb-table td { padding: 7px 10px; border-bottom: 1px solid #eee; color: #444; }
+  .sb-table tr:last-child td { border-bottom: none; }
+  .up { color: #c0392b; font-weight: 700; }
+  .dn { color: #2980b9; font-weight: 700; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,.6); text-align: center; padding: 28px 20px; font-size: .78rem; }
+  footer a { color: #F4A52D; text-decoration: none; }
+
+  /* HASHTAG */
+  .hashtags { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtags span { background: #f6f6e8; color: #6A6A10; border: 1px solid #c8c850; border-radius: 20px; padding: 4px 12px; font-size: .78rem; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">부동산<span>인사이트</span></div>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="cat-tag">칼럼 · 해설</div>
+    <h1>72주의 침묵 — 멈추지 않는 집값, 우리는 지금 무엇을 직시해야 하나</h1>
+    <p class="subtitle">서울 아파트값 72주 연속 상승, 동탄 규제지역 재지정, 공급절벽 3년째… 이 시장은 정상인가, 아니면 우리가 '정상'에 익숙해진 것인가</p>
+    <div class="hero-meta">
+      <span>부동산인사이트 편집부</span>
+      <span>·</span>
+      <span>2026년 7월 2일</span>
+      <span>·</span>
+      <span>읽기 약 8분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+
+    <!-- 데이터 박스 -->
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="num">72주</div>
+        <div class="label">서울 아파트 매매가격 연속 상승 (2026.6 기준)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">-32%</div>
+        <div class="label">2026년 서울 입주물량 감소율 (전년 대비)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">11.4%</div>
+        <div class="label">동탄구 아파트 5개월 누적 상승률 (전국 1위)</div>
+      </div>
+    </div>
+
+    <p>숫자에 마비가 온다. 서울 아파트값이 72주 연속 올랐다는 소식이, 이제는 뉴스 알림조차 켜지 않는 사람들의 무감각 속에 묻힌다. 2025년 2월 상승 전환 이후 단 한 주도 꺾이지 않은 이 흐름은, 어느 순간부터 '이례적 사건'이 아니라 '당연한 배경'이 되어버렸다. 그것이 진짜 문제다.</p>
+
+    <p>칼럼을 쓰는 이유는 숫자를 되풀이하기 위해서가 아니다. 숫자 뒤에 숨어 있는 구조를 읽고, 지금 이 시장이 어디를 향해 달려가고 있는지 냉정하게 짚어보기 위함이다. 72주라는 숫자는 대기록이 아니다. 정책 실패의 타임라인이다.</p>
+
+    <h2>공급 절벽, 이미 예고된 재앙이 현실이 되다</h2>
+    <p>전문가들이 입을 모아 경고했던 '공급 절벽'은 이제 전망이 아니라 현실이다. 2026년 서울의 아파트 입주물량은 약 2만8,984가구로 전년(4만2,684가구) 대비 32% 급감한다. 임대물량을 제외한 실수요 공급은 1만7,687가구 수준으로 쪼그라들었다. 2027년에는 1만113가구, 2028년에는 8,337가구로 더 줄어든다는 전망도 나온다.</p>
+
+    <p>이 숫자가 의미하는 바는 단순하다. 서울에서 아파트를 사고 싶은 사람 10명 중 최소 6~7명은 매물 자체가 없어서 구매를 포기하거나 다른 지역으로 밀려난다는 것이다. 수요가 줄지 않는 한, 공급이 정상화될 때까지 가격은 지지받는다. 그리고 서울의 수요는 결코 줄지 않는다. 일자리, 교육, 의료, 인프라 — 대한민국의 모든 우위가 서울에 집중되어 있기 때문이다.</p>
+
+    <div class="quote-box">
+      <p>"공급이 회복되려면 착공에서 입주까지 최소 3~4년이 걸린다. 지금의 공급 부족은 2022~2023년 착공 급감의 결과물이다. 정부가 2025년부터 인허가를 늘려도, 그 효과는 빨라야 2029년에나 입주 물량으로 나타난다."</p>
+      <cite>— 부동산 시장 전문가 분석 종합</cite>
+    </div>
+
+    <h2>동탄 규제지정이 던지는 역설: 규제는 왜 항상 늦게 오는가</h2>
+    <p>정부는 7월 1일부터 경기 화성시 동탄구, 용인시 기흥구, 구리시를 규제지역과 토지거래허가구역으로 추가 지정했다. 토지거래허가구역 효력은 7월 5일부터 2027년 12월 31일까지다. 동탄 아파트는 올해 2월 통계 공표 이후 5개월간 누적 상승률 11.38%를 기록, 전국 1위를 달렸다.</p>
+
+    <p>규제 발표 타이밍에 주목할 필요가 있다. 동탄이 이미 오를 만큼 오른 후, '규제 직전' 막차 수요까지 자극한 다음에야 정부의 칼이 내려졌다. 이 패턴은 새롭지 않다. 2020~2021년 부동산 급등기에도 정부는 항상 시장을 한 박자 늦게 따라갔고, 그 지연은 오히려 규제 전 매수 심리를 자극하는 역효과를 낳았다.</p>
+
+    <p>규제지역 지정 자체를 부정하는 것이 아니다. 문제는 예방이 아닌 소방에 방점이 찍힌 정책 기조다. 불이 번질 대로 번진 뒤 물을 끼얹는 방식으로는 화근을 제거할 수 없다.</p>
+
+    <div class="quote-box">
+      <p>"부동산 정책의 본질적 목표는 가격 안정이 아닐 수 있다. 시장 조정을 명분으로 삼되, 실질적으로는 거래세 수입·보유세 기반 확충·정치적 지지율 관리라는 다른 목표들이 혼재되어 있다는 것이 정책 당국에 대한 냉정한 평가다."</p>
+      <cite>— KB금융 부동산 리서치 분석 참조</cite>
+    </div>
+
+    <h2>전세가 12년 8개월 만의 최고 상승, 임차인은 이중고</h2>
+    <p>매매가만 오르는 것이 아니다. 서울 전세가는 12년 8개월 만에 최고 상승폭을 기록했다. 성북구(+0.48%), 도봉구(+0.47%), 성동구(+0.46%) 등 이른바 '서울 외곽·중저가' 지역에서 전세 상승이 두드러졌다.</p>
+
+    <p>전세 상승은 복합적 원인의 산물이다. 공급 부족으로 전세 매물 자체가 줄었고, 금리 하락 기대감으로 전세 대신 월세로 전환하는 임대인이 늘었으며, 매매가 상승에 따라 전세가 저항선도 덩달아 높아졌다. 매매 시장에 진입하지 못한 이들이 전세 시장으로 몰리면서 전세가 역시 상승 압력을 받는 구조다.</p>
+
+    <p>이 상황의 가장 큰 피해자는 자가 보유 능력이 없는 중산층 이하 임차인이다. 매매가 오르면 내 집 마련이 어려워지고, 전세가 오르면 임차 생활도 버텨내기 어려워진다. 자산 시장의 상승이 특정 계층에게는 이중의 박탈감으로 작동하는 구조가 고착되고 있다.</p>
+
+    <h2>지방은 왜 다른가 — 서울과 비서울의 구조적 분열</h2>
+    <p>같은 '한국 부동산 시장'이지만, 실상은 두 개의 서로 다른 시장이 공존한다. 서울과 수도권 핵심지는 공급 부족·수요 집중·자산가 매입 등으로 가격이 오르는 반면, 비수도권 지방은 인구 유출, 미분양 누적, 가격 하락의 압력을 받는다.</p>
+
+    <p>건산연 전망에 따르면 2026년 전국 아파트 가격은 0.8% 상승하되, 수도권은 2%, 지방은 하락 또는 보합권에 머물 것으로 예상된다. 전국 평균이라는 숫자는 이 구조적 분열을 은폐한다. 서울 강남·마포·용산의 고가 상승과, 부산·대구·광주 외곽의 만성적 침체가 하나의 통계로 뭉뚱그려지는 것이다.</p>
+
+    <h2>정책의 한계와 시장 자율 조정의 신화</h2>
+    <p>부동산 시장을 행정 규제만으로 통제할 수 있다는 믿음은 이미 수차례 검증에서 실패했다. 2017~2021년 역대급 규제 패키지도, 2022~2023년 역발상 완화 정책도 시장의 장기 방향을 결정적으로 바꾸지 못했다. 결국 공급의 양과 타이밍, 금리 수준, 인구·가구 수 변화, 도시 구조라는 펀더멘털이 중기 가격 방향을 결정한다.</p>
+
+    <p>그렇다면 지금 정부가 할 수 있는 일은 무엇인가. 단기 규제보다는 공급 가속화가 유일한 해법이다. 재건축·재개발 규제 완화, 공공주도 공급 확대, 역세권 용적률 상향, 3기 신도시 조기 공급 — 모두 이미 나온 처방전이다. 문제는 실행 속도다. 정책 발표와 실제 입주 사이의 3~5년 공백을 메울 방법이 없다는 것이 이 시장이 단기간에 해결될 수 없는 이유다.</p>
+
+    <h2>실수요자·투자자가 지금 당장 점검해야 할 것들</h2>
+    <ul>
+      <li><strong>매수 타이밍보다 자금 구조가 먼저다:</strong> 금리 변동, DSR 규제 강화 여부를 확인하고 원리금 상환 능력을 재점검하라. 집값 상승 기대만으로 무리한 레버리지를 일으키는 것은 고금리 충격에 취약한 포지션을 만든다.</li>
+      <li><strong>지역 선택이 곧 투자 수익률이다:</strong> '서울 아파트'라는 하나의 카테고리 안에서도 상승폭은 천차만별이다. 학군, 역세권, 직주근접 세 가지가 교차하는 지점을 중심으로 보라.</li>
+      <li><strong>규제지역 지정 후 단기 반등 구간에 주의하라:</strong> 동탄 등 규제지역은 지정 후 6개월~1년 내 거래 급감·호가 조정 국면에 진입할 가능성이 높다. 막차를 탔다고 생각하는 매수자라면 유동성 확보에 각별히 신경 쓰야 한다.</li>
+      <li><strong>전세 거주자라면 계약 갱신 청구권을 적극 활용하라:</strong> 전세 상승 국면에서는 계약 갱신 청구권(+5%)이 실질적 방어 수단이다. 만료 2개월 전 행사 여부를 사전에 점검하라.</li>
+      <li><strong>지방 아파트 투자는 임대 수요와 인구 이동 데이터를 선행 점검하라:</strong> 지방 시장 바닥론을 이유로 저가 매수에 나서기 전, 해당 지역의 기업 이전·인구 유입 여부를 반드시 확인해야 한다. 가격이 싸다고 오르는 시장이 아니다.</li>
+    </ul>
+
+    <h2>결론: 72주는 끝이 아니라 새로운 질문의 시작이다</h2>
+    <p>72주 연속 상승이라는 기록을 보며 '이제 꺾이겠지'라는 기대를 갖는 것은 자연스럽다. 그러나 구조적 공급 부족, 서울 집중 수요, 전세 불안이라는 세 축이 동시에 작동하는 한, 시장은 단기에 방향을 바꾸지 않는다.</p>
+
+    <p>지금 이 칼럼이 말하고자 하는 것은 단순하다. 숫자에 마비되지 말고, 본인의 재무 상황과 라이프사이클에 맞는 판단을 내려야 할 때라는 것이다. 시장이 '언제 꺾이느냐'는 예측보다, '나는 이 시장에서 무엇을 할 수 있는가'라는 질문이 더 생산적이다.</p>
+
+    <p>72주는 기록이지만, 73주부터는 새로운 국면의 시작일 수도 있다. 방향이 바뀌지 않는 시장은 없다. 다만 그 전환점은 아무도 사전에 선명하게 알 수 없다. 그렇기 때문에, 지금 필요한 것은 예측이 아니라 준비다.</p>
+
+    <div class="hashtags">
+      <span>#서울아파트</span>
+      <span>#집값상승</span>
+      <span>#공급부족</span>
+      <span>#동탄규제</span>
+      <span>#부동산칼럼</span>
+      <span>#전세상승</span>
+      <span>#부동산전망2026</span>
+      <span>#실수요자전략</span>
+    </div>
+
+    <div class="disclaimer">
+      <p>※ 본 칼럼은 공개된 통계 자료 및 전문가 분석을 바탕으로 작성된 정보성 콘텐츠입니다. 특정 자산에 대한 매수·매도 권유가 아니며, 투자 판단에 따른 결과는 전적으로 독자 본인에게 귀속됩니다. 부동산 거래 시 반드시 공인중개사 또는 세무·법률 전문가와 상담하시기 바랍니다.</p>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sb-card">
+      <h3>핵심 요약</h3>
+      <ul>
+        <li>서울 아파트 72주 연속 상승, 역대급 기록 경신</li>
+        <li>2026년 서울 입주물량 전년 대비 32% 감소</li>
+        <li>동탄·기흥·구리, 규제지역·토지거래허가구역 지정(7/1~)</li>
+        <li>전세가 12년 8개월 만에 최고폭 상승</li>
+        <li>서울 vs 지방 양극화 구조 고착 심화</li>
+      </ul>
+    </div>
+
+    <div class="sb-card related">
+      <h3>관련 기사</h3>
+      <a href="#">
+        <span class="cat">시장동향</span>
+        서울 아파트 72주 연속 상승… 거래량 현황과 향후 전망
+      </a>
+      <a href="#">
+        <span class="cat">정책·규제</span>
+        동탄·기흥·구리 규제지역 지정 — 무엇이 달라지나
+      </a>
+      <a href="#">
+        <span class="cat">투자분석</span>
+        공급절벽 시대, 서울 어디를 사야 하나
+      </a>
+      <a href="#">
+        <span class="cat">칼럼</span>
+        전세 대출 규제와 임차인 보호의 딜레마
+      </a>
+    </div>
+
+    <div class="sb-card">
+      <h3>2026년 주요 지역 상승률 비교</h3>
+      <table class="sb-table">
+        <thead>
+          <tr><th>지역</th><th>누적 상승률</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>동탄구</td><td class="up">+11.4%</td></tr>
+          <tr><td>서울 전체</td><td class="up">+8.98% (2025년)</td></tr>
+          <tr><td>수도권 평균</td><td class="up">+2.0% 전망</td></tr>
+          <tr><td>전국 평균</td><td class="up">+0.8% 전망</td></tr>
+          <tr><td>지방 주요 도시</td><td class="dn">보합~하락</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 부동산인사이트 | <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> · <a href="#">광고문의</a></p>
+  <p style="margin-top:6px;">본 사이트의 모든 콘텐츠는 정보 제공 목적이며, 투자 권유로 해석될 수 없습니다.</p>
+</footer>
+
+</body>
+</html>

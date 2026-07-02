@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서울 아파트 72주 연속 상승 — '이 상승'의 끝은 어디인가? | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #222; font-size: 16px; line-height: 1.8; }
+
+  /* HEADER */
+  header { background: #0D2B55; color: #fff; padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,.35); }
+  .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.35rem; font-weight: 700; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 20px; }
+  nav a { color: rgba(255,255,255,.82); text-decoration: none; font-size: .82rem; font-weight: 500; transition: color .2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%); color: #fff; padding: 72px 24px 60px; text-align: center; }
+  .hero-inner { max-width: 800px; margin: 0 auto; }
+  .cat-tag { display: inline-block; background: #1A4D8F; color: #fff; font-size: .72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 2px; margin-bottom: 22px; border: 1px solid rgba(255,255,255,.3); }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.4; margin-bottom: 18px; }
+  .hero p.subtitle { font-size: 1rem; color: rgba(255,255,255,.78); max-width: 620px; margin: 0 auto 28px; }
+  .hero-meta { font-size: .8rem; color: rgba(255,255,255,.6); }
+  .hero-meta span { margin: 0 8px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 860px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article { background: #fff; border-radius: 6px; padding: 44px 48px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+  @media (max-width: 640px) { article { padding: 28px 20px; } }
+
+  /* DATA BOX */
+  .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  @media (max-width: 600px) { .data-grid { grid-template-columns: 1fr; } }
+  .data-card { background: #edf2fb; border-left: 4px solid #1A4D8F; border-radius: 4px; padding: 18px 16px; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.7rem; font-weight: 700; color: #1A4D8F; }
+  .data-card .label { font-size: .78rem; color: #555; margin-top: 4px; }
+
+  /* HEADINGS */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.25rem; font-weight: 700; margin: 40px 0 16px; padding-left: 14px; border-left: 4px solid #1A4D8F; color: #0D2B55; }
+  article p { margin-bottom: 18px; color: #333; }
+
+  /* QUOTE */
+  .quote-box { background: #edf2fb; border-left: 5px solid #1A4D8F; border-radius: 0 4px 4px 0; padding: 22px 28px; margin: 30px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: #0D2B55; margin: 0; line-height: 1.9; }
+  .quote-box cite { display: block; font-style: normal; font-size: .78rem; color: #888; margin-top: 10px; }
+
+  /* LIST */
+  article ul { padding-left: 20px; margin-bottom: 18px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li::marker { color: #1A4D8F; }
+
+  /* TABLE */
+  .article-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: .87rem; }
+  .article-table th { background: #1A4D8F; color: #fff; padding: 10px 14px; text-align: left; }
+  .article-table td { padding: 10px 14px; border-bottom: 1px solid #e8edf5; color: #333; }
+  .article-table tr:last-child td { border-bottom: none; }
+  .article-table tr:nth-child(even) td { background: #f5f8ff; }
+  .up { color: #c0392b; font-weight: 700; }
+  .dn { color: #2980b9; font-weight: 700; }
+  .neutral { color: #666; }
+
+  /* DISCLAIMER */
+  .disclaimer { background: #f2f2f2; border-radius: 4px; padding: 16px 20px; margin-top: 40px; }
+  .disclaimer p { font-size: .76rem; color: #777; margin: 0; line-height: 1.6; }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+  .sb-card { background: #fff; border-radius: 6px; padding: 22px 20px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+  .sb-card h3 { font-size: .85rem; font-weight: 700; color: #0D2B55; border-bottom: 2px solid #1A4D8F; padding-bottom: 8px; margin-bottom: 14px; letter-spacing: .5px; }
+  .sb-card ul { list-style: none; padding: 0; }
+  .sb-card ul li { font-size: .83rem; color: #444; padding: 7px 0; border-bottom: 1px solid #eee; display: flex; gap: 8px; }
+  .sb-card ul li::before { content: "▸"; color: #1A4D8F; flex-shrink: 0; }
+  .sb-card ul li:last-child { border-bottom: none; }
+  .related a { display: block; font-size: .82rem; color: #333; text-decoration: none; padding: 8px 0; border-bottom: 1px solid #eee; transition: color .2s; }
+  .related a:hover { color: #1A4D8F; }
+  .related a:last-child { border-bottom: none; }
+  .related .cat { font-size: .7rem; color: #1A4D8F; font-weight: 700; display: block; margin-bottom: 2px; }
+
+  /* INDICATOR CARD */
+  .indicator-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #eee; font-size: .83rem; }
+  .indicator-item:last-child { border-bottom: none; }
+  .indicator-item .name { color: #444; }
+  .indicator-item .val { font-weight: 700; }
+
+  /* FOOTER */
+  footer { background: #0D2B55; color: rgba(255,255,255,.6); text-align: center; padding: 28px 20px; font-size: .78rem; }
+  footer a { color: #F4A52D; text-decoration: none; }
+
+  /* HASHTAG */
+  .hashtags { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtags span { background: #edf2fb; color: #1A4D8F; border: 1px solid #afc4e8; border-radius: 20px; padding: 4px 12px; font-size: .78rem; font-weight: 500; }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box { background: #fff8e1; border: 1px solid #F4A52D; border-radius: 4px; padding: 18px 22px; margin: 28px 0; }
+  .highlight-box p { margin: 0; font-size: .9rem; color: #5a4000; }
+  .highlight-box strong { color: #c85000; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">부동산<span>인사이트</span></div>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="cat-tag">시장 동향</div>
+    <h1>서울 아파트 72주 연속 상승 — '이 상승'의 끝은 어디인가?</h1>
+    <p class="subtitle">동탄 규제지역 지정·전세 최고 상승·공급절벽 3중고 속 시장 흐름 총정리 — 지금 당신이 알아야 할 부동산 시장의 모든 것</p>
+    <div class="hero-meta">
+      <span>부동산인사이트 편집부</span>
+      <span>·</span>
+      <span>2026년 7월 2일</span>
+      <span>·</span>
+      <span>읽기 약 7분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+
+    <!-- 데이터 박스 -->
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="num">+0.27%</div>
+        <div class="label">서울 아파트 주간 매매가격 상승률 (6월 마지막 주)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">72주</div>
+        <div class="label">서울 아파트 매매가 연속 상승 주수 (2025.2 이후)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">12년8개월</div>
+        <div class="label">서울 전세가 상승폭 최고 기간 (현재 기준)</div>
+      </div>
+    </div>
+
+    <p>서울 아파트 시장이 72주 연속 상승이라는 새로운 기록을 세웠다. 2025년 2월 첫째 주 상승 전환 이후 단 한 주도 쉬지 않고 오른 셈이다. 지난 6월 마지막 주 서울 매매가격지수는 전주 대비 0.27% 올라 상승 속도 역시 다시 확대되는 흐름이다. 같은 기간 전세가 역시 0.30% 상승하며 12년 8개월 만의 최고 상승폭을 기록했다.</p>
+
+    <p>이 숫자들은 단순한 통계가 아니다. 지금 한국 부동산 시장이 어떤 구조적 힘으로 움직이고 있는지, 그리고 규제와 완화 사이에서 정책이 얼마나 효과를 발휘하고 있는지 보여주는 바로미터다. 이번 기사는 최신 동향 데이터와 구조적 원인 분석을 통해 시장의 현재 위치를 정확히 진단한다.</p>
+
+    <h2>매매가 동향 — 서울, 어디가 얼마나 올랐나</h2>
+    <p>한국부동산원 6월 마지막 주 기준, 서울 전체 매매가격지수 변동률은 +0.27%였다. 강남·서초·송파 등 전통 강남3구는 물론이고, 마포·용산·성동 등 이른바 '마용성' 지역과 노도강(노원·도봉·강북) 지역까지 상승세가 확산되고 있다. 한때 '저점 매수'로 회자됐던 중저가 지역들이 이제는 가격 레벨 자체가 달라졌다는 게 현장의 목소리다.</p>
+
+    <table class="article-table">
+      <thead>
+        <tr><th>지역</th><th>주간 변동률</th><th>특징</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>성북구</td><td class="up">+0.48%</td><td>길음·정릉동 대단지 위주 상승</td></tr>
+        <tr><td>도봉구</td><td class="up">+0.47%</td><td>창·도봉동 역세권 단지 주도</td></tr>
+        <tr><td>성동구</td><td class="up">+0.46%</td><td>하왕십리·행당동 중심</td></tr>
+        <tr><td>동탄구(화성)</td><td class="up">+1.46% (규제 전)</td><td>누적 상승률 전국 1위 11.4%</td></tr>
+        <tr><td>용인 기흥구</td><td class="up">규제 대상 편입</td><td>반도체 직주근접 수요</td></tr>
+        <tr><td>구리시</td><td class="up">규제 대상 편입</td><td>서울 접근성·재건축 기대</td></tr>
+      </tbody>
+    </table>
+
+    <p>주목할 점은 상승이 특정 지역에 국한되지 않는다는 것이다. 전통적 '버블존'인 강남3구뿐 아니라, 전세가 영향을 받는 외곽 지역까지 가격이 오르는 패턴이 확인된다. 전세가 오르면 차라리 사고 말자는 매수 전환 수요가 전세 상승을 따라 외곽으로 이동하는 구조다.</p>
+
+    <div class="quote-box">
+      <p>"서울 집값 상승이 특정 권역에 제한되던 초기 국면을 지나, 이제는 전 지역 상승으로 확산되는 2차 국면에 접어들었다. 이 단계에서는 규제 효과보다 공급 확대 효과가 훨씬 강력하게 작동한다."</p>
+      <cite>— 부동산 시장 전문가 종합 분석</cite>
+    </div>
+
+    <h2>동탄·기흥·구리 규제지역 지정 — 시장 반응은?</h2>
+    <p>정부는 7월 1일부로 경기 화성시 동탄구, 용인시 기흥구, 구리시를 규제지역으로 지정했다. 토지거래허가구역은 7월 5일부터 2027년 12월 31일까지 효력이 발생한다. 동탄은 2월 이후 5개월 누적 상승률 11.38%로 전국 1위를 기록하며 핵심 규제 대상에 올랐다.</p>
+
+    <p>규제지역 지정의 실질적 효과는 무엇인가. 우선 규제지역 내 주택담보대출 LTV 한도가 낮아지고, 2주택 이상 취득 시 취득세 중과가 적용된다. 토지거래허가구역에서는 주거용 토지 취득 시 관할 구청의 사전 허가를 받아야 하며, 실거주 요건도 붙는다. 실질적으로 갭투자와 단기 매매 수요를 차단하는 구조다.</p>
+
+    <div class="highlight-box">
+      <p><strong>규제지역 지정 후 단기 시장 반응 패턴:</strong> 과거 사례를 보면 규제지역 지정 직후 1~3개월간 거래량 급감 → 호가 조정 → 6~12개월 후 재상승으로 이어지는 패턴이 반복됐다. 단기 조정은 예상되나 공급 부족이 해소되지 않는 한 중기 하락 전환 가능성은 낮다는 게 전문가 중론이다.</p>
+    </div>
+
+    <h2>전세 시장 — 12년 8개월 만의 기록적 상승</h2>
+    <p>매매 시장 못지않게 전세 시장도 뜨겁다. 서울 전세가격 주간 상승률은 0.30%로, 이는 2013년 10월 이후 약 12년 8개월 만에 가장 높은 상승폭이다. 성북구(+0.48%), 도봉구(+0.47%), 성동구(+0.46%) 순으로 상승이 두드러졌으며, 대단지·역세권·학군지 전세 매물이 빠르게 소진되고 있다.</p>
+
+    <p>전세 상승의 원인은 복합적이다. 첫째, 공급 감소다. 2026년 서울 입주물량이 전년 대비 32% 줄면서 전세 매물 자체가 부족하다. 둘째, 임대인의 월세 전환이다. 금리 인하 기대감으로 수익형 월세를 선호하는 임대인이 늘면서 전세 매물이 월세로 전환되고 있다. 셋째, 매매 시장 상승이 전세 가이드라인을 끌어올린다. 매매가 대비 전세가 비율(전세가율)은 낮아졌지만, 절대 가격은 함께 오르는 구조다.</p>
+
+    <h2>거래량 현황 — 물량 감소 속 선별적 거래 증가</h2>
+    <p>7월 기준 아파트 매매거래는 49,940건으로 전월 대비 15.2%, 전년동월 대비 8.8% 감소했다. 거래량이 줄었다는 것이 반드시 시장 침체를 의미하지는 않는다. 현재 감소는 공급 부족에 따른 매물 감소가 주된 원인이다. 팔려는 사람이 없으니 거래가 줄고, 오히려 나오는 매물에 수요가 집중되며 가격이 오르는 '거래량 감소 + 가격 상승' 패러독스가 나타나고 있다.</p>
+
+    <table class="article-table">
+      <thead>
+        <tr><th>구분</th><th>수치</th><th>전월 대비</th><th>전년 대비</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>7월 아파트 매매거래</td><td>49,940건</td><td class="dn">-15.2%</td><td class="dn">-8.8%</td></tr>
+        <tr><td>서울 주간 매매가 상승률</td><td>+0.27%</td><td class="up">확대</td><td class="up">72주 연속↑</td></tr>
+        <tr><td>서울 전세가 주간 상승률</td><td>+0.30%</td><td class="up">최고폭</td><td class="up">12년8개월 최고</td></tr>
+        <tr><td>동탄 누적 상승률(5개월)</td><td>+11.38%</td><td class="up">전국 1위</td><td>—</td></tr>
+      </tbody>
+    </table>
+
+    <h2>공급 전망 — 2028년까지 개선 가능성 낮다</h2>
+    <p>2026년 서울 입주물량은 약 2만8,984가구로 전년 대비 32% 감소한다. 임대물량 제외 시 실수요 공급은 1만7,687가구 수준이다. 2027년에는 1만113가구, 2028년에는 8,337가구로 더욱 줄어든다. 건설사들이 2022~2023년 고금리·원자재 가격 급등 시기에 착공을 줄인 결과가 2026~2028년에 입주 감소로 나타나는 것이다.</p>
+
+    <p>이른바 '공급절벽'은 이미 구조화된 현실이다. 정부가 인허가를 아무리 늘려도 착공~입주까지 3~4년이 걸리기 때문에, 지금의 공급 부족은 최소 2028~2029년까지 해소되기 어렵다. 이 구조적 제약이 매매·전세 시장 모두에서 가격을 지지하는 근본 원인이다.</p>
+
+    <div class="quote-box">
+      <p>"2026년 서울 집값 4.2% 상승을 전망한다. 누적된 착공 부족이 핵심 근거다. 금리보다 공급이, 정책보다 펀더멘털이 시장을 지배하는 국면이다."</p>
+      <cite>— 한국건설산업연구원, 부동산114 전망 종합</cite>
+    </div>
+
+    <h2>지역별 양극화 — 수도권 vs 지방의 벌어지는 간격</h2>
+    <p>서울·수도권 핵심지와 비수도권 지방의 격차는 계속 벌어지고 있다. 건산연 전망에 따르면 2026년 수도권 아파트 가격은 2% 상승이 예상되는 반면, 지방은 보합 또는 하락 국면에 머물 가능성이 높다. 부산·대구·인천 외곽, 지방 중소도시 미분양 물량은 여전히 해소되지 않고 있다.</p>
+
+    <p>서울 집중 현상의 구조적 원인은 간단하다. 좋은 일자리, 좋은 학교, 좋은 병원이 모두 서울에 있다. 이 인프라 격차가 좁혀지지 않는 한 수요의 서울 쏠림은 계속된다. 교통 인프라 확충이나 기업 이전 정책이 없는 상태에서 지방 부동산 회복을 기대하는 것은 어렵다.</p>
+
+    <h2>실수요자·투자자를 위한 시장 시사점 정리</h2>
+    <ul>
+      <li><strong>매매 관망은 득이 되는가:</strong> 공급 부족이 해소되지 않는 한 단기 급락은 기대하기 어렵다. 다만 금리·DSR 규제·글로벌 경기라는 외부 변수가 동시에 흔들리면 조정 국면이 올 수 있다. 실거주 목적이라면 자금 여력 확인 후 적극 검토가 필요하다.</li>
+      <li><strong>동탄·기흥·구리 매수자 유의:</strong> 규제지역 지정 이후 6~12개월간 거래량 감소와 호가 조정 가능성이 있다. 이미 매수한 경우 실거주 계획을 재확인하고, 신규 매수는 규제 조건 숙지 후 진행해야 한다.</li>
+      <li><strong>전세 입주 예정자:</strong> 전세가 최고 상승 국면에서는 신규 전세 계약 시 시세 대비 과도한 보증금 지급 위험에 노출된다. 전세보증보험 가입을 필수적으로 검토하라.</li>
+      <li><strong>수도권 외곽·경기 중소도시 주목:</strong> 동탄·기흥 규제로 빠져나온 수요가 인근 비규제 지역으로 이동할 가능성이 있다. 교통호재·개발호재가 있는 인접 지역의 단기 반사이익 여부를 점검할 필요가 있다.</li>
+      <li><strong>지방 투자는 선별적 접근:</strong> 전국 평균 데이터로 지방 투자를 결정하지 마라. 해당 지역의 인구 변화, 미분양 현황, 기업 이전 여부를 구체적으로 확인한 후 접근하라.</li>
+    </ul>
+
+    <h2>결론: 데이터가 가리키는 방향은 분명하다</h2>
+    <p>서울 아파트 72주 연속 상승, 전세가 12년 8개월 최고 상승폭, 공급절벽 3년째 — 이 세 가지 수치가 동시에 나타나는 상황은 '일시적 과열'이 아니다. 구조적 불균형이 데이터로 드러나는 것이다.</p>
+
+    <p>정부의 동탄·기흥·구리 규제지역 지정은 과열 지역에 냉각수를 끼얹는 처방이다. 단기 거래 억제에는 효과가 있겠지만, 공급 부족이라는 근본 원인을 건드리지 않는 한 중기 방향성을 바꾸기는 어렵다. 시장은 정책보다 빠르게 움직이고, 공급보다 빠르게 수요가 변화한다.</p>
+
+    <p>지금 이 시장에서 중요한 것은 '몇 주 더 오를까'가 아니라, '내 자금 상황과 라이프사이클에 맞는 의사결정을 언제 할 것인가'다. 데이터는 방향을 가리키지만, 결정은 언제나 사람이 한다.</p>
+
+    <div class="hashtags">
+      <span>#서울아파트상승</span>
+      <span>#72주연속</span>
+      <span>#동탄규제</span>
+      <span>#전세최고상승</span>
+      <span>#공급절벽</span>
+      <span>#부동산시장동향</span>
+      <span>#아파트가격</span>
+      <span>#2026부동산</span>
+    </div>
+
+    <div class="disclaimer">
+      <p>※ 본 기사는 한국부동산원, 국토교통부, 건설산업연구원, 부동산114 등의 공개 자료를 바탕으로 작성된 정보성 콘텐츠입니다. 특정 자산에 대한 매수·매도 권유가 아니며, 투자 결정에 따른 결과는 독자 본인에게 귀속됩니다. 개별 부동산 거래 시 공인중개사 및 전문가 상담을 권장합니다.</p>
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sb-card">
+      <h3>핵심 요약</h3>
+      <ul>
+        <li>서울 아파트 주간 매매가 +0.27%, 72주 연속 상승</li>
+        <li>전세가 +0.30%, 12년 8개월 만의 최고 상승폭</li>
+        <li>동탄·기흥·구리 규제지역·토지거래허가구역 지정(7/1~)</li>
+        <li>2026년 서울 입주물량 전년 대비 32% 감소</li>
+        <li>7월 아파트 거래량 전월 대비 15.2% 감소</li>
+      </ul>
+    </div>
+
+    <div class="sb-card">
+      <h3>주요 지표 한눈에</h3>
+      <div class="indicator-item">
+        <span class="name">서울 매매가 주간 변동</span>
+        <span class="val up">+0.27%</span>
+      </div>
+      <div class="indicator-item">
+        <span class="name">서울 전세가 주간 변동</span>
+        <span class="val up">+0.30%</span>
+      </div>
+      <div class="indicator-item">
+        <span class="name">동탄 5개월 누적 상승</span>
+        <span class="val up">+11.38%</span>
+      </div>
+      <div class="indicator-item">
+        <span class="name">2026 서울 입주물량 증감</span>
+        <span class="val dn">-32%</span>
+      </div>
+      <div class="indicator-item">
+        <span class="name">7월 아파트 거래량 증감</span>
+        <span class="val dn">-15.2%</span>
+      </div>
+    </div>
+
+    <div class="sb-card related">
+      <h3>관련 기사</h3>
+      <a href="#">
+        <span class="cat">칼럼·해설</span>
+        72주의 침묵 — 멈추지 않는 집값, 우리는 무엇을 직시해야 하나
+      </a>
+      <a href="#">
+        <span class="cat">정책·규제</span>
+        동탄·기흥·구리 규제지역 지정 상세 가이드
+      </a>
+      <a href="#">
+        <span class="cat">투자분석</span>
+        공급절벽 시대 옥석 가리기 — 어느 지역이 살아남는가
+      </a>
+      <a href="#">
+        <span class="cat">분양·청약</span>
+        2026년 하반기 수도권 주요 분양 단지 총정리
+      </a>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 부동산인사이트 | <a href="#">이용약관</a> · <a href="#">개인정보처리방침</a> · <a href="#">광고문의</a></p>
+  <p style="margin-top:6px;">본 사이트의 모든 콘텐츠는 정보 제공 목적이며, 투자 권유로 해석될 수 없습니다.</p>
+</footer>
+
+</body>
+</html>
