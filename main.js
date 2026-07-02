@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 174,
+    url: 'article_20260702_2_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 72주 연속 상승 — \'이 상승\'의 끝은 어디인가?',
+    summary: '6월 마지막 주 서울 매매가격지수 0.27% 상승, 전세 12년 8개월 만 최고 상승폭 — 동탄 규제지역 재지정·전세 최고 상승·공급절벽 3중고 속 시장 흐름을 총정리한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-02',
+    title_en: 'Seoul Apartments Rise for 72 Consecutive Weeks — Where Does This Rally End?',
+    summary_en: 'Seoul\'s apartment price index rose 0.27% in the final week of June, with jeonse hitting its highest gain in 12 years and 8 months. A comprehensive market roundup amid the triple headwinds of Dongtan\'s re-regulated zone status, surging jeonse, and a supply cliff.'
+  },
+  {
+    id: 173,
+    url: 'article_20260702_1_column_v2.html',
+    category: '칼럼',
+    title: '72주의 침묵 — 멈추지 않는 집값, 이제 우리는 무엇을 직시해야 하나',
+    summary: '숫자에 마비가 온다. 서울 아파트값 72주 연속 상승이 이제는 뉴스가 아닌 배경이 되어버렸다. 공급 절벽·동탄 규제 재지정·정책 실패의 타임라인 — 이 시장은 정상인가, 아니면 우리가 \'정상\'에 익숙해진 것인가.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집위원',
+    date: '2026-07-02',
+    title_en: '72 Weeks of Silence — Unrelenting Home Prices: What Must We Now Confront?',
+    summary_en: 'Seoul apartment prices have risen for 72 consecutive weeks — once a headline, now wallpaper. A supply cliff, Dongtan\'s re-designation as a regulated zone, and a policy timeline of failure — is this market normal, or have we simply grown accustomed to what is not?'
+  },
+  {
     id: 172,
     url: 'article_20260701_2_overseas_v2.html',
     category: '해외',
