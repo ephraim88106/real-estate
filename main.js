@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 176,
+    url: 'article_20260703_2_subscription_v2.html',
+    category: '분양',
+    title: '7월 청약 대전(大戰): 수도권 3만 가구 쏟아지는데, \'반세권\'에 올인해도 될까?',
+    summary: '2026년 7월 수도권 분양 물량이 3만2000가구를 넘어섰다. 반도체 산업단지 배후 \'반세권\'이 핵심으로 떠올랐지만, 10대 건설사 브랜드 쏠림과 비수기 거래 절벽이라는 복병도 공존한다. 청약 전략을 총정리한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-03',
+    title_en: 'July Subscription War: With 30,000 Units Flooding the Metro Area, Should You Go All-In on \'Semiconductor Belt\' Apartments?',
+    summary_en: 'Metro-area presale supply for July 2026 has topped 32,000 units. The \'semiconductor belt\' has emerged as the key theme — but brand concentration among top-10 builders and a summer transaction freeze lurk as risks. A complete breakdown of subscription strategies.'
+  },
+  {
+    id: 175,
+    url: 'article_20260703_1_policy_v2.html',
+    category: '정책',
+    title: '6.30 부동산 대책 완전 해부: 동탄·기흥·구리 3중 규제, 시장은 어디로 가나',
+    summary: '6월 30일 정부가 전격 발표한 동탄·기흥·구리 투기과열지구 지정의 배경과 실제 효과를 냉정하게 분석한다. 갭투자 차단과 대출 축소, 토지거래허가구역 3중 규제의 실질적 의미를 짚는다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-03',
+    title_en: 'Full Anatomy of the 6.30 Real Estate Measures: Triple Regulation in Dongtan, Giheung & Guri — Where Does the Market Go From Here?',
+    summary_en: 'A cold-eyed analysis of the government\'s surprise June 30 designation of Dongtan, Giheung, and Guri as speculative overheating districts — the background, real effects, gap-investment crackdown, loan cuts, and what the triple layer of land-transaction restrictions actually means.'
+  },
+  {
     id: 174,
     url: 'article_20260702_2_market_v2.html',
     category: '시장동향',
