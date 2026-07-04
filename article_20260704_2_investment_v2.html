@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026년 하반기 부동산 투자 생존전략 — 양극화 시대, 돈 되는 아파트 고르는 법 | 부동산인사이트</title>
+<meta name="description" content="서울 민간아파트 평균 분양가 3.3㎡당 5,838만원 역대 최고치, 경매 낙찰가율 상승, GTX 다핵 구조 전환. 2026년 하반기 부동산 시장은 양극화가 심화되는 가운데서도 선택적 상승장이 펼쳐진다. 전략적 투자 인사이트를 정리한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: #1a1a1a; background: #f5f0f0; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 900; color: #fff;
+    text-decoration: none; letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 0; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    padding: 0 14px; font-size: 0.82rem; font-weight: 500;
+    height: 60px; display: flex; align-items: center;
+    transition: color 0.2s, background 0.2s;
+  }
+  nav a:hover { color: #F4A52D; background: rgba(255,255,255,0.05); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1A0505 0%, #8B1A1A 55%, #2A0808 100%);
+    padding: 70px 24px 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner { max-width: 1200px; margin: 0 auto; position: relative; }
+  .category-tag {
+    display: inline-block;
+    background: #8B1A1A; color: #fff;
+    font-size: 0.75rem; font-weight: 700;
+    padding: 5px 14px; border-radius: 20px;
+    letter-spacing: 1px; text-transform: uppercase;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 900; color: #fff;
+    line-height: 1.3; margin-bottom: 16px;
+    max-width: 800px;
+  }
+  .hero-sub {
+    color: rgba(255,255,255,0.75); font-size: 1rem;
+    max-width: 680px; margin-bottom: 24px;
+  }
+  .hero-meta { color: rgba(255,255,255,0.55); font-size: 0.82rem; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+  /* ARTICLE */
+  article { background: #fff; border-radius: 12px; overflow: hidden; }
+  .article-body { padding: 40px; }
+
+  /* DATA BOX */
+  .data-box {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card {
+    background: linear-gradient(135deg, #fbeaea, #f5d5d5);
+    border: 1px solid #e4b4b4;
+    border-radius: 10px; padding: 20px 16px; text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.8rem; font-weight: 900; color: #8B1A1A;
+    display: block; margin-bottom: 6px;
+  }
+  .data-card .label { font-size: 0.8rem; color: #555; font-weight: 500; }
+
+  /* SECTION H2 */
+  .article-body h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.35rem; font-weight: 700;
+    color: #1a1a1a; margin: 40px 0 16px;
+    padding-left: 16px;
+    border-left: 4px solid #8B1A1A;
+    line-height: 1.4;
+  }
+  .article-body p { font-size: 0.97rem; color: #333; margin-bottom: 16px; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: #fbeaea;
+    border-left: 5px solid #8B1A1A;
+    border-radius: 0 10px 10px 0;
+    padding: 22px 24px; margin: 28px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.05rem; color: #5a1010;
+    margin: 0;
+  }
+  .quote-box cite {
+    display: block; margin-top: 10px;
+    font-size: 0.8rem; color: #8B1A1A; font-style: normal;
+  }
+
+  /* UL */
+  .article-body ul { padding-left: 0; list-style: none; margin-bottom: 20px; }
+  .article-body ul li {
+    padding: 10px 14px 10px 44px;
+    background: #fdf5f5;
+    border-left: 3px solid #e4b4b4;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 8px; font-size: 0.94rem; color: #333;
+    position: relative;
+  }
+  .article-body ul li::before {
+    content: '▶';
+    color: #8B1A1A; font-size: 0.7rem;
+    position: absolute; left: 16px; top: 12px;
+  }
+
+  /* HIGHLIGHT BOX */
+  .highlight-box {
+    background: linear-gradient(135deg, #fbeaea, #f5d5d5);
+    border: 1px solid #e4b4b4;
+    border-radius: 10px; padding: 20px 24px; margin: 24px 0;
+  }
+  .highlight-box h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1rem; color: #8B1A1A; margin-bottom: 12px;
+  }
+  .highlight-box p { font-size: 0.9rem; margin: 0; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0; border: 1px solid #ddd;
+    border-radius: 8px; padding: 16px 20px; margin-top: 40px;
+    font-size: 0.78rem; color: #777; line-height: 1.7;
+  }
+  .disclaimer strong { color: #555; }
+
+  /* HASHTAGS */
+  .hashtags { margin-top: 24px; }
+  .hashtag {
+    display: inline-block; background: #f5dada;
+    color: #8B1A1A; font-size: 0.78rem; font-weight: 600;
+    padding: 4px 12px; border-radius: 20px; margin: 4px 4px 4px 0;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .widget {
+    background: #fff; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .widget-header {
+    background: #8B1A1A; color: #fff;
+    padding: 12px 18px; font-size: 0.85rem; font-weight: 700;
+  }
+  .widget-body { padding: 18px; }
+  .summary-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 10px 0; border-bottom: 1px solid #f0f0f0;
+    font-size: 0.85rem; color: #333;
+  }
+  .summary-item:last-child { border-bottom: none; }
+  .summary-bullet {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #8B1A1A; flex-shrink: 0; margin-top: 6px;
+  }
+  .related-item {
+    padding: 10px 0; border-bottom: 1px solid #f0f0f0;
+    font-size: 0.83rem; color: #333; line-height: 1.4;
+  }
+  .related-item:last-child { border-bottom: none; }
+  .related-item a { color: #8B1A1A; text-decoration: none; font-weight: 500; }
+  .related-tag {
+    font-size: 0.7rem; background: #f5dada; color: #8B1A1A;
+    padding: 2px 8px; border-radius: 10px; margin-bottom: 4px;
+    display: inline-block;
+  }
+
+  /* COMPARISON TABLE */
+  .compare-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; margin-top: 8px; }
+  .compare-table th {
+    background: #8B1A1A; color: #fff;
+    padding: 8px 10px; text-align: center; font-size: 0.75rem;
+  }
+  .compare-table td {
+    padding: 8px 10px; border-bottom: 1px solid #eee;
+    text-align: center; color: #333;
+  }
+  .compare-table tr:nth-child(even) td { background: #fdf5f5; }
+  .good { color: #1a7f4d; font-weight: 700; }
+  .bad { color: #8B1A1A; font-weight: 700; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 30px 24px;
+    font-size: 0.82rem; margin-top: 60px;
+  }
+  footer strong { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">투자 인사이트</span>
+    <h1>분양가 역대 최고인데 왜 사람들은 청약 포기 안 할까 — 2026년 하반기 부동산 투자 생존전략</h1>
+    <p class="hero-sub">서울 민간아파트 평균 분양가 3.3㎡당 5,838만 원 신기록. 고금리·고분양가 시대에도 서울 핵심지는 꿈쩍 않는다. 경매, 갭투자, GTX 수혜지… 양극화 시장에서 살아남는 투자 전략을 파헤친다.</p>
+    <div class="hero-meta">2026년 7월 4일 &nbsp;|&nbsp; 투자분석팀 &nbsp;|&nbsp; #부동산투자 #하반기전략 #양극화 #서울아파트</div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="grid">
+    <main>
+      <article>
+        <div class="article-body">
+
+          <!-- DATA BOX -->
+          <div class="data-box">
+            <div class="data-card">
+              <span class="num">5,838만</span>
+              <span class="label">서울 민간아파트<br>3.3㎡당 분양가 (원, 역대 최고)</span>
+            </div>
+            <div class="data-card">
+              <span class="num">양극화</span>
+              <span class="label">서울·수도권 핵심지 강세<br>지방·비선호지 약세 심화</span>
+            </div>
+            <div class="data-card">
+              <span class="num">GTX</span>
+              <span class="label">A·B·C 노선 단계적 개통<br>수도권 다핵 구조 전환 중</span>
+            </div>
+          </div>
+
+          <p>2026년 상반기 부동산 시장을 한 단어로 요약하면 '선택적 상승'이다. 서울 전체 아파트는 비강남권을 중심으로도 상승 흐름이 나타났지만, 지방과 비선호 지역은 여전히 약세가 깊어지고 있다. KB금융 조사에 따르면 시장을 좌우하는 세 가지 변수로 전문가들은 정책 기조, 수급 변화, 금융 환경을 꼽는다.</p>
+
+          <p>2026년 4월 말 기준, 서울 민간아파트 평균 분양가는 3.3㎡당 5,838만 3,000원으로 역대 최고치를 다시 갱신했다. 공사비 급등, 금융비용 증가, 정비사업지 고분양가가 중첩된 결과다. 그럼에도 청약 경쟁은 핵심지일수록 더 치열하다. 왜일까? 시장은 이미 '분양가 거품'보다 '공급 부족 현실'을 더 무겁게 본다는 신호다.</p>
+
+          <h2>양극화 시장, 무엇을 사야 하는가?</h2>
+
+          <p>2026년 하반기 투자 전략의 첫 번째 원칙은 '평균'에 속지 않는 것이다. 전국 아파트 가격 평균이 오른다거나 내린다는 통계는 투자 판단에 큰 의미가 없다. 중요한 것은 '서울 핵심지'와 '지방 비선호지' 사이의 격차가 얼마나 벌어지고 있는가, 그리고 그 격차가 앞으로 더 커질 것인가다.</p>
+
+          <p>현재 전문가들의 공통적인 분석은 이렇다. 서울·수도권 핵심지는 공급 부족으로 인한 하방 경직성이 강하고, 특히 재건축·재개발 이주 수요와 신축 희소성이 매수 심리를 뒷받침한다. 반면 지방은 인구 감소, 입주 물량 과잉, 고금리 환경이 복합적으로 작용하며 약세가 지속될 가능성이 높다. 이 두 시장은 이제 다른 나라의 부동산처럼 움직인다.</p>
+
+          <div class="quote-box">
+            <p>"2026년 하반기 부동산 시장은 '어디를 사느냐'가 '얼마나 싸게 사느냐'보다 중요한 시대다. 입지의 격차가 수익률의 격차를 결정한다. 전국 평균 가격 흐름을 보고 투자하는 것은 이미 실패의 출발점이다."</p>
+            <cite>— 부동산 전문 애널리스트 분석 종합 (2026년 상반기 시장 리뷰)</cite>
+          </div>
+
+          <h2>경매 시장 확대 — 위기가 기회로 바뀌는 지점</h2>
+
+          <p>금리 부담과 경기 침체의 여파로 2026년 경매 시장은 물량이 늘어나는 추세다. 전문가들은 임계점에 도달한 다주택자·채무자들이 많아지면서 경매 낙찰 규모가 확대될 것으로 전망한다. 양도세 중과 유예 종료 등 세제 변화도 다주택자들의 경매 매물 출회를 가속화하는 요인이다.</p>
+
+          <p>그러나 경매가 무조건 싸게 살 수 있는 시장은 아니다. 서울 핵심지 아파트 경매의 경우 낙찰가율이 이미 100%를 넘기는 사례가 빈번하다. 공급 부족과 수요 집중이 경매 시장에도 동일하게 반영되는 것이다. 오히려 투자 가치가 있는 경매 물건은 수도권 역세권 단지 중에서, 권리관계가 복잡하지 않고 임차인 문제가 없는 '깨끗한' 물건에 국한된다. 경매로 수익을 내려면 현장 조사, 권리분석, 명도 리스크 파악 등 전문 역량이 필수다.</p>
+
+          <div class="quote-box">
+            <p>"경매는 부동산 시장의 '이면도로'다. 정상 매매 시장에서 놓친 기회를 찾는 창구가 될 수 있지만, 잘못된 물건 하나가 수년의 수익을 날릴 수 있다. 입찰 전 반드시 현장을 직접 확인하고, 임차인 대항력과 배당 순위를 꼼꼼히 점검하라."</p>
+            <cite>— 부동산 경매 전문가 조언 종합</cite>
+          </div>
+
+          <h2>GTX 수혜지 — 다핵 구조 전환의 수혜를 선점하라</h2>
+
+          <p>2026년 부동산 시장의 가장 중요한 구조적 변화 중 하나는 GTX-A·B·C 노선의 단계적 개통이다. 기존에 강남·여의도·광화문 중심의 단핵 구조였던 수도권 주거 지형이, GTX를 축으로 다핵 분산형으로 재편되고 있다. 이 변화는 단기 시세보다 장기 투자 관점에서 더욱 중요하다.</p>
+
+          <p>GTX 역세권 중에서도 주목할 지점은 '핵심 환승 노드'다. GTX-A와 3호선이 교차하는 곳, GTX-C와 기존 지하철이 겹치는 역 인근은 이동 편의성의 폭발적 향상을 의미한다. 다만 이미 GTX 효과가 선반영된 지역은 추가 상승 여력이 제한적일 수 있다. 아직 개통되지 않은 구간, 특히 B·C 노선 미개통 구간의 역세권 중에서 입지 경쟁력이 있는 단지를 선별하는 것이 전략적으로 유리하다.</p>
+
+          <h2>분양가 역대 최고에도 청약하는 이유 — 장기 관점의 함정과 기회</h2>
+
+          <p>5,838만 원이라는 분양가는 10년 전 서울 웬만한 단지의 집값과 맞먹는다. 그럼에도 핵심지 청약 경쟁률은 수십 대 일을 기록한다. 이 현상의 이면에는 '신축 프리미엄'과 '공급 희소성'에 대한 강한 믿음이 있다.</p>
+
+          <p>현실적으로 서울 핵심지의 신규 공급은 앞으로도 제한적이다. 재건축·재개발 사업이 가속화되더라도 실제 입주까지는 10년 이상의 시간이 필요하다. 그 사이 수요는 신규 공급을 초과한다. 이런 구조에서 신축 분양은 초기 분양가가 높더라도 입주 시점 이후 매매 차익을 기대할 수 있다는 논리가 작동한다.</p>
+
+          <p>그러나 함정도 있다. 고분양가 단지는 청약 당첨 이후 잔금 마련이 관건이다. 대출 규제(LTV, DSR) 강화 환경에서 잔금 대출이 예상보다 적게 나오는 경우 자금 계획이 흔들릴 수 있다. 청약 당첨보다 '잔금 납부 능력'을 먼저 검증하는 것이 투자자의 기본기다.</p>
+
+          <div class="highlight-box">
+            <h3>⚡ 2026년 하반기 투자 핵심 체크리스트</h3>
+            <p>① GTX 미개통 역세권 단지 선점 여부 확인 → ② 재건축 초기 단계 노후 단지의 추진위 동향 모니터링 → ③ 경매 시장에서 권리 깨끗한 수도권 역세권 물건 탐색 → ④ 고분양가 청약 전 잔금 조달 계획 수립 → ⑤ 지방 투자 비중 축소, 핵심지 집중 전략 유지</p>
+          </div>
+
+          <h2>실수요자·투자자 시사점</h2>
+
+          <ul>
+            <li>양극화 심화 시장에서 지방·비선호지 투자 비중을 줄이고, 서울·수도권 핵심 교통망(GTX, 지하철) 역세권 단지에 집중하는 것이 하반기 기본 전략이다.</li>
+            <li>경매 시장 확대를 기회로 활용하되, 무조건 '싸다'는 인식을 버려야 한다. 핵심지 아파트 경매 낙찰가율은 이미 높다. 권리관계가 복잡하지 않고, 명도가 용이한 물건 위주로 선별하라.</li>
+            <li>GTX-B·C 노선 미개통 구간의 역세권 단지는 아직 효과가 완전히 반영되지 않았다. 해당 역세권 중 생활 편의시설이 갖춰진 단지를 장기 보유 관점에서 검토할 만하다.</li>
+            <li>청약을 준비 중이라면 분양가 수준보다 '해당 지역의 미래 공급량'과 '잔금 대출 가능 한도'를 먼저 확인하라. 5년 후 입주 시점의 주변 시세를 시뮬레이션하는 것이 실질적인 투자 기준이 되어야 한다.</li>
+            <li>재건축 초기 단지(추진위 설립~조합 설립 단계)는 가격 상승 모멘텀이 가장 강하게 나타나는 시기다. 안전진단 규제 완화로 해당 단계 진입 단지가 급증할 전망이므로, 단지별 추진 동향을 상시 모니터링하라.</li>
+            <li>2026년 하반기 금리 변화가 시장의 핵심 변수다. 한국은행 기준금리 인하가 구체화된다면 대출 여력이 확대되며 추가 매수 수요가 유입될 수 있다. 금리 인하 시점과 폭을 주시하며 매수 타이밍을 조율하라.</li>
+          </ul>
+
+          <h2>결론: 2026년 하반기, 균형보다 선택이다</h2>
+
+          <p>2026년 하반기 부동산 시장은 '전부 오르거나 전부 내리는' 동조화의 시대가 아니다. 시장은 이미 입지, 교통, 재건축 모멘텀에 따라 극명하게 갈리고 있다. 이 환경에서 '평균'을 좇는 투자는 기회비용을 낭비하는 것이다.</p>
+
+          <p>양극화는 두려움의 대상이 아니라, 전략적 선택의 기회다. 어디에서, 무엇을, 언제 살 것인지에 대한 정밀한 판단이 그 어느 때보다 중요한 시대다. 데이터와 현장, 그리고 냉정한 숫자가 투자의 나침반이 되어야 한다.</p>
+
+          <div class="hashtags">
+            <span class="hashtag">#부동산투자전략</span>
+            <span class="hashtag">#2026하반기</span>
+            <span class="hashtag">#양극화시장</span>
+            <span class="hashtag">#GTX수혜지</span>
+            <span class="hashtag">#경매투자</span>
+            <span class="hashtag">#서울아파트</span>
+            <span class="hashtag">#청약전략</span>
+          </div>
+
+          <div class="disclaimer">
+            <strong>⚠ 면책 고지:</strong> 본 기사는 공개된 자료와 전문가 의견을 바탕으로 한 정보 제공 목적의 분석·견해이며, 특정 부동산에 대한 투자 권유나 매수·매도 추천이 아닙니다. 부동산 투자는 시장 상황, 개인의 재무 상황, 법령 변화 등 다양한 요소에 영향을 받으므로, 투자 결정 시 반드시 전문가와 상담하시기 바랍니다. 본 기사의 내용은 2026년 7월 4일 기준 보도된 자료를 근거로 작성되었으며, 이후 상황이 변경될 수 있습니다.
+          </div>
+
+        </div>
+      </article>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="widget">
+        <div class="widget-header">📌 핵심 요약</div>
+        <div class="widget-body">
+          <div class="summary-item">
+            <div class="summary-bullet"></div>
+            <div>서울 민간아파트 분양가 3.3㎡당 5,838만원 역대 최고치 경신</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-bullet"></div>
+            <div>서울·수도권 핵심지 상승세 유지, 지방 약세 심화 — 양극화 지속</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-bullet"></div>
+            <div>경매 물량 증가 추세, 핵심지 낙찰가율은 이미 높아 선별 필수</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-bullet"></div>
+            <div>GTX-A·B·C 개통으로 수도권 다핵 구조 전환, 역세권 장기 투자 주목</div>
+          </div>
+          <div class="summary-item">
+            <div class="summary-bullet"></div>
+            <div>청약 전 잔금 대출 가능 한도 확인이 투자 성패 좌우</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-header">📰 관련 기사</div>
+        <div class="widget-body">
+          <div class="related-item">
+            <span class="related-tag">시장동향</span><br>
+            <a href="#">서울 비강남권 상승세… 핵심지 확장되나</a>
+          </div>
+          <div class="related-item">
+            <span class="related-tag">정책</span><br>
+            <a href="#">DSR 3단계, 대출 한도 얼마나 줄었나</a>
+          </div>
+          <div class="related-item">
+            <span class="related-tag">재개발재건축</span><br>
+            <a href="#">재건축 초기 단지 투자, 언제 들어가야 하나</a>
+          </div>
+          <div class="related-item">
+            <span class="related-tag">분양청약</span><br>
+            <a href="#">고분양가 시대의 청약 전략 — 당첨보다 잔금이 먼저</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-header">📊 투자 유형별 리스크·수익 비교</div>
+        <div class="widget-body">
+          <table class="compare-table">
+            <thead>
+              <tr><th>유형</th><th>수익성</th><th>리스크</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>서울 핵심지 매매</td><td class="good">중상</td><td>중</td></tr>
+              <tr><td>GTX 역세권 장기</td><td class="good">상</td><td>중하</td></tr>
+              <tr><td>재건축 초기 단지</td><td class="good">상</td><td class="bad">중상</td></tr>
+              <tr><td>경매 (권리 깨끗)</td><td>중</td><td>중</td></tr>
+              <tr><td>지방 갭투자</td><td class="bad">하</td><td class="bad">고</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> &copy; 2026 | 본 콘텐츠는 정보 제공 목적으로 제작되었으며 투자 권유가 아닙니다.
+</footer>
+
+</body>
+</html>
