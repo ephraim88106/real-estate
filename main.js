@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 178,
+    url: 'article_20260704_2_investment_v2.html',
+    category: '투자분석',
+    title: '분양가 역대 최고인데 왜 사람들은 청약 포기 안 할까 — 2026년 하반기 부동산 투자 생존전략',
+    summary: '서울 민간아파트 평균 분양가 3.3㎡당 5,838만원 역대 최고치, 경매 낙찰가율 상승, GTX 다핵 구조 전환. 2026년 하반기 부동산 시장은 양극화가 심화되는 가운데서도 선택적 상승장이 펼쳐진다. 전략적 투자 인사이트를 정리한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 투자분석팀',
+    date: '2026-07-04',
+    title_en: 'Record-High Presale Prices — Yet Why Won\'t People Give Up on Subscriptions? 2026 H2 Real Estate Investment Survival Strategy',
+    summary_en: 'Seoul private apartment average presale price hits a record 5,838 won per 3.3㎡, auction bid rates rise, and GTX reshapes the metro into a multi-core structure. The H2 2026 real estate market sees deepening polarization alongside a selective rally — strategic investment insights compiled.'
+  },
+  {
+    id: 177,
+    url: 'article_20260704_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '분당 선도지구 사업시행자 확정! 재건축 도미노 시작됐다 — 당신 단지는 몇 번째?',
+    summary: '분당 신도시 선도지구 3개 결합구역 사업시행자 지정 고시 완료. 재건축진단 규제 완화부터 2차 선도지구 12,000세대 경쟁까지, 2026년 7월 정비사업 핵심 이슈를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
+    author: '부동산인사이트 재개발·재건축 분석팀',
+    date: '2026-07-04',
+    title_en: 'Bundang Pioneer District Developer Confirmed! The Redevelopment Domino Has Started — Which Complex Is Next?',
+    summary_en: 'Seongnam City completes designation of project implementers for three combined zones in the Bundang pilot district. From relaxed redevelopment diagnostic regulations to competition for 12,000 units in the second pioneer district — a deep dive into the July 2026 urban renewal landscape.'
+  },
+  {
     id: 176,
     url: 'article_20260703_2_subscription_v2.html',
     category: '분양',
