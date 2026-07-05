@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>집값 양극화, 이제는 '구조'다 — 수도권과 지방이 다른 나라가 된 이유 | 부동산인사이트</title>
+<meta name="description" content="서울 강남은 신고가, 지방은 역전세 공포. 2026년 한국 부동산 양극화는 정책 실패가 아닌 구조적 전환의 산물이다. 어디서 살고, 어디에 투자해야 하나.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #6A6A10;
+    --accent-light: #f5f5e0;
+    --accent-mid: #8a8a20;
+    --text: #1a1a2e;
+    --text-light: #555;
+    --border: #e0e0e0;
+    --bg: #f7f9fc;
+    --header-bg: #0D2B55;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; color: var(--text); background: var(--bg); line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: var(--header-bg);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 64px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; color: #fff; text-decoration: none; font-weight: 700; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color .2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+    padding: 80px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-content { position: relative; max-width: 860px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: var(--accent); color: #fff;
+    font-size: 0.78rem; font-weight: 700; letter-spacing: .08em;
+    padding: 5px 16px; border-radius: 20px; margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    color: #fff; font-weight: 900; line-height: 1.35;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .hero-sub {
+    font-size: 1.05rem; color: rgba(255,255,255,0.82); max-width: 640px; margin: 0 auto 28px;
+  }
+  .hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+  .hero-meta span { margin: 0 10px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.45rem; font-weight: 700;
+    color: var(--text); margin: 48px 0 18px;
+    border-left: 4px solid var(--accent);
+    padding-left: 16px;
+  }
+  article p { margin-bottom: 18px; color: #333; font-size: 1.02rem; }
+  article ul { margin: 12px 0 20px 24px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li::marker { color: var(--accent); }
+
+  /* DATA BOX */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin: 32px 0 40px;
+  }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: linear-gradient(135deg, #2A2A0A, #4A4A15);
+    border-radius: 12px; padding: 22px 18px; text-align: center;
+    color: #fff; box-shadow: 0 4px 16px rgba(106,106,16,0.25);
+  }
+  .data-card .num { font-size: 2rem; font-weight: 900; color: #d4d44a; font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 0.8rem; margin-top: 6px; opacity: 0.85; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+    padding: 24px 28px; margin: 36px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.08rem;
+    color: #4a4a0a; margin-bottom: 10px;
+  }
+  .quote-box .source { font-size: 0.82rem; color: var(--accent); font-weight: 700; font-style: normal; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0; border-radius: 10px;
+    padding: 20px 24px; margin-top: 48px;
+    font-size: 0.82rem; color: #777; line-height: 1.7;
+    border: 1px solid #ddd;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 28px; }
+  .sidebar-box {
+    background: #fff; border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  .sidebar-title {
+    background: var(--accent); color: #fff;
+    font-size: 0.88rem; font-weight: 700; letter-spacing: .05em;
+    padding: 12px 18px;
+  }
+  .sidebar-body { padding: 18px; }
+  .sidebar-body ul { margin: 0; padding-left: 18px; }
+  .sidebar-body ul li { margin-bottom: 9px; font-size: 0.9rem; color: #333; }
+  .sidebar-body ul li::marker { color: var(--accent); }
+
+  .related-list { list-style: none; padding: 0; margin: 0; }
+  .related-list li { border-bottom: 1px solid var(--border); }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list li a {
+    display: block; padding: 11px 0;
+    font-size: 0.88rem; color: #333; text-decoration: none;
+    line-height: 1.5; transition: color .2s;
+  }
+  .related-list li a:hover { color: var(--accent); }
+
+  /* GAP TABLE */
+  .gap-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; margin-top: 8px; }
+  .gap-table th { background: var(--accent); color: #fff; padding: 8px 10px; text-align: left; }
+  .gap-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .gap-table tr:last-child td { border-bottom: none; }
+  .gap-table tr:nth-child(even) td { background: #fafaec; }
+  .up { color: #c0392b; font-weight: 700; }
+  .down { color: #27ae60; font-weight: 700; }
+
+  /* FOOTER */
+  footer {
+    background: var(--header-bg); color: rgba(255,255,255,0.7);
+    text-align: center; padding: 32px 24px;
+    font-size: 0.82rem; margin-top: 64px;
+  }
+  footer strong { color: #F4A52D; }
+  .hashtags { margin-top: 32px; font-size: 0.9rem; color: var(--accent); }
+  .hashtags span { margin-right: 8px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="category-tag">칼럼·해설</div>
+    <h1>집값 양극화, 이제는 '구조'다<br>수도권과 지방이 다른 나라가 된 이유</h1>
+    <p class="hero-sub">서울 강남은 신고가, 지방은 역전세 공포. 이 균열은 일시적 현상이 아니다. 2026년 한국 부동산 양극화의 본질을 해부하고, 현명한 선택지를 짚는다.</p>
+    <div class="hero-meta">
+      <span>칼럼·해설</span>
+      <span>|</span>
+      <span>2026년 7월 5일</span>
+      <span>|</span>
+      <span>부동산인사이트 편집부</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="layout">
+    <article>
+
+      <!-- DATA CARDS -->
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="num">+11.3%</div>
+          <div class="label">2025년 서울<br>아파트 매매가 상승률</div>
+        </div>
+        <div class="data-card">
+          <div class="num">12곳</div>
+          <div class="label">2026년 집값 하락<br>광역 지역 수 (17개 중)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">-6.9%</div>
+          <div class="label">수도권 내 최대 낙폭<br>(경기 평택 2025년 기준)</div>
+        </div>
+      </div>
+
+      <p>부동산 시장에서 "양극화"라는 단어가 처음 등장한 건 꽤 오래전 일이다. 강남과 비강남, 서울과 지방이라는 구분은 수십 년 전부터 존재했다. 하지만 2026년의 양극화는 과거와 결이 다르다. 예전의 양극화가 '부유층 지역이 더 많이 오르는' 정도의 격차였다면, 지금은 아예 '오르는 시장'과 '내리는 시장'이라는 별개의 시장이 공존하는 구조로 굳어지고 있다. 같은 나라, 같은 정책 환경 아래에서 어떻게 이런 일이 벌어지는 걸까. 그리고 이 흐름은 앞으로 어디로 향할까.</p>
+
+      <p>2025년 한 해, 서울 아파트 매매가는 연간 11.26% 상승했다. 같은 기간 지방 주요 도시들은 보합세거나 하락했다. 17개 광역 시도 중 집값이 오른 곳은 서울, 경기 일부, 울산, 세종, 전북 5곳뿐이었다. 나머지 12개 지역은 하락이었다. 2026년 상반기에도 이 흐름은 달라지지 않았다. 전국 평균 상승률은 0.98%에 불과한데 서울만 2.81%를 기록했다. 숫자가 보여주는 그림은 단순하다. 한국 부동산 시장은 더 이상 '전국 시장'이 아니다.</p>
+
+      <h2>① 왜 이런 구조가 만들어졌나: 수요와 공급의 이중 분기</h2>
+
+      <p>양극화의 뿌리를 짚으려면 수요와 공급 양면을 함께 봐야 한다. 수요 측면에서 핵심 변수는 인구 이동이다. 통계청 자료에 따르면 수도권으로의 인구 순유입은 매년 지속되고 있다. 20~30대 청년 인구의 서울 집중, 고소득 직장과 교육 인프라의 수도권 편중이 이 흐름을 가속하고 있다. 반면 지방의 가임 인구는 감소하고 노령화는 빨라진다. 수요가 떠난 시장에서 가격이 버틸 수 없는 것은 당연한 귀결이다.</p>
+
+      <p>공급 측면에서는 더욱 극적인 분기가 일어났다. 2023~2024년 금리 급등기에 신규 분양과 착공이 크게 줄었다. 그 여파로 2026년 서울 입주 물량은 전년 대비 30% 이상 감소, 약 2만 9천 가구 수준에 그친다. 공급이 부족한 서울에서는 제한된 물건을 두고 경쟁이 치열해지고, 가격은 오른다. 반면 2010년대 지방 혁신도시 조성 등으로 과잉 공급된 지역은 수요는 줄고 공급은 남아 있어 가격이 하방 압력을 받는다. 수요와 공급이 동시에 한 방향으로 작용하는 것이다.</p>
+
+      <div class="quote-box">
+        <p>"2026년 부동산 시장의 핵심 키워드는 '초선별'이다. 서울 내에서도, 수도권 내에서도 모두가 오르는 시대는 끝났다. 직주근접, 학군, 교통 인프라 세 가지를 동시에 갖춘 입지만이 가격 방어와 상승이 가능하다."</p>
+        <div class="source">— KB부동산 2026년 상반기 부동산 시장 총결산 보고서</div>
+      </div>
+
+      <h2>② 정책은 이 흐름을 멈출 수 있나</h2>
+
+      <p>정부는 2025~2026년에 걸쳐 여러 차례 수요 억제 정책을 내놓았다. 대출 규제 강화, 토지거래허가구역 확대, 분양가상한제 적용 지역 조정이 대표적이다. 이 정책들의 공통점은 '수요를 억누르는' 방향이라는 것이다. 하지만 시장이 보내는 신호는 명확하다. 서울 핵심 지역의 수요는 규제로 억눌렸다 해도 완전히 사라지지 않고 대기 수요로 쌓인다. 규제가 풀리는 순간, 또는 규제의 틈새를 찾아 다시 유입된다.</p>
+
+      <p>실제로 청약 시장이 그 증거다. 분양가상한제가 적용된 강남·서초·반포 일대의 신규 분양은 이른바 '로또 청약' 열풍을 낳았다. 분양가와 시세 차이가 수억 원에 달하는 구조에서, 청약에 당첨되는 것 자체가 로또를 맞는 것과 같은 자산 이벤트가 된다. 이는 정책이 시장 논리를 왜곡할 때 벌어지는 전형적인 부작용이다.</p>
+
+      <p>반면 지방 활성화를 위한 정책 도구는 상대적으로 빈약하다. 공공기관 이전, 혁신도시 조성이 10여 년에 걸쳐 진행됐지만 인구 분산 효과는 기대에 미치지 못했다. 결국 시장의 힘이 정책의 힘보다 강하다는 것을 2026년 지표들이 다시 한번 증명하고 있다.</p>
+
+      <h2>③ 전세 시장의 구조적 변화: 월세화 가속</h2>
+
+      <p>양극화는 매매 시장에만 국한되지 않는다. 임대차 시장에서도 구조적인 변화가 빠르게 진행 중이다. 서울 소형 아파트의 경우, 임대차 계약 10건 중 6건이 월세로 전환됐다. 고금리 시대에 전세를 끼고 집을 사는 투자 수요가 줄면서 전세 공급도 감소했고, 임차인들은 어쩔 수 없이 월세 시장으로 이동하고 있다. 이는 임차인에게는 월 고정 지출 증가를 의미하고, 집주인에게는 임대 수익 구조 변화를 의미한다.</p>
+
+      <p>지방에서는 반대 방향의 문제가 생겼다. 전세가율(매매가 대비 전세가 비율)이 80%를 넘는 지역이 속출하면서 이른바 '깡통 전세' 위험이 현실화되고 있다. 집값이 전세가 아래로 내려앉는 역전세 현상은 세입자의 보증금 반환을 위협한다. 정부가 전세사기 특별법과 보증보험 의무화로 대응하고 있지만, 근본적으로 지방 집값 하락이 멈추지 않는 한 이 문제는 반복될 수밖에 없다.</p>
+
+      <div class="quote-box">
+        <p>"지금의 양극화는 정책 실패의 산물이기 이전에 인구 구조와 산업 지형 변화의 자연스러운 귀결이다. 공급을 늘리고 규제를 정비하는 것은 필요하지만, 근본적인 격차를 메우기 위해서는 지방에 일자리와 인프라를 실질적으로 집중시키는 중장기 전략이 병행돼야 한다."</p>
+        <div class="source">— 부동산 전문가 5인 대담, 시사저널e 2026 부동산투자세미나</div>
+      </div>
+
+      <h2>④ 수도권 안에서도 갈린다: '서울 강남' vs '수도권 외곽'</h2>
+
+      <p>흥미로운 점은, 양극화가 서울·수도권 대 지방이라는 구도로만 그려지지 않는다는 것이다. 수도권 내에서도 뚜렷한 격차가 나타나고 있다. 강남3구와 마포·용산·성동이 신고가를 경신하는 동안, 경기 평택(-6.9%), 이천(-6.5%), 동두천(-5.5%)은 서울 외곽보다 더 심한 하락을 겪었다. 수도권이라는 이름표가 더 이상 '안전'을 보장하지 않는다는 사실이다.</p>
+
+      <p>결국 가격이 버티는 입지의 공통분모는 세 가지로 압축된다. 서울 30분 내 출퇴근 가능한 교통 접근성, 학령 인구를 끌어들이는 학군 혹은 직주근접 수요, 그리고 신규 공급이 제한된 구도심 환경이다. 이 세 조건을 동시에 갖춘 곳은 생각보다 많지 않으며, 바로 그 희소성이 가격 방어력의 원천이다.</p>
+
+      <h2>⑤ 이 구조는 언제까지 지속될까</h2>
+
+      <p>솔직히 말하자면, 단기간에 역전될 가능성은 낮다. 인구 감소와 고령화는 2040년대까지 가속되는 구조적 흐름이다. 지방에서 서울로의 인구 이동을 멈출 마땅한 유인이 아직 보이지 않는다. 다만 몇 가지 변수가 이 흐름에 영향을 줄 수 있다. 기준금리의 추가 인하가 실현되면 자산 가격 전반에 상승 모멘텀을 줄 수 있고, 지방 특정 도시의 대규모 산업 투자 유치나 철도망 확충이 국지적 수요를 형성할 수 있다. 하지만 이 요인들이 전국적인 균형 회복으로 이어지기까지는 상당한 시간이 필요하다.</p>
+
+      <p>전문가들의 중론은 "2027년 이전까지 지방 시장의 의미 있는 회복은 어렵다"는 것이다. 물론 모든 지방이 동일한 운명을 맞는 것은 아니다. 광역시 도심부, 반도체·배터리 산업 클러스터 주변, GTX 등 광역 교통망의 수혜 지역은 예외적인 상승 스토리를 써나갈 수 있다. 결국 지역을 보는 눈이 그 어느 때보다 중요해진 시대다.</p>
+
+      <h2>독자에게 드리는 시사점</h2>
+      <ul>
+        <li><strong>실수요자라면 입지 기준을 명확히:</strong> 직장 접근성과 학군 중 무엇이 더 중요한지를 먼저 정해야 한다. 두 마리 토끼를 잡으려다 진입 시점을 놓치는 경우가 많다.</li>
+        <li><strong>투자 목적이라면 '수익 구조'를 먼저 보라:</strong> 가격 상승만을 기대하는 투자는 양극화 구조에서 더욱 위험하다. 임대 수익률이 보유 원가를 감당하는 물건이어야 버틸 수 있다.</li>
+        <li><strong>지방 물건의 역전세 위험 점검:</strong> 이미 지방에 투자 물건을 보유 중이라면 전세가율과 보증금 반환 시나리오를 지금 당장 점검해야 한다.</li>
+        <li><strong>'수도권'이라는 이름에 속지 말 것:</strong> 수도권 외곽 대단지는 '서울 근처'라는 심리적 안도감과 실제 수요 기반이 다를 수 있다.</li>
+        <li><strong>2027년 이후를 내다보는 시각:</strong> 공급 감소의 여파는 2026~2027년 입주 물량으로 나타난다. 공급이 부족한 지역, 특히 서울 도심권은 앞으로 2~3년이 가격 압력이 가장 강한 시기가 될 수 있다.</li>
+      </ul>
+
+      <div class="disclaimer">
+        <strong>※ 면책 고지</strong><br>
+        본 칼럼은 시장 동향과 전문가 분석을 바탕으로 한 일반 정보 제공을 목적으로 하며, 특정 지역 또는 물건에 대한 투자를 권유하지 않습니다. 부동산 시장은 정책, 금리, 경기 변화에 민감하게 반응하며, 과거 데이터가 미래 결과를 보장하지 않습니다. 모든 투자 결정은 개인의 재무 상황과 전문가 상담을 바탕으로 본인 책임하에 이루어져야 합니다.
+      </div>
+
+      <div class="hashtags">
+        <span>#부동산양극화</span>
+        <span>#서울집값</span>
+        <span>#지방부동산</span>
+        <span>#2026부동산전망</span>
+        <span>#수도권아파트</span>
+        <span>#부동산칼럼</span>
+        <span>#부동산인사이트</span>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-box">
+        <div class="sidebar-title">📌 핵심 요약</div>
+        <div class="sidebar-body">
+          <ul>
+            <li>서울·수도권 핵심 vs 지방 — '다른 시장'으로 구조적 분기 확정</li>
+            <li>인구 이동과 공급 감소가 맞물려 서울 도심 가격 방어력 유지</li>
+            <li>전세 월세화 가속 — 세입자 고정지출 증가, 지방 역전세 현실화</li>
+            <li>수도권 외곽도 하락 가능 — 입지 기준 '교통·학군·공급'으로 재검토</li>
+            <li>지방 시장 의미 있는 회복은 2027년 이후 — 광역시 도심부 예외 가능</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-box">
+        <div class="sidebar-title">📰 관련 기사</div>
+        <div class="sidebar-body">
+          <ul class="related-list">
+            <li><a href="#">서울 입주물량 30% 감소 — 2026 하반기 가격에 미치는 영향</a></li>
+            <li><a href="#">역전세 공포 현실화 — 지방 세입자가 해야 할 일</a></li>
+            <li><a href="#">분양가상한제 로또 청약 열풍, 언제까지?</a></li>
+            <li><a href="#">GTX 개통 수혜 지역 실수요자 매입 전략 2026</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-box">
+        <div class="sidebar-title">📊 지역별 2025년 변동률</div>
+        <div class="sidebar-body">
+          <table class="gap-table">
+            <thead>
+              <tr><th>지역</th><th>변동률</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>서울</td><td class="up">+11.3%</td></tr>
+              <tr><td>경기(상승)</td><td class="up">+1.3%</td></tr>
+              <tr><td>세종</td><td class="up">+2.7%</td></tr>
+              <tr><td>울산</td><td class="up">+1.9%</td></tr>
+              <tr><td>부산</td><td class="down">-1.2%</td></tr>
+              <tr><td>대구</td><td class="down">-2.8%</td></tr>
+              <tr><td>경기 평택</td><td class="down">-6.9%</td></tr>
+              <tr><td>경기 이천</td><td class="down">-6.5%</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.75rem;color:#999;margin-top:8px;">※ 2025년 연간 아파트 매매가 변동률 기준</p>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <p><strong>부동산인사이트</strong> — 데이터와 현장을 연결하는 부동산 전문 미디어</p>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

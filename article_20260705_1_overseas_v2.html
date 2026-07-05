@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>엔화 약세 마지막 기회? 2026년 일본 부동산 투자 완전 해부 | 부동산인사이트</title>
+<meta name="description" content="엔화 약세와 도쿄 재개발 붐이 맞물린 2026년, 한국인 투자자에게 일본 부동산은 진짜 기회인가? 수익률·환율·세금 리스크를 한 번에 해부한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #006E8A;
+    --accent-light: #e0f4f8;
+    --accent-mid: #009ab5;
+    --text: #1a1a2e;
+    --text-light: #555;
+    --border: #e0e0e0;
+    --bg: #f7f9fc;
+    --header-bg: #0D2B55;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; color: var(--text); background: var(--bg); line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: var(--header-bg);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 64px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; color: #fff; text-decoration: none; font-weight: 700; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color .2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #003A4A 0%, #006E8A 55%, #003A4A 100%);
+    padding: 80px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-content { position: relative; max-width: 860px; margin: 0 auto; }
+  .category-tag {
+    display: inline-block;
+    background: var(--accent); color: #fff;
+    font-size: 0.78rem; font-weight: 700; letter-spacing: .08em;
+    padding: 5px 16px; border-radius: 20px; margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    color: #fff; font-weight: 900; line-height: 1.35;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .hero-sub {
+    font-size: 1.05rem; color: rgba(255,255,255,0.82); max-width: 640px; margin: 0 auto 28px;
+  }
+  .hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+  .hero-meta span { margin: 0 10px; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 48px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* ARTICLE */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.45rem; font-weight: 700;
+    color: var(--text); margin: 48px 0 18px;
+    border-left: 4px solid var(--accent);
+    padding-left: 16px;
+  }
+  article p { margin-bottom: 18px; color: #333; font-size: 1.02rem; }
+  article ul { margin: 12px 0 20px 24px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li::marker { color: var(--accent); }
+
+  /* DATA BOX */
+  .data-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin: 32px 0 40px;
+  }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card {
+    background: linear-gradient(135deg, #003A4A, #005068);
+    border-radius: 12px; padding: 22px 18px; text-align: center;
+    color: #fff; box-shadow: 0 4px 16px rgba(0,110,138,0.25);
+  }
+  .data-card .num { font-size: 2rem; font-weight: 900; color: #7de8f8; font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 0.8rem; margin-top: 6px; opacity: 0.85; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+    padding: 24px 28px; margin: 36px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.08rem;
+    color: #004a5a; margin-bottom: 10px;
+  }
+  .quote-box .source { font-size: 0.82rem; color: var(--accent); font-weight: 700; font-style: normal; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0; border-radius: 10px;
+    padding: 20px 24px; margin-top: 48px;
+    font-size: 0.82rem; color: #777; line-height: 1.7;
+    border: 1px solid #ddd;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 28px; }
+  .sidebar-box {
+    background: #fff; border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  .sidebar-title {
+    background: var(--accent); color: #fff;
+    font-size: 0.88rem; font-weight: 700; letter-spacing: .05em;
+    padding: 12px 18px;
+  }
+  .sidebar-body { padding: 18px; }
+  .sidebar-body ul { margin: 0; padding-left: 18px; }
+  .sidebar-body ul li { margin-bottom: 9px; font-size: 0.9rem; color: #333; }
+  .sidebar-body ul li::marker { color: var(--accent); }
+
+  .related-list { list-style: none; padding: 0; margin: 0; }
+  .related-list li { border-bottom: 1px solid var(--border); }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list li a {
+    display: block; padding: 11px 0;
+    font-size: 0.88rem; color: #333; text-decoration: none;
+    line-height: 1.5; transition: color .2s;
+  }
+  .related-list li a:hover { color: var(--accent); }
+
+  /* COMPARE TABLE */
+  .compare-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.84rem; }
+  .compare-table th { background: var(--accent); color: #fff; padding: 8px 10px; text-align: left; }
+  .compare-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table tr:nth-child(even) td { background: #f5fbfc; }
+
+  /* FOOTER */
+  footer {
+    background: var(--header-bg); color: rgba(255,255,255,0.7);
+    text-align: center; padding: 32px 24px;
+    font-size: 0.82rem; margin-top: 64px;
+  }
+  footer strong { color: #F4A52D; }
+  .hashtags { margin-top: 32px; font-size: 0.9rem; color: var(--accent); }
+  .hashtags span { margin-right: 8px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="category-tag">해외부동산</div>
+    <h1>엔화 약세 마지막 기회?<br>2026년 일본 부동산 투자 완전 해부</h1>
+    <p class="hero-sub">도쿄 재개발 붐과 엔저가 만드는 '기회의 창'—한국인 투자자가 반드시 알아야 할 수익률·환율·세금 리스크의 모든 것</p>
+    <div class="hero-meta">
+      <span>해외부동산</span>
+      <span>|</span>
+      <span>2026년 7월 5일</span>
+      <span>|</span>
+      <span>부동산인사이트 편집부</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="layout">
+    <article>
+
+      <!-- DATA CARDS -->
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="num">~155¥</div>
+          <div class="label">2026년 상반기<br>평균 엔/원 환율 (100엔 기준)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">4~6%</div>
+          <div class="label">도쿄 도심 소형 아파트<br>평균 임대수익률</div>
+        </div>
+        <div class="data-card">
+          <div class="num">2,000만¥~</div>
+          <div class="label">도쿄 23구 1K 아파트<br>평균 매입 진입 단가</div>
+        </div>
+      </div>
+
+      <p>2024년부터 이어진 엔화 약세가 한국 투자자들의 일본 부동산 시장 관심을 폭발적으로 끌어올렸다. 100엔에 900원대 초반까지 내려앉았던 환율은 2026년 상반기 기준으로도 150원대 중반에서 형성되고 있다. 과거 180원대를 상회하던 시절과 비교하면 '엔화 싸게 살 수 있는 기회'가 아직 완전히 닫히지 않은 셈이다. 그러나 이 기회는 언제까지나 지속되지 않는다. 일본 중앙은행(BOJ)의 완만한 금리 인상 기조가 이어지는 가운데, 2026년은 엔화 약세를 활용한 해외 부동산 투자의 '마지막 창'이 될 수 있다는 분석이 전문가들 사이에서 힘을 얻고 있다.</p>
+
+      <p>물론 단순히 환율이 유리하다는 이유만으로 해외 부동산에 뛰어드는 것은 위험하다. 일본 부동산 투자는 수익률, 세금, 관리 비용, 환율 변동 리스크가 복잡하게 얽혀 있는 분야다. 이 글에서는 2026년 현재 일본 부동산 시장의 구조와 한국인 투자자가 반드시 짚어야 할 핵심 요소들을 단계별로 해부한다.</p>
+
+      <h2>① 도쿄 부동산 시장, 지금 어디쯤 와 있나</h2>
+
+      <p>2026년 도쿄 부동산 시장은 '완만하지만 구조적인 상승 흐름'을 이어가고 있다. 도심 5구(치요다·주오·미나토·신주쿠·시부야)를 중심으로 공급 제약, 건설비 상승, 외국인 수요 지속이라는 세 가지 요인이 맞물리며 가격을 지지하는 모양새다. 특히 신규 아파트 공급은 건설 인건비 급등과 자재 부족으로 인해 눈에 띄게 감소했고, 이는 도심 기존 물건의 희소성을 높이는 방향으로 작용하고 있다.</p>
+
+      <p>반면 도쿄 외곽이나 지방 도시로 눈을 돌리면 이야기가 달라진다. 일본도 한국과 마찬가지로 수도권 집중 현상과 지방 인구 감소가 동시에 진행 중이다. 오사카와 후쿠오카는 관광 수요와 인프라 투자 덕분에 상대적으로 양호한 모습이지만, 나머지 지방 도시들은 공실률 상승과 가격 하락이 뚜렷하다. 한국 투자자라면 "일본 부동산"을 일률적으로 보지 말고, 도쿄 23구—그중에서도 도심 접근성이 뛰어난 특정 지역으로 검토 범위를 좁혀야 한다.</p>
+
+      <div class="quote-box">
+        <p>"엔저 환경에서 외국인 매수세가 일본 부동산 시장을 떠받치는 핵심 요인 중 하나가 됐다. 도쿄 도심 프리미엄 물건은 전 세계 고액 자산가의 분산 투자 대상으로 자리매김했고, 이 흐름은 BOJ의 완만한 금리 인상이 이어지더라도 단기간에 역전되기 어렵다."</p>
+        <div class="source">— 한경 부동산자산관리 칼럼, 2026년 1월</div>
+      </div>
+
+      <h2>② 엔화 환율 리스크: 기회이자 양날의 검</h2>
+
+      <p>일본 부동산 투자에서 환율은 수익률의 절반 이상을 좌우한다. 2020년 전후 100엔당 1,000원을 넘나들던 환율이 2024~2026년에 850~970원 수준까지 하락하면서, 이 기간 일본 부동산을 원화로 매입한 투자자들은 자산 자체의 가격 상승분에 더해 환율 프리미엄까지 누렸다. 1억 엔짜리 물건이 한화로 9억 원이었던 것이 이제 8억 5천만 원대에 살 수 있다는 의미다.</p>
+
+      <p>그러나 이 기회에는 반드시 리스크가 따른다. BOJ가 초저금리 정책을 정상화하는 속도에 따라 엔화는 강세 전환 압력을 받는다. 실제로 2024년 하반기 BOJ의 금리 인상 결정 직후 엔화는 단 며칠 만에 큰 폭으로 절상된 바 있다. 이 경우 '엔화 강세 + 일본 부동산 가격 상승'이 겹치면 매입 타이밍을 잡은 투자자는 이중 수혜를 받지만, 반대로 이미 높은 가격대에서 원화 약세 시점에 매입했다면 이중 손실을 볼 수도 있다.</p>
+
+      <p>결론적으로 현재 환율 수준이 투자에 불리하지는 않지만, "싸다"는 이유만으로 서두르는 것은 금물이다. 목표 수익률을 환율 변동 시나리오별로 사전에 계산해 두고, 최악의 경우 임대 수입만으로도 보유 원가가 감당되는 물건을 선별하는 것이 핵심이다.</p>
+
+      <h2>③ 임대 수익률의 실체: 표면과 실질 사이</h2>
+
+      <p>도쿄 도심 소형 아파트의 표면 임대수익률은 4~6%로 알려져 있다. 서울 강남 아파트 임대수익률이 1~2% 수준임을 감안하면 매력적으로 들린다. 그러나 실질 수익률은 다음 비용들을 차감한 후에야 산출된다. 관리비, 수선충당금, 부동산 중개 수수료(통상 임대료 1개월분), 공실 기간, 원천징수세, 고정자산세가 여기에 포함된다. 이 모든 비용을 제외한 실질 수익률은 표면 수익률의 70~75% 수준으로 떨어지는 경우가 많다는 점을 인지해야 한다.</p>
+
+      <div class="quote-box">
+        <p>"일본 투자 물건은 반드시 '표면 수익률'이 아닌 '実質利回り(실질 수익률)'로 비교해야 한다. 일부 물건은 현재 입주 중인 임차인의 임대료가 시세보다 20~30% 낮게 고정된 경우도 있어 공실이 될 때야 비로소 수익률이 시세를 반영한다."</p>
+        <div class="source">— 써치온랜드, 일본 부동산 투자 가이드 2026</div>
+      </div>
+
+      <h2>④ 세금 구조와 법적 유의사항</h2>
+
+      <p>일본은 외국인의 부동산 취득을 별도로 제한하지 않는다. 그러나 세금 구조는 한국과 다르다. 취득 시 부동산취득세(부동산 가격의 4%, 실제로는 경감 조치로 약 3%), 등록면허세가 부과된다. 보유 시에는 고정자산세(과세표준의 1.4%)와 도시계획세(0.3%)가 매년 발생한다. 양도 시에는 일본 내 비거주자에게 원천징수 의무가 있어 매각 대금의 10.21%가 원천징수된다. 이후 확정신고를 통해 정산이 이루어지며, 한국과의 조세조약에 따라 이중 과세 방지 규정이 적용된다.</p>
+
+      <p>또한 한국에서는 해외 부동산 취득 및 보유 시 신고 의무가 있다. 취득가액 1억 원 이상의 해외 부동산을 보유한 경우 한국 국세청에 연간 신고를 해야 하며, 이를 누락할 경우 과태료가 부과된다. 최근 국세청의 해외 자산 추적 강화 움직임을 고려할 때, 세무 전문가와 사전 상담은 선택이 아닌 필수다.</p>
+
+      <h2>⑤ 어떤 물건을 골라야 하나: 입지·타입별 전략</h2>
+
+      <p>2026년 기준으로 한국인 투자자에게 가장 현실적인 일본 부동산 투자 전략을 정리하면 다음과 같다.</p>
+      <ul>
+        <li><strong>도쿄 도심 5구 중심 소형 원룸(1K·1DK):</strong> 2,000만~3,500만 엔 수준으로 진입 가능, 임대 수요가 안정적이고 공실 리스크가 낮음. 특히 미나토·시부야는 외국인 임차 수요가 꾸준함.</li>
+        <li><strong>오사카 나카노시마·우메다 인근 구분 오피스:</strong> 만국박람회 2025 이후 인프라 정비가 이루어진 오사카 도심부는 임대 수요가 꾸준하게 형성됨.</li>
+        <li><strong>후쿠오카 하카타 주변:</strong> 아시아 게이트웨이로서 외국 기업 유입이 활발, 소형 임대 수요 탄탄.</li>
+        <li><strong>피해야 할 물건:</strong> 지방 중소 도시 구형 단독주택(古家), 관리비가 과도한 타워형 고층, 재건축 연도 30년 초과 구형 맨션.</li>
+        <li><strong>주의가 필요한 물건:</strong> 대형 투자 회사가 일괄 임차(사브리스)하는 구조의 레오팔레스형 물건—공실 리스크는 낮지만 실질 수익률이 표면보다 크게 낮아지는 경우가 많음.</li>
+      </ul>
+
+      <h2>⑥ 2026년 하반기, 지금 사야 하나 기다려야 하나</h2>
+
+      <p>전문가들의 의견은 크게 두 갈래로 나뉜다. 첫 번째 그룹은 "BOJ의 금리 정상화가 본격화되면 엔화 강세 + 일본 내 주택 담보대출 이자 부담 증가로 수요가 줄어 가격이 조정될 수 있다"고 본다. 이 시나리오에서는 조금 더 기다렸다가 매입하는 전략이 유리하다. 두 번째 그룹은 "도심 공급 제약과 외국인 수요가 맞물려 도쿄 도심 물건은 '시간이 지날수록 비싸지는' 구조가 고착화되고 있다"고 반박한다.</p>
+
+      <p>어느 쪽이 옳든 확실한 것은 하나다. 환율이 완전히 정상화되는 시점, 즉 엔/원 환율이 다시 180원대로 복귀한다면 지금 매입한 투자자는 상당한 환율 손실을 볼 수 있다. 따라서 엔화 강세 전환을 단순한 리스크 요인이 아닌 "환율이 돌아와도 임대 수입으로 버틸 수 있는가"라는 질문으로 접근해야 한다.</p>
+
+      <h2>실수요자·투자자 시사점</h2>
+      <ul>
+        <li><strong>소액 분산:</strong> 일본 부동산 투자는 한 물건에 전 재산을 쏟아붓기보다 2~3개 소형 물건으로 분산해 환율 리스크를 낮추는 전략이 유리하다.</li>
+        <li><strong>현지 관리 파트너 확보:</strong> 원격 관리 물건은 공실 발생 시 대처가 늦어진다. 신뢰할 수 있는 현지 부동산 관리 회사와 계약은 필수다.</li>
+        <li><strong>세무 신고 준비:</strong> 한국 국세청의 해외 자산 신고 의무를 반드시 이행한다. 미신고 시 과태료가 매년 누적된다.</li>
+        <li><strong>출구 전략 사전 계획:</strong> 일본 부동산은 매매 절차가 복잡하고 시간이 걸린다. 5~7년 보유를 기본 시나리오로, 엑시트 시점의 환율 시나리오를 3가지(강세/현재/약세) 이상 사전에 수립하라.</li>
+        <li><strong>대출 구조 이해:</strong> 비거주 외국인은 일본 현지 은행 대출이 쉽지 않다. 국내 외화 대출 또는 한국계 은행의 일본 법인을 통한 조달이 현실적이며, 대출 금리와 환 헤지 비용을 모두 감안한 수익률 계산이 필요하다.</li>
+      </ul>
+
+      <div class="disclaimer">
+        <strong>※ 면책 고지</strong><br>
+        본 기사는 일반적인 정보 제공을 목적으로 작성된 것으로, 특정 투자 종목이나 물건에 대한 매수·매도 권유를 목적으로 하지 않습니다. 부동산 투자는 원금 손실의 위험이 있으며, 해외 부동산의 경우 환율 변동, 현지 법령 변경, 세금 문제 등 추가적인 위험 요소가 존재합니다. 투자 결정은 반드시 전문 세무사, 법무사, 현지 부동산 전문가와의 사전 상담을 거쳐 본인 책임하에 이루어져야 합니다.
+      </div>
+
+      <div class="hashtags">
+        <span>#일본부동산</span>
+        <span>#해외부동산투자</span>
+        <span>#엔화약세</span>
+        <span>#도쿄아파트</span>
+        <span>#한국인일본투자</span>
+        <span>#부동산인사이트</span>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="sidebar-box">
+        <div class="sidebar-title">📌 핵심 요약</div>
+        <div class="sidebar-body">
+          <ul>
+            <li>엔/원 환율 150원대 중반 — 아직 투자 우위이나 BOJ 금리 인상 속도가 변수</li>
+            <li>도쿄 도심 5구 소형(1K·1DK) 표면 수익률 4~6%, 실질은 70~75% 수준</li>
+            <li>외국인 취득 제한 없으나 세금·신고 의무는 한국·일본 양쪽 준수 필요</li>
+            <li>환율 완전 정상화 시 손실 가능 — 임대 수입으로 커버 가능한 물건 선별 핵심</li>
+            <li>관리 파트너 확보 + 5~7년 보유 시나리오 없이는 투자 시작하지 말 것</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-box">
+        <div class="sidebar-title">📰 관련 기사</div>
+        <div class="sidebar-body">
+          <ul class="related-list">
+            <li><a href="#">2026 한국 부동산 상반기 총결산 — 수도권 강세 지방 침체 고착</a></li>
+            <li><a href="#">미국 모기지 6%대 안착 — 한인 투자자 기회인가 함정인가</a></li>
+            <li><a href="#">동남아 부동산 '뜨는 곳 vs 지는 곳' 2026 최신 지도</a></li>
+            <li><a href="#">해외 부동산 세금 신고 A to Z — 국세청 강화 대응법</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sidebar-box">
+        <div class="sidebar-title">🗾 도시별 투자 체크포인트</div>
+        <div class="sidebar-body">
+          <table class="compare-table">
+            <thead>
+              <tr><th>도시</th><th>수익률</th><th>리스크</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>도쿄 도심</td><td>4~6%</td><td>낮음</td></tr>
+              <tr><td>오사카</td><td>5~7%</td><td>중간</td></tr>
+              <tr><td>후쿠오카</td><td>5~7%</td><td>중간</td></tr>
+              <tr><td>나고야</td><td>4~6%</td><td>중간</td></tr>
+              <tr><td>지방 도시</td><td>8%↑</td><td>높음</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.75rem;color:#999;margin-top:8px;">※ 표면 수익률 기준, 실질은 약 25% 차감</p>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <p><strong>부동산인사이트</strong> — 데이터와 현장을 연결하는 부동산 전문 미디어</p>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
