@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 180,
+    url: 'article_20260705_2_column_v2.html',
+    category: '칼럼',
+    title: '집값 양극화, 이제는 \'구조\'다 — 수도권과 지방이 다른 나라가 된 이유',
+    summary: '서울 강남은 신고가, 지방은 역전세 공포. 2025년 서울 집값 11.26% 상승, 지방 12개 광역시도 하락이라는 숫자가 보여주는 현실은 단순하다. 한국 부동산은 더 이상 전국 단일 시장이 아니다. 이 양극화가 정책 실패가 아닌 구조적 전환임을 직시해야 한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-05',
+    title_en: 'Home Price Polarization Is Now \'Structural\' — Why the Metro and Regions Have Become Different Countries',
+    summary_en: 'Gangnam hits record highs while regional markets face reverse-jeonse panic. Seoul\'s 11.26% rise in 2025 against declines in 12 out of 17 regions tells a simple story: Korean real estate is no longer one national market. This polarization is not a policy failure — it is a structural shift that demands clear-eyed recognition.'
+  },
+  {
+    id: 179,
+    url: 'article_20260705_1_overseas_v2.html',
+    category: '해외',
+    title: '엔화 약세 마지막 기회? 2026년 일본 부동산 투자 완전 해부',
+    summary: '100엔당 150원대 중반, 여전히 열려 있는 엔저의 창. BOJ 금리 인상 기조 속 2026년이 엔화 약세를 활용한 해외 부동산 투자의 \'마지막 창\'이 될 수 있다는 분석이 힘을 얻고 있다. 도쿄 수익률·환율 리스크·세금 문제를 한 번에 해부한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-05',
+    title_en: 'The Last Window of Yen Weakness? A Complete Breakdown of Japan Real Estate Investment in 2026',
+    summary_en: 'At 150-something won per 100 yen, the weak-yen window remains open — but not for long. With the BOJ on a gradual rate-hike path, analysts say 2026 may be the last chance to leverage yen weakness for overseas real estate. Tokyo yields, currency risk, and tax traps — all dissected in one place.'
+  },
+  {
     id: 178,
     url: 'article_20260704_2_investment_v2.html',
     category: '투자분석',
