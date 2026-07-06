@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 182,
+    url: 'article_20260706_2_policy_v2.html',
+    category: '정책',
+    title: '스트레스 DSR 3단계 + 보유세 강화 — 이재명 정부의 부동산 이중 처방, 시장을 잡을 수 있는가',
+    summary: '스트레스 DSR 3단계 전면 시행으로 연소득 1억 기준 대출한도 1억원 이상 축소, 규제지역 LTV 40% + 가액별 한도까지 더해진 이중 처방. 이재명 정부는 OECD 권고를 따라 보유세 강화 세제개편도 준비 중이지만 서울 6월 매매가는 0.57% 상승하며 규제 효과가 제한적임을 보여주고 있다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-06',
+    title_en: 'Stress DSR Phase 3 + Property Tax Hike — Can the Lee Jae-myung Government\'s Real Estate Double Prescription Tame the Market?',
+    summary_en: 'Stress DSR Phase 3 slashes loan limits by over 100 million won for those earning 100M annually, compounded by LTV caps and amount-based ceilings in regulated zones. Despite preparations for property tax reform following OECD recommendations, Seoul\'s June apartment prices still rose 0.57%, revealing the limits of demand-side suppression.'
+  },
+  {
+    id: 181,
+    url: 'article_20260706_1_market_v2.html',
+    category: '시장동향',
+    title: '재건축 분양가 27억 시대 — 서울 아파트 7월 상승 가속의 진짜 원인',
+    summary: '7월 1주 서울 매매가 +0.21%, 수도권 +0.22% 상승 지속. 6월 월간 전국 변동률 0.57%로 4·5·6월 연속 오름폭 확대. 서울 올해 입주물량 7,000가구로 10년 만에 최저치, 노량진 뉴타운 84㎡ 최고 분양가 27억원, 매매수급지수 108.3 — 구조적 상승 압력 3중 분석.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-06',
+    title_en: 'The Era of 2.7 Billion Won Presale Prices — The Real Reasons Behind Seoul\'s Accelerating July Rally',
+    summary_en: 'Seoul apartment prices rose 0.21% in the first week of July, with the metro area up 0.22%. Monthly nationwide change hit 0.57% in June, expanding for three straight months. Seoul\'s 2026 move-in supply hits a 10-year low at 7,000 units, Noryangjin New Town 84㎡ tops 2.7 billion won, and the supply-demand index reaches 108.3 — a three-pronged structural analysis.'
+  },
+  {
     id: 180,
     url: 'article_20260705_2_column_v2.html',
     category: '칼럼',
