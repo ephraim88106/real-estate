@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>스트레스 DSR 3단계 + 보유세 강화 — 이재명 정부의 부동산 대책, 시장을 잡을 수 있는가 | 부동산인사이트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #C8401A;
+    --accent-light: #fdf2ee;
+    --accent-mid: #e05a2b;
+    --dark: #0D2B55;
+    --text: #1a1a2e;
+    --text-secondary: #4a4a6a;
+    --bg: #f8f9fc;
+    --white: #ffffff;
+    --border: #d0d8e8;
+    --gold: #F4A52D;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* HEADER */
+  header {
+    background: var(--dark);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 72px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner { position: relative; max-width: 800px; margin: 0 auto; }
+  .cat-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.5rem, 4vw, 2.3rem);
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    font-weight: 700;
+  }
+  .hero-sub { color: rgba(255,255,255,0.75); font-size: 1rem; margin-bottom: 28px; }
+  .hero-meta { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  .hero-meta span { color: rgba(255,255,255,0.65); font-size: 0.82rem; }
+  .hero-meta strong { color: var(--gold); }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; }
+  .grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; align-items: start; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+  /* ARTICLE */
+  .article-body { background: var(--white); border-radius: 12px; padding: 40px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+
+  /* DATA CARDS */
+  .data-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 40px; }
+  @media (max-width: 600px) { .data-grid { grid-template-columns: 1fr; } }
+  .data-card {
+    background: var(--accent-light);
+    border: 1px solid #f0c8bc;
+    border-top: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.8rem; font-weight: 700; color: var(--accent); line-height: 1.2; }
+  .data-card .label { font-size: 0.78rem; color: var(--text-secondary); margin-top: 6px; font-weight: 500; }
+
+  /* SECTION HEADINGS */
+  .article-body h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--dark);
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin: 40px 0 16px;
+    line-height: 1.5;
+  }
+  .article-body p { color: var(--text); margin-bottom: 16px; line-height: 1.9; font-size: 0.97rem; }
+  .article-body ul { padding-left: 20px; margin-bottom: 16px; }
+  .article-body ul li { margin-bottom: 10px; color: var(--text); font-size: 0.95rem; line-height: 1.8; }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 5px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 24px 28px;
+    margin: 32px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--dark);
+    line-height: 1.8;
+    position: relative;
+  }
+  .quote-box::before { content: '"'; position: absolute; top: -10px; left: 20px; font-size: 4rem; color: var(--accent); opacity: 0.2; font-family: serif; line-height: 1; }
+  .quote-source { display: block; margin-top: 10px; font-style: normal; font-size: 0.82rem; color: var(--text-secondary); font-family: 'Noto Sans KR', sans-serif; }
+
+  /* POLICY COMPARE TABLE */
+  .policy-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 20px 0; }
+  .policy-table th { background: var(--accent); color: #fff; padding: 10px 12px; text-align: center; }
+  .policy-table td { padding: 10px 12px; border-bottom: 1px solid #f0c8bc; vertical-align: top; }
+  .policy-table tr:last-child td { border-bottom: none; }
+  .policy-table .item { font-weight: 600; color: var(--dark); }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.72rem; font-weight: 700; }
+  .badge.tight { background: #ffeae5; color: var(--accent); }
+  .badge.loose { background: #eafff2; color: #1a8f4a; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f5;
+    border: 1px solid #d8d8e8;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-top: 40px;
+    font-size: 0.78rem;
+    color: #666688;
+    line-height: 1.7;
+  }
+  .disclaimer strong { color: #444466; }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card { background: var(--white); border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .sidebar-card h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; color: var(--dark); border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 16px; }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.87rem; color: var(--text); line-height: 1.7; display: flex; gap: 8px; }
+  .summary-list li:last-child { border-bottom: none; }
+  .bullet { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { color: var(--text); text-decoration: none; font-size: 0.85rem; line-height: 1.6; transition: color 0.2s; display: block; }
+  .related-list a:hover { color: var(--accent); }
+  .related-cat { display: inline-block; font-size: 0.7rem; color: var(--accent); font-weight: 700; background: var(--accent-light); padding: 2px 7px; border-radius: 10px; margin-bottom: 4px; }
+  .ltv-box { font-size: 0.82rem; }
+  .ltv-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0c8bc; }
+  .ltv-row:last-child { border-bottom: none; }
+  .ltv-range { color: var(--text-secondary); }
+  .ltv-limit { font-weight: 700; color: var(--accent); }
+
+  /* FOOTER */
+  footer { background: var(--dark); color: rgba(255,255,255,0.6); text-align: center; padding: 32px 24px; font-size: 0.82rem; }
+  footer strong { color: var(--gold); }
+  .tag-row { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { background: var(--accent-light); color: var(--accent); border: 1px solid #f0c8bc; border-radius: 20px; padding: 4px 12px; font-size: 0.78rem; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">⚖️ 정책·규제 분석</span>
+    <h1>스트레스 DSR 3단계 + 보유세 강화 — 이재명 정부의 부동산 이중 처방, 시장을 잡을 수 있는가</h1>
+    <p class="hero-sub">수요 억제 vs 공급 확대 — 정책의 방향이 진단과 처방 사이에서 흔들리고 있다</p>
+    <div class="hero-meta">
+      <span>📅 <strong>2026년 7월 6일</strong></span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>🏷️ #스트레스DSR #보유세 #이재명정부 #부동산정책</span>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<div class="container">
+  <div class="grid">
+
+    <!-- ARTICLE BODY -->
+    <main class="article-body">
+
+      <!-- DATA CARDS -->
+      <div class="data-grid">
+        <div class="data-card">
+          <div class="num">-1억+</div>
+          <div class="label">스트레스 DSR 3단계 시행으로<br>연소득 1억 기준 대출한도 감소</div>
+        </div>
+        <div class="data-card">
+          <div class="num">40%</div>
+          <div class="label">서울·경기 12곳<br>규제지역 LTV 상한</div>
+        </div>
+        <div class="data-card">
+          <div class="num">+3%p</div>
+          <div class="label">스트레스 금리 가산<br>(수도권·규제지역 상한)</div>
+        </div>
+      </div>
+
+      <!-- 배경·맥락 -->
+      <p>2026년 하반기 한국 부동산 정책의 키워드는 두 가지로 압축된다. 하나는 스트레스 DSR 3단계 전면 시행이고, 다른 하나는 OECD 권고를 수용한 이재명 정부의 보유세 강화 세제개편이다. 두 정책 모두 '수요 억제'를 통한 시장 안정을 목표로 하지만, 서울 아파트 가격이 7월에도 주간 0.21% 상승을 이어가는 현실 앞에서 그 효력에 대한 의문이 커지고 있다.</p>
+
+      <p>정부는 대출 규제와 세제를 동시에 강화하는 이중 처방을 꺼내들었다. 금융위원회와 국토교통부가 협력해 '돈줄(대출)'과 '세금(보유세)' 두 채널에서 시장 압박을 가하는 전략이다. 이론적으로는 효과적이지만, 현장에서는 "정책이 시장의 근본 원인을 겨냥하지 못하고 있다"는 비판이 나온다. 시장 상승의 핵심 동인이 수요가 아닌 공급 부족과 분양가 폭등에 있기 때문이다.</p>
+
+      <p>본 기사에서는 스트레스 DSR 3단계의 실제 대출 축소 효과, LTV 규제의 적용 범위, 보유세 강화의 시장 파급력을 수치로 분석하고, 각 정책이 실수요자와 다주택 투자자에게 미치는 영향을 짚어본다.</p>
+
+      <h2>스트레스 DSR 3단계: 대출 문턱이 얼마나 높아졌나</h2>
+      <p>스트레스 DSR은 미래 금리 상승 위험을 대출 심사에 선제적으로 반영하는 제도다. 차주 대출금리에 스트레스 금리를 가산해 DSR을 계산하기 때문에, 명목 금리가 같아도 대출 가능 한도가 크게 줄어든다. 3단계에서는 수도권 및 규제지역 주담대에 한해 스트레스 금리 하한을 3%p까지 적용한다.</p>
+
+      <p>이를 연소득 1억원 차주를 기준으로 환산하면, 3단계 시행 이전 대비 주담대 대출 가능 금액이 1억원 이상 감소하는 것으로 분석된다. 예컨대 금리 4%, 30년 만기 기준으로 종전에 7억원을 빌릴 수 있었던 차주가 3단계 적용 후에는 5억~5억5천만원 수준으로 한도가 제한된다. 이는 서울 중저가 아파트 구매력을 실질적으로 압박하는 수준이다.</p>
+
+      <div class="quote-box">
+        "스트레스 DSR 3단계는 실수요자에게도 상당한 부담이다. 연소득이 중산층인 경우 사실상 서울 웬만한 아파트는 대출로만 살 수 없는 구조가 됐다. 정책이 고소득자에게는 상대적으로 관대하고 중산층에게는 가혹한 역설적 결과를 낳을 수 있다."
+        <span class="quote-source">— 금융권 대출 전문가, 2026년 7월 취재</span>
+      </div>
+
+      <h2>LTV 규제: 규제지역 40% + 가액별 한도 이중 압박</h2>
+      <p>규제지역으로 지정된 서울 전역과 경기 12개 지역에는 LTV 40%가 적용된다. 여기에 가액별 대출 한도 상한이 추가로 적용되어 사실상 이중 규제가 작동하고 있다.</p>
+
+      <table class="policy-table">
+        <tr><th>주택 가액 구간</th><th>최대 대출 한도</th><th>규제 강도</th></tr>
+        <tr>
+          <td class="item">15억원 이하</td>
+          <td>6억원</td>
+          <td><span class="badge loose">보통</span></td>
+        </tr>
+        <tr>
+          <td class="item">15억~25억원</td>
+          <td>4억원</td>
+          <td><span class="badge tight">강함</span></td>
+        </tr>
+        <tr>
+          <td class="item">25억원 초과</td>
+          <td>2억원</td>
+          <td><span class="badge tight">매우 강함</span></td>
+        </tr>
+      </table>
+
+      <p>25억원 초과 주택에 대한 대출 한도 2억원은 사실상 고가 아파트를 현금 또는 매우 높은 자기자본 비율로만 살 수 있도록 만든 정책이다. 강남권 재건축 아파트가 이미 30억~50억원 이상에 거래되는 상황에서, 대출이 사실상 막혀도 거래가 이루어지고 있다는 사실은 현금 보유 고자산층의 수요가 여전히 강하다는 것을 의미한다.</p>
+
+      <p>반면 대출에 의존해야 하는 실수요자 중산층은 이 이중 규제로 인해 강남·서초·마포 등 핵심 지역 진입 자체가 막혀버리는 부익부 빈익빈 현상이 심화되고 있다는 비판이 제기된다.</p>
+
+      <h2>보유세 강화: OECD 권고와 이재명 정부의 세제개편</h2>
+      <p>이재명 정부는 OECD의 권고를 수용해 취득세·양도세 중심의 거래세를 낮추는 대신 재산세·종합부동산세 중심의 보유세를 높이는 세제 구조 전환을 준비하고 있다. OECD는 한국의 거래세가 주요국 대비 지나치게 높아 시장 유동성을 저해하고 자원 배분을 왜곡한다고 지적해 왔다.</p>
+
+      <p>보유세 강화 논리는 명확하다. 세금 부담이 커지면 다주택자가 보유 매물을 시장에 내놓게 되어 공급이 늘어나고 가격 안정으로 이어진다는 것이다. 그러나 이 논리에는 두 가지 전제가 필요하다. 첫째, 다주택자가 실제로 매물을 출회할 것, 둘째, 그 매물을 받아줄 실수요 매수자가 존재할 것이다.</p>
+
+      <div class="quote-box">
+        "보유세 강화가 장기적으로는 시장 안정에 기여할 수 있지만, 단기적으로는 역설적이게도 거래 위축과 전세 전환 가속이라는 부작용을 낳을 수 있다. 다주택자가 팔지 않고 버티거나 세금을 전세·월세에 전가할 가능성이 높기 때문이다."
+        <span class="quote-source">— 세금 전문 부동산 컨설턴트, 부동산인사이트 기고 (2026.07)</span>
+      </div>
+
+      <h2>정책과 시장의 괴리: 왜 규제는 효과가 제한적인가</h2>
+      <p>2026년 7월 현재, 대출 규제(스트레스 DSR)와 세제 강화(보유세)라는 이중 압박이 가해지고 있음에도 서울 아파트 가격은 6월 월간 0.57% 상승을 기록하며 오름폭이 오히려 확대되는 역설적 상황이 펼쳐지고 있다.</p>
+
+      <p>이 괴리의 핵심에는 정책이 공급 측 원인을 겨냥하지 않는다는 문제가 있다. 시장 상승의 근본 원인은 재건축 분양가 급등(노량진 84㎡ 최고 27억원), 시공비 폭등, 서울 입주물량 10년 최저(약 7,000가구) 등 공급 부족이다. 대출 한도를 줄이고 세금을 올려도 공급이 늘지 않으면 가격 하방 압력은 제한적이다.</p>
+
+      <p>더욱이 고자산층과 재건축 조합원은 대출 규제의 영향을 거의 받지 않는다. 이들이 주도하는 재건축 분양가가 시장 전체의 기준점을 끌어올리면, 규제 효과가 미치는 중산층 실수요자는 더 높은 가격 앞에서 더 좁아진 대출 한도로 대응해야 하는 모순적 상황에 처하게 된다.</p>
+
+      <h2>실수요자·투자자 시사점</h2>
+      <ul>
+        <li><strong>대출 전략 우선 수립:</strong> 스트레스 DSR 3단계로 실질 대출 가능액이 크게 줄었다. 매물 탐색보다 금융 설계(주거래 은행 상담, 소득 증빙 서류 준비)를 먼저 완료하는 것이 필수적이다.</li>
+        <li><strong>다주택자는 보유세 시뮬레이션 의무화:</strong> 세제개편 논의가 본격화되기 전에 현재 보유 부동산의 예상 보유세 부담을 세무사와 함께 시뮬레이션해 두어야 매각·보유 여부를 합리적으로 결정할 수 있다.</li>
+        <li><strong>1주택자 전세대출 DSR 반영 주의:</strong> 1주택자가 수도권·규제지역에서 전세대출을 받는 경우 이자상환분이 DSR에 반영된다. 전세를 끼고 투자 물건을 매수하는 갭투자 전략의 수익성이 크게 약화됐다.</li>
+        <li><strong>거래세 인하 논의를 주목할 것:</strong> 보유세 강화와 맞물려 취득세 완화 논의도 병행될 가능성이 있다. 취득세 인하가 현실화되면 매수 부담이 줄어 거래량 회복의 계기가 될 수 있다.</li>
+        <li><strong>세제개편 일정을 체크하라:</strong> 정부 세제개편안이 국회 논의를 거쳐 확정되기까지 상당한 시간이 소요될 수 있다. 정책 불확실성이 높은 시기에는 급격한 투자 확대보다 현금 유동성 확보가 우선이다.</li>
+      </ul>
+
+      <h2>결론: 처방의 방향이 진단과 달라서는 안 된다</h2>
+      <p>이재명 정부의 스트레스 DSR 강화와 보유세 전환 정책은 이론적 완결성을 갖추고 있다. 대출 규제로 수요 과열을 억제하고, 보유세 강화로 매물 출회를 유도하며 장기적 시장 정상화를 꾀한다는 구도다. OECD를 비롯한 국제기구들도 이 방향을 지지한다.</p>
+
+      <p>그러나 현장의 데이터는 다른 이야기를 하고 있다. 서울 아파트 매매가격은 규제가 강화된 2026년에도 꾸준히 오르고 있으며, 재건축 분양가는 27억원까지 치솟고 있다. 공급 측 처방 없이 수요 억제만으로는 구조적 공급 부족이라는 근본 원인을 해소할 수 없다는 것이 수치로 확인되고 있다. 정책의 방향이 진단과 일치하지 않는다면 약효는 기대보다 훨씬 약할 것이다.</p>
+
+      <p>결국 부동산 시장 안정의 열쇠는 재건축·재개발 패스트트랙 확대, 시공비 안정화 지원, 신규 공공택지 개발이라는 공급 측 정책에 있다. 수요 억제와 세제 조정은 공급 확대를 뒷받침하는 보조 수단이지, 그 자체가 목적이 될 수 없다.</p>
+
+      <!-- TAGS -->
+      <div class="tag-row">
+        <span class="tag">#스트레스DSR</span>
+        <span class="tag">#DSR3단계</span>
+        <span class="tag">#보유세강화</span>
+        <span class="tag">#LTV규제</span>
+        <span class="tag">#이재명정부</span>
+        <span class="tag">#부동산정책</span>
+        <span class="tag">#세제개편</span>
+        <span class="tag">#2026부동산</span>
+      </div>
+
+      <!-- DISCLAIMER -->
+      <div class="disclaimer">
+        <strong>면책 고지:</strong> 본 기사는 공개된 정책 자료, 통계 데이터 및 언론 보도를 기반으로 작성된 정보 제공용 콘텐츠입니다. 세금·대출과 관련한 개인별 상황은 공인중개사, 세무사, 은행 등 전문가와의 개별 상담을 통해 확인하시기 바랍니다. 본 기사의 내용은 특정 매매·투자 행위를 권유하지 않으며, 본 편집부는 투자 결과에 대한 법적 책임을 지지 않습니다.
+      </div>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <!-- 핵심 요약 -->
+      <div class="sidebar-card">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li><span class="bullet"></span><span>스트레스 DSR 3단계: 연소득 1억 기준 대출한도 1억원 이상 축소</span></li>
+          <li><span class="bullet"></span><span>규제지역 LTV 40% + 가액별 한도(25억 초과 최대 2억)</span></li>
+          <li><span class="bullet"></span><span>이재명 정부, OECD 권고 따라 보유세 강화 세제개편 준비</span></li>
+          <li><span class="bullet"></span><span>규제 강화에도 서울 6월 월간 매매가 0.57% 상승 — 효과 제한</span></li>
+          <li><span class="bullet"></span><span>1주택자 전세대출 이자도 DSR 반영 — 갭투자 수익성 약화</span></li>
+        </ul>
+      </div>
+
+      <!-- 관련 기사 -->
+      <div class="sidebar-card">
+        <h3>📰 관련 기사</h3>
+        <ul class="related-list">
+          <li>
+            <span class="related-cat">시장</span>
+            <a href="#">재건축 분양가 27억 시대 — 서울 아파트 7월 상승 가속의 진짜 원인</a>
+          </li>
+          <li>
+            <span class="related-cat">세금</span>
+            <a href="#">종합부동산세 개편안 — 다주택자 세금 부담 시뮬레이션</a>
+          </li>
+          <li>
+            <span class="related-cat">대출</span>
+            <a href="#">스트레스 DSR 1·2·3단계 비교 — 내 대출한도 얼마나 줄었나</a>
+          </li>
+          <li>
+            <span class="related-cat">투자</span>
+            <a href="#">규제 강화 시대의 합법적 부동산 절세 전략 5가지</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- LTV 한도 위젯 -->
+      <div class="sidebar-card">
+        <h3>🏦 규제지역 주담대 한도 가이드</h3>
+        <div class="ltv-box">
+          <div class="ltv-row">
+            <span class="ltv-range">15억 이하</span>
+            <span class="ltv-limit">최대 6억원</span>
+          </div>
+          <div class="ltv-row">
+            <span class="ltv-range">15억~25억</span>
+            <span class="ltv-limit">최대 4억원</span>
+          </div>
+          <div class="ltv-row">
+            <span class="ltv-range">25억 초과</span>
+            <span class="ltv-limit">최대 2억원</span>
+          </div>
+          <div class="ltv-row">
+            <span class="ltv-range">LTV 상한</span>
+            <span class="ltv-limit">40% (규제지역)</span>
+          </div>
+          <div class="ltv-row">
+            <span class="ltv-range">스트레스 금리</span>
+            <span class="ltv-limit">최대 +3%p</span>
+          </div>
+        </div>
+        <p style="font-size:0.72rem;color:#888;margin-top:10px;">※ 실제 한도는 소득·기존 부채 등에 따라 다름. 은행 상담 필수.</p>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>부동산인사이트</strong> | 매일 오후 11시 발행<br>
+  <span>본 매체는 공개 데이터 및 언론 보도를 분석한 독립 미디어입니다.</span><br><br>
+  <span>© 2026 부동산인사이트. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
