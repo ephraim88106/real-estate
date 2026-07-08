@@ -88,25 +88,25 @@ const articles = [
     id: 184,
     url: 'article_20260708_2_overseas_v2.html',
     category: '해외',
-    title: '국내 대출이 막혔다면? 미·일·동남아 해외 부동산으로 눈 돌리는 한국인들',
-    summary: '3중 규제로 국내 레버리지 투자 경로가 봉쇄된 2026년. 미국의 구조적 공급 부족, 일본의 엔화 약세, 동남아의 성장 모멘텀이 한국 투자자를 해외로 부르고 있다. 지역별 투자 전망과 리스크를 분석한다.',
+    title: '국내 규제 피해 어디로? 2026 한국인 해외 부동산 투자 완전 가이드 — 일본·동남아·미국, 지금 사도 될까',
+    summary: '한국인 일본 부동산 투자 3년 만에 3배 급증, 동남아 러브콜 봇물 — 국내 규제 탈출구의 실체와 함정을 해부한다.',
     image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
-    author: '부동산인사이트 해외부동산팀',
+    author: '부동산인사이트 편집부',
     date: '2026-07-08',
-    title_en: 'Domestic Loans Blocked? Korean Investors Turn to U.S., Japan, and Southeast Asian Real Estate',
-    summary_en: 'With domestic leveraged investment channels shut by triple regulations in 2026, the structural supply shortage in the U.S., Japan\'s yen weakness, and Southeast Asia\'s growth momentum are drawing Korean investors overseas. Regional investment outlooks and risks analyzed.'
+    title_en: 'Where to Go to Escape Domestic Regulations? Complete Guide to Korean Overseas Real Estate Investment in 2026 — Japan, Southeast Asia, U.S.',
+    summary_en: 'Korean investment in Japanese real estate tripled in three years, Southeast Asian markets beckoning — a deep dive into the reality and pitfalls of overseas escape routes from domestic regulations.'
   },
   {
     id: 183,
     url: 'article_20260708_1_investment_v2.html',
     category: '투자분석',
-    title: '3중 규제의 덫에 걸린 투자자들 — 2026년 하반기, 살아남는 자의 전략',
-    summary: '스트레스 DSR 3단계·LTV 대폭 축소·갭투자 전면 금지까지. 규제의 포위망이 완성된 지금, 시장은 어디로 가고 투자자는 무엇을 해야 하는가. 2026년 하반기 생존 투자 전략을 심층 분석한다.',
+    title: '규제의 벽 앞에서 살아남는 법: 2026 하반기 부동산 투자 생존 전략 완전 해부',
+    summary: '경매 낙찰가율 100% 돌파, 갭투자 전면 금지 이후 새 국면에 진입한 한국 부동산 투자 지형도를 분석한다.',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
-    author: '부동산인사이트 투자분석팀',
+    author: '부동산인사이트 편집부',
     date: '2026-07-08',
-    title_en: 'Trapped in the Triple Regulatory Net — Survival Strategies for H2 2026 Real Estate Investors',
-    summary_en: 'From Stress DSR Phase 3 to LTV cuts and an outright ban on gap investing — the regulatory encirclement is complete. Where is the market heading, and what should investors do to survive? An in-depth analysis of H2 2026 investment survival strategies.'
+    title_en: 'How to Survive the Regulatory Wall: A Complete Breakdown of H2 2026 Real Estate Investment Survival Strategies',
+    summary_en: 'Auction closing rate surpasses 100%, gap investing fully banned — analyzing Korea\'s real estate investment landscape after entering a new phase.'
   },
   {
     id: 182,
