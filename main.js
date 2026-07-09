@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 186,
+    url: 'article_20260709_2_market_v2.html',
+    category: '시장동향',
+    title: '매매가 전세 추월·주간 0.30% 상승… 7월에도 식지 않는 서울 아파트 열기',
+    summary: '5월 서울 아파트 매매 거래가 4년 만에 전세를 앞질렀다. 규제에도 불구하고 수도권 전역으로 번지는 오름세와 양극화 심화의 현장을 지역별로 짚는다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-09',
+    title_en: 'Sale Price Overtakes Jeonse, Weekly +0.30%… Seoul Apartment Heat Refuses to Cool in July',
+    summary_en: 'Seoul apartment sales transactions surpassed jeonse deals for the first time in four years in May. A region-by-region analysis of the rising tide spreading across the Seoul metro area and deepening polarization despite regulations.'
+  },
+  {
+    id: 185,
+    url: 'article_20260709_1_column_v2.html',
+    category: '칼럼',
+    title: '규제가 집값을 올린다? — 동탄·구리·기흥 사태가 드러낸 한국 부동산의 역설',
+    summary: '7월 1일 규제지역 지정 이후에도 동탄 아파트는 주간 1.29% 올랐다. 정부 규제가 오히려 시장을 자극하는 구조적 아이러니를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-09',
+    title_en: 'Do Regulations Drive Up Home Prices? The Paradox Revealed by the Dongtan, Guri, and Giheung Situations',
+    summary_en: 'Dongtan apartments rose 1.29% week-on-week even after being designated a regulated zone on July 1. An anatomy of the structural irony where government regulations actually stimulate the market.'
+  },
+  {
     id: 184,
     url: 'article_20260708_2_overseas_v2.html',
     category: '해외',
