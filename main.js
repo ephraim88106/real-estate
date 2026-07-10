@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 188,
+    url: 'article_20260710_2_subscription_v2.html',
+    category: '분양',
+    title: '7월 수도권 3.2만 가구 쏟아진다…\'반세권\' 단지 로또 vs 지방 미달의 대격차',
+    summary: '2026년 7월 전국 3.7만 가구가 분양된다. 수도권은 반도체 클러스터 인근 \'반세권\' 단지가 청약 시장을 달구는 반면, 지방은 미달이 현실화되고 있다. 지금 어디에 청약해야 하는가.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-10',
+    title_en: '32,000 Units Flood Seoul Metro in July… \'Semiconductor Belt\' Lottery vs. Provincial Shortfall: The Great Divide',
+    summary_en: 'A total of 37,000 units go on presale nationwide in July 2026. While \'semiconductor belt\' apartments near chip clusters are heating up metro subscription markets, provincial shortfalls are becoming reality. Where should you apply now?'
+  },
+  {
+    id: 187,
+    url: 'article_20260710_1_policy_v2.html',
+    category: '정책',
+    title: '동탄·기흥·구리 3중 규제 폭탄, 그리고 7월 말 세제개편안의 충격 예고',
+    summary: '동탄·기흥·구리가 투기과열지구·조정대상지역으로 지정된 데 이어 7월 말 보유세·거래세 동시 개편안이 예고됐다. 반도체머니가 만들어낸 집값 버블, 정부의 칼날은 어디까지 닿을 것인가.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-10',
+    title_en: 'Dongtan·Giheung·Guri Triple Regulation Bomb, and the Coming Shock of Late-July Tax Reform',
+    summary_en: 'Following the designation of Dongtan, Giheung, and Guri as speculative overheating and adjustment-target zones, a simultaneous overhaul of property and transaction taxes has been announced for late July. How far will the government\'s blade reach into the housing bubble inflated by semiconductor money?'
+  },
+  {
     id: 186,
     url: 'article_20260709_2_market_v2.html',
     category: '시장동향',
