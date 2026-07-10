@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7월 수도권 3.2만 가구 쏟아진다…'반세권' 단지 로또 vs 지방 미달의 대격차 | 부동산인사이트</title>
+<meta name="description" content="2026년 7월 전국 3.7만 가구가 분양된다. 수도권은 반도체 클러스터 인근 '반세권' 단지가 청약 시장을 달구는 반면, 지방은 미달이 현실화되고 있다. 지금 어디에 청약해야 하는가.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --accent: #1A7F4D;
+    --accent-light: #e6f5ee;
+    --accent-mid: #5daf84;
+    --dark: #0A3A0A;
+    --dark2: #2E7D2E;
+    --text: #1a1a1a;
+    --text-light: #555;
+    --bg: #f4f7f5;
+    --white: #ffffff;
+    --border: #dde8e2;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  /* HEADER */
+  header {
+    background: #0A3A0A;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color .2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0A3A0A 0%, #2E7D2E 55%, #0A3A0A 100%);
+    color: #fff;
+    padding: 72px 24px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M20 0L0 20h10v20h20V20h10L20 0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .category-tag {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(22px, 4vw, 40px);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  .hero .subtitle {
+    font-size: 17px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 700px;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    flex-wrap: wrap;
+  }
+
+  /* LAYOUT */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 36px;
+    align-items: start;
+  }
+  @media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+    nav { display: none; }
+  }
+
+  /* ARTICLE */
+  article {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 44px 48px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  }
+  @media (max-width: 600px) { article { padding: 28px 20px; } }
+
+  /* DATA BOX */
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 32px 0;
+  }
+  @media (max-width: 600px) { .data-grid { grid-template-columns: 1fr; } }
+  .data-card {
+    background: var(--accent-light);
+    border-radius: 10px;
+    padding: 20px 18px;
+    text-align: center;
+    border-top: 4px solid var(--accent);
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .data-card .label {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.4;
+  }
+
+  /* SECTION HEADERS */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 40px 0 16px;
+    padding-left: 16px;
+    border-left: 4px solid var(--accent);
+    line-height: 1.4;
+  }
+  article h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 28px 0 12px;
+  }
+  article p {
+    color: #333;
+    line-height: 1.9;
+    margin-bottom: 18px;
+  }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: var(--accent-light);
+    border-left: 5px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 24px 28px;
+    margin: 32px 0;
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--dark);
+  }
+  .quote-box cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    color: var(--text-light);
+    font-weight: 500;
+  }
+
+  /* DISTRICT BOX */
+  .district-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+  @media (max-width: 600px) { .district-grid { grid-template-columns: 1fr; } }
+  .district-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    border-top: 4px solid var(--accent);
+  }
+  .district-card h4 {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .district-card ul { padding-left: 16px; }
+  .district-card ul li { font-size: 14px; color: #444; line-height: 1.7; }
+  .district-card .note { font-size: 12px; color: #999; margin-top: 8px; }
+
+  /* HIGHLIGHT */
+  .highlight-box {
+    background: linear-gradient(135deg, #e6f5ee, #d0edd9);
+    border: 1px solid var(--accent-mid);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin: 28px 0;
+  }
+  .highlight-box .title {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  /* BULLET LIST */
+  article ul.insight-list {
+    padding-left: 0;
+    list-style: none;
+    margin: 16px 0 24px;
+  }
+  article ul.insight-list li {
+    padding: 10px 0 10px 32px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+  }
+  article ul.insight-list li:last-child { border-bottom: none; }
+  article ul.insight-list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 12px;
+    top: 13px;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.7;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .widget {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .widget h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 9px 0 9px 20px;
+    position: relative;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.5;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 8px;
+    top: 13px;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a {
+    font-size: 14px;
+    color: var(--dark);
+    text-decoration: none;
+    line-height: 1.5;
+    display: block;
+  }
+  .related-list a:hover { color: var(--accent); }
+  .related-list .tag {
+    font-size: 11px;
+    color: var(--accent);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  /* CHECKLIST WIDGET */
+  .checklist { list-style: none; padding: 0; }
+  .checklist li {
+    padding: 9px 0 9px 28px;
+    position: relative;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.5;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* TAGS */
+  .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; }
+  .tag-item {
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--accent-mid);
+  }
+
+  /* POLARIZATION BOX */
+  .polar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  .polar-left {
+    background: var(--accent-light);
+    padding: 20px;
+    border-right: 1px solid var(--border);
+  }
+  .polar-right {
+    background: #fff5f0;
+    padding: 20px;
+  }
+  .polar-left h4 { color: var(--accent); margin-bottom: 10px; font-size: 15px; }
+  .polar-right h4 { color: #C8401A; margin-bottom: 10px; font-size: 15px; }
+  .polar-left ul, .polar-right ul { padding-left: 16px; }
+  .polar-left ul li, .polar-right ul li { line-height: 1.7; color: #333; }
+
+  /* FOOTER */
+  footer {
+    background: #0A3A0A;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 36px 24px;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 60px;
+  }
+  footer .logo-footer {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  footer .logo-footer span { color: #F4A52D; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">분양·청약 분석</span>
+    <h1>7월 수도권 3.2만 가구 쏟아진다<br>…'반세권' 로또 vs 지방 미달의 대격차</h1>
+    <p class="subtitle">2026년 7월 분양 성수기가 왔다. 전국 3.7만 가구 중 수도권만 68%를 차지하며 반도체 클러스터 인근 '반세권' 단지가 청약 시장을 달군다. 하지만 서울 일부와 지방의 양극화는 극단으로 치닫고 있다. 지금 이 청약 지도, 냉철하게 읽어야 한다.</p>
+    <div class="hero-meta">
+      <span>📅 2026년 7월 10일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>⏱️ 읽는 시간 약 7분</span>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+  <article>
+
+    <!-- DATA GRID -->
+    <div class="data-grid">
+      <div class="data-card">
+        <span class="num">3.7만</span>
+        <span class="label">7월 전국 분양 예정<br>가구 수</span>
+      </div>
+      <div class="data-card">
+        <span class="num">68%</span>
+        <span class="label">수도권 집중 비율<br>(전국 대비)</span>
+      </div>
+      <div class="data-card">
+        <span class="num">5,527</span>
+        <span class="label">평택 고덕신도시<br>7월 분양 가구 수</span>
+      </div>
+    </div>
+
+    <!-- 1. 배경 -->
+    <h2>7월 분양 성수기, 수도권으로 물량이 집중된다</h2>
+    <p>매년 여름은 부동산 분양 시장의 성수기다. 2026년 7월도 예외가 아니다. 전국적으로 3만7000가구 이상이 이달에 분양 일정을 잡았으며, 이 중 수도권(서울·경기·인천)에 집중된 물량만 2만 가구를 넘어 전체의 68%를 차지한다. 이는 지난해 7월 대비 약 15% 증가한 수치로, 건설사들이 하반기 분양 실적을 이달에 집중 소화하려는 전략을 취하고 있음을 보여준다.</p>
+
+    <p>특히 주목할 점은 분양 지도가 '반세권'을 중심으로 재편되고 있다는 것이다. 삼성전자·SK하이닉스·TSMC 등 반도체 클러스터가 집중된 경기 남부—평택·화성·용인 일대—가 이달 분양 시장의 핵심 무대로 떠올랐다. 반도체 업계 종사자들의 실수요와 시세 차익을 노린 청약 수요가 겹치며 이 지역 단지들은 높은 경쟁률이 예상된다.</p>
+
+    <p>반면 지방 광역시와 중소도시의 상황은 전혀 다르다. 미분양 누적이 이어지는 가운데, 이달에도 지방 분양 단지들은 1:1 미만의 경쟁률을 기록하며 무순위 청약이 반복될 가능성이 크다. 같은 달, 같은 나라, 전혀 다른 청약 시장이 공존하고 있다.</p>
+
+    <!-- 2. 주요 단지 -->
+    <h2>이달 주목할 수도권 분양 단지들</h2>
+    <p>7월 수도권 분양 단지 중 청약 수요자들이 특히 주목해야 할 단지들을 지역별로 살펴본다.</p>
+
+    <h3>서울: 희소성이 경쟁력</h3>
+    <p>서울은 이달 분양 물량이 '가뭄' 수준이다. 인천을 포함한 수도권 2만 가구 중 서울 물량은 소수에 불과하다. 하지만 그 희소성이 오히려 경쟁률을 극단적으로 높인다. 영등포구 신길동의 <strong>써밋클라비온</strong>(812가구)과 중구 중림동 <strong>충정로역자이르네</strong>(299가구)가 대표 분양 단지다. 두 단지 모두 분양가상한제 적용 대상으로, 인근 시세 대비 수천만~수억 원의 가격 메리트가 있어 수백 대 1의 경쟁률을 기록할 가능성이 높다.</p>
+
+    <h3>경기: '반세권'이 청약 키워드를 지배한다</h3>
+    <p>이달 경기도 분양 시장의 최대 화두는 단연 '반세권'이다. 삼성전자 평택캠퍼스 인근 고덕국제신도시에서만 5개 단지, 5,527가구가 분양된다. 삼성·SK 등 반도체 업계 임직원들의 실수요가 뒷받침하는 이 지역은 단순 투기 수요보다 탄탄한 수요 기반을 갖추고 있다는 평가다.</p>
+
+    <div class="district-grid">
+      <div class="district-card">
+        <h4>🏙️ 서울권 주목 단지</h4>
+        <ul>
+          <li>써밋클라비온 (신길동, 812가구)</li>
+          <li>충정로역자이르네 (중림동, 299가구)</li>
+        </ul>
+        <p class="note">※ 분양가상한제 적용, 높은 경쟁률 예상</p>
+      </div>
+      <div class="district-card">
+        <h4>🏗️ 경기권 대형 단지</h4>
+        <ul>
+          <li>한강푸르지오리버프론트 (김포, 2,432가구)</li>
+          <li>상동역롯데캐슬 (부천, 1,859가구)</li>
+          <li>의왕역SK뷰 (의왕, 1,857가구)</li>
+          <li>오산헤리티지자이 (오산, 1,783가구)</li>
+        </ul>
+        <p class="note">※ 반세권·역세권 복합 입지 단지 다수</p>
+      </div>
+    </div>
+
+    <p>한강푸르지오리버프론트(김포 고촌읍, 2,432가구)는 수도권 광역급행철도(GTX-D) 기대감과 한강변 입지를 앞세웠으며, 부천 상동역롯데캐슬(1,859가구)은 7호선 역세권 직접 연결이라는 교통 메리트를 갖췄다. 의왕역SK뷰(1,857가구)와 오산헤리티지자이(1,783가구)는 각각 1호선·수인분당선 역세권에 위치하며, 반도체 클러스터 배후 주거지로서의 입지 논리를 동시에 갖추고 있다.</p>
+
+    <!-- 3. 양극화 분석 -->
+    <h2>청약 양극화: 서울은 '로또', 지방은 '폭탄'</h2>
+    <p>이달 분양 시장을 한 문장으로 요약하면 "서울·수도권 핵심은 미친 경쟁, 지방은 주인을 못 찾는다"이다. 이 양극화는 단순히 인기와 비인기의 차이가 아니라, 구조적 수요 차이에서 비롯된다.</p>
+
+    <div class="polar-grid">
+      <div class="polar-left">
+        <h4>🔥 수도권·반세권 (청약 과열)</h4>
+        <ul>
+          <li>분양가상한제 서울 단지: 수백 대 1</li>
+          <li>평택 고덕신도시: 반도체 실수요</li>
+          <li>10대 건설사 브랜드에 청약 집중</li>
+          <li>1순위 청약 당일 마감 예상</li>
+        </ul>
+      </div>
+      <div class="polar-right">
+        <h4>❄️ 지방 중소도시 (청약 냉기)</h4>
+        <ul>
+          <li>비수도권 미달 단지 속출</li>
+          <li>무순위 청약 반복</li>
+          <li>지방 미분양 10만 가구 육박</li>
+          <li>건설사 분양 일정 연기 잇따라</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>서울 분양가상한제 적용 단지의 경우, 청약 당첨 자체가 수천만~수억 원 규모의 '즉시 차익'을 의미한다. 이 때문에 실거주 목적 없는 청약 수요가 몰리는 구조가 고착화됐다. 반면 지방 중소도시는 인구 유출, 일자리 감소, 고령화가 맞물려 주택 수요 자체가 감소하는 구조적 하락 국면에 접어든 곳이 많다. 같은 '청약 시장'이라는 이름 아래, 사실상 완전히 다른 두 시장이 병존하고 있다.</p>
+
+    <div class="quote-box">
+      "7월 분양 시장의 핵심 키워드는 '반세권'입니다. 삼성·SK 임직원 수만 명의 배후 수요가 뒷받침되는 평택·오산·화성 일대는 단순한 투기 수요가 아닌 실거주 수요에 기반한 청약 시장이 형성되고 있습니다."
+      <cite>— 부동산 전문 리서치 업계 관계자</cite>
+    </div>
+
+    <!-- 4. 브랜드 집중 -->
+    <h2>브랜드 없으면 절반이 미달…'10대 건설사'의 힘</h2>
+    <p>이달 수도권 분양 시장에서도 '브랜드 양극화'는 뚜렷하다. 삼성물산 래미안, GS건설 자이, DL이앤씨 e편한세상, 현대건설 힐스테이트·디에이치, HDC현대산업개발 아이파크 등 10대 건설사 브랜드 단지에 청약 수요가 집중되는 반면, 비브랜드 혹은 지방 소형 건설사 단지는 수도권에서도 미달이 발생한다.</p>
+
+    <p>부동산 전문가들은 "7월 수도권 2만 가구 중 브랜드를 빼면 절반이 미달"이라고 경고한다. 이는 청약 시장이 단순히 지역의 문제가 아니라, 브랜드·입지·교통·가격이라는 4가지 조건을 동시에 충족하는 단지에만 수요가 집중되는 구조임을 보여준다. 청약을 계획하고 있다면, 단지의 브랜드와 교통 접근성을 최우선 기준으로 삼아야 한다.</p>
+
+    <div class="quote-box">
+      "아무 데나 청약 넣지 마세요. 브랜드 없는 비규제 지역 단지는 당첨되더라도 미래 시세 상승이 제한적이고, 전세가율이 낮아 유동성 리스크가 큽니다. 청약은 많이 넣는 게 아니라 잘 넣는 겁니다."
+      <cite>— 청약 전략 전문가</cite>
+    </div>
+
+    <!-- 5. 시사점 -->
+    <h2>청약 수요자를 위한 실전 전략 체크리스트</h2>
+    <p>이달 분양 시장, 어떻게 접근해야 할까. 유형별 시사점을 정리한다.</p>
+
+    <ul class="insight-list">
+      <li><strong>무주택 실수요자:</strong> 서울 분양가상한제 단지(써밋클라비온, 충정로역자이르네)는 가점이 충분하다면 최우선 도전. 가점이 낮다면 반세권 경기 단지 중 특별공급(신혼부부·생애최초)을 공략하는 것이 현실적이다.</li>
+      <li><strong>반세권 단지 청약 전략:</strong> 평택 고덕신도시 5개 단지 중 브랜드·역세권·분양가를 비교해 1~2개 단지를 집중 공략한다. 모든 단지에 청약을 넣으면 오히려 기회비용이 증가한다.</li>
+      <li><strong>가점 40점 이하 청약자:</strong> 서울 일반공급은 사실상 당첨 불가. 경기 수도권 외곽 단지의 추첨제 물량(특별공급 탈락자 추첨)을 타깃으로 전략을 재설정해야 한다.</li>
+      <li><strong>지방 청약 신중론:</strong> 비수도권 단지 청약 전 해당 지역의 인구·고용 동향, 미분양 현황을 반드시 확인한다. '저렴한 분양가'가 미래 시세 하락 위험을 상쇄하지 못하는 경우가 많다.</li>
+      <li><strong>청약 통장 사용 시점:</strong> 청약 통장은 '한 번 쓰면 끝'이다. 7월 단지보다 하반기에 더 조건이 좋은 단지가 나올 수 있으므로, 서두르지 않는 것도 전략이다. 특히 8~9월 서울 주요 재건축 단지 일반분양 일정을 확인한 뒤 통장 사용 시점을 결정하길 권한다.</li>
+    </ul>
+
+    <!-- 6. 결론 -->
+    <h2>결론: 청약은 전략이다, 감으로 하면 안 된다</h2>
+    <p>2026년 7월 분양 시장은 '기회와 함정'이 공존한다. 반도체 실수요에 기반한 경기 남부 단지들과 서울 상한제 적용 단지는 분명한 기회다. 하지만 브랜드도 교통도 수요도 없는 단지에 청약 통장을 소진하는 것은 회복이 어려운 실수가 될 수 있다.</p>
+
+    <p>청약 시장의 양극화는 앞으로도 심화될 가능성이 크다. 인구 감소와 지방 소멸이 가속화되는 구조적 흐름 속에서, 수도권·반도체 클러스터 인근·브랜드 단지로의 수요 쏠림은 일시적 현상이 아닌 장기 트렌드다. 이 흐름을 이해하고 선택과 집중을 하는 것, 그것이 2026년 하반기 청약 시장을 이기는 유일한 전략이다.</p>
+
+    <p>7월 청약 성수기, 숫자에 현혹되지 말고 입지와 수요의 본질을 보는 눈을 갖추길 바란다. 청약은 로또가 아닌 전략 게임이다.</p>
+
+    <!-- TAGS -->
+    <div class="tag-list">
+      <span class="tag-item">#분양청약2026</span>
+      <span class="tag-item">#반세권</span>
+      <span class="tag-item">#7월분양</span>
+      <span class="tag-item">#수도권청약</span>
+      <span class="tag-item">#평택고덕신도시</span>
+      <span class="tag-item">#써밋클라비온</span>
+      <span class="tag-item">#청약양극화</span>
+      <span class="tag-item">#분양가상한제</span>
+      <span class="tag-item">#청약전략</span>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      ⚠️ <strong>면책 고지:</strong> 본 기사는 공개된 분양 정보 및 시장 데이터를 바탕으로 작성된 정보성 콘텐츠입니다. 특정 단지의 청약을 권유하는 것이 아니며, 청약 결정은 개인의 재무 상황, 가점, 실거주 계획에 따라 신중하게 이루어져야 합니다. 분양 정보는 변경될 수 있으므로 청약홈(applyhome.co.kr) 등 공식 사이트를 통해 최신 정보를 반드시 확인하시기 바랍니다.
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- 핵심 요약 -->
+    <div class="widget">
+      <h3>🔑 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>7월 전국 3.7만 가구 분양, 수도권 2만 가구(68%) 집중</li>
+        <li>'반세권(반도체 인근 주거지)' 단지에 청약 수요 집중</li>
+        <li>평택 고덕신도시 7월에만 5개 단지 5,527가구 공급</li>
+        <li>서울 상한제 적용 단지, 수백 대 1 경쟁률 예상</li>
+        <li>지방 미달 현상 지속, 청약 양극화 심화</li>
+      </ul>
+    </div>
+
+    <!-- 청약 체크리스트 위젯 -->
+    <div class="widget">
+      <h3>✅ 청약 전 필수 확인사항</h3>
+      <ul class="checklist">
+        <li>청약 통장 가입 기간·예치금 확인</li>
+        <li>청약 자격(무주택 여부, 세대원 구성)</li>
+        <li>가점 점수 정확히 계산</li>
+        <li>해당 지역 거주 기간 요건</li>
+        <li>분양가상한제 적용 여부</li>
+        <li>전매 제한 기간 확인</li>
+        <li>실거주 의무 여부 확인</li>
+      </ul>
+    </div>
+
+    <!-- 관련 기사 -->
+    <div class="widget">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li>
+          <span class="tag">정책·규제</span>
+          <a href="#">동탄·기흥·구리 규제지역 지정 후 청약 변화</a>
+        </li>
+        <li>
+          <span class="tag">투자분석</span>
+          <a href="#">반세권 단지 입주 후 시세 흐름 분석</a>
+        </li>
+        <li>
+          <span class="tag">시장동향</span>
+          <a href="#">지방 미분양 10만 가구, 해소 가능성은?</a>
+        </li>
+        <li>
+          <span class="tag">법률·세금</span>
+          <a href="#">청약 당첨 후 세금 총정리 (취득세·양도세)</a>
+        </li>
+      </ul>
+    </div>
+
+  </aside>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="logo-footer">부동산<span>인사이트</span></div>
+  <p>© 2026 부동산인사이트. 본 사이트의 콘텐츠는 정보 제공 목적으로 작성되었습니다.</p>
+  <p style="margin-top:6px;">투자 결정 전 반드시 전문가와 상담하시기 바랍니다.</p>
+</footer>
+
+</body>
+</html>
