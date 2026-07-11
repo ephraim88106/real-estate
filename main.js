@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 190,
+    url: 'article_20260712_2_column_v2.html',
+    category: '칼럼',
+    title: '공급 절벽 + 보유세 강화 + 전세난… 2026 하반기 부동산, 지금 당신의 선택은?',
+    summary: '10명의 전문가 전원이 서울 집값 상승을 점쳤다. 그런데 이재명 정부는 세금으로 시장을 누르겠다고 한다. 수급 논리와 정책 논리가 정면 충돌하는 2026년 하반기, 당신은 어느 편에 서야 하는가.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집위원',
+    date: '2026-07-12',
+    title_en: 'Supply Cliff + Property Tax Hike + Jeonse Crunch… 2026 H2 Real Estate: What\'s Your Move?',
+    summary_en: 'All 10 experts predicted Seoul home price gains. Yet the Lee Jae-myung government plans to suppress the market through taxation. As supply-demand logic and policy logic collide head-on in H2 2026 — whose side should you be on?'
+  },
+  {
+    id: 189,
+    url: 'article_20260712_1_overseas_v2.html',
+    category: '해외',
+    title: '엔저·달러·신흥국… 2026 한국인 해외부동산 투자 지형도 완전 분석',
+    summary: '국내 규제가 강화되는 지금, 한국인의 시선은 세계로 향하고 있다. 미국의 모기지 금리 안정, 일본 엔저 지속, 동남아 고성장 시장이 맞물린 2026년 — 어디에, 어떻게 투자해야 하는가.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집부',
+    date: '2026-07-12',
+    title_en: 'Yen, Dollar, Emerging Markets… A Complete Analysis of the 2026 Korean Overseas Real Estate Investment Landscape',
+    summary_en: 'As domestic regulations tighten, Korean investors are turning their eyes abroad. With U.S. mortgage rates stabilizing, Japan\'s yen weakness persisting, and Southeast Asia\'s high-growth markets converging in 2026 — where and how should you invest?'
+  },
+  {
     id: 188,
     url: 'article_20260710_2_subscription_v2.html',
     category: '분양',
