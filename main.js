@@ -88,25 +88,25 @@ const articles = [
     id: 190,
     url: 'article_20260712_2_column_v2.html',
     category: '칼럼',
-    title: '공급 절벽 + 보유세 강화 + 전세난… 2026 하반기 부동산, 지금 당신의 선택은?',
-    summary: '10명의 전문가 전원이 서울 집값 상승을 점쳤다. 그런데 이재명 정부는 세금으로 시장을 누르겠다고 한다. 수급 논리와 정책 논리가 정면 충돌하는 2026년 하반기, 당신은 어느 편에 서야 하는가.',
+    title: '집값 오른다는데 나는 왜 못 사나 — 2026년 7월, 실수요자의 진짜 딜레마',
+    summary: '서울 아파트가 0.30% 또 올랐다. \'지금 사야 하나, 기다려야 하나.\' 매번 반복되는 이 질문에 전문가들은 어떤 답을 내놓는가. 2026년 하반기 시장 본질을 해부한다.',
     image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
-    author: '부동산인사이트 편집위원',
+    author: '부동산인사이트 편집팀',
     date: '2026-07-12',
-    title_en: 'Supply Cliff + Property Tax Hike + Jeonse Crunch… 2026 H2 Real Estate: What\'s Your Move?',
-    summary_en: 'All 10 experts predicted Seoul home price gains. Yet the Lee Jae-myung government plans to suppress the market through taxation. As supply-demand logic and policy logic collide head-on in H2 2026 — whose side should you be on?'
+    title_en: 'Why Can\'t I Buy Despite Rising Home Prices — The Real Dilemma for End-Users in July 2026',
+    summary_en: 'Seoul apartments rose another 0.30%. \'Should I buy now or wait?\' This question repeats endlessly. What answers do experts offer? A deep dive into the true nature of the H2 2026 market.'
   },
   {
     id: 189,
     url: 'article_20260712_1_overseas_v2.html',
     category: '해외',
-    title: '엔저·달러·신흥국… 2026 한국인 해외부동산 투자 지형도 완전 분석',
-    summary: '국내 규제가 강화되는 지금, 한국인의 시선은 세계로 향하고 있다. 미국의 모기지 금리 안정, 일본 엔저 지속, 동남아 고성장 시장이 맞물린 2026년 — 어디에, 어떻게 투자해야 하는가.',
+    title: '엔화 약세의 끝이 보인다 — 지금이 일본 부동산 \'마지막 기회\'인가',
+    summary: '엔화 약세와 오사카 IR 개발 호재가 겹친 2026년, 한국인 투자자들이 일본 부동산에 몰리고 있다. 진짜 기회인지, 아니면 위험한 착각인지 냉정하게 따져본다.',
     image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
-    author: '부동산인사이트 편집부',
+    author: '부동산인사이트 편집팀',
     date: '2026-07-12',
-    title_en: 'Yen, Dollar, Emerging Markets… A Complete Analysis of the 2026 Korean Overseas Real Estate Investment Landscape',
-    summary_en: 'As domestic regulations tighten, Korean investors are turning their eyes abroad. With U.S. mortgage rates stabilizing, Japan\'s yen weakness persisting, and Southeast Asia\'s high-growth markets converging in 2026 — where and how should you invest?'
+    title_en: 'The End of Yen Weakness Is in Sight — Is This the \'Last Chance\' for Japanese Real Estate?',
+    summary_en: 'With yen weakness overlapping Osaka IR development tailwinds in 2026, Korean investors are flocking to Japanese real estate. Is it a real opportunity, or a dangerous illusion? A cold-eyed assessment.'
   },
   {
     id: 188,
