@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>강남을 넘어선 성북·구로의 반란 — 서울 아파트 상승축이 바뀌고 있다 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #1A4D8F;
+    --accent-light: #d0e0f5;
+    --accent-dark: #0D2B55;
+    --text: #1a1a2e;
+    --text-sub: #444;
+    --bg: #f7f9fc;
+    --card-bg: #ffffff;
+    --border: #dde6f0;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+
+  /* NAV */
+  header {
+    background: var(--accent-dark);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px; height: 60px;
+  }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.35rem; font-weight: 900; color: #fff; text-decoration: none; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 4px; }
+  nav a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.82rem; padding: 6px 12px; border-radius: 4px; transition: all 0.2s; }
+  nav a:hover { background: rgba(255,255,255,0.12); color: #fff; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 72px 24px 60px;
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto; position: relative; }
+  .cat-tag {
+    display: inline-block;
+    background: var(--accent); color: #fff;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 4px 12px; border-radius: 20px; margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 900; color: #fff;
+    line-height: 1.35; margin-bottom: 18px;
+  }
+  .hero-meta { color: rgba(255,255,255,0.65); font-size: 0.83rem; display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-meta span::before { content: '·'; margin-right: 8px; }
+  .hero-meta span:first-child::before { content: ''; margin-right: 0; }
+
+  /* LAYOUT */
+  .page-wrap { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 900px) { .page-wrap { grid-template-columns: 1fr; } .sidebar { order: 2; } }
+
+  /* ARTICLE BODY */
+  article h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem; font-weight: 700; color: var(--accent-dark);
+    border-left: 4px solid var(--accent);
+    padding-left: 14px; margin: 36px 0 14px;
+  }
+  article p { margin-bottom: 18px; color: var(--text-sub); font-size: 0.97rem; line-height: 1.85; }
+  article ul { margin: 12px 0 20px 0; padding-left: 0; list-style: none; }
+  article ul li {
+    padding: 9px 12px 9px 32px; margin-bottom: 6px;
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: 6px; font-size: 0.93rem; color: var(--text-sub);
+    position: relative;
+  }
+  article ul li::before { content: '▸'; color: var(--accent); position: absolute; left: 12px; }
+
+  /* DATA BOXES */
+  .data-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0 32px; }
+  @media (max-width: 600px) { .data-row { grid-template-columns: 1fr; } }
+  .data-card {
+    background: var(--accent-light); border: 1px solid #b8d0ee;
+    border-radius: 10px; padding: 20px 16px; text-align: center;
+  }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.9rem; font-weight: 900; color: var(--accent); }
+  .data-card .label { font-size: 0.78rem; color: #5a7ca8; margin-top: 4px; }
+
+  /* QUOTE */
+  .quote-box {
+    background: #eef4fc; border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px; margin: 28px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic; font-size: 1.02rem;
+    color: var(--accent-dark); margin-bottom: 8px;
+  }
+  .quote-box cite { font-size: 0.78rem; color: #7a9ccc; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f0f0f0; border: 1px solid #d0d0d0;
+    border-radius: 8px; padding: 16px 20px;
+    font-size: 0.78rem; color: #777; margin-top: 40px; line-height: 1.6;
+  }
+
+  /* SIDEBAR */
+  .sidebar { display: flex; flex-direction: column; gap: 24px; }
+  .s-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .s-card h3 { font-family: 'Noto Serif KR', serif; font-size: 0.95rem; font-weight: 700; color: var(--accent-dark); border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 14px; }
+  .s-card ul { list-style: none; }
+  .s-card ul li { padding: 6px 0 6px 18px; border-bottom: 1px solid var(--border); font-size: 0.83rem; color: var(--text-sub); position: relative; }
+  .s-card ul li:last-child { border-bottom: none; }
+  .s-card ul li::before { content: '●'; color: var(--accent); position: absolute; left: 0; font-size: 0.6rem; top: 10px; }
+
+  /* RELATED */
+  .related-item { padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .related-item:last-child { border-bottom: none; }
+  .related-tag { font-size: 0.68rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+  .related-title { font-size: 0.85rem; color: var(--text); margin-top: 3px; line-height: 1.4; }
+
+  /* TABLE */
+  .region-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin: 8px 0; }
+  .region-table th { background: var(--accent); color: #fff; padding: 7px 10px; text-align: left; }
+  .region-table td { padding: 7px 10px; border-bottom: 1px solid var(--border); color: var(--text-sub); }
+  .region-table tr:nth-child(even) td { background: #f5f8fc; }
+  .up { color: #c0392b; font-weight: 700; }
+
+  /* FOOTER */
+  footer { background: var(--accent-dark); color: rgba(255,255,255,0.55); text-align: center; padding: 28px 24px; font-size: 0.8rem; }
+  footer strong { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">📈 시장동향</span>
+    <h1>강남을 넘어선 성북·구로의 반란<br>— 서울 아파트 상승축이 바뀌고 있다</h1>
+    <div class="hero-meta">
+      <span>2026년 7월 13일</span>
+      <span>부동산인사이트 편집팀</span>
+      <span>시장분석 · 주간동향</span>
+    </div>
+  </div>
+</section>
+
+<div class="page-wrap">
+  <article>
+
+    <!-- DATA BOXES -->
+    <div class="data-row">
+      <div class="data-card">
+        <div class="num">0.30%</div>
+        <div class="label">서울 아파트 주간 매매 상승률<br>(7월 1주, 7.6 기준)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">0.51%</div>
+        <div class="label">성북구 주간 상승률<br>서울 25개 자치구 중 1위</div>
+      </div>
+      <div class="data-card">
+        <div class="num">47.3%</div>
+        <div class="label">6월 아파트 상승거래 비중<br>수도권 견인</div>
+      </div>
+    </div>
+
+    <!-- 본문 시작 -->
+    <p>서울 아파트 시장의 지형이 바뀌고 있다. 불과 2년 전까지만 해도 강남3구(강남·서초·송파)가 견인하는 일극 상승이 서울 집값의 '공식'이었다면, 2026년 7월 들어 그 공식은 조용히 그러나 분명하게 무너지고 있다. 7월 첫째 주 통계에서 서울 상승률 1위는 성북구(0.51%)였고, 2위는 구로구(0.50%)였다. 강남구와 서초구는 이들보다 낮은 상승률을 기록했다. 단순한 이변이 아니다. 이것은 서울 부동산 시장의 구조적 무게중심 이동을 예고하는 신호탄으로 읽혀야 한다.</p>
+
+    <h2>숫자로 읽는 7월 1주 서울 아파트 시장</h2>
+    <p>한국부동산원이 발표한 7월 1주(7월 6일 기준) 주간 아파트 가격 동향에 따르면, 서울 전체 매매가격은 전주 대비 0.30% 상승했다. 이는 직전 주 0.27%에서 상승폭이 더 확대된 수치다. 전세가격도 0.31%로 매매가격 상승률에 맞먹는 강세를 유지하고 있다. 특히 주목할 점은 25개 자치구 전체가 상승으로 돌아선 시점이 불과 4개월 전임에도 불구하고, 상승 강도가 점점 넓어지고 있다는 사실이다.</p>
+
+    <p>수도권 전체로 시야를 넓히면, 수도권 0.22%(서울 0.30%, 경기 0.23%, 인천 0.03%)로 서울과 경기가 상승을 이끌고 있다. 6월 아파트 매매에서 상승거래 비중은 47.3%에 달했으며, 수도권이 핵심 견인 역할을 담당했다. 거래량 측면에서는 전월 대비 감소세가 나타났지만, 이는 계절적 요인(여름 비수기 진입)과 동탄·기흥·구리 규제지역 지정에 따른 심리적 위축이 복합적으로 작용한 결과로 해석된다.</p>
+
+    <h2>상승축 이동: 강남 → 강북·외곽</h2>
+    <p>이번 국면에서 가장 눈에 띄는 현상은 이른바 '상승축의 이동'이다. 2024~2025년 강남권 중심의 고가 아파트 상승이 주도하던 국면이 지나고, 이제 중저가 아파트가 밀집한 비강남권에서 더 가파른 상승률이 관측되고 있다.</p>
+
+    <p>강북 14개 자치구는 이번 주 평균 0.32%로 강남 11개구의 0.29%를 상회했다. 성북구(0.51%), 노원구(0.44%), 강북구(0.43%), 성동구(0.46%), 중랑구(0.37%) 등이 두드러진 성과를 보였다. 강남권에서는 강동구(0.43%), 송파구(0.42%)가 상위권을 유지했지만, 전통 강자인 강남구와 서초구는 오히려 중위권에 머물렀다.</p>
+
+    <div class="quote-box">
+      <p>"역세권과 학군지 중심의 선호 단지는 강남·강북 구분 없이 상승 압력을 받고 있지만, 이번 국면의 차이는 상대적 저평가 논리가 강북 외곽으로까지 확산됐다는 점입니다. 이른바 '갭 메우기' 장세의 전형적 특징이죠."</p>
+      <cite>— 부동산 시장 분석 전문가 (익명)</cite>
+    </div>
+
+    <h2>전세 시장의 동반 강세가 의미하는 것</h2>
+    <p>매매가 상승보다 주목해야 할 지표는 전세가격의 동반 강세다. 서울 전세가격은 같은 기간 0.31%로 매매가격 상승률과 거의 동일한 수준이다. 역세권·학군지·대단지 등 정주여건이 양호한 선호 단지를 중심으로 전세 수요가 지속되면서 상승 계약이 체결되고 있다.</p>
+
+    <p>전세가율(매매가 대비 전세가 비율)이 높아진다는 것은 두 가지를 의미한다. 첫째, 실수요 임차 수요가 건재하다는 것이다. 둘째, 갭투자 여건이 개선된다는 것이다. 갭투자를 차단하려는 정부의 토지거래허가구역 지정이 수도권 일부 지역에 국한된 상황에서, 서울 내 미지정 지역의 전세가율 상승은 또 다른 투자 수요를 자극할 수 있다. 정책의 풍선효과 논란이 예상되는 이유다.</p>
+
+    <h2>경기 남부로의 확산: 동탄에서 시작된 파급</h2>
+    <p>경기 지역은 0.23%의 주간 상승률을 기록했다. 동탄(화성시 동탄구)에서 시작된 강세 흐름이 용인 영통·수지, 수원 등 경기 남부 주요 지역으로 확산되는 모습이 뚜렷하다. 동탄은 7월 1일부터 투기과열지구로 지정됐음에도 불구하고 규제 이전까지의 매물 소진과 신규 수요 대기가 맞물려 당분간 가격 지지가 이어질 것으로 전망된다.</p>
+
+    <p>인천은 0.03%로 상대적으로 안정적인 흐름을 유지하고 있다. 공급 과잉 우려가 상존하는 검단·청라 신도시 지역의 약세가 전체 수치를 끌어내리고 있기 때문이다. 반면 연수구와 서구 일부 역세권 단지들은 소폭의 상승세를 이어갔다.</p>
+
+    <div class="quote-box">
+      <p>"거래량 감소는 단순한 수요 위축이 아닙니다. 규제 효과와 여름 비수기가 겹친 결과입니다. 매도자들은 더 높은 가격에 팔려는 의지를 굽히지 않고 있고, 매수자들은 규제 충격이 가라앉기를 기다리고 있습니다. 이런 '숨 고르기' 국면이 오히려 하반기 급등의 도화선이 될 수 있습니다."</p>
+      <cite>— 수도권 부동산 시장 관계자</cite>
+    </div>
+
+    <h2>하반기 시장 전망: 불안한 균형</h2>
+    <p>7월 현재 시장은 상승 모멘텀과 규제 변수가 공존하는 불안한 균형 상태에 있다. 상승 동력 측면에서 보면, 금리 인하 기대감(한국은행 기준금리 추가 인하 전망), 3기 신도시 입주 지연, GTX 개통 효과 등이 지속적으로 수요를 자극하고 있다. 반면 억제 변수로는 동탄·기흥·구리 규제지역 지정 확대, DSR 강화, 세무조사 예고제 등이 있다.</p>
+
+    <p>문제는 현재의 가격 상승이 실수요보다 기대심리에 의해 과도하게 부풀려진 부분이 있다는 점이다. 성북구나 구로구의 급등이 해당 지역의 펀더멘털 개선보다는 '강남을 놓친 수요자의 대안 쇼핑' 성격이 강하다면, 그 상승의 지속성은 제한될 수밖에 없다.</p>
+
+    <h2>실수요자·투자자를 위한 체크리스트</h2>
+    <ul>
+      <li><strong>현재 서울 25개 자치구 전체가 상승 국면</strong>이지만, 지역별 상승 강도와 속도는 상이하다. 단순히 '다 오른다'는 심리로 매수에 나서는 것은 위험하다.</li>
+      <li><strong>전세가율이 높은 단지는 갭투자 매력이 높지만</strong>, 토지거래허가구역 확대 추세를 감안하면 규제 리스크를 반드시 확인해야 한다.</li>
+      <li><strong>강북 외곽 지역의 급등은 '갭 메우기' 논리</strong>에 기반하므로, 해당 지역의 향후 공급 물량과 학군·교통 개선 계획을 면밀히 검토해야 한다.</li>
+      <li><strong>거래량 감소 국면에서의 가격 상승은 착시 효과</strong>일 수 있다. 매물 잠김 현상이 일시적인지, 구조적인지를 구분하는 눈이 필요하다.</li>
+      <li><strong>하반기 입주 물량 증가 지역</strong>(경기 외곽, 인천 일부)은 전세가 하락 → 역전세 위험이 있으므로 임대수익 목적의 매수는 신중을 기해야 한다.</li>
+      <li><strong>금리 인하 시나리오가 현실화될 경우</strong>, 매수 심리 강화로 현재 가격 수준이 오히려 저점이 될 수 있다는 점도 배제하지 말아야 한다.</li>
+    </ul>
+
+    <h2>결론: 분산되는 상승, 커지는 리스크</h2>
+    <p>2026년 7월 서울 아파트 시장의 핵심 키워드는 '확산'이다. 강남의 상승이 강북으로, 서울의 열기가 수도권 외곽으로 번지고 있다. 이것이 시장 건전성의 회복을 의미하는가, 아니면 거품의 팽창을 의미하는가에 대한 판단은 여전히 엇갈린다.</p>
+
+    <p>한 가지 분명한 것은, 이 확산 국면이 마무리될 때 시장이 어떻게 수렴하느냐에 따라 이미 매수한 사람과 관망 중인 사람의 명암이 크게 갈린다는 사실이다. 시장의 방향성에 베팅하기보다는 입지와 펀더멘털에 집중하는 투자 원칙이 어느 때보다 중요한 시점이다.</p>
+
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지:</strong> 본 에세이는 공개된 통계 자료와 뉴스 보도를 바탕으로 작성된 분석 글로, 특정 부동산 매수·매도·투자를 권유하는 것이 아닙니다. 부동산 투자는 개인의 재무 상황, 리스크 수용 범위, 시장 상황 등을 종합적으로 고려하여 판단하시기 바랍니다. 본 글의 내용은 정보 제공 목적에 한하며, 투자 결과에 대한 책임은 투자자 본인에게 있습니다.
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="s-card">
+      <h3>📌 핵심 요약</h3>
+      <ul>
+        <li>서울 아파트 7월 1주 0.30% 상승, 직전 주 대비 확대</li>
+        <li>성북구(0.51%)·구로구(0.50%) — 강남권 앞지르는 비강남 강세</li>
+        <li>서울 전세도 0.31% 동반 상승, 수요 견조</li>
+        <li>6월 상승거래 비중 47.3%, 수도권이 견인</li>
+        <li>거래량 감소는 계절·규제 복합 효과, 하반기 주목 필요</li>
+      </ul>
+    </div>
+
+    <div class="s-card">
+      <h3>📰 관련 기사</h3>
+      <div class="related-item">
+        <div class="related-tag">정책·규제</div>
+        <div class="related-title">동탄·기흥·구리 3중 규제 해부 — 갭투자 차단인가, 시장 왜곡인가</div>
+      </div>
+      <div class="related-item">
+        <div class="related-tag">투자분석</div>
+        <div class="related-title">비강남 아파트 '갭 메우기' 장세, 얼마나 더 갈 수 있나</div>
+      </div>
+      <div class="related-item">
+        <div class="related-tag">시장동향</div>
+        <div class="related-title">수도권 전세 시장 이상 신호 — 전세가율 상승의 두 얼굴</div>
+      </div>
+      <div class="related-item">
+        <div class="related-tag">분양·청약</div>
+        <div class="related-title">하반기 수도권 입주 물량 지역별 총정리</div>
+      </div>
+    </div>
+
+    <div class="s-card">
+      <h3>📊 주요 지역 주간 상승률</h3>
+      <table class="region-table">
+        <thead>
+          <tr><th>지역</th><th>주간 상승률</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>성북구</td><td class="up">+0.51%</td></tr>
+          <tr><td>성동구</td><td class="up">+0.46%</td></tr>
+          <tr><td>구로구</td><td class="up">+0.50%</td></tr>
+          <tr><td>노원구</td><td class="up">+0.44%</td></tr>
+          <tr><td>강동구</td><td class="up">+0.43%</td></tr>
+          <tr><td>강북구</td><td class="up">+0.43%</td></tr>
+          <tr><td>송파구</td><td class="up">+0.42%</td></tr>
+          <tr><td>경기 전체</td><td class="up">+0.23%</td></tr>
+          <tr><td>서울 전체</td><td class="up">+0.30%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> &nbsp;|&nbsp; 본 자료는 정보 제공 목적으로 작성되었으며 투자 권유가 아닙니다.<br>
+  © 2026 부동산인사이트. All rights reserved.
+</footer>
+
+</body>
+</html>
