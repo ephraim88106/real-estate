@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 192,
+    url: 'article_20260713_2_policy_v2.html',
+    category: '정책',
+    title: '동탄·기흥·구리 \'3중 규제\' 해부 — 갭투자 차단인가, 시장 왜곡인가?',
+    summary: '동탄·기흥·구리에 투기과열지구·조정대상지역·토지거래허가구역이 동시 발효됐다. 이재명 정부 출범 이후 가장 강력한 규제 패키지, 그 실효성을 냉정하게 해부한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 정책분석팀',
+    date: '2026-07-13',
+    title_en: 'Dissecting Dongtan·Giheung·Guri\'s Triple Regulation — Gap Investment Crackdown or Market Distortion?',
+    summary_en: 'Speculative overheating zone, adjustment-target area, and land transaction permit zone all took effect simultaneously. A cold-eyed assessment of the Lee Jae-myung government\'s strongest regulation package to date.'
+  },
+  {
+    id: 191,
+    url: 'article_20260713_1_market_v2.html',
+    category: '시장동향',
+    title: '강남을 넘어선 성북·구로의 반란 — 서울 아파트 상승축이 바뀌고 있다',
+    summary: '서울 아파트 7월 1주 0.30% 상승 속, 성북구(0.51%)·구로구(0.50%)가 강남을 앞질렀다. 강남 중심의 공식이 무너지고 비강남권이 새로운 상승축으로 부상하는 구조적 변화를 짚는다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-13',
+    title_en: 'Seongbuk and Guro Overtake Gangnam — Seoul\'s Apartment Rally Axis Is Shifting',
+    summary_en: 'Seoul apartments rose 0.30% in the first week of July. Seongbuk-gu (0.51%) and Guro-gu (0.50%) led the way, overtaking Gangnam. A structural analysis of non-Gangnam districts emerging as Seoul\'s new growth axis.'
+  },
+  {
     id: 190,
     url: 'article_20260712_2_column_v2.html',
     category: '칼럼',
