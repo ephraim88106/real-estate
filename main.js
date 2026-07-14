@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 194,
+    url: 'article_20260714_2_재개발재건축_v2.html',
+    category: '재개발',
+    title: '은마아파트 23년 만의 재건축 인가 — 서울 정비사업 속도전이 바꿀 강남의 미래',
+    summary: '서울시가 부시장급 공정 컨트롤타워를 세우고 31만 호 착공에 나섰다. 은마·잠실5단지 인가를 기폭제로 압구정까지 이어지는 강남 재건축 도미노를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-14',
+    title_en: 'Eunma Apartments Gets Reconstruction Approval After 23 Years — How Seoul\'s Redevelopment Race Will Reshape Gangnam',
+    summary_en: 'Seoul City established a vice-mayor-level project management control tower and launched 310,000 units for construction. Analyzing the Gangnam reconstruction domino effect from Eunma and Jamsil 5-danji approvals toward Apgujeong.'
+  },
+  {
+    id: 193,
+    url: 'article_20260714_1_분양청약_v2.html',
+    category: '분양',
+    title: '서울 아파트 분양가 3.3㎡당 6,355만원 시대 — 지금 청약해야 하나, 버텨야 하나',
+    summary: '2026년 7월 서울 신규 분양가가 역대 최고치를 돌파했다. 3년 만에 66% 폭등한 분양가 속에서 실수요자가 선택해야 할 청약 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-14',
+    title_en: 'Seoul Apartment Presale Price Hits 63.55 Million Won per 3.3㎡ — Subscribe Now or Wait It Out?',
+    summary_en: 'Seoul\'s new apartment presale price broke an all-time high in July 2026. A deep analysis of subscription strategies for end-users amid a 66% price surge in just three years.'
+  },
+  {
     id: 192,
     url: 'article_20260713_2_policy_v2.html',
     category: '정책',
