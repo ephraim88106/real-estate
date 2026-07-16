@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 196,
+    url: 'article_20260715_2_overseas_v2.html',
+    category: '해외',
+    title: '도쿄 집값 1년 새 21% 폭등…일본이 한국 외국인 토허제를 배우는 이유',
+    summary: '도쿄 아파트 평균가가 1년 새 21% 급등했다. 엔저와 외국인 매수세에 놀란 일본 정부가 한국의 외국인 토지거래허가제를 벤치마킹하고 있다. 해외 부동산 투자에 시사하는 바를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-15',
+    title_en: 'Tokyo Home Prices Surge 21% in a Year — Why Japan Is Benchmarking Korea\'s Foreign Land Transaction Permit System',
+    summary_en: 'Tokyo apartment prices jumped 21% in one year. Alarmed by yen weakness and a surge in foreign buying, Japan is studying Korea\'s foreign land transaction permit system. An analysis of the implications for overseas real estate investors.'
+  },
+  {
+    id: 195,
+    url: 'article_20260715_1_investment_v2.html',
+    category: '투자분석',
+    title: '경매 낙찰가율 101.7% 돌파…스트레스 DSR 3단계 시대, 진짜 투자 기회는 어디에 있나',
+    summary: '서울 아파트 경매 낙찰가율이 3개월 연속 100%를 넘어섰다. 스트레스 DSR 3단계가 시행된 현실에서 부동산 투자의 옥석을 가리는 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-15',
+    title_en: 'Auction Closing Rate Breaks 101.7% — Where Are the Real Investment Opportunities in the Stress DSR Phase 3 Era?',
+    summary_en: 'Seoul apartment auction closing rates have exceeded 100% for three consecutive months. With Stress DSR Phase 3 now in effect, an in-depth analysis of strategies to separate winners from losers in today\'s real estate investment landscape.'
+  },
+  {
     id: 194,
     url: 'article_20260714_2_재개발재건축_v2.html',
     category: '재개발',
