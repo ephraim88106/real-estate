@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 198,
+    url: 'article_20260716_2_market_v2.html',
+    category: '시장동향',
+    title: '규제를 비웃는 서울 집값 — 74주 연속 상승, 지금 어디까지 왔나',
+    summary: '서울 아파트 74주 연속 상승, 성북(0.51%)·구로(0.50%)가 강남을 앞지르는 상승 확산이 진행 중이다. 수도권 신축 분양가 1년 새 27% 급등, 상승거래 비중 47.3% — 데이터로 해부하는 2026년 7월 부동산 시장 현황.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-16',
+    title_en: 'Seoul Home Prices Defy Regulations — Dissecting 74 Consecutive Weeks of Gains',
+    summary_en: 'Seoul apartments rise for 74 consecutive weeks, with Seongbuk (0.51%) and Guro (0.50%) outpacing Gangnam in a spreading rally. Metropolitan new apartment prices surge 27% year-on-year, and 47.3% of deals are at rising prices — a data-driven dissection of Korea\'s real estate market in July 2026.'
+  },
+  {
+    id: 197,
+    url: 'article_20260716_1_column_v2.html',
+    category: '칼럼',
+    title: '공급 절벽과 세제 개편의 교차로에서 — 2026년 하반기 부동산 시장의 딜레마',
+    summary: '공급 절벽과 세제 개편이 교차하는 2026년 하반기, 서울 아파트는 74주 연속 상승 중이다. 규제가 오히려 매수를 자극하는 역설, 전세의 매매 전환 압력, 세제 불확실성이 맞물린 세 가지 구조적 딜레마를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-16',
+    title_en: 'At the Crossroads of Supply Cliff and Tax Reform — The H2 2026 Real Estate Market Dilemma',
+    summary_en: 'In the second half of 2026, with a supply cliff and tax reform converging, Seoul apartments have risen for 74 consecutive weeks. Dissecting three structural dilemmas: regulations that paradoxically stimulate buying, pressure to convert jeonse to ownership, and mounting tax uncertainty.'
+  },
+  {
     id: 196,
     url: 'article_20260715_2_overseas_v2.html',
     category: '해외',
