@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 200,
+    url: 'article_20260717_2_subscription_v2.html',
+    category: '분양',
+    title: '하반기 분양 \'큰 장\'이 온다 — 방배·흑석·3기 신도시, 내 청약 전략은?',
+    summary: '2026 하반기 수도권 분양 8.8만 가구 — 물량은 줄었지만 \'옥석\'은 더 선명해졌다. 방배·흑석 정비사업, 3기 신도시 본청약, 분양가 상한제 단지까지 — 하반기 청약 시장 완전 해부.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-17',
+    title_en: 'H2 2026 Big Launch Season — Bangbae, Heukseok & 3rd New Towns: Your Subscription Strategy',
+    summary_en: 'Metropolitan Seoul sees 88,000 new units in H2 2026 — fewer in volume but clearer in quality. A full breakdown of the Bangbae·Heukseok redevelopment launches, 3rd new-town main subscriptions, and price-capped developments to watch.'
+  },
+  {
+    id: 199,
+    url: 'article_20260717_1_policy_v2.html',
+    category: '정책',
+    title: '규제 폭탄 1개월 후 — 동탄·기흥·구리, 집값은 잡혔나 잡히지 않았나',
+    summary: '3중 규제로 묶은 경기 핵심 지역, 시장의 반응은 정부 기대와 달랐다. 동탄·기흥·구리의 실거래 데이터로 규제 효과를 검증하고, 하반기 추가 규제 가능성을 진단한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-17',
+    title_en: 'One Month After the Regulation Blitz — Did Prices Cool in Dongtan, Giheung & Guri?',
+    summary_en: 'Triple-regulated Gyeonggi hot spots responded differently than the government expected. Verified using actual transaction data from Dongtan, Giheung and Guri — with a diagnosis of potential additional restrictions in H2.'
+  },
+  {
     id: 198,
     url: 'article_20260716_2_market_v2.html',
     category: '시장동향',
