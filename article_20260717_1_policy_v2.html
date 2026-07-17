@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>규제 폭탄 1개월 후 — 동탄·기흥·구리, 집값은 잡혔나 잡히지 않았나 | 부동산인사이트</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: #222; background: #f5f5f0; line-height: 1.8; }
+
+  /* HEADER */
+  header {
+    background: #0D2B55;
+    position: sticky; top: 0; z-index: 100;
+    padding: 0 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .header-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .logo {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: #fff; text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 28px; }
+  nav a {
+    color: rgba(255,255,255,0.8); text-decoration: none;
+    font-size: 0.88rem; font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: #F4A52D; }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);
+    padding: 64px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 60% 40%, rgba(200,64,26,0.18) 0%, transparent 70%);
+  }
+  .hero-inner { max-width: 800px; margin: 0 auto; position: relative; }
+  .category-tag {
+    display: inline-block;
+    background: #C8401A;
+    color: #fff;
+    font-size: 0.78rem; font-weight: 700;
+    padding: 4px 14px; border-radius: 20px;
+    letter-spacing: 0.5px; margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2.1rem; font-weight: 700;
+    color: #fff; line-height: 1.4;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .hero-sub {
+    color: rgba(255,255,255,0.8);
+    font-size: 1rem; margin-bottom: 24px;
+  }
+  .hero-meta {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.82rem;
+  }
+  .hero-meta span { margin: 0 8px; }
+
+  /* LAYOUT */
+  .container {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 300px;
+    gap: 32px; padding: 40px 24px;
+  }
+
+  /* ARTICLE */
+  article { min-width: 0; }
+
+  /* DATA BOX */
+  .data-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 16px; margin-bottom: 36px;
+  }
+  .data-card {
+    background: #fff2ef;
+    border: 1px solid #f0c4b8;
+    border-radius: 10px; padding: 20px 16px;
+    text-align: center;
+  }
+  .data-card .num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.9rem; font-weight: 700;
+    color: #C8401A; line-height: 1.1;
+    display: block; margin-bottom: 6px;
+  }
+  .data-card .label {
+    font-size: 0.8rem; color: #666; line-height: 1.4;
+  }
+
+  /* BODY TEXT */
+  .body-text { background: #fff; border-radius: 12px; padding: 36px 40px; }
+  .body-text p {
+    font-size: 1rem; color: #333; margin-bottom: 20px;
+    line-height: 1.9;
+  }
+  .body-text h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.25rem; font-weight: 700;
+    color: #0D2B55;
+    border-left: 4px solid #C8401A;
+    padding-left: 14px;
+    margin: 36px 0 16px;
+  }
+
+  /* QUOTE BOX */
+  .quote-box {
+    background: #fff8f6;
+    border-left: 4px solid #C8401A;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin: 28px 0;
+  }
+  .quote-box p {
+    font-family: 'Noto Serif KR', serif;
+    font-style: italic;
+    font-size: 1.05rem; color: #4a1a0a;
+    margin: 0;
+    line-height: 1.8;
+  }
+  .quote-box cite {
+    display: block; margin-top: 10px;
+    font-style: normal; font-size: 0.82rem;
+    color: #C8401A; font-weight: 600;
+  }
+
+  /* LIST */
+  .insight-list {
+    background: #fff2ef;
+    border-radius: 10px; padding: 24px 28px;
+    margin: 20px 0;
+  }
+  .insight-list ul { padding-left: 0; list-style: none; }
+  .insight-list li {
+    padding: 10px 0 10px 28px;
+    position: relative;
+    border-bottom: 1px solid #f0c4b8;
+    font-size: 0.95rem; color: #333;
+    line-height: 1.7;
+  }
+  .insight-list li:last-child { border-bottom: none; }
+  .insight-list li::before {
+    content: '▶';
+    position: absolute; left: 0;
+    color: #C8401A; font-size: 0.7rem;
+    top: 14px;
+  }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: #f5f5f5; border-radius: 8px;
+    padding: 18px 22px; margin-top: 36px;
+    font-size: 0.8rem; color: #777; line-height: 1.7;
+  }
+
+  /* SIDEBAR */
+  aside { min-width: 0; }
+  .sidebar-card {
+    background: #fff; border-radius: 12px;
+    padding: 24px; margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .sidebar-card h3 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1rem; font-weight: 700;
+    color: #0D2B55; margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #C8401A;
+  }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+    font-size: 0.88rem; color: #333;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1.6;
+  }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before {
+    content: '●';
+    position: absolute; left: 0;
+    color: #C8401A; font-size: 0.6rem;
+    top: 11px;
+  }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.88rem;
+  }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { color: #333; text-decoration: none; line-height: 1.5; }
+  .related-list a:hover { color: #C8401A; }
+  .related-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    background: #fff2ef;
+    color: #C8401A;
+    padding: 2px 8px; border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  /* Compare table */
+  .compare-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+  .compare-table th {
+    background: #0D2B55; color: #fff;
+    padding: 8px 10px; text-align: center;
+  }
+  .compare-table td {
+    padding: 8px 10px; border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+  .compare-table tr:nth-child(even) td { background: #fafafa; }
+  .highlight-cell { color: #C8401A; font-weight: 700; }
+
+  /* FOOTER */
+  footer {
+    background: #0D2B55; color: rgba(255,255,255,0.6);
+    text-align: center; padding: 32px 24px;
+    font-size: 0.82rem; margin-top: 60px;
+  }
+  footer strong { color: #F4A52D; }
+
+  @media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+    .data-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 1.5rem; }
+    nav { display: none; }
+    .body-text { padding: 24px 20px; }
+  }
+
+  /* HASHTAGS */
+  .hashtag-wrap { margin-top: 28px; }
+  .hashtag-wrap span {
+    display: inline-block;
+    background: #0D2B55; color: rgba(255,255,255,0.85);
+    padding: 4px 12px; border-radius: 16px;
+    font-size: 0.78rem; margin: 4px 4px 4px 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">정책·규제 분석</span>
+    <h1>규제 폭탄 1개월 후 — 동탄·기흥·구리, 집값은 잡혔나 잡히지 않았나</h1>
+    <p class="hero-sub">3중 규제로 묶은 경기 핵심 지역, 시장의 반응은 정부 기대와 달랐다</p>
+    <div class="hero-meta">
+      <span>📅 2026년 7월 17일</span>
+      <span>|</span>
+      <span>✍️ 부동산인사이트 편집부</span>
+      <span>|</span>
+      <span>⏱ 읽기 약 9분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+
+    <!-- DATA BOX -->
+    <div class="data-grid">
+      <div class="data-card">
+        <span class="num">40%</span>
+        <span class="label">규제지역 내 LTV 상한<br>(비규제 70%에서 강화)</span>
+      </div>
+      <div class="data-card">
+        <span class="num">+0.30%</span>
+        <span class="label">규제 후에도 계속된<br>서울 아파트 주간 상승률</span>
+      </div>
+      <div class="data-card">
+        <span class="num">2억 원</span>
+        <span class="label">25억 초과 주택<br>주담대 최대 한도</span>
+      </div>
+    </div>
+
+    <div class="body-text">
+
+      <p>2026년 6월 30일, 국토교통부는 예고 없이 경기도 화성시 동탄구, 용인시 기흥구, 구리시를 투기과열지구 및 조정대상지역으로 동시 지정했다. 경기도는 같은 날 세 지역을 토지거래허가구역으로도 추가 묶어 이른바 '3중 규제'를 완성했다. 정부는 "집값 급등에 대한 단호한 대응"이라고 자신했다. 그로부터 약 2주, 시장은 과연 정부의 기대에 응했을까.</p>
+
+      <p>결론부터 말하면, 짧지 않다. 동탄·기흥 일대에서는 규제 발표 직후 매물이 일시 증가하고 호가가 소폭 조정되는 모습이 나타났지만, 서울 아파트 매매가격은 오히려 같은 기간 상승폭을 키웠다. 7월 첫 주 서울 아파트 매매지수 주간 변동률은 0.30%를 기록했고, 전셋값 상승률도 0.31%까지 올랐다. 규제 풍선이 서울로 몰린 셈이다.</p>
+
+      <h2>왜 동탄·기흥·구리였나 — 지정 근거 해부</h2>
+
+      <p>국토부가 이 세 지역을 규제지역으로 묶은 근거는 주택법령상 '최근 3개월 주택 가격 상승률이 해당 시·도 소비자물가 상승률의 1.3배 초과'라는 조건이었다. 화성 동탄은 삼성전자 반도체 클러스터 수혜 기대감으로 거래가격이 급등했고, 기흥구는 SK하이닉스 확장 발표 이후 외지인 수요가 몰렸다. 구리는 서울 접경 지역 특성상 강북 수요 이전의 '베드타운 프리미엄'이 붙었다.</p>
+
+      <div class="quote-box">
+        <p>"이번 지정은 시장이 요구한 것이 아니라, 지표가 요구한 결과입니다. 물가 대비 1.3배라는 기계적 기준을 충족했기 때문에 지정된 것이지, 실제 수급 불균형이 해소된 것은 아닙니다."</p>
+        <cite>— 부동산 정책 전문가 (익명)</cite>
+      </div>
+
+      <p>반도체 산업 호황이 배후 수요를 만들고, 수요는 가격을 밀어 올리는 구조다. 규제는 수요를 억제할 수는 있어도 배후 산업 기반을 없애지는 못한다. 이것이 이번 규제의 근본적인 딜레마다.</p>
+
+      <h2>3중 규제의 실제 내용 — 무엇이 달라지나</h2>
+
+      <p>투기과열지구 지정으로 LTV는 40%로 낮아졌다. 비규제지역에서 시세의 70%까지 빌릴 수 있었던 것을 감안하면 절반 수준 이하로 떨어진 셈이다. 주담대 한도도 단계적으로 제한된다. 시가 15억 원 이하는 6억 원, 15억 초과~25억 이하는 4억 원, 25억 초과는 단 2억 원까지만 대출이 가능하다.</p>
+
+      <p>토지거래허가구역 지정의 파급력은 더 크다. 해당 구역 내 주택을 매수하면 2년간 실거주 의무가 자동으로 부과된다. 거주하지 않을 경우 이행강제금이 부과되고 허가 자체가 취소될 수 있어, 갭투자(전세를 끼고 매수)는 사실상 차단된다. 임대 수익을 기대한 투자 수요는 진입이 극도로 어려워진 셈이다.</p>
+
+      <div class="quote-box">
+        <p>"토지거래허가구역 지정은 단기 투기 수요에는 확실한 장벽입니다. 그러나 2년이라는 실거주 의무가 끝나는 순간, 억눌렸던 투자 수요가 한꺼번에 터질 위험도 배제할 수 없습니다."</p>
+        <cite>— 주택시장 분석가 (익명)</cite>
+      </div>
+
+      <h2>규제 이후의 역설 — 서울 집값 상승폭은 왜 커졌나</h2>
+
+      <p>경기 3곳에 규제가 집중되자 매수 수요의 일부는 서울로 방향을 틀었다. 규제 지정 이후 서울 아파트 거래량은 단기적으로 늘었고, 특히 오세훈 서울시장이 공개적으로 언급한 바와 같이 지난 1년간 서울 집값은 이미 13.1% 상승한 상태였다. 투기 수요를 경기 특정 지역에서 막아봤자 서울이라는 더 큰 그릇으로 흘러드는 '풍선 효과'가 이번에도 반복된 것이다.</p>
+
+      <p>강남·서초·송파 3구는 이미 투기과열지구에 묶여 있음에도 불구하고, 7월 둘째 주 기준 송파구만 0.34%의 주간 상승률을 기록했다. 강남구와 서초구는 상승폭이 소폭 줄었지만, 여전히 플러스 영역을 유지하고 있다. "더 오르기 전에 지금이라도 사야 한다"는 심리가 규제 효과를 상쇄하고 있는 것이다.</p>
+
+      <h2>정책 평가 — 이번 규제의 구조적 한계</h2>
+
+      <p>이번 3중 규제의 정책적 의도는 선명하다. 국지적 집값 급등을 차단하고, 갭투자를 원천 봉쇄하고, 대출을 통한 레버리지 투기를 억제하는 것이다. 그 수단도 합법적이고 명확하다. 그러나 구조적 한계도 분명하다.</p>
+
+      <p>첫째, 수요를 억제할 뿐 공급을 늘리지는 못한다. 동탄·기흥 지역의 신규 아파트 공급은 이미 도시 개발 일정에 묶여 있어 단기에 늘리기 어렵다. 규제로 수요를 억누르는 동안 신규 공급이 뒤따르지 않으면, 규제 해제 후 반등 폭이 더 커질 수 있다. 둘째, 실수요자 피해가 불가피하다. LTV 40% 제한은 투기 수요뿐 아니라 자금이 부족한 청년·신혼부부 실수요자에게도 동일하게 적용된다. 정책의 칼날이 투기꾼만 겨냥하지 못하는 구조적 문제다.</p>
+
+      <h2>실수요자·투자자를 위한 시사점</h2>
+
+      <div class="insight-list">
+        <ul>
+          <li>동탄·기흥·구리 지역 매수 계획이 있다면 LTV 40% 한도를 기준으로 자금 계획을 전면 재검토해야 한다. 기존 비규제 기준(LTV 70%)으로 세웠던 계획은 무효다.</li>
+          <li>토지거래허가구역 내 매수 시 2년 실거주 의무를 반드시 이행해야 한다. 전세를 끼고 임대 수익을 기대하는 방식은 허가 취소 위험이 있다.</li>
+          <li>풍선 효과로 서울 집값 추가 상승 가능성이 높아졌다. 서울 매수를 고려 중이었다면 시기를 앞당길지 검토할 필요가 있다.</li>
+          <li>규제지역에서는 다주택자의 취득세·양도세 부담이 가중된다. 다주택 보유 중인 경우 세금 포지션을 먼저 점검해야 한다.</li>
+          <li>규제의 효력은 일시적일 수 있다. 배후 산업 기반(반도체 클러스터)이 건재한 한, 중장기 수요는 유지될 가능성이 크다. 단기 규제 효과로 만들어진 일시적 조정 국면이 매수 기회가 될 수도 있다.</li>
+        </ul>
+      </div>
+
+      <h2>결론 — 규제는 시작이지 끝이 아니다</h2>
+
+      <p>동탄·기흥·구리의 3중 규제는 강도 높고 분명하다. 단기적으로 투기성 레버리지 매수를 억제하는 데는 효과가 있을 것이다. 그러나 시장은 이미 한 수 앞을 읽고 있다. 규제를 피해 서울로 들어가거나, 규제가 풀리는 시점을 기다리며 잠복하거나, 아니면 규제 바깥의 인근 지역을 공략하는 방식으로 수요는 이동한다.</p>
+
+      <p>정부가 진정으로 집값 안정을 원한다면, 규제 뒤에 반드시 따라야 할 것이 있다. 공급이다. 투기 수요를 막는 동안 신규 주택 공급 일정을 앞당기고, 3기 신도시 물량이 예정대로 시장에 나오도록 행정력을 집중해야 한다. 규제만으로는 시장의 방향을 영구히 바꾸지 못한다. 수급이 균형을 찾을 때 비로소 안정은 지속 가능해진다.</p>
+
+      <div class="hashtag-wrap">
+        <span>#동탄규제지역</span>
+        <span>#기흥투기과열지구</span>
+        <span>#구리토지거래허가</span>
+        <span>#부동산정책2026</span>
+        <span>#LTV40</span>
+        <span>#풍선효과</span>
+        <span>#갭투자차단</span>
+        <span>#주담대한도</span>
+      </div>
+
+      <div class="disclaimer">
+        <strong>※ 면책 고지:</strong> 본 기사는 공개된 정책 자료와 시장 데이터를 기반으로 작성된 분석·의견 기사입니다. 특정 부동산 상품에 대한 투자를 권유하거나 보장하지 않습니다. 실제 투자 결정 시에는 반드시 전문가의 개별 상담을 받으시기 바랍니다. 부동산 시장은 다양한 변수에 의해 예측과 다를 수 있으며, 손실 위험이 존재합니다.
+      </div>
+
+    </div>
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>동탄·기흥·구리 7.1부터 투기과열지구·조정대상지역·토허구역 3중 규제</li>
+        <li>LTV 70% → 40% 강화, 25억 초과 주택 주담대 2억 원 상한</li>
+        <li>토허구역 매수 시 2년 실거주 의무, 갭투자 원천 차단</li>
+        <li>규제 효과 불확실 — 서울 아파트 오히려 주간 +0.30% 상승</li>
+        <li>풍선 효과·공급 부족 해결 없이는 중장기 집값 안정 어렵다</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📰 관련 기사</h3>
+      <ul class="related-list">
+        <li>
+          <span class="related-tag">시장동향</span><br>
+          <a href="#">규제에도 오른 서울 집값, 7월 상승폭 0.30%로 확대</a>
+        </li>
+        <li>
+          <span class="related-tag">투자분석</span><br>
+          <a href="#">동탄 규제 이후 인근 오산·평택 매수 문의 증가</a>
+        </li>
+        <li>
+          <span class="related-tag">법률·세금</span><br>
+          <a href="#">규제지역 다주택자 취득세·양도세 완벽 정리</a>
+        </li>
+        <li>
+          <span class="related-tag">칼럼</span><br>
+          <a href="#">반도체 클러스터 수혜, 규제 이후에도 유효한가</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📊 규제 지역 대출 한도 비교</h3>
+      <table class="compare-table">
+        <thead>
+          <tr><th>주택 시가</th><th>규제 전</th><th>규제 후</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>~15억</td><td>10.5억</td><td class="highlight-cell">6억</td></tr>
+          <tr><td>15~25억</td><td>17.5억</td><td class="highlight-cell">4억</td></tr>
+          <tr><td>25억 초과</td><td>제한적</td><td class="highlight-cell">2억</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.75rem;color:#888;margin-top:10px;">※ LTV 70% 기준 추정치 vs 규제 후 상한, 실제 한도는 DSR·소득에 따라 상이</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p><strong>부동산인사이트</strong> · 전문가 분석으로 읽는 대한민국 부동산</p>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+</footer>
+
+</body>
+</html>
