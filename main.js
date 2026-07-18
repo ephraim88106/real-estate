@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 202,
+    url: 'article_20260718_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '23년의 기다림이 끝났다: 은마 인가부터 1기 신도시 2차 경쟁까지, 재건축 지형이 바뀐다',
+    summary: '은마아파트가 23년 만에 사업시행계획 인가를 받아 2028년 착공 가시권에 들어왔다. 동시에 1기 신도시 분당 2차 선도지구 경쟁이 본격화되며 정비사업 지형이 크게 바뀌고 있다. 이주 수요와 분담금이 핵심 변수다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-18',
+    title_en: '23 Years of Waiting Ends: From Eunma Apartment Approval to 1st-Generation New Town Redevelopment Battles',
+    summary_en: 'Eunma Apartment received its construction permit after 23 years, with 2028 groundbreaking now in sight. The 2nd-round new town redevelopment competition is also heating up. Migration demand and contribution fees are the key variables.'
+  },
+  {
+    id: 201,
+    url: 'article_20260718_2_investment_v2.html',
+    category: '투자',
+    title: '감정가보다 13% 더 썼다: 서울 소형 아파트 경매 과열, 지금 사도 되는가',
+    summary: '서울 소형 아파트 경매 낙찰가율이 112.8%를 돌파했다. 감정가 대비 13% 초과 지불은 할인 매수 매력 소진을 의미한다. 2026년 하반기 서울 부동산 투자 전략을 옥석 가리기 관점에서 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-18',
+    title_en: 'Paying 13% Above Appraisal: Is Seoul Small Apartment Auction Market Overheated?',
+    summary_en: 'Seoul\'s small apartment auction price ratio hit 112.8%. Overpaying 13% above appraisal signals the end of auction bargains. We analyze 2H 2026 investment strategy from a selective filtering perspective.'
+  },
+  {
     id: 200,
     url: 'article_20260717_2_subscription_v2.html',
     category: '분양',
