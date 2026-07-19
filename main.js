@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 204,
+    url: 'article_20260719_1_overseas_v2.html',
+    category: '해외',
+    title: '엔화의 역설: 일본·미국 부동산에 올인하는 한국 투자자들, 기회인가 함정인가?',
+    summary: '엔화 약세와 미국 금리 하락으로 해외 부동산에 눈을 돌리는 한국 투자자가 급증하고 있다. 도쿄·오사카·미국 선벨트의 투자 매력과 환율·법적 리스크를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-19',
+    title_en: 'The Yen Paradox: Are Korean Investors Betting Everything on Japanese and US Real Estate?',
+    summary_en: 'Korean investors are flocking to overseas real estate amid yen weakness and US rate cuts. This analysis covers Tokyo, Osaka, and US markets alongside key currency and legal risks.'
+  },
+  {
+    id: 203,
+    url: 'article_20260719_2_column_v2.html',
+    category: '칼럼',
+    title: '공급절벽·전세난·실수요... 서울 집값이 멈추지 않는 3가지 이유',
+    summary: '2026년 하반기 서울 부동산은 공급 절벽, 전세난 심화, 실수요자 매수 유입이라는 삼중 구조가 집값을 지탱한다. 전문가 10인이 입을 모은 구조적 원인과 실수요자 대응 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-19',
+    title_en: 'Three Reasons Seoul Home Prices Won\'t Stop Rising: Supply Cliff, Rent Crisis, Real Demand',
+    summary_en: 'Seoul\'s H2 2026 apartment market is propped up by a triple structure: supply shortage, worsening rent crisis, and end-user demand. Ten experts explain the structural causes and buyer strategies.'
+  },
+  {
     id: 202,
     url: 'article_20260718_1_redevelopment_v2.html',
     category: '재개발',
