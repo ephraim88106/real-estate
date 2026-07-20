@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 206,
+    url: 'article_20260720_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 75주 연속 상승…강북·역세권 중심 \'불꽃 상승\', 언제까지 가나?',
+    summary: '서울 아파트 매매가격이 75주 연속 상승세를 이어가며 역대 최장 기록을 향해 달리고 있다. 강북권이 강남권 상승률을 앞지르는 이례적 역전 현상과 대단지·역세권 중심 매수세를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-20',
+    title_en: 'Seoul Apartments Rise for 75 Consecutive Weeks — Will Gangbuk\'s Surge Ever Stop?',
+    summary_en: 'Seoul apartment prices have extended their streak to 75 consecutive weeks of gains, closing in on the all-time record. An unprecedented reversal sees northern Seoul outpacing Gangnam, driven by transit-adjacent large-complex demand.'
+  },
+  {
+    id: 205,
+    url: 'article_20260720_2_policy_v2.html',
+    category: '정책',
+    title: '집값은 그대로, 빚만 못 냈다 — 6.27대책·스트레스DSR 3단계 1년, 냉정한 성적표',
+    summary: '이재명 정부의 6.27 부동산 대책과 스트레스 DSR 3단계 시행 1년을 냉정하게 평가한다. 대출 한도는 줄었지만 집값은 75주째 오르고 있는 역설과 공급 없는 수요 억제 정책의 한계를 짚는다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-20',
+    title_en: 'Debt Blocked, Prices Unchanged — A One-Year Report Card on Korea\'s 6.27 Policy and Stress DSR Stage 3',
+    summary_en: 'A critical review of the Lee Jae-myung government\'s landmark 6.27 real estate measures and Stress DSR Stage 3 one year on. Loan limits shrank but home prices kept rising for 75 weeks — exposing the limits of demand suppression without supply expansion.'
+  },
+  {
     id: 204,
     url: 'article_20260719_1_overseas_v2.html',
     category: '해외',
