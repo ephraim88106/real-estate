@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 208,
+    url: 'article_20260721_1_subscription_v2.html',
+    category: '분양',
+    title: '브랜드만 살아남는다: 2026 하반기 청약시장 양극화의 본질과 생존 전략',
+    summary: '하이엔드 브랜드 경쟁률 20.31대 1, 비브랜드 2.17대 1. 2026년 하반기 청약시장은 브랜드·입지·시공 안정성을 기준으로 극단적 쏠림이 현실화됐다. 분양가 상한제의 역설과 진짜 청약 생존 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-21',
+    title_en: 'Only Brands Survive: The True Nature of 2026 H2 Subscription Market Polarization',
+    summary_en: 'With premium brand competition at 20.31:1 vs non-brand at 2.17:1, the 2026 second-half subscription market has seen extreme polarization based on brand, location, and construction stability.'
+  },
+  {
+    id: 207,
+    url: 'article_20260721_2_reconstruction_v2.html',
+    category: '재개발',
+    title: '23년 만에 깨어난 강남 재건축의 신호탄: 은마·잠실5단지 인가가 가져올 시장 대변혁',
+    summary: '은마아파트와 잠실주공5단지가 7월 나란히 사업시행계획인가를 받으며 강남 재건축 시대가 열렸다. 1만2천 가구 재편이 몰고 올 이주 충격·공급 변화·투자 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-21',
+    title_en: 'Gangnam Redevelopment Awakens After 23 Years: The Market Upheaval From Eunma and Jamsil5 Approval',
+    summary_en: 'Eunma Apartments and Jamsil Jugong Complex 5 received project implementation approvals in July, marking the dawn of Gangnam\'s reconstruction era after 23 years of delays.'
+  },
+  {
     id: 206,
     url: 'article_20260720_1_market_v2.html',
     category: '시장동향',
