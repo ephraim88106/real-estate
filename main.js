@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 210,
+    url: 'article_20260722_1_investment_v2.html',
+    category: '투자',
+    title: '서울 아파트, 지금 사면 남는 장사? 2026 하반기 투자 수익률 완전 분석',
+    summary: '경매 낙찰가율 하락과 공급 부족이 공존하는 2026년 하반기 서울 아파트 투자 수익률을 분석하고, 세금과 금융비용을 감안한 실질 수익률 계산법과 지역별 투자 전략을 제시합니다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-22',
+    title_en: 'Is Buying Seoul Apartments Now a Good Deal? Full Investment Return Analysis for H2 2026',
+    summary_en: 'We analyze Seoul apartment investment returns in H2 2026 amid falling auction rates and supply shortage, providing real return calculations after taxes and financial costs along with regional investment strategies.'
+  },
+  {
+    id: 209,
+    url: 'article_20260722_2_overseas_v2.html',
+    category: '해외',
+    title: '엔화 강세 전환 신호, 일본 부동산 지금 들어가도 될까? 한국인 투자 완전 가이드',
+    summary: '한국 금융사의 미국 오피스 빌딩 투자 대참사와 엔화 강세 전환 신호 속에서, 일본·미국 해외 부동산 투자 현황과 2026년 하반기 한국인 투자자를 위한 전략을 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-22',
+    title_en: 'Yen Strengthening Signal: Is It Still Safe to Invest in Japanese Real Estate? Complete Guide for Korean Investors',
+    summary_en: 'Amid the collapse of Korean institutional investments in US office buildings and signs of yen appreciation, we analyze the current state of Japanese and US overseas real estate markets and strategies for Korean investors in H2 2026.'
+  },
+  {
     id: 208,
     url: 'article_20260721_1_subscription_v2.html',
     category: '분양',
