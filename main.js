@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 212,
+    url: 'article_20260723_1_column_v2.html',
+    category: '칼럼',
+    title: '7.23 부동산 대토론회가 남긴 것: 190분의 마라톤이 말해주는 진짜 신호',
+    summary: '이재명 대통령이 7월 23일 140명과 190분간 부동산 대토론회를 열었다. 세제 개편·공급대책·전월세 쟁점이 모두 테이블에 올랐다. 이 토론회가 시장에 던지는 진짜 신호를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-23',
+    title_en: 'What the 7.23 Real Estate Grand Debate Left Behind: What 190 Minutes of Marathon Talks Really Signal',
+    summary_en: 'President Lee Jae-myung hosted a 190-minute public real estate debate with 140 participants on July 23. Tax reform, supply policy, and rent issues were all on the table. We analyze what signals this sends to the market.'
+  },
+  {
+    id: 211,
+    url: 'article_20260723_2_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 74주 연속 상승 — 문 정부 최장 기록 \'11주\' 남았다',
+    summary: '서울 아파트값이 74주 연속 상승하며 문재인 정부의 85주 최장 기록에 빠르게 접근하고 있다. 지역별 온도차, 전셋값 동반 상승, 규제 역설까지 2026년 7월 부동산 시장 전체를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-23',
+    title_en: 'Seoul Apartments Rise 74 Consecutive Weeks — Just 11 Weeks From Moon Administration\'s All-Time Record',
+    summary_en: 'Seoul apartment prices have risen for 74 straight weeks, rapidly approaching the record 85-week streak set during the Moon administration. We break down regional temperature gaps, co-rising jeonse prices, and the paradox of tougher regulations.'
+  },
+  {
     id: 210,
     url: 'article_20260722_1_investment_v2.html',
     category: '투자',
