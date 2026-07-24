@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 214,
+    url: 'article_20260724_1_policy_v2.html',
+    category: '정책',
+    title: '규제 폭탄 vs 시장 과열 — 동탄·기흥·구리 토허구역 지정의 실효성을 묻는다',
+    summary: '2026년 7월 동탄·기흥·구리가 규제지역 및 토지거래허가구역으로 지정됐다. LTV 70%→40% 강화, DSR 스트레스 금리 상향 등 고강도 대출 규제의 실효성과 시장에 미치는 파장을 냉정하게 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-24',
+    title_en: 'Regulation Bomb vs Market Overheating — Questioning the Effectiveness of Designated Land Transaction Permit Zones in Dongtan, Giheung, and Guri',
+    summary_en: 'Dongtan, Giheung, and Guri have been designated as regulated zones and land transaction permit areas in July 2026. This article analyzes the effectiveness of high-intensity loan regulations including LTV reduction from 70% to 40% and higher DSR stress rates.'
+  },
+  {
+    id: 213,
+    url: 'article_20260724_2_subscription_v2.html',
+    category: '분양',
+    title: '청약 경쟁률 35개월 만에 최저, 그런데 물량은 54% 폭증 — 7월 분양 시장의 역설',
+    summary: '2026년 7월 전국 일반분양 물량이 3만1천 가구로 전년비 54% 급증했지만 1순위 청약 경쟁률은 5.9대1로 35개월 만에 최저를 기록했다. 고분양가 피로감과 규제 강화가 만든 역설적 분양 시장의 구조를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-24',
+    title_en: 'Subscription Rate Hits 35-Month Low While Supply Surges 54% — The Paradox of July\'s New Apartment Market',
+    summary_en: 'July 2026 sees nationwide general supply jumping 54% year-on-year to 31,311 units, yet the first-priority subscription rate plunged to 5.9:1, the lowest in 35 months. We dissect the paradoxical market driven by high-price fatigue and tightening regulations.'
+  },
+  {
     id: 212,
     url: 'article_20260723_1_column_v2.html',
     category: '칼럼',
