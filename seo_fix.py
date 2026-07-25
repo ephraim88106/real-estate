@@ -198,6 +198,7 @@ def fix_file(rel):
         h = re.sub(r'[ \t]*<link[^>]+rel=["\']canonical["\'][^>]*>[ \t]*\n?', "", h, flags=re.I)
         h = re.sub(r'[ \t]*<meta[^>]+property=["\']og:[^"\']*["\'][^>]*>[ \t]*\n?', "", h, flags=re.I)
         h = re.sub(r'[ \t]*<meta[^>]+name=["\']twitter:[^"\']*["\'][^>]*>[ \t]*\n?', "", h, flags=re.I)
+        h = re.sub(r'[ \t]*<meta[^>]+name=["\']robots["\'][^>]*>[ \t]*\n?', "", h, flags=re.I)
         h = re.sub(r"\n{3,}", "\n\n", h)
         h = re.sub(r"[ \t\n]*</head>", "\n</head>", h, flags=re.I)
         return h
