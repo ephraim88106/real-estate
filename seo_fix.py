@@ -23,7 +23,7 @@ from urllib.parse import quote
 SITE        = "https://real-estate-7os.pages.dev"
 SITE_NAME   = "부동산인사이트"
 SITE_DESC   = "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트"
-GA_ID       = None          # 없으면 None
+GA_ID       = "G-N2GN2G2QF3"          # 없으면 None
 OG_IMAGE    = SITE + "/assets/og-default.png"
 DEAD_DOMAINS = ["real-estate-insight.kr"]          # canonical 이 잘못 가리키던 죽은 도메인들
 ARTICLE_RE  = re.compile(r"^(article|20\d{2})")   # 글로 취급할 파일명 패턴
