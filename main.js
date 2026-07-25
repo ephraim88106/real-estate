@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 216,
+    url: 'article_20260725_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '이주비 대출 족쇄, 풀리나? — 서울 정비사업 3만 가구의 운명이 달렸다',
+    summary: '서울 정비사업 43곳 중 91%가 이주비 조달 차질로 멈춰 섰다. 정부의 LTV 완화 카드가 주택 공급 위기의 돌파구가 될 수 있을지 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-25',
+    title_en: 'Will the Relocation Loan Shackles Be Removed? The Fate of 30,000 Seoul Redevelopment Units',
+    summary_en: '91% of Seoul 43 redevelopment zones are stalled due to relocation loan constraints. We analyze whether the government LTV relaxation can break the housing supply deadlock.'
+  },
+  {
+    id: 215,
+    url: 'article_20260725_2_investment_v2.html',
+    category: '투자',
+    title: '소형 아파트 경매 낙찰가율 171%의 진실 — 지금 따라 들어가면 안 되는 이유',
+    summary: '마포구 소형 아파트 경매 낙찰가율 171.5%로 과열 국면 진입. 추격 매수가 위험한 이유와 냉정한 선별 투자 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-25',
+    title_en: 'The Truth Behind 171% Small Apartment Auction Rates — Why You Shouldn\'t Follow the Crowd',
+    summary_en: 'Small apartment auction rates in Mapo-gu hit 171.5%, signaling overheating. We explain why chasing these prices is risky and outline a smart selective investment strategy.'
+  },
+  {
     id: 214,
     url: 'article_20260724_1_policy_v2.html',
     category: '정책',
