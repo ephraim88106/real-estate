@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 218,
+    url: 'article_20260726_1_overseas_v2.html',
+    category: '해외',
+    title: '엔저·달러 약세의 역설: 2026년 해외부동산 투자, 어디가 진짜 기회인가',
+    summary: '2026년 미국·일본·동남아 해외부동산 시장이 한국인 투자자에게 새로운 기회를 열고 있습니다. 환율 변동성과 각국의 부동산 정책을 심층 분석해 옥석을 가려드립니다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-26',
+    title_en: 'The Paradox of Yen and Dollar Weakness: Where Is the Real Overseas Real Estate Opportunity in 2026?',
+    summary_en: 'The US, Japan, and Southeast Asian real estate markets are opening new opportunities for Korean investors in 2026. We conduct an in-depth analysis of currency volatility and each country\'s real estate policies to identify the best investments.'
+  },
+  {
+    id: 217,
+    url: 'article_20260726_2_column_v2.html',
+    category: '칼럼',
+    title: '서울 아파트 75주 연속 상승의 불편한 진실: 규제가 오히려 집값을 올렸다',
+    summary: '새 정부의 부동산 규제가 서울 집값을 잡기는커녕 오히려 상승을 부추겼다는 역설이 현실로 드러났습니다. 이 구조적 딜레마를 해결할 출구는 어디에 있는가?',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-26',
+    title_en: 'The Uncomfortable Truth Behind Seoul\'s 75-Week Consecutive Housing Price Rise: Did Regulations Backfire?',
+    summary_en: 'The new government\'s real estate regulations, rather than cooling Seoul\'s housing market, appear to have inadvertently fueled further price increases. Where is the exit from this structural dilemma?'
+  },
+  {
     id: 216,
     url: 'article_20260725_1_redevelopment_v2.html',
     category: '재개발',
