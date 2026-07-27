@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 220,
+    url: 'article_20260727_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 75주째 상승, 동탄은 6%대 \'질주\'…집값 판도가 달라졌다',
+    summary: '서울 아파트 매매가격이 75주 연속 상승세를 이어가면서도 오름폭은 소폭 둔화됐다. 반면 경기 화성 동탄구는 6.25% 급등으로 전국 최고 상승률을 기록하며 수도권 집값 판도가 재편되고 있다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-27',
+    title_en: 'Seoul Apartments Rise for 75th Week as Dongtan Surges 6%',
+    summary_en: 'Seoul apartment prices maintained their 75-week rising streak with a slight slowdown, while Dongtan in Hwaseong surged 6.25% — the highest in the nation — signaling a major shift in the capital region\'s real estate landscape.'
+  },
+  {
+    id: 219,
+    url: 'article_20260727_2_policy_v2.html',
+    category: '정책',
+    title: '보유세 3배·종부세 강화…이재명 대토론회가 쏘아올린 부동산 세제 대전환',
+    summary: '이재명 대통령이 7월 23일 부동산 국민 대토론회를 직접 주재하며 보유세 3배 인상을 시사했다. 스트레스 DSR 도입과 LTV 강화까지 맞물려 실수요자와 다주택자 모두 즉각적인 대비가 필요하다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-27',
+    title_en: 'Property Tax to Triple: Lee\'s Real Estate Forum Signals Major Tax Overhaul',
+    summary_en: 'President Lee Jae-myung personally chaired a national real estate forum on July 23, signaling a tripling of property holding taxes. Combined with Stress DSR and tightened LTV rules, both homebuyers and multi-home owners face urgent decisions.'
+  },
+  {
     id: 218,
     url: 'article_20260726_1_overseas_v2.html',
     category: '해외',
