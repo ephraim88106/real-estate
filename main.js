@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 222,
+    url: 'article_20260729_1_auction_investment_v2.html',
+    category: '투자',
+    title: '토지거래허가 피해가는 \'경매의 역습\' — 2026 하반기 부동산 경매 완전 공략법',
+    summary: '토지거래허가구역 규제가 강화되면서 법원경매로 투자 수요가 몰리고 있다. 낙찰가율 93%대 진입의 의미, NPL 신규 물량, 전세사기 특수 물건까지 — 데이터로 읽는 2026년 하반기 경매 투자 전략.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-29',
+    title_en: 'The Comeback of Real Estate Auctions: Evading Land Trade Permit Zones in 2H 2026',
+    summary_en: 'As land trade permit zone regulations tighten, investment demand is flowing into court auctions. We analyze the 93% bid-price ratio, NPL supply, and lease fraud special assets with data-driven insights for 2H 2026.'
+  },
+  {
+    id: 221,
+    url: 'article_20260729_2_overseas_realestate_v2.html',
+    category: '해외',
+    title: '엔고(円高)의 덫인가, 기회인가 — 2026 하반기 일본·베트남 부동산 투자 완전 해설',
+    summary: '엔화 강세로 일본 부동산 원화 기준 매입 비용이 급등했다. 도쿄 미나토구 평당 1억 1천만원 시대에도 투자해야 하는가? 베트남 하반기 선별 투자 전략과 세금·법률 이슈를 총망라한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-29',
+    title_en: 'Yen Strength: Trap or Opportunity? — Complete Guide to Japan & Vietnam Real Estate Investment in 2H 2026',
+    summary_en: 'The cost of buying Japanese real estate in Korean won has surged due to yen appreciation. Is Tokyo\'s Minato-gu still worth investing at 110 million won per pyeong? We cover Vietnam\'s selective investment strategy and tax/legal issues.'
+  },
+  {
     id: 220,
     url: 'article_20260727_1_market_v2.html',
     category: '시장동향',
