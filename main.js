@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 224,
+    url: 'article_20260729_1_auction_v2.html',
+    category: '투자',
+    title: '감정가 6억 더 써도 줄 선다 vs 반값 유찰 반복… 2026년 경매 시장, 어디가 진짜 돈인가',
+    summary: '서울 아파트 경매 낙찰가율이 117%를 돌파하는 한편, 경기 외곽은 3회 유찰 후 감정가 50% 낙찰이 속출한다. 수도권 경매 시장의 극단적 양극화를 데이터로 해부하고 선별 투자 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-29',
+    title_en: 'Seoul Commands Premium, Outskirts Sell for Half: The 2026 Korean Real Estate Auction Divide',
+    summary_en: 'Seoul apartment auction rates exceed 117% of appraisal value while Gyeonggi outskirts see repeated failures at 50% discounts. An in-depth analysis of the selective investment phenomenon dominating Korea auction market in July 2026.'
+  },
+  {
+    id: 223,
+    url: 'article_20260729_2_overseas_v2.html',
+    category: '해외',
+    title: '엔화 약세·동남아 규제 완화… 지금이 해외 부동산 황금 타이밍인가',
+    summary: '엔화 약세로 일본 도쿄·오사카 소형 아파트가 2~3억 원대 매입 가능, 태국 외국인 소유 한도 75%로 확대 추진 중이다. 국내 규제를 피해 해외로 눈 돌리는 한국 투자자들의 지역별 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-29',
+    title_en: 'Weak Yen, Relaxed Regulations: Is Now the Golden Moment to Invest in Overseas Real Estate?',
+    summary_en: 'The weak yen makes Tokyo and Osaka apartments available from 200 million won, while Thailand pushes to expand foreign ownership limits to 75%. We analyze regional strategies of Korean investors shifting overseas amid domestic restrictions.'
+  },
+  {
     id: 222,
     url: 'article_20260729_1_auction_investment_v2.html',
     category: '투자',
