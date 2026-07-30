@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 226,
+    url: 'article_20260730_1_column_v2.html',
+    category: '칼럼',
+    title: '집값은 왜 계속 오르는가? — 2026년 하반기, 구조의 함정에서 벗어나는 법',
+    summary: '공급 착시, 세제 왜곡, 심리적 쏠림… 서울 아파트 평균 15.9억 시대, 집값 상승의 구조적 원인을 해부하고 실수요자가 취할 수 있는 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-30',
+    title_en: 'Why Do Housing Prices Keep Rising? Escaping the Structural Trap in the Second Half of 2026',
+    summary_en: 'Supply illusions, tax distortions, and psychological herding — a structural dissection of why Seoul apartment prices surpass 1.59 billion won and what strategies real demand buyers can take.'
+  },
+  {
+    id: 225,
+    url: 'article_20260730_2_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 평균 15.9억 돌파… \'규제 3종 세트\'에도 꺾이지 않는 집값의 진실',
+    summary: '동탄·기흥·구리 3중 규제에도 서울 집값 상승세가 멈추지 않는다. 주간 상승폭이 오히려 확대된 이유와 전세 7억 돌파의 의미, 하반기 시장 분기점을 총정리한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-30',
+    title_en: 'Seoul Apartments Break 1.59 Billion Average — The Truth Behind Prices Unbowed by Triple Regulation',
+    summary_en: 'Despite triple-layer regulations in Dongtan, Giheung, and Guri, Seoul apartment prices continue to rise. An analysis of expanding weekly gains, record-high jeonse prices, and the key inflection points for the second half of 2026.'
+  },
+  {
     id: 224,
     url: 'article_20260729_1_auction_v2.html',
     category: '투자',
