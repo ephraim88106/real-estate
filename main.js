@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 228,
+    url: 'article_20260731_1_policy_v2.html',
+    category: '정책',
+    title: '수도권 주담대 6억 한도 상한제, 진짜 집값 잡을 수 있나?',
+    summary: '정부가 수도권 주택담보대출 한도를 6억원으로 제한하며 가계부채 억제에 나섰다. 스트레스 DSR 3단계까지 맞물린 이번 규제 패키지는 실수요자에게 직격탄이 될 수 있다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-31',
+    title_en: 'Will Seoul\'s New 600M KRW Mortgage Cap Actually Tame Housing Prices?',
+    summary_en: 'South Korea\'s government has capped mortgage loans in the greater Seoul area at 600 million won, combined with Stress DSR Phase 3. This tightened lending environment may hit genuine homebuyers the hardest.'
+  },
+  {
+    id: 227,
+    url: 'article_20260731_2_subscription_v2.html',
+    category: '분양',
+    title: '3기 신도시 청약 대전쟁 시작: 고양창릉·인천계양, 지금 지원해야 할까?',
+    summary: '2026년 하반기 3기 신도시 본청약이 본격화되면서 수도권 공공분양 시장에 관심이 집중되고 있다. 분양가 대비 시세 차익과 청약 전략을 꼼꼼히 따져봐야 할 시점이다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-07-31',
+    title_en: 'The 3rd New Town Subscription War Begins: Should You Apply for Goyang Changneung or Incheon Gyeyang?',
+    summary_en: 'The main subscription phase for South Korea\'s 3rd new towns is entering full swing in the second half of 2026, drawing intense public interest. A careful analysis of price gaps and subscription strategy is essential before applying.'
+  },
+  {
     id: 226,
     url: 'article_20260730_1_column_v2.html',
     category: '칼럼',
