@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 230,
+    url: 'article_20260801_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '서울시 \'10대 규제 완화\' 건의 — LTV 70%·동의율 하향, 정말 판도를 바꿀 수 있을까?',
+    summary: '서울시가 국토부에 정비사업 10대 법령 개정안을 건의했다. 이주비 LTV 40→70% 확대와 조합설립 동의율 하향이 핵심이다. 규제 완화 기대감이 선반영되기 시작한 지금, 실수요자와 투자자가 알아야 할 것들을 짚는다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-01',
+    title_en: 'Seoul\'s \'10 Regulatory Reforms\' Petition — Can LTV 70% and Lower Consent Rates Really Change the Game?',
+    summary_en: 'Seoul city has petitioned the Ministry of Land for 10 regulatory reforms in urban renewal projects. The key points are expanding relocation loan LTV from 40% to 70% and lowering association formation consent rates.'
+  },
+  {
+    id: 229,
+    url: 'article_20260801_2_investment_v2.html',
+    category: '투자',
+    title: '공급 절벽·금리 피벗·양극화의 3중주 — 2026년 하반기 부동산 투자, 지금 들어가도 될까?',
+    summary: '수도권 신규 입주 물량이 예년 절반으로 급감했고, 금리는 내리고 있다. 그러나 경매 낙찰가율이 보여주는 양극화의 실체는 단순한 매수 신호를 허락하지 않는다. 2026년 하반기 투자 전략의 핵심을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-01',
+    title_en: 'Supply Cliff, Rate Pivot, and Polarization — Should You Enter Real Estate in H2 2026?',
+    summary_en: 'New apartment supply in the Seoul metro area has halved compared to the annual average, and interest rates are falling. But the polarization revealed in auction bid rates tells a more complex story for 2026 H2 investors.'
+  },
+  {
     id: 228,
     url: 'article_20260731_1_policy_v2.html',
     category: '정책',
