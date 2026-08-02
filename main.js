@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 232,
+    url: 'article_20260802_1_overseas-japan_v2.html',
+    category: '해외',
+    title: '엔화 약세 장기화, 지금이 일본 부동산 진입 적기인가 — 한국인 투자자 완전 가이드',
+    summary: '엔화 약세로 일본 부동산의 원화 환산 가격이 크게 낮아진 지금, 한국인 투자자들의 관심이 도쿄·오사카를 중심으로 급증하고 있다. 그러나 금리 인상 리스크와 환율 변동성을 냉정하게 따져봐야 할 시점이다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-02',
+    title_en: 'Yen Weakness Continues — Is Now the Right Time to Enter the Japanese Real Estate Market?',
+    summary_en: 'As the yen\'s depreciation lowers the cost of Japanese real estate in Korean won, interest from Korean investors in Tokyo and Osaka has surged. Yet rising interest rate risks and currency volatility demand sober analysis.'
+  },
+  {
+    id: 231,
+    url: 'article_20260802_2_column-supply-shock_v2.html',
+    category: '칼럼',
+    title: '\'15억 시대\' 서울 아파트의 역설 — 공급 쇼크가 만든 가격 왜곡과 실수요자의 선택',
+    summary: '서울 아파트값이 19년 만에 최대 상승 폭을 기록하며 \'15억 시대\'를 열었다. 공급 절벽과 전세의 월세화, 수도권 집중화가 교차하는 2026년 하반기, 실수요자와 투자자는 각자의 전략을 다시 짜야 한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-02',
+    title_en: 'The Paradox of Seoul Apartments at 1.5 Billion Won — Price Distortion from Supply Shock and the Choices Facing Real Buyers',
+    summary_en: 'Seoul apartment prices have hit a 19-year high, ushering in an era of 1.5 billion won averages. As supply cliffs, rising monthly rents, and capital region concentration collide in H2 2026, both buyers and investors must reassess their strategies.'
+  },
+  {
     id: 230,
     url: 'article_20260801_1_redevelopment_v2.html',
     category: '재개발',
