@@ -33,7 +33,11 @@ SITE_DESC   = "실시간 부동산 뉴스와 정책·시장 분석을 정리한 
 GA_ID       = "G-N2GN2G2QF3"          # 없으면 None
 OG_IMAGE    = SITE + "/assets/og-default.png"
 # 네이버 서치어드바이저 HTML 태그 방식 content 값 (웹마스터도구에서 발급)
-NAVER_VERIFY = "9a1121b7455f81663c084179776a6d4f1b364e49"
+# realestate.ephseed.com 용 (2026-08-03 발급). 커스텀 도메인 전환에 따라 교체.
+# 옛 pages.dev 용 코드(9a1121b7...)는 naverbc51fd...html 소유확인 파일과
+# index.html 에 남아 있어 두 도메인 모두 유지된다.
+# 주의: 이 값이 비면 seo_fix.py 실행 시마다 소유확인 태그가 지워진다.
+NAVER_VERIFY = "d2d04ef6511f70caa75e92b675ce976631395d80"
 DEAD_DOMAINS = ["real-estate-insight.kr"]          # canonical 이 잘못 가리키던 죽은 도메인들
 ARTICLE_RE  = re.compile(r"^(article|20\d{2})")   # 글로 취급할 파일명 패턴
 # ────────────────────────────────────────────────────────────────────
