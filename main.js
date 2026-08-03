@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 234,
+    url: 'article_20260803_1_market_v2.html',
+    category: '시장동향',
+    title: '77주 연속 상승인데 거래는 \'뚝\'… 강남은 숨죽이고 강북이 달린다',
+    summary: '2026년 8월 서울 아파트 가격이 77주 연속 오르는 가운데 세제개편 발표를 앞두고 강남권은 관망세에 들어갔다. 거래량은 연중 최저 수준이지만 강북 역세권은 실수요 매수세가 살아 상승 폭을 키우고 있다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-03',
+    title_en: '77 Consecutive Weeks of Gains, Yet Transactions Plummet — Gangnam Holds Breath While Gangbuk Surges',
+    summary_en: 'Seoul apartment prices continue their 77-week streak of gains, but trading volume has hit its lowest point this year as buyers await the upcoming property tax reform announcement. While Gangnam enters a wait-and-see mode, transit-hub apartments in Gangbuk are seeing strong end-user demand.'
+  },
+  {
+    id: 233,
+    url: 'article_20260803_2_tax_v2.html',
+    category: '정책',
+    title: '8·3 세제개편 발표 — \'거주가 답\'이 됐다, 시가 30억부터 세금 폭탄',
+    summary: '정부가 2026년 8월 3일 부동산 세제개편안을 확정 발표했다. 거주 1주택 기본공제는 14억 원으로 상향하고 비거주 1주택은 9억 원으로 낮춰 실거주 여부가 세금의 핵심 기준이 됐다. 시가 40억 원 이상 초고가 주택 종부세는 최대 2배로 인상된다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-03',
+    title_en: 'August 3 Tax Reform Unveiled — \'Living There is the Answer\': Heavy Tax Burden from 3 Billion Won Homes',
+    summary_en: 'The government finalized its 2026 property tax reform on August 3, raising the exemption for resident homeowners to 1.4 billion won while cutting it to 900 million won for non-residents, making actual occupancy the key tax criterion. Comprehensive real estate tax on ultra-high-value homes over 4 billion won will nearly double.'
+  },
+  {
     id: 232,
     url: 'article_20260802_1_overseas-japan_v2.html',
     category: '해외',
