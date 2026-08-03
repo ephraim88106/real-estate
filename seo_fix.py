@@ -20,7 +20,14 @@ import os, re, glob, json, html, datetime
 from urllib.parse import quote
 
 # ─────────────────────────── 사이트별 설정 ───────────────────────────
-SITE        = "https://real-estate-7os.pages.dev"
+# 2026-08-03: pages.dev → 커스텀 도메인으로 전환.
+# Search Console 실측 — 같은 날 제출한 사이트맵 중 커스텀 도메인만 즉시 "성공"으로
+# 읽혔고(sangsang.ephseed.com: 252페이지 발견), pages.dev 는 "가져올 수 없음" 상태로
+# 한 번도 크롤링되지 않았다. 사이트맵 파일 자체는 양쪽 다 정상이었다.
+# *.pages.dev 는 누구나 무료로 서브도메인을 만드는 공용 호스트라 신뢰도가 0에서 시작한다.
+# 기존 pages.dev 주소도 계속 서비스되지만 canonical 이 아래 도메인을 가리키므로
+# 구글은 두 주소를 하나로 합쳐 평가한다.
+SITE        = "https://realestate.ephseed.com"
 SITE_NAME   = "부동산인사이트"
 SITE_DESC   = "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트"
 GA_ID       = "G-N2GN2G2QF3"          # 없으면 None

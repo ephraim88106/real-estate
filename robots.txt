@@ -23,4 +23,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://real-estate-7os.pages.dev/sitemap.xml
+Sitemap: https://realestate.ephseed.com/sitemap.xml
