@@ -26,7 +26,7 @@ SITE_DESC   = "실시간 부동산 뉴스와 정책·시장 분석을 정리한 
 GA_ID       = "G-N2GN2G2QF3"          # 없으면 None
 OG_IMAGE    = SITE + "/assets/og-default.png"
 # 네이버 서치어드바이저 HTML 태그 방식 content 값 (웹마스터도구에서 발급)
-NAVER_VERIFY = ""
+NAVER_VERIFY = "9a1121b7455f81663c084179776a6d4f1b364e49"
 DEAD_DOMAINS = ["real-estate-insight.kr"]          # canonical 이 잘못 가리키던 죽은 도메인들
 ARTICLE_RE  = re.compile(r"^(article|20\d{2})")   # 글로 취급할 파일명 패턴
 # ────────────────────────────────────────────────────────────────────
@@ -102,12 +102,16 @@ def get_description(src):
 
 
 def lastmod_of(rel):
-    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", rel)
-    if m:
-        try:
-            return datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3))).isoformat()
-        except ValueError:
-            pass
+    # YYYY-MM-DD 또는 YYYYMMDD (article_20260701_... 형태) 둘 다 인식한다.
+    # 이 사이트의 파일명은 하이픈이 없어서, 예전에는 전부 오늘 날짜로 찍혀
+    # 모든 글이 매일 새로 발행된 것처럼 보이는 문제가 있었다. (2026-08-03 수정)
+    for pat in (r"(\d{4})-(\d{2})-(\d{2})", r"(20\d{2})(\d{2})(\d{2})"):
+        m = re.search(pat, rel)
+        if m:
+            try:
+                return datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3))).isoformat()
+            except ValueError:
+                continue
     return TODAY
 
 
