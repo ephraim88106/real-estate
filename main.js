@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 236,
+    url: 'article_20260804_1_subscription_v2.html',
+    category: '분양',
+    title: '역대급 \'반포 디에이치 클래스트\' 청약 개막…8월 2.8만 가구 쏟아진다, 당신의 청약 전략은?',
+    summary: '서울 서초구 반포동에서 강남권 단일 재건축 역대 최대 규모인 반포디에이치클래스트(1,832가구 일반분양)가 청약에 나서는 2026년 8월, 전국 분양 물량은 2.8만 가구를 웃돌며 수도권에 집중됐다. 분양가 전용 84㎡ 기준 30억 원대 중후반 예상, 청약 전략과 자금 조달 현실을 짚어본다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-04',
+    title_en: 'Massive \'Banpo DH Classtre\' Subscription Opens — 28,000 Units Flood Market in August: What\'s Your Strategy?',
+    summary_en: 'The Banpo DH Classtre in Seocho-gu offers 1,832 general sale units — the largest single redevelopment lottery in Gangnam history. With 28,000 units flooding the Seoul metro market in August and prices expected around KRW 3 billion, we analyze subscription strategies and financing realities.'
+  },
+  {
+    id: 235,
+    url: 'article_20260804_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '1기 신도시 재건축, 오늘부터 달라진다…노후계획도시법 개정 시행의 빛과 그림자',
+    summary: '2026년 8월 4일 노후계획도시정비법 개정안이 시행되며 1기 신도시 재건축에 패스트트랙이 전면 확대됐다. 분당·인천 등 선도지구가 속도를 내는 가운데, 사업 간소화의 실질적 효과와 투자자·실수요자가 챙겨야 할 핵심 포인트를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-04',
+    title_en: '1st-Gen New Town Redevelopment Changes Today — Light and Shadow of the Revised Urban Renewal Law',
+    summary_en: 'The revised Aging Planned City Act takes full effect on August 4, 2026, expanding fast-track redevelopment to all 1st-generation new towns. As Bundang and Incheon lead the charge, we assess what this means for investors and actual home buyers navigating contribution fees and project risks.'
+  },
+  {
     id: 234,
     url: 'article_20260803_1_market_v2.html',
     category: '시장동향',
