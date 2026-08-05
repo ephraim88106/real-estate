@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 238,
+    url: 'article_20260805_1_investment_v2.html',
+    category: '투자',
+    title: '대출 죄고 금리 올리는데…그래도 투자할 부동산은 있다',
+    summary: '3.5%대 기준금리와 은행권 대출 한도 축소 이중 악재 속에서도 핵심 입지 중심의 선별적 투자 기회는 살아있다. 레버리지를 줄이고 현금흐름 중심으로 전략을 재편할 때다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-05',
+    title_en: 'Interest Rates Rise, Loans Tighten—But There\'s Still Real Estate Worth Buying',
+    summary_en: 'Despite dual headwinds of a 3.5% base rate and tightened loan limits, selective opportunities remain in prime locations. It\'s time to reduce leverage and shift to cash-flow-centered strategies.'
+  },
+  {
+    id: 237,
+    url: 'article_20260805_2_overseas_v2.html',
+    category: '해외',
+    title: '달러·엔화 양날의 검…미국·일본 부동산에서 기회를 찾아라',
+    summary: '미국 모기지금리 6.5% 횡보, 일본은 엔화 반등 신호. 한국인 투자자들에게 해외 부동산은 여전히 유효한 자산 다변화 수단이지만, 지역·통화·금리 리스크를 꼼꼼히 따져야 할 시점이다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-05',
+    title_en: 'Dollar or Yen? Finding Opportunities in US and Japanese Real Estate',
+    summary_en: 'US mortgage rates hover at 6.5% while the yen shows signs of recovery. Overseas real estate remains a valid diversification tool for Korean investors, but regional, currency, and rate risks demand careful analysis.'
+  },
+  {
     id: 236,
     url: 'article_20260804_1_subscription_v2.html',
     category: '분양',
