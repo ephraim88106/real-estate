@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 240,
+    url: 'article_20260806_1_column_v2.html',
+    category: '칼럼',
+    title: '세제개편의 그늘에서 부동산 시장을 읽다: 2026년 하반기, 투자자가 놓친 것들',
+    summary: '2026 세제개편안 발표 이후 부동산 시장은 강남 관망과 강북 강세라는 이분법적 구도로 재편되고 있다. 초고가·비거주 종부세 인상이 가져올 구조적 변화와 하반기 시장 시나리오를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-06',
+    title_en: 'Reading the Real Estate Market in the Shadow of Tax Reform: What Investors are Missing in H2 2026',
+    summary_en: 'Following the 2026 tax reform, South Korea\'s real estate market is splitting into Gangnam hesitation and Gangbuk momentum. This column analyzes structural changes and H2 market scenarios.'
+  },
+  {
+    id: 239,
+    url: 'article_20260806_2_market_v2.html',
+    category: '시장동향',
+    title: '강북이 강남을 앞질렀다: 77주 연속 상승의 이면에 숨은 서울 아파트 시장의 균열',
+    summary: '8월 첫째 주 서울 아파트값이 0.26% 상승하며 77주 연속 오름세를 이어갔다. 강북 14개 구 평균 상승률(0.36%)이 강남(0.17%)의 두 배를 넘어서면서 서울 주택시장의 지각 변동이 본격화되고 있다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-06',
+    title_en: 'Gangbuk Outpacing Gangnam: The Fractures Hidden Behind Seoul Apartment Market\'s 77-Week Rally',
+    summary_en: 'Seoul apartments rose 0.26% in the first week of August, extending a 77-week rally. With Gangbuk\'s 0.36% gains doubling Gangnam\'s 0.17%, a structural shift is underway in Seoul\'s housing market.'
+  },
+  {
     id: 238,
     url: 'article_20260805_1_investment_v2.html',
     category: '투자',
