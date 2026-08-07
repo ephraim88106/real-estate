@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 242,
+    url: 'article_20260807_1_policy_v2.html',
+    category: '정책',
+    title: '이재명 정부 부동산 종합대책 D-데이: DSR 세분화·금융규제 개편, 시장은 무엇을 기다리나',
+    summary: '이재명 정부가 2차 부동산 대토론회를 마치고 8월 종합대책 발표를 앞두고 있다. DSR 지방 세분화와 실수요자 대출 완화가 핵심 쟁점으로 떠오른 가운데, 정책 방향이 시장에 미칠 파장을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-07',
+    title_en: 'Lee Government Real Estate Package D-Day: DSR Segmentation and Financial Regulation Reform',
+    summary_en: 'The Lee administration is set to announce a real estate package after two national forums. DSR regional differentiation and easing loans for genuine buyers are key issues analyzed here.'
+  },
+  {
+    id: 241,
+    url: 'article_20260807_2_subscription_v2.html',
+    category: '분양',
+    title: '8월 수도권 분양 대전, 반포 \'30억 로또\' 예고…청약 전략 어떻게 세울까',
+    summary: '2026년 8월 전국 2만8천 가구 분양이 쏟아지는 가운데 수도권이 80%를 차지한다. 반포 디에이치 클래스트 등 대어급 단지를 중심으로 청약 전략과 옥석 가리기 기준을 짚어본다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-07',
+    title_en: 'August Seoul Metro Subscription Battle: Banpo 3 Billion Lottery Incoming — How to Set Your Strategy',
+    summary_en: '28,000 units are set for subscription in August 2026, with 80% in the greater Seoul area. We analyze key units including Banpo DHI Classtre and provide a subscription strategy guide.'
+  },
+  {
     id: 240,
     url: 'article_20260806_1_column_v2.html',
     category: '칼럼',
