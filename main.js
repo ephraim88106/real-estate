@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 244,
+    url: 'article_20260808_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '서울시 \'8만5천호 신속착공\' 선언…재건축·재개발, 지금 들어가도 괜찮은가?',
+    summary: '서울시가 2026~2028년 3년간 85개 정비구역에서 8만5천호를 신속착공하겠다는 대규모 계획을 발표했다. 용산·은평·노원·서초 등 착공 명단이 공개된 상황에서 재건축·재개발의 실제 기회와 리스크를 냉정하게 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-08',
+    title_en: 'Seoul Announces 85,000 Unit Fast-Track Construction - Is Now the Right Time to Invest in Redevelopment?',
+    summary_en: 'Seoul City announced a large-scale plan to fast-track construction of 85,000 units across 85 redevelopment zones from 2026 to 2028. With construction lists unveiled for Yongsan, Eunpyeong, Nowon and Seocho districts, we analyze the real opportunities and risks.'
+  },
+  {
+    id: 243,
+    url: 'article_20260808_2_auction_v2.html',
+    category: '투자',
+    title: '서울 경매 4개월 연속 100% 돌파, 지방은 70%대 빙하기…극단적 양극화 속 투자 기회는?',
+    summary: '2026년 7월 전국 아파트 경매 낙찰가율이 85.4%로 하락한 가운데 서울은 101.0%로 4개월 연속 감정가를 초과했다. 울산·부산이 78%대로 급락하는 극단적 양극화 속에서 경매 데이터로 투자 기회와 위험지대를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-08',
+    title_en: 'Seoul Auction Rates Top 100% for 4th Straight Month While Provinces Enter Ice Age - Where Are the Opportunities Amid Extreme Polarization?',
+    summary_en: 'While the national apartment auction bid rate hit a 16-month low of 85.4% in July 2026, Seoul maintained 101.0% for the fourth consecutive month. With Ulsan and Busan plunging to the 78% range, we use auction data to identify investment opportunities and danger zones.'
+  },
+  {
     id: 242,
     url: 'article_20260807_1_policy_v2.html',
     category: '정책',
