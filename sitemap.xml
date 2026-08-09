@@ -1280,6 +1280,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://realestate.ephseed.com/article_20260809_1_overseas_v2</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://realestate.ephseed.com/article_20260809_2_column_v2</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://realestate.ephseed.com/privacy</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>monthly</changefreq>
