@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 246,
+    url: 'article_20260809_1_overseas_v2.html',
+    category: '해외',
+    title: '달러·엔·동남아 삼각 투자전… 한국인 해외 부동산 \'글로벌 분산\' 시대 열린다',
+    summary: '2026년 하반기 한국인들의 해외 부동산 투자가 미국·일본·동남아 삼각 구도로 다변화되고 있다. 엔저 지속으로 일본 소형 부동산 진입 문턱이 낮아진 한편, 미국 금리 동결과 베트남·태국의 적극적 유치 공세가 맞물려 한국인 해외 투자 수요가 역대 최고 수준을 향해 달려가고 있다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-09',
+    title_en: 'Dollar, Yen & Southeast Asia Triangle: Korean Real Estate Investors Enter Global Diversification Era',
+    summary_en: 'In the second half of 2026, Korean real estate investors are diversifying into the US, Japan, and Southeast Asia. The continued yen weakness lowers the barrier for Japanese small properties, while the US rate freeze and active outreach from Vietnam and Thailand are driving Korean overseas investment demand to record levels.'
+  },
+  {
+    id: 245,
+    url: 'article_20260809_2_column_v2.html',
+    category: '칼럼',
+    title: '수도권 vs 지방, 이제는 다른 나라 이야기… 2026 하반기 부동산 양극화 완전 해부',
+    summary: '2026년 하반기 한국 부동산 시장은 수도권 상승과 지방 침체라는 극단적 양극화 구조를 고착화하고 있다. 전문가들은 공급 부족, 전세 월세화, 금리 환경의 세 가지 변수가 수도권 집값을 떠받치는 한편 지방 시장의 추가 하락 압력을 가중시킬 것으로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-09',
+    title_en: 'Seoul vs Provinces: A Tale of Two Real Estate Markets in H2 2026',
+    summary_en: 'Korea\'s real estate market in the second half of 2026 is cementing an extreme polarization between the metropolitan area and regional cities. Experts analyze that supply shortages, the acceleration of lease-to-rent conversion, and the interest rate environment are simultaneously propping up Seoul prices while deepening downward pressure on regional markets.'
+  },
+  {
     id: 244,
     url: 'article_20260808_1_redevelopment_v2.html',
     category: '재개발',
