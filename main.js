@@ -97,6 +97,18 @@ const articles = [
     summary_en: 'In the second half of 2026, Korean real estate investors are diversifying into the US, Japan, and Southeast Asia. The continued yen weakness lowers the barrier for Japanese small properties, while the US rate freeze and active outreach from Vietnam and Thailand are driving Korean overseas investment demand to record levels.'
   },
   {
+    id: 246,
+    url: 'article_20260810_1_actual_price_v2.html',
+    category: '시장동향',
+    title: '실거래가 조회 방법 — 국토부 공개시스템 이용법과 호가와의 차이',
+    summary: '국토교통부 실거래가 공개시스템(rt.molit.go.kr)에서 아파트 거래 내역을 확인하는 절차를 단계별로 정리했다. 매매계약 체결일부터 30일 이내 신고 의무가 만든 시차, 층은 공개되지만 동·호수는 공개되지 않는 범위, 해제 신고와 직거래가 섞여 숫자를 오독하게 만드는 지점까지 함께 짚는다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-10',
+    title_en: 'How to Check Actual Transaction Prices in Korea: Using the MOLIT Open System',
+    summary_en: 'A step-by-step guide to checking apartment transaction records on Korea\'s Ministry of Land open data system (rt.molit.go.kr), including the 30-day reporting lag, why floor numbers are disclosed but unit numbers are not, and how cancelled contracts and direct transactions can distort the figures.'
+  },
+  {
     id: 245,
     url: 'article_20260809_2_column_v2.html',
     category: '칼럼',
