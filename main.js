@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 248,
+    url: 'article_20260810_1_market_v2.html',
+    category: '시장동향',
+    title: '강북이 서울 집값 이끈다: 8월 부동산 지형 변화와 투자 전략의 대전환',
+    summary: '2026년 8월 서울 아파트 시장은 강북 14개구가 0.36% 급등하며 강남(0.17%)을 압도했다. 8·3 세제개편 발표 후 강남 관망세가 짙어진 반면, 중구·중랑구 등 강북 중저가 단지에 실수요가 집중되는 구조적 지형 변화를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-10',
+    title_en: 'Gangbuk Leads Seoul Home Prices: August Market Shift and New Investment Strategy',
+    summary_en: 'In August 2026, northern Seoul districts surged 0.36% weekly, doubling the 0.17% rise in Gangnam amid post-tax reform caution. We analyze the structural shift driving mid-price demand in Junggu and Jungnang.'
+  },
+  {
+    id: 247,
+    url: 'article_20260810_2_policy_v2.html',
+    category: '정책',
+    title: '8·3 세제개편의 충격파: 종부세·양도세 대전환, 부동산 시장은 어디로 가나',
+    summary: '2026년 8월 3일 발표된 세제개편안은 종합부동산세·양도세 과세 기준을 주택 수에서 주택 가액과 실거주 여부로 전환하는 27년 만의 대개편이다. 종부세·양도세 내용을 심층 분석하고 실수요자·투자자 대응 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-10',
+    title_en: 'Shockwaves of the Aug 3 Tax Reform: Comprehensive Property & Capital Gains Tax Overhaul',
+    summary_en: 'Korea\'s landmark August 3, 2026 tax reform shifts property tax basis from number of homes owned to asset value and actual residency, the most sweeping change in 27 years. We break down the impact on comprehensive property tax and capital gains tax, with action strategies.'
+  },
+  {
     id: 246,
     url: 'article_20260809_1_overseas_v2.html',
     category: '해외',
