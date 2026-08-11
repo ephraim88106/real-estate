@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 251,
+    url: 'article_20260811_1_subscription_v2.html',
+    category: '분양',
+    title: '서울 국민평형 분양가 19억 돌파…\'내 집 마련\' 꿈은 사치가 됐나?',
+    summary: '서울 아파트 전용 84㎡ 분양가가 19억원을 돌파했다. 8월 전국 2만8천여 가구가 공급되는 속에서도 실수요자의 내 집 마련 꿈이 왜 더 멀어지는지, 고분양가의 구조적 원인과 청약 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-11',
+    title_en: 'Seoul National Average Apartment Price Tops 1.9 Billion Won — Is Homeownership Now a Luxury?',
+    summary_en: 'The average sale price of Seoul\'s 84㎡ apartments has surpassed 1.9 billion won. Despite a surge in new housing supply this August, why is homeownership increasingly out of reach for end-users?'
+  },
+  {
+    id: 250,
+    url: 'article_20260811_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '서울시 8만5천호 신속착공 선언…당신의 동네는 해당될까? 재건축 총정리',
+    summary: '서울시가 2026~2028년 재개발·재건축 8만5천호 신속착공 계획을 발표했다. 85개 구역 선정 기준, 6종 지원 패키지의 실효성, 조합원·투자자가 반드시 알아야 할 리스크를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-11',
+    title_en: 'Seoul Declares 85,000 Fast-Track Housing Units — Will Your Neighborhood Make the Cut?',
+    summary_en: 'Seoul has announced a plan to fast-track construction of 85,000 housing units through redevelopment by 2028. We break down the 85 designated zones, the 6-point support package, and the risks investors must know.'
+  },
+  {
     id: 249,
     url: 'article_20260811_1_acquisition-tax_v2.html',
     category: '정책',
