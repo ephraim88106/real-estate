@@ -1,0 +1,6 @@
+# 게이트 검사에서 제외 — 기사 아님(지수·정책·약관 페이지)
+index.html
+privacy.html
+terms.html
+policy.html
+404.html

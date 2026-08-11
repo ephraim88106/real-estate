@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 249,
+    url: 'article_20260811_1_acquisition-tax_v2.html',
+    category: '정책',
+    title: '주택 취득세율 계산 방법 — 세율표와 생애최초 감면 조건 정리',
+    summary: '주택 유상취득 취득세는 6억원 이하 1%, 9억원 초과 3%이며 그 사이 구간은 산식으로 산출한다. 지방교육세·농어촌특별세를 더한 실부담률, 주택 수에 따른 8%·12% 중과, 생애최초·출산 감면 조건과 60일 신고 기한을 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-11',
+    title_en: 'How to Calculate Korea Property Acquisition Tax: Rate Table and First-Home Exemption Rules',
+    summary_en: 'Korean acquisition tax on homes runs 1% under 600M KRW and 3% above 900M, with a sliding formula in between. We break down the effective burden with local education and rural special taxes, the 8% and 12% multi-home surcharges, and the first-home and childbirth exemption conditions as of August 2026.'
+  },
+  {
     id: 248,
     url: 'article_20260810_1_market_v2.html',
     category: '시장동향',
