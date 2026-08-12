@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 254,
+    url: 'article_20260812_1_invest_v2.html',
+    category: '투자',
+    title: '지금 사면 손해? 스트레스 DSR 3단계 시대, 2026 하반기 부동산 투자 생존 전략',
+    summary: '경매 낙찰가율 냉각, 대출 한도 15% 축소, 갭투자 리스크 재점화. 스트레스 DSR 3단계 전면 시행 이후 이 시장에서 살아남는 투자자가 갖춰야 할 전략을 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-12',
+    title_en: 'Should You Buy Now? Survival Strategies for Real Estate Investment in H2 2026',
+    summary_en: 'With stress DSR Phase 3 in full effect and auction rates cooling, we analyze what it takes to survive the Korean real estate investment market in the second half of 2026.'
+  },
+  {
+    id: 253,
+    url: 'article_20260812_2_japan_v2.html',
+    category: '해외',
+    title: '엔저의 끝이 보인다…2026 한국인 해외 부동산 투자 일본·미국·동남아 옥석 가리기',
+    summary: '국내 부동산 규제 강화 속 해외로 눈을 돌리는 투자자가 늘고 있습니다. 엔저 기회가 좁아지는 일본, 달러 분산의 미국, 법적 리스크의 동남아 — 각 시장의 기회와 함정을 냉정하게 짚습니다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-12',
+    title_en: 'End of Yen Weakness: 2026 Guide for Korean Investors in Japan, US, and Southeast Asian Real Estate',
+    summary_en: 'As domestic regulations tighten, more Korean investors are looking overseas. We analyze the real opportunities and risks in Japan, the US, and Southeast Asia\'s property markets.'
+  },
+  {
     id: 252,
     url: 'article_20260812_1_special-supply_v2.html',
     category: '분양',
