@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 252,
+    url: 'article_20260812_1_special-supply_v2.html',
+    category: '분양',
+    title: '특별공급 자격 조건 — 신혼부부·생애최초 소득 기준과 유형별 차이',
+    summary: '특별공급은 유형마다 자격과 소득 기준이 다르다. 신혼부부·생애최초·다자녀·노부모부양·신생아 특별공급의 공급 비율, 도시근로자 월평균소득 기준 계산법, 우선·일반·추첨 3단 구조, 2026년 6월 신설된 민영주택 신생아 특별공급까지 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-12',
+    title_en: 'Special Housing Supply Eligibility — Income Limits for Newlyweds and First-Time Buyers by Category',
+    summary_en: 'Korea\'s special housing supply program applies different eligibility and income rules to each category. This guide covers allocation ratios for newlywed, first-time buyer, multi-child, elderly-parent and newborn categories, how the urban worker average income threshold is calculated, the three-tier priority/general/lottery structure, and the newborn special supply for private housing introduced in June 2026.'
+  },
+  {
     id: 251,
     url: 'article_20260811_1_subscription_v2.html',
     category: '분양',
