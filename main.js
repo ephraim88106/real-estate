@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 257,
+    url: 'article_20260813_1_column_v2.html',
+    category: '칼럼',
+    title: '강남이 식을 때 외곽이 뜨거워진다 — 서울 집값 \'탈동조화\' 현상의 진짜 의미',
+    summary: '강남권 아파트 오름폭이 14주 만에 최저를 기록하는 동안 중랑·성북·노원 등 서울 외곽은 0.4~0.5%대 급등을 이어가고 있다. 이 탈동조화 현상은 단순한 순환매가 아닌 구조적 전환의 신호일 수 있다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-13',
+    title_en: 'When Gangnam Cools, the Outskirts Heat Up — The True Meaning of Seoul\'s Housing Market Decoupling',
+    summary_en: 'While Gangnam apartment prices hit a 14-week low, outer Seoul districts like Jungnang, Seongbuk, and Nowon surged 0.4-0.5% weekly. This decoupling may signal a structural shift, not just a rotation.'
+  },
+  {
+    id: 256,
+    url: 'article_20260813_2_market_v2.html',
+    category: '시장동향',
+    title: '분양 폭탄 속 흔들리는 입주심리 — 8월 수도권 부동산 시장의 이중주',
+    summary: '8월 수도권 아파트 분양물량이 전년 대비 58% 급증했지만 동시에 입주전망지수는 급락하고 있다. 공급과 심리가 엇갈리는 8월 수도권 부동산 시장의 현주소를 진단한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-13',
+    title_en: 'Supply Surge, Sentiment Slump — The Contradictory August Metropolitan Seoul Real Estate Market',
+    summary_en: 'August apartment supply in the Seoul metro area surged 58% year-over-year, yet the housing outlook index fell sharply. We analyze the conflicting signals in this month\'s real estate market.'
+  },
+  {
     id: 255,
     url: 'article_20260813_1_membership-rights_v2.html',
     category: '재개발',
