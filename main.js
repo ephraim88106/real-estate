@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 255,
+    url: 'article_20260813_1_membership-rights_v2.html',
+    category: '재개발',
+    title: '조합원 입주권과 분양권 차이 — 취득세·전매제한·주택수 산정 기준',
+    summary: '입주권과 분양권은 둘 다 새 집에 들어갈 권리지만 근거 법률부터 다르다. 권리가 생기는 시점, 준공 시 원시취득 2.8%와 잔금 시 주택 취득세의 차이, 세목별로 갈리는 주택 수 산입 기준일, 전매제한 기간과 조합원 지위 양도 제한, 양도세율까지 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-13',
+    title_en: 'Membership Rights vs. Presale Rights in Korea: Acquisition Tax, Resale Limits and Housing Count',
+    summary_en: 'Redevelopment membership rights and presale rights both lead to a new home, but they arise under different laws. This guide compares when each right is created, the 2.8% original acquisition tax versus standard housing acquisition tax, the differing cut-off dates for counting them as housing, resale restrictions, and capital gains tax rates as of August 2026.'
+  },
+  {
     id: 254,
     url: 'article_20260812_1_invest_v2.html',
     category: '투자',

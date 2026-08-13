@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조합원 입주권과 분양권 차이 — 취득세·전매제한·주택수 산정 기준 | 부동산인사이트</title>
+  <meta name="description" content="조합원 입주권과 분양권은 둘 다 새 집에 들어갈 권리지만 세금과 규제가 전혀 다르다. 권리가 생기는 시점, 취득세 2.8% 원시취득과 유상승계의 차이, 주택 수에 들어가는 기준일, 전매제한 기간과 조합원 지위 양도 제한, 양도세율까지 2026년 8월 기준으로 정리했다.">
+  <meta name="keywords" content="조합원 입주권 분양권 차이 입주권 취득세 원시취득 주택수 산정 전매제한 조합원 지위 양도 관리처분계획 인가 투기과열지구">
+  <meta name="google-adsense-account" content="ca-pub-9118774019383180">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: #F5F4F0; color: #1a1a2e; line-height: 1.8; }
+
+    /* HEADER */
+    header {
+      background: #0D2B55;
+      position: sticky; top: 0; z-index: 900;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .header-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 24px;
+    }
+    .logo { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; color: #fff; text-decoration: none; font-weight: 700; }
+    .logo span { color: #F4A52D; }
+    nav a { color: #cdd8f0; text-decoration: none; margin-left: 22px; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
+    nav a:hover { color: #F4A52D; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%);
+      padding: 72px 24px 60px;
+      text-align: center; color: #fff;
+    }
+    .category-tag {
+      display: inline-block;
+      background: rgba(123,74,158,0.32); color: #E2CDF2;
+      border: 1px solid #7B4A9E; border-radius: 4px;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: .1em;
+      padding: 5px 14px; margin-bottom: 20px; text-transform: uppercase;
+    }
+    .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.45; max-width: 860px; margin: 0 auto 18px; }
+    .hero-meta { color: #DCC8EE; font-size: 0.85rem; margin-top: 12px; }
+    .hero-meta span { margin: 0 10px; }
+
+    /* LAYOUT */
+    .container { max-width: 1280px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 36px; }
+    @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+    /* ARTICLE */
+    article { background: #fff; border-radius: 12px; padding: 44px 48px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
+    @media (max-width: 600px) { article { padding: 28px 20px; } }
+
+    /* DATA BOX */
+    .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+    @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+    .data-card { background: #F2ECF7; border-left: 4px solid #7B4A9E; border-radius: 8px; padding: 18px 20px; }
+    .data-card .label { font-size: 0.78rem; color: #5C2E82; font-weight: 700; letter-spacing: .05em; margin-bottom: 6px; }
+    .data-card .value { font-size: 1.55rem; font-weight: 700; color: #3D1A5C; font-family: 'Noto Serif KR', serif; }
+    .data-card .sub { font-size: 0.8rem; color: #6E5580; margin-top: 4px; }
+
+    /* HEADINGS */
+    h2 { font-family: 'Noto Serif KR', serif; font-size: 1.38rem; font-weight: 700; color: #3D1A5C; border-left: 4px solid #7B4A9E; padding-left: 14px; margin: 44px 0 16px; }
+    h3 { font-size: 1.05rem; font-weight: 700; color: #5C2E82; margin: 28px 0 10px; }
+    p { margin-bottom: 16px; color: #2a2a3a; font-size: 0.97rem; }
+    ul { padding-left: 20px; margin-bottom: 18px; }
+    ul li { margin-bottom: 8px; font-size: 0.96rem; color: #2a2a3a; }
+
+    /* QUOTE */
+    .quote-box {
+      background: #F2ECF7; border-left: 5px solid #7B4A9E;
+      border-radius: 0 8px 8px 0; padding: 22px 28px; margin: 30px 0;
+      font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.02rem; color: #3D1A5C;
+    }
+    .quote-box cite { display: block; font-size: 0.82rem; color: #5C2E82; margin-top: 10px; font-style: normal; }
+
+    /* COMPARISON TABLE */
+    .compare-table { width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 0.88rem; }
+    .compare-table th { background: #7B4A9E; color: #fff; padding: 10px 14px; text-align: left; }
+    .compare-table td { padding: 10px 14px; border-bottom: 1px solid #DFCDEC; vertical-align: top; }
+    .compare-table tr:nth-child(even) td { background: #F7F2FB; }
+    .compare-table .label-col { font-weight: 700; color: #3D1A5C; width: 25%; }
+    .compare-table .before { color: #666; }
+    .compare-table .after { color: #7B4A9E; font-weight: 600; }
+
+    /* HIGHLIGHT BOX */
+    .highlight-box { background: linear-gradient(135deg, #F2ECF7, #FBF8FD); border: 1px solid #C8A8DE; border-radius: 10px; padding: 22px 26px; margin: 28px 0; }
+    .highlight-box h3 { color: #7B4A9E; margin-top: 0; border-left: 3px solid #7B4A9E; padding-left: 10px; }
+
+    /* DISCLAIMER */
+    .disclaimer { background: #F0F0F0; border-radius: 8px; padding: 18px 22px; margin-top: 44px; font-size: 0.8rem; color: #666; line-height: 1.7; }
+
+    /* SIDEBAR */
+    aside { display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+    .sidebar-card h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; color: #3D1A5C; border-bottom: 2px solid #7B4A9E; padding-bottom: 10px; margin-bottom: 16px; }
+    .summary-list { list-style: none; padding: 0; }
+    .summary-list li { padding: 8px 0; border-bottom: 1px solid #F2ECF7; font-size: 0.88rem; color: #2a2a3a; display: flex; gap: 8px; align-items: flex-start; }
+    .summary-list li::before { content: '▸'; color: #7B4A9E; flex-shrink: 0; margin-top: 1px; }
+    .related-list { list-style: none; padding: 0; }
+    .related-list li { padding: 9px 0; border-bottom: 1px solid #F2ECF7; font-size: 0.86rem; }
+    .related-list li a { color: #3D1A5C; text-decoration: none; font-weight: 500; }
+    .related-list li a:hover { color: #7B4A9E; text-decoration: underline; }
+    .related-list .cat-badge { font-size: 0.72rem; background: #F2ECF7; color: #5C2E82; border-radius: 3px; padding: 2px 7px; margin-right: 6px; font-weight: 700; }
+
+    /* TIMELINE */
+    .timeline { list-style: none; padding: 0; margin: 16px 0; }
+    .timeline li { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px dashed #C8A8DE; font-size: 0.88rem; }
+    .timeline .year { font-weight: 700; color: #7B4A9E; min-width: 84px; flex-shrink: 0; }
+    .timeline .content { color: #33283A; }
+
+    /* FIXED SIDEBAR AD */
+    .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+    @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+    /* FOOTER */
+    footer { background: #0D2B55; color: #8A9EC8; padding: 40px 24px; text-align: center; font-size: 0.85rem; margin-top: 60px; }
+    footer a { color: #A8C4F0; text-decoration: none; margin: 0 10px; }
+  </style>
+<!-- SEO:BEGIN -->
+<link rel="canonical" href="https://realestate.ephseed.com/article_20260813_1_membership-rights_v2">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="부동산인사이트">
+<meta property="og:title" content="조합원 입주권과 분양권 차이 — 취득세·전매제한·주택수 산정 기준 | 부동산인사이트">
+<meta property="og:description" content="조합원 입주권과 분양권은 둘 다 새 집에 들어갈 권리지만 세금과 규제가 전혀 다르다. 권리가 생기는 시점, 취득세 2.8% 원시취득과 유상승계의 차이, 주택 수에 들어가는 기준일, 전매제한 기간과 조합원 지위 양도 제한, 양도세율까지 2026년 8월 기준으로 정리했다.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20260813_1_membership-rights_v2">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="article:published_time" content="2026-08-13T09:00:00+09:00">
+<meta property="article:modified_time" content="2026-08-13T09:00:00+09:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2GN2G2QF3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-N2GN2G2QF3");</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://realestate.ephseed.com/#organization", "name": "부동산인사이트", "url": "https://realestate.ephseed.com/"}, {"@type": "WebSite", "@id": "https://realestate.ephseed.com/#website", "url": "https://realestate.ephseed.com/", "name": "부동산인사이트", "description": "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트", "inLanguage": "ko-KR", "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}, {"@type": "Article", "@id": "https://realestate.ephseed.com/article_20260813_1_membership-rights_v2#page", "url": "https://realestate.ephseed.com/article_20260813_1_membership-rights_v2", "headline": "조합원 입주권과 분양권 차이 — 취득세·전매제한·주택수 산정 기준 | 부동산인사이트", "description": "조합원 입주권과 분양권은 둘 다 새 집에 들어갈 권리지만 세금과 규제가 전혀 다르다. 권리가 생기는 시점, 취득세 2.8% 원시취득과 유상승계의 차이, 주택 수에 들어가는 기준일, 전매제한 기간과 조합원 지위 양도 제한, 양도세율까지 2026년 8월 기준으로 정리했다.", "inLanguage": "ko-KR", "image": "https://realestate.ephseed.com/assets/og-default.png", "isPartOf": {"@id": "https://realestate.ephseed.com/#website"}, "datePublished": "2026-08-13", "dateModified": "2026-08-13", "author": {"@id": "https://realestate.ephseed.com/#organization"}, "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="index.html">시장동향</a>
+      <a href="index.html">정책·규제</a>
+      <a href="index.html">투자분석</a>
+      <a href="index.html">법률·세금</a>
+      <a href="index.html">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="category-tag">재개발·재건축</div>
+  <h1>조합원 입주권과 분양권 차이 — 취득세·전매제한·주택수 산정 기준</h1>
+  <p class="hero-meta">
+    <span>부동산인사이트 편집팀</span>
+    <span>2026년 8월 13일</span>
+    <span>#입주권 #분양권 #취득세 #주택수 #전매제한</span>
+  </p>
+</section>
+
+<div class="container">
+  <article>
+
+    <!-- DATA CARDS -->
+    <div class="data-cards">
+      <div class="data-card">
+        <div class="label">입주권 준공 시 취득세</div>
+        <div class="value">2.8%</div>
+        <div class="sub">원시취득 세율 · 보유 주택 수와 무관</div>
+      </div>
+      <div class="data-card">
+        <div class="label">양도세 주택 수 산입</div>
+        <div class="value">2006년 / 2021년</div>
+        <div class="sub">입주권 2006년 · 분양권 2021년 취득분부터</div>
+      </div>
+      <div class="data-card">
+        <div class="label">지위 양도 제한 지역</div>
+        <div class="value">서울 25개 구</div>
+        <div class="sub">경기 12곳 포함 · 2025년 10월 16일 발효</div>
+      </div>
+    </div>
+
+    <p>새로 짓는 집에 들어갈 수 있는 권리를 사겠다고 마음먹으면 시장에는 두 가지 물건이 나와 있다. 하나는 조합원 입주권이고 다른 하나는 분양권이다. 둘 다 아직 존재하지 않는 건물에 대한 권리이고, 등기부에 집으로 올라가 있지도 않으며, 결국 같은 단지의 같은 동에 들어갈 수도 있다. 그래서 부동산 중개 현장에서도 "권리 사는 건 똑같다"는 식으로 뭉뚱그려 설명되는 일이 흔하다.</p>
+
+    <p>그런데 이 둘은 <strong>근거 법률부터 다르다.</strong> 입주권은 「도시 및 주거환경정비법」이 만들어 낸 권리이고, 분양권은 「주택법」에 따른 공급계약상의 지위다. 뿌리가 다르니 세금 계산 방식, 주택 수를 세는 기준일, 되팔 수 있는 시점, 돈을 빌리는 경로가 전부 갈린다. 같은 금액을 주고 샀는데 몇 년 뒤 손에 남는 돈이 수천만 원씩 차이 나는 이유가 여기에 있다.</p>
+
+    <p>이 글은 2026년 8월 기준으로 두 권리의 차이를 항목별로 정리한다. 본문에 나오는 세율과 제한 기간은 모두 <strong>2026년 8월 현재 시행 중인 「지방세법」·「소득세법」·「주택법 시행령」·「도시 및 주거환경정비법」</strong>을 기준으로 했다. 세법은 개정이 잦고 지역 지정은 수시로 바뀌므로, 실제 계약 전에는 반드시 최신 조문과 관할 지방자치단체 고시를 다시 확인해야 한다.</p>
+
+    <h2>권리가 생기는 순간이 다르다</h2>
+
+    <p>가장 근본적인 차이는 <strong>언제 그 권리가 태어나느냐</strong>다.</p>
+
+    <p>조합원 입주권은 원래 그 자리에 있던 낡은 집이나 땅에서 시작한다. 정비구역이 지정되고 조합이 설립되면 그 안의 부동산 소유자는 조합원이 된다. 사업이 진행되어 <strong>관리처분계획 인가</strong>가 나면, 이때부터 그 사람이 가진 것은 더 이상 "낡은 집"이 아니라 "새 집에 입주할 자격"으로 성격이 바뀐다. 세법에서 조합원 입주권을 따질 때 관리처분계획 인가일을 기준선으로 삼는 이유다. 인가 이후 건물이 실제로 철거되면 등기부상 남는 것은 토지 지분뿐이다.</p>
+
+    <p>분양권은 정반대다. 땅은 이미 사업 주체가 확보해 놓았고, 입주자 모집 공고가 나가고, 청약해서 당첨되고, 공급계약서에 도장을 찍는 순간 권리가 생긴다. 원래 그 자리에 무엇이 있었는지는 매수인과 아무 상관이 없다. 청약통장이 필요하고, 당첨되면 통장은 소멸하며, 지역·유형에 따라 재당첨 제한이 걸린다. 반면 입주권을 승계로 사들이는 사람은 청약통장을 쓰지 않는다.</p>
+
+    <div class="quote-box">
+      "입주권은 기존 부동산이 모습을 바꾼 것이고, 분양권은 계약으로 새로 만들어진 것이다. 세법이 두 권리를 다르게 다루는 이유는 정서적인 것이 아니라 이 구조적 차이 때문이다. 하나는 이미 있던 재산의 연장선이고, 다른 하나는 처음부터 새 채권이다."
+      <cite>— 정비사업 과세 구조 해설</cite>
+    </div>
+
+    <h2>취득세 — 입주권은 두 번, 분양권은 한 번 낸다</h2>
+
+    <p>취득세에서 가장 자주 틀리는 지점이다. 결론부터 말하면 <strong>입주권은 취득세를 두 번 내고, 분양권은 한 번 낸다.</strong></p>
+
+    <h3>입주권을 승계로 살 때</h3>
+
+    <p>이미 관리처분계획 인가가 나고 건물이 철거된 상태의 입주권을 사면, 등기 대상은 토지다. 따라서 이때 내는 것은 주택 취득세가 아니라 <strong>토지에 대한 취득세</strong>다. 표준세율 4%에 지방교육세 0.4%, 농어촌특별세 0.2%가 붙어 실제 부담은 통상 <strong>4.6%</strong>가 된다. 아직 철거 전이라 주택이 남아 있는 상태에서 사면 그 시점에는 주택 취득세율이 적용되고, 다주택 중과 여부도 그 기준으로 판정된다. 같은 입주권이라도 <strong>사는 시점이 멸실 전이냐 후냐에 따라 세율 체계가 통째로 바뀐다</strong>는 뜻이다.</p>
+
+    <h3>준공 후 새 집을 등기할 때</h3>
+
+    <p>공사가 끝나 새 건물이 올라가면 조합원은 그 건물을 처음 만들어 낸 사람으로 취급된다. 이것을 원시취득이라 하고, 「지방세법」 제11조에 따라 세율은 <strong>2.8%</strong>다. 여기에 지방교육세와 농어촌특별세가 더해져도 총 부담은 3% 안팎에 머문다. 중요한 것은 이 2.8%가 <strong>보유 주택 수와 관계없이 적용된다</strong>는 점이다. 다주택자라도 원시취득에는 8%·12% 같은 중과세율이 붙지 않는다. 정비사업 조합원이 세제상 누리는 실질적 이점 중 가장 큰 항목이 바로 이것이다.</p>
+
+    <h3>분양권은 잔금 때 한 번</h3>
+
+    <p>분양권을 사고팔 때는 취득세가 없다. 분양권 자체는 아직 주택이 아니기 때문이다. 세금은 <strong>잔금을 치르고 소유권을 넘겨받는 시점</strong>에 주택 취득세로 한 번에 발생한다. 세율은 취득가액에 따라 6억 원 이하 1%, 6억 초과 9억 이하 구간세율, 9억 초과 3%이고, 보유 주택 수에 따라 중과세율이 적용될 수 있다. 여기서 실무상 함정이 하나 있다. <strong>중과 여부를 판정하는 시점은 잔금일이 아니라 분양권 취득일(계약일 또는 전매 취득일)</strong>이다. 계약 당시에는 무주택이었는데 잔금 전에 다른 집을 샀다면, 그 사실이 중과 판정에 반영되지 않을 수 있다는 의미다. 반대의 경우도 마찬가지여서, 계약 시점에 이미 여러 채를 갖고 있었다면 잔금 전에 전부 처분해도 중과를 피하지 못한다.</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr><th>구분</th><th>조합원 입주권</th><th>분양권</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="label-col">근거 법률</td><td>도시 및 주거환경정비법</td><td>주택법</td></tr>
+        <tr><td class="label-col">권리 발생 시점</td><td>관리처분계획 인가일</td><td>공급계약 체결일</td></tr>
+        <tr><td class="label-col">청약통장</td><td class="after">필요 없음</td><td>필요(당첨 시 소멸)</td></tr>
+        <tr><td class="label-col">취득 단계 취득세</td><td>토지 4.6% 또는 주택 세율</td><td class="after">없음</td></tr>
+        <tr><td class="label-col">준공 시 취득세</td><td class="after">2.8% 원시취득(중과 없음)</td><td>1~3%, 중과 시 8·12%</td></tr>
+        <tr><td class="label-col">중과 판정 시점</td><td>취득 시점의 물건 성격</td><td>분양권 취득일</td></tr>
+        <tr><td class="label-col">보유 중 재산세</td><td>토지분 재산세 발생</td><td class="after">없음</td></tr>
+        <tr><td class="label-col">자금 조달</td><td>이주비 대출 + 분담금</td><td>중도금 집단대출 + 잔금대출</td></tr>
+      </tbody>
+    </table>
+
+    <h2>주택 수 산정 — 세목마다 기준일이 다르다</h2>
+
+    <p>"입주권이나 분양권을 갖고 있으면 집이 한 채 더 있는 걸로 치나요?"라는 질문의 정답은 <strong>"어느 세금이냐에 따라 다르다"</strong>이다. 세 가지 세목이 각각 다른 기준일을 쓴다.</p>
+
+    <ul>
+      <li><strong>취득세</strong> — 「지방세법 시행령」 제28조의4에 따라 <strong>2020년 8월 12일 이후 취득한</strong> 입주권·분양권·주거용 오피스텔은 주택 수에 포함된다. 즉 그 뒤에 산 분양권이 있으면, 나중에 다른 집을 살 때 이미 한 채를 가진 것으로 계산된다.</li>
+      <li><strong>양도소득세</strong> — 입주권은 <strong>2006년 취득분부터</strong> 오래전에 이미 주택 수에 들어가 있었다. 분양권은 훨씬 늦은 <strong>2021년 1월 1일 이후 취득분부터</strong> 포함된다. 2020년 이전에 취득한 분양권은 지금도 양도세 주택 수에서 빠진다.</li>
+      <li><strong>종합부동산세</strong> — 입주권과 분양권 모두 <strong>주택 수에 들어가지 않는다.</strong> 종부세는 주택분 재산세 과세 대상을 기준으로 삼는데, 아직 건물이 없는 권리는 여기에 해당하지 않기 때문이다. 다만 건물이 철거된 입주권은 남은 토지에 대해 토지분 재산세가 부과된다.</li>
+    </ul>
+
+    <div class="highlight-box">
+      <h3>기준일이 셋으로 갈리는 이유</h3>
+      <p style="margin-bottom:0;">세목마다 규제를 도입한 시기가 달랐을 뿐이다. 정책적 일관성이 있어서 이렇게 된 것이 아니다. 그래서 실무에서는 "내 분양권이 주택 수에 들어가나"를 한 번에 답할 수 없고, <strong>취득세를 따질 때와 양도세를 따질 때 각각 계산을 다시 해야 한다.</strong> 특히 2020년 8월과 2021년 1월 사이에 취득한 분양권은 취득세 주택 수에는 들어가고 양도세 주택 수에는 빠지는, 헷갈리기 쉬운 구간에 놓인다.</p>
+    </div>
+
+    <h2>되팔 수 있는 시점 — 분양권은 기간, 입주권은 사업 단계</h2>
+
+    <p>두 권리는 처분 제한의 성격 자체가 다르다. 분양권은 <strong>시계</strong>로 막고, 입주권은 <strong>사업 진행 단계</strong>로 막는다.</p>
+
+    <h3>분양권 전매제한 — 기간이 지나면 풀린다</h3>
+
+    <p>「주택법」 제64조와 시행령에 따른 전매제한은 2023년 4월 7일 개정으로 크게 짧아졌다. 현행 기준은 수도권 규제지역과 공공택지·분양가상한제 적용 주택이 <strong>3년</strong>, 수도권 과밀억제권역이 <strong>1년</strong>, 그 밖의 수도권이 <strong>6개월</strong>이다. 비수도권은 공공택지와 규제지역이 1년, 광역시 도시지역이 6개월이며 그 외 지역은 제한이 없다. 개정 전 최장 10년이던 것과 비교하면 대폭 완화된 셈이다. 다만 서울 전역이 규제지역으로 묶여 있는 현재 상황에서는 서울 분양 물량 대부분이 3년 구간에 들어간다.</p>
+
+    <h3>조합원 지위 양도 제한 — 기간이 아니라 문턱이다</h3>
+
+    <p>입주권 쪽은 성격이 다르다. 「도시 및 주거환경정비법」 제39조 제2항은 투기과열지구 안에서 <strong>재건축은 조합설립 인가 후, 재개발은 관리처분계획 인가 후</strong>에 조합원 지위를 넘기는 것을 원칙적으로 금지한다. 시간이 흐른다고 자동으로 풀리는 규제가 아니다.</p>
+
+    <p>이 조항의 영향력은 2025년 10월 15일 발표된 주택시장 안정화 대책으로 크게 넓어졌다. 그전까지 서울에서 투기과열지구로 남아 있던 곳은 강남·서초·송파·용산 네 개 구뿐이었는데, 이 대책으로 <strong>서울 25개 자치구 전역과 경기 12곳</strong>이 투기과열지구로 지정되어 2025년 10월 16일부터 효력이 발생했다. 경기 지역에는 과천, 광명, 성남(분당·수정·중원), 수원(영통·장안·팔달), 안양 동안, 용인 수지, 의왕, 하남이 포함된다.</p>
+
+    <p>결과적으로 서울 전역의 정비사업장에서 해당 단계를 지난 물건은 매매 자체는 가능해도 <strong>양수인이 조합원 지위를 승계받지 못해 현금청산 대상이 될 수 있다.</strong> 매수인이 새 집을 못 받는다는 뜻이므로 사실상 거래가 멈춘다. 예외가 아예 없는 것은 아니다. 상속·이혼에 따른 이전, 세대원 전원의 해외 이주, 근무·질병·취학 등 불가피한 사유로 인한 세대 전원 이주, 그리고 <strong>1세대 1주택자로서 일정 기간 이상 보유하고 거주한 경우</strong>(통상 10년 보유·5년 거주 기준)가 대표적이다. 조합 설립이나 사업시행 인가가 오래 지연된 사업장에도 별도의 예외가 적용된다.</p>
+
+    <div class="quote-box">
+      "분양권 규제는 '기다리면 풀리는' 규제이고, 조합원 지위 양도 제한은 '요건을 갖추지 못하면 영영 못 파는' 규제다. 투자 판단에서 이 둘을 같은 무게로 두면 출구 전략 자체가 어긋난다."
+      <cite>— 정비사업 규제 구조 해설</cite>
+    </div>
+
+    <h2>팔 때 내는 세금 — 보유 기간의 값어치가 다르다</h2>
+
+    <p>양도소득세율에서도 갈림길이 있다. 분양권은 지역과 관계없이 <strong>보유 1년 미만 70%, 1년 이상 60%</strong>의 단일 중과세율이 적용된다. 2년을 넘겨 보유해도 세율이 내려가지 않는다.</p>
+
+    <p>조합원 입주권은 다르다. 1년 미만 70%, 1년 이상 2년 미만 60%까지는 같지만, <strong>2년 이상 보유하면 6~45%의 기본세율</strong>로 돌아온다. 요건을 갖추면 1세대 1주택 비과세 특례를 적용받을 여지도 있다. 다시 말해 <strong>분양권은 오래 갖고 있어도 세율상 보상이 없고, 입주권은 2년을 버티는 순간 세 부담이 구조적으로 달라진다.</strong> 다만 입주권 비과세 특례는 양도일 현재 다른 주택이나 분양권을 보유하지 않아야 하는 등 요건이 까다로우므로, 개별 사안은 반드시 세무 전문가의 확인을 거쳐야 한다.</p>
+
+    <h2>제도 평가 — 무엇을 노린 설계인가</h2>
+
+    <p>두 권리에 대한 규제 방향을 겹쳐 놓고 보면 정부의 의도가 비교적 선명하게 읽힌다. <strong>실제로 그 자리에 살던 사람에게는 문을 열어 두고, 권리만 사서 시세 차익을 노리는 수요는 막는다</strong>는 것이다.</p>
+
+    <p>입주권의 원시취득 2.8%가 중과 대상에서 빠져 있는 것은, 조합원이 새 집을 얻는 과정을 "집을 한 채 더 사는 행위"가 아니라 "원래 갖고 있던 재산의 형태가 바뀐 사건"으로 보기 때문이다. 반대로 조합원 지위 양도를 인가 단계 이후 전면적으로 묶은 것은, 사업이 궤도에 오른 뒤 들어오는 매수 수요를 차단하겠다는 뜻이다. 2025년 10월 대책으로 그 범위가 서울 전역으로 확대되면서 이 방향은 한층 강해졌다.</p>
+
+    <p>부작용도 함께 지적된다. 사업 기간이 10년을 넘기는 일이 흔한 정비사업에서 출구가 막히면, 자금 사정이 나빠진 조합원이 사업 자체의 부담이 된다. 이주비 대출 규제와 겹칠 경우 조합원 개인의 유동성 문제가 사업 지연으로 번지는 경로도 실제로 관찰돼 왔다. 규제의 취지와 사업의 현실 사이에 놓인 간극은 앞으로도 제도 조정의 쟁점으로 남을 가능성이 크다.</p>
+
+    <h2>실수요자와 투자자를 위한 확인 순서</h2>
+
+    <ul>
+      <li><strong>물건의 현재 상태부터 확인한다.</strong> 입주권을 검토한다면 관리처분계획 인가가 났는지, 건물이 철거됐는지가 취득세 체계를 가르는 첫 갈림길이다. 등기부등본과 조합 공고를 함께 봐야 한다.</li>
+      <li><strong>해당 구역이 투기과열지구인지 반드시 조회한다.</strong> 2025년 10월 이후 서울 전역과 경기 12곳이 지정돼 있어, 예전 정보만 믿고 "우리 동네는 아니다"라고 판단하면 계약 후 현금청산 대상이 되는 사고로 이어질 수 있다.</li>
+      <li><strong>중과 판정 시점을 계약 전에 계산한다.</strong> 분양권은 잔금일이 아니라 취득일 기준으로 주택 수를 세므로, 보유 주택 정리 계획이 있다면 순서를 먼저 짜야 한다.</li>
+      <li><strong>보유 기간 계획을 세율표와 함께 짠다.</strong> 분양권은 2년을 넘겨도 60%가 유지되지만 입주권은 2년이 분기점이다. 매도 시점 계획이 곧 세후 수익률이다.</li>
+      <li><strong>자금 조달 경로를 구분해 계산한다.</strong> 입주권은 이주비 대출과 추가 분담금이, 분양권은 중도금 집단대출과 잔금대출이 축이 된다. 필요 자금이 들어오는 시점과 금액 구조가 전혀 다르므로 현금흐름표를 따로 만들어야 한다.</li>
+      <li><strong>분담금 확정 여부를 확인한다.</strong> 입주권 가격은 권리가액에 프리미엄이 붙은 값이며, 추가 분담금이 확정되기 전에는 최종 취득 원가를 알 수 없다. 관리처분계획서상의 추산액과 최근 공사비 인상분을 함께 봐야 한다.</li>
+    </ul>
+
+    <h2>결론</h2>
+
+    <p>조합원 입주권과 분양권은 도착점이 같아 보여도 경로가 다른 권리다. 입주권은 원래 있던 재산이 모습을 바꾼 것이어서 준공 시 취득세가 2.8%로 낮고 2년 보유 후 기본세율로 돌아오지만, 투기과열지구에서는 지위를 넘기는 것 자체가 막힌다. 분양권은 진입이 청약으로 열려 있고 취득 단계에서 세금이 없지만, 잔금 때 중과 위험이 그대로 남고 보유 기간을 늘려도 세율상 보상이 없다.</p>
+
+    <p>어느 쪽이 유리하냐는 질문에는 정답이 없다. <strong>다만 "권리를 산다"는 표현 하나로 두 물건을 같이 묶어 판단하는 것은 확실히 틀렸다.</strong> 계약서에 도장을 찍기 전에 물건의 성격, 사업 단계, 지역 지정 여부, 그리고 본인의 보유 주택 수를 순서대로 확인하는 것이 결국 가장 확실한 절세 전략이다.</p>
+
+    <div class="disclaimer">
+      <strong>면책 고지</strong><br>
+      본 콘텐츠는 정보 제공을 목적으로 작성되었으며 특정 부동산의 매수·매도를 권유하지 않습니다. 본문에 기재된 세율·전매제한 기간·지역 지정 현황은 2026년 8월 기준이며, 관련 법령과 고시는 수시로 개정됩니다. 개별 사안의 세액과 규제 적용 여부는 물건의 상태, 취득 시기, 세대 구성, 관할 지방자치단체 고시에 따라 달라지므로 실제 거래 전에는 반드시 세무사·변호사 등 전문가의 확인과 관할 관청 조회를 거치시기 바랍니다. 본 자료를 근거로 한 의사결정의 결과에 대해 당 사이트는 책임을 지지 않습니다.
+    </div>
+
+  </article>
+
+  <aside>
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>입주권은 관리처분계획 인가일에, 분양권은 공급계약 체결일에 권리가 생긴다</li>
+        <li>준공 시 입주권은 원시취득 2.8%로 주택 수와 무관하게 중과를 피한다</li>
+        <li>분양권 중과 판정은 잔금일이 아니라 분양권 취득일 기준이다</li>
+        <li>주택 수 산입 기준일은 취득세 2020년 8월 12일, 양도세는 입주권 2006년·분양권 2021년 1월 1일</li>
+        <li>분양권 전매제한은 최장 3년이지만 조합원 지위 양도 제한은 기간으로 풀리지 않는다</li>
+        <li>2025년 10월 16일부터 서울 25개 구 전역과 경기 12곳이 투기과열지구다</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>🔗 관련 기사</h3>
+      <ul class="related-list">
+        <li><span class="cat-badge">정책</span><a href="article_20260811_1_acquisition-tax_v2.html">주택 취득세율 계산 방법 — 세율표와 생애최초 감면 조건 정리</a></li>
+        <li><span class="cat-badge">분양</span><a href="article_20260812_1_special-supply_v2.html">특별공급 자격 조건 — 신혼부부·생애최초 소득 기준과 유형별 차이</a></li>
+        <li><span class="cat-badge">시장</span><a href="article_20260810_1_actual_price_v2.html">실거래가 조회 방법 — 국토부 공개시스템 이용법과 호가와의 차이</a></li>
+        <li><span class="cat-badge">재개발</span><a href="article_20260811_2_redevelopment_v2.html">서울시 8만5천호 신속착공 선언 — 재건축·재개발 총정리</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📅 계약 전 확인 순서</h3>
+      <ul class="timeline">
+        <li>
+          <span class="year">1단계</span>
+          <span class="content">등기부등본으로 물건 상태 확인 (주택 존치 / 멸실 후 토지)</span>
+        </li>
+        <li>
+          <span class="year">2단계</span>
+          <span class="content">사업 단계 확인 (조합설립 인가 · 사업시행 인가 · 관리처분 인가)</span>
+        </li>
+        <li>
+          <span class="year">3단계</span>
+          <span class="content">해당 구역의 투기과열지구 지정 여부 조회</span>
+        </li>
+        <li>
+          <span class="year">4단계</span>
+          <span class="content">본인 세대의 보유 주택 수 집계 (취득세·양도세 각각)</span>
+        </li>
+        <li>
+          <span class="year">5단계</span>
+          <span class="content">관리처분계획서로 권리가액·추가 분담금 추산액 확인</span>
+        </li>
+        <li>
+          <span class="year">6단계</span>
+          <span class="content">자금 조달 시점표 작성 (이주비 / 중도금 / 잔금)</span>
+        </li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 부동산인사이트 | <a href="privacy.html">개인정보처리방침</a> | <a href="terms.html">이용약관</a></p>
+  <p style="margin-top:8px;">본 사이트의 모든 콘텐츠는 정보 제공 목적으로 작성되었으며 투자 권유가 아닙니다.</p>
+</footer>
+
+</body>
+</html>
