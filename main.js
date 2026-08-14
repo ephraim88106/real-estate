@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 260,
+    url: 'article_20260814_1_policy_v2.html',
+    category: '정책',
+    title: '종부세 대수술 단행 — \'공동명의 절세\' 시대 끝났다, 2026 세제개편 완전 해부',
+    summary: '2026년 세제개편안이 종합부동산세 전면 개편을 단행, 공동명의 1주택자의 세제혜택 구조가 근본적으로 바뀐다. 초고가·비거주 주택에 세금이 집중되는 반면, 실거주 1주택자에게는 완화 기조가 유지된다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-14',
+    title_en: 'Comprehensive Property Tax Overhaul: The Era of Joint-Ownership Tax Cuts Is Over',
+    summary_en: 'The 2026 tax reform plan completely overhauls the comprehensive real estate tax, fundamentally changing the tax benefit structure for jointly-owned single-family homes. Taxes increase on ultra-high-value properties while easing continues for actual residents.'
+  },
+  {
+    id: 259,
+    url: 'article_20260814_2_subscription_v2.html',
+    category: '분양',
+    title: '8월 분양 대전: 수도권 2만2천 가구 쏟아진다 — 비수기는 없다, 옥석 가리기 전략',
+    summary: '8월 전국 2만8천여 가구가 분양에 나서며 수도권이 80%를 차지하는 가운데, 분양전망지수는 하락세를 보이고 있다. 특공 양극화와 입지 선별이 핵심 전략이 될 전망이다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-14',
+    title_en: 'August Pre-sale Battle: 22,000 Units Flood the Seoul Metro — No Off-Season, Key Strategy to Find Winners',
+    summary_en: 'Over 28,000 units nationwide are set for pre-sale in August, with the Seoul metropolitan area accounting for 80%. As the pre-sale outlook index falls, strategic selection of location and special supply categories becomes critical.'
+  },
+  {
     id: 258,
     url: 'article_20260814_1_rental-yield_v2.html',
     category: '투자',
