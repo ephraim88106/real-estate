@@ -1364,7 +1364,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://realestate.ephseed.com/article_20260814_1_policy_v2</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://realestate.ephseed.com/article_20260814_1_rental-yield_v2</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://realestate.ephseed.com/article_20260814_2_subscription_v2</loc>
     <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
