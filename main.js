@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 258,
+    url: 'article_20260814_1_rental-yield_v2.html',
+    category: '투자',
+    title: '임대수익률 계산법 — 표면수익률·실질수익률 차이와 상가·오피스텔 기준',
+    summary: '같은 물건도 계산법에 따라 수익률이 4.42%에서 3.18%까지 갈린다. 표면수익률과 실질수익률의 계산 순서, 취득세 4.6%를 포함한 부대비용 처리, 차입금리와 실질수익률을 비교해 판단하는 자기자본수익률까지 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-14',
+    title_en: 'How to Calculate Rental Yield — Gross vs. Net Yield for Retail Units and Officetels',
+    summary_en: 'The same property can show 4.42% or 3.18% depending on the formula. A step-by-step guide to gross yield, net yield after the 4.6% acquisition tax and other costs, and the leverage threshold where borrowing starts to hurt returns.'
+  },
+  {
     id: 257,
     url: 'article_20260813_1_column_v2.html',
     category: '칼럼',
