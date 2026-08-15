@@ -11,6 +11,7 @@ index_gate.py — 발행 전 색인 가능성 게이트 (플레이북 §5)
 import sys, os, re, glob, json, fnmatch
 from html.parser import HTMLParser
 
+# ── 1. 제목이 검색어 형태인가 ──────────────────────────────
 QUERY_FORMS = [
     "방법", "하는법", "잡는법", "차이", "뜻", "시기", "이유", "비용", "가격",
     "기준", "계산", "조건", "자격", "신청", "순서", "절차", "종류", "언제",
@@ -18,6 +19,7 @@ QUERY_FORMS = [
     "확인", "준비물", "주의사항", "부작용", "효과", "후기", "추천",
 ]
 
+# ── 2. 낚시형 표현 ────────────────────────────────────────
 BAIT = [
     "진짜 이유", "99%", "99프로", "숨겨진", "완전 해부", "의 과학", "충격",
     "경악", "전말", "모르면", "날립니다", "못 받", "이것만", "안 하면",
@@ -25,14 +27,15 @@ BAIT = [
     "아무도 모르는", "절대 하지", "당신이 모르는", "폭로",
 ]
 
+# ── 3. 날짜·시의성 ────────────────────────────────────────
 DATED = ["브리핑", "시황", "오늘의", "속보", "실시간", "제N보"]
 DATE_RE = re.compile(r"20\d{2}[-./년]\s?\d{1,2}[-./월]\s?\d{1,2}")
 
-TITLE_MAX = 60
-BODY_MIN_WORDS = 400
-DUP_RATIO = 0.50
-SUBTOPIC_MAX = 8
-BIG_TOPIC_RATIO = 0.55
+TITLE_MAX = 60          # 4. 제목 길이
+BODY_MIN_WORDS = 400    # 5. 본문 분량
+DUP_RATIO = 0.50        # 6. 제목 중복
+SUBTOPIC_MAX = 8        # 7. 소주제 포화
+BIG_TOPIC_RATIO = 0.55  # 사이트 큰 주제(정체성) 판정 기준
 
 STOP = set("""그리고 하지만 그러나 또한 위해 대한 통해 대해 있는 없는 하는 되는 이번 지난
 다음 우리 이제 정말 매우 가장 모든 어떤 무슨 그런 이런 저런 것을 것이 수가 등을 등이
@@ -97,17 +100,22 @@ def check(path, repo):
     if not title:
         return [("제목", "<title> 을 찾을 수 없음")], [], title
 
+    # 1
     if not any(k in title for k in QUERY_FORMS):
         fails.append(("1 검색어 형태", f"제목에 검색 의도 표현이 없음 — {'/'.join(QUERY_FORMS[:8])} 등을 넣을 것"))
+    # 2
     hit = [b for b in BAIT if b in title]
     if hit:
         fails.append(("2 낚시형 표현", f"{', '.join(hit)}"))
+    # 3
     d = [k for k in DATED if k in title]
     if DATE_RE.search(title): d.append("날짜 문자열")
     if d:
         fails.append(("3 날짜·시의성", f"{', '.join(d)} — 그날이 지나면 검색 수요가 0"))
+    # 4
     if len(title) > TITLE_MAX:
         fails.append(("4 제목 길이", f"{len(title)}자 (최대 {TITLE_MAX}자, 검색결과에서 잘림)"))
+    # 5
     if wc < BODY_MIN_WORDS:
         fails.append(("5 본문 분량", f"{wc}단어 (최소 {BODY_MIN_WORDS}단어)"))
 
@@ -122,12 +130,14 @@ def check(path, repo):
         big = {w for w, n in c.items() if n / len(others) >= BIG_TOPIC_RATIO}
 
     core = tw - big
+    # 6
     if tw:
         for o in others:
             ow = words(o)
             if ow and len(tw & ow) / len(tw | ow) >= DUP_RATIO:
                 fails.append(("6 제목 중복", f"기존 글과 {int(len(tw & ow)/len(tw | ow)*100)}% 겹침 — \"{o[:40]}\""))
                 break
+    # 7
     if core:
         from collections import Counter
         c = Counter()

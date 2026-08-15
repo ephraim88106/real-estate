@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 261,
+    url: 'article_20260815_1_overseas-property-report_v2.html',
+    category: '해외',
+    title: '해외부동산 취득 신고 대상과 절차 — 보고서 제출 기한·과태료 기준 정리',
+    summary: '거주자가 국외 주택·상가를 취득하면 외국환거래법상 신고와 국세청 명세서 제출이라는 두 갈래 의무가 동시에 발생한다. 신고 창구 구분, 취득·수시·처분 보고서의 제출 기한, 취득가액 2억 원 기준과 과태료 산정 방식을 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-15',
+    title_en: 'Reporting Requirements for Overseas Property Purchases: Filing Steps, Deadlines and Penalties',
+    summary_en: 'Korean residents buying property abroad face two parallel obligations: foreign exchange filings with a designated bank and annual disclosure statements to the tax authority. This guide breaks down which office handles what, the three-month and two-year reporting deadlines, the KRW 200 million threshold, and how penalties are calculated as of August 2026.'
+  },
+  {
     id: 260,
     url: 'article_20260814_1_policy_v2.html',
     category: '정책',
