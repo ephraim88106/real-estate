@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 263,
+    url: 'article_20260815_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '노후계획도시정비법 전면 개정 시행 — 1기 신도시 재건축의 운명이 바뀐다',
+    summary: '2026년 8월 4일 노후계획도시정비법 개정안이 시행되면서 1기 신도시 재건축의 판도가 바뀌고 있다. 분당과 일산의 속도 격차, 서울 85,000가구 착공 계획, 그리고 추가분담금·시공사 수급 문제까지 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-15',
+    title_en: 'Revised Aging City Act Takes Effect — The Future of 1st-Gen New Town Reconstruction Changes',
+    summary_en: 'With the Aging Planned City Act fully revised on August 4, 2026, the trajectory of 1st-generation new town redevelopment in South Korea shifts dramatically. We analyze the Bundang vs. Ilsan speed gap, Seoul\'s 85,000-unit plan, and the key risks around contribution fees and contractor availability.'
+  },
+  {
+    id: 262,
+    url: 'article_20260815_2_investment_v2.html',
+    category: '투자',
+    title: '2026 하반기 부동산 투자 전략 — 경매 낙찰가율 정점 후 \'옥석 가리기\' 시대 본격화',
+    summary: '2026년 1월 107.8%를 기록한 경매 낙찰가율이 냉각 국면에 접어들었다. 갭투자 3중 규제 속에서 재개발 비아파트가 유일한 투자 채널로 부상하고, 비서울로의 자금 이동이 가속화되고 있다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-15',
+    title_en: 'H2 2026 Real Estate Investment Strategy — The \'Smart Selection\' Era After Auction Price Peak',
+    summary_en: 'With Seoul apartment auction yields peaking at 107.8% in January 2026 and now cooling, the gap investment route has been nearly closed by triple-layered regulations. We map out where capital is flowing and which strategies remain viable for the second half of 2026.'
+  },
+  {
     id: 261,
     url: 'article_20260815_1_overseas-property-report_v2.html',
     category: '해외',
