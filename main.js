@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 264,
+    url: 'article_20260816_1_jeonse-right-vs-fixed-date_v2.html',
+    category: '칼럼',
+    title: '전세권 설정과 확정일자 차이 — 효력·비용·우선변제 순위 기준',
+    summary: '보증금을 지키는 두 장치인 전세권 설정등기와 확정일자는 근거 법률부터 다르다. 효력이 생기는 시각, 등록면허세 0.2%와 수수료 600원의 비용 격차, 경매에서 갈리는 우선변제 순위, 그리고 전세권만으로는 받을 수 없는 소액임차인 최우선변제까지 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-16',
+    title_en: 'Jeonse Right Registration vs. Fixed Date Stamp — Effect, Cost and Priority of Repayment',
+    summary_en: 'Korea\'s two main tools for protecting a rental deposit rest on different statutes. We compare when each takes effect, the cost gap between a 0.2% registration tax and a 600-won fee, how repayment priority is decided at auction, and why a registered jeonse right alone does not qualify for small-tenant minimum protection, as of August 2026.'
+  },
+  {
     id: 263,
     url: 'article_20260815_1_redevelopment_v2.html',
     category: '재개발',
