@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 266,
+    url: 'article_20260816_1_overseas_v2.html',
+    category: '해외',
+    title: '엔저·달러 강세 시대, 일본 vs 미국 부동산 — 한국인 투자자의 최적 선택은?',
+    summary: '2026년 엔화 약세와 미국 금리 안정화가 맞물리면서 한국인 해외 부동산 투자의 최적 타이밍이 도래했다. 도쿄 소형 아파트 vs 미국 선벨트 도시, 수익률·리스크·환차익을 완전 비교 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-16',
+    title_en: 'Japan vs US Real Estate in an Era of Weak Yen and Strong Dollar — What\'s the Best Choice for Korean Investors?',
+    summary_en: 'With the weak yen and stabilizing US interest rates in 2026, the optimal timing for Korean investors to enter overseas real estate markets has arrived. A complete comparative analysis of Tokyo small apartments vs US Sun Belt cities.'
+  },
+  {
+    id: 265,
+    url: 'article_20260816_2_column_v2.html',
+    category: '칼럼',
+    title: '공급 쇼크·금리 동결의 역설 — 서울 부동산, 지금 어디쯤 왔나',
+    summary: '서울 아파트 입주 물량이 전년 대비 31% 급감하는 공급 쇼크 속에서도 기준금리 2.50% 동결과 DSR 규제가 병존한다. 전문가들이 내다보는 2026년 하반기 부동산의 진짜 방향을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-16',
+    title_en: 'The Paradox of Supply Shock and Rate Freeze — Where Is Seoul Real Estate Now?',
+    summary_en: 'Despite a 31% plunge in Seoul apartment supply, a frozen base rate of 2.50%, and DSR regulations remain in place. Experts weigh in on the real direction of the real estate market in the second half of 2026.'
+  },
+  {
     id: 264,
     url: 'article_20260816_1_jeonse-right-vs-fixed-date_v2.html',
     category: '칼럼',
