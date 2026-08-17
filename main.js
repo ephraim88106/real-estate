@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 267,
+    url: 'article_20260817_1_official-price_v2.html',
+    category: '시장동향',
+    title: '공시가격 산정 기준 — 현실화율 계산법과 열람·이의신청 기간 정리',
+    summary: '공시가격은 매년 1월 1일을 기준으로 한국부동산원 조사와 중앙부동산가격공시위원회 심의를 거쳐 결정된다. 현실화율 계산 공식과 2026년 확정 변동률, 열람·의견제출·이의신청 기간을 정리했다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-17',
+    title_en: 'How Korea Sets Official Property Prices: Realization Rate Formula and Appeal Deadlines',
+    summary_en: 'Korea\'s official property price is set each year as of January 1 by KREB survey and central committee review. This guide explains the realization-rate formula, the confirmed 2026 change rate, and the public-review and appeal windows.'
+  },
+  {
     id: 266,
     url: 'article_20260816_1_overseas_v2.html',
     category: '해외',
