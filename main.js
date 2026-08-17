@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 269,
+    url: 'article_20260817_1_market_v2.html',
+    category: '시장동향',
+    title: '세제개편 쇼크, 강남·서초 3개월만에 하락전환…중랑·성북은 연일 신고가 [서울 아파트 양극화 리포트]',
+    summary: '2026년 8월 세제개편안 발표 이후 강남·서초구가 3개월만에 하락 전환한 반면, 중랑·성북구 등 서울 외곽은 급등하며 양극화가 심화되고 있다. 분양전망지수도 수도권 기준 14포인트 급락해 공급 심리 위축이 우려된다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-17',
+    title_en: 'Tax Reform Shock: Gangnam/Seocho Turns Negative for First Time in 3 Months as Seoul Apartment Market Bifurcates',
+    summary_en: 'Following Korea\'s 2026 tax reform, Gangnam and Seocho districts dropped for the first time in 3 months while outer Seoul surged. Housing subscription outlook index plunged 14 points in the metro area.'
+  },
+  {
+    id: 268,
+    url: 'article_20260817_2_policy_v2.html',
+    category: '정책',
+    title: '종부세 면제·양도세 전면 개편…2026 세제개편안 완벽 해부, 내 아파트는 혜택인가 폭탄인가?',
+    summary: '2026년 8월 3일 발표된 세제개편안은 종부세 실거주 이원화(시가 20억 이하 면제)와 장기보유특별공제를 2029년부터 거주기간 기준으로 전환한다. 수혜자와 피해자를 유형별로 명확히 분석했다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-17',
+    title_en: '2026 Korea Real Estate Tax Overhaul: From Property Count to Owner-Occupancy — Who Benefits and Who Gets Hit?',
+    summary_en: 'Korea\'s 2026 tax reform shifts comprehensive real estate tax and capital gains tax from property count to actual residency. Analysis covers who benefits (owner-occupiers under 2B KRW) and who gets hit (non-resident investors, high-value holdings).'
+  },
+  {
     id: 267,
     url: 'article_20260817_1_official-price_v2.html',
     category: '시장동향',
