@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 272,
+    url: 'article_20260818_1_subscription_v2.html',
+    category: '분양',
+    title: '당첨되면 수십억 차익? 8월 분양 대전 — 반디클·수도권 2.8만 가구, 청약 전략 완전 해부',
+    summary: '2026년 8월 전국 2만8015가구 분양, 수도권 80% 집중. 반포 디에이치 클래스트(반디클) 청약 전략과 특공 옥석 가리기를 심층 해부합니다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-18',
+    title_en: 'Tens of Billions in Profit? August Subscription Showdown — 28,000 Units in Seoul Metro, Full Strategy Guide',
+    summary_en: '28,015 housing units set for subscription across Korea in August 2026, with 80% concentrated in the Seoul metro area. A deep dive into the DiEH Classtre (Bandikl) strategy and special-supply opportunities.'
+  },
+  {
+    id: 271,
+    url: 'article_20260818_2_reconstruction_v2.html',
+    category: '재개발',
+    title: '8·13 공급대책 해부 — 재건축 85,000가구 조기 착공 선언, 규제 완화의 실체와 한계',
+    summary: '정부 8·13 대책으로 재건축 조합설립 동의율 완화·착공 단축·취득세 감면이 패키지로 제공됐지만, 용적률 상향이 빠져 사업성 개선은 미흡하다는 평가가 나옵니다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-18',
+    title_en: 'Dissecting the 8·13 Supply Plan — 85,000 Early Construction Pledge: Substance and Limits of Deregulation',
+    summary_en: 'The government\'s Aug 13 real-estate supply plan eases union-establishment consent thresholds and offers tax breaks for reconstruction projects, but critics say the omission of FAR increases leaves the core profitability problem unsolved.'
+  },
+  {
     id: 270,
     url: 'article_20260818_1_land-transaction-permit_v2.html',
     category: '정책',
