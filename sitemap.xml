@@ -1442,6 +1442,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://realestate.ephseed.com/article_20260818_1_subscription_v2</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://realestate.ephseed.com/article_20260818_2_reconstruction_v2</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://realestate.ephseed.com/privacy</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
