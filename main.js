@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 270,
+    url: 'article_20260818_1_land-transaction-permit_v2.html',
+    category: '정책',
+    title: '토지거래허가구역 매매 절차 — 허가 대상 기준과 실거주 의무 조건 정리',
+    summary: '허가구역 안에서는 계약 전에 관청의 허가를 먼저 받아야 하고, 허가 없이 맺은 계약은 효력이 없다. 허가 대상이 되는 기준면적과 공동 신청 절차, 처리기간 15일, 허가 후 4개월 이내 입주·2년 거주 의무와 2026년 유예 확대 내용, 위반 시 이행강제금 기준을 법 조문과 지정 현황으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-18',
+    title_en: 'Land Transaction Permit Zones: Purchase Procedure, Eligibility Criteria and Residency Obligations',
+    summary_en: 'Inside a designated permit zone, a sale contract requires prior approval from the local authority and is void without it. This guide covers the area thresholds that trigger the requirement, the joint application procedure and its 15-day statutory processing period, the four-month move-in and two-year residency obligations, the 2026 deferral expansion, and the enforcement fines for breaching the stated purpose.'
+  },
+  {
     id: 269,
     url: 'article_20260817_1_market_v2.html',
     category: '시장동향',
