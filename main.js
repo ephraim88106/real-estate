@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 273,
+    url: 'article_20260819_1_resubscription-restriction_v2.html',
+    category: '분양',
+    title: '재당첨 제한 기간 — 규제지역 여부와 공급유형별 적용 기준',
+    summary: '한 번 당첨되면 세대 전원이 최대 10년간 다시 당첨될 수 없다. 주택공급에 관한 규칙 제54조를 기준으로 당첨된 주택의 구분별 제한 기간과 규제지역 여부에 따른 차이, 1순위 제한·부적격 제한과의 구분, 혼인 전 이력 특례를 정리했다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-19',
+    title_en: 'Re-Winning Restriction Periods — How Regulated-Area Status and Housing Type Set the Ban',
+    summary_en: 'One subscription win can bar an entire household from winning again for up to 10 years. Under Article 54 of the Housing Supply Rules, this guide sorts out the ban periods by housing type, how regulated-area designation changes them, how they differ from the 5-year first-priority ban and disqualification penalties, and the pre-marriage exemption.'
+  },
+  {
     id: 272,
     url: 'article_20260818_1_subscription_v2.html',
     category: '분양',
