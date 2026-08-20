@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 274,
+    url: 'article_20260820_1_proportion-rate_v2.html',
+    category: '재개발',
+    title: '비례율 계산법 — 권리가액·분담금 산정 공식과 100% 기준',
+    summary: '비례율은 (종후자산평가액 − 총사업비) ÷ 종전자산평가액으로 구한다. 세 항목이 각각 무엇을 뜻하는지, 권리가액과 분담금이 어떤 순서로 이어지는지, 100%라는 기준선이 실제로 무엇을 의미하고 무엇을 의미하지 않는지를 숫자 예시로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-20',
+    title_en: 'How to Calculate the Proportion Rate — The Formula Behind Entitlement Value and Owner Contributions',
+    summary_en: 'Korea\'s redevelopment proportion rate is (post-project asset value minus total project cost) divided by pre-project asset value. This guide breaks down each of the three terms, walks the arithmetic through to entitlement value and the owner contribution, and explains what the 100% benchmark does and does not mean.'
+  },
+  {
     id: 273,
     url: 'article_20260819_1_resubscription-restriction_v2.html',
     category: '분양',

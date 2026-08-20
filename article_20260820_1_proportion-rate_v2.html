@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비례율 계산법 — 권리가액·분담금 산정 공식과 100% 기준 | 부동산인사이트</title>
+  <meta name="google-adsense-account" content="ca-pub-9118774019383180">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+  <meta name="description" content="비례율은 (종후자산평가액 − 총사업비) ÷ 종전자산평가액으로 구한다. 세 항목이 각각 무엇을 뜻하는지, 권리가액과 분담금이 어떻게 이어서 계산되는지, 100%라는 기준선이 실제로 무엇을 의미하고 무엇을 의미하지 않는지를 숫자 예시로 정리했다.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f5; color: #222; line-height: 1.8; }
+    a { color: inherit; text-decoration: none; }
+    header { background: #0D2B55; color: #fff; padding: 0 24px; position: sticky; top: 0; z-index: 900; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; }
+    .logo span { color: #F4A52D; }
+    nav { display: flex; gap: 24px; font-size: 0.85rem; }
+    nav a { opacity: 0.85; transition: opacity 0.2s; }
+    nav a:hover { opacity: 1; color: #F4A52D; }
+    .hero { background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%); color: #fff; padding: 60px 24px 50px; }
+    .hero-inner { max-width: 860px; margin: 0 auto; }
+    .category-tag { display: inline-block; background: #7B4A9E; color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 14px; border-radius: 20px; margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.35); }
+    .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.45; margin-bottom: 18px; word-break: keep-all; }
+    .hero-meta { font-size: 0.82rem; opacity: 0.75; margin-top: 12px; }
+    .hero-meta span { margin-right: 18px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+    @media (max-width: 900px) { .container { grid-template-columns: 1fr; } .sidebar { display: none; } }
+    article { background: #fff; border-radius: 8px; padding: 40px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; color: #0D2B55; margin: 36px 0 14px; padding-left: 14px; border-left: 4px solid #7B4A9E; line-height: 1.5; }
+    article h3 { font-size: 1.05rem; font-weight: 700; color: #333; margin: 24px 0 10px; }
+    article p { font-size: 0.97rem; color: #333; margin-bottom: 18px; word-break: keep-all; }
+    article ul { margin: 12px 0 20px 20px; }
+    article ul li { font-size: 0.95rem; color: #444; margin-bottom: 8px; }
+    article ol { margin: 12px 0 20px 22px; }
+    article ol li { font-size: 0.95rem; color: #444; margin-bottom: 10px; }
+    .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0 36px; }
+    @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+    .data-card { background: #F3EDF8; border: 1px solid #D6C2E6; border-radius: 8px; padding: 20px; text-align: center; }
+    .data-card .value { font-family: 'Noto Serif KR', serif; font-size: 1.8rem; font-weight: 700; color: #7B4A9E; }
+    .data-card .label { font-size: 0.8rem; color: #666; margin-top: 6px; }
+    .quote-box { background: #F3EDF8; border-left: 4px solid #7B4A9E; padding: 20px 24px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+    .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.0rem; color: #444; margin-bottom: 8px; }
+    .quote-box .quote-source { font-size: 0.8rem; color: #888; font-style: normal; }
+    .insight-box { background: #FAF6FD; border: 1px solid #D6C2E6; border-radius: 8px; padding: 24px; margin: 28px 0; }
+    .insight-box h3 { color: #56296F; margin-bottom: 12px; font-size: 1.0rem; }
+    .formula-box { background: #2A0A4A; color: #fff; border-radius: 8px; padding: 24px; margin: 24px 0; text-align: center; font-family: 'Noto Serif KR', serif; font-size: 1.05rem; line-height: 2; word-break: keep-all; }
+    .formula-box strong { color: #F4A52D; }
+    .disclaimer { background: #f5f5f5; border-radius: 6px; padding: 16px 20px; margin-top: 36px; font-size: 0.78rem; color: #888; line-height: 1.6; }
+    .sidebar { display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-card { background: #fff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .sidebar-card h4 { font-family: 'Noto Serif KR', serif; font-size: 1.0rem; color: #0D2B55; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #7B4A9E; }
+    .sidebar-card ul { list-style: none; padding: 0; }
+    .sidebar-card ul li { font-size: 0.85rem; color: #444; padding: 8px 0; border-bottom: 1px solid #eee; }
+    .sidebar-card ul li::before { content: '\25b8 '; color: #7B4A9E; }
+    .related-list { list-style: none; padding: 0; }
+    .related-list li { padding: 10px 0; border-bottom: 1px solid #eee; font-size: 0.84rem; color: #333; }
+    .tax-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+    .tax-table th { background: #0D2B55; color: #fff; padding: 10px 12px; text-align: center; }
+    .tax-table td { padding: 9px 12px; border: 1px solid #ddd; text-align: center; }
+    .tax-table tr:nth-child(even) td { background: #f9f9f9; }
+    .tax-table .highlight { color: #7B4A9E; font-weight: 700; }
+    footer { background: #0D2B55; color: #aaa; text-align: center; padding: 30px 24px; font-size: 0.8rem; margin-top: 40px; }
+    footer strong { color: #F4A52D; }
+    .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+    @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+  </style>
+<!-- SEO:BEGIN -->
+<link rel="canonical" href="https://realestate.ephseed.com/article_20260820_1_proportion-rate_v2">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="부동산인사이트">
+<meta property="og:title" content="비례율 계산법 — 권리가액·분담금 산정 공식과 100% 기준 | 부동산인사이트">
+<meta property="og:description" content="비례율은 (종후자산평가액 − 총사업비) ÷ 종전자산평가액으로 구한다. 세 항목이 각각 무엇을 뜻하는지, 권리가액과 분담금이 어떻게 이어서 계산되는지, 100%라는 기준선이 실제로 무엇을 의미하고 무엇을 의미하지 않는지를 숫자 예시로 정리했다.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20260820_1_proportion-rate_v2">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="article:published_time" content="2026-08-20T09:00:00+09:00">
+<meta property="article:modified_time" content="2026-08-20T09:00:00+09:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2GN2G2QF3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-N2GN2G2QF3");</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://realestate.ephseed.com/#organization", "name": "부동산인사이트", "url": "https://realestate.ephseed.com/"}, {"@type": "WebSite", "@id": "https://realestate.ephseed.com/#website", "url": "https://realestate.ephseed.com/", "name": "부동산인사이트", "description": "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트", "inLanguage": "ko-KR", "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}, {"@type": "Article", "@id": "https://realestate.ephseed.com/article_20260820_1_proportion-rate_v2#page", "url": "https://realestate.ephseed.com/article_20260820_1_proportion-rate_v2", "headline": "비례율 계산법 — 권리가액·분담금 산정 공식과 100% 기준 | 부동산인사이트", "description": "비례율은 (종후자산평가액 − 총사업비) ÷ 종전자산평가액으로 구한다. 세 항목이 각각 무엇을 뜻하는지, 권리가액과 분담금이 어떻게 이어서 계산되는지, 100%라는 기준선이 실제로 무엇을 의미하고 무엇을 의미하지 않는지를 숫자 예시로 정리했다.", "inLanguage": "ko-KR", "image": "https://realestate.ephseed.com/assets/og-default.png", "isPartOf": {"@id": "https://realestate.ephseed.com/#website"}, "datePublished": "2026-08-20", "dateModified": "2026-08-20", "author": {"@id": "https://realestate.ephseed.com/#organization"}, "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">부동산<span>인사이트</span></div>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">재개발·재건축</span>
+    <h1>비례율 계산법<br>권리가액·분담금 산정 공식과 100% 기준</h1>
+    <p style="font-size:1.0rem; opacity:0.9; margin-top:14px; word-break:keep-all;">조합 총회 자료에 적힌 &lsquo;추정 비례율 102.3%&rsquo;라는 한 줄은 어떻게 나온 숫자이고, 내 통장에서 나갈 돈과 어떻게 연결되는가. 공식의 세 항목을 하나씩 뜯어 숫자로 따라가 봤다.</p>
+    <div class="hero-meta">
+      <span>📅 2026년 8월 20일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>📂 재개발·재건축</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+    <div class="data-box">
+      <div class="data-card">
+        <div class="value">100%</div>
+        <div class="label">기준선 —<br>&lsquo;개발이익이 딱 종전자산만큼&rsquo;인 지점</div>
+      </div>
+      <div class="data-card">
+        <div class="value">33%</div>
+        <div class="label">2019~2024년<br>아파트 건설공사비 상승률</div>
+      </div>
+      <div class="data-card">
+        <div class="value">53개</div>
+        <div class="label">서울시가 공개한<br>정비사업비 세부 항목 수</div>
+      </div>
+    </div>
+
+    <p>정비사업 조합 총회 자료를 처음 받아 든 사람이 가장 먼저 눈이 가는 숫자는 대개 <strong>비례율</strong>이다. &ldquo;추정 비례율 102.3%&rdquo;처럼 소수점까지 붙어 있으니 정밀해 보이고, 100%를 넘었다니 일단 안심이 된다. 그런데 정작 그 숫자가 무엇을 재는 자인지, 내가 낼 분담금과 어떤 계산으로 이어지는지를 설명해 주는 자료는 좀처럼 붙어 있지 않다.</p>
+
+    <p>비례율은 어려운 개념이 아니다. 항목이 셋뿐인 나눗셈이다. 다만 그 세 항목이 각각 <strong>언제, 누가, 무엇을 기준으로</strong> 정하는지를 모르면 숫자의 의미가 통째로 뒤집힌다. 비례율이 높다고 반드시 유리한 것도 아니고, 100%에 못 미친다고 사업성이 없다는 뜻도 아니다. 아래는 공식을 한 번 세우고, 실제 숫자를 넣어 권리가액과 분담금까지 따라가 본 뒤, 그 숫자를 어디서 확인할 수 있는지까지 정리한 것이다. 기준은 2026년 8월 현재 시행 중인 <strong>도시 및 주거환경정비법</strong>과 각 지자체 공개 자료다.</p>
+
+    <h2>1. 공식 — 항목은 셋뿐이다</h2>
+
+    <p>비례율은 정비사업으로 만들어진 순이익이 조합원들이 원래 갖고 있던 재산의 몇 배인지를 재는 비율이다. 식으로 쓰면 이렇다.</p>
+
+    <div class="formula-box">
+      비례율 = ( <strong>종후자산평가액</strong> − <strong>총사업비</strong> ) ÷ <strong>종전자산평가액</strong> × 100
+    </div>
+
+    <p>세 항목의 뜻은 다음과 같다.</p>
+
+    <ul>
+      <li><strong>종전자산평가액</strong> — 사업하기 전 조합원들이 갖고 있던 토지·건축물의 감정평가 총액이다. 흔히 &lsquo;헌 집 값&rsquo;이라고 부른다.</li>
+      <li><strong>종후자산평가액</strong> — 사업이 끝났을 때 조합이 만들어 낼 자산의 총액이다. 조합원 분양분과 일반분양분, 상가·부대시설 분양 수입을 모두 합친 값이다.</li>
+      <li><strong>총사업비</strong> — 그 자산을 만드는 데 들어간 모든 비용이다. 공사비가 가장 크지만 그것만이 아니다. 설계·감리 등 용역비, 이주비와 금융비용, 조합 운영비, 각종 부담금과 세금이 모두 여기 들어간다.</li>
+    </ul>
+
+    <p>분자인 &lsquo;종후자산 − 총사업비&rsquo;가 사업으로 남은 몫이고, 분모인 종전자산이 그 몫을 나눠 가질 기준이다. 그러니 비례율 100%란 <strong>사업으로 남은 몫이 조합원들의 원래 재산 총액과 정확히 같아지는 지점</strong>을 뜻한다. 재산이 그대로 보전된 상태라고 이해하면 된다.</p>
+
+    <p>서울시는 정비사업비를 구성하는 항목이 뭉뚱그려져 조합원이 검증하기 어렵다는 지적에 따라, 사업비·분담금 추정프로그램에 쓰이는 <strong>53개 세부 항목의 용어 정의와 항목별 산출 기준</strong>을 공개했다. 총사업비가 단일 덩어리가 아니라 최소 수십 갈래로 쪼개지는 값이라는 사실 자체가, 이 숫자가 왜 그렇게 자주 흔들리는지를 설명한다.</p>
+
+    <h2>2. 권리가액 — 비례율은 여기서 내 몫이 된다</h2>
+
+    <p>비례율 자체는 조합 전체의 지표다. 이것이 개인의 숫자로 바뀌는 단계가 <strong>권리가액</strong>이다.</p>
+
+    <div class="formula-box">
+      권리가액 = <strong>내 종전자산 감정평가액</strong> × <strong>비례율</strong>
+    </div>
+
+    <p>내 헌 집이 5억 원으로 평가됐고 비례율이 110%라면 권리가액은 5억 5,000만 원이다. 비례율이 90%라면 4억 5,000만 원이 된다. 같은 집인데 조합 전체의 사업성에 따라 내 지분의 값이 오르내리는 구조다.</p>
+
+    <p>그리고 이 권리가액이 <strong>새 집을 살 때 쓰는 돈</strong>이 된다.</p>
+
+    <div class="formula-box">
+      분담금 = <strong>조합원 분양가</strong> − <strong>권리가액</strong>
+    </div>
+
+    <p>조합원 분양가가 9억 원이고 권리가액이 5억 5,000만 원이면 3억 5,000만 원을 더 내야 한다. 권리가액이 분양가보다 크면 반대로 <strong>환급금</strong>을 받는다. 이 정산 절차를 도시정비법은 <strong>청산금</strong>이라는 이름으로 규율한다.</p>
+
+    <h3>숫자로 한 번에 따라가기</h3>
+
+    <table class="tax-table">
+      <tr>
+        <th>단계</th>
+        <th>항목</th>
+        <th>금액(가정)</th>
+      </tr>
+      <tr>
+        <td>①</td>
+        <td>종후자산평가액(조합 전체)</td>
+        <td>1조 2,000억 원</td>
+      </tr>
+      <tr>
+        <td>②</td>
+        <td>총사업비(조합 전체)</td>
+        <td>7,000억 원</td>
+      </tr>
+      <tr>
+        <td>③</td>
+        <td>종전자산평가액(조합 전체)</td>
+        <td>5,000억 원</td>
+      </tr>
+      <tr>
+        <td>④</td>
+        <td>비례율 = (① − ②) ÷ ③</td>
+        <td class="highlight">100%</td>
+      </tr>
+      <tr>
+        <td>⑤</td>
+        <td>내 종전자산 감정평가액</td>
+        <td>5억 원</td>
+      </tr>
+      <tr>
+        <td>⑥</td>
+        <td>권리가액 = ⑤ × ④</td>
+        <td class="highlight">5억 원</td>
+      </tr>
+      <tr>
+        <td>⑦</td>
+        <td>조합원 분양가</td>
+        <td>9억 원</td>
+      </tr>
+      <tr>
+        <td>⑧</td>
+        <td>분담금 = ⑦ − ⑥</td>
+        <td class="highlight">4억 원</td>
+      </tr>
+    </table>
+
+    <p>여기서 총사업비만 1,000억 원 늘어난다고 해보자. 분자는 5,000억에서 4,000억으로 줄고 비례율은 80%가 된다. 내 권리가액은 4억 원으로 내려앉고, 분양가가 그대로라면 분담금은 4억에서 5억으로 뛴다. <strong>조합 전체 사업비의 20% 증가가 개인 분담금의 25% 증가로 되돌아오는</strong> 구조다. 공사비 인상 소식에 조합이 예민하게 반응하는 이유가 이 지렛대에 있다.</p>
+
+    <div class="quote-box">
+      <p>&ldquo;조합원의 권리가액은 종전자산평가금액에 비례율을 곱해 정해진다.&rdquo;</p>
+      <div class="quote-source">위클리한국주택경제신문 &mdash; 추정비례율 관련 기획 기사</div>
+    </div>
+
+    <h2>3. 100%라는 기준선은 무엇을 의미하고, 무엇을 의미하지 않는가</h2>
+
+    <p>업계에서는 오랫동안 100%가 심리적 마지노선으로 통했다. 비례율이 100%를 밑돌면 &lsquo;헌 집 값도 못 지켰다&rsquo;는 인상을 주기 때문에, 총회에서 사업이 멈춰 서는 일까지 벌어졌다. 그러나 이 기준선에는 두 가지 함정이 있다.</p>
+
+    <h3>함정 하나 — 분모를 키우면 비례율은 떨어진다</h3>
+
+    <p>비례율의 분모는 종전자산평가액이다. 감정평가에서 조합원들의 헌 집 값을 후하게 매기면 분모가 커지고, <strong>같은 사업인데도 비례율은 낮게 나온다</strong>. 반대로 종전자산을 박하게 평가하면 비례율은 올라간다. 즉 비례율이 낮다는 것이 반드시 사업이 나쁘다는 뜻은 아니며, 종전자산을 넉넉히 평가한 결과일 수도 있다.</p>
+
+    <p>중요한 것은 조합원 사이의 <strong>상대적 비율</strong>이다. 종전자산평가액이 전반적으로 높게 나오든 낮게 나오든, 조합원 A와 B의 평가액 비율이 그대로라면 두 사람이 부담할 분담금의 관계는 크게 달라지지 않는다. 비례율이 그 차이를 자동으로 상쇄하기 때문이다. 그래서 감정평가 결과를 받았을 때 봐야 할 것은 절대 금액보다 <strong>비슷한 조건의 이웃 물건과 견줘 내 평가액이 어느 위치에 있는가</strong>다.</p>
+
+    <h3>함정 둘 — 100% 미만이어도 진행되는 사업이 있다</h3>
+
+    <p>비례율이 60%대로 추정되는데도 사업이 순항하는 구역이 있다. 새로 지어질 집의 시세 자체가 압도적으로 높으면, 분담금을 많이 내더라도 최종적으로 손에 쥐는 자산이 훨씬 커지기 때문이다. 반대로 비례율이 105%인데 조합원 분양가가 시세와 별 차이가 없다면 실익은 크지 않다.</p>
+
+    <p>그래서 비례율은 <strong>단독으로 읽으면 오독하기 쉬운 지표</strong>다. 최소한 조합원 분양가, 인근 신축 시세, 종전자산 평가 수준을 함께 놓고 봐야 한다. 100%라는 숫자는 절대적인 합격선이 아니라 계산 구조상의 중립점일 뿐이다.</p>
+
+    <div class="quote-box">
+      <p>&ldquo;공사비 인상 등으로 비례율이 곤두박질치자 관리처분총회가 무산됐다.&rdquo;</p>
+      <div class="quote-source">위클리한국주택경제신문 &mdash; 추정비례율의 한계를 다룬 기획 기사</div>
+    </div>
+
+    <h2>4. 추정 비례율과 확정 비례율 — 언제 굳어지는가</h2>
+
+    <p>조합 설립 무렵부터 총회 자료에 등장하는 비례율은 대부분 <strong>추정</strong> 비례율이다. 아직 시공사도 정해지지 않았거나 설계가 확정되지 않은 단계에서 세운 가정 위의 숫자이므로, 사업이 진행되며 계속 갱신된다.</p>
+
+    <p>비례율이 실질적으로 확정되는 시점은 <strong>관리처분계획</strong> 단계다. 도시정비법은 관리처분계획에 분양설계, 분양대상자별 종전 토지·건축물의 명세와 가격, 분양예정 대지·건축물의 추산액, 정비사업비 추산액, 그리고 <strong>조합원별 분담금의 규모와 납부 시기</strong>를 담도록 하고 있다. 비례율 공식의 세 항목이 모두 이 계획서 안에 들어 있는 셈이다. 종전자산 가격은 원칙적으로 <strong>사업시행계획인가 고시가 있은 날을 기준</strong>으로 평가한다.</p>
+
+    <p>다만 관리처분계획 인가 이후에도 비례율은 완전히 고정되지 않는다. 착공 이후 설계 변경, 공사비 증액, 금리 변동, 일반분양 성적에 따라 총사업비와 종후자산이 다시 움직이고, 그때마다 관리처분계획을 변경한다. <strong>최종 비례율은 사실상 준공 후 청산 단계에서야 확정</strong>된다고 보는 편이 정확하다.</p>
+
+    <h3>비례율을 흔드는 대표 변수</h3>
+
+    <table class="tax-table">
+      <tr>
+        <th>변수</th>
+        <th>공식에서의 위치</th>
+        <th>비례율에 미치는 방향</th>
+      </tr>
+      <tr>
+        <td>공사비 증액</td>
+        <td>총사업비 ↑</td>
+        <td class="highlight">하락</td>
+      </tr>
+      <tr>
+        <td>사업 기간 지연</td>
+        <td>금융비용·관리비 ↑</td>
+        <td class="highlight">하락</td>
+      </tr>
+      <tr>
+        <td>일반분양가 상향</td>
+        <td>종후자산 ↑</td>
+        <td>상승</td>
+      </tr>
+      <tr>
+        <td>용적률 상향·세대수 증가</td>
+        <td>종후자산 ↑</td>
+        <td>상승</td>
+      </tr>
+      <tr>
+        <td>미분양 발생</td>
+        <td>종후자산 ↓ · 금융비용 ↑</td>
+        <td class="highlight">하락</td>
+      </tr>
+      <tr>
+        <td>종전자산 평가액 상향</td>
+        <td>분모 ↑</td>
+        <td class="highlight">하락(실질 영향은 중립)</td>
+      </tr>
+    </table>
+
+    <p>최근 몇 년간 이 표에서 가장 크게 움직인 칸은 공사비였다. 업계 집계에 따르면 2019년부터 2024년 사이 아파트 건설공사비는 약 33% 올랐고, 3.3㎡당 공사비는 600만 원대에서 800만 원대로 이동했다. 자재비와 인건비가 함께 오른 결과이며, 이 상승분은 고스란히 분자를 깎아 비례율을 끌어내렸다. 여러 구역에서 관리처분 단계의 비례율이 사업시행인가 무렵 추정치보다 낮게 나온 배경이다.</p>
+
+    <h2>5. 내 구역의 숫자를 직접 확인하는 방법</h2>
+
+    <p>비례율은 조합이 계산해 통보하는 값이지만, 그 근거를 조합원이 확인할 수 있는 공적 경로가 마련돼 있다.</p>
+
+    <ol>
+      <li><strong>정비사업 정보공개 시스템</strong> — 서울시는 &lsquo;정비사업 정보몽땅&rsquo;(cleanup.seoul.go.kr)을 통해 구역별 조합 자료, 확정된 사업비와 분담금 목록, 사업비·분담금 추정프로그램을 공개한다. 총회 책자에 실린 숫자와 시스템에 올라온 자료를 대조해 볼 수 있다.</li>
+      <li><strong>정비사업비 53개 항목 기준</strong> — 앞서 언급한 항목별 정의와 산출 기준이 공개돼 있으므로, 총사업비 항목이 어떤 근거로 잡혔는지 항목 단위로 따져볼 수 있다.</li>
+      <li><strong>공사비 검증 제도</strong> — 도시정비법은 조합원이 일정 요건을 갖춰 요청하면 한국부동산원 등 검증기관이 공사비 증액의 타당성을 검증하도록 하고 있다. 공사비는 총사업비에서 비중이 가장 큰 항목이므로, 이 검증 결과는 비례율에 직접 영향을 준다.</li>
+      <li><strong>감정평가서 열람</strong> — 종전자산 감정평가 결과는 조합원에게 통지되며, 이의가 있으면 절차에 따라 재평가나 이의 제기를 요구할 수 있다. 앞서 설명했듯 절대 금액보다 이웃 물건과의 상대 위치를 먼저 확인하는 편이 실질적이다.</li>
+      <li><strong>관리처분계획 공람</strong> — 관리처분계획은 인가 신청 전 일정 기간 조합원에게 공람된다. 이 시점이 분담금 규모와 납부 시기를 문서로 확인할 수 있는 가장 중요한 기회다.</li>
+    </ol>
+
+    <div class="insight-box">
+      <h3>혼동하기 쉬운 세 가지 &lsquo;가액&rsquo;</h3>
+      <p style="margin-bottom:10px;"><strong>종전자산평가액</strong>은 감정평가로 매겨진 내 헌 집의 값이고, <strong>권리가액</strong>은 여기에 비례율을 곱해 조정한 값이며, <strong>조합원 분양가</strong>는 내가 받을 새 집에 매겨진 가격이다. 매물 광고에 흔히 등장하는 &lsquo;프리미엄&rsquo;은 이 셋 중 어느 것도 아니고, 시장에서 웃돈으로 거래되는 별개의 금액이다. 네 숫자를 섞어 계산하면 총투자금이 크게 어긋난다.</p>
+    </div>
+
+    <h2>6. 실수요자와 투자자를 위한 시사점</h2>
+
+    <ul>
+      <li><strong>비례율 하나만 보고 판단하지 않는다.</strong> 종전자산 평가 수준, 조합원 분양가, 인근 신축 시세를 함께 놓고 봐야 실익이 보인다. 100% 미만이라는 사실만으로 사업을 배제하면 판단을 그르친다.</li>
+      <li><strong>총투자금은 &lsquo;매입가 + 분담금&rsquo;으로 계산한다.</strong> 입주권을 매입할 때는 매매가에 앞으로 낼 분담금을 더한 금액이 실제 취득 원가다. 여기에 취득세와 이주·금융비용까지 얹어야 비교 가능한 숫자가 된다.</li>
+      <li><strong>추정 비례율에는 반드시 여유를 둔다.</strong> 추정치는 공사비와 분양가 가정 위에 서 있다. 최근의 공사비 상승 추세를 고려하면 하향 조정 가능성을 감안한 보수적 시나리오를 별도로 세워두는 편이 안전하다.</li>
+      <li><strong>사업 단계별로 불확실성의 크기가 다르다.</strong> 조합설립 단계의 비례율과 관리처분 단계의 비례율은 신뢰도가 다르다. 단계가 뒤로 갈수록 숫자는 굳어지지만 그만큼 가격에도 이미 반영돼 있다.</li>
+      <li><strong>분담금 납부 시기를 확인한다.</strong> 관리처분계획에는 분담금 규모뿐 아니라 납부 시기도 담긴다. 총액이 감당 가능해도 납부 시점에 현금이 없으면 문제가 된다. 자금 계획은 총액이 아니라 일정 단위로 세워야 한다.</li>
+      <li><strong>공개 자료를 먼저 읽는다.</strong> 조합 자료와 지자체 공개 시스템의 숫자가 다르면 그 차이 자체가 확인해야 할 신호다.</li>
+    </ul>
+
+    <h2>7. 정리</h2>
+
+    <p>비례율은 정비사업의 사업성을 한 줄로 압축한 지표이지만, 압축된 만큼 정보가 빠져 있다. 분자에는 조합이 앞으로 벌어들일 돈과 써야 할 돈에 대한 가정이 들어 있고, 분모에는 감정평가라는 또 하나의 판단이 들어 있다. 어느 쪽 가정이 바뀌어도 숫자는 움직인다.</p>
+
+    <p>그러니 &ldquo;비례율이 몇 퍼센트냐&rdquo;보다 유용한 질문은 <strong>&ldquo;그 숫자를 만든 세 항목이 각각 어떤 가정 위에 서 있느냐&rdquo;</strong>다. 공사비는 어느 시점 기준으로 잡혔는지, 일반분양가는 어떤 수준을 전제했는지, 종전자산 평가는 언제 이뤄졌는지. 이 세 질문에 답할 수 있으면 비례율이 흔들릴 때 그 방향과 폭을 스스로 가늠할 수 있다. 조합이 통보하는 숫자를 받아 적는 것과, 그 숫자가 어디서 왔는지 아는 것의 차이는 결국 분담금 고지서 앞에서 드러난다.</p>
+
+    <div class="disclaimer">
+      본 기사는 2026년 8월 20일 기준으로 공개된 도시 및 주거환경정비법 관련 규정, 서울시 정비사업 정보공개 자료(사업비·분담금 추정프로그램 항목 공개), 한국부동산원 정비사업 공사비 검증 제도 안내, 정비사업 전문지 보도 등 공개 정보를 바탕으로 작성된 일반적인 해설이며, 특정 정비구역이나 개별 물건에 대한 투자 권유나 법률·세무 자문이 아닙니다. 비례율·권리가액·분담금은 구역별 사업 조건, 감정평가 결과, 관리처분계획 변경에 따라 달라지며 본문의 계산 예시는 이해를 돕기 위한 가정치입니다. 실제 판단 전에는 해당 조합의 관리처분계획서와 총회 자료, 지자체 정비사업 정보공개 시스템의 현행 자료를 반드시 직접 확인하시기 바랍니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h4>🔑 핵심 요약</h4>
+      <ul>
+        <li>비례율 = (종후자산 − 총사업비) ÷ 종전자산 × 100</li>
+        <li>권리가액 = 내 종전자산평가액 × 비례율</li>
+        <li>분담금 = 조합원 분양가 − 권리가액</li>
+        <li>100%는 합격선이 아니라 계산상의 중립점</li>
+        <li>실질 확정은 관리처분, 최종 확정은 준공 후 청산</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h4>📰 관련 기사</h4>
+      <ul class="related-list">
+        <li>조합원 입주권과 분양권 차이 — 취득세·전매제한·주택수 산정 기준</li>
+        <li>토지거래허가구역 매매 절차 — 허가 대상 기준과 실거주 의무 조건 정리</li>
+        <li>공시가격 산정 기준 — 현실화율 계산법과 열람·이의신청 기간 정리</li>
+        <li>재당첨 제한 기간 — 규제지역 여부와 공급유형별 적용 기준</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h4>🧮 계산 순서 한눈에</h4>
+      <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+        <tr>
+          <td style="padding:6px 0; border-bottom:1px solid #eee;">① 종후자산 − 총사업비<br><span style="color:#888;">사업으로 남은 몫</span></td>
+          <td style="padding:6px 0; border-bottom:1px solid #eee; text-align:right;">분자</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 0; border-bottom:1px solid #eee;">② ÷ 종전자산평가액<br><span style="color:#888;">조합 전체 헌 집 값</span></td>
+          <td style="padding:6px 0; border-bottom:1px solid #eee; text-align:right;">분모</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 0; border-bottom:1px solid #eee;">③ = 비례율<br><span style="color:#888;">조합 전체 지표</span></td>
+          <td style="padding:6px 0; border-bottom:1px solid #eee; text-align:right;">%</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 0; border-bottom:1px solid #eee;">④ 내 평가액 × 비례율<br><span style="color:#888;">권리가액</span></td>
+          <td style="padding:6px 0; border-bottom:1px solid #eee; text-align:right;">원</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 0;">⑤ 분양가 − 권리가액<br><span style="color:#888;">분담금(음수면 환급)</span></td>
+          <td style="padding:6px 0; text-align:right;">원</td>
+        </tr>
+      </table>
+      <p style="font-size:0.72rem; color:#999; margin-top:10px; line-height:1.5;">2026년 8월 기준. 구역별 실제 값은 관리처분계획서를 따른다.</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> — 데이터 기반의 한국 부동산 전문 미디어<br>
+  <span style="margin-top:8px; display:block;">© 2026 부동산인사이트. 모든 권리 보유.</span>
+</footer>
+
+</body>
+</html>
