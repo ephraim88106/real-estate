@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 276,
+    url: 'article_20260820_1_column_v2.html',
+    category: '칼럼',
+    title: '2026년 하반기, 집값은 \'양극화\'로 간다 — 세제·금리·공급이 만드는 세 갈래 시장',
+    summary: '세제 개편·공급 절벽·금리 변동이 맞물리며 강남 관망·강북 실수요·지방 차별화라는 세 갈래 시장이 형성되고 있다. 지금 시장의 구조를 해부하고 합리적인 판단 기준을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-20',
+    title_en: 'H2 2026: The Housing Market Splits Three Ways — Tax Reform, Supply Cliff, and Interest Rates',
+    summary_en: 'As tax reform, supply shortages, and rate changes converge, South Korea\'s real estate market is splitting into three distinct tracks. This column analyzes the structural divide and offers guidance for buyers and investors.'
+  },
+  {
+    id: 275,
+    url: 'article_20260820_2_market_v2.html',
+    category: '시장동향',
+    title: '강남은 주춤, 강북은 불 붙었다 — 8월 서울 아파트 시장 온도차 리포트',
+    summary: '8월 서울 아파트 주간 0.21% 상승 속, 강북 14개 구는 0.36% 강세인 반면 강남구는 0.01%에 그쳤다. 세제 개편이 촉발한 강남 관망·강북 실수요 시장 분화의 실체를 데이터로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-20',
+    title_en: 'Gangnam Cools, Gangbuk Heats Up — August Seoul Apartment Market Temperature Gap Report',
+    summary_en: 'Seoul apartments rose 0.21% weekly in August, but Gangbuk surged 0.36% while Gangnam barely moved at 0.01%. This report analyzes the structural market split driven by tax reform.'
+  },
+  {
     id: 274,
     url: 'article_20260820_1_proportion-rate_v2.html',
     category: '재개발',
