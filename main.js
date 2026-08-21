@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 279,
+    url: 'article_20260821_1_policy_v2.html',
+    category: '정책',
+    title: '초고가주택 종부세 최대 2배… \'보유세 혁명\'이 불러올 부동산 지각변동',
+    summary: '2026년 세제개편안으로 시가 40억 원 초과 주택의 종부세율이 2028년까지 최대 2배 인상된다. 보유공제의 거주공제 전환이라는 패러다임 변화가 강남 부동산 시장에 어떤 파장을 일으킬지 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-21',
+    title_en: 'Property Tax Revolution: Up to 2x Hike on Ultra-Premium Homes and What It Means for Korean Real Estate',
+    summary_en: 'The 2026 tax reform raises comprehensive real estate holding taxes by up to 2x for homes valued above 4 billion KRW by 2028. The shift from ownership deductions to residency deductions marks a paradigm change for the Korean property market.'
+  },
+  {
+    id: 278,
+    url: 'article_20260821_2_subscription_v2.html',
+    category: '분양',
+    title: '8월 수도권 2.8만 가구 쏟아진다… 반포디에이치클래스트 1,832가구 \'역대급 로또청약\' 어떻게 준비하나',
+    summary: '2026년 8월 수도권에만 2만2천 가구 분양 예정, 강남 재건축 역대 최대 단지 반포디에이치클래스트의 일반분양 1,832가구까지 쏟아진다. 청약 전략부터 가점 기준, 경기·인천 틈새 단지까지 완전 가이드.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-21',
+    title_en: '28,000 Units Hit Seoul Metro in August: How to Win the \'Lottery Subscription\' at Banpo DH Classtre',
+    summary_en: 'August 2026 sees a record 28,000 apartment units listed in the Seoul metro area. The article provides a complete guide on the Banpo DH Classtre mega-subscription and alternative strategies for buyers with lower priority scores.'
+  },
+  {
     id: 277,
     url: 'article_20260821_1_rental-business-registration_v2.html',
     category: '투자',
