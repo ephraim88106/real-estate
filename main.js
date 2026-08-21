@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 277,
+    url: 'article_20260821_1_rental-business-registration_v2.html',
+    category: '투자',
+    title: '임대사업자 등록 조건 — 의무임대기간과 세제 혜택 기준 정리',
+    summary: '임대사업자 등록은 6년 단기와 10년 장기 두 갈래로 나뉜다. 등록 요건과 신청 순서, 취득세·재산세·종합부동산세·임대소득세·양도소득세 감면의 면적·가액 기준, 임대료 5% 증액 제한과 과태료까지 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-21',
+    title_en: 'Registering as a Rental Housing Business in Korea: Requirements, Mandatory Lease Periods, and Tax Benefits',
+    summary_en: 'Korea\'s rental housing registration splits into a 6-year short-term and a 10-year long-term track. This guide covers eligibility, the two-step filing process, and the size and value thresholds behind acquisition, property, comprehensive real estate, rental income and capital gains tax relief, as of August 2026.'
+  },
+  {
     id: 276,
     url: 'article_20260820_1_column_v2.html',
     category: '칼럼',
