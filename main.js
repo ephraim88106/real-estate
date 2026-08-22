@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 280,
+    url: 'article_20260822_1_foreign-tax-credit_v2.html',
+    category: '해외',
+    title: '외국납부세액공제 한도 계산 방법 — 임대소득 이중과세 조정과 이월 기간',
+    summary: '국외 주택의 월세와 매각 차익은 현지에서 한 번, 한국에서 또 한 번 과세된다. 공제 한도 계산식(산출세액 × 국외소득 비율)과 국가별 구분 계산, 10년 이월공제, 신청서·증빙과 해외부동산 명세서 제출 의무를 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-22',
+    title_en: 'Foreign Tax Credit Limit: How Korea Offsets Double Taxation on Overseas Rental Income',
+    summary_en: 'Rental income and capital gains from property abroad are taxed twice — once locally, once in Korea. This guide explains the credit limit formula, per-country calculation, the 10-year carryforward, and the filing and reporting duties that come with it.'
+  },
+  {
     id: 279,
     url: 'article_20260821_1_policy_v2.html',
     category: '정책',
