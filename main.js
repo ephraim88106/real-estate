@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 282,
+    url: 'article_20260822_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '1기 신도시 재건축 \'속도전\' 돌입… 노후계획도시정비법 개정이 바꾸는 판',
+    summary: '노후계획도시정비법 개정안이 2026년 8월 4일 시행되며 1기 신도시 재건축이 본격 가속화됐다. 예비사업시행자 확대, 동의서 간소화, 분당 선도지구 4곳 동시 진행… 제도는 열렸다, 선택은 냉정하게 해야 할 때다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-22',
+    title_en: '1st-Gen New Town Reconstruction Accelerates: How the Revised Urban Improvement Act Changes the Game',
+    summary_en: 'The revised Aged Planned Urban Improvement Act, effective August 4, 2026, accelerates 1st-generation new town reconstruction. With pre-developer system expansion and consent simplification, the gate is open — but smart selection is key.'
+  },
+  {
+    id: 281,
+    url: 'article_20260822_2_investment_v2.html',
+    category: '투자',
+    title: '갭투자의 달콤한 유혹 vs. 냉각된 경매 시장… 2026년 하반기 부동산 투자 생존법',
+    summary: '경매 낙찰가율 하락, 갭투자 리스크 확대, 보유세 현실화… 2026년 하반기 부동산 투자 환경이 달라졌다. 과거의 공식은 통하지 않는다. 3R 전략으로 살아남는 투자자의 방정식을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-22',
+    title_en: 'Gap Investment vs. Cooling Auction Market: How to Survive Korea\'s Real Estate in H2 2026',
+    summary_en: 'With auction yields falling and gap investment risks rising, the old playbook is obsolete. We analyze the 3R survival strategy — Reduce, Relocate, Rebuild — for Korean real estate investors in the second half of 2026.'
+  },
+  {
     id: 280,
     url: 'article_20260822_1_foreign-tax-credit_v2.html',
     category: '해외',
