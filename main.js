@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 283,
+    url: 'article_20260823_1_brokerage-fee_v2.html',
+    category: '칼럼',
+    title: '중개보수 요율표 \u2014 매매\u00b7임대차 구간별 상한과 계산 방법',
+    summary: '중개보수는 정가가 아니라 상한요율 안에서 협의하는 금액이다. 주택 매매\u00b7임대차 구간별 상한요율과 한도액, 월세 환산식, 분양권 거래금액 산정, 오피스텔 요건, 부가가치세와 실비, 한도 초과분 반환 근거까지 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-23',
+    title_en: 'Korean Real Estate Brokerage Fee Rate Table: Caps and Calculation by Price Bracket',
+    summary_en: 'Brokerage fees in Korea are capped, not fixed. This guide covers the statutory ceiling rates for sales and leases by price bracket, monthly-rent conversion, officetel requirements, VAT, and how to recover overpaid fees, as of August 2026.'
+  },
+  {
     id: 282,
     url: 'article_20260822_1_redevelopment_v2.html',
     category: '재개발',
