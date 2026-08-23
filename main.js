@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 285,
+    url: 'article_20260823_1_overseas_v2.html',
+    category: '해외',
+    title: '엔저의 끝은 어디인가? 일본·미국 부동산 투자, 지금 사도 되는가',
+    summary: '2026년 해외 부동산 투자의 핵심 쟁점 — 엔저 수혜가 끝나가는 일본 시장과 트럼프 관세로 흔들리는 미국 주택시장을 동시에 점검한다. 임대 수익률 중심의 전략 전환과 숨은 비용을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-23',
+    title_en: 'Where Does Yen Weakness End? Should You Buy Japanese or US Real Estate Now?',
+    summary_en: 'A comprehensive look at the key issues for overseas real estate investment in 2026 — examining the Japanese market as yen-weakness benefits fade and the US housing market rattled by Trump tariffs.'
+  },
+  {
+    id: 284,
+    url: 'article_20260823_2_column_v2.html',
+    category: '칼럼',
+    title: '\'강남은 오르고 지방은 죽는다\' — 부동산 양극화, 이제 구조적 문제다',
+    summary: '2026년 부동산 양극화는 사이클이 아닌 구조다. 수도권 +1.79% vs 지방 +0.20%의 9배 격차, 인구·산업·인프라 삼중 집중이 만든 구조적 양극화를 심층 해부한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-23',
+    title_en: '\'Gangnam Rises While the Provinces Die\' — Korea\'s Real Estate Polarization is Now Structural',
+    summary_en: 'Korea\'s 2026 real estate polarization is no longer a cycle — it is a structural problem. A 9-fold gap between Seoul (+1.79%) and provinces (+0.20%) driven by triple concentration of population, industry, and infrastructure.'
+  },
+  {
     id: 283,
     url: 'article_20260823_1_brokerage-fee_v2.html',
     category: '칼럼',
