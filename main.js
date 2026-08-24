@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 288,
+    url: 'article_20260824_1_market_v2.html',
+    category: '시장동향',
+    title: '"지금 안 사면 못 산다"…서울 아파트 평균가 첫 16억 돌파, 강북 중위가도 10억 넘었다 — 중산층 주거 위기 현실화',
+    summary: '2026년 8월 서울 아파트 평균 매매가격이 사상 처음으로 16억원을 돌파했다. 강북 14개구 중위가격도 10억원을 넘기며 서울 전 지역의 고가화가 가속되고 있다. 무주택 중산층의 서울 내 자가 진입 기회는 사실상 사라지고 있다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-24',
+    title_en: 'Seoul Apartment Average Price Breaks 16 Billion Won for First Time — Middle-Class Housing Crisis Becomes Reality',
+    summary_en: 'In August 2026, the average Seoul apartment price surpassed 1.6 billion won for the first time. Gangbuk median also broke 1 billion won. Opportunities for middle-class homebuyers to enter Seoul are virtually disappearing.'
+  },
+  {
+    id: 287,
+    url: 'article_20260824_2_policy_v2.html',
+    category: '정책',
+    title: '스트레스 DSR 3단계·LTV 고강도 규제 임박…"대출 절벽" 앞에서 진짜 무주택자가 더 힘들다',
+    summary: '2026년 하반기 스트레스 DSR 3단계 시행과 고가주택 LTV 한도 축소가 맞물리며 대출 환경이 급변한다. 정부의 가계부채 관리 의도와 달리 실수요 무주택자가 시장 진입에서 더 큰 타격을 받는 정책 역설이 심화되고 있다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-24',
+    title_en: 'Stress DSR Phase 3 & Strict LTV Regulations Imminent — True Homebuyers Hit Hardest by Loan Cliff',
+    summary_en: 'As Stress DSR Phase 3 implementation and tighter LTV caps on high-value homes converge, Korea's loan market faces structural disruption. The policy paradox deepens as genuine homebuyers bear the greatest burden.'
+  },
+  {
     id: 286,
     url: 'article_20260824_1_exclusive-area_v2.html',
     category: '시장동향',
