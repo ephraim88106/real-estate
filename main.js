@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 286,
+    url: 'article_20260824_1_exclusive-area_v2.html',
+    category: '시장동향',
+    title: '전용면적 공급면적 차이 \u2014 계약면적\u00b7실평수 계산법과 전용률 뜻',
+    summary: '같은 집을 두고 84\u33a1, 112\u33a1, 34평이라는 세 숫자가 동시에 쓰인다. 전용면적\u00b7주거공용면적\u00b7공급면적\u00b7계약면적\u00b7서비스면적이 각각 무엇을 세는지, 전용률은 어떻게 계산하는지, 발코니가 왜 면적에서 빠지는지, 85\u33a1라는 선이 세금과 청약에서 무엇을 바꾸는지를 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-24',
+    title_en: 'Exclusive vs Supply Area in Korean Housing: Contract Area, Pyeong Conversion and Exclusive Ratio',
+    summary_en: 'One apartment is described as 84 sqm, 112 sqm and 34 pyeong at the same time. This guide explains exclusive area, common area, supply area, contract area and service area, how to compute the exclusive ratio, why balconies are excluded up to 1.5m, and what the 85 sqm line changes for tax and housing subscription, as of August 2026.'
+  },
+  {
     id: 285,
     url: 'article_20260823_1_overseas_v2.html',
     category: '해외',

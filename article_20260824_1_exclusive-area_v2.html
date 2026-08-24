@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전용면적 공급면적 차이 — 계약면적·실평수 계산법과 전용률 뜻 | 부동산인사이트</title>
+  <meta name="google-adsense-account" content="ca-pub-9118774019383180">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+  <meta name="description" content="같은 집을 두고 84㎡, 112㎡, 34평이라는 세 숫자가 동시에 쓰인다. 전용면적·주거공용면적·공급면적·계약면적·서비스면적이 각각 무엇을 세는지, 전용률은 어떻게 계산하는지, 발코니가 왜 면적에서 빠지는지, 85㎡라는 선이 세금과 청약에서 무엇을 바꾸는지를 2026년 8월 기준으로 정리했다.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f5; color: #222; line-height: 1.8; }
+    a { color: inherit; text-decoration: none; }
+    header { background: #0D2B55; color: #fff; padding: 0 24px; position: sticky; top: 0; z-index: 900; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; }
+    .logo span { color: #F4A52D; }
+    nav { display: flex; gap: 24px; font-size: 0.85rem; }
+    nav a { opacity: 0.85; transition: opacity 0.2s; }
+    nav a:hover { opacity: 1; color: #F4A52D; }
+    .hero { background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%); color: #fff; padding: 60px 24px 50px; }
+    .hero-inner { max-width: 860px; margin: 0 auto; }
+    .category-tag { display: inline-block; background: #1A4D8F; color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 14px; border-radius: 20px; margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.35); }
+    .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.45; margin-bottom: 18px; word-break: keep-all; }
+    .hero-meta { font-size: 0.82rem; opacity: 0.75; margin-top: 12px; }
+    .hero-meta span { margin-right: 18px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+    @media (max-width: 900px) { .container { grid-template-columns: 1fr; } .sidebar { display: none; } }
+    article { background: #fff; border-radius: 8px; padding: 40px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; color: #0D2B55; margin: 36px 0 14px; padding-left: 14px; border-left: 4px solid #1A4D8F; line-height: 1.5; }
+    article h3 { font-size: 1.05rem; font-weight: 700; color: #333; margin: 24px 0 10px; }
+    article p { font-size: 0.97rem; color: #333; margin-bottom: 18px; word-break: keep-all; }
+    article ul { margin: 12px 0 20px 20px; }
+    article ul li { font-size: 0.95rem; color: #444; margin-bottom: 8px; }
+    article ol { margin: 12px 0 20px 22px; }
+    article ol li { font-size: 0.95rem; color: #444; margin-bottom: 10px; }
+    .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0 36px; }
+    @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+    .data-card { background: #EAF1FA; border: 1px solid #B9CFEA; border-radius: 8px; padding: 20px; text-align: center; }
+    .data-card .value { font-family: 'Noto Serif KR', serif; font-size: 1.8rem; font-weight: 700; color: #1A4D8F; }
+    .data-card .label { font-size: 0.8rem; color: #666; margin-top: 6px; }
+    .quote-box { background: #EAF1FA; border-left: 4px solid #1A4D8F; padding: 20px 24px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+    .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.0rem; color: #444; margin-bottom: 8px; }
+    .quote-box .quote-source { font-size: 0.8rem; color: #888; font-style: normal; }
+    .insight-box { background: #F4F8FD; border: 1px solid #B9CFEA; border-radius: 8px; padding: 24px; margin: 28px 0; }
+    .insight-box h3 { color: #123A6B; margin-bottom: 12px; font-size: 1.0rem; }
+    .formula-box { background: #0D2B55; color: #fff; border-radius: 8px; padding: 24px; margin: 24px 0; text-align: center; font-family: 'Noto Serif KR', serif; font-size: 1.05rem; line-height: 2; word-break: keep-all; }
+    .formula-box strong { color: #F4A52D; }
+    .disclaimer { background: #f5f5f5; border-radius: 6px; padding: 16px 20px; margin-top: 36px; font-size: 0.78rem; color: #888; line-height: 1.6; }
+    .sidebar { display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-card { background: #fff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .sidebar-card h4 { font-family: 'Noto Serif KR', serif; font-size: 1.0rem; color: #0D2B55; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #1A4D8F; }
+    .sidebar-card ul { list-style: none; padding: 0; }
+    .sidebar-card ul li { font-size: 0.85rem; color: #444; padding: 8px 0; border-bottom: 1px solid #eee; }
+    .sidebar-card ul li::before { content: '\25b8 '; color: #1A4D8F; }
+    .related-list { list-style: none; padding: 0; }
+    .related-list li { padding: 10px 0; border-bottom: 1px solid #eee; font-size: 0.84rem; color: #333; }
+    .tax-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+    .tax-table th { background: #0D2B55; color: #fff; padding: 10px 12px; text-align: center; }
+    .tax-table td { padding: 9px 12px; border: 1px solid #ddd; text-align: center; }
+    .tax-table tr:nth-child(even) td { background: #f9f9f9; }
+    .tax-table .highlight { color: #1A4D8F; font-weight: 700; }
+    footer { background: #0D2B55; color: #aaa; text-align: center; padding: 30px 24px; font-size: 0.8rem; margin-top: 40px; }
+    footer strong { color: #F4A52D; }
+    .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+    @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+  </style>
+<!-- SEO:BEGIN -->
+<link rel="canonical" href="https://realestate.ephseed.com/article_20260824_1_exclusive-area_v2">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="부동산인사이트">
+<meta property="og:title" content="전용면적 공급면적 차이 — 계약면적·실평수 계산법과 전용률 뜻 | 부동산인사이트">
+<meta property="og:description" content="같은 집을 두고 84㎡, 112㎡, 34평이라는 세 숫자가 동시에 쓰인다. 전용면적·주거공용면적·공급면적·계약면적·서비스면적이 각각 무엇을 세는지, 전용률 계산법과 발코니 1.5m 규칙, 85㎡ 기준이 세금과 청약에서 하는 일을 2026년 8월 기준으로 정리했다.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20260824_1_exclusive-area_v2">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="article:published_time" content="2026-08-24T09:00:00+09:00">
+<meta property="article:modified_time" content="2026-08-24T09:00:00+09:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2GN2G2QF3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-N2GN2G2QF3");</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://realestate.ephseed.com/#organization", "name": "부동산인사이트", "url": "https://realestate.ephseed.com/"}, {"@type": "WebSite", "@id": "https://realestate.ephseed.com/#website", "url": "https://realestate.ephseed.com/", "name": "부동산인사이트", "description": "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트", "inLanguage": "ko-KR", "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}, {"@type": "Article", "@id": "https://realestate.ephseed.com/article_20260824_1_exclusive-area_v2#page", "url": "https://realestate.ephseed.com/article_20260824_1_exclusive-area_v2", "headline": "전용면적 공급면적 차이 — 계약면적·실평수 계산법과 전용률 뜻 | 부동산인사이트", "description": "전용면적·주거공용면적·공급면적·계약면적·서비스면적의 정의와 계산식, 전용률 산출법, 발코니 1.5m 규칙, 85㎡ 기준이 세금·청약에서 하는 역할을 2026년 8월 기준으로 정리했다.", "inLanguage": "ko-KR", "image": "https://realestate.ephseed.com/assets/og-default.png", "isPartOf": {"@id": "https://realestate.ephseed.com/#website"}, "datePublished": "2026-08-24", "dateModified": "2026-08-24", "author": {"@id": "https://realestate.ephseed.com/#organization"}, "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">부동산<span>인사이트</span></div>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">시장동향</span>
+    <h1>전용면적 공급면적 차이<br>계약면적&middot;실평수 계산법과 전용률 뜻</h1>
+    <p style="font-size:1.0rem; opacity:0.9; margin-top:14px; word-break:keep-all;">같은 집 한 채를 두고 84㎡, 112㎡, 34평이라는 세 숫자가 동시에 돌아다닌다. 셋 다 틀린 숫자가 아니다. 다만 <strong>무엇을 세었는지가 다를 뿐</strong>이다. 무엇을 세었는지 모르면 평당가도, 매물 비교도 전부 어긋난다.</p>
+    <div class="hero-meta">
+      <span>📅 2026년 8월 24일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>📂 시장동향</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+    <div class="data-box">
+      <div class="data-card">
+        <div class="value">85㎡</div>
+        <div class="label">국민주택규모 기준<br>주거전용면적(읍·면 100㎡)</div>
+      </div>
+      <div class="data-card">
+        <div class="value">3.3058㎡</div>
+        <div class="label">1평의 정확한 환산값<br>실무 관행은 3.3㎡</div>
+      </div>
+      <div class="data-card">
+        <div class="value">1.5m</div>
+        <div class="label">발코니가 바닥면적에서<br>빠지는 폭 기준</div>
+      </div>
+    </div>
+
+    <p>매물을 세 곳에서 알아보면 숫자가 세 가지로 돌아온다. 어디서는 &ldquo;전용 84&rdquo;라 하고, 어디서는 &ldquo;34평&rdquo;이라 하고, 분양 홈페이지에는 &ldquo;112.4㎡&rdquo;라 적혀 있다. 처음 집을 사는 사람이 가장 먼저 부딪히는 벽이 이 지점이다. 셋이 같은 집을 가리키는지, 아니면 서로 다른 집인지부터 판단이 서지 않는다.</p>
+
+    <p>결론부터 말하면 셋은 같은 집일 수 있다. 우리나라 부동산에서 &lsquo;면적&rsquo;은 하나가 아니라 <strong>넷</strong>이고, 여기에 면적으로 세지 않는 공간이 하나 더 붙는다. 전용면적, 주거공용면적, 공급면적(분양면적), 계약면적 &mdash; 그리고 어디에도 들어가지 않는 서비스면적이다.</p>
+
+    <p>더 까다로운 것은 <strong>상품마다 광고에 쓰는 면적이 다르다</strong>는 점이다. 아파트는 공급면적을 앞세우고, 오피스텔은 계약면적을 앞세운다. 같은 &lsquo;84㎡&rsquo;라는 표기가 아파트에서는 전용 84㎡를 뜻하는 관행이 되었지만 오피스텔 광고에서는 전혀 다른 공간을 가리킬 수 있다. 숫자만 비교하면 반드시 손해를 본다.</p>
+
+    <h2>1. 면적이 네 개인 이유 &mdash; 적용 법률이 다르기 때문이다</h2>
+
+    <p>면적 용어가 여러 개인 것은 마케팅 때문이 아니다. 근거 법령이 다르기 때문이다. 아파트 같은 공동주택은 <strong>주택법</strong>과 그 하위 규칙이 &lsquo;주거전용면적&rsquo;을 정의하고, 건물 자체의 바닥면적과 연면적은 <strong>건축법 시행령 제119조</strong>가 정한다. 오피스텔은 주택이 아니라 건축법상 업무시설이라 주택법의 면적 체계를 그대로 쓰지 않는다.</p>
+
+    <p>여기에 <strong>주택공급에 관한 규칙</strong>이 입주자모집공고에 주거전용면적&middot;주거공용면적&middot;그 밖의 공용면적을 구분해 적도록 요구한다. 분양 공고문 표가 늘 세 칸으로 쪼개져 있는 이유다. 표기 자체는 이미 법으로 투명하게 강제돼 있고, 문제는 그 표를 읽는 방법이 널리 공유되지 않았다는 데 있다.</p>
+
+    <table class="tax-table">
+      <tr>
+        <th>구분</th>
+        <th>무엇을 세는가</th>
+        <th>포함되는 공간</th>
+      </tr>
+      <tr>
+        <td><strong>전용면적</strong></td>
+        <td class="highlight">우리 집 현관문 안쪽</td>
+        <td>거실, 방, 주방, 욕실, 현관, 붙박이장</td>
+      </tr>
+      <tr>
+        <td><strong>주거공용면적</strong></td>
+        <td>같은 동 주민과 나눠 쓰는 곳</td>
+        <td>계단, 복도, 엘리베이터, 공동현관</td>
+      </tr>
+      <tr>
+        <td><strong>기타공용면적</strong></td>
+        <td>단지 전체가 나눠 쓰는 곳</td>
+        <td>지하주차장, 관리사무소, 경비실, 커뮤니티</td>
+      </tr>
+      <tr>
+        <td><strong>서비스면적</strong></td>
+        <td class="highlight">어느 면적에도 안 들어감</td>
+        <td>발코니(확장 전 기준)</td>
+      </tr>
+    </table>
+
+    <h2>2. 전용면적 &mdash; 등기부에 올라가는 유일한 숫자</h2>
+
+    <p>전용면적은 한 세대가 독립적으로 쓰는 공간의 넓이다. 현관문을 열고 들어가 문을 닫았을 때 그 안쪽 전부라고 보면 큰 오차가 없다. 거실과 방, 주방, 욕실, 현관, 붙박이장이 여기 들어간다.</p>
+
+    <p>이 숫자가 중요한 이유는 단순하다. <strong>등기부등본과 건축물대장에 기재되는 면적이 전용면적</strong>이고, 국토교통부 실거래가 공개시스템이 공개하는 면적도 전용면적이며, 세금과 청약 자격을 가르는 기준도 전용면적이다. 공급면적이나 계약면적은 분양과 광고의 언어이고, 전용면적은 <strong>공적 장부와 제도의 언어</strong>다.</p>
+
+    <p>따라서 매물을 비교할 때의 원칙은 하나로 정리된다. 무슨 숫자를 들었든 <strong>전용면적으로 환산한 뒤에 비교한다.</strong> 평당가를 계산할 때도 마찬가지다. 공급면적 기준 평당가와 전용면적 기준 평당가는 3할 가까이 차이가 나므로, 어느 기준인지 밝히지 않은 평당가는 비교에 쓸 수 없는 숫자다.</p>
+
+    <h2>3. 공급면적과 계약면적 &mdash; 계산식은 두 줄이다</h2>
+
+    <p>나머지 면적들은 전용면적 위에 무엇을 더하느냐로 정의된다. 외울 것은 두 줄뿐이다.</p>
+
+    <div class="formula-box">
+      공급면적(분양면적) = <strong>전용면적 + 주거공용면적</strong><br>
+      계약면적 = <strong>공급면적 + 기타공용면적</strong><br>
+      <span style="font-size:0.9rem; opacity:0.85;">서비스면적(발코니)은 어느 쪽에도 포함되지 않는다</span>
+    </div>
+
+    <p>공급면적은 <strong>내 집 + 우리 동에서 나눠 쓰는 곳</strong>이다. 계단과 복도, 엘리베이터가 여기 들어간다. 아파트 분양에서 &lsquo;34평형&rsquo;이라고 부를 때의 34평이 바로 이 공급면적이다.</p>
+
+    <p>계약면적은 여기에 <strong>단지 전체가 나눠 쓰는 곳</strong>까지 얹은 값이다. 지하주차장이 압도적으로 크고, 관리사무소와 경비실, 커뮤니티 시설이 더해진다. 지하주차장을 넓게 지을수록 계약면적이 커지므로, 계약면적이 크다는 것은 집이 넓다는 뜻이 아니라 <strong>단지 부대시설이 크다는 뜻</strong>에 가깝다.</p>
+
+    <h3>전용 84㎡ 아파트를 숫자로 분해하면</h3>
+
+    <p>국민평형이라 불리는 전용 84㎡ 아파트를 표준적인 구성으로 분해하면 이렇게 된다. 단지마다 다르므로 구조를 보여 주기 위한 가정치다.</p>
+
+    <table class="tax-table">
+      <tr>
+        <th>항목</th>
+        <th>면적(㎡)</th>
+        <th>평 환산</th>
+        <th>설명</th>
+      </tr>
+      <tr>
+        <td>전용면적</td>
+        <td class="highlight">84.97</td>
+        <td>25.7평</td>
+        <td>현관문 안쪽</td>
+      </tr>
+      <tr>
+        <td>+ 주거공용면적</td>
+        <td>27.50</td>
+        <td>8.3평</td>
+        <td>계단·복도·승강기</td>
+      </tr>
+      <tr>
+        <td><strong>= 공급면적</strong></td>
+        <td class="highlight"><strong>112.47</strong></td>
+        <td><strong>34.0평</strong></td>
+        <td>흔히 말하는 &lsquo;34평형&rsquo;</td>
+      </tr>
+      <tr>
+        <td>+ 기타공용면적</td>
+        <td>60.00</td>
+        <td>18.1평</td>
+        <td>지하주차장·관리사무소</td>
+      </tr>
+      <tr>
+        <td><strong>= 계약면적</strong></td>
+        <td><strong>172.47</strong></td>
+        <td><strong>52.2평</strong></td>
+        <td>등기·세금과는 무관</td>
+      </tr>
+      <tr>
+        <td>서비스면적(발코니)</td>
+        <td>약 25</td>
+        <td>약 7.6평</td>
+        <td>면적 합계에 미포함</td>
+      </tr>
+    </table>
+
+    <p>표를 보면 &lsquo;84&rsquo;와 &lsquo;112&rsquo;와 &lsquo;34&rsquo;가 왜 동시에 쓰이는지가 드러난다. 84.97㎡는 전용면적, 112.47㎡는 공급면적, 34평은 공급면적을 평으로 환산한 값이다. <strong>세 숫자는 경쟁하는 정보가 아니라 같은 집의 서로 다른 층위</strong>다.</p>
+
+    <h2>4. 실평수 계산법 &mdash; 왜 34평 집에 84라는 숫자가 붙는가</h2>
+
+    <p>평은 이제 법정 계량단위가 아니다. <strong>계량에 관한 법률</strong>에 따라 2007년 7월 1일부터 거래와 증명에서 평 단위 표기가 금지되었고, 위반 시 과태료 규정까지 있다. 그런데도 시장에서는 20년 가까이 평이 살아남았다. 이유는 실용적이다. 112.47㎡보다 34평이 입에 붙고, 평당가라는 비교 지표가 여전히 시세 판단의 기본 문법이기 때문이다.</p>
+
+    <div class="quote-box">
+      <p>&ldquo;평당가를 기준으로 입지와 투자가치를 비교한다. 평은 단순 면적 단위를 넘어 가격 결정의 심리적 지표로 작용한다.&rdquo;</p>
+      <div class="quote-source">법정 계량단위 전환 20년을 다룬 시장 관행 분석 &mdash; 청년일보 보도(2026)</div>
+    </div>
+
+    <p>환산은 어렵지 않다. 1평은 정확히 <strong>3.3058㎡</strong>(400/121㎡)이고, 실무에서는 3.3㎡로 계산한다.</p>
+
+    <div class="formula-box">
+      평 = 면적(㎡) &divide; <strong>3.3058</strong><br>
+      면적(㎡) = 평 &times; <strong>3.3058</strong><br>
+      <span style="font-size:0.9rem; opacity:0.85;">약산은 &divide; 3.3, 암산은 &times; 0.3025</span>
+    </div>
+
+    <p>여기서 반드시 구분해야 할 것이 <strong>&lsquo;평형&rsquo;과 &lsquo;실평수&rsquo;</strong>다. 34평형이라 할 때의 34평은 공급면적을 환산한 값이고, 실제로 살게 되는 공간인 전용 84.97㎡를 환산하면 25.7평이다. 즉 <strong>34평형 집의 실평수는 약 26평</strong>이다. 8평 가까운 차이가 계단과 복도와 엘리베이터에 들어가 있다.</p>
+
+    <table class="tax-table">
+      <tr>
+        <th>흔한 표기</th>
+        <th>전용면적</th>
+        <th>공급면적(대략)</th>
+        <th>실평수(전용 기준)</th>
+      </tr>
+      <tr>
+        <td>24평형</td>
+        <td class="highlight">59㎡</td>
+        <td>약 79㎡</td>
+        <td>약 17.9평</td>
+      </tr>
+      <tr>
+        <td>34평형</td>
+        <td class="highlight">84㎡</td>
+        <td>약 112㎡</td>
+        <td>약 25.7평</td>
+      </tr>
+      <tr>
+        <td>45평형</td>
+        <td class="highlight">114㎡</td>
+        <td>약 149㎡</td>
+        <td>약 34.5평</td>
+      </tr>
+      <tr>
+        <td>59평형</td>
+        <td class="highlight">148㎡</td>
+        <td>약 195㎡</td>
+        <td>약 44.8평</td>
+      </tr>
+    </table>
+
+    <p>표에서 읽어야 할 규칙은 이것이다. <strong>&lsquo;평형&rsquo; 숫자에서 대략 8할을 곱하면 실평수에 가깝다.</strong> 34평형이면 약 26평, 45평형이면 약 34평이다. 매물 광고에서 평형만 들었을 때 머릿속에서 즉시 축소해 보는 습관이 필요하다.</p>
+
+    <h2>5. 발코니는 왜 면적에 들어가지 않는가 &mdash; 1.5m 규칙</h2>
+
+    <p>서비스면적은 세지 않는 면적이다. 대표적인 것이 발코니로, 분양가에도 포함되지 않고 공급면적에도 계약면적에도 들어가지 않는다. 근거는 건축법 시행령의 바닥면적 산정 규정에 있다.</p>
+
+    <div class="quote-box">
+      <p>&ldquo;노대등의 면적에서 노대등이 접한 가장 긴 외벽에 접한 길이에 1.5미터를 곱한 값을 뺀 면적을 바닥면적에 산입한다.&rdquo;</p>
+      <div class="quote-source">건축법 시행령 제119조 제1항 제3호 &mdash; 바닥면적 산정방법</div>
+    </div>
+
+    <p>문장이 복잡하지만 뜻은 간단하다. <strong>외벽에서 폭 1.5m까지의 발코니는 바닥면적에서 빼 준다</strong>는 것이다. 폭이 1.5m를 넘으면 넘는 부분만 바닥면적에 들어간다. 국내 아파트 발코니 폭이 약속이나 한 듯 1.5m 안팎에 맞춰져 있는 것은 우연이 아니라 이 조문의 결과다.</p>
+
+    <p>이 규칙은 세금 판단에도 그대로 이어진다. 서울행정법원은 발코니 확장 폭이 외벽으로부터 1.5m를 넘으면 그 초과분이 바닥면적에 포함되어 과세 대상이 된다고 판단한 바 있다. 비과세 관행은 <strong>1.5m 이내 발코니에만 적용된다</strong>는 취지다.</p>
+
+    <p>실무적으로 서비스면적은 세 가지를 뜻한다. 첫째, <strong>같은 전용 84㎡라도 발코니 설계에 따라 체감 면적이 크게 달라진다.</strong> 둘째, 발코니를 확장해도 <strong>등기상 전용면적은 변하지 않는다</strong> &mdash; 세금이나 청약 자격은 확장 전 숫자로 판단한다. 셋째, 확장 공사비는 분양가와 별도로 청구되므로 <strong>총 지출을 볼 때 분양가만 보면 안 된다.</strong></p>
+
+    <p>참고로 발코니 확장이 합법화된 것은 2005년 건축법 시행령 개정 이후다. 그 이전에 지어진 단지에서 확장이 되어 있다면 적법 절차를 거친 것인지 확인이 필요하다.</p>
+
+    <h2>6. 전용률 계산법 &mdash; 아파트 80%, 오피스텔 50%의 의미</h2>
+
+    <p>전용률은 분양받은 면적 가운데 실제로 내가 쓰는 공간의 비율이다. 계산식 자체는 나눗셈 한 번이다.</p>
+
+    <div class="formula-box">
+      전용률(%) = <strong>전용면적 &divide; 분양면적 &times; 100</strong><br>
+      <span style="font-size:0.9rem; opacity:0.85;">아파트는 분양면적 = 공급면적<br>오피스텔은 분양면적 = 계약면적</span>
+    </div>
+
+    <p>주의할 곳은 분모다. <strong>분모를 무엇으로 잡느냐에 따라 전용률은 전혀 다른 숫자가 나온다.</strong> 앞의 34평형 예시로 계산해 보면 그 차이가 분명해진다.</p>
+
+    <ul>
+      <li>공급면적 기준: 84.97 &divide; 112.47 = <strong>75.5%</strong> &mdash; 아파트에서 통상 말하는 전용률</li>
+      <li>계약면적 기준: 84.97 &divide; 172.47 = <strong>49.3%</strong> &mdash; 같은 집인데 절반으로 떨어진다</li>
+    </ul>
+
+    <p>이것이 아파트와 오피스텔을 숫자만으로 비교하면 안 되는 이유다. 아파트는 공급면적을 기준으로 분양하고 <strong>전용률이 대체로 80% 안팎</strong>이지만, 오피스텔은 기타공용면적까지 포함한 계약면적을 기준으로 분양해 <strong>전용률이 통상 50% 수준</strong>으로 표시된다. 분모가 다르기 때문에 생기는 착시가 상당 부분을 차지한다.</p>
+
+    <p>다만 착시만은 아니다. 오피스텔에는 <strong>발코니 서비스면적이 없다.</strong> 아파트 전용 59㎡에 발코니를 확장하면 체감 공간이 크게 늘지만 오피스텔에는 그 여지가 없다. 그래서 실제 거주 체감으로는 아파트 전용 59㎡가 오피스텔 전용 84㎡와 비슷하다는 비교가 시장에서 통용된다.</p>
+
+    <table class="tax-table">
+      <tr>
+        <th>구분</th>
+        <th>아파트</th>
+        <th>오피스텔</th>
+      </tr>
+      <tr>
+        <td>적용 법률</td>
+        <td class="highlight">주택법</td>
+        <td class="highlight">건축법(업무시설)</td>
+      </tr>
+      <tr>
+        <td>분양 표기 기준</td>
+        <td>공급면적</td>
+        <td>계약면적</td>
+      </tr>
+      <tr>
+        <td>표시 전용률</td>
+        <td class="highlight">약 74~80%</td>
+        <td class="highlight">약 50% 안팎</td>
+      </tr>
+      <tr>
+        <td>발코니 서비스면적</td>
+        <td>있음(확장 가능)</td>
+        <td>없음</td>
+      </tr>
+      <tr>
+        <td>같은 표기 숫자일 때</td>
+        <td colspan="2">오피스텔이 실제로 훨씬 좁다</td>
+      </tr>
+    </table>
+
+    <h2>7. 85㎡라는 선 &mdash; 면적이 돈을 바꾸는 지점</h2>
+
+    <p>면적 용어를 정확히 알아야 하는 실질적 이유는 여기에 있다. 우리나라 부동산 제도에는 <strong>전용면적 85㎡</strong>를 경계로 취급이 달라지는 규정이 여러 겹으로 걸려 있다. 주택법 제2조가 정의하는 국민주택규모가 그 기준선이다.</p>
+
+    <p>국민주택규모는 주거전용면적 <strong>85㎡ 이하</strong>인 주택을 말하며, 수도권을 제외한 도시지역이 아닌 읍&middot;면 지역은 <strong>100㎡ 이하</strong>로 완화된다. 그리고 이 선이 다음 제도들에 그대로 연결된다.</p>
+
+    <table class="tax-table">
+      <tr>
+        <th>제도</th>
+        <th>85㎡ 이하</th>
+        <th>85㎡ 초과</th>
+      </tr>
+      <tr>
+        <td>취득세 부가세<br><span style="color:#888; font-size:0.8rem;">농어촌특별세</span></td>
+        <td class="highlight">비과세</td>
+        <td class="highlight">0.2% 부과</td>
+      </tr>
+      <tr>
+        <td>주택 공급 부가가치세<br><span style="color:#888; font-size:0.8rem;">조세특례제한법 제106조</span></td>
+        <td>면제</td>
+        <td>과세</td>
+      </tr>
+      <tr>
+        <td>청약 제도</td>
+        <td>국민주택 공급 대상</td>
+        <td>민영주택 위주</td>
+      </tr>
+      <tr>
+        <td>민영주택 일반공급</td>
+        <td colspan="2">가점제&middot;추첨제 비율이 면적 구간별로 다르게 적용</td>
+      </tr>
+      <tr>
+        <td>오피스텔 중개보수</td>
+        <td>0.5%/0.4% 요건</td>
+        <td>0.9% 이내 협의</td>
+      </tr>
+    </table>
+
+    <p>구체적인 금액으로 옮겨 보면 체감이 다르다. 8억 원짜리 주택을 취득할 때 <strong>전용 84㎡라면 농어촌특별세가 붙지 않지만, 전용 86㎡라면 0.2%인 160만 원이 더해진다.</strong> 방 크기 차이는 거의 없는데 세금이 갈린다. 신축 분양에서 전용 84㎡ 타입이 유독 많은 이유도 이 선과 무관하지 않다.</p>
+
+    <p>여기서 결정적인 점은 <strong>이 판단이 전부 전용면적으로 이뤄진다</strong>는 것이다. 공급면적 112㎡인 34평형 아파트를 두고 &ldquo;85㎡를 넘으니 국민주택규모가 아니다&rdquo;라고 판단하면 완전히 틀린다. 그 집의 전용면적은 84.97㎡이고, 제도상으로는 국민주택규모에 해당한다. 발코니를 확장했더라도 마찬가지다. <strong>등기부에 적힌 전용면적이 바뀌지 않는 한 판정 결과도 바뀌지 않는다.</strong></p>
+
+    <h2>8. 실제 매물을 볼 때 확인하는 순서</h2>
+
+    <p>정의를 아는 것과 현장에서 쓰는 것은 다른 문제다. 실무에서는 다음 순서로 확인하면 착오가 거의 없다.</p>
+
+    <ol>
+      <li><strong>어느 면적인지부터 묻는다.</strong> &ldquo;이 84가 전용인가요, 공급인가요&rdquo; 한 마디면 대화의 기준이 정해진다. 오피스텔이라면 계약면적일 가능성을 먼저 의심한다.</li>
+      <li><strong>건축물대장이나 등기부등본으로 확인한다.</strong> 광고 숫자가 아니라 공적 장부의 전용면적이 최종 기준이다. 건축물대장은 정부24, 등기부등본은 인터넷등기소에서 열람할 수 있다.</li>
+      <li><strong>실거래가를 볼 때는 면적 기준이 통일돼 있음을 활용한다.</strong> 국토교통부 실거래가 공개시스템은 전용면적으로 공개하므로, 서로 다른 단지의 같은 전용면적끼리는 바로 비교할 수 있다.</li>
+      <li><strong>평당가는 기준을 밝혀서 계산한다.</strong> 공급면적 기준인지 전용면적 기준인지 명시하지 않은 평당가는 비교에 쓰지 않는다.</li>
+      <li><strong>발코니와 확장 여부를 따로 확인한다.</strong> 같은 전용면적이라도 서비스면적과 확장 상태에 따라 체감 공간과 총 지출이 달라진다.</li>
+    </ol>
+
+    <div class="insight-box">
+      <h3>실수요자&middot;투자자를 위한 체크포인트</h3>
+      <ul>
+        <li><strong>등기&middot;세금&middot;청약은 전부 전용면적으로 판단한다.</strong> 공급면적과 계약면적은 분양과 광고의 언어다.</li>
+        <li><strong>공급면적 = 전용 + 주거공용, 계약면적 = 공급 + 기타공용.</strong> 이 두 줄이면 모든 표를 읽을 수 있다.</li>
+        <li><strong>&lsquo;평형&rsquo;에 약 0.8을 곱하면 실평수</strong>다. 34평형의 실평수는 약 26평이다.</li>
+        <li><strong>1평 = 3.3058㎡.</strong> 평은 2007년 7월 1일부터 법정 계량단위가 아니지만 시장 관행으로 남아 있다.</li>
+        <li><strong>계약면적이 크다는 것은 집이 넓다는 뜻이 아니다.</strong> 지하주차장이 큰 것일 수 있다.</li>
+        <li><strong>오피스텔 표기 숫자는 계약면적일 가능성을 먼저 의심한다.</strong> 아파트와 같은 숫자면 실제로는 훨씬 좁다.</li>
+        <li><strong>발코니는 폭 1.5m까지 바닥면적에서 빠진다.</strong> 확장해도 등기상 전용면적은 변하지 않는다.</li>
+        <li><strong>85㎡는 세금과 청약이 갈리는 선</strong>이다. 8억 주택에서 농어촌특별세 160만 원이 여기서 갈린다.</li>
+        <li><strong>평당가는 기준을 밝히고 계산한다.</strong> 기준이 다르면 3할 가까이 차이가 난다.</li>
+      </ul>
+    </div>
+
+    <h2>9. 결론 &mdash; 숫자를 바꾸기 전에 기준부터 통일한다</h2>
+
+    <p>면적 용어가 여럿인 것은 누군가를 속이려고 만든 장치가 아니다. 적용 법률이 다르고 세는 범위가 달라서 생긴 결과이고, 분양 공고문은 이미 세 칸으로 나눠 정직하게 적고 있다. 문제는 광고와 대화에서 그중 하나만 떼어 쓸 때 발생한다.</p>
+
+    <p>그래서 대응도 단순하다. <strong>비교하기 전에 전용면적으로 기준을 통일하는 것</strong> 하나면 대부분의 혼선이 사라진다. 전용면적은 등기부에 적히고, 실거래가 통계가 쓰고, 세금과 청약이 판단 근거로 삼는 유일한 숫자다. 공급면적과 계약면적은 그 위에 무엇을 얹었는지를 알려 주는 부가 정보로 두면 된다.</p>
+
+    <p>집을 고르는 일은 결국 같은 조건끼리 견주는 일이다. 견주기 위해서는 자가 같아야 한다. 전용면적이 그 자다.</p>
+
+    <div class="disclaimer">
+      본 기사는 2026년 8월 24일 기준으로 공개된 주택법 제2조, 주택공급에 관한 규칙, 건축법 시행령 제119조, 계량에 관한 법률, 조세특례제한법 제106조, 지방세법 및 농어촌특별세법의 관련 규정과 국토교통부&middot;한국부동산원의 공개 자료를 바탕으로 작성된 일반적인 해설이며, 특정 거래에 대한 자문이나 투자 권유가 아닙니다. 본문의 면적 분해표와 평형별 환산표, 전용률 수치는 구조를 설명하기 위한 가정치 및 통상적인 범위이며 단지와 상품에 따라 다릅니다. 세율과 면적 기준은 법령 개정에 따라 변경될 수 있습니다. 실제 계약 전에는 건축물대장&middot;등기부등본과 입주자모집공고문, 관할 지방자치단체의 안내를 통해 현행 기준과 해당 물건의 실제 면적을 반드시 직접 확인하시기 바랍니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h4>🔑 핵심 요약</h4>
+      <ul>
+        <li>공급면적 = 전용 + 주거공용</li>
+        <li>계약면적 = 공급 + 기타공용</li>
+        <li>34평형의 실평수는 약 26평</li>
+        <li>발코니는 폭 1.5m까지 면적 제외</li>
+        <li>등기·세금·청약은 전용면적 기준</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h4>📰 관련 기사</h4>
+      <ul class="related-list">
+        <li>실거래가 조회 방법 — 국토부 공개시스템 이용법과 호가와의 차이</li>
+        <li>공시가격 산정 기준 — 현실화율 계산법과 열람·이의신청 기간 정리</li>
+        <li>중개보수 요율표 — 매매·임대차 구간별 상한과 계산 방법</li>
+        <li>주택 취득세율 계산 방법 — 세율표와 생애최초 감면 조건 정리</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h4>🧮 평 환산 빠른표</h4>
+      <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+        <tr>
+          <td style="padding:6px 0; border-bottom:1px solid #eee;">전용 59㎡<br><span style="color:#888;">24평형</span></td>
+          <td style="padding:6px 0; border-bottom:1px solid #eee; text-align:right;">17.9평</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 0; border-bottom:1px solid #eee;">전용 84㎡<br><span style="color:#888;">34평형</span></td>
+          <td style="padding:6px 0; border-bottom:1px solid #eee; text-align:right;">25.7평</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 0; border-bottom:1px solid #eee;">전용 114㎡<br><span style="color:#888;">45평형</span></td>
+          <td style="padding:6px 0; border-bottom:1px solid #eee; text-align:right;">34.5평</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 0; border-bottom:1px solid #eee;">1평<br><span style="color:#888;">정확값</span></td>
+          <td style="padding:6px 0; border-bottom:1px solid #eee; text-align:right;">3.3058㎡</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 0;">국민주택규모<br><span style="color:#888;">읍·면 100㎡</span></td>
+          <td style="padding:6px 0; text-align:right;">85㎡</td>
+        </tr>
+      </table>
+      <p style="font-size:0.72rem; color:#999; margin-top:10px; line-height:1.5;">2026년 8월 기준. 평형은 공급면적, 실평수는 전용면적 환산값.</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> — 데이터 기반의 한국 부동산 전문 미디어<br>
+  <span style="margin-top:8px; display:block;">© 2026 부동산인사이트. 모든 권리 보유.</span>
+</footer>
+
+</body>
+</html>
