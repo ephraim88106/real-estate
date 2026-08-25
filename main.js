@@ -142,7 +142,7 @@ const articles = [
     author: '부동산인사이트 편집팀',
     date: '2026-08-24',
     title_en: 'Stress DSR Phase 3 & Strict LTV Regulations Imminent — True Homebuyers Hit Hardest by Loan Cliff',
-    summary_en: 'As Stress DSR Phase 3 implementation and tighter LTV caps on high-value homes converge, Korea's loan market faces structural disruption. The policy paradox deepens as genuine homebuyers bear the greatest burden.'
+    summary_en: 'As Stress DSR Phase 3 implementation and tighter LTV caps on high-value homes converge, Korea\'s loan market faces structural disruption. The policy paradox deepens as genuine homebuyers bear the greatest burden.'
   },
   {
     id: 286,
