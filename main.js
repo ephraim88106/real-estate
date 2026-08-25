@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 289,
+    url: 'article_20260825_1_temporary-two-house_v2.html',
+    category: '정책',
+    title: '일시적 2주택 비과세 요건 — 종전주택 처분기한과 취득 시점 정리',
+    summary: '이사 과정에서 잠시 두 채가 되는 구간을 세법은 다주택으로 보지 않는다. 소득세법 시행령 제155조 제1항이 요구하는 세 가지 요건과 3년 처분기한의 기산일, 2023년 1월 12일 일원화 경위, 취득세·종합부동산세가 별도로 판단되는 이유를 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-25',
+    title_en: 'Temporary Two-Home CGT Exemption Requirements — Disposal Deadline and Acquisition Timing Explained',
+    summary_en: 'Korean tax law does not treat the brief overlap during a move as multi-home ownership. This guide explains the three requirements under Enforcement Decree of the Income Tax Act Article 155(1), how the three-year disposal deadline is counted, the January 12, 2023 unification, and why acquisition tax and comprehensive real estate tax are judged separately.'
+  },
+  {
     id: 288,
     url: 'article_20260824_1_market_v2.html',
     category: '시장동향',
