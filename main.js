@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 291,
+    url: 'article_20260825_1_subscription_v2.html',
+    category: '분양',
+    title: '8월 전국 2.8만 가구 쏟아진다... 수도권 80% 집중, 지금 청약 넣어도 될까?',
+    summary: '8월 전국 2만8015가구 분양 예정, 수도권이 80%를 차지한다. 특별공급 경쟁 양극화와 DSR 규제 속에서 청약 전략을 어떻게 세워야 할지 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-25',
+    title_en: '28,000 Units Hit the Market in August... 80% in Metro Area, Is Now the Time to Apply?',
+    summary_en: '28,015 housing units are set for subscription in August 2026, with 80% concentrated in the Seoul metropolitan area. This analysis covers optimal subscription strategies amid fierce competition and lending restrictions.'
+  },
+  {
+    id: 290,
+    url: 'article_20260825_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '서울 85개 구역 8만5천 호 \'신속착공\'... 조합설립 245일 빨라진다, 지금 매수 타이밍인가',
+    summary: '서울시가 3년간 85개 구역 8만5000가구 신속착공을 선언하고, 조합설립 기간을 245일 단축하는 제도 개편을 단행했다. 정비사업 투자 기회와 리스크를 단계별로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-25',
+    title_en: 'Seoul\'s 85 Districts to Fast-Track 85,000 Units — Cooperative Formation Now 245 Days Faster',
+    summary_en: 'Seoul has announced rapid construction for 85,000 housing units across 85 districts over three years, cutting cooperative formation time by 245 days. We analyze investment opportunities and risks by project stage.'
+  },
+  {
     id: 289,
     url: 'article_20260825_1_temporary-two-house_v2.html',
     category: '정책',
