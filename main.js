@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 292,
+    url: 'article_20260826_1_subscription-deposit_v2.html',
+    category: '분양',
+    title: '청약통장 예치금 얼마 \u2014 지역별\u00b7면적별 금액과 1순위 인정 시점',
+    summary: '민영주택 청약예치기준금액을 지역\u00b7면적별로 정리했다. 서울\u00b7부산 85\u33a1 이하 300만원부터 모든 면적 1,500만원까지, 예치금이 인정되는 시점과 거주지 판단 기준, 국민주택과의 차이를 함께 짚는다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-26',
+    title_en: 'How Much Must Be in Your Housing Subscription Account: Deposit Standards by Region and Unit Size',
+    summary_en: 'A breakdown of Korea\u2019s statutory deposit requirements for private housing subscriptions, from 3 million KRW for units under 85 square meters in Seoul and Busan to 15 million KRW for unrestricted size, plus how residency and timing are judged.'
+  },
+  {
     id: 291,
     url: 'article_20260825_1_subscription_v2.html',
     category: '분양',
