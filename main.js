@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 294,
+    url: 'article_20260826_1_investment_v2.html',
+    category: '투자',
+    title: '공급절벽·금리인하 기대 속 투자 생존법…2026년 하반기 부동산 옥석 가리기 전략',
+    summary: '2026년 하반기 부동산 시장은 공급 절벽과 금리 인하 기대가 맞물리며 양극화가 심화되고 있다. 수도권 핵심지와 지방의 격차가 벌어지는 지금, 개별 매물 분석과 세제 리스크 관리를 통해 옥석을 가려야 한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-26',
+    title_en: 'Survival Guide for Real Estate Investment in H2 2026: Identifying Quality Assets Amid Supply Shortage and Rate Cut Expectations',
+    summary_en: 'Korea\'s H2 2026 real estate market is polarizing sharply as supply shortages and rate cut expectations collide. Investors must screen individual properties and manage tax risks to find genuine opportunities.'
+  },
+  {
+    id: 293,
+    url: 'article_20260826_2_overseas_v2.html',
+    category: '해외',
+    title: '엔화 159엔 시대, 도쿄 vs 동남아…한국인 해외부동산 투자 최적 전략',
+    summary: '엔화 약세와 일본은행 정책 정상화 가능성이 교차하는 2026년, 도쿄 부동산과 동남아 신흥국 투자 중 어떤 선택이 한국인에게 유리한가. 수익률·환율·법적 리스크를 종합 분석한 해외부동산 가이드.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-26',
+    title_en: 'Yen at 159: Tokyo vs Southeast Asia — The Optimal Overseas Real Estate Strategy for Korean Investors',
+    summary_en: 'As yen weakness and potential BOJ policy normalization intersect in 2026, this guide analyzes Tokyo vs Southeast Asian property markets, comparing yields, currency risks, and legal constraints for Korean investors.'
+  },
+  {
     id: 292,
     url: 'article_20260826_1_subscription-deposit_v2.html',
     category: '분양',
