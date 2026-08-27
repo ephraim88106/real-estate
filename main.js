@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 297,
+    url: 'article_20260827_1_column_v2.html',
+    category: '칼럼',
+    title: '강남은 빠지는데 강북은 오른다 — 2026년 8월 서울 부동산 역설의 해부',
+    summary: '2026년 8월 서울 아파트 시장은 강남·서초 하락과 강북 외곽 상승이 동시에 나타나는 역설적 구조를 보이고 있다. 토지거래허가구역 확대와 대출 규제 강화가 고가 지역 수요를 억누르면서, 실수요자들이 저렴한 외곽으로 이동하는 풍선효과가 뚜렷하다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-27',
+    title_en: 'Gangnam Falls, Gangbuk Rises — Dissecting the August 2026 Seoul Real Estate Paradox',
+    summary_en: 'Seoul\'s August 2026 apartment market shows a paradoxical structure where Gangnam falls while Gangbuk rises. As land transaction permit zones expand and loan regulations tighten, real buyers are moving to affordable outer areas creating a clear balloon effect.'
+  },
+  {
+    id: 296,
+    url: 'article_20260827_2_market_v2.html',
+    category: '시장동향',
+    title: 'KB도 인정한 서울 1.14% 상승 — 2026년 8월 수도권 아파트 시장 완전 해부',
+    summary: '2026년 8월 서울 아파트 가격이 KB 기준 1.14% 상승하며 경기 남부도 강세를 보이고 있다. 수도권 분양전망지수는 14p 하락해 공급 절벽 우려가 고조되는 가운데, 전세가 상승과 입주물량 감소가 맞물려 중장기 가격 지지력을 높이고 있다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-27',
+    title_en: 'Seoul Up 1.14% — Full Anatomy of the August 2026 Seoul Metropolitan Apartment Market',
+    summary_en: 'Seoul apartment prices rose 1.14% in August per KB data with southern Gyeonggi maintaining strong momentum. The metropolitan sales outlook index dropped 14 points, but rising rents and falling new supply are strengthening mid-to-long-term price support.'
+  },
+  {
     id: 295,
     url: 'article_20260827_1_right-calculation-date_v2.html',
     category: '재개발',
