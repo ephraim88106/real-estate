@@ -86,15 +86,15 @@ const i18n = {
 const articles = [
   {
     id: 295,
-    url: 'article_20260827_1_proportion-rate_v2.html',
+    url: 'article_20260827_1_right-calculation-date_v2.html',
     category: '재개발',
-    title: '비례율 뜻과 계산 방법 \u2014 권리가액\u00b7분담금 산정 절차 정리',
-    summary: '정비사업 통지서에 적힌 비례율은 (종후자산평가액-총사업비)\u00f7종전자산평가액으로 계산되는 사업성 지표다. 권리가액은 감정평가액에 비례율을 곱한 값이고, 분담금은 조합원분양가에서 권리가액을 뺀 금액이다. 공식의 세 항목과 산정 절차, 비례율 100%의 함정을 정리했다.',
+    title: '권리산정기준일 뜻 \u2014 지분 쪼개기 유형과 분양자격 판단 시점',
+    summary: '권리산정기준일은 정비사업에서 새 아파트를 분양받을 자격을 판정하는 날짜다. 도시정비법 제77조가 정한 네 가지 소유자 증가 행위와, 기준일 이후 매매는 자격이 승계되지만 기준일 이후 신축은 제한된다는 차이, 서울 신속통합기획 일괄 지정 사례를 정리했다.',
     image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
     author: '부동산인사이트 편집팀',
     date: '2026-08-27',
-    title_en: 'What Proportion Rate Means and How to Calculate It: Entitlement Value and Contribution in Korean Redevelopment',
-    summary_en: 'In Korean redevelopment projects the proportion rate equals post-project asset value minus total project cost, divided by pre-project appraised value. Entitlement value is your appraisal times that rate, and your contribution is the member sale price minus entitlement value. This guide breaks down all three inputs and the pitfall of the 100% benchmark.'
+    title_en: 'What the Rights Assessment Date Means: Share-Splitting Types and When Sale Eligibility Is Judged',
+    summary_en: 'In Korean redevelopment, the rights assessment date decides who qualifies for a new apartment unit. This guide covers the four ownership-increasing acts listed in Article 77, why buying an existing unit after the date still transfers eligibility while newly built units do not, and Seoul fast-track designation cases.'
   },
   {
     id: 294,
