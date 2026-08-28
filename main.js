@@ -85,6 +85,19 @@ const i18n = {
 
 const articles = [
   {
+    id: 298,
+    url: 'article_20260828_1_registry-certificate_v2.html',
+    category: '투자',
+    title: '등기부등본 보는법 — 갑구·을구 차이와 근저당 채권최고액 계산',
+    summary: '등기사항전부증명서는 표제부·갑구·을구 세 칸이 각각 다른 질문에 답한다. 부동산등기규칙 제13조가 정한 기재 항목과 갑구의 압류·가압류·가처분을 읽는 순서를 정리했다. 민법 제357조 근저당의 채권최고액에서 실제 대출 잔액을 역산하는 방법과 인터넷등기소 열람 700원·발급 1,000원 수수료 기준을 2026년 8월 기준으로 짚었다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-28',
+    title_en: 'How to Read a Korean Property Register: Gap-gu vs Eul-gu and Calculating the Maximum Claim Amount',
+    summary_en: 'A Korean property register (deunggi certificate) is split into three sections that each answer a different question. This guide explains what Registry Rule Art. 13 requires in each section, how to spot seizures and injunctions in Gap-gu, how to back out the actual loan balance from the maximum claim amount under Civil Act Art. 357, and the current viewing and issuance fees as of August 2026.'
+  },
+
+  {
     id: 297,
     url: 'article_20260827_1_column_v2.html',
     category: '칼럼',
