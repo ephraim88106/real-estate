@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 300,
+    url: 'article_20260828_1_policy_v2.html',
+    category: '정책',
+    title: '수도권 주담대 한도 \'반토막\'·스트레스 DSR 3단계 시대… 지금 대출받으면 얼마나 줄어드나?',
+    summary: '2026년 8월 스트레스 DSR 3단계 시행으로 수도권 주담대 한도가 대폭 축소됐다. 25억 초과 주택은 최대 2억 원만 대출 가능하며, 가계부채/GDP 80% 목표를 향한 정부의 고강도 규제 기조가 지속된다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-28',
+    title_en: 'Seoul Mortgage Limits Slashed — Stress DSR Phase 3 Era: How Much Less Can You Borrow Now?',
+    summary_en: 'Stress DSR Phase 3 took effect in July 2026, drastically cutting mortgage limits in the capital region. Properties above 2.5 billion won are now capped at 200 million won in loans as the government pursues its household debt reduction target.'
+  },
+  {
+    id: 299,
+    url: 'article_20260828_2_subscription_v2.html',
+    category: '분양',
+    title: '비수기에도 4만 가구 쏟아진다… 서울 분양가 44% 급등 시대, 청약 \'옥석 가리기\' 완전 가이드',
+    summary: '2026년 8월 전국 4만 가구 분양 물량이 쏟아지는 가운데, 서울 3.3㎡당 분양가는 2년 새 44% 급등했다. 수도권에 물량이 집중되고 청약 양극화가 심화되는 시장에서 옥석을 가리는 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-28',
+    title_en: 'Nearly 40,000 Units Hit the Market Even in Off-Season — Complete Guide to Picking Winners as Seoul Prices Surge 44%',
+    summary_en: 'Nearly 40,000 apartment units are set for launch in August 2026 despite the off-season, while Seoul per-unit construction price has surged 44% in two years. We provide a strategic guide for navigating the polarized subscription market.'
+  },
+  {
     id: 298,
     url: 'article_20260828_1_registry-certificate_v2.html',
     category: '투자',
