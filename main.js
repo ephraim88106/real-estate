@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 303,
+    url: 'article_20260829_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '서울 재건축의 대역전극: 은마·잠실5단지 사업 가속화, 강남권 정비사업 \'판도 바뀐다\'',
+    summary: '2026년 서울 강남권 재건축이 속도를 내고 있다. 은마아파트와 잠실주공5단지가 사업시행계획 인가를 받으며 2028년 착공을 향해 달리는 가운데, 압구정·목동 등 서울 주요 정비사업장이 오세훈표 신속 처리 시스템 아래 잇달아 인허가 문턱을 넘고 있다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-29',
+    title_en: 'Seoul Redevelopment Reversal: Eunma and Jamsil 5 Accelerate, Gangnam Projects Game-Changing',
+    summary_en: 'Seoul Gangnam redevelopment is gaining momentum in 2026. Eunma Apartments and Jamsil Jugong 5 have received project approvals targeting 2028 groundbreaking, while Apgujeong and Mokdong projects clear approval hurdles under the fast-track system.'
+  },
+  {
+    id: 302,
+    url: 'article_20260829_2_investment_v2.html',
+    category: '투자',
+    title: '대출 벽 앞에서 살아남기: 스트레스 DSR 3단계 시대, 부동산 투자자의 새로운 생존법',
+    summary: '스트레스 DSR 3단계 시행으로 수도권 대출 한도가 대폭 줄어든 2026년 하반기, 갭투자는 더욱 어려워졌고 투자자들의 전략도 달라지고 있다. 부동산 시장에서 살아남으려면 현금 흐름 관리와 실수요 기반 접근이 핵심이다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-29',
+    title_en: 'Surviving the Loan Wall: New Survival Strategies for Real Estate Investors in the Stress DSR Phase 3 Era',
+    summary_en: 'With Stress DSR Phase 3 slashing loan limits in Seoul metro in H2 2026, gap investing has become increasingly difficult. Cash flow management and owner-occupier approaches are now key to surviving the real estate market.'
+  },
+  {
     id: 301,
     url: 'article_20260829_1_overseas-capital-gains-tax_v2.html',
     category: '해외',
