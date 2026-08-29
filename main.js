@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 301,
+    url: 'article_20260829_1_overseas-capital-gains-tax_v2.html',
+    category: '해외',
+    title: '해외부동산 양도소득세 계산법 — 세율·기본공제와 신고기한 정리',
+    summary: '국외 부동산을 팔면 국내 부동산 세금 상식이 대부분 통하지 않는다. 소득세법 제118조의2의 5년 거주 요건, 장기보유특별공제와 1세대 1주택 비과세 배제, 기본세율 6~45% 적용, 연 250만원 양도소득기본공제를 정리했다. 취득·양도 시점에 각각 다른 기준환율이 적용되는 구조와 외국납부세액공제 두 가지 방식, 예정신고 없이 이듬해 5월에 하는 확정신고 기한까지 2026년 8월 기준으로 담았다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-29',
+    title_en: 'Korean Capital Gains Tax on Overseas Property: Rates, Deductions and Filing Deadline',
+    summary_en: 'Selling property abroad follows a different formula from domestic real estate in Korea. This guide covers the five-year residency requirement under Income Tax Act Article 118-2, the exclusion of the long-term holding deduction and the one-house exemption, the 6-45 percent basic tax rates, the annual KRW 2.5 million basic deduction, how separate exchange rates apply at acquisition and disposal, the two foreign tax credit methods, and the May final filing deadline with no interim return.'
+  },
+  {
     id: 300,
     url: 'article_20260828_1_policy_v2.html',
     category: '정책',

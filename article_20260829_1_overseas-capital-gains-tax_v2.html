@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>해외부동산 양도소득세 계산법 — 세율·기본공제와 신고기한 정리 | 부동산인사이트</title>
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<meta name="description" content="국외 부동산을 팔면 국내와 다른 계산식이 적용된다. 소득세법 제118조의2의 5년 거주 요건, 장기보유특별공제 배제, 기본세율 6~45%, 연 250만원 양도소득기본공제, 기준환율 적용 시점, 외국납부세액공제와 필요경비 산입의 선택, 예정신고 없이 이듬해 5월에 하는 확정신고까지 2026년 8월 기준으로 정리했다.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans KR',sans-serif;color:#1a1a1a;background:#f5f5f0;line-height:1.8;}
+header{background:#0D2B55;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+.header-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px;}
+.logo{font-family:'Noto Serif KR',serif;font-size:1.4rem;font-weight:700;color:#fff;text-decoration:none;}
+.logo span{color:#F4A52D;}
+nav{display:flex;gap:20px;}
+nav a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.85rem;font-weight:500;transition:color 0.2s;}
+nav a:hover{color:#F4A52D;}
+.hero{background:linear-gradient(135deg, #003A4A 0%, #006E8A 55%, #003A4A 100%);padding:80px 20px;text-align:center;position:relative;overflow:hidden;}
+.hero-inner{max-width:900px;margin:0 auto;position:relative;}
+.category-tag{display:inline-block;background:#006E8A;border:2px solid rgba(255,255,255,0.3);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.8rem;font-weight:700;letter-spacing:1px;margin-bottom:20px;}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:2.2rem;color:#fff;line-height:1.4;margin-bottom:20px;font-weight:700;}
+.hero-meta{color:rgba(255,255,255,0.7);font-size:0.9rem;}
+.hero-meta span{margin:0 10px;}
+.main-wrap{max-width:1200px;margin:0 auto;padding:40px 20px;display:grid;grid-template-columns:1fr 300px;gap:40px;}
+.content h2{font-family:'Noto Serif KR',serif;font-size:1.5rem;font-weight:700;color:#1a1a1a;border-left:4px solid #006E8A;padding-left:16px;margin:40px 0 16px;}
+.content h3{font-family:'Noto Serif KR',serif;font-size:1.1rem;font-weight:700;color:#003A4A;margin:26px 0 10px;}
+.content p{margin-bottom:18px;font-size:1rem;color:#333;line-height:1.9;}
+.data-box{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0;}
+.data-card{background:rgba(0,110,138,0.08);border:1px solid rgba(0,110,138,0.22);border-radius:12px;padding:20px;text-align:center;}
+.data-card .num{font-family:'Noto Serif KR',serif;font-size:1.6rem;font-weight:700;color:#006E8A;}
+.data-card .label{font-size:0.78rem;color:#666;margin-top:6px;line-height:1.5;}
+.formula{background:#fff;border:1px solid #d9e9ee;border-left:4px solid #006E8A;border-radius:0 12px 12px 0;padding:20px 24px;margin:24px 0;font-family:'Noto Serif KR',serif;font-size:1.02rem;color:#003A4A;line-height:2;}
+.formula strong{color:#006E8A;}
+.quote-box{background:rgba(0,110,138,0.05);border-left:4px solid #006E8A;border-radius:0 12px 12px 0;padding:24px 28px;margin:30px 0;font-family:'Noto Serif KR',serif;font-style:italic;color:#444;font-size:1.05rem;line-height:1.8;}
+.quote-box cite{display:block;font-size:0.85rem;color:#888;margin-top:10px;font-style:normal;font-family:'Noto Sans KR',sans-serif;}
+.tip-list{background:#fff;border-radius:12px;padding:24px;margin:20px 0;border:1px solid #eee;list-style:none;}
+.tip-list li{padding:12px 0;border-bottom:1px solid #f0f0f0;padding-left:22px;position:relative;color:#333;font-size:0.97rem;}
+.tip-list li::before{content:'▶';position:absolute;left:0;color:#006E8A;font-size:0.7rem;top:14px;}
+.tip-list li:last-child{border-bottom:none;}
+.body-table{width:100%;border-collapse:collapse;font-size:0.9rem;margin:22px 0;background:#fff;}
+.body-table th{background:#006E8A;color:#fff;padding:11px 8px;text-align:center;font-weight:500;}
+.body-table td{padding:11px 8px;border:1px solid #eee;color:#444;}
+.body-table tr:nth-child(even) td{background:#f5fbfc;}
+.disclaimer{background:#f9f9f9;border:1px solid #ddd;border-radius:8px;padding:16px 20px;margin:30px 0;font-size:0.82rem;color:#888;line-height:1.7;}
+.sidebar-card{background:#fff;border-radius:12px;padding:24px;margin-bottom:24px;border:1px solid #eee;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.sidebar-card h3{font-family:'Noto Serif KR',serif;font-size:1rem;font-weight:700;color:#1a1a1a;border-bottom:2px solid #006E8A;padding-bottom:10px;margin-bottom:16px;}
+.summary-list{list-style:none;}
+.summary-list li{padding:8px 0;border-bottom:1px solid #f5f5f5;font-size:0.87rem;color:#444;padding-left:16px;position:relative;}
+.summary-list li::before{content:'•';position:absolute;left:0;color:#006E8A;font-weight:700;}
+.summary-list li:last-child{border-bottom:none;}
+.related-list{list-style:none;}
+.related-list li{padding:10px 0;border-bottom:1px solid #f5f5f5;}
+.related-list li:last-child{border-bottom:none;}
+.related-list a{font-size:0.87rem;color:#333;text-decoration:none;line-height:1.5;display:block;}
+.related-list a:hover{color:#006E8A;}
+.compare-table{width:100%;border-collapse:collapse;font-size:0.82rem;}
+.compare-table th{background:#006E8A;color:#fff;padding:9px 6px;text-align:center;}
+.compare-table td{padding:9px 6px;border:1px solid #eee;text-align:center;color:#444;}
+.compare-table tr:nth-child(even) td{background:#f5fbfc;}
+footer{background:#0D2B55;color:rgba(255,255,255,0.7);text-align:center;padding:30px 20px;font-size:0.85rem;margin-top:60px;}
+.fixed-sidebar-ad{position:fixed;top:150px;right:20px;z-index:1000;}
+@media(max-width:1400px){.fixed-sidebar-ad{display:none;}}
+@media(max-width:900px){.main-wrap{grid-template-columns:1fr;}.hero h1{font-size:1.5rem;}.data-box{grid-template-columns:1fr 1fr;}nav{display:none;}}
+</style>
+<!-- SEO:BEGIN -->
+<link rel="canonical" href="https://realestate.ephseed.com/article_20260829_1_overseas-capital-gains-tax_v2">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="부동산인사이트">
+<meta property="og:title" content="해외부동산 양도소득세 계산법 — 세율·기본공제와 신고기한 정리 | 부동산인사이트">
+<meta property="og:description" content="국외 부동산을 팔면 국내와 다른 계산식이 적용된다. 소득세법 제118조의2의 5년 거주 요건, 장기보유특별공제 배제, 기본세율 6~45%, 연 250만원 양도소득기본공제, 기준환율 적용 시점, 외국납부세액공제와 필요경비 산입의 선택, 예정신고 없이 이듬해 5월에 하는 확정신고까지 2026년 8월 기준으로 정리했다.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20260829_1_overseas-capital-gains-tax_v2">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="article:published_time" content="2026-08-29T09:00:00+09:00">
+<meta property="article:modified_time" content="2026-08-29T09:00:00+09:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2GN2G2QF3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-N2GN2G2QF3");</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://realestate.ephseed.com/#organization", "name": "부동산인사이트", "url": "https://realestate.ephseed.com/"}, {"@type": "WebSite", "@id": "https://realestate.ephseed.com/#website", "url": "https://realestate.ephseed.com/", "name": "부동산인사이트", "description": "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트", "inLanguage": "ko-KR", "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}, {"@type": "Article", "@id": "https://realestate.ephseed.com/article_20260829_1_overseas-capital-gains-tax_v2#page", "url": "https://realestate.ephseed.com/article_20260829_1_overseas-capital-gains-tax_v2", "headline": "해외부동산 양도소득세 계산법 — 세율·기본공제와 신고기한 정리 | 부동산인사이트", "description": "국외 부동산 양도소득세의 5년 거주 요건, 기본세율 6~45%, 장기보유특별공제 배제, 연 250만원 기본공제, 기준환율 적용, 외국납부세액공제 방식, 이듬해 5월 확정신고 기한을 2026년 8월 기준으로 정리했다.", "inLanguage": "ko-KR", "image": "https://realestate.ephseed.com/assets/og-default.png", "isPartOf": {"@id": "https://realestate.ephseed.com/#website"}, "datePublished": "2026-08-29", "dateModified": "2026-08-29", "author": {"@id": "https://realestate.ephseed.com/#organization"}, "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display:flex;justify-content:center;background:#fff;padding:10px 0;border-bottom:1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.kakaocdn.net/kas/static/ba.min.js" async></script>
+</div>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="/">시장동향</a>
+      <a href="/">정책·규제</a>
+      <a href="/">투자분석</a>
+      <a href="/">법률·세금</a>
+      <a href="/">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">🌏 해외부동산</div>
+    <h1>해외부동산 양도소득세 계산법<br>세율·기본공제와 신고기한 정리</h1>
+    <div class="hero-meta">
+      <span>부동산인사이트 편집팀</span>
+      <span>2026년 8월 29일</span>
+      <span>#국외자산 #양도소득세 #외국납부세액공제 #기준환율</span>
+    </div>
+  </div>
+</section>
+
+<div class="main-wrap">
+  <article class="content">
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">5년</div>
+        <div class="label">양도일까지 계속 국내에 주소·거소를<br>둔 거주자만 과세(소득세법 제118조의2)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">6~45%</div>
+        <div class="label">적용 세율은 기본세율 8단계<br>(소득세법 제55조 제1항)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">250만원</div>
+        <div class="label">국외자산 양도소득 기본공제<br>과세기간마다 1회</div>
+      </div>
+    </div>
+
+    <p>도쿄의 원룸을 정리했다거나, 하와이의 콘도를 넘겼다는 이야기가 이제는 드물지 않다. 그런데 매도 대금이 통장에 들어온 다음에야 세금 문제가 시작된다는 사실을 아는 사람은 생각보다 적다. 국내 아파트를 팔 때 익힌 상식 — 2년 보유하면 비과세, 오래 갖고 있으면 장기보유특별공제, 팔고 두 달 안에 예정신고 — 가운데 국외 부동산에 그대로 적용되는 것은 거의 없다.</p>
+
+    <p>국외 자산의 양도는 소득세법 제4장 제10절에서 별도로 규정한다. 국내 부동산 조항을 준용하는 부분도 있지만, 비과세·중과세·장기보유특별공제처럼 국내 주택 정책과 맞물린 장치들은 대부분 빠져 있다. 대신 국내에는 없는 두 가지 변수가 들어온다. 환율과 외국에 이미 낸 세금이다.</p>
+
+    <p>아래는 2026년 8월 기준 소득세법과 국세청 공개 자료를 근거로 계산 구조를 정리한 것이다. 세율 구간과 공제 금액은 세법 개정으로 바뀔 수 있으므로 실제 양도 시점의 조문을 다시 확인해야 한다.</p>
+
+    <h2>누가 내는가 — '5년'이라는 문턱</h2>
+
+    <p>가장 먼저 확인할 것은 세율도 공제도 아니고 납세의무자 요건이다. 국외 부동산을 팔았다고 해서 모든 사람이 한국에 양도소득세를 내는 것은 아니다.</p>
+
+    <div class="quote-box">
+      거주자(해당 자산의 양도일까지 계속 5년 이상 국내에 주소 또는 거소를 둔 자만 해당한다)의 국외에 있는 자산의 양도에 대한 양도소득은 해당 과세기간에 국외에 있는 자산을 양도함으로써 발생하는 소득으로 한다.
+      <cite>— 소득세법 제118조의2(국외자산 양도소득의 범위) 제1항 요지</cite>
+    </div>
+
+    <p>즉 양도일을 기준으로 거슬러 올라가 5년 이상 계속 국내에 주소나 거소를 둔 거주자여야 과세 대상이 된다. 오래 해외에 체류하다 최근 귀국한 사람, 반대로 국내에 살다가 이민을 떠난 뒤 현지 부동산을 처분한 사람은 이 요건에 걸리지 않을 수 있다. 다만 이 판정은 주민등록 유무가 아니라 생활의 근거가 어디에 있었는지를 따지는 실질 판단이므로, 체류 이력이 복잡하다면 자의적으로 결론 내리지 않는 편이 안전하다.</p>
+
+    <p>과세 대상 자산의 범위도 조문에 열거되어 있다. 토지와 건물, 그리고 부동산을 취득할 수 있는 권리·지상권·전세권·임차권 등 부동산에 관한 권리, 대통령령이 정하는 기타자산이다. 여기에 조문은 한 가지 중요한 단서를 붙인다. 외화 차입금에서 발생한 환차익이 양도소득에 포함된 경우 그 환차익은 양도소득의 범위에서 제외한다는 것이다. 빌린 돈의 환율 변동으로 생긴 이익까지 양도차익으로 묶지는 않겠다는 취지다.</p>
+
+    <h2>계산 구조 — 국내와 갈라지는 두 지점</h2>
+
+    <p>전체 흐름 자체는 국내 부동산과 같다. 양도가액에서 취득가액과 필요경비를 빼서 양도차익을 구하고, 거기서 공제를 적용해 과세표준을 만든 뒤 세율을 곱한다. 다만 두 군데가 비어 있다.</p>
+
+    <div class="formula">
+      양도가액 − 취득가액 − 필요경비 = <strong>양도차익</strong><br>
+      양도차익 − <strong>장기보유특별공제(적용 없음)</strong> = 양도소득금액<br>
+      양도소득금액 − <strong>양도소득기본공제 250만원</strong> = 과세표준<br>
+      과세표준 × <strong>기본세율 6~45%</strong> = 산출세액<br>
+      산출세액 − <strong>외국납부세액공제</strong> = 결정세액
+    </div>
+
+    <p>첫 번째 빈칸이 장기보유특별공제다. 국내 토지·건물은 3년 이상 보유하면 보유 기간에 따라 양도차익의 일정 비율을 공제받지만, 국외 자산에는 이 공제가 적용되지 않는다. 10년을 보유했든 3년을 보유했든 양도차익이 그대로 양도소득금액이 된다는 뜻이다. 해외 부동산을 장기 보유해도 국내 부동산 같은 보유 기간 프리미엄은 세금 측면에서 생기지 않는다.</p>
+
+    <p>두 번째는 비과세와 중과세가 동시에 없다는 점이다. 1세대 1주택 비과세는 국내 주택에 적용되는 제도이므로 국외 주택은 아무리 오래 실거주했어도 비과세 대상이 아니다. 반대로 다주택 중과세율이나 단기 보유 중과세율도 국외 자산에는 붙지 않는다. 보유 기간이 1년 미만이어도 국내 주택처럼 70%대 세율을 맞지 않고 기본세율이 그대로 적용된다.</p>
+
+    <p>양도소득기본공제 250만원은 과세기간별로 자산 그룹마다 적용된다. 국외자산 그룹에서 한 해에 부동산을 두 건 팔았다면 250만원을 두 번 빼는 것이 아니라 합산 소득에서 한 번만 공제한다. 반대로 같은 해에 국내 부동산과 국외 부동산을 각각 팔았다면 두 그룹은 별개로 취급된다.</p>
+
+    <h2>세율 — 기본세율 8단계</h2>
+
+    <p>국외 부동산 양도에 적용되는 세율은 소득세법 제55조 제1항의 기본세율이다. 종합소득세에 쓰이는 그 누진세율표와 같다. 2026년 8월 현재 적용되는 구간은 다음과 같다.</p>
+
+    <table class="body-table">
+      <tr><th>과세표준</th><th>세율</th><th>누진공제</th></tr>
+      <tr><td>1,400만원 이하</td><td>6%</td><td>—</td></tr>
+      <tr><td>1,400만원 초과 5,000만원 이하</td><td>15%</td><td>126만원</td></tr>
+      <tr><td>5,000만원 초과 8,800만원 이하</td><td>24%</td><td>576만원</td></tr>
+      <tr><td>8,800만원 초과 1억 5,000만원 이하</td><td>35%</td><td>1,544만원</td></tr>
+      <tr><td>1억 5,000만원 초과 3억원 이하</td><td>38%</td><td>1,994만원</td></tr>
+      <tr><td>3억원 초과 5억원 이하</td><td>40%</td><td>2,594만원</td></tr>
+      <tr><td>5억원 초과 10억원 이하</td><td>42%</td><td>3,594만원</td></tr>
+      <tr><td>10억원 초과</td><td>45%</td><td>6,594만원</td></tr>
+    </table>
+
+    <p>여기에 지방소득세가 양도소득세액의 10% 상당액으로 별도 부과된다. 산출세액이 3,000만원이면 지방소득세 300만원이 더 붙어 실제 부담은 3,300만원이 되는 식이다. 흔히 "22%"나 "44%" 같은 숫자로 이야기하는 것은 이 지방소득세를 합친 표현이다.</p>
+
+    <h2>환율 — 어느 날의 환율로 바꾸는가</h2>
+
+    <p>국외 부동산 거래는 외화로 이루어지므로 원화 환산이 필수다. 그리고 이 환산 시점을 잘못 잡으면 세액이 크게 달라진다. 소득세법 시행규칙은 외국환거래법에 따른 기준환율 또는 재정환율을 적용하도록 정하고 있다.</p>
+
+    <p>실무에서 중요한 것은 양도가액과 취득가액에 각각 다른 날의 환율이 적용된다는 점이다. 취득가액은 취득 당시, 양도가액은 양도 당시 환율로 환산한다. 하나의 환율로 통일해 계산하지 않는다. 그래서 현지 통화 기준으로는 시세 차익이 거의 없어도, 취득 시점보다 원화가 약해졌다면 원화 기준 양도차익이 크게 잡혀 세금이 나올 수 있다. 반대로 현지에서 이익을 봤는데 원화가 강해져 과세 대상 차익이 줄어드는 경우도 생긴다.</p>
+
+    <div class="quote-box">
+      현지 통화로 본 손익과 원화로 환산한 과세 대상 손익은 다른 숫자다. 해외 부동산 세금 계산에서 가장 자주 발생하는 오해가 이 지점에서 나온다.
+      <cite>— 국외자산 양도차익 환산 실무의 원칙</cite>
+    </div>
+
+    <h2>외국납부세액공제 — 두 가지 방법 중 선택</h2>
+
+    <p>부동산 소재지 국가에서도 양도차익에 세금을 매기는 것이 일반적이다. 같은 소득에 두 나라가 과세하는 이중과세를 조정하기 위해 우리 세법은 두 가지 방식을 두고 납세자가 선택하도록 한다.</p>
+
+    <ul class="tip-list">
+      <li><strong>세액공제 방식</strong> — 외국에서 납부한 세액을 산출세액에서 직접 빼는 방법. 다만 공제 한도가 있다. 한도는 국외자산 양도소득 산출세액에 해당 자산의 양도소득금액이 차지하는 비율을 곱해 계산한다.</li>
+      <li><strong>필요경비 산입 방식</strong> — 외국납부세액을 양도차익 계산 단계의 필요경비에 넣는 방법. 세액에서 빼는 것이 아니라 과세표준을 줄이는 방식이라 절세 효과는 세율만큼만 반영된다.</li>
+      <li><strong>한도 초과분은 소멸</strong> — 국외자산 양도소득의 외국납부세액공제에는 이월공제 규정이 없다. 종합소득의 외국납부세액공제와 달리 남은 금액을 다음 해로 넘겨 쓸 수 없다.</li>
+      <li><strong>현지 세율이 높으면 한도에 걸린다</strong> — 현지에서 낸 세금이 한국 산출세액보다 크면 그 차액은 돌려받지 못한다. 한국 세금이 0이 될 뿐이다.</li>
+      <li><strong>증빙이 관건</strong> — 현지 납세증명서와 세액 산출 내역, 환산에 쓴 환율 근거를 함께 보관해야 공제가 인정된다.</li>
+    </ul>
+
+    <p>어느 쪽이 유리한지는 일률적으로 말할 수 없다. 통상 세액공제 방식이 유리하지만, 한도에 걸려 공제받지 못하는 금액이 크고 그해 다른 국외자산 양도손실이 있는 경우처럼 필요경비 산입이 나은 상황도 있다. 두 방식으로 각각 계산해 보고 결정하는 것이 원칙이다.</p>
+
+    <h2>신고기한 — 예정신고 없이 이듬해 5월</h2>
+
+    <p>국내 부동산을 팔면 양도일이 속한 달의 말일부터 2개월 이내에 예정신고를 해야 한다. 그런데 이 예정신고 의무의 대상은 소득세법 제105조가 정한 자산, 즉 제94조 제1항 각 호의 자산이다.</p>
+
+    <div class="quote-box">
+      제94조제1항 각 호에서 규정하는 자산을 양도한 거주자는 제92조제2항에 따라 계산한 양도소득과세표준을 다음 각 호의 구분에 따른 기간에 대통령령으로 정하는 바에 따라 납세지 관할 세무서장에게 신고하여야 한다.
+      <cite>— 소득세법 제105조(양도소득과세표준 예정신고) 제1항</cite>
+    </div>
+
+    <p>국외자산의 양도소득은 제94조가 아니라 제118조의2에서 따로 규정한다. 그래서 국외 부동산 양도는 예정신고 대상에서 빠지고, 양도일이 속한 과세기간의 다음 연도 5월 1일부터 5월 31일까지 확정신고로 한 번에 정리한다. 종합소득세 신고 기간과 같은 달이다.</p>
+
+    <p>이 구조가 실무에서 문제를 만드는 방식은 대체로 두 가지다. 하나는 "두 달 안에 신고해야 하는 줄 알았는데 아무 연락이 없어서" 신고 자체를 잊는 경우, 다른 하나는 매도 대금을 이미 다 써버린 뒤 이듬해 5월에 세금 고지를 받는 경우다. 예정신고가 없다는 것은 면제가 아니라 유예일 뿐이며, 그 사이 세금을 따로 떼어 두지 않으면 납부 재원이 사라진다.</p>
+
+    <p>여기에 별도의 의무가 하나 더 붙는다. 해외 부동산을 취득·보유·처분한 거주자는 그 명세서를 종합소득세 확정신고 기간에 함께 제출해야 한다. 양도소득세 신고와 명세서 제출은 목적이 다른 별개의 절차이므로, 한쪽을 했다고 다른 쪽이 갈음되지 않는다.</p>
+
+    <h2>제도 평가 — 단순하지만 관대하지는 않다</h2>
+
+    <p>국외자산 양도소득세 제도는 국내 부동산 세제에 비하면 구조가 단순하다. 조정대상지역이냐 아니냐, 몇 주택자냐, 보유 기간이 얼마냐에 따라 세율이 요동치는 국내 주택과 달리 기본세율 하나로 끝난다. 정책 목적이 개입하지 않는, 순수한 소득과세에 가깝다.</p>
+
+    <p>다만 단순하다는 것이 유리하다는 뜻은 아니다. 장기보유특별공제도 없고 비과세도 없으므로, 같은 금액의 차익이라면 국내 1주택보다 세 부담이 무거워지는 구간이 넓다. 여기에 환율이라는 통제 불가능한 변수가 과세표준에 직접 개입한다. 해외 부동산 투자에서 "현지 시세만 오르면 된다"는 계산이 자주 빗나가는 이유가 여기에 있다.</p>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+
+    <ul class="tip-list">
+      <li>매수 시점의 환율과 취득가액 증빙을 원본으로 보관한다. 취득 시 환율은 수십 년 뒤 양도차익 계산의 기준이 되고, 증빙이 없으면 불리하게 추계될 수 있다.</li>
+      <li>현지 통화 기준 수익률과 원화 기준 세후 수익률을 따로 계산한다. 두 숫자가 반대 방향으로 움직이는 경우가 실제로 존재한다.</li>
+      <li>매도 대금이 들어오면 예상 세액을 먼저 분리해 둔다. 예정신고가 없어 납부는 이듬해 5월이지만, 그때 재원이 없으면 가산세로 이어진다.</li>
+      <li>현지 납부 세금의 증명서류를 반드시 챙긴다. 외국납부세액공제는 증빙 없이는 인정되지 않으며, 이월공제도 되지 않는다.</li>
+      <li>양도 시점을 연도 단위로 검토한다. 기본공제 250만원과 누진세율 구간은 과세기간별로 적용되므로, 두 건을 다른 해로 나누면 세액이 달라질 수 있다.</li>
+      <li>5년 거주 요건과 취득·처분 명세서 제출 의무는 별개다. 과세 대상이 아니라고 판단했더라도 신고 의무 자체가 사라지는지는 따로 확인한다.</li>
+    </ul>
+
+    <h2>결론</h2>
+
+    <p>해외 부동산 양도소득세는 국내 부동산 세금의 축소판이 아니라 다른 계산식이다. 5년 이상 국내에 거주한 거주자가 대상이고, 장기보유특별공제와 1세대 1주택 비과세는 적용되지 않으며, 세율은 중과 없이 기본세율 6~45%가 그대로 붙는다. 양도소득기본공제는 과세기간마다 250만원이고, 신고는 예정신고 없이 이듬해 5월 확정신고로 한다.</p>
+
+    <p>그리고 이 계산에서 가장 큰 변수는 세율이 아니라 환율과 외국납부세액이다. 취득 당시와 양도 당시의 환율이 각각 적용되므로 현지 손익과 과세 손익이 어긋나고, 현지에서 낸 세금은 한도 안에서만 돌려받는다. 매수를 결정하는 순간부터 매도 시점의 세금 계산이 시작된다고 보는 편이 정확하다. 취득가액 증빙과 환율 기록을 남겨 두는 일이 그 계산의 첫 단추다.</p>
+
+    <div class="disclaimer">
+      본 콘텐츠는 2026년 8월 기준 소득세법(제118조의2 이하 국외자산 양도 관련 조문, 제55조 세율, 제105조 예정신고)과 국세청 공개 자료를 바탕으로 작성한 정보 제공용 자료이며, 특정 부동산의 매수·매도를 권유하는 것이 아닙니다. 세율 구간·공제 금액·공제 방식은 세법 개정으로 달라질 수 있고, 거주자 판정과 조세조약 적용은 개인별 체류 이력과 소재지 국가에 따라 결론이 달라집니다. 실제 신고 전에는 세무사 등 전문가의 검토를 받으시기 바랍니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>양도일까지 계속 5년 이상 국내 거주한 거주자만 과세 대상(소득세법 제118조의2)</li>
+        <li>장기보유특별공제·1세대 1주택 비과세 적용 없음, 중과세율도 없음</li>
+        <li>세율은 기본세율 6~45% 8단계 + 지방소득세 10% 별도</li>
+        <li>양도소득기본공제는 과세기간마다 250만원, 국외자산 그룹에서 1회</li>
+        <li>예정신고 없이 이듬해 5월 1~31일 확정신고 — 유예이지 면제가 아니다</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>🔗 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="article_20260822_1_foreign-tax-credit_v2.html">외국납부세액공제 한도 계산 방법 — 임대소득 이중과세 조정과 이월 기간</a></li>
+        <li><a href="article_20260815_1_overseas-property-report_v2.html">해외부동산 취득 신고 대상과 절차 — 보고서 제출 기한·과태료 기준 정리</a></li>
+        <li><a href="article_20260825_1_temporary-two-house_v2.html">일시적 2주택 비과세 요건 — 종전주택 처분기한과 취득 시점 정리</a></li>
+        <li><a href="article_20260828_1_registry-certificate_v2.html">등기부등본 보는법 — 갑구·을구 차이와 근저당 채권최고액 계산</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📊 국내 vs 국외 부동산 세제</h3>
+      <table class="compare-table">
+        <tr><th>항목</th><th>국내</th><th>국외</th></tr>
+        <tr><td>1주택 비과세</td><td>적용</td><td style="color:#c0392b;font-weight:700;">없음</td></tr>
+        <tr><td>장기보유특별공제</td><td>적용</td><td style="color:#c0392b;font-weight:700;">없음</td></tr>
+        <tr><td>다주택 중과</td><td>적용</td><td style="color:#2980b9;font-weight:700;">없음</td></tr>
+        <tr><td>기본공제</td><td>250만원</td><td>250만원</td></tr>
+        <tr><td>예정신고</td><td>2개월 내</td><td style="color:#2980b9;font-weight:700;">없음</td></tr>
+        <tr><td>확정신고</td><td>이듬해 5월</td><td>이듬해 5월</td></tr>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 부동산인사이트 | 본 콘텐츠는 정보 제공 목적이며 투자 권유가 아닙니다.</p>
+</footer>
+</body>
+</html>
