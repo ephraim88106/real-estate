@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 304,
+    url: 'article_20260830_1_property-tax_v2.html',
+    category: '칼럼',
+    title: '재산세 부과기준 — 과세표준 계산법과 납부시기 정리',
+    summary: '재산세는 6월 1일 소유자에게 그해 전액이 부과된다. 공시가격에 공정시장가액비율(1세대 1주택 43~45%, 그 밖 60%)을 곱해 과세표준을 만들고 0.1~0.4% 표준세율 또는 공시가격 9억원 이하 1세대 1주택 특례세율 0.05~0.35%를 적용한다. 도시지역분 0.14%와 지방교육세 20%, 7월·9월 납기와 분할납부 기준까지 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-30',
+    title_en: 'Korean Property Tax Basics: How the Tax Base Is Calculated and When to Pay',
+    summary_en: 'Property tax in Korea falls on whoever owns the property on June 1. The base is the published price times a fair market ratio (43-45% for single-home households, 60% otherwise), taxed at 0.1-0.4% or a reduced 0.05-0.35% for single-home households under 900 million won, plus a 0.14% urban levy and a 20% local education tax, billed in July and September.'
+  },
+  {
     id: 303,
     url: 'article_20260829_1_redevelopment_v2.html',
     category: '재개발',
