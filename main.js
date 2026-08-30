@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 306,
+    url: 'article_20260830_1_japan_v2.html',
+    category: '해외',
+    title: '엔화 약세 끝물인가, 아직 기회인가? 2026년 일본 부동산 한국인 투자 완전 분석',
+    summary: '엔저 시대의 막바지 혹은 지속? 도쿄·오사카 중심으로 급증하는 한국인 일본 부동산 투자를 데이터와 현지 시장 분석으로 심층 해부합니다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-30',
+    title_en: 'Is the Weak Yen Over, or Still an Opportunity? Complete Analysis of Korean Investment in Japanese Real Estate in 2026',
+    summary_en: 'The twilight or continuation of the weak yen era? We deeply analyze the surge of Korean investment in Japanese real estate centered on Tokyo and Osaka.'
+  },
+  {
+    id: 305,
+    url: 'article_20260830_2_column_v2.html',
+    category: '칼럼',
+    title: '2026년 하반기 부동산 시장의 민낯 — 양극화·매물잠김·금리 삼중고의 해법',
+    summary: '서울 핵심지 vs 지방 격차, 매물잠김 심화, 금리 인상 압박. 2026년 하반기 한국 부동산 시장의 세 가지 핵심 변수를 전문가 관점으로 심층 해부합니다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-30',
+    title_en: 'The Raw Truth of the 2026 H2 Real Estate Market — Triple Woes of Polarization, Inventory Lock, and Rate Hikes',
+    summary_en: 'Seoul core vs. regional gap, deepening inventory lock, rate hike pressure. Three key variables of Korea\'s H2 2026 real estate market analyzed from an expert perspective.'
+  },
+  {
     id: 304,
     url: 'article_20260830_1_property-tax_v2.html',
     category: '칼럼',
