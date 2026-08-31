@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 307,
+    url: 'article_20260831_1_jeonse-ratio_v2.html',
+    category: '시장동향',
+    title: '전세가율 뜻 — 계산법과 깡통전세 판단 방법',
+    summary: '전세가율은 매매가격 대비 전세보증금의 비율이다. 분모에 호가가 아닌 실거래가를 넣고 분자에 선순위 채권최고액을 더해야 실질 위험이 드러난다. HUG 전세보증금반환보증의 담보인정비율 90%와 공시가격 140% 산정에서 나오는 126% 기준, 조회처와 구간별 대응까지 2026년 8월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-31',
+    title_en: 'Jeonse-to-Price Ratio Explained: How to Calculate It and Spot a Risky Lease',
+    summary_en: 'The jeonse-to-price ratio divides the deposit by the sale price. Use actual transaction prices, add senior liens, and check HUG guarantee limits: 90 percent of appraised value, or 126 percent of the official assessed price when the 140 percent conversion applies. Updated August 2026.'
+  },
+  {
     id: 306,
     url: 'article_20260830_1_japan_v2.html',
     category: '해외',
