@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 309,
+    url: 'article_20260831_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 평균가 16억 돌파, 강북 중위가 10억 육박 — \'두 갈래 시장\'의 민낯',
+    summary: '세제개편 여파로 강남 매물이 쌓이는 사이 강북은 역대 최고가를 갈아치우며 두 갈래 시장이 선명해지고 있다. 서울 아파트 평균 매매가 16억원 돌파의 의미와 수요자별 대응 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-31',
+    title_en: 'Seoul Apartment Average Price Breaks 16 Billion Won — The Reality of a Divided Market',
+    summary_en: 'While listings pile up in Gangnam amid tax reform, Gangbuk is hitting record highs, revealing a sharply divided market. We analyze the implications of Seoul\'s average apartment price surpassing 1.6 billion won and strategies for buyers.'
+  },
+  {
+    id: 308,
+    url: 'article_20260831_2_policy_v2.html',
+    category: '정책',
+    title: '세제개편·LTV 강화·스트레스DSR — 2026년 8월 부동산 규제 3중주의 실체',
+    summary: '정부가 동시다발적으로 쏟아낸 세제개편·LTV 강화·스트레스DSR 3개 규제의 설계 의도와 시장 반응을 해부한다. 규제가 집값을 잡을 수 있는지, 실수요자는 어떻게 대응해야 하는지 전문가 시각으로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-08-31',
+    title_en: 'Tax Reform, LTV Tightening, Stress-DSR — The Reality of Korea\'s August 2026 Triple Real Estate Regulation',
+    summary_en: 'We dissect the design intent and market reactions to three simultaneous regulations: tax reform, LTV tightening, and stress-DSR. Analysis of whether regulations can contain prices, and how real buyers should respond.'
+  },
+  {
     id: 307,
     url: 'article_20260831_1_jeonse-ratio_v2.html',
     category: '시장동향',
