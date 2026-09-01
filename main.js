@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 312,
+    url: 'article_20260901_1_subscription_v2.html',
+    category: '분양',
+    title: '9월 분양 대전쟁…서울은 29가구, 경기는 8,449가구 쏟아진다',
+    summary: '9월 전국 2만2704가구 분양 예정, 서울 일반분양은 단 29가구. 금리 부담 속 브랜드 역세권 단지 쏠림 현상 심화. 가점·자금별 청약 옥석 가리기 전략 총정리.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-01',
+    title_en: 'September Subscription War: Seoul Offers Only 29 Units While Gyeonggi Floods with 8,449',
+    summary_en: '22,704 units are set to be offered nationwide in September 2026, but Seoul\'s general supply is only 29 units. Analysis of subscription strategies amid high interest rate burdens and brand apartment demand concentration.'
+  },
+  {
+    id: 311,
+    url: 'article_20260901_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '이주비 LTV 70%·처리 10일로…정부 \'속도전\' 재건축 판을 바꾼다',
+    summary: '국토부 8·13 대책 후속 정비사업 설명회 개최, 이주비 LTV 40%→70% 확대 건의. 은마·잠실주공5단지 사업시행인가 획득. 재건축 시장 구조적 전환점 심층 분석.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-01',
+    title_en: 'LTV 70% for Relocation Loans, 10-Day Processing: Government\'s Redevelopment Speed Battle Changes the Game',
+    summary_en: 'Following the 8.13 Housing Supply Policy, the government proposes raising relocation loan LTV from 40% to 70%. Eunma Apartments and Jamsil Jugong 5 receive project implementation approval. In-depth analysis of Korea\'s redevelopment market turning point.'
+  },
+  {
     id: 310,
     url: 'article_20260901_1_longterm-holding-deduction_v2.html',
     category: '정책',
