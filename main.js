@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 310,
+    url: 'article_20260901_1_longterm-holding-deduction_v2.html',
+    category: '정책',
+    title: '장기보유특별공제 계산법 — 보유·거주기간별 공제율과 적용 요건',
+    summary: '장기보유특별공제는 양도차익에서 보유기간에 비례한 금액을 빼 주는 제도다. 3년 이상 보유 요건과 표1(최대 30%)·표2(보유 40%+거주 40%, 최대 80%) 공제율, 12억원 초과 고가주택 안분 계산 순서를 정리했다. 2026년 8월 발표된 세제개편안은 2028년 보유 공제를 연 2%로 줄이고 2029년 폐지해 거주 중심으로 전환하겠다고 예고했다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-01',
+    title_en: 'How to Calculate Korea\'s Long-Term Holding Deduction \u2014 Rates by Holding and Residence Period',
+    summary_en: 'The long-term holding special deduction reduces taxable capital gains in proportion to how long a property was held. This piece covers the three-year threshold, Table 1 (up to 30%) and Table 2 (40% holding plus 40% residence, up to 80%), and the apportionment rule for homes above 1.2 billion won. The August 2026 tax reform proposal would cut the holding-based rate to 2% in 2028 and abolish it in 2029, shifting the deduction toward actual residence.'
+  },
+  {
     id: 309,
     url: 'article_20260831_1_market_v2.html',
     category: '시장동향',

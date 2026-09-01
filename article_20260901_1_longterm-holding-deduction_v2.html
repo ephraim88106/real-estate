@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>장기보유특별공제 계산법 — 보유·거주기간별 공제율과 적용 요건 | 부동산인사이트</title>
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<meta name="description" content="장기보유특별공제는 양도차익에서 보유기간에 비례한 금액을 빼 주는 제도다. 3년 이상 보유 요건, 표1(일반 부동산 최대 30%)과 표2(1세대 1주택 보유 40%+거주 40%=최대 80%)의 공제율, 12억원 초과 고가주택 안분 계산 순서, 그리고 2026년 8월 발표된 세제개편안이 예고한 2028·2029년 거주 중심 전환까지 2026년 9월 기준으로 정리했다.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans KR',sans-serif;color:#1a1a1a;background:#f5f5f0;line-height:1.8;}
+header{background:#0D2B55;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+.header-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:60px;}
+.logo{font-family:'Noto Serif KR',serif;font-size:1.4rem;font-weight:700;color:#fff;text-decoration:none;}
+.logo span{color:#F4A52D;}
+nav{display:flex;gap:20px;}
+nav a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:0.85rem;font-weight:500;transition:color 0.2s;}
+nav a:hover{color:#F4A52D;}
+.hero{background:linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);padding:80px 20px;text-align:center;position:relative;overflow:hidden;}
+.hero-inner{max-width:900px;margin:0 auto;position:relative;}
+.category-tag{display:inline-block;background:#C8401A;border:2px solid rgba(255,255,255,0.3);color:#fff;padding:6px 16px;border-radius:20px;font-size:0.8rem;font-weight:700;letter-spacing:1px;margin-bottom:20px;}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:2.2rem;color:#fff;line-height:1.4;margin-bottom:20px;font-weight:700;}
+.hero-meta{color:rgba(255,255,255,0.7);font-size:0.9rem;}
+.hero-meta span{margin:0 10px;}
+.main-wrap{max-width:1200px;margin:0 auto;padding:40px 20px;display:grid;grid-template-columns:1fr 300px;gap:40px;}
+.content h2{font-family:'Noto Serif KR',serif;font-size:1.5rem;font-weight:700;color:#1a1a1a;border-left:4px solid #C8401A;padding-left:16px;margin:40px 0 16px;}
+.content h3{font-family:'Noto Serif KR',serif;font-size:1.1rem;font-weight:700;color:#0D2B55;margin:26px 0 10px;}
+.content p{margin-bottom:18px;font-size:1rem;color:#333;line-height:1.9;}
+.data-box{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0;}
+.data-card{background:rgba(200,64,26,0.08);border:1px solid rgba(200,64,26,0.22);border-radius:12px;padding:20px;text-align:center;}
+.data-card .num{font-family:'Noto Serif KR',serif;font-size:1.6rem;font-weight:700;color:#C8401A;}
+.data-card .label{font-size:0.78rem;color:#666;margin-top:6px;line-height:1.5;}
+.formula{background:#fff;border:1px solid #f0ddd6;border-left:4px solid #C8401A;border-radius:0 12px 12px 0;padding:20px 24px;margin:24px 0;font-family:'Noto Serif KR',serif;font-size:1.02rem;color:#0D2B55;line-height:2;}
+.formula strong{color:#C8401A;}
+.quote-box{background:rgba(200,64,26,0.05);border-left:4px solid #C8401A;border-radius:0 12px 12px 0;padding:24px 28px;margin:30px 0;font-family:'Noto Serif KR',serif;font-style:italic;color:#444;font-size:1.05rem;line-height:1.8;}
+.quote-box cite{display:block;font-size:0.85rem;color:#888;margin-top:10px;font-style:normal;font-family:'Noto Sans KR',sans-serif;}
+.tip-list{background:#fff;border-radius:12px;padding:24px;margin:20px 0;border:1px solid #eee;list-style:none;}
+.tip-list li{padding:12px 0;border-bottom:1px solid #f0f0f0;padding-left:22px;position:relative;color:#333;font-size:0.97rem;}
+.tip-list li::before{content:'▶';position:absolute;left:0;color:#C8401A;font-size:0.7rem;top:14px;}
+.tip-list li:last-child{border-bottom:none;}
+.body-table{width:100%;border-collapse:collapse;font-size:0.9rem;margin:22px 0;background:#fff;}
+.body-table th{background:#C8401A;color:#fff;padding:11px 8px;text-align:center;font-weight:500;}
+.body-table td{padding:11px 8px;border:1px solid #eee;color:#444;}
+.body-table tr:nth-child(even) td{background:#fdf7f5;}
+.disclaimer{background:#f9f9f9;border:1px solid #ddd;border-radius:8px;padding:16px 20px;margin:30px 0;font-size:0.82rem;color:#888;line-height:1.7;}
+.sidebar-card{background:#fff;border-radius:12px;padding:24px;margin-bottom:24px;border:1px solid #eee;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.sidebar-card h3{font-family:'Noto Serif KR',serif;font-size:1rem;font-weight:700;color:#1a1a1a;border-bottom:2px solid #C8401A;padding-bottom:10px;margin-bottom:16px;}
+.summary-list{list-style:none;}
+.summary-list li{padding:8px 0;border-bottom:1px solid #f5f5f5;font-size:0.87rem;color:#444;padding-left:16px;position:relative;}
+.summary-list li::before{content:'•';position:absolute;left:0;color:#C8401A;font-weight:700;}
+.summary-list li:last-child{border-bottom:none;}
+.related-list{list-style:none;}
+.related-list li{padding:10px 0;border-bottom:1px solid #f5f5f5;}
+.related-list li:last-child{border-bottom:none;}
+.related-list a{font-size:0.87rem;color:#333;text-decoration:none;line-height:1.5;display:block;}
+.related-list a:hover{color:#C8401A;}
+.compare-table{width:100%;border-collapse:collapse;font-size:0.82rem;}
+.compare-table th{background:#C8401A;color:#fff;padding:9px 6px;text-align:center;}
+.compare-table td{padding:9px 6px;border:1px solid #eee;text-align:center;color:#444;}
+.compare-table tr:nth-child(even) td{background:#fdf7f5;}
+footer{background:#0D2B55;color:rgba(255,255,255,0.7);text-align:center;padding:30px 20px;font-size:0.85rem;margin-top:60px;}
+.fixed-sidebar-ad{position:fixed;top:150px;right:20px;z-index:1000;}
+@media(max-width:1400px){.fixed-sidebar-ad{display:none;}}
+@media(max-width:900px){.main-wrap{grid-template-columns:1fr;}.hero h1{font-size:1.5rem;}.data-box{grid-template-columns:1fr 1fr;}nav{display:none;}}
+</style>
+<!-- SEO:BEGIN -->
+<link rel="canonical" href="https://realestate.ephseed.com/article_20260901_1_longterm-holding-deduction_v2">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="부동산인사이트">
+<meta property="og:title" content="장기보유특별공제 계산법 — 보유·거주기간별 공제율과 적용 요건 | 부동산인사이트">
+<meta property="og:description" content="장기보유특별공제는 양도차익에서 보유기간에 비례한 금액을 빼 주는 제도다. 3년 이상 보유 요건, 표1(일반 부동산 최대 30%)과 표2(1세대 1주택 보유 40%+거주 40%=최대 80%)의 공제율, 12억원 초과 고가주택 안분 계산 순서, 그리고 2026년 8월 발표된 세제개편안이 예고한 2028·2029년 거주 중심 전환까지 2026년 9월 기준으로 정리했다.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20260901_1_longterm-holding-deduction_v2">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="article:published_time" content="2026-09-01T09:00:00+09:00">
+<meta property="article:modified_time" content="2026-09-01T09:00:00+09:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2GN2G2QF3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-N2GN2G2QF3");</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://realestate.ephseed.com/#organization", "name": "부동산인사이트", "url": "https://realestate.ephseed.com/"}, {"@type": "WebSite", "@id": "https://realestate.ephseed.com/#website", "url": "https://realestate.ephseed.com/", "name": "부동산인사이트", "description": "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트", "inLanguage": "ko-KR", "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}, {"@type": "Article", "@id": "https://realestate.ephseed.com/article_20260901_1_longterm-holding-deduction_v2#page", "url": "https://realestate.ephseed.com/article_20260901_1_longterm-holding-deduction_v2", "headline": "장기보유특별공제 계산법 — 보유·거주기간별 공제율과 적용 요건 | 부동산인사이트", "description": "장기보유특별공제는 양도차익에서 보유기간에 비례한 금액을 빼 주는 제도다. 3년 이상 보유 요건, 표1(일반 부동산 최대 30%)과 표2(1세대 1주택 보유 40%+거주 40%=최대 80%)의 공제율, 12억원 초과 고가주택 안분 계산 순서, 그리고 2026년 8월 발표된 세제개편안이 예고한 2028·2029년 거주 중심 전환까지 2026년 9월 기준으로 정리했다.", "inLanguage": "ko-KR", "image": "https://realestate.ephseed.com/assets/og-default.png", "isPartOf": {"@id": "https://realestate.ephseed.com/#website"}, "datePublished": "2026-09-01", "dateModified": "2026-09-01", "author": {"@id": "https://realestate.ephseed.com/#organization"}, "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display:flex;justify-content:center;background:#fff;padding:10px 0;border-bottom:1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="/">시장동향</a>
+      <a href="/">정책·규제</a>
+      <a href="/">투자분석</a>
+      <a href="/">법률·세금</a>
+      <a href="/">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">📋 정책·규제 분석</div>
+    <h1>장기보유특별공제 계산법<br>보유·거주기간별 공제율과 적용 요건</h1>
+    <div class="hero-meta">
+      <span>부동산인사이트 편집팀</span>
+      <span>2026년 9월 1일</span>
+      <span>#장기보유특별공제 #양도소득세 #세제개편안 #1세대1주택</span>
+    </div>
+  </div>
+</section>
+
+<div class="main-wrap">
+  <article class="content">
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">3년</div>
+        <div class="label">공제를 받기 위한<br>최소 보유기간</div>
+      </div>
+      <div class="data-card">
+        <div class="num">30%</div>
+        <div class="label">일반 부동산(표1)의<br>최대 공제율 · 15년 이상</div>
+      </div>
+      <div class="data-card">
+        <div class="num">80%</div>
+        <div class="label">1세대 1주택(표2)의<br>최대 공제율 · 보유40%+거주40%</div>
+      </div>
+    </div>
+
+    <p>양도소득세를 계산할 때 세율만 들여다보는 사람이 많다. 그런데 실제로 세액을 가장 크게 움직이는 항목은 세율이 아니라 <strong>과세 대상이 되는 금액 자체를 깎아 주는 공제</strong>인 경우가 많다. 장기보유특별공제가 대표적이다. 같은 양도차익, 같은 세율이어도 이 공제가 30%냐 80%냐에 따라 최종 세액은 두 배 이상 벌어진다.</p>
+
+    <p>이름은 '장기보유'인데 실제로는 보유기간만 보지 않는다는 점이 이 제도의 첫 번째 함정이다. 1세대 1주택으로 최대 공제율을 받으려면 그 집에 실제로 살았어야 한다. 두 번째 함정은 2026년 8월 발표된 세제개편안이 이 구조를 아예 <strong>거주 중심으로 갈아엎겠다고 예고</strong>했다는 것이다. 지금 사는 사람과 지금 파는 사람의 계산이 달라진다.</p>
+
+    <p>아래는 2026년 9월 기준으로 장기보유특별공제의 적용 요건, 표1·표2 공제율, 12억원 초과 고가주택의 안분 계산 순서, 그리고 예고된 개편 일정을 정리한 것이다. 세법은 개정되며, 특히 아래 6번 항목은 아직 확정된 법이 아닌 정부 개편안이다. 실제 양도 시점에는 국세청과 국가법령정보센터에서 그 시점의 조문을 반드시 다시 확인해야 한다.</p>
+
+    <h2>장기보유특별공제란 — 양도차익에서 무엇을 빼는가</h2>
+
+    <p>장기보유특별공제는 소득세법 제95조에 근거한 제도로, <strong>양도차익에 보유기간별 공제율을 곱한 금액을 빼 준 나머지</strong>를 양도소득금액으로 삼는 구조다. 물가 상승분과 장기 보유에 따른 명목 이익을 걷어내고, 단기 매매를 억제하려는 목적으로 설계됐다.</p>
+
+    <div class="formula">
+      양도차익 = 양도가액 − 취득가액 − 필요경비<br>
+      장기보유특별공제액 = <strong>양도차익 × 공제율</strong><br>
+      양도소득금액 = 양도차익 − <strong>장기보유특별공제액</strong>
+    </div>
+
+    <p>여기서 놓치기 쉬운 것은 공제가 <strong>세액이 아니라 소득금액 단계에서 적용된다</strong>는 점이다. 즉 공제율 40%는 '세금을 40% 깎아 준다'는 뜻이 아니라 '과세 대상 차익을 40% 줄여 준다'는 뜻이다. 다만 우리나라 양도세는 누진세율이므로, 과세표준이 줄면 적용 구간까지 내려가는 경우가 많아 체감 절세 효과는 공제율보다 커지는 편이다.</p>
+
+    <p>공제율은 두 개의 표로 갈린다. 일반 부동산에 적용되는 표1과, 1세대 1주택에 적용되는 표2다. 어느 표를 쓰느냐가 이 제도의 전부라고 해도 과장이 아니다.</p>
+
+    <h2>적용 요건 — 3년, 그리고 등기</h2>
+
+    <p>공제를 받으려면 먼저 문턱을 넘어야 한다. 기본 요건은 세 가지다.</p>
+
+    <table class="body-table">
+      <tr><th>요건</th><th>내용</th><th>미충족 시</th></tr>
+      <tr><td>보유기간</td><td>취득일부터 양도일까지 3년 이상</td><td>공제율 0% — 한 푼도 적용되지 않는다</td></tr>
+      <tr><td>등기 여부</td><td>등기된 자산일 것</td><td>미등기 양도자산은 공제 배제</td></tr>
+      <tr><td>중과 대상 여부</td><td>다주택 중과 등 배제 사유가 없을 것</td><td>중과 적용 시 공제 배제</td></tr>
+    </table>
+
+    <p>보유기간의 기산일은 <strong>취득일</strong>이다. 상속이나 증여로 받은 자산은 기산일이 달라질 수 있어 개별 확인이 필요하다. '3년 이상'은 3년째가 되는 날이 아니라 3년을 채운 시점부터이므로, 만 3년에서 며칠 모자라 공제를 통째로 놓치는 사례가 실무에서 반복된다. 잔금일 조정 하나로 수천만 원이 갈리는 지점이다.</p>
+
+    <div class="quote-box">
+      공제율 0%와 6%의 차이는 6%가 아니다. 3년을 채우지 못하면 보유기간에 비례하는 공제가 아예 존재하지 않는 것이고, 여기에 단기 양도에 붙는 높은 세율까지 겹친다. 이 제도에서 가장 비싼 실수는 계산 착오가 아니라 일정 관리다.
+      <cite>— 소득세법 제95조 보유기간 요건 구조</cite>
+    </div>
+
+    <h2>표1 공제율 — 일반 부동산, 최대 30%</h2>
+
+    <p>1세대 1주택 요건을 충족하지 못하는 모든 자산에 적용되는 기본 표다. <strong>3년 이상 보유 시 6%에서 시작해 1년마다 2%포인트씩 올라가고, 15년 이상에서 30%로 상한</strong>에 걸린다. 토지, 상가, 그리고 다주택자가 보유한 주택 중 중과 대상이 아닌 것 등이 여기에 해당한다.</p>
+
+    <table class="body-table">
+      <tr><th>보유기간</th><th>공제율</th><th>보유기간</th><th>공제율</th></tr>
+      <tr><td>3년 이상 4년 미만</td><td>6%</td><td>10년 이상 11년 미만</td><td>20%</td></tr>
+      <tr><td>4년 이상 5년 미만</td><td>8%</td><td>11년 이상 12년 미만</td><td>22%</td></tr>
+      <tr><td>5년 이상 6년 미만</td><td>10%</td><td>12년 이상 13년 미만</td><td>24%</td></tr>
+      <tr><td>6년 이상 7년 미만</td><td>12%</td><td>13년 이상 14년 미만</td><td>26%</td></tr>
+      <tr><td>7년 이상 8년 미만</td><td>14%</td><td>14년 이상 15년 미만</td><td>28%</td></tr>
+      <tr><td>8년 이상 9년 미만</td><td>16%</td><td>15년 이상</td><td>30%</td></tr>
+      <tr><td>9년 이상 10년 미만</td><td>18%</td><td colspan="2" style="font-size:0.8rem;color:#888;">2026년 9월 기준 · 소득세법 제95조 표1</td></tr>
+    </table>
+
+    <p>15년을 넘겨도 공제율은 더 오르지 않는다. 20년을 보유하든 30년을 보유하든 30%가 끝이다. 표1 구간에 머무는 자산이라면 <strong>15년 이후의 추가 보유는 절세 관점에서 아무 이득이 없다</strong>는 뜻이고, 이는 매도 시점을 정할 때 실질적인 기준선이 된다.</p>
+
+    <h2>표2 공제율 — 1세대 1주택, 보유 40% + 거주 40%</h2>
+
+    <p>표2는 1세대 1주택자에게 적용되는 우대 표다. 구조가 표1과 근본적으로 다르다. <strong>보유기간과 거주기간을 각각 따로 계산해 합산</strong>한다.</p>
+
+    <div class="formula">
+      공제율 = <strong>보유기간 × 연 4%</strong>(최대 40%) + <strong>거주기간 × 연 4%</strong>(최대 40%)<br>
+      최대 = 10년 보유(40%) + 10년 거주(40%) = <strong>80%</strong>
+    </div>
+
+    <p>여기서 결정적인 조건이 붙는다. 표2를 적용받으려면 <strong>보유기간 중 2년 이상 실제로 거주</strong>했어야 한다. 2년 거주 요건을 채우지 못하면 1세대 1주택이더라도 표2로 가지 못하고 표1(최대 30%)로 떨어진다. 40%p 이상이 한 번에 사라지는 구간이다.</p>
+
+    <table class="body-table">
+      <tr><th>보유 / 거주</th><th>보유 공제</th><th>거주 공제</th><th>합계</th></tr>
+      <tr><td>10년 보유 · 10년 거주</td><td>40%</td><td>40%</td><td><strong>80%</strong></td></tr>
+      <tr><td>10년 보유 · 5년 거주</td><td>40%</td><td>20%</td><td>60%</td></tr>
+      <tr><td>10년 보유 · 2년 거주</td><td>40%</td><td>8%</td><td>48%</td></tr>
+      <tr><td>10년 보유 · 거주 없음</td><td colspan="2">표2 적용 불가 → 표1 적용</td><td>20%</td></tr>
+      <tr><td colspan="4" style="font-size:0.8rem;color:#888;">2026년 9월 기준 · 표2는 보유기간 중 2년 이상 거주 요건 충족 시 적용</td></tr>
+    </table>
+
+    <p>표에서 보듯 같은 10년 보유라도 거주 이력에 따라 공제율이 20%에서 80%까지 벌어진다. 실거주 여부가 세금의 핵심 변수라는 사실이 이미 현행 제도에 들어와 있는 것이고, 뒤에서 볼 개편안은 이 방향을 훨씬 더 밀어붙인다.</p>
+
+    <h2>계산법 — 12억원 초과 고가주택의 안분</h2>
+
+    <p>1세대 1주택은 양도가액 12억원까지는 비과세다. 12억원을 넘는 주택은 <strong>초과분에 해당하는 양도차익만 과세</strong>되며, 장기보유특별공제도 그 과세 대상 차익에만 적용된다. 순서를 틀리면 결과가 크게 달라지므로 단계를 지켜야 한다.</p>
+
+    <ul class="tip-list">
+      <li><strong>1단계</strong> — 전체 양도차익 계산: 양도가액 − 취득가액 − 필요경비</li>
+      <li><strong>2단계</strong> — 과세 대상 차익 안분: 전체 양도차익 × (양도가액 − 12억원) ÷ 양도가액</li>
+      <li><strong>3단계</strong> — 공제율 확정: 보유기간·거주기간을 각각 계산해 표2 합산(또는 표1)</li>
+      <li><strong>4단계</strong> — 공제액 산출: 2단계 과세 대상 차익 × 3단계 공제율</li>
+      <li><strong>5단계</strong> — 양도소득금액 = 2단계 − 4단계, 여기서 기본공제 250만원을 빼고 세율 적용</li>
+    </ul>
+
+    <div class="formula">
+      예) 양도가액 20억원 · 취득가액 8억원 · 필요경비 0 · 12년 보유 · 12년 거주<br>
+      ① 전체 양도차익 = 12억원<br>
+      ② 과세 대상 차익 = 12억 × (20억 − 12억) ÷ 20억 = <strong>4억 8,000만원</strong><br>
+      ③ 공제율 = 보유 40% + 거주 40% = <strong>80%</strong><br>
+      ④ 공제액 = 4억 8,000만 × 80% = <strong>3억 8,400만원</strong><br>
+      ⑤ 양도소득금액 = 4억 8,000만 − 3억 8,400만 = <strong>9,600만원</strong>
+    </div>
+
+    <p>같은 사례에서 거주 이력이 없어 표1(12년 보유 24%)이 적용되면 공제액은 1억 1,520만원으로 줄고 양도소득금액은 3억 6,480만원이 된다. 과세표준이 약 3.8배가 되는 것이고, 누진세율까지 감안하면 실제 세액 차이는 그보다 더 크게 벌어진다.</p>
+
+    <h2>2026년 세제개편안 — 보유에서 거주로</h2>
+
+    <p>정부는 2026년 8월 3일 세제발전심의위원회를 통해 발표한 세제개편안에서 장기보유특별공제를 <strong>거주기간 중심으로 전면 개편</strong>하겠다고 밝혔다. 합산 최대 공제율 80%는 유지하되, 그 80%를 채우는 방식을 바꾸는 구조다.</p>
+
+    <table class="body-table">
+      <tr><th>적용 시기</th><th>보유 공제</th><th>거주 공제</th><th>공제액 한도</th></tr>
+      <tr><td>현행 (~2027년)</td><td>연 4% · 최대 40%</td><td>연 4% · 최대 40%</td><td>없음</td></tr>
+      <tr><td>2028년 양도분</td><td>연 2% · 최대 20%</td><td>연 6% · 최대 60%</td><td>20억원</td></tr>
+      <tr><td>2029년 이후 양도분</td><td>폐지</td><td>연 8% · 최대 80%</td><td>10억원</td></tr>
+      <tr><td colspan="4" style="font-size:0.8rem;color:#888;">2026년 8월 3일 발표된 정부 개편안 기준 · 국회 입법 과정에서 변경될 수 있다</td></tr>
+    </table>
+
+    <p>2029년 이후를 그대로 적용하면 <strong>거주하지 않은 주택의 장기보유특별공제는 0%가 된다.</strong> 30년을 보유했어도 살지 않았다면 공제가 남지 않는다는 뜻이다. 여기에 공제액 자체에 한도(2028년 20억원, 2029년 이후 10억원)를 새로 씌워 고가주택의 공제 규모를 제한하는 장치도 함께 들어갔다.</p>
+
+    <p>보완책도 있다. 취학·근무상 형편·질병 치료·부모 봉양 등 부득이한 사유로 집을 비운 기간은 최대 3년까지 거주기간으로 인정하고, 재개발·재건축 이주 기간은 공사기간의 절반을 거주기간에 포함한다. 또 10년 이상 거주한 양도가액 30억원 이하 1세대 1주택자의 기본공제를 250만원에서 2,500만원으로 확대하는 내용도 담겼다.</p>
+
+    <div class="quote-box">
+      제도의 이름은 '장기보유'로 남지만, 2029년 이후 실제로 측정하는 것은 보유가 아니라 거주다. 오래 가지고 있었다는 사실만으로 얻던 혜택이 사라지고, 그 집에서 산 햇수가 공제의 유일한 근거가 된다.
+      <cite>— 2026년 8월 3일 발표 세제개편안 구조 요약</cite>
+    </div>
+
+    <h2>제도 평가와 전망</h2>
+
+    <p>방향 자체는 일관돼 있다. 정부는 2017년 이후 여러 차례 실거주 요건을 강화해 왔고, 이번 개편은 그 흐름의 종착점에 가깝다. 주택을 자산 보유의 수단이 아니라 거주의 공간으로 다루겠다는 정책 의도가 공제율 배분에 그대로 반영됐다.</p>
+
+    <p>다만 실행 국면에서 몇 가지 마찰이 예상된다. 첫째, 거주가 물리적으로 불가능했던 사례 — 지방 근무, 임대 놓은 상속주택, 장기 해외 체류 — 를 예외 3년으로 모두 흡수할 수 있느냐는 문제다. 둘째, 공제액 한도 10억원은 서울 상급지 장기 보유자에게 사실상 새로운 세부담으로 작동한다. 셋째, 2028년 시행이 예고돼 있으므로 <strong>2027년까지 매도가 몰리는 유인</strong>이 생긴다. 매물 출회 시점이 특정 연도에 쏠릴 가능성은 시장이 미리 계산할 변수다.</p>
+
+    <p>무엇보다 이 개편안은 아직 <strong>법이 아니라 안(案)</strong>이다. 국회 심의 과정에서 시행 시기나 공제율이 조정될 여지가 있다. 지금 시점에서 확정된 사실로 다뤄야 할 것은 현행 제도이고, 개편안은 시나리오로 두고 대비하는 것이 맞다.</p>
+
+    <h2>실수요자·투자자 시사점</h2>
+
+    <ul class="tip-list">
+      <li><strong>3년과 2년, 두 개의 문턱을 달력에 표시한다</strong> — 보유 3년 미만이면 공제가 0%이고, 1세대 1주택이어도 거주 2년 미만이면 표2가 아니라 표1로 떨어진다. 잔금일 며칠 차이로 결정되는 금액이다.</li>
+      <li><strong>거주 이력은 증빙으로 남긴다</strong> — 개편안이 시행되면 거주기간이 공제의 거의 전부가 된다. 전입신고 이력, 관리비·공과금 납부 내역 등 거주 사실을 뒷받침할 자료를 미리 정리해 두는 것이 실익이 크다.</li>
+      <li><strong>15년 상한을 매도 계획에 반영한다</strong> — 표1이 적용되는 상가·토지·비거주 주택은 15년에서 공제율이 멈춘다. 그 이후의 추가 보유는 절세 근거가 되지 못한다.</li>
+      <li><strong>고가주택은 안분 계산부터 확인한다</strong> — 양도가액 12억원 초과분에만 과세되므로, 공제율보다 안분 후 과세 대상 차익이 얼마인지가 먼저다. 순서를 바꾸면 세액 추정이 크게 어긋난다.</li>
+      <li><strong>2027년과 2028년 사이의 경계를 계산에 넣는다</strong> — 개편안대로면 2028년 양도분부터 보유 공제가 반토막 난다. 비거주 장기 보유 자산이라면 매도 시점 자체가 세액 변수다.</li>
+      <li><strong>확정 전까지는 현행 조문으로 판단한다</strong> — 개편안 수치를 전제로 의사결정을 굳히기보다, 국회 통과 여부와 최종 조문을 확인한 뒤 확정하는 편이 안전하다.</li>
+    </ul>
+
+    <h2>결론</h2>
+
+    <p>장기보유특별공제는 세율 표보다 세액을 크게 흔드는 항목이다. 현행 기준으로 요약하면 세 문장이다. <strong>3년을 채워야 공제가 시작되고, 일반 부동산은 15년 30%가 끝이며, 1세대 1주택은 2년 이상 거주해야 보유 40%와 거주 40%를 합쳐 최대 80%까지 간다.</strong></p>
+
+    <p>그리고 2026년 8월 발표된 개편안은 이 구조의 무게중심을 보유에서 거주로 옮기겠다고 예고했다. 2028년에 보유 공제가 절반으로 줄고, 2029년에는 사라진다. 지금 집을 가지고 있는 사람에게 이 문장은 세무 정보가 아니라 일정표에 가깝다. 언제 파느냐, 그리고 그 집에서 살았느냐가 남은 계산의 전부가 된다.</p>
+
+    <div class="disclaimer">
+      본 콘텐츠는 2026년 9월 1일 기준 공개된 소득세법 조문과 2026년 8월 3일 발표된 정부 세제개편안을 바탕으로 정리한 일반적 정보 제공 목적의 자료이며, 특정 거래에 대한 세무 자문이나 투자 권유가 아닙니다. 세제개편안은 국회 심의 과정에서 변경될 수 있고, 공제율·요건·한도는 개정될 수 있습니다. 상속·증여 취득, 조합원입주권, 다주택 중과 등 개별 사안은 적용 결과가 달라질 수 있으므로 실제 양도 전 국세청 상담(126) 또는 세무 전문가의 검토를 받으시기 바랍니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>보유 3년 미만이면 공제율 0% — 제도 자체가 적용되지 않는다</li>
+        <li>표1(일반 부동산): 3년 6%에서 시작해 15년 이상 30%가 상한</li>
+        <li>표2(1세대 1주택): 보유 연 4% + 거주 연 4%, 합산 최대 80%</li>
+        <li>표2를 받으려면 보유기간 중 2년 이상 거주 요건 충족 필수</li>
+        <li>2026년 개편안: 2028년 보유 2%·거주 6%, 2029년 보유 공제 폐지</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>🔗 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="article_20260825_1_temporary-two-house_v2.html">일시적 2주택 비과세 요건 — 종전주택 처분기한과 취득 시점 정리</a></li>
+        <li><a href="article_20260829_1_overseas-capital-gains-tax_v2.html">해외부동산 양도소득세 계산법 — 세율·기본공제와 신고기한 정리</a></li>
+        <li><a href="article_20260830_1_property-tax_v2.html">재산세 부과기준 — 과세표준 계산법과 납부시기 정리</a></li>
+        <li><a href="article_20260831_1_jeonse-ratio_v2.html">전세가율 뜻 — 계산법과 깡통전세 판단 방법</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📊 연도별 공제율 변화</h3>
+      <table class="compare-table">
+        <tr><th>시기</th><th>보유</th><th>거주</th></tr>
+        <tr><td>~2027년</td><td style="color:#2980b9;font-weight:700;">4%/년</td><td>4%/년</td></tr>
+        <tr><td>2028년</td><td>2%/년</td><td style="font-weight:700;">6%/년</td></tr>
+        <tr><td>2029년~</td><td style="color:#c0392b;font-weight:700;">폐지</td><td style="color:#c0392b;font-weight:700;">8%/년</td></tr>
+        <tr><td colspan="3" style="font-size:0.76rem;color:#888;">정부 개편안 기준 · 국회 심의로 변경 가능</td></tr>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 부동산인사이트 | 본 콘텐츠는 정보 제공 목적이며 투자 권유가 아닙니다.</p>
+</footer>
+</body>
+</html>
