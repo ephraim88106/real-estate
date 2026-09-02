@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 315,
+    url: 'article_20260902_1_investment_v2.html',
+    category: '투자',
+    title: '공급 절벽 앞에 선 투자자들 — 지금 당장 담아야 할 단지 vs. 손대면 안 되는 단지 완전 해부',
+    summary: '2026년 하반기 수도권 입주물량 역대급 절벽 속, 금리 인하 기대와 정책 규제가 얽힌 시장에서 데이터로 옥석을 가린다. 재건축·역세권 소형 vs. 지방 외곽의 극단적 수익률 분화를 심층 해부한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-02',
+    title_en: 'Real Estate Investors at the Supply Cliff — Which Units to Buy vs. Avoid in H2 2026',
+    summary_en: 'With record-low new supply in the Seoul metro area, we analyze where to invest and what to avoid as interest rate cuts and policy risks create extreme divergence in returns.'
+  },
+  {
+    id: 314,
+    url: 'article_20260902_2_overseas_v2.html',
+    category: '해외',
+    title: '한국인이 몰리는 미국·일본 부동산의 진짜 속사정 — 환차익까지 잡는 해외투자 완벽 가이드',
+    summary: '미국 주택 판매량 14% 증가 전망과 역대급 엔저가 만든 일본 부동산 기회. 세금·환율·법적 규제까지 한국인 투자자를 위한 해외 부동산 실전 전략을 낱낱이 파헤친다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-02',
+    title_en: 'The Real Story Behind US and Japan Real Estate — A Complete Overseas Investment Guide for Koreans',
+    summary_en: 'With US home sales forecast to rise 14% and Japan property accessible at historically low yen exchange rates, we break down the full overseas investment strategy including taxes, currency risk, and legal hurdles.'
+  },
+  {
     id: 313,
     url: 'article_20260902_1_no-house-period_v2.html',
     category: '분양',
