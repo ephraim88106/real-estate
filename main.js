@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 313,
+    url: 'article_20260902_1_no-house-period_v2.html',
+    category: '분양',
+    title: '무주택기간 산정 방법 \u2014 만 30세 기준일과 세대원 주택 보유 판정',
+    summary: '청약 가점 84점 중 32점이 걸린 무주택기간은 만 30세가 되는 날부터 기산하며, 만 30세 이전 혼인 시에는 혼인신고일부터 센다. 판정 단위는 개인이 아니라 무주택세대구성원 전원이며, 소형·저가주택과 60세 이상 직계존속 소유 주택 등 예외 규정도 함께 정리했다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-02',
+    title_en: 'How to Calculate the Homeless Period for Korean Housing Subscription Points',
+    summary_en: 'The homeless (non-homeowning) period is worth 32 of the 84 total subscription points. It starts on the applicant\'s 30th birthday, or on the marriage registration date if married before 30, and is judged across all household members, with exceptions for small low-priced homes and homes owned by direct ascendants aged 60 or older.'
+  },
+  {
     id: 312,
     url: 'article_20260901_1_subscription_v2.html',
     category: '분양',

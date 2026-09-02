@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>무주택기간 산정 방법 — 만 30세 기준일과 세대원 주택 보유 판정 | 부동산인사이트</title>
+<meta name="description" content="청약 가점 32점을 좌우하는 무주택기간 산정 방법. 만 30세 기산 원칙과 혼인신고일 예외, 세대원 전원 무주택 요건, 소형·저가주택과 60세 이상 직계존속 예외까지 정리.">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f0; color: #222; line-height: 1.8; }
+  a { text-decoration: none; color: inherit; }
+  header { background: #0D2B55; color: #fff; padding: 0 24px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 8px rgba(0,0,0,.4); }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.25rem; font-weight: 700; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 20px; font-size: .82rem; }
+  nav a { color: #ccc; }
+  .hero { background: linear-gradient(135deg, #0A3A0A 0%, #2E7D2E 55%, #0A3A0A 100%); color: #fff; padding: 64px 24px 48px; text-align: center; }
+  .category-tag { display: inline-block; background: #1A7F4D; color: #fff; font-size: .78rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; letter-spacing: .08em; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.4rem, 3.5vw, 2.2rem); font-weight: 700; line-height: 1.35; max-width: 800px; margin: 0 auto 16px; }
+  .hero-meta { font-size: .82rem; color: #bfe4c8; }
+  .container { max-width: 1140px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 36px; }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card { background: #e6f4ec; border-left: 4px solid #1A7F4D; border-radius: 8px; padding: 18px 16px; text-align: center; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.9rem; font-weight: 700; color: #1A7F4D; }
+  .data-card .label { font-size: .78rem; color: #555; margin-top: 4px; }
+  .article-body p { margin-bottom: 20px; font-size: .97rem; color: #333; }
+  .article-body h2 { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; font-weight: 700; color: #0A3A0A; border-left: 4px solid #1A7F4D; padding-left: 14px; margin: 36px 0 16px; }
+  .article-body ul { padding-left: 20px; margin-bottom: 20px; }
+  .article-body ul li { margin-bottom: 10px; font-size: .95rem; color: #333; }
+  .quote-box { background: #e6f4ec; border-left: 4px solid #1A7F4D; border-radius: 8px; padding: 20px 24px; margin: 28px 0; font-family: 'Noto Serif KR', serif; font-style: italic; color: #14502f; font-size: .95rem; line-height: 1.9; }
+  .quote-box .attribution { font-style: normal; font-size: .8rem; color: #555; margin-top: 10px; text-align: right; }
+  .disclaimer { background: #eee; border-radius: 8px; padding: 16px 18px; font-size: .78rem; color: #666; margin-top: 36px; line-height: 1.6; }
+  .sidebar { display: flex; flex-direction: column; gap: 20px; }
+  .sidebar-box { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,.07); }
+  .sidebar-box h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; color: #0A3A0A; border-bottom: 2px solid #1A7F4D; padding-bottom: 8px; margin-bottom: 14px; }
+  .sidebar-box ul { list-style: none; padding: 0; }
+  .sidebar-box ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: .85rem; color: #333; line-height: 1.45; }
+  .sidebar-box ul li:last-child { border-bottom: none; }
+  .summary-bullet { display: flex; gap: 8px; align-items: flex-start; padding: 6px 0; font-size: .85rem; }
+  .summary-bullet::before { content: '✦'; color: #1A7F4D; font-size: .7rem; flex-shrink: 0; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: .85rem; margin-top: 10px; }
+  th { background: #1A7F4D; color: #fff; padding: 8px 10px; text-align: left; }
+  td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) td { background: #f2f9f5; }
+  .article-body table { margin: 20px 0 26px; }
+  footer { background: #0D2B55; color: #aaa; text-align: center; padding: 28px 20px; font-size: .8rem; margin-top: 40px; }
+  footer span { color: #F4A52D; }
+  .highlight-box { background: #f4fbf6; border: 1px solid #a8d9be; border-radius: 8px; padding: 18px 20px; margin: 24px 0; }
+  .highlight-box h4 { color: #1A7F4D; font-weight: 700; margin-bottom: 10px; font-size: .95rem; }
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+</style>
+<!-- SEO:BEGIN -->
+<link rel="canonical" href="https://realestate.ephseed.com/article_20260902_1_no-house-period_v2">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="부동산인사이트">
+<meta property="og:title" content="무주택기간 산정 방법 — 만 30세 기준일과 세대원 주택 보유 판정 | 부동산인사이트">
+<meta property="og:description" content="청약 가점 32점을 좌우하는 무주택기간 산정 방법. 만 30세 기산 원칙과 혼인신고일 예외, 세대원 전원 무주택 요건, 소형·저가주택과 60세 이상 직계존속 예외까지 정리.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20260902_1_no-house-period_v2">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="article:published_time" content="2026-09-02T09:00:00+09:00">
+<meta property="article:modified_time" content="2026-09-02T09:00:00+09:00">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2GN2G2QF3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-N2GN2G2QF3");</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://realestate.ephseed.com/#organization", "name": "부동산인사이트", "url": "https://realestate.ephseed.com/"}, {"@type": "WebSite", "@id": "https://realestate.ephseed.com/#website", "url": "https://realestate.ephseed.com/", "name": "부동산인사이트", "description": "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트", "inLanguage": "ko-KR", "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}, {"@type": "Article", "@id": "https://realestate.ephseed.com/article_20260902_1_no-house-period_v2#page", "url": "https://realestate.ephseed.com/article_20260902_1_no-house-period_v2", "headline": "무주택기간 산정 방법 — 만 30세 기준일과 세대원 주택 보유 판정 | 부동산인사이트", "description": "청약 가점 32점을 좌우하는 무주택기간 산정 방법. 만 30세 기산 원칙과 혼인신고일 예외, 세대원 전원 무주택 요건, 소형·저가주택과 60세 이상 직계존속 예외까지 정리.", "inLanguage": "ko-KR", "image": "https://realestate.ephseed.com/assets/og-default.png", "isPartOf": {"@id": "https://realestate.ephseed.com/#website"}, "datePublished": "2026-09-02", "dateModified": "2026-09-02", "author": {"@id": "https://realestate.ephseed.com/#organization"}, "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="logo">부동산<span>인사이트</span></div>
+  <nav>
+    <a href="#">시장동향</a>
+    <a href="#">정책·규제</a>
+    <a href="#">투자분석</a>
+    <a href="#">법률·세금</a>
+    <a href="#">칼럼</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="category-tag">분양·청약 분석</div>
+  <h1>무주택기간 산정 방법<br>만 30세 기준일과 세대원 주택 보유 판정</h1>
+  <div class="hero-meta">2026년 9월 2일 &nbsp;|&nbsp; 부동산인사이트 편집팀</div>
+</div>
+
+<div class="container">
+  <main>
+    <div class="data-cards">
+      <div class="data-card">
+        <div class="num">32점</div>
+        <div class="label">무주택기간 만점<br>(가점 총 84점 중)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">만 30세</div>
+        <div class="label">기산 원칙 시점<br>(조기 혼인 시 혼인신고일)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">15년</div>
+        <div class="label">만점 도달에 필요한<br>계속 무주택 기간</div>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <p>민영주택 일반공급 가점제에서 배점이 가장 크게 갈리는 항목은 무주택기간이다. 가점 총점 84점 가운데 32점이 여기에 걸려 있고, 나머지는 부양가족수 35점과 입주자저축 가입기간 17점이 나눠 갖는다. 그런데 실제 청약 현장에서 부적격 당첨으로 취소되는 사례가 가장 많이 나오는 항목도 이 무주택기간이다. 이유는 단순하다. "나는 집을 산 적이 없으니 성인이 된 이후 전부 무주택기간"이라고 생각하는 사람이 많은데, 규정은 그렇게 되어 있지 않기 때문이다.</p>
+
+      <p>무주택기간은 본인의 실제 주거 이력이 아니라 <strong>법이 정한 기산 시점</strong>과 <strong>세대 단위 주택 소유 여부</strong>라는 두 가지 장치로 계산된다. 이 글은 「주택공급에 관한 규칙」을 기준으로 그 두 장치가 어떻게 작동하는지, 그리고 집이 있어도 무주택으로 보는 예외에는 무엇이 있는지 정리한다. 아래 수치와 요건은 2026년 9월 현재 시행 중인 규정을 기준으로 한다.</p>
+
+      <h2>기산 시점 — 성인이 된 날이 아니라 만 30세가 되는 날</h2>
+      <p>무주택기간의 출발점은 만 19세도, 세대분리를 한 날도 아니다. 원칙은 <strong>입주자저축 가입자의 연령이 만 30세가 되는 날</strong>이다. 만 29세에 청약을 넣는 미혼 무주택자는 아무리 오래 전월세로 살았어도 무주택기간 가점이 0점이다. 이 지점에서 실제 거주 경험과 제도상 점수가 크게 어긋난다.</p>
+      <p>단 하나의 예외가 혼인이다. 만 30세가 되기 전에 혼인한 경우에는 <strong>혼인관계증명서상 혼인신고일</strong>부터 무주택기간을 센다. 27세에 혼인신고를 했다면 그날부터 기산되므로, 같은 나이의 미혼자보다 3년 앞서 출발한다. 반대로 만 30세 이후에 혼인했다면 혼인 여부와 무관하게 만 30세가 기준일이 된다. 결혼이 무주택기간을 항상 앞당겨 주는 것이 아니라, <strong>30세 이전 혼인만 앞당긴다</strong>는 점을 정확히 구분해야 한다.</p>
+
+      <div class="highlight-box">
+        <h4>기산일 판단 3단계</h4>
+        <p style="margin-bottom:6px;">① 만 30세 이전에 혼인신고를 했는가 → 예: 혼인신고일이 기산일 / 아니오: ②로</p>
+        <p style="margin-bottom:6px;">② 만 30세가 되는 날이 기산일</p>
+        <p style="margin-bottom:0;">③ 기산일 이후 주택을 소유한 적이 있다면, 그 주택을 <strong>처분한 날</strong>부터 다시 계산한다</p>
+      </div>
+
+      <h2>계속성 요건 — 중간에 집이 있었다면 그 시점부터 다시 센다</h2>
+      <p>규정이 요구하는 것은 단순한 누적이 아니라 "계속하여 무주택인 기간"이다. 만 30세 이후 주택을 취득했다가 매도한 이력이 있다면, 그 이전의 무주택 기간은 합산되지 않고 <strong>처분일 기준으로 초기화</strong>된다. 32세에 집을 사서 36세에 팔았다면 무주택기간은 36세부터 다시 시작한다. 30세부터 32세까지의 2년은 사라진다.</p>
+      <p>여기서 주의할 것이 분양권이다. 일정 시점 이후 공급계약을 체결한 분양권과 입주권은 주택 소유로 간주된다. 분양권을 보유하다가 전매한 이력이 있다면 그 기간 역시 무주택기간에서 빠진다. 잔금을 치르지 않았으니 아직 집이 아니라고 판단했다가 부적격 처리되는 경우가 여기서 나온다.</p>
+
+      <div class="quote-box">
+        "무주택기간에서 가장 자주 나오는 착오는 세 가지다. 만 30세 이전 기간을 넣는 것, 과거 보유 이력을 빼지 않는 것, 그리고 세대원의 집을 세지 않는 것. 청약 신청서에 입력한 기간은 당첨 후 서류로 전부 검증된다."
+        <div class="attribution">— 청약 부적격 사례에서 반복적으로 확인되는 세 가지 유형</div>
+      </div>
+
+      <h2>세대 단위 판정 — 내 명의가 아니어도 걸린다</h2>
+      <p>무주택기간은 신청자 개인이 아니라 <strong>무주택세대구성원 전원</strong>을 기준으로 판정한다. 즉 주민등록표등본에 함께 올라 있는 배우자, 직계존속, 직계비속 가운데 누구라도 주택을 소유하고 있으면 신청자 본인의 무주택기간은 그 기간만큼 인정되지 않는다. 배우자는 주민등록이 분리되어 있어도 세대구성원으로 함께 본다는 점이 특히 중요하다.</p>
+      <p>부모와 함께 살고 있는 30대 무주택자가 자신의 무주택기간을 10년으로 신고했다가, 부모 명의 주택 때문에 부적격 처리되는 사례가 대표적이다. 반대로 세대분리를 하면 곧바로 해결된다고 오해하는 경우도 많은데, 판정 기준일은 <strong>입주자모집공고일</strong>이므로 공고 이후에 세대를 분리해도 소급 적용되지 않는다.</p>
+
+      <h2>집이 있어도 무주택으로 보는 예외</h2>
+      <p>「주택공급에 관한 규칙」 제53조는 주택을 소유하고 있어도 무주택으로 보는 경우를 열거한다. 실무에서 자주 쓰이는 유형은 다음과 같다.</p>
+
+      <table>
+        <tr><th>유형</th><th>인정 요건</th></tr>
+        <tr><td>소형·저가주택(아파트)</td><td>전용 60㎡ 이하 &amp; 공시가격 수도권 1억 6천만원 이하, 지방 1억원 이하</td></tr>
+        <tr><td>소형·저가주택(비아파트)</td><td>전용 85㎡ 이하 &amp; 공시가격 수도권 5억원 이하, 지방 3억원 이하 (2024년 12월 18일 이후 모집공고분부터)</td></tr>
+        <tr><td>60세 이상 직계존속 소유</td><td>세대원인 부모·조부모가 만 60세 이상이면 그 주택은 제외 (노부모 부양 특별공급에는 미적용)</td></tr>
+        <tr><td>상속 공유지분</td><td>부적격 통보일부터 3개월 이내 지분 처분 시</td></tr>
+        <tr><td>폐가·무허가건물 등</td><td>사실상 주거가 불가능한 건축물</td></tr>
+      </table>
+
+      <p>비아파트 소형·저가주택 기준은 2024년 12월 18일 시행으로 전용 60㎡·공시가격 1억 6천만원(수도권)에서 전용 85㎡·공시가격 5억원(수도권)으로 크게 넓어졌다. 다세대·연립·단독·도시형생활주택을 한 채 보유한 실수요자가 청약 시장으로 들어올 수 있게 된 개정이다. 다만 <strong>1호만 소유한 경우</strong>에 한정되고, 판정은 입주자모집공고일 시점의 공시가격으로 한다. 이후 시세가 올라도 당첨에는 영향이 없다.</p>
+
+      <div class="quote-box">
+        "비아파트 소형·저가주택 기준 완화는 빌라 한 채 때문에 청약 자격을 잃던 계층을 제도 안으로 다시 들인 조치다. 다만 무주택으로 '간주'될 뿐 실제 주택 수가 사라지는 것은 아니어서, 취득세·양도세 등 세제 판정에는 그대로 반영된다."
+        <div class="attribution">— 2024년 12월 18일 시행 주택공급규칙 개정의 성격</div>
+      </div>
+
+      <h2>배점표 — 2년마다 2점, 15년이 천장</h2>
+      <p>무주택기간 가점은 1년 미만 2점에서 시작해 1년마다 2점씩 올라가 15년 이상에서 32점으로 마감된다. 만 30세에 기산이 시작된 사람이 만점을 받으려면 만 45세까지 세대 전원이 계속 무주택이어야 한다. 서울 인기 단지의 당첨 커트라인이 60점대 후반에서 형성되는 국면에서, 무주택기간 32점을 확보하지 못하면 부양가족과 통장 가입기간만으로 커트라인을 넘기가 사실상 어렵다.</p>
+
+      <table>
+        <tr><th>무주택기간</th><th>점수</th><th>무주택기간</th><th>점수</th></tr>
+        <tr><td>1년 미만</td><td>2점</td><td>8년 이상 ~ 9년 미만</td><td>18점</td></tr>
+        <tr><td>1년 이상 ~ 2년 미만</td><td>4점</td><td>9년 이상 ~ 10년 미만</td><td>20점</td></tr>
+        <tr><td>2년 이상 ~ 3년 미만</td><td>6점</td><td>10년 이상 ~ 11년 미만</td><td>22점</td></tr>
+        <tr><td>3년 이상 ~ 4년 미만</td><td>8점</td><td>11년 이상 ~ 12년 미만</td><td>24점</td></tr>
+        <tr><td>4년 이상 ~ 5년 미만</td><td>10점</td><td>12년 이상 ~ 13년 미만</td><td>26점</td></tr>
+        <tr><td>5년 이상 ~ 6년 미만</td><td>12점</td><td>13년 이상 ~ 14년 미만</td><td>28점</td></tr>
+        <tr><td>6년 이상 ~ 7년 미만</td><td>14점</td><td>14년 이상 ~ 15년 미만</td><td>30점</td></tr>
+        <tr><td>7년 이상 ~ 8년 미만</td><td>16점</td><td>15년 이상</td><td>32점</td></tr>
+      </table>
+
+      <h2>제도 평가 — 연령 기준이 만드는 사각지대</h2>
+      <p>만 30세 기산 원칙은 행정적으로는 명확하지만, 주거 현실과의 괴리도 분명하다. 20대 초반에 독립해 10년 가까이 임차로 살아온 사람과, 부모 집에 머물다 만 30세를 맞은 사람의 무주택기간이 동일하게 0점에서 출발한다. 실제 주거 부담을 진 기간이 점수에 반영되지 않는 구조다.</p>
+      <p>이 사각지대를 보완하는 장치가 청년 특별공급과 신생아·신혼부부 특별공급 같은 별도 트랙이다. 가점제 경쟁에서 구조적으로 불리한 연령대는 가점을 쌓아 일반공급을 노리기보다, 자신이 해당하는 특별공급 유형의 소득·자산 요건을 먼저 확인하는 편이 현실적이다. 반대로 40대 이상 장기 무주택자에게는 가점제가 여전히 가장 유리한 경로다.</p>
+
+      <h2>실수요자 시사점</h2>
+      <ul>
+        <li><strong>기산일부터 확정하라.</strong> 만 30세 생일과 혼인신고일 중 어느 쪽이 앞서는지 먼저 확인한다. 30세 이전 혼인이 아니라면 혼인신고일은 기준이 되지 않는다.</li>
+        <li><strong>과거 보유 이력을 등기부로 확인하라.</strong> 상속·증여로 잠깐 지분을 가졌던 이력도 주택 소유로 잡힐 수 있다. 기억이 아니라 서류로 확인해야 한다.</li>
+        <li><strong>등본상 세대원 전원을 점검하라.</strong> 배우자는 주민등록이 분리돼 있어도 세대구성원이다. 부모가 만 60세 미만이라면 그 주택은 그대로 계산에 들어간다.</li>
+        <li><strong>보유 주택이 있다면 예외 요건부터 대조하라.</strong> 비아파트는 전용 85㎡·공시가격 수도권 5억원 이하면 1호에 한해 무주택으로 인정된다. 공시가격은 모집공고일 기준이다.</li>
+        <li><strong>세대분리는 공고일 이전에 끝내라.</strong> 판정 기준일은 입주자모집공고일이며, 공고 이후의 분리는 소급되지 않는다.</li>
+        <li><strong>가점은 자진 신고 항목이다.</strong> 당첨 후 서류 검증에서 어긋나면 부적격 처리되고 일정 기간 청약이 제한된다. 애매하면 공고문의 문의처나 청약 접수 기관에 사전 확인하는 편이 안전하다.</li>
+      </ul>
+
+      <h2>결론</h2>
+      <p>무주택기간은 "집이 없던 시간"이 아니라 "규정이 인정하는 무주택 상태가 계속된 시간"이다. 기산 시점은 만 30세, 조기 혼인 시에는 혼인신고일이며, 판정 단위는 개인이 아니라 세대다. 이 세 문장을 정확히 적용하면 대부분의 착오는 사라진다.</p>
+      <p>가점은 하루아침에 만들 수 없는 항목이다. 그래서 더 중요한 것은 지금 자신의 점수를 정확히 아는 일이다. 실제보다 높게 계산한 점수로 넣은 청약은 당첨되어도 취소되고, 낮게 계산해 포기한 청약은 기회 자체를 놓친다. 모집공고일 기준으로 기산일·보유이력·세대원을 한 번만 제대로 정리해두면, 이후 청약에서는 그 계산을 그대로 재사용할 수 있다.</p>
+
+      <div class="disclaimer">
+        ※ 본 기사는 「주택공급에 관한 규칙」 등 공개된 법령 자료와 공공기관 안내 자료를 바탕으로 작성한 정보성 콘텐츠이며, 2026년 9월 기준입니다. 청약 자격과 가점 항목은 주택 유형·공급 유형·지역에 따라 적용이 달라질 수 있고 법령 개정으로 변경될 수 있습니다. 실제 청약 신청 시에는 반드시 해당 단지의 입주자모집공고문과 청약 접수 기관의 안내를 확인하시고, 개별 사안은 전문가 상담을 통해 판단하시기 바랍니다. 본 콘텐츠는 특정 주택의 청약이나 투자를 권유하지 않습니다.
+      </div>
+    </div>
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-box">
+      <h3>핵심 요약</h3>
+      <div class="summary-bullet">기산 원칙은 만 30세가 되는 날, 30세 이전 혼인 시 혼인신고일</div>
+      <div class="summary-bullet">주택 보유 이력이 있으면 처분일부터 다시 계산</div>
+      <div class="summary-bullet">판정 단위는 개인이 아닌 무주택세대구성원 전원</div>
+      <div class="summary-bullet">비아파트 소형·저가주택은 전용 85㎡·공시가 수도권 5억원 이하 1호까지 무주택 인정</div>
+      <div class="summary-bullet">1년마다 2점씩, 15년 이상에서 32점 만점</div>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>청약 가점 구성</h3>
+      <table>
+        <tr><th>항목</th><th>만점</th></tr>
+        <tr><td>무주택기간</td><td>32점</td></tr>
+        <tr><td>부양가족수</td><td>35점</td></tr>
+        <tr><td>입주자저축 가입기간</td><td>17점</td></tr>
+        <tr><td><strong>합계</strong></td><td><strong>84점</strong></td></tr>
+      </table>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>관련 기사</h3>
+      <ul>
+        <li>특별공급 자격 조건 — 신혼부부·생애최초 소득 기준과 유형별 차이</li>
+        <li>청약통장 예치금 얼마 — 지역별·면적별 금액과 1순위 인정 시점</li>
+        <li>조합원 입주권과 분양권 차이 — 취득세·전매제한·주택수 산정 기준</li>
+        <li>권리산정기준일 뜻 — 지분 쪼개기 유형과 분양자격 판단 시점</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>기산일 계산 예시</h3>
+      <table>
+        <tr><th>상황</th><th>기산일</th></tr>
+        <tr><td>미혼, 만 34세</td><td>만 30세 생일</td></tr>
+        <tr><td>만 27세 혼인신고</td><td>혼인신고일</td></tr>
+        <tr><td>만 33세 혼인신고</td><td>만 30세 생일</td></tr>
+        <tr><td>만 36세 주택 매도</td><td>매도(처분)일</td></tr>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p>© 2026 <span>부동산인사이트</span> | 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:6px;">정보 제공 목적이며 투자 권유가 아닙니다.</p>
+</footer>
+
+</body>
+</html>
