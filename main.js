@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 318,
+    url: 'article_20260903_1_column_v2.html',
+    category: '칼럼',
+    title: '거래는 얼어붙는데 집값은 왜 오르나? 2026년 부동산 시장의 역설을 해부하다',
+    summary: '거래 절벽 속에서도 신고가를 경신하는 2026년 한국 부동산 시장. 공급 부족, 대출 규제, 선택적 매수세가 만들어낸 역설의 구조를 전문가 시각으로 해부합니다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-03',
+    title_en: 'Why Are Home Prices Rising Despite a Transaction Freeze? Dissecting the 2026 Real Estate Paradox',
+    summary_en: 'Despite a severe transaction freeze, Seoul apartment prices continue hitting record highs. We examine the structural paradox created by supply shortages, tightened lending rules, and selective buying demand.'
+  },
+  {
+    id: 317,
+    url: 'article_20260903_2_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 평균 10억 돌파! 수도권-지방 격차 역대 최대… 지금 어디가 진짜 기회인가',
+    summary: '2026년 8월 서울 아파트 평균 매매가 10억 3,264만원 돌파. 수도권과 지방의 격차가 사상 최대 수준으로 벌어지는 가운데 지역별 시장 흐름을 심층 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-03',
+    title_en: 'Seoul Apartment Average Surpasses 1 Billion Won! Metropolitan-Regional Gap Hits Record High',
+    summary_en: 'Seoul\'s average apartment price broke 1.03 billion won in August 2026, as the gap between the capital and regional markets widens to historic levels. We analyze where the real opportunities lie.'
+  },
+  {
     id: 316,
     url: 'article_20260903_1_proportional-rate_v2.html',
     category: '재개발',
