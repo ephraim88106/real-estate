@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 316,
+    url: 'article_20260903_1_proportional-rate_v2.html',
+    category: '재개발',
+    title: '비례율 계산 방법 — 분담금 산정 공식과 무상지분율 차이',
+    summary: '정비사업 사업성을 재는 비례율은 (종후자산 − 총사업비) ÷ 종전자산 × 100으로 구한다. 권리가액과 분담금이 도출되는 순서, 무상지분율과의 차이, 비례율 100%의 함정과 타당성 검증 기준까지 정리했다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-03',
+    title_en: 'How to Calculate the Proportional Rate in Korean Redevelopment Projects',
+    summary_en: 'The proportional rate equals post-project asset value minus total project cost, divided by pre-project asset value. This guide walks through how it converts into each member\'s entitlement value and contribution payment, how it differs from the free-share ratio, and why a figure near 100% can be misleading.'
+  },
+  {
     id: 315,
     url: 'article_20260902_1_investment_v2.html',
     category: '투자',
