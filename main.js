@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 321,
+    url: 'article_20260904_1_policy_v2.html',
+    category: '정책',
+    title: '서울 전역 토지거래허가구역·투기과열지구 지정…대출 한도 반토막, 2026 부동산 규제 총정리',
+    summary: '2026년 부동산 규제의 핵심 변화를 심층 분석합니다. 토지거래허가구역 서울 전역 확대, 주담대 한도 축소, 자금조달 강화까지 실수요자와 투자자가 반드시 알아야 할 정책 변화를 정리했습니다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-04',
+    title_en: 'Seoul-wide Land Transaction Permission Zone Designated...Complete Guide to 2026 Real Estate Regulations',
+    summary_en: 'An in-depth analysis of 2026 real estate regulation changes including Seoul-wide land transaction permission zones, reduced mortgage limits, and stricter fund sourcing requirements.'
+  },
+  {
+    id: 320,
+    url: 'article_20260904_2_subscription_v2.html',
+    category: '분양',
+    title: '9월 전국 3만3268가구 쏟아지는데 서울은 단 85가구…이 상황에서 청약 당첨 전략은?',
+    summary: '2026년 9월 전국 분양 물량 3만3268가구, 그러나 서울은 단 85가구. 극단적인 수급 불균형 속 청약 전략과 수도권 유망 단지를 심층 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-04',
+    title_en: '33,268 Units Released Nationwide in September but Only 85 in Seoul...What Is the Winning Application Strategy?',
+    summary_en: 'With 33,268 apartments released nationwide in September 2026 but only 85 in Seoul, we analyze subscription strategies and promising metropolitan area projects amid extreme supply imbalances.'
+  },
+  {
     id: 319,
     url: 'article_20260904_1_key-money_v2.html',
     category: '투자',
