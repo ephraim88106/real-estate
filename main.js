@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 319,
+    url: 'article_20260904_1_key-money_v2.html',
+    category: '투자',
+    title: '상가 권리금 뜻 — 바닥·영업·시설 권리금 차이와 산정 방법',
+    summary: '상가 권리금의 법적 정의와 바닥·영업·시설 권리금의 차이를 정리했습니다. 감정평가 실무기준상 유형재산 원가법·무형재산 수익환원법 산정 구조, 임대인의 회수기회 방해 4가지 행위와 3년의 손해배상 청구 기한, 기타소득 8.8% 원천징수까지 해설합니다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-04',
+    title_en: 'What Is Key Money in Korean Commercial Leases? Location, Goodwill and Fixture Premiums Explained',
+    summary_en: 'A guide to key money (gwolligeum) under Korea\'s Commercial Building Lease Protection Act: the three premium types, how appraisers value tangible and intangible assets, the four landlord acts that obstruct recovery, the three-year damages window, and the 8.8% withholding tax.'
+  },
+  {
     id: 318,
     url: 'article_20260903_1_column_v2.html',
     category: '칼럼',
