@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 322,
+    url: 'article_20260905_1_vietnam-ownership_v2.html',
+    category: '해외',
+    title: '베트남 외국인 주택 구매 조건 — 소유권 기간과 취득 지분 제한',
+    summary: '베트남 주택법(제27/2023/QH15호) 기준 외국인의 주택 취득 조건을 정리했습니다. 소유권 50년과 1회 연장, 아파트 1개 동 30%·행정단위당 250채 총량 한도, 매입 부대비용 3~6%, 양도 시 2% 총액 과세와 한국 거주자의 외국환·국세청 신고 의무까지 단계별로 해설합니다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-05',
+    title_en: 'Foreign Ownership of Housing in Vietnam: Term Limits and Quota Caps',
+    summary_en: 'How foreigners can buy homes in Vietnam under the Law on Housing 2023: the 50-year ownership term with one renewal, the 30% cap per apartment building and 250-house cap per ward, purchase costs, the 2% transfer tax, and the reporting duties Korean residents owe at home.'
+  },
+  {
     id: 321,
     url: 'article_20260904_1_policy_v2.html',
     category: '정책',
