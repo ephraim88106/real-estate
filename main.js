@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 324,
+    url: 'article_20260905_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '정부, 재건축·재개발 착공까지 손 뻗는다 — 47조 금융지원·동의율 완화의 진짜 속내',
+    summary: '정부가 재개발·재건축 관리 범위를 착공까지 확대하고 금융지원을 47조8000억원으로 두 배 늘렸다. 동의율 완화와 2030년 23만4000호 착공 목표까지 — 정책의 실효성과 한계를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-05',
+    title_en: 'Government Extends Oversight to Construction Start — Real Intent Behind 47 Trillion Won Support',
+    summary_en: 'The government expanded oversight of redevelopment projects to the construction phase, doubling financial support to 47.8 trillion won. Analysis of policy effectiveness and limitations.'
+  },
+  {
+    id: 323,
+    url: 'article_20260905_2_investment_v2.html',
+    category: '투자',
+    title: '경매 낙찰가율 109% vs 95% — 2026년 부동산 \'초양극화\' 시대, 어디에 투자해야 하나',
+    summary: '동탄은 감정가의 123%에 낙찰되고 강남 고가 아파트는 95.4%로 조정받는다. 극단적 양극화 시대의 경매 투자 전략과 NPL 시장 기회를 냉정하게 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-05',
+    title_en: 'Auction Rate 109% vs 95% — Where to Invest in Korea\'s Ultra-Polarized Real Estate Market 2026',
+    summary_en: 'Dongtan apartments close at 123% of assessed value while luxury Seoul properties settle at 95.4%. A cold analysis of auction strategies and NPL opportunities in the polarized market.'
+  },
+  {
     id: 322,
     url: 'article_20260905_1_vietnam-ownership_v2.html',
     category: '해외',
