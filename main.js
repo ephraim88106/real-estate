@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 325,
+    url: 'article_20260906_1_confirmed-date_v2.html',
+    category: '칼럼',
+    title: '확정일자 전입신고 차이 \u2014 대항력과 우선변제권 발생 시점',
+    summary: '전입신고는 대항력을, 확정일자는 우선변제권을 만든다. 두 권리가 각각 무엇을 보호하는지, 왜 요건을 갖춘 다음 날 오전 0시부터 효력이 생기는지를 주택임대차보호법 조문으로 짚었다. 잔금 당일 근저당이 임차인보다 앞서는 하루의 공백과 그 대응법, 지역별 최우선변제 금액까지 정리했다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-06',
+    title_en: 'Fixed Date vs Move-in Report: When Tenant Opposing Power and Priority Repayment Rights Begin',
+    summary_en: 'A move-in report creates opposing power; a fixed date creates priority repayment rights. This piece explains what each protects, why both take effect at midnight the following day under Korea Housing Lease Protection Act, the one-day gap that lets a same-day mortgage outrank a tenant, and the regional minimum priority repayment amounts.'
+  },
+  {
     id: 324,
     url: 'article_20260905_1_redevelopment_v2.html',
     category: '재개발',
