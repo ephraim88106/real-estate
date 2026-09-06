@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 327,
+    url: 'article_20260906_1_overseas_v2.html',
+    category: '해외',
+    title: '달러 자산으로 눈 돌리는 한국 투자자들: 2026 하반기 미국 부동산 4대 구조 변화와 선별 투자 전략',
+    summary: '2026년 하반기 미국 부동산 시장의 4가지 구조 변화를 분석하고, 달러 자산 분산을 노리는 한국 투자자들을 위한 선별적 투자 전략을 제시합니다. 금리 인하 기대와 현실의 간극, 선벨트 인구 이동, 락인 효과, 환헤지 전략이 핵심 키워드입니다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-06',
+    title_en: 'Korean Investors Turn to Dollar Assets: 4 Structural Changes in US Real Estate for 2H 2026',
+    summary_en: 'Analyzes 4 structural changes in the US real estate market for 2H 2026, providing selective investment strategies for Korean investors seeking dollar asset diversification.'
+  },
+  {
+    id: 326,
+    url: 'article_20260906_2_column_v2.html',
+    category: '칼럼',
+    title: '공급 절벽이 온다: 서울 입주 물량 반토막, 전세난과 집값 상방 압력의 불편한 진실',
+    summary: '2026년 서울 아파트 입주 물량이 역대 평균의 61% 수준으로 급감하는 공급 절벽이 현실화되고 있습니다. 전세 매물 감소와 매매가 상방 압력의 구조적 원인을 분석하고, 실수요자와 투자자가 취해야 할 합리적 행동 지침을 제시합니다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-06',
+    title_en: 'The Supply Cliff Arrives: Seoul Apartment Supply Halved, The Uncomfortable Truth of Jeonse Crisis and Price Pressure',
+    summary_en: 'Seoul\'s new apartment supply is dropping to 61% of historical average, making the supply cliff a reality. Analyzes structural causes of declining jeonse availability and upward price pressure.'
+  },
+  {
     id: 325,
     url: 'article_20260906_1_confirmed-date_v2.html',
     category: '칼럼',
