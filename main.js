@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 330,
+    url: 'article_20260907_1_market_v2.html',
+    category: '시장동향',
+    title: '강남은 꺾였다, 이 지역이 뜬다! 2026년 9월 서울 아파트 양극화의 진실',
+    summary: '강남구 거래량 28.6% 급감, 반면 화성 동탄은 115% 폭증. 세제개편이 촉발한 수도권 부동산 지형의 대변화를 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-07',
+    title_en: 'Gangnam Has Peaked — This Region Is Rising Now! The Truth Behind Seoul Apartment Market Polarization in September 2026',
+    summary_en: 'Gangnam-gu transactions dropped 28.6% while Hwaseong Dongtan surged 115%. We analyze the major shift in metropolitan real estate landscape triggered by the tax reform.'
+  },
+  {
+    id: 329,
+    url: 'article_20260907_2_policy_v2.html',
+    category: '정책',
+    title: '종부세 대변혁! 집에 살면 세금 줄고, 놔두면 두 배 — 2026 부동산 세제개편 완벽 해부',
+    summary: '2026년 8월 발표된 세제개편안으로 종부세·양도세가 '실거주 여부' 기준으로 대전환됩니다. 2027년 종부세, 2028년 양도세 개편의 모든 것을 해부합니다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-07',
+    title_en: 'Comprehensive Property Tax Overhaul! Live in It: Less Tax. Leave It Empty: Double — Full Analysis of 2026 Real Estate Tax Reform',
+    summary_en: 'The 2026 tax reform announced in August transforms property holding taxes and capital gains taxes based on 'actual residence' status. We break down everything about the 2027 property tax and 2028 transfer tax changes.'
+  },
+  {
     id: 328,
     url: 'article_20260907_1_housing-supply-ratio_v2.html',
     category: '시장동향',
