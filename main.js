@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 328,
+    url: 'article_20260907_1_housing-supply-ratio_v2.html',
+    category: '시장동향',
+    title: '주택보급률 뜻 — 자가보유율·자가점유율과의 차이와 산정식',
+    summary: '주택보급률은 주택 수를 일반가구 수로 나눈 값으로, 분자에 빈집이 포함되고 분모는 인구가 아닌 가구 수입니다. 전국 102.5%와 서울 93.6%의 간극, 그리고 자가보유율(61.4%)·자가점유율(58.4%)이 각각 무엇을 세는 지표인지 산정식으로 구분해 설명합니다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-07',
+    title_en: 'What Is the Housing Supply Ratio? Formula and How It Differs from Homeownership and Owner-Occupancy Rates',
+    summary_en: 'The housing supply ratio divides housing stock by ordinary households, counting vacant homes in the numerator and households rather than people in the denominator. Explains the gap between the national 102.5% and Seoul 93.6%, and how homeownership (61.4%) and owner-occupancy (58.4%) rates measure different things.'
+  },
+  {
     id: 327,
     url: 'article_20260906_1_overseas_v2.html',
     category: '해외',
