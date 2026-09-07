@@ -1,3 +1,4 @@
+import re
 #!/usr/bin/env python3
 """
 부동산인사이트 sitemap.xml 자동갱신 스크립트
@@ -27,6 +28,14 @@ files = sorted([f for f in os.listdir(REPO) if f.endswith("_v2.html") and f.star
 urls = [{"loc": f"{DOMAIN}/", "lastmod": TODAY, "changefreq": "daily", "priority": "1.0"}]
 seen = set()
 for f in files:
+    # 2026-09-07 색인정리: noindex 표시된 페이지는 sitemap 에서 제외
+    try:
+        if re.search(r'<meta[^>]+name=["\']robots["\'][^>]*noindex',
+                     open(os.path.join(REPO, os.path.basename(f)), encoding='utf-8',
+                          errors='ignore').read(4000), re.I):
+            continue
+    except Exception:
+        pass
     url = make_url(f)
     if url in seen:
         continue
