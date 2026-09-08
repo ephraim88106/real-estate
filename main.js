@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 332,
+    url: 'article_20260908_1_subscription_v2.html',
+    category: '분양',
+    title: '분양 성수기 9월, 서울은 텅 비었다: 전국 3만3천 가구에 서울은 고작 244가구',
+    summary: '수도권 청약전망지수 3개월 연속 하락 속 분양가만 치솟는 역설의 시장. 9월 서울 분양 가뭄의 구조적 원인과 청약자가 취해야 할 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-08',
+    title_en: 'September Presale Season: Seoul Has Almost Nothing — Only 244 Units Nationwide',
+    summary_en: 'With subscription sentiment declining for three consecutive months yet prices rising, we analyze the structural causes of Seoul\'s presale drought and the strategy buyers should take.'
+  },
+  {
+    id: 331,
+    url: 'article_20260908_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '분당·성수·목동 동시 폭발! 2026 재개발·재건축 전쟁 시작됐다',
+    summary: '분당 선도지구 4곳 사업시행자 확정, 성수전략정비구역 현장설명회 폭주, 서울시 3년 내 8.5만호 신속 착공 계획으로 정비사업 대격변의 서막이 올랐다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-08',
+    title_en: 'Bundang, Seongsu, Mokdong All Ignite: The 2026 Redevelopment War Has Begun',
+    summary_en: 'With four Bundang pilot districts finalizing project operators, a surge of site briefings, and Seoul\'s plan for 85,000 fast-tracked units in three years, the redevelopment mega-shift is underway.'
+  },
+  {
     id: 330,
     url: 'article_20260907_1_market_v2.html',
     category: '시장동향',
