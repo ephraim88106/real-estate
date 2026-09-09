@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 334,
+    url: 'article_20260909_1_investment_v2.html',
+    category: '투자',
+    title: '2026 하반기 부동산 경매 완전 공략: 낙찰가율 164% vs 95%의 비밀, 지금 어디에 베팅할 것인가?',
+    summary: '서울 중저가 아파트 경매 낙찰가율이 164%를 돌파하는 사이 고가 아파트는 95.4%로 내려앉았다. 극단적 양극화 속 진짜 기회를 파헤친다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-09',
+    title_en: '2026 H2 Real Estate Auction Strategy: The Secret Behind 164% vs 95% Bid Rates',
+    summary_en: 'Mid-price Seoul apartment auctions hit 164% bid rate while luxury properties fall to 95.4%. We analyze where the real opportunity lies in this extreme polarization.'
+  },
+  {
+    id: 333,
+    url: 'article_20260909_2_overseas_v2.html',
+    category: '해외',
+    title: '달러 자산 시대의 해외 부동산 투자법: 미국·일본·동남아, 한국인이 지금 당장 주목해야 할 시장은?',
+    summary: '해외 부동산 투자 한도 300만 달러 확대 시대, 미국 금리 인하·일본 엔저·동남아 급성장의 교차점에서 한국인 투자자의 최적 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-09',
+    title_en: 'Overseas Real Estate in the Dollar Asset Era: Which Market Should Korean Investors Target Now?',
+    summary_en: 'With overseas investment limits expanded to $3M per person, we analyze optimal strategies across US rate cuts, Japanese yen weakness, and Southeast Asian growth.'
+  },
+  {
     id: 332,
     url: 'article_20260908_1_subscription_v2.html',
     category: '분양',
