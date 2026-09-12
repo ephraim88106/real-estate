@@ -1,0 +1,74 @@
+{
+  "site": "https://realestate.ephseed.com",
+  "site_name": "부동산인사이트",
+  "hubs": [
+    {
+      "slug": "tax",
+      "name": "부동산 세금",
+      "desc": "취득세·재산세·양도세와 공시가격까지, 집을 사고 보유하고 팔 때 내는 세금의 계산 기준을 정리했습니다.",
+      "files": [
+        "article_20260811_1_acquisition-tax_v2",
+        "article_20260817_1_official-price_v2",
+        "article_20260825_1_temporary-two-house_v2",
+        "article_20260830_1_property-tax_v2",
+        "article_20260901_1_longterm-holding-deduction_v2"
+      ]
+    },
+    {
+      "slug": "lease",
+      "name": "전월세·임대차",
+      "desc": "확정일자와 전세권, 전세가율, 임대수익률, 권리금 — 빌리고 빌려줄 때 알아야 할 기준을 모았습니다.",
+      "files": [
+        "article_20260816_1_jeonse-right-vs-fixed-date_v2",
+        "article_20260906_1_confirmed-date_v2",
+        "article_20260831_1_jeonse-ratio_v2",
+        "article_20260821_1_rental-business-registration_v2",
+        "article_20260814_1_rental-yield_v2",
+        "article_20260904_1_key-money_v2"
+      ]
+    },
+    {
+      "slug": "basics",
+      "name": "부동산 기초",
+      "desc": "실거래가 조회, 전용면적, 토지거래허가, 주택보급률 — 부동산 글을 읽기 전에 알아야 할 기본 개념입니다.",
+      "files": [
+        "article_20260810_1_actual_price_v2",
+        "article_20260824_1_exclusive-area_v2",
+        "article_20260818_1_land-transaction-permit_v2",
+        "article_20260907_1_housing-supply-ratio_v2"
+      ]
+    },
+    {
+      "slug": "overseas",
+      "name": "해외부동산",
+      "desc": "해외 부동산을 살 때의 신고 의무와 양도소득세, 이중과세 조정, 국가별 소유권 제한을 정리했습니다.",
+      "files": [
+        "article_20260815_1_overseas-property-report_v2",
+        "article_20260829_1_overseas-capital-gains-tax_v2",
+        "article_20260822_1_foreign-tax-credit_v2",
+        "article_20260905_1_vietnam-ownership_v2"
+      ]
+    },
+    {
+      "slug": "subscription",
+      "name": "청약·분양",
+      "desc": "특별공급 자격, 재당첨 제한, 무주택기간 산정 — 청약 가점과 자격을 판단하는 기준입니다.",
+      "files": [
+        "article_20260812_1_special-supply_v2",
+        "article_20260819_1_resubscription-restriction_v2",
+        "article_20260902_1_no-house-period_v2"
+      ]
+    },
+    {
+      "slug": "redevelopment",
+      "name": "재개발·재건축",
+      "desc": "입주권과 분양권의 차이, 비례율 계산, 권리산정기준일 — 정비사업의 권리 판단 기준입니다.",
+      "files": [
+        "article_20260813_1_membership-rights_v2",
+        "article_20260820_1_proportion-rate_v2",
+        "article_20260827_1_right-calculation-date_v2"
+      ]
+    }
+  ],
+  "home_anchor": "<section class=\"nl-cta\""
+}

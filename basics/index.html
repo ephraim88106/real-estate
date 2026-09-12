@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <!-- HUB:PAGE — 분야 탐색 페이지. ads_fix.py 는 이 표시가 있는 파일에 광고를 넣지 않는다 -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="실거래가 조회, 전용면적, 토지거래허가, 주택보급률 — 부동산 글을 읽기 전에 알아야 할 기본 개념입니다." />
+  <title>부동산 기초 — 부동산인사이트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--hub-line:#e3e8ee;--hub-dim:#5b6672;--hub-ink:#12202e;--hub-accent:#1a5f8a}
+    .hub-wrap{max-width:820px;margin:0 auto;padding:28px 18px 56px;
+      font-family:'Noto Sans KR',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;
+      color:var(--hub-ink);line-height:1.7}
+    .hub-crumb{font-size:13px;color:var(--hub-dim);margin-bottom:18px}
+    .hub-crumb a{color:var(--hub-dim);text-decoration:none}
+    .hub-crumb a:hover{text-decoration:underline}
+    .hub-wrap h1{font-family:'Noto Serif KR',serif;font-size:29px;line-height:1.35;
+      margin:0 0 12px;letter-spacing:-.01em}
+    .hub-lede{font-size:15px;color:var(--hub-dim);margin:0 0 8px}
+    .hub-count{font-size:13px;color:var(--hub-dim);border-top:1px solid var(--hub-line);
+      padding-top:14px;margin-top:22px}
+    .hub-list{list-style:none;padding:0;margin:10px 0 0}
+    .hub-list li{border-bottom:1px solid var(--hub-line);padding:17px 0}
+    .hub-list a{text-decoration:none;color:inherit;display:block}
+    .hub-list a:hover .hub-t{color:var(--hub-accent);text-decoration:underline}
+    .hub-t{font-size:17px;font-weight:700;line-height:1.45;margin:0 0 5px;
+      font-family:'Noto Serif KR',serif}
+    .hub-d{font-size:14px;color:var(--hub-dim);margin:0}
+    .hub-other{margin-top:40px;border-top:1px solid var(--hub-line);padding-top:20px}
+    .hub-other h2{font-size:15px;margin:0 0 12px;font-weight:700}
+    .hub-chips{display:flex;flex-wrap:wrap;gap:8px}
+    .hub-chips a{font-size:13.5px;text-decoration:none;color:var(--hub-ink);
+      border:1px solid var(--hub-line);border-radius:999px;padding:7px 14px;background:#fff}
+    .hub-chips a:hover{border-color:var(--hub-accent);color:var(--hub-accent)}
+    @media(max-width:520px){.hub-wrap{padding:20px 15px 44px}.hub-wrap h1{font-size:24px}}
+</style>
+<!-- SEO:BEGIN -->
+<link rel="canonical" href="https://realestate.ephseed.com/basics/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="부동산인사이트">
+<meta property="og:title" content="부동산 기초 — 부동산인사이트">
+<meta property="og:description" content="실거래가 조회, 전용면적, 토지거래허가, 주택보급률 — 부동산 글을 읽기 전에 알아야 할 기본 개념입니다.">
+<meta property="og:url" content="https://realestate.ephseed.com/basics/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://realestate.ephseed.com/assets/og-default.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2GN2G2QF3"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-N2GN2G2QF3");</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://realestate.ephseed.com/#organization", "name": "부동산인사이트", "url": "https://realestate.ephseed.com/"}, {"@type": "WebSite", "@id": "https://realestate.ephseed.com/#website", "url": "https://realestate.ephseed.com/", "name": "부동산인사이트", "description": "실시간 부동산 뉴스와 정책·시장 분석을 정리한 부동산 정보 사이트", "inLanguage": "ko-KR", "publisher": {"@id": "https://realestate.ephseed.com/#organization"}}, {"@type": "WebPage", "@id": "https://realestate.ephseed.com/basics/#page", "url": "https://realestate.ephseed.com/basics/", "name": "부동산 기초 — 부동산인사이트", "description": "실거래가 조회, 전용면적, 토지거래허가, 주택보급률 — 부동산 글을 읽기 전에 알아야 할 기본 개념입니다.", "inLanguage": "ko-KR", "image": "https://realestate.ephseed.com/assets/og-default.png", "isPartOf": {"@id": "https://realestate.ephseed.com/#website"}}]}</script>
+<!-- SEO:END -->
+</head>
+<body>
+<div class="hub-wrap">
+  <nav class="hub-crumb"><a href="/">부동산인사이트</a> &rsaquo; <span>부동산 기초</span></nav>
+  <h1>부동산 기초</h1>
+  <p class="hub-lede">실거래가 조회, 전용면적, 토지거래허가, 주택보급률 — 부동산 글을 읽기 전에 알아야 할 기본 개념입니다.</p>
+  <p class="hub-count">글 4편</p>
+  <ul class="hub-list">
+    <li><a href="/article_20260810_1_actual_price_v2">
+      <p class="hub-t">실거래가 조회 방법 — 국토부 공개시스템 이용법과 호가와의 차이</p>
+      <p class="hub-d">국토교통부 실거래가 공개시스템(rt.molit.go.kr)에서 아파트 실거래가를 확인하는 절차와, 실거래가·호가·시세가 왜 서로 다른지, 직거래·해제 신고 등 숫자를 잘못 읽게 만드는 함정까지 정리했다.</p>
+    </a></li>
+    <li><a href="/article_20260824_1_exclusive-area_v2">
+      <p class="hub-t">전용면적 공급면적 차이 — 계약면적·실평수 계산법과 전용률 뜻</p>
+      <p class="hub-d">같은 집을 두고 84㎡, 112㎡, 34평이라는 세 숫자가 동시에 쓰인다. 전용면적·주거공용면적·공급면적·계약면적·서비스면적이 각각 무엇을 세는지, 전용률은 어떻게 계산하는지, 발코니가 왜 면적에서 빠지는지, 85㎡라는 선이 세금과 청약에서 무엇을 바꾸는지를 2026년</p>
+    </a></li>
+    <li><a href="/article_20260818_1_land-transaction-permit_v2">
+      <p class="hub-t">토지거래허가구역 매매 절차 — 허가 대상 기준과 실거주 의무 조건 정리</p>
+      <p class="hub-d">서울 전역 아파트가 허가 대상이 되면서 매매 절차 자체가 달라졌다. 허가 기준면적과 신청 순서, 허가 후 4개월·2년으로 정해진 실거주 의무, 위반 시 이행강제금 기준을 법 조문과 2026년 지정 현황으로 정리했다.</p>
+    </a></li>
+    <li><a href="/article_20260907_1_housing-supply-ratio_v2">
+      <p class="hub-t">주택보급률 뜻 — 자가보유율·자가점유율과의 차이와 산정식</p>
+      <p class="hub-d">주택보급률은 주택 수를 일반가구 수로 나눈 값이다. 전국 102.5%인데 집이 없다고 느끼는 이유, 자가보유율(61.4%)·자가점유율(58.4%)과 무엇이 다른지 산정식으로 설명한다.</p>
+    </a></li>
+  </ul>
+  <div class="hub-other">
+    <h2>다른 분야</h2>
+    <div class="hub-chips">
+      <a href="/tax/">부동산 세금</a>
+      <a href="/lease/">전월세·임대차</a>
+      <a href="/overseas/">해외부동산</a>
+      <a href="/subscription/">청약·분양</a>
+      <a href="/redevelopment/">재개발·재건축</a>
+      <a href="/">홈</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

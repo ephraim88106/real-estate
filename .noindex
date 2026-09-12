@@ -305,3 +305,12 @@ article_20260906_1_overseas_v2.html
 article_20260906_2_column_v2.html
 article_20260907_1_market_v2.html
 article_20260907_2_policy_v2.html
+
+# 2026-09-12 B작업: 9/07 정리 이후 발행된 낚시형·날짜성 4편
+# ("244가구의 충격" "전쟁 시작됐다" "164% vs 95%의 비밀" "지금이 진짜 기회인가?")
+article_20260908_1_subscription_v2.html
+article_20260908_2_redevelopment_v2.html
+article_20260909_1_investment_v2.html
+article_20260909_2_overseas_v2.html
+# 비례율 중복 — 짧은 쪽. 아래 _redirects 로 proportion-rate 에 301 합침
+article_20260903_1_proportional-rate_v2.html

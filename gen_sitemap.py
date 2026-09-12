@@ -45,6 +45,13 @@ for f in files:
     seen.add(url)
     urls.append({"loc": url, "lastmod": get_date(f), "changefreq": "weekly", "priority": "0.8"})
 
+# 2026-09-12: 분야별 허브 페이지 (<slug>/index.html) 포함
+for d in sorted(os.listdir(REPO)):
+    hub = os.path.join(REPO, d, "index.html")
+    if os.path.isdir(os.path.join(REPO, d)) and not d.startswith(('.', '_')) and os.path.exists(hub):
+        urls.append({"loc": f"{DOMAIN}/{quote(d, safe='-_.')}/", "lastmod": TODAY,
+                     "changefreq": "weekly", "priority": "0.9"})
+
 for page, pri in [("privacy", "0.5"), ("terms", "0.5")]:
     urls.append({"loc": f"{DOMAIN}/{page}", "lastmod": TODAY, "changefreq": "monthly", "priority": pri})
 
