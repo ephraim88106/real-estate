@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 336,
+    url: 'article_20260917_1_column_v2.html',
+    category: '칼럼',
+    title: '거래 절벽이 보내는 신호 — 86주 상승 후 찾아온 침묵, 서울 부동산의 진짜 변곡점은 어디인가',
+    summary: '86주 연속 상승 후 서울 아파트 거래가 50% 급감했다. 매물은 늘고 거래는 사라진 이 역설적 국면이 의미하는 것은 무엇인가. 강남·강북 양극화와 비수도권 침체를 데이터로 진단한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-17',
+    title_en: 'The Signal from the Transaction Cliff — What the Silence After 86 Weeks of Rise Means for Seoul Real Estate',
+    summary_en: 'After 86 consecutive weeks of price increases, Seoul apartment transactions have fallen 50%. This analysis diagnoses the paradox of rising inventory with vanishing buyers, and the growing gap between Gangnam and Gangbuk.'
+  },
+  {
+    id: 335,
+    url: 'article_20260917_2_market_v2.html',
+    category: '시장동향',
+    title: '매물 7만 돌파·거래 449건 — 서울 아파트 수급 역전의 시작, 다음 달이 판가름 낸다',
+    summary: '서울 아파트 매물이 7만 건을 넘은 반면 9월 거래량은 449건에 그쳤다. 수급 역전이 실제 가격 하락으로 이어질지, 아니면 매도자의 버티기로 가격 횡보에 그칠지를 최신 데이터로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-17',
+    title_en: '70,000 Listings vs. 449 Deals — Seoul Apartment Supply-Demand Reversal: Will October Decide the Direction?',
+    summary_en: 'Seoul apartment listings have surpassed 70,000 while September transactions stand at just 449. This report analyzes whether the supply-demand reversal will lead to price drops or a standoff between stubborn sellers and absent buyers.'
+  },
+  {
     id: 334,
     url: 'article_20260909_1_investment_v2.html',
     category: '투자',
