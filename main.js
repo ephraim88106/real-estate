@@ -88,25 +88,25 @@ const articles = [
     id: 336,
     url: 'article_20260917_1_column_v2.html',
     category: '칼럼',
-    title: '거래 절벽이 보내는 신호 — 86주 상승 후 찾아온 침묵, 서울 부동산의 진짜 변곡점은 어디인가',
-    summary: '86주 연속 상승 후 서울 아파트 거래가 50% 급감했다. 매물은 늘고 거래는 사라진 이 역설적 국면이 의미하는 것은 무엇인가. 강남·강북 양극화와 비수도권 침체를 데이터로 진단한다.',
+    title: '\'강남은 빠지고 외곽은 오른다\' — 부동산 양극화의 구조적 신호를 읽어라',
+    summary: '강남3구 약세와 외곽 강세의 역전 현상이 심화되고 있다. 세제·금융·수급이 맞물려 만들어낸 구조적 재편을 심층 분석하고, 실수요자와 투자자가 지금 취해야 할 전략을 제시한다.',
     image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
     author: '부동산인사이트 편집팀',
     date: '2026-09-17',
-    title_en: 'The Signal from the Transaction Cliff — What the Silence After 86 Weeks of Rise Means for Seoul Real Estate',
-    summary_en: 'After 86 consecutive weeks of price increases, Seoul apartment transactions have fallen 50%. This analysis diagnoses the paradox of rising inventory with vanishing buyers, and the growing gap between Gangnam and Gangbuk.'
+    title_en: 'Gangnam Falls, Suburbs Rise — Reading the Structural Signals Behind Korea\'s Real Estate Polarization',
+    summary_en: 'As Gangnam weakens and outer Seoul surges, this column analyzes the structural forces behind Korea\'s real estate divide — tax, lending caps, and shifting demand — offering strategic guidance for homebuyers and investors.'
   },
   {
     id: 335,
     url: 'article_20260917_2_market_v2.html',
     category: '시장동향',
-    title: '매물 7만 돌파·거래 449건 — 서울 아파트 수급 역전의 시작, 다음 달이 판가름 낸다',
-    summary: '서울 아파트 매물이 7만 건을 넘은 반면 9월 거래량은 449건에 그쳤다. 수급 역전이 실제 가격 하락으로 이어질지, 아니면 매도자의 버티기로 가격 횡보에 그칠지를 최신 데이터로 분석한다.',
+    title: '86주 연속 상승이 흔들린다 — 9월 서울 아파트 시장 긴급 진단',
+    summary: '서울 아파트값 86주 연속 상승에 균열이 생겼다. 강남3구 하락 전환, 전국 주택사업경기 전망지수 하락, 비수도권 준공 후 미분양 급증까지 이번 주 부동산 시장 전체를 종합 진단한다.',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
     author: '부동산인사이트 편집팀',
     date: '2026-09-17',
-    title_en: '70,000 Listings vs. 449 Deals — Seoul Apartment Supply-Demand Reversal: Will October Decide the Direction?',
-    summary_en: 'Seoul apartment listings have surpassed 70,000 while September transactions stand at just 449. This report analyzes whether the supply-demand reversal will lead to price drops or a standoff between stubborn sellers and absent buyers.'
+    title_en: 'Seoul\'s 86-Week Rally Shows Cracks — An Urgent September Real Estate Market Diagnosis',
+    summary_en: 'Seoul\'s record 86-week apartment rally shows its first cracks as Gangnam drops while national housing confidence falls 8.7 points. This report covers regional divergence, unsold inventory data, and what buyers should watch now.'
   },
   {
     id: 334,
