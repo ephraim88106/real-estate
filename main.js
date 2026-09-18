@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 338,
+    url: 'article_20260918_1_policy_v2.html',
+    category: '정책',
+    title: '대출 틀어막고 감독원까지… 이재명 정부 부동산 규제 총정리, 실수요자는 어떻게 살아남나?',
+    summary: 'LTV 40%, DSR 40%, 스트레스 DSR 3단계에 부동산감독원 설립까지. 이재명 정부의 부동산 규제 정책을 총망라하고 실수요자가 취해야 할 전략적 선택지를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-18',
+    title_en: 'The Reality of Lee Jae-myung Government\'s Real Estate Regulations and Options for End-Users',
+    summary_en: 'With LTV 40%, DSR 40%, Stress DSR Phase 3, and plans for a Real Estate Supervision Agency, this article analyzes the full scope of housing regulations and strategic options for actual home buyers.'
+  },
+  {
+    id: 337,
+    url: 'article_20260918_2_subscription_v2.html',
+    category: '분양',
+    title: '추석 앞 1000가구 대단지 봇물, 근데 분양시장은 왜 꽁꽁? — 9월 청약 생존 전략 완전 가이드',
+    summary: '9월 분양전망지수 86.3 급락, 수도권 3개월 연속 기준선 하회. 대출 규제·고금리·미분양 삼중고 속 1000가구 대단지들이 청약을 쏟아내는 이 시장에서 청약 통장을 쥔 실수요자의 생존 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-18',
+    title_en: '1,000-Unit Complexes Flood Market Before Chuseok, But Why Is the Pre-Sale Market So Frozen?',
+    summary_en: 'The September housing supply forecast index plunged to 86.3, marking three consecutive months below baseline in the metro area. This complete guide covers survival strategies for actual buyers amid loan restrictions, high rates, and mounting unsold inventory.'
+  },
+  {
     id: 336,
     url: 'article_20260917_1_column_v2.html',
     category: '칼럼',
