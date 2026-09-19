@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 340,
+    url: 'article_20260919_1_reconstruction_v2.html',
+    category: '재개발',
+    title: '압구정·여의도 80조 정비사업 대격변 — 지금 올라타야 하나, 기다려야 하나?',
+    summary: '2026년 하반기 서울 압구정·여의도 정비사업이 80조 규모 수주 전쟁으로 달아오르고 있다. 한국부동산원 갈등 조정 참여, 자치구 권한 이양 등 제도 변화와 함께 투자 판단 기준을 총정리한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-19',
+    title_en: 'Apgujeong & Yeouido Redevelopment Mega-Shift: Should You Jump In or Wait?',
+    summary_en: 'Seoul\'s Apgujeong and Yeouido redevelopment projects are heating up with an 80 trillion won contractor war. We analyze institutional changes and investment criteria for this historic market shift.'
+  },
+  {
+    id: 339,
+    url: 'article_20260919_2_investment_v2.html',
+    category: '투자',
+    title: '경매 낙찰가율 90% 붕괴! 지금이 저가 매수 찬스인가, 함정인가?',
+    summary: '서울 아파트 경매 낙찰가율이 3주 연속 90%를 하회했다. 갭투자 수익률 분석, 전세가율 리스크, 지역별 시장 분화 트렌드를 통해 2026년 하반기 실전 투자 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-19',
+    title_en: 'Auction Rate Drops Below 90%! Bargain Opportunity or Trap?',
+    summary_en: 'Seoul apartment auction bid rates have fallen below 90% for three consecutive weeks. We analyze gap investment returns, jeonse risk, and regional market divergence for actionable 2H 2026 strategies.'
+  },
+  {
     id: 338,
     url: 'article_20260918_1_policy_v2.html',
     category: '정책',
