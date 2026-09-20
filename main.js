@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 342,
+    url: 'article_20260920_1_overseas_v2.html',
+    category: '해외',
+    title: '미국·일본·베트남, 지금 사야 하나? 2026 한국인 해외 부동산 투자 완전 가이드',
+    summary: '미국 모기지 금리 하락, 엔저 지속, 베트남 외국인 취득 완화... 2026년 하반기 해외 부동산 투자 기회와 리스크를 국가별로 완전 해부합니다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-20',
+    title_en: 'Should You Buy Now? The Complete 2026 Guide for Korean Investors in Overseas Real Estate',
+    summary_en: 'US mortgage rates falling, yen weakening, Vietnam easing foreign ownership rules — a full breakdown of overseas real estate opportunities and risks for Korean investors in H2 2026.'
+  },
+  {
+    id: 341,
+    url: 'article_20260920_2_column_v2.html',
+    category: '칼럼',
+    title: '서울 아파트 86주 연속 상승의 끝? 거품론 vs 구조적 상승론 완전 해부',
+    summary: '서울 아파트가 86주 연속 상승이라는 역사적 기록을 세웠다. 이게 진짜 거품인가, 아니면 공급 부족이 만든 구조적 상승인가? 두 시각을 냉정하게 검증한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-20',
+    title_en: 'End of Seoul\'s 86-Week Rally? Bubble Theory vs Structural Rise, Fully Dissected',
+    summary_en: 'Seoul apartments have set a historic 86-week consecutive gain record. Is this a genuine bubble or a structural rise driven by supply shortage? We examine both sides rigorously.'
+  },
+  {
     id: 340,
     url: 'article_20260919_1_reconstruction_v2.html',
     category: '재개발',
