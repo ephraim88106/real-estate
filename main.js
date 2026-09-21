@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 344,
+    url: 'article_20260921_1_market_v2.html',
+    category: '시장동향',
+    title: '9월 서울 아파트 거래 500건 \'붕괴\'…가격은 여전히 오른다는 시장의 역설',
+    summary: '9월 서울 아파트 매매거래량이 500건 이하로 급감한 가운데 가격은 1년간 14.56% 상승세를 유지하고 있다. 거래절벽과 가격 상승이 공존하는 역설의 배경과 향후 전망을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-21',
+    title_en: 'Seoul Apartment Transactions Collapse to 500 in September: Why Prices Still Rise',
+    summary_en: 'Seoul apartment transactions plunged below 500 units in September while prices remain 14.56% higher year-over-year. We analyze the paradox of a transaction freeze coexisting with rising prices.'
+  },
+  {
+    id: 343,
+    url: 'article_20260921_2_policy_v2.html',
+    category: '정책',
+    title: '종부세·양도세 대개혁 2026: \'실거주\' vs \'투기보유\' 세금 운명이 갈린다',
+    summary: '2026년 8월 발표된 세제개편안은 보유에서 실거주 중심으로 세금 체계를 근본 전환한다. 종부세와 양도세 변화, 2027~2029년 단계별 일정, 유형별 대응 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-21',
+    title_en: '2026 Tax Reform: Owner-Occupancy vs. Investment Holding — The Great Property Tax Divide',
+    summary_en: 'Korea\'s August 2026 property tax reform fundamentally shifts the system from ownership-count to actual residency. This analysis covers changes to comprehensive real estate tax and capital gains tax, the 2027-2029 phased schedule, and strategies by property type.'
+  },
+  {
     id: 342,
     url: 'article_20260920_1_overseas_v2.html',
     category: '해외',
