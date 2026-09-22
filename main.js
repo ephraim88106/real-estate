@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 347,
+    url: 'article_20260922_1_subscription_v2.html',
+    category: '분양',
+    title: '더샵 분당하이스트, 국평 30억 코앞… '분당 리모델링 청약, 왜 열기가 식었나?'',
+    summary: '더샵 분당하이스트가 경쟁률 2.91:1로 마감됐다. 이전 단지 대비 5분의 1 수준의 청약 열기가 식은 배경과 분당 리모델링 고분양가 논란, 실수요자 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-22',
+    title_en: 'The Sharp Bundang Highest: 3 Billion Won National Flat on the Horizon — Why Is Bundang Pre-Sale Fever Cooling?',
+    summary_en: 'The Sharp Bundang Highest closed with a competition ratio of 2.91:1 — one-fifth of previous Bundang remodeling projects. We analyze the high asking price controversy and what buyers should do next.'
+  },
+  {
+    id: 346,
+    url: 'article_20260922_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '분당·일산·평촌·산본 동시 출발… 1기 신도시 재건축 시계가 한꺼번에 빠르게 돌아간다',
+    summary: '2026년 하반기 수도권 1기 신도시 재건축이 사업시행 단계에 진입했다. 분당 선도지구 4곳 2만 가구 재건축 현황, 특별정비구역 경쟁 5.5배 과열, 조합원 분담금 전망을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-22',
+    title_en: 'Bundang, Ilsan, Pyeongchon, Sanbon All Launch at Once — The 1st-Generation New Town Reconstruction Clock Is Spinning Fast',
+    summary_en: 'In the second half of 2026, reconstruction of the first-generation satellite cities around Seoul has entered the implementation phase. We analyze the 20,000-unit Bundang pilot zone and surging competition for designation slots.'
+  },
+  {
     id: 345,
     url: 'article_20260922_1_reconstruction-levy_v2.html',
     category: '정책',
