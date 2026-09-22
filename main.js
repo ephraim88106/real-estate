@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 345,
+    url: 'article_20260922_1_reconstruction-levy_v2.html',
+    category: '정책',
+    title: '재건축초과이익환수제 부담금 계산 — 초과이익 산정과 감면 조건',
+    summary: '재건축초과이익환수제는 조합원 1인당 평균 초과이익이 8,000만원을 넘으면 부담금을 부과한다. 초과이익 산정식, 2024년 개정으로 완화된 면제금액·부과구간, 장기보유 1주택자 감면과 고령자 납부유예 조건을 정리했다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-22',
+    title_en: 'Reconstruction Excess Profit Levy: How the Charge Is Calculated and Who Gets Relief',
+    summary_en: 'South Korea\'s reconstruction excess profit levy applies once the average excess profit per union member exceeds 80 million won. This explainer covers the calculation formula, the 2024 amendment that eased the exemption threshold and brackets, and the long-term-holder and elderly deferral relief.'
+  },
+  {
     id: 344,
     url: 'article_20260921_1_market_v2.html',
     category: '시장동향',
