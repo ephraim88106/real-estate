@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 349,
+    url: 'article_20260923_1_investment_v2.html',
+    category: '투자',
+    title: '서울 아파트 경매·갭투자의 황혼인가 여명인가 — 낙찰가율 97% 시대의 생존 전략',
+    summary: '낙찰가율 97%로 꺾인 서울 아파트 경매시장과 갭투자의 현주소를 짚고, 2026년 하반기 부동산 투자 옥석 가리기 전략을 심층 분석합니다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-23',
+    title_en: 'Is Seoul Apartment Auction and Gap Investment at Twilight or Dawn? — Survival Strategy in the Era of 97% Bid Price Ratio',
+    summary_en: 'We analyze the current state of Seoul apartment auctions with a falling bid ratio of 97% and gap investments amid regulations, offering an in-depth survival strategy for H2 2026 real estate investment.'
+  },
+  {
+    id: 348,
+    url: 'article_20260923_2_overseas_v2.html',
+    category: '해외',
+    title: '도쿄엔 건물, 오사카엔 원룸 — 한국인이 몰려드는 일본 부동산의 진짜 수익률 공식',
+    summary: '엔저 환경 속 한국인 일본 부동산 투자 열풍의 이면을 파헤친다. 도쿄 vs 오사카 자금별 전략과 2026년 해외 부동산 핵심 체크리스트를 제시합니다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-23',
+    title_en: 'Buildings in Tokyo, Studios in Osaka — The Real Yield Formula Behind Korean Investors Flocking to Japanese Real Estate',
+    summary_en: 'We uncover the reality behind Korean investors\' fever for Japanese real estate amid yen weakness, offering capital-based strategies for Tokyo vs Osaka and key overseas investment checklists for 2026.'
+  },
+  {
     id: 347,
     url: 'article_20260922_1_subscription_v2.html',
     category: '분양',
