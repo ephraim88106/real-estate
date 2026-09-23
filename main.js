@@ -85,10 +85,22 @@ const i18n = {
 
 const articles = [
   {
+    id: 348,
+    url: 'article_20260923_1_presale-payment_v2.html',
+    category: '분양',
+    title: '분양대금 계약금·중도금·잔금 차이와 납부 시기',
+    summary: '아파트 분양대금은 계약금·중도금·잔금 세 단계로 나뉜다. 각 단계별 비율과 납부 시기, 중도금 대출 구조와 2026년 규제 현황까지 실수요자 관점에서 정리한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-23',
+    title_en: 'Down Payment, Interim Payment, and Balance: How Apartment Pre-Sale Payments Differ and When They Are Due',
+    summary_en: 'Korean apartment pre-sale payments are split into three stages — down payment, interim payment, and balance. We break down the ratios, payment timing, and 2026 interim-loan regulations from a buyer\'s perspective.'
+  },
+  {
     id: 347,
     url: 'article_20260922_1_subscription_v2.html',
     category: '분양',
-    title: '더샵 분당하이스트, 국평 30억 코앞… '분당 리모델링 청약, 왜 열기가 식었나?'',
+    title: '더샵 분당하이스트, 국평 30억 코앞… \'분당 리모델링 청약, 왜 열기가 식었나?\'',
     summary: '더샵 분당하이스트가 경쟁률 2.91:1로 마감됐다. 이전 단지 대비 5분의 1 수준의 청약 열기가 식은 배경과 분당 리모델링 고분양가 논란, 실수요자 전략을 분석한다.',
     image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
     author: '부동산인사이트 편집팀',
