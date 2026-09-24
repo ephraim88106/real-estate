@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 351,
+    url: 'article_20260924_1_column_v2.html',
+    category: '칼럼',
+    title: '거래량 반토막에도 집값은 오른다 — 2026년 가을 부동산 시장의 역설',
+    summary: '서울 아파트 거래량이 46% 급감했음에도 가격은 1년새 14.56% 상승했다. 공급 진공, 세제개편 잠김효과, 집단 심리가 만들어낸 역설을 전문가 시각으로 해부한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-24',
+    title_en: 'Transaction Volume Halved, Yet Prices Keep Rising — The Paradox of Korea\\\'s 2026 Fall Real Estate Market',
+    summary_en: 'Seoul apartment transactions dropped 46% yet prices surged 14.56% year-on-year. This column dissects the paradox created by supply vacuum, tax policy lock-in, and collective market psychology.'
+  },
+  {
+    id: 350,
+    url: 'article_20260924_2_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 1년새 14.56% 올랐는데 거래는 뚝… 세제개편이 만든 이상한 시장',
+    summary: '2026년 9월 서울 아파트 실거래가격이 1년 전보다 14.56% 급등했지만 8월 거래량은 3,046건으로 추락했다. 세제 개편안이 만든 관망 시장의 실체를 지역별 데이터와 함께 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-24',
+    title_en: 'Seoul Apartments Up 14.56% Year-On-Year, But Transactions Plunge',
+    summary_en: 'Seoul apartment prices surged 14.56% over the past year while August transactions fell to just 3,046 units. We analyze the data-driven reality of a market frozen by tax reform uncertainty.'
+  },
+  {
     id: 349,
     url: 'article_20260923_1_investment_v2.html',
     category: '투자',
