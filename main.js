@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 350,
+    url: 'article_20260924_1_redevelop-reconstruct-diff_v2.html',
+    category: '재개발',
+    title: '조합원 자격 조건 — 지위양도 제한 시점과 승계 예외',
+    summary: '정비사업 조합원 자격은 재개발·재건축 사업 유형에 따라 부여 방식이 다르고, 지위양도 제한이 시작되는 시점도 조합설립인가와 관리처분계획인가로 각각 갈린다. 무주택기간 5년 이상, 1세대 1주택 장기보유 등 지위 승계가 가능한 예외 요건과 2026년 관련 법 개정 논의를 정리했다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-24',
+    title_en: 'Union Membership Qualification — When Transfer Restrictions Begin and Succession Exceptions',
+    summary_en: "Union membership qualification rules differ between Korea's redevelopment and reconstruction projects, with transfer restrictions starting at different stages — union establishment approval versus management disposal plan approval. We cover the exceptions that allow status succession and the 2026 legislative push to align the two systems."
+  },
+  {
     id: 349,
     url: 'article_20260923_1_investment_v2.html',
     category: '투자',
@@ -112,7 +124,7 @@ const articles = [
     id: 347,
     url: 'article_20260922_1_subscription_v2.html',
     category: '분양',
-    title: '더샵 분당하이스트, 국평 30억 코앞… '분당 리모델링 청약, 왜 열기가 식었나?'',
+    title: '더샵 분당하이스트, 국평 30억 코앞… \'분당 리모델링 청약, 왜 열기가 식었나?\'',
     summary: '더샵 분당하이스트가 경쟁률 2.91:1로 마감됐다. 이전 단지 대비 5분의 1 수준의 청약 열기가 식은 배경과 분당 리모델링 고분양가 논란, 실수요자 전략을 분석한다.',
     image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
     author: '부동산인사이트 편집팀',
