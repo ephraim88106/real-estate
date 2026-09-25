@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 352,
+    url: 'article_20260925_1_reits_v2.html',
+    category: '투자',
+    title: '리츠(REITs) 배당수익률 계산법과 분리과세 조건',
+    summary: '국내 상장리츠 23개의 배당수익률은 어떻게 계산하고, 9.9% 분리과세 혜택은 어떤 조건에서 받을 수 있을까. 상장리츠 구조와 ISA 비과세 한도까지 2026년 9월 기준으로 정리했다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-25',
+    title_en: 'How to Calculate REIT Dividend Yield and Qualify for Separate Taxation',
+    summary_en: 'How is the dividend yield of Korea\\\'s 23 listed REITs calculated, and what conditions qualify for the 9.9% separate taxation benefit? A 2026 guide to REIT structure and ISA tax-free limits.'
+  },
+  {
     id: 351,
     url: 'article_20260924_1_column_v2.html',
     category: '칼럼',
