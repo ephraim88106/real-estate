@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 353,
+    url: 'article_20260925_1_policy_v2.html',
+    category: '정책',
+    title: '스트레스 DSR 3단계 강화, 내 집 마련 꿈이 흔들린다 — 대출 한도 최대 20% 축소, 실수요자 타격 현실화',
+    summary: '2026년 스트레스 DSR 3단계 전면 시행으로 주택담보대출 한도가 최대 20% 줄어들었다. 전 금융권으로 확대된 규제의 내용과 실수요자 영향을 심층 분석하고 대응 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-25',
+    title_en: 'Stress DSR Phase 3 Tightened: Home Loan Limits Cut by Up to 20%',
+    summary_en: 'Korea\'s Stress DSR Phase 3 rollout has reduced mortgage loan limits by up to 20%. We analyze the expanded regulation across all financial sectors and its real impact on homebuyers.'
+  },
+  {
+    id: 352,
+    url: 'article_20260925_2_subscription_v2.html',
+    category: '분양',
+    title: '추석 끝나자 쏟아지는 4만9000가구 — 2026 가을 분양 대목, 청약 승패 가르는 5가지 포인트',
+    summary: '추석 연휴 이후 10월 분양 물량이 4만9000가구에 달하며 가을 대목이 열렸다. 청약 성적 양극화가 심화되는 시장에서 알짜 단지를 골라내는 5가지 핵심 체크포인트를 제시한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-25',
+    title_en: '49,000 Units Flood the Market After Chuseok — 5 Key Points for Korea\'s Autumn Subscription Season',
+    summary_en: 'Korea\'s autumn pre-sale season kicks off with 49,000 units scheduled for October. With growing polarization in subscription results, we outline five key criteria to identify the best opportunities.'
+  },
+  {
     id: 351,
     url: 'article_20260924_1_column_v2.html',
     category: '칼럼',
