@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>싱가포르 외국인 주택 취득세 얼마 — ABSD 세율과 계산 사례 | 부동산인사이트</title>
+<meta name="description" content="싱가포르 주택을 매입하는 외국인에게 부과되는 추가매입인지세(ABSD) 60%와 누진 매입인지세(BSD)의 계산 구조를 실제 매입가 예시로 정리한다.">
+<link rel="canonical" href="https://realestate.ephseed.com/article_20260926_1_singapore_absd_v2">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20260926_1_singapore_absd_v2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f5f0;color:#1a1a1a;line-height:1.8;}
+a{color:inherit;text-decoration:none;}
+
+/* HEADER */
+header{background:#0D2B55;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.3);}
+.header-inner{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:64px;}
+.logo{font-family:'Noto Serif KR',serif;font-size:1.4rem;font-weight:700;color:#fff;}
+.logo span{color:#F4A52D;}
+nav{display:flex;gap:24px;}
+nav a{color:#cce0ff;font-size:0.85rem;font-weight:500;transition:color 0.2s;}
+nav a:hover{color:#F4A52D;}
+@media(max-width:768px){nav{display:none;}}
+
+/* HERO */
+.hero{background:linear-gradient(135deg, #003A4A 0%, #006E8A 55%, #003A4A 100%);padding:72px 20px 60px;color:#fff;}
+.hero-inner{max-width:800px;margin:0 auto;}
+.cat-tag{display:inline-block;background:#006E8A;color:#fff;font-size:0.75rem;font-weight:700;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:2.2rem;font-weight:700;line-height:1.4;margin-bottom:16px;}
+@media(max-width:768px){.hero h1{font-size:1.55rem;}}
+.hero-meta{font-size:0.85rem;color:#ccc;display:flex;gap:16px;flex-wrap:wrap;}
+.hero-meta span::before{content:"• ";margin-right:4px;}
+.hero-meta span:first-child::before{content:"";}
+
+/* LAYOUT */
+.container{max-width:1200px;margin:0 auto;padding:40px 20px;display:grid;grid-template-columns:1fr 300px;gap:40px;}
+@media(max-width:960px){.container{grid-template-columns:1fr;}}
+
+/* MAIN */
+.main-content article{background:#fff;border-radius:8px;padding:40px;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+
+/* DATA BOX */
+.data-box{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px;}
+@media(max-width:600px){.data-box{grid-template-columns:1fr;}}
+.data-card{background:#e6f3f6;border:1px solid #006E8A;border-radius:8px;padding:20px;text-align:center;}
+.data-card .num{font-family:'Noto Serif KR',serif;font-size:1.9rem;font-weight:700;color:#006E8A;display:block;}
+.data-card .label{font-size:0.78rem;color:#555;margin-top:4px;}
+
+/* BODY TEXT */
+.body-text p{margin-bottom:18px;font-size:0.97rem;line-height:1.9;}
+.body-text h2{font-family:'Noto Serif KR',serif;font-size:1.25rem;font-weight:700;margin:36px 0 16px;padding-left:14px;border-left:4px solid #006E8A;color:#1a1a1a;}
+
+/* QUOTE */
+.quote-box{background:#e6f3f6;border-left:4px solid #006E8A;padding:24px 28px;margin:28px 0;border-radius:0 8px 8px 0;}
+.quote-box p{font-family:'Noto Serif KR',serif;font-style:italic;font-size:1.02rem;color:#00323f;line-height:1.85;}
+.quote-box cite{display:block;font-size:0.8rem;color:#777;margin-top:8px;font-style:normal;}
+
+/* INSIGHT LIST */
+.insight-list{background:#e6f3f6;border-radius:8px;padding:24px 28px;margin:28px 0;}
+.insight-list h3{font-family:'Noto Serif KR',serif;font-size:1.05rem;font-weight:700;color:#006E8A;margin-bottom:14px;}
+.insight-list ul{padding-left:18px;}
+.insight-list li{font-size:0.93rem;margin-bottom:10px;line-height:1.75;}
+
+/* DISCLAIMER */
+.disclaimer{background:#f0f0f0;border-radius:8px;padding:18px 22px;margin-top:32px;font-size:0.78rem;color:#888;line-height:1.7;}
+
+/* SIDEBAR */
+.sidebar{}
+.sidebar-card{background:#fff;border-radius:8px;padding:24px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.sidebar-card h3{font-family:'Noto Serif KR',serif;font-size:1rem;font-weight:700;color:#006E8A;border-bottom:2px solid #006E8A;padding-bottom:8px;margin-bottom:14px;}
+.summary-list{list-style:none;padding:0;}
+.summary-list li{font-size:0.85rem;padding:7px 0;border-bottom:1px solid #eee;line-height:1.65;}
+.summary-list li:last-child{border-bottom:none;}
+.summary-list li::before{content:"▶ ";color:#006E8A;font-size:0.7rem;}
+.related-list{list-style:none;padding:0;}
+.related-list li{padding:8px 0;border-bottom:1px solid #eee;font-size:0.85rem;line-height:1.6;}
+.related-list li:last-child{border-bottom:none;}
+.related-list a{color:#0D2B55;font-weight:500;}
+.related-list a:hover{color:#006E8A;}
+.rate-table{width:100%;border-collapse:collapse;font-size:0.83rem;}
+.rate-table th{background:#006E8A;color:#fff;padding:8px;text-align:center;}
+.rate-table td{padding:8px;text-align:center;border-bottom:1px solid #eee;}
+.rate-table tr:hover td{background:#e6f3f6;}
+
+/* FOOTER */
+footer{background:#0D2B55;color:#aaa;text-align:center;padding:32px 20px;font-size:0.82rem;}
+footer .footer-logo{font-family:'Noto Serif KR',serif;font-size:1.1rem;color:#fff;margin-bottom:8px;}
+footer .footer-logo span{color:#F4A52D;}
+
+.fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+@media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+</style>
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-vH50HcSMSOmwFD8o" data-ad-width="160" data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display:flex;justify-content:center;background:#fff;padding:10px 0;border-bottom:1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-c1XP1iKah32kfdAU" data-ad-width="728" data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">부동산<span>인사이트</span></div>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">해외부동산</span>
+    <h1>싱가포르 외국인 주택 취득세 얼마<br>— ABSD 세율과 계산 사례</h1>
+    <div class="hero-meta">
+      <span>부동산인사이트 편집팀</span>
+      <span>2026년 9월 26일</span>
+      <span>해외부동산</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="main-content">
+    <article>
+      <div class="data-box">
+        <div class="data-card"><span class="num">60%</span><div class="label">외국인 추가매입인지세(ABSD) 세율 — 주택 수 무관 일괄 적용</div></div>
+        <div class="data-card"><span class="num">1~6%</span><div class="label">매입인지세(BSD) 누진 세율 — 매입가 구간별 차등</div></div>
+        <div class="data-card"><span class="num">14일</span><div class="label">매매계약(옵션 행사) 후 인지세 신고·납부 기한</div></div>
+      </div>
+
+      <div class="body-text">
+        <p>싱가포르는 오랫동안 아시아 자산가들의 대표적인 해외 부동산 투자처로 꼽혀왔다. 정치적 안정성과 법인세·상속세 부재 같은 장점이 부각되지만, 정작 외국인이 주택을 매입할 때 부담해야 하는 취득 단계 세금은 국내 어느 시장보다도 무겁다. 2026년 9월 현재 기준으로 외국인이 싱가포르 주거용 부동산을 매입하면 매입가의 60%에 달하는 추가매입인지세(Additional Buyer's Stamp Duty, ABSD)를 별도로 내야 한다. 여기에 모든 매수자에게 공통 적용되는 매입인지세(Buyer's Stamp Duty, BSD)까지 더해지면 실질 취득 부담은 매입가의 60%를 훌쩍 넘는다.</p>
+
+        <p>이 글에서는 싱가포르 국세청(IRAS)이 공개한 세율표를 기준으로 BSD와 ABSD가 각각 어떻게 계산되는지, 외국인과 영주권자·자국민 사이에 어떤 차이가 있는지, 그리고 실제 매입가를 기준으로 한 계산 사례를 정리한다. 세율과 기준은 시점에 따라 개정될 수 있으므로, 아래 수치는 모두 2026년 9월 기준 IRAS 공시 자료를 기준으로 한다.</p>
+
+        <h2>싱가포르 부동산 취득세 구조 — BSD와 ABSD 이중 과세</h2>
+        <p>싱가포르에서 부동산을 매입할 때 내는 취득 관련 세금은 크게 두 가지로 나뉜다. 첫째는 매수자의 국적이나 보유 주택 수와 무관하게 모든 매입자에게 부과되는 매입인지세(BSD)이고, 둘째는 영주권자·외국인·법인 등 특정 매수자 유형에만 추가로 부과되는 추가매입인지세(ABSD)다. 두 세금은 별개로 계산되어 합산 부과되며, 과세표준은 매매계약서상 거래가액과 시장가치(감정가) 중 더 높은 금액을 기준으로 한다.</p>
+
+        <h2>외국인 ABSD 세율 60% — 국적별 예외 규정</h2>
+        <p>IRAS 기준 외국인(비거주 개인)의 ABSD 세율은 2023년 4월 27일 시행된 개정 이후 60%로 고정되어 있으며, 이는 첫 주택 매입이든 두 번째, 세 번째 매입이든 동일하게 적용된다. 즉 싱가포르 국민이나 영주권자와 달리 보유 주택 수에 따른 누진 구조가 없고, 처음부터 일괄 60%가 적용된다는 점이 특징이다. 다만 한미 자유무역협정(FTA)에 준하는 협정에 따라 미국 국적자와 아이슬란드·리히텐슈타인·노르웨이·스위스 국적자·영주권자는 싱가포르 국민과 동일한 세율(첫 주택 0%)을 적용받는 예외가 있다. 법인이나 신탁 명의로 매입하는 경우에는 개인 외국인보다 5%포인트 높은 65%가 적용된다.</p>
+
+        <div class="quote-box">
+          <p>"ABSD는 국적에 따라 세율이 달라지는 것이 아니라, 애초에 외국인 투기 수요를 원천적으로 억제하기 위해 설계된 진입장벽에 가깝다. 60%라는 수치는 매입 시점에 한 번 내는 비용이지만, 그 자체로 실질 수익률 계산을 완전히 바꿔놓는다."</p>
+          <cite>— IRAS 인지세 안내자료 해설, 2026년 9월 기준</cite>
+        </div>
+
+        <h2>BSD 누진 세율 계산 사례 — 실제 매입가 기준 시뮬레이션</h2>
+        <p>BSD는 2023년 2월 20일 예산안 개정 이후 매입가 300만 싱가포르달러(SGD) 초과 구간에 6% 세율이 신설되면서 총 6단계 누진 구조로 바뀌었다. 구간은 다음과 같다: 최초 18만 SGD 1%, 다음 18만 SGD(18만~36만) 2%, 다음 64만 SGD(36만~100만) 3%, 다음 50만 SGD(100만~150만) 4%, 다음 150만 SGD(150만~300만) 5%, 300만 SGD 초과분 6%. 예를 들어 외국인이 150만 SGD짜리 콘도미니엄을 매입한다고 가정하면 BSD는 1,800+3,600+19,200+20,000 = 44,600 SGD가 산출되고, 여기에 ABSD 60%(90만 SGD)가 더해져 총 취득세만 944,600 SGD, 매입가 대비 약 63%에 달한다.</p>
+
+        <h2>취득세 신고와 납부 절차 — 기한과 방식</h2>
+        <p>BSD와 ABSD는 매매계약서(Sale and Purchase Agreement) 또는 옵션 행사(Exercise of Option to Purchase) 서명일로부터 14일 이내에 IRAS에 신고하고 납부해야 한다. 해당 문서가 싱가포르 밖에서 서명된 경우에는 기한이 30일로 연장된다. 신고와 납부는 IRAS 전자시스템(e-Stamping)을 통해 이루어지며, 기한을 넘기면 미납 세액에 대해 가산세가 추가로 부과된다. 매수자는 통상 변호사(컨베이언서)를 통해 매매 종결 전에 인지세 납부를 완료하며, 이는 등기 이전의 필수 선행 절차다.</p>
+
+        <div class="quote-box">
+          <p>"싱가포르 부동산 거래에서 ABSD 납부 증빙 없이는 등기 이전 자체가 진행되지 않는다. 세금이 아니라 거래 성립의 전제조건이라고 보는 편이 정확하다."</p>
+          <cite>— 싱가포르 현지 부동산 컨베이언싱 실무 안내, 2026년 기준</cite>
+        </div>
+
+        <h2>2026년 규제 동향과 평가</h2>
+        <p>2023년 60% 인상 이후 외국인의 싱가포르 주택 매입 비중은 뚜렷하게 줄었다. 정부 통계상 외국인 매수 비중은 인상 전 연간 4%대에서 인상 후 1%대까지 낮아진 것으로 파악된다. 2026년 예산안에서도 ABSD·BSD 세율은 추가 조정 없이 유지되고 있어, 당분간 외국인에 대한 고율 정책 기조가 이어질 가능성이 높다. 다만 상업용 부동산(오피스·상가)은 매수자 국적과 무관하게 ABSD가 면제되기 때문에, 주거용 규제를 우회하려는 자금이 상업용 자산으로 이동하는 흐름도 함께 관찰된다.</p>
+
+        <h2>외국인 매수자가 점검해야 할 실무 포인트</h2>
+        <div class="insight-list">
+          <h3>싱가포르 주택 매입을 검토 중이라면</h3>
+          <ul>
+            <li>매입가 협상 전에 BSD+ABSD 합산 세액을 먼저 계산해 실질 총매입비용을 산정해야 한다.</li>
+            <li>미국·스위스·노르웨이·아이슬란드·리히텐슈타인 국적 또는 영주권 보유 여부에 따라 FTA 예외 적용이 가능한지 반드시 확인해야 한다.</li>
+            <li>법인·신탁 명의 매입은 개인 명의보다 ABSD가 5%포인트 높으므로, 명의 선택 전 세율 차이를 비교해야 한다.</li>
+            <li>매매계약 서명일로부터 14일(해외 서명 시 30일) 이내 신고·납부 기한을 반드시 지켜야 가산세를 피할 수 있다.</li>
+            <li>상업용 부동산은 ABSD가 면제되므로, 투자 목적이라면 주거용과 상업용의 세후 수익률을 함께 비교해볼 필요가 있다.</li>
+            <li>재매도 시에는 별도의 매도인 인지세(Seller's Stamp Duty, SSD)가 보유 기간에 따라 추가로 부과될 수 있어 출구 전략까지 함께 계산해야 한다.</li>
+          </ul>
+        </div>
+
+        <h2>결론 — 세율표를 먼저 읽어야 하는 이유</h2>
+        <p>싱가포르 부동산은 안정적인 법제와 투명한 거래 시스템이라는 장점에도 불구하고, 외국인에게는 매입 시점부터 매입가의 절반을 훌쩍 넘는 취득세가 확정적으로 발생하는 시장이다. 임대수익률이나 시세차익만을 보고 접근하면 ABSD 60%라는 진입 비용을 간과하기 쉽다. 실제 매입을 검토한다면 IRAS 공식 세율표를 기준으로 BSD와 ABSD를 함께 계산한 총 취득 비용부터 산출하고, 국적별 예외 적용 여부와 명의 구조를 세무·법률 전문가와 함께 사전에 점검하는 것이 순서다.</p>
+
+        <div class="disclaimer">
+          ※ 본 기사는 싱가포르 IRAS(국세청)가 공시한 인지세 세율 정보를 바탕으로 한 일반적인 정보 제공을 목적으로 하며, 특정 부동산의 매수를 권유하거나 개별 세무·법률 자문을 대체하지 않습니다. 세율과 기준은 개정될 수 있으므로 실제 매입 전에는 반드시 IRAS 공식 자료 및 현지 세무·법률 전문가의 최신 확인을 거치시기 바랍니다.
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-card">
+      <h3>핵심 요약</h3>
+      <ul class="summary-list">
+        <li>외국인 ABSD 세율 60% — 보유 주택 수와 무관하게 일괄 적용</li>
+        <li>BSD는 6단계 누진 구조, 300만 SGD 초과분은 6%</li>
+        <li>미국·스위스 등 FTA 대상국은 자국민과 동일 세율 예외</li>
+        <li>법인·신탁 명의 매입 시 ABSD 65%로 5%p 가산</li>
+        <li>매매계약 후 14일(해외 서명 시 30일) 내 신고·납부 필수</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="#">베트남 외국인 주택 구매 조건 — 소유권 기간과 취득 지분 제한</a></li>
+        <li><a href="#">해외부동산 양도소득세 계산법 — 세율·기본공제와 신고기한 정리</a></li>
+        <li><a href="#">해외부동산 취득 신고 대상과 절차 — 보고서 제출 기한·과태료 기준 정리</a></li>
+        <li><a href="#">외국납부세액공제 한도 계산 방법 — 임대소득 이중과세 조정과 이월 기간</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>매수자 유형별 ABSD 세율</h3>
+      <table class="rate-table">
+        <thead><tr><th>매수자 유형</th><th>ABSD 세율</th></tr></thead>
+        <tbody>
+          <tr><td>싱가포르 시민 (1주택)</td><td>0%</td></tr>
+          <tr><td>싱가포르 시민 (2주택)</td><td>20%</td></tr>
+          <tr><td>싱가포르 시민 (3주택 이상)</td><td>30%</td></tr>
+          <tr><td>영주권자 (1주택)</td><td>5%</td></tr>
+          <tr><td>영주권자 (2주택 이상)</td><td>30~35%</td></tr>
+          <tr><td style="color:#c8401a;font-weight:700;">외국인 (전체)</td><td style="color:#c8401a;font-weight:700;">60%</td></tr>
+          <tr><td>법인·신탁</td><td>65%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p>© 2026 부동산인사이트. 본 사이트의 콘텐츠는 정보 제공 목적으로만 제공되며, 투자 권유가 아닙니다.</p>
+  <p style="margin-top:8px;">문의: namho1123@gmail.com</p>
+</footer>
+
+</body>
+</html>

@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 354,
+    url: 'article_20260926_1_singapore_absd_v2.html',
+    category: '해외',
+    title: '싱가포르 외국인 주택 취득세 얼마 — ABSD 세율과 계산 사례',
+    summary: '싱가포르 주택을 매입하는 외국인은 매입가의 60%에 달하는 추가매입인지세(ABSD)를 부담해야 한다. IRAS 공시 세율표를 기준으로 BSD 누진세율과 ABSD가 합산되는 구조를 실제 매입가 예시로 계산해본다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-26',
+    title_en: 'How Much Is Singapore\'s Property Purchase Tax for Foreigners — ABSD Rates and Calculation Examples',
+    summary_en: 'Foreigners buying residential property in Singapore face an Additional Buyer\'s Stamp Duty (ABSD) of 60% of the purchase price. Based on IRAS\'s published rate tables, we calculate how the progressive BSD and flat ABSD combine using real purchase price examples.'
+  },
+  {
     id: 353,
     url: 'article_20260925_1_policy_v2.html',
     category: '정책',
