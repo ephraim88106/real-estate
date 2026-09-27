@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"2년 더 오른다" vs "고점 경고" — 전문가 10명 중 9명의 전망, 우리는 어디에 서야 하는가 | 부동산인사이트</title>
+<meta name="description" content="2026년 9월 KB 주택시장 리뷰와 전문가 서베이를 바탕으로, 서울·수도권 상승론의 근거와 리스크를 냉정하게 해부한다. '더 오른다'는 낙관론에 가려진 위험 신호들을 짚어본다.">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --primary: #0D2B55;
+  --accent: #6A6A10;
+  --accent-light: #f5f5e0;
+  --gold: #F4A52D;
+  --text: #1a1a2e;
+  --text-muted: #555;
+  --bg: #f8f9fb;
+  --card-bg: #fff;
+  --border: #e2e8f0;
+}
+body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+
+/* ===== HEADER ===== */
+header {
+  background: var(--primary);
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 900; color: #fff; text-decoration: none; }
+.logo span { color: var(--gold); }
+nav { display: flex; gap: 28px; }
+nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color .2s; }
+nav a:hover { color: var(--gold); }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%);
+  padding: 72px 24px 64px;
+  color: #fff;
+  text-align: center;
+}
+.hero-inner { max-width: 860px; margin: 0 auto; }
+.category-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  font-weight: 900;
+  line-height: 1.35;
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+.hero-meta { font-size: 0.88rem; color: rgba(255,255,255,0.75); }
+.hero-meta span + span::before { content: " · "; }
+
+/* ===== LAYOUT ===== */
+.container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+@media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+/* ===== ARTICLE ===== */
+article { min-width: 0; }
+.data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 40px; }
+@media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+.data-card {
+  background: linear-gradient(135deg, #f5f5e0, #ededc0);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  padding: 20px 16px;
+  text-align: center;
+}
+.data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.9rem; font-weight: 900; color: var(--accent); }
+.data-card .label { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; }
+.data-card .sub { font-size: 0.82rem; color: var(--accent); font-weight: 700; margin-top: 2px; }
+
+article p { margin-bottom: 1.4em; font-size: 1.02rem; }
+article h2 {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 44px 0 16px;
+  padding-left: 14px;
+  border-left: 4px solid var(--accent);
+  color: var(--primary);
+}
+.quote-box {
+  background: linear-gradient(135deg, #f5f5e0, #e8e8c0);
+  border-left: 5px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 24px;
+  margin: 32px 0;
+  font-family: 'Noto Serif KR', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #2a2a10;
+  line-height: 1.75;
+}
+.quote-box cite { display: block; margin-top: 10px; font-size: 0.82rem; color: var(--accent); font-style: normal; font-weight: 700; }
+.tip-list { list-style: none; padding: 0; margin: 16px 0 32px; }
+.tip-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.98rem;
+}
+.tip-list li:last-child { border-bottom: none; }
+.tip-list li::before { content: "▶"; color: var(--accent); font-size: 0.75rem; margin-top: 4px; flex-shrink: 0; }
+.disclaimer {
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-top: 48px;
+  line-height: 1.7;
+}
+.highlight-box {
+  background: #fffbea;
+  border: 1px solid #f0e070;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 24px 0;
+  font-size: 0.96rem;
+}
+.highlight-box strong { color: var(--accent); }
+
+/* ===== SIDEBAR ===== */
+aside { min-width: 0; }
+.sidebar-box { background: var(--card-bg); border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid var(--border); }
+.sidebar-box h3 { font-family: 'Noto Serif KR', serif; font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); }
+.summary-list { list-style: none; padding: 0; }
+.summary-list li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; display: flex; gap: 8px; }
+.summary-list li:last-child { border-bottom: none; }
+.summary-list li::before { content: "•"; color: var(--accent); font-weight: 900; flex-shrink: 0; }
+.related-list { list-style: none; padding: 0; }
+.related-list li { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; line-height: 1.5; }
+.related-list li:last-child { border-bottom: none; }
+.related-list a { color: var(--text); text-decoration: none; }
+.related-list a:hover { color: var(--accent); }
+.region-list { list-style: none; padding: 0; }
+.region-list li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; display: flex; justify-content: space-between; }
+.region-list li:last-child { border-bottom: none; }
+.badge { padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: 700; }
+.badge.up { background: #fee2e2; color: #dc2626; }
+.badge.stable { background: #fef9c3; color: #a16207; }
+.badge.down { background: #dcfce7; color: #16a34a; }
+
+/* ===== FOOTER ===== */
+footer { background: var(--primary); color: rgba(255,255,255,0.65); text-align: center; padding: 32px 24px; font-size: 0.82rem; margin-top: 48px; }
+footer strong { color: var(--gold); }
+.tag-wrap { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { background: rgba(106,106,16,0.12); color: var(--accent); border: 1px solid rgba(106,106,16,0.3); border-radius: 20px; padding: 4px 12px; font-size: 0.78rem; }
+.fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+@media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-vH50HcSMSOmwFD8o"
+    data-ad-width = "160"
+    data-ad-height = "600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-c1XP1iKah32kfdAU"
+    data-ad-width = "728"
+    data-ad-height = "90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="category-tag">✍️ 칼럼·해설</div>
+    <h1>"앞으로 2년 더 오른다"는 낙관론<br>— 전문가 9할의 동의가 오히려 위험 신호인 이유</h1>
+    <p class="hero-meta">
+      <span>부동산인사이트 편집팀</span>
+      <span>2026년 9월 27일</span>
+      <span>#시장분석 #부동산전망 #서울아파트 #KB리뷰</span>
+    </p>
+  </div>
+</section>
+
+<div class="container">
+  <article>
+
+    <div class="data-cards">
+      <div class="data-card">
+        <div class="num">90%</div>
+        <div class="label">전문가 상승 예측 비율</div>
+        <div class="sub">서울·수도권 하반기 전망</div>
+      </div>
+      <div class="data-card">
+        <div class="num">+0.8%</div>
+        <div class="label">서울 아파트 주간 상승폭</div>
+        <div class="sub">KB 9월 통계 기준</div>
+      </div>
+      <div class="data-card">
+        <div class="num">2년?</div>
+        <div class="label">상승 지속 예상 기간</div>
+        <div class="sub">전문가 컨센서스 (9월 서베이)</div>
+      </div>
+    </div>
+
+    <p>2026년 9월, 한국 부동산 시장을 둘러싼 전문가들의 전망이 이례적으로 한 방향을 가리키고 있다. 네이트 뉴스와 KB경제연구소가 진행한 부동산 전문가 서베이에서 응답자 10명 중 9명이 "서울·수도권 아파트 가격이 더 오를 것"이라고 답한 것이다. KB주택시장 리뷰 2026년 9월호 역시 매매가격과 거래량 지표 모두 상승세를 확인해 주고 있다. 그런데 역설적으로, 이처럼 압도적인 상승 컨센서스야말로 냉정한 재검토가 필요한 순간임을 역사는 반복해서 증언해 왔다.</p>
+
+    <p>전문가 의견의 쏠림 현상은 항상 양날의 검이다. 심리적 군집 효과(herd effect)가 작용하는 부동산 시장에서, 90%가 상승을 예측할 때는 이미 그 상승 기대가 현재 가격에 상당 부분 반영되어 있을 가능성이 높다. 본 칼럼은 상승론의 근거를 공정하게 인정하면서도, 그 낙관론의 그림자에 가려진 구조적 리스크를 독자들이 직시할 수 있도록 균형 잡힌 시각을 제공하고자 한다.</p>
+
+    <h2>상승론의 근거 — 무엇이 전문가 9할을 설득시켰는가</h2>
+
+    <p>2026년 하반기 상승론을 뒷받침하는 핵심 근거들은 분명히 존재한다. 첫째, 공급 부족이다. 2022~2024년 인허가 물량 급감으로 인해 2026~2028년 수도권 입주 물량이 역대 최저 수준으로 예상된다. KB주택시장 리뷰는 서울 아파트 멸실 대비 순공급 물량이 향후 2년간 연평균 2만 호 이하로 줄어들 것이라는 분석을 담고 있다.</p>
+
+    <p>둘째, 금리 인하 사이클이다. 한국은행은 2025년 하반기부터 기준금리를 인하하기 시작했으며, 2026년 9월 현재 기준금리는 2.75% 수준까지 낮아졌다. 주택담보대출 금리도 연 3.8~4.5%대로 내려오면서 구매력이 회복되고 있다. 셋째, 전월세 가격 급등이 매매 전환 수요를 자극하고 있다. 전세가율(매매가 대비 전세가 비율)이 서울 평균 60%를 상회하면서 "차라리 사자"는 수요가 늘고 있다.</p>
+
+    <div class="quote-box">
+      "공급이 부족하고 금리가 내리는 상황에서 서울 핵심 지역 아파트 가격이 하락을 논하는 것은 비현실적입니다. 강남은 타이밍을 기다리되, 강남 외 지역은 지금 서두르는 것이 맞습니다."
+      <cite>— 네이트 뉴스 부동산 전문가 서베이 응답 (2026. 9월)</cite>
+    </div>
+
+    <h2>낙관론의 그림자 — 9할의 합의가 틀릴 수 있는 이유</h2>
+
+    <p>그럼에도 불구하고, 이 같은 압도적 낙관론은 몇 가지 중요한 반론을 내포하고 있다. 가장 먼저 주목해야 할 것은 '현재 가격 수준'이다. 2026년 9월 기준 서울 아파트 평균 매매가는 12억 원을 넘어섰으며, 강남 3구의 경우 30억~50억 원대 아파트도 일반화되고 있다. 이러한 가격대에서 '더 오른다'는 것은 구체적으로 얼마나, 누가 살 수 있는 수준에서 오른다는 것인지 명확히 해야 한다.</p>
+
+    <p>연령별 인구 구조 변화도 중장기 리스크다. 2030년부터 본격화될 베이비붐 세대(1955~1963년생)의 대규모 은퇴와 주택 처분은 공급 측면에서 지금과 정반대 방향의 압력을 만들어낼 수 있다. 단기 2년 상승론이 맞다 하더라도, 그 이후 조정 사이클에 노출될 위험이 있다는 점을 간과해서는 안 된다.</p>
+
+    <div class="highlight-box">
+      <strong>⚠️ 역사적 경고:</strong> 2021년 서울 집값 고점 직전에도 전문가 다수는 '더 오른다'는 전망을 유지했다. 이후 2022~2023년 30% 안팎의 가격 조정이 왔다. 전문가 컨센서스와 시장 피크가 겹치는 사례는 글로벌 역사에서도 반복적으로 나타난다.
+    </div>
+
+    <h2>지역 양극화 — '서울 상승'이 곧 '내 동네 상승'은 아니다</h2>
+
+    <p>하반기 KB통계에서 서울 전체 아파트 매매가가 상승한다고 해서 모든 지역이 동일하게 오르는 것은 아니다. 2026년 상반기 데이터를 보면 강남·서초·송파의 상승폭이 서울 평균의 2~3배에 달하는 반면, 강북·노원·도봉 일부 지역은 보합 또는 소폭 하락세를 보이고 있다. '서울이 오른다'는 통계는 상위 20% 단지들이 전체 평균을 끌어올리는 효과를 내포한다.</p>
+
+    <p>이 양극화 현상은 앞으로 더 심화될 것이라는 것이 전문가들의 공통된 견해다. 교통망(GTX, 9호선 연장 등), 정비사업 진척도, 학군, 대형 개발 호재 등 '이유 있는 상승' 지역과 특별한 모멘텀이 없는 지역 간의 격차가 더 벌어지는 것이다. 실수요자와 투자자 모두 '서울 평균'이 아닌 '특정 지역의 특정 단지'를 분석해야 한다.</p>
+
+    <h2>정책 리스크 — 새 정부의 수요 관리 카드는 언제 꺼낼까</h2>
+
+    <p>2025년 출범한 새 정부는 초기에 공급 확대와 규제 완화 기조를 유지하면서 시장 가격 상승에 관망세를 취해 왔다. 그러나 KB통계에서 서울 아파트가 3개월 연속 0.8% 이상 주간 상승률을 기록한다면, 정부가 추가 수요 억제 조치를 내놓을 가능성이 급격히 높아진다. 2017~2021년 전례처럼 LTV 강화, DSR 적용 범위 확대, 분양가 상한제 재도입 등의 카드는 시장 심리를 단기간에 위축시킬 수 있다.</p>
+
+    <p>정책 리스크는 가격 곡선을 예측하기 어렵게 만드는 가장 큰 변수다. '시장 논리대로라면 오른다'는 판단이 옳더라도, 정부 개입이 타이밍을 완전히 바꿔버리는 것이 한국 부동산 시장의 특수성이다. 2026년 4분기 정부 대책 발표 여부를 예의주시하는 것이 투자 타이밍 결정의 핵심 변수가 되어야 한다.</p>
+
+    <div class="quote-box">
+      "지금 시장의 가장 큰 위험은 '모두가 오른다고 믿는다'는 사실 그 자체입니다. 시장이 과열일 때 규제는 늘 예고 없이 등장했고, 가장 확신에 찬 사람들이 가장 큰 피해를 입었습니다."
+      <cite>— 부동산인사이트 편집팀 분석</cite>
+    </div>
+
+    <h2>9월 KB주택시장 리뷰가 말해 주는 것 — 숫자 뒤의 맥락 읽기</h2>
+
+    <p>KB주택시장 리뷰 2026년 9월호는 매매가격과 거래 지표 모두에서 상승 신호를 담고 있다. 그러나 이 통계 안에는 중요한 구조적 변수들이 숨어 있다. 매매 거래량의 경우, 전체 거래 중 투자 목적 취득(다주택자, 법인)이 아닌 실수요 거래의 비중을 확인해야 한다. 만약 이 거래량이 갭투자 또는 단기 매수세에 의해 인위적으로 부풀려진 것이라면, 금리·규제 변화 시 급격히 위축될 위험이 있다.</p>
+
+    <p>주택금융 편의 지표도 주목할 만하다. 9월호 주택 금융 파트는 담보대출 증가세가 전년 동기 대비 15% 이상 확대되었음을 보여준다. 이는 금리 인하로 대출 수요가 늘었다는 긍정적 신호이기도 하지만, 동시에 시장이 레버리지에 크게 의존하고 있다는 취약성의 단면이기도 하다. 금리가 다시 상승 전환될 경우 이 레버리지는 시장 하방 압력을 증폭시키는 위험 요인으로 돌변한다.</p>
+
+    <h2>실수요자·투자자 시사점 — '오른다'는 합의 속에서 해야 할 행동</h2>
+    <ul class="tip-list">
+      <li>전문가 9할의 상승 예측을 참고는 하되, 그것이 '지금 당장 어디에서나 사야 한다'는 신호로 과해석하지 말 것. 지역·단지별 미시 분석이 반드시 선행되어야 한다.</li>
+      <li>강남·서초·마포·용산 등 '이유 있는 상승' 지역에 실수요로 접근하는 경우라면 리스크가 상대적으로 낮지만, 레버리지 비율을 LTV 50% 이하로 보수적으로 설정하라. 금리·규제 변화에 버틸 수 있는 안전마진이 필수다.</li>
+      <li>투자 목적(갭투자·전세 레버리지)으로 외곽이나 지방을 노리는 전략은 2026년 현재 높은 위험을 내포한다. 전세가율이 높더라도 전세 수요가 실질적으로 존재하는 지역인지 확인하라.</li>
+      <li>정부 정책 발표 일정에 주목하라. 2026년 4분기 국감 시즌과 부동산 정책 점검 이후에 추가 규제 조치가 발표될 가능성이 있다. 직전 월 계약 vs 정책 발표 후 계약의 타이밍 차이가 수억 원의 차이를 만들 수 있다.</li>
+      <li>신축 입주권·분양권 투자는 2026~2027년 입주 물량 공백기에는 강세를 보이겠지만, 2028년 이후 공급 회복 시 프리미엄이 빠르게 수렴할 위험이 있다. 분양가 + 프리미엄의 총 취득가가 시세 대비 적정한지 냉정히 검토하라.</li>
+      <li>상승장에서의 최대 실수는 '조급함'이다. 10년 보유를 전제로 한 실수요 매수라면 지금이 나쁜 타이밍이 아니지만, 단기 시세차익을 노리는 투기적 접근은 최악의 타이밍에 진입하는 결과를 낳기 쉽다.</li>
+    </ul>
+
+    <h2>결론 — 낙관론이 지배할 때, 비관론자의 목소리를 경청하라</h2>
+
+    <p>역설적이게도, 시장에서 가장 필요한 목소리가 없어질 때가 바로 가장 위험한 때다. 전문가 90%가 상승을 예측하는 지금, 나머지 10%가 왜 우려를 표명하는지 그 논거를 진지하게 들어야 한다. 비관론이 맞다는 뜻이 아니다. 다만, 편향되지 않은 시각을 유지해야 올바른 결정을 내릴 수 있다는 것이다.</p>
+
+    <p>2026년 9월 한국 부동산 시장은 분명한 상승 모멘텀을 가지고 있다. 공급 부족, 금리 인하, 전세 부담 등 상승 요인들은 실재한다. 그러나 역사적 고가 수준, 레버리지 의존도 심화, 정책 리스크, 인구 구조 변화라는 중장기 변수도 엄연히 존재한다. 지금은 상승에 올라타야 할 때가 맞을 수 있다. 그러나 눈을 감고 올라타는 것이 아니라, 출구 전략과 버퍼를 함께 설계하면서 올라타야 한다. 그것이 '2년 더 오른다'는 낙관론 속에서 냉정함을 유지해야 하는 이유다.</p>
+
+    <div class="tag-wrap">
+      <span class="tag">#부동산칼럼</span>
+      <span class="tag">#서울아파트전망</span>
+      <span class="tag">#KB주택시장</span>
+      <span class="tag">#부동산상승론</span>
+      <span class="tag">#투자전략2026</span>
+      <span class="tag">#부동산전문가</span>
+      <span class="tag">#하반기전망</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>면책 고지:</strong> 본 칼럼은 특정 부동산의 매수·매도를 권유하지 않으며, 저자의 시장 분석 의견을 담은 것으로 실제 투자 결과와 다를 수 있습니다. 부동산 투자는 시장 상황, 개인 재정 상태, 정책 환경 등 다양한 변수에 의해 영향을 받으며 원금 손실이 발생할 수 있습니다. 모든 투자 결정은 충분한 자체 조사와 전문 자문을 통해 이루어져야 하며, 그 결과에 대한 책임은 투자자 본인에게 있습니다.
+    </div>
+
+  </article>
+
+  <aside>
+    <div class="sidebar-box">
+      <h3>📌 핵심 요약</h3>
+      <ul class="summary-list">
+        <li>전문가 90%가 서울·수도권 하반기 상승 전망 — 사상 유례없는 컨센서스</li>
+        <li>KB 9월 통계 상승 확인, 그러나 양극화 심화에 주목해야</li>
+        <li>레버리지 급증, 정책 리스크, 인구 구조 변화 등 그림자 변수 잠재</li>
+        <li>'오른다'는 합의가 지배할수록 출구 전략 설계가 더 중요해진다</li>
+        <li>실수요 장기 보유는 괜찮지만 단기 투기적 접근은 위험 구간</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>🔗 관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="#">KB주택시장 리뷰 2026년 9월 — 매매가 상승세 지속</a></li>
+        <li><a href="#">서울 아파트 평균 가격 12억 돌파 — 실수요자 대책은?</a></li>
+        <li><a href="#">2026 하반기 부동산 정책 전망 — 추가 규제 나오나</a></li>
+        <li><a href="#">공급 부족의 역설 — 2028년 이후 시장 반전 가능성</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <h3>📊 지역별 시장 신호</h3>
+      <ul class="region-list">
+        <li>강남3구 <span class="badge up">강상승</span></li>
+        <li>마포·용산 <span class="badge up">상승</span></li>
+        <li>성동·광진 <span class="badge up">상승</span></li>
+        <li>노원·도봉 <span class="badge stable">보합</span></li>
+        <li>강북·중랑 <span class="badge stable">보합</span></li>
+        <li>경기 외곽 <span class="badge down">주의</span></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> · 전문가 시각의 부동산 심층 분석<br>
+  본 사이트의 모든 콘텐츠는 정보 제공 목적으로 작성되었으며, 투자 결정의 책임은 독자 본인에게 있습니다.<br>
+  © 2026 부동산인사이트. All rights reserved.
+</footer>
+
+</body>
+</html>
