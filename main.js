@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 355,
+    url: 'article_20260927_1_japan_overseas_v2.html',
+    category: '해외',
+    title: '도쿄 빌딩 vs 오사카 원룸 — 엔저 막차가 끝나가는 지금, 한국인 일본 투자 공식이 바뀐다',
+    summary: '2026년 9월, 일본 부동산 시장이 상승세에서 전환기로 접어드는 가운데 한국인 투자자들의 전략이 이원화되고 있다. 도쿄는 수익형 빌딩, 오사카는 소형 원룸으로 자금 규모별 투자 공식이 달라진 배경과 핵심 리스크를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-27',
+    title_en: 'Tokyo Buildings vs Osaka Studios — As the Weak Yen Advantage Fades, Korean Investment Strategies in Japan Are Shifting',
+    summary_en: 'As Japan\'s real estate market enters a transition phase in September 2026, Korean investor strategies are bifurcating: high-capital buyers target Tokyo income-producing buildings while mid-range investors focus on Osaka compact studios.'
+  },
+  {
+    id: 354,
+    url: 'article_20260927_2_column_market_v2.html',
+    category: '칼럼',
+    title: '"앞으로 2년 더 오른다"는 낙관론 — 전문가 9할의 동의가 오히려 위험 신호인 이유',
+    summary: '2026년 9월 KB 주택시장 리뷰와 전문가 서베이에서 90%가 서울·수도권 상승을 예측했다. 이 압도적 낙관론의 근거와 그 이면에 숨은 리스크를 냉정하게 해부한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-27',
+    title_en: '\'Rising for 2 More Years\' — Why 90% Expert Consensus Can Be a Warning Signal',
+    summary_en: 'The September 2026 KB Housing Market Review shows 9 out of 10 experts forecasting continued price increases in Seoul. This column dissects the bullish thesis and the structural risks hidden beneath the surface-level optimism.'
+  },
+  {
     id: 353,
     url: 'article_20260925_1_policy_v2.html',
     category: '정책',
