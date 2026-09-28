@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 357,
+    url: 'article_20260928_1_jeonse_conversion_v2.html',
+    category: '시장동향',
+    title: '전월세전환율 뜻과 계산법 — 법정 상한은 얼마인가',
+    summary: '전세보증금을 월세로 바꿀 때 적용되는 전월세전환율의 계산 공식과 주택임대차보호법이 정한 법정 상한 산정 방식을 정리한다. 2026년 9월 기준금리 3.00%를 적용하면 법정 상한은 5.00%, 실제 시장 평균은 6.4%로 나타난다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-28',
+    title_en: 'What Is the Jeonse-to-Monthly-Rent Conversion Rate — And What Is the Legal Cap?',
+    summary_en: 'This article explains the calculation formula for Korea\'s jeonse-to-monthly-rent conversion rate and how the Housing Lease Protection Act sets its legal cap. With the September 2026 base rate at 3.00%, the legal cap is 5.00%, while the actual market average stands at 6.4%.'
+  },
+  {
     id: 355,
     url: 'article_20260927_1_japan_overseas_v2.html',
     category: '해외',
