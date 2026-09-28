@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 358,
+    url: 'article_20260928_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 85주 연속 상승, 역대 최장 기록과 동률… 지금 사야 할까, 기다려야 할까?',
+    summary: '서울 아파트 매매가격이 85주 연속 상승하며 역대 최장 기록과 동률을 기록했다. 강남권 약세 속에도 중저가 노도강 지역 상승세가 지속되며 \'10억 이하\' 실수요 거래가 활발하다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-28',
+    title_en: 'Seoul Apartment Prices Hit 85-Week Streak: Buy Now or Wait?',
+    summary_en: 'Seoul apartment prices rose for 85 consecutive weeks, matching the all-time record. Mid-price zones in Nowon and Dobong lead gains as sub-10 billion won real demand stays active.'
+  },
+  {
+    id: 357,
+    url: 'article_20260928_2_policy_v2.html',
+    category: '정책',
+    title: '주담대 4억·DSR 35% 초과하면 위험가중치 상향… 은행이 막는 \'내 집 마련 대출\'의 현실',
+    summary: '금융당국이 주담대 4억 원 초과·DSR 35% 초과 대출에 은행 위험가중치 상향을 추진한다. 스트레스 DSR 2단계까지 시행되며 실수요자의 대출 한도가 20~25% 줄어드는 현실을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-28',
+    title_en: 'Mortgage Over 400M Won or DSR 35%+ to Face Higher Risk Weights',
+    summary_en: 'Financial authorities plan to raise bank risk weights for mortgages exceeding 400 million won or DSR over 35%. With stress-DSR Phase 2 now in effect, loan limits shrink by 20-25%, tightening home buying access.'
+  },
+  {
     id: 355,
     url: 'article_20260927_1_japan_overseas_v2.html',
     category: '해외',
