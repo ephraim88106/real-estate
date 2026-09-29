@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 361,
+    url: 'article_20260929_1_subscription_v2.html',
+    category: '분양',
+    title: '가을 분양 3.4만 가구 쏟아지는데…"서울 청약은 현금 30억 있어야" 극심한 양극화 경고',
+    summary: '2026년 9월 분양 성수기에 전국 3만4천여 가구가 쏟아지지만, 서울과 지방의 청약 양극화가 극에 달하고 있다. 수도권 로또 청약 vs 지방 미분양 이중 구도의 실체를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-29',
+    title_en: 'Fall New Housing Supply Hits 34,000 Units, But Seoul Requires 300M KRW Cash: Severe Regional Polarization Warning',
+    summary_en: 'As South Korea\'s fall housing supply season arrives with 34,000 units in September 2026, the gap between Seoul and provincial markets has reached alarming levels. The polarization between metropolitan lottery-style subscriptions and regional unsold inventory is intensifying.'
+  },
+  {
+    id: 360,
+    url: 'article_20260929_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '서울 정비사업 80조 시장 \'각축전\'…9월 시공사 선정 러시, 누가 웃을까?',
+    summary: '서울 재개발·재건축 시장이 80조원 규모의 정비사업 수주전으로 뜨겁게 달아오르고 있다. 9월을 전후해 주요 구역에서 시공사 선정 일정이 집중되는 가운데, 통합재건축 지연과 조합 갈등 이슈도 주목된다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-29',
+    title_en: 'Seoul\'s 80 Trillion KRW Redevelopment Market Heats Up: September Construction Company Selection Rush',
+    summary_en: 'Seoul\'s redevelopment and reconstruction market is embroiled in fierce competition for a massive 80 trillion KRW project pipeline. As multiple districts schedule contractor selection in September, integrated reconstruction delays and internal disputes remain key variables.'
+  },
+  {
     id: 359,
     url: 'article_20260929_1_renewal_right_v2.html',
     category: '정책',
