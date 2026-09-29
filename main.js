@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 359,
+    url: 'article_20260929_1_renewal_right_v2.html',
+    category: '정책',
+    title: '계약갱신청구권 행사 시기와 거절 사유 \u2014 증액 상한 5% 계산',
+    summary: '계약갱신청구권은 만료 6개월 전부터 2개월 전까지 한 번, 2년 단위로 행사한다. 집주인이 거절할 수 있는 9가지 사유, 보증금·월세 5% 증액 상한의 계산 예시, 실거주 거절 후 손해배상과 묵시적 갱신의 차이를 주택임대차보호법 조문 순서로 해설했다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-29',
+    title_en: 'Contract Renewal Right in Korea: Timing, Refusal Grounds and the 5% Rent Cap',
+    summary_en: 'How Korea\'s tenant renewal right works: the 6-to-2-month window, nine landlord refusal grounds, 5% cap calculations, and damages when a landlord refuses for owner-occupancy.'
+  },
+  {
     id: 358,
     url: 'article_20260928_1_market_v2.html',
     category: '시장동향',
