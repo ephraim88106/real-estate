@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 362,
+    url: 'article_20260930_1_price-cap-residency_v2.html',
+    category: '분양',
+    title: '분양가상한제 거주의무 기간 \u2014 분양가 비율별 조건과 위반 시 조치',
+    summary: '분양가상한제 적용 주택의 거주의무 기간이 택지 종류와 분양가·인근 시세 비율에 따라 어떻게 정해지는지, 2024년 개정으로 생긴 최대 3년 유예와 위반 시 조치를 주택법 기준으로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-30',
+    title_en: 'Price-Cap Housing Residency Obligation Period \u2014 Tiers by Price Ratio and Penalties',
+    summary_en: 'How the residency obligation for price-capped new apartments is set by land type and sale-price-to-market ratio, what the 2024 amendment changed, and what happens on violation.'
+  },
+  {
     id: 361,
     url: 'article_20260929_1_subscription_v2.html',
     category: '분양',
