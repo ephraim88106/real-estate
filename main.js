@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 364,
+    url: 'article_20260930_1_investment_v2.html',
+    category: '투자',
+    title: '서울 아파트 경매 낙찰가율 90% 붕괴…"지금이 역발상 투자 타이밍인가?"',
+    summary: '서울 아파트 경매 낙찰가율이 89.3%로 90%를 하회하며 시장에 냉각 신호를 보내고 있다. 고가·대형 평수 아파트는 유찰이 속출하는 반면, 15억 미만 중저가는 여전히 경쟁이 치열하다. 역발상 투자의 기회와 권리분석 리스크를 함께 짚어본다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-30',
+    title_en: 'Seoul Apartment Auction Clearance Rate Drops Below 90%—Is Now the Time for Contrarian Investment?',
+    summary_en: 'Seoul\'s apartment auction clearance rate has fallen to 89.3%, signaling market cooling. While high-end units see frequent failures, mid-low priced apartments remain competitive. This article examines contrarian investment opportunities and title deed risks.'
+  },
+  {
+    id: 363,
+    url: 'article_20260930_2_overseas_v2.html',
+    category: '해외',
+    title: '일본 부동산, 상승의 끝인가 새로운 시작인가…한국인 투자자가 주목해야 할 3가지 변화',
+    summary: '2026년 일본은행의 금리 인상과 엔화 강세 전환으로 일본 부동산 시장이 전환점을 맞이했다. 도심 고점 논란 속에 후쿠오카 등 지방 도시와 빈집(아키야) 투자가 새로운 대안으로 부상하고 있다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-09-30',
+    title_en: 'Japan Real Estate: End of the Rise or New Beginning? 3 Key Changes Korean Investors Must Watch',
+    summary_en: 'Japan\'s BOJ rate hike and yen strengthening have brought Japanese real estate to an inflection point. Regional cities like Fukuoka and vacant house (akiya) investments are emerging as alternatives for Korean investors.'
+  },
+  {
     id: 362,
     url: 'article_20260930_1_price-cap-residency_v2.html',
     category: '분양',
