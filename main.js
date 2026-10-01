@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 365,
+    url: 'article_20261001_1_cash-settlement_v2.html',
+    category: '재개발',
+    title: '현금청산 대상 조건 — 청산 절차 순서와 지연이자 얼마',
+    summary: '재개발·재건축에서 현금청산 대상이 되는 네 가지 조건과 협의 90일·재결 신청 60일 절차, 5·10·15% 지연이자 구간을 도시정비법 제72·73조 중심으로 해설한다. 청산금 평가 시점과 실수요자 체크 항목도 함께 짚는다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-01',
+    title_en: 'Cash Settlement Eligibility in Korean Redevelopment — Procedure and Late-Payment Interest',
+    summary_en: 'Explains the four conditions that make an owner a cash-settlement subject under the Urban Redevelopment Act, the 90-day negotiation and 60-day expropriation or lawsuit deadlines, and the 5/10/15% late-interest tiers.'
+  },
+  {
     id: 364,
     url: 'article_20260930_1_investment_v2.html',
     category: '투자',
