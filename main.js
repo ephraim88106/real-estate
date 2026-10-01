@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 367,
+    url: 'article_20261001_1_column_v2.html',
+    category: '칼럼',
+    title: '공급 절벽 시대의 역설: "집이 없어서 오르나, 돈이 많아서 오르나"',
+    summary: '수도권 집값 19개월 연속 상승의 이면을 해부한다. 공급 절벽론과 유동성 과잉론의 두 진단을 비교하고 실수요자와 투자자를 위한 현실적 시사점을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-01',
+    title_en: 'The Paradox of a Supply Cliff: Do Prices Rise Because of Shortage, or Excess Liquidity?',
+    summary_en: 'Analyzing the two competing theories behind 19 consecutive months of price increases in the Seoul metro area, with practical implications for buyers and investors.'
+  },
+  {
+    id: 366,
+    url: 'article_20261001_2_market_v2.html',
+    category: '시장동향',
+    title: '19개월 연속 상승에도 거래는 줄었다 — 수도권 집값의 \'이상한 계절\'',
+    summary: '집은 안 팔리는데 가격은 오른다. 10월 서울 최대 입주 물량, 10억 이하 거래 급증, 지방 침체 양극화까지 2026년 4분기 부동산 시장의 핵심 지표를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-01',
+    title_en: '19 Consecutive Months of Gains Despite Falling Transactions — Seoul Real Estate\'s \'Strange Season\'',
+    summary_en: 'Prices rise while volumes drop. Analyzing October\'s record supply, the 1 billion KRW price segment surge, and regional polarization in Q4 2026.'
+  },
+  {
     id: 365,
     url: 'article_20261001_1_cash-settlement_v2.html',
     category: '재개발',
