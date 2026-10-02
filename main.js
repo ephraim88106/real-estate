@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 370,
+    url: 'article_20261002_1_policy_v2.html',
+    category: '정책',
+    title: '스트레스 DSR 3단계·25억 초과 주담대 2억 한도 — 2026년 하반기 대출규제 완전해부',
+    summary: '스트레스 DSR 3단계 시행으로 대출한도가 줄고, 25억 초과 주택 주담대가 2억 원으로 제한됐다. 실수요자와 투자자 각각의 대응 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-02',
+    title_en: 'Complete Analysis of 2026 H2 Mortgage Regulations — Stress DSR Phase 3 & 200M Cap on High-End Homes',
+    summary_en: 'With Stress DSR Phase 3 in effect and mortgage caps on homes over 2.5B won, buyers face stricter limits. We analyze strategies for both end-users and investors.'
+  },
+  {
+    id: 369,
+    url: 'article_20261002_2_subscription_v2.html',
+    category: '분양',
+    title: '10월 4.6만 가구 쏟아진다! 고덕강일3단지·경희궁에피트·3기신도시 — 2026 가을 청약 대전',
+    summary: '2026년 10월 전국 4만5691가구 분양 물량이 쏟아진다. 고덕강일3단지 3억대 토지임대부, 경희궁에피트, 3기 신도시 물량별 청약 전략을 총정리했다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-02',
+    title_en: '46,000 Units Hit the Market in October — Godeok Gangil, Gyeonghuigung Epeat & 3rd New City Subscription Guide',
+    summary_en: 'A record 45,691 units flood the market in October 2026. From the 300M-won land-lease Godeok Gangil to 3rd New City projects, we break down the best subscription strategies.'
+  },
+  {
     id: 368,
     url: 'article_20261002_1_priority-repayment_v2.html',
     category: '투자',
