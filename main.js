@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 368,
+    url: 'article_20261002_1_priority-repayment_v2.html',
+    category: '투자',
+    title: '소액임차인 최우선변제금 얼마 — 지역별 한도와 배당 순서',
+    summary: '서울 1억 6,500만 원 이하 보증금에 5,500만 원까지 최우선변제되는 소액임차인 제도를 지역별 한도, 주택가액 1/2 제한 계산, 배당 순서로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-02',
+    title_en: 'Small Tenant Priority Repayment in Korea — Regional Limits and Distribution Order',
+    summary_en: 'Explains the small-tenant priority repayment: Seoul deposits up to 165M KRW qualify for up to 55M KRW, the one-half-of-property-value cap, and the auction distribution order.'
+  },
+  {
     id: 367,
     url: 'article_20261001_1_column_v2.html',
     category: '칼럼',
