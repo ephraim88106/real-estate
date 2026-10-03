@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 371,
+    url: 'article_20261003_1_australia_firb_v2.html',
+    category: '해외',
+    title: '호주 외국인 주택 구매 조건 — FIRB 승인 절차와 신규주택 제한',
+    summary: '호주에서 외국인이 주택을 사려면 FIRB 승인이 필요하며, 2025년 4월부터 중고주택 취득은 원칙적으로 금지됐다. 신규주택 신청 절차와 수수료, 주별 외국인 추가 인지세를 공식 자료 기준으로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-03',
+    title_en: 'Buying Property in Australia as a Foreigner — FIRB Approval Process and New Dwelling Restrictions',
+    summary_en: 'Foreigners need FIRB approval to buy Australian residential property, and purchases of established dwellings have been generally banned since April 2025. We explain the application process, fees and state foreign-buyer stamp duty surcharges.'
+  },
+  {
     id: 370,
     url: 'article_20261002_1_policy_v2.html',
     category: '정책',
