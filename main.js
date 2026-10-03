@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 373,
+    url: 'article_20261003_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '분당 선도지구 재건축 본격화! 지금 선도지구 사야 하나, 후속 단지를 선점해야 하나',
+    summary: '분당 4개 선도지구의 재건축이 사업시행자 지정과 설계 공모를 마치고 본격화 단계에 접어들었다. 선도지구 프리미엄이 이미 반영된 지금, 투자자는 선도지구를 매수할지 아니면 후속 정비단지를 선점할지 전략적 판단이 필요한 시점이다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-03',
+    title_en: 'Bundang Pilot District Redevelopment Accelerates – Is Now the Real Opportunity? Investment Strategy for Pilot Districts vs Follow-on Projects',
+    summary_en: 'Bundang\'s four pilot districts have entered full swing after business executor designations and design competitions. With pilot district premiums already priced in, investors must strategically decide whether to buy into pilot districts or get ahead of follow-on projects.'
+  },
+  {
+    id: 372,
+    url: 'article_20261003_2_auction-investment_v2.html',
+    category: '투자',
+    title: '규제 피해 경매로 몰리는 사람들, 비아파트 매각가율 5년 최저…진짜 기회인가 함정인가?',
+    summary: '정부의 아파트 대출 규제를 피하려는 수요가 경매와 비아파트 시장으로 몰리고 있지만, 정작 비아파트 경매 매각가율은 5년 만에 최저치를 기록하고 있다. 무조건적인 규제 회피 투자보다는 옥석 가리기가 필요한 시점이다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-03',
+    title_en: 'Crowds Flee to Auctions to Dodge Regulations, But Non-Apartment Auction Sale Rates Hit 5-Year Low – Real Opportunity or Trap?',
+    summary_en: 'Demand fleeing apartment lending regulations is flooding into auctions and non-apartment markets, yet non-apartment auction sale ratios have hit a five-year low. Rather than blindly avoiding regulations, investors need to separate winners from losers.'
+  },
+  {
     id: 371,
     url: 'article_20261003_1_australia_firb_v2.html',
     category: '해외',
