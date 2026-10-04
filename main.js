@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 374,
+    url: 'article_20261004_1_long_term_repair_fund_v2.html',
+    category: '칼럼',
+    title: '장기수선충당금 뜻 — 세입자 반환 조건과 월 부과액 얼마',
+    summary: '장기수선충당금은 소유자가 부담하는 대규모 수선 적립금이지만 관리비에 합산되어 세입자가 먼저 내는 경우가 많다. 공동주택관리법 시행령의 산정식과 월 부과액 예시, 퇴거 시 반환 청구 조건을 해설한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-04',
+    title_en: 'Long-Term Repair Reserve Fund Explained – Tenant Refund Conditions and Monthly Charge',
+    summary_en: 'The long-term repair reserve is legally the owner\'s cost but is often paid by tenants through maintenance bills. This column explains the statutory formula, a worked monthly example, and how tenants claim a refund at move-out.'
+  },
+  {
     id: 373,
     url: 'article_20261003_1_redevelopment_v2.html',
     category: '재개발',
