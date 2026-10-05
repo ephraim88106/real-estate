@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 377,
+    url: 'article_20261005_1_market_v2.html',
+    category: '시장동향',
+    title: '86주 연속 상승의 끝인가?…서울 아파트 시장, 강남·용산 하락에 \'흔들\'',
+    summary: '서울 아파트값이 역대 최장 86주 연속 상승을 기록했지만, 강남 3구와 용산까지 하락 전환되며 안정화 조짐. 매물 증가와 고가 주택 조정이 시작된 지금, 시장 전환점의 신호를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-05',
+    title_en: 'Is the 86-Week Rise Over? Seoul Apartment Market Shaken as Gangnam and Yongsan Turn Negative',
+    summary_en: 'Seoul apartment prices hit a record 86 consecutive weeks of gains, but Gangnam and Yongsan have now reversed. As listings pile up and premium properties cool, analysts say the market has reached a pivotal turning point.'
+  },
+  {
+    id: 376,
+    url: 'article_20261005_2_policy_v2.html',
+    category: '정책',
+    title: '25억 초과 주택 대출 2억 한도…주담대 규제 폭탄, 실수요자는 어디로?',
+    summary: '금융위원회가 서울·경기 12개 지역 25억 원 초과 고가주택에 주담대를 2억 원으로 제한하는 초강력 규제를 시행했다. 스트레스 DSR 3단계와 맞물려 부동산 시장 전반에 미치는 충격을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-05',
+    title_en: 'Mortgage Cap of 200M KRW on Homes Over 2.5B: Where Do Real Buyers Go Now?',
+    summary_en: 'South Korea\'s Financial Services Commission has capped mortgage loans at 200 million KRW for homes worth over 2.5 billion in 12 Seoul and Gyeonggi districts. Combined with Stress-DSR Phase 3, the new rules fundamentally reshape access to high-end real estate.'
+  },
+  {
     id: 375,
     url: 'article_20261005_1_price_index_difference_v2.html',
     category: '시장동향',
