@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 375,
+    url: 'article_20261005_1_price_index_difference_v2.html',
+    category: '시장동향',
+    title: '한국부동산원 KB 주택가격지수 차이 — 조사 방식과 표본 규모 비교',
+    summary: '같은 주에 한국부동산원과 KB부동산이 다른 집값 변동률을 내는 이유를 해설한다. 조사자 직접 조사와 중개업소 입력 시세의 차이, 제본스·칼리 등 지수 산식, 신고 시차가 있는 실거래가격지수까지 세 통계를 읽는 법을 짚는다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-05',
+    title_en: 'Korea Real Estate Board vs KB Price Index: Survey Method and Sample Size',
+    summary_en: 'Why the Korea Real Estate Board and KB report different home price changes in the same week: surveyor-based pricing versus broker-submitted quotes, index formulas, and the reporting lag of the transaction-based index.'
+  },
+  {
     id: 374,
     url: 'article_20261004_1_long_term_repair_fund_v2.html',
     category: '칼럼',

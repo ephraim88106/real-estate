@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국부동산원 KB 주택가격지수 차이 — 조사 방식과 표본 규모 비교 | 부동산인사이트</title>
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261005_1_price_index_difference_v2">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261005_1_price_index_difference_v2">
+<meta property="og:title" content="한국부동산원 KB 주택가격지수 차이 — 조사 방식과 표본 규모 비교">
+<meta name="description" content="한국부동산원 주택가격동향조사와 KB부동산 매매가격지수가 같은 시기에 다른 숫자를 내는 이유를 조사 주체, 표본, 지수 산식, 실거래가격지수와의 차이로 해설한다.">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:#f5f5f5;color:#222}
+header{background:#0D2B55;padding:0 24px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:'Noto Serif KR',serif;font-size:1.4rem;color:#fff;text-decoration:none}
+.logo span{color:#F4A52D}
+nav{display:flex;gap:24px}
+nav a{color:#ccc;text-decoration:none;font-size:.9rem;transition:color .2s}
+nav a:hover{color:#F4A52D}
+.hero{background:linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%);padding:64px 24px;color:#fff}
+.hero-inner{max-width:1200px;margin:0 auto}
+.category-tag{display:inline-block;background:#1A4D8F;border:1px solid rgba(255,255,255,.4);color:#fff;padding:4px 14px;border-radius:20px;font-size:.8rem;margin-bottom:16px}
+.hero h1{font-family:'Noto Serif KR',serif;font-size:2.1rem;line-height:1.45;margin-bottom:16px;text-shadow:0 2px 8px rgba(0,0,0,.3)}
+.hero-meta{font-size:.85rem;color:#ddd;display:flex;gap:16px;flex-wrap:wrap}
+.container{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 300px;gap:32px}
+@media(max-width:900px){.container{grid-template-columns:1fr}.sidebar{order:-1}}
+article{background:#fff;border-radius:8px;padding:36px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
+.data-card{background:#e8f0fa;border-radius:8px;padding:18px;text-align:center;border-top:3px solid #1A4D8F}
+.data-card .num{font-family:'Noto Serif KR',serif;font-size:1.7rem;font-weight:700;color:#1A4D8F}
+.data-card .label{font-size:.8rem;color:#666;margin-top:6px}
+@media(max-width:600px){.data-grid{grid-template-columns:1fr}}
+article h2{font-family:'Noto Serif KR',serif;font-size:1.3rem;color:#1a1a1a;margin:32px 0 12px;padding-left:14px;border-left:4px solid #1A4D8F}
+article p{line-height:1.9;color:#333;margin-bottom:16px;font-size:.97rem}
+.quote-box{background:#eef3fa;border-left:4px solid #1A4D8F;padding:20px 24px;margin:24px 0;border-radius:0 8px 8px 0}
+.quote-box p{font-family:'Noto Serif KR',serif;font-style:italic;color:#12386b;line-height:1.8;margin-bottom:0}
+.quote-box cite{display:block;font-size:.82rem;color:#1A4D8F;margin-top:8px;font-style:normal}
+article ul{margin:16px 0 16px 20px}
+article ul li{line-height:1.9;color:#333;margin-bottom:6px;font-size:.97rem}
+.sidebar{display:flex;flex-direction:column;gap:24px}
+.sidebar-card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.sidebar-card h3{font-family:'Noto Serif KR',serif;font-size:1rem;color:#0D2B55;border-bottom:2px solid #1A4D8F;padding-bottom:8px;margin-bottom:14px}
+.summary-list{list-style:none;padding:0}
+.summary-list li{padding:6px 0;border-bottom:1px solid #e8f0fa;font-size:.88rem;color:#333;line-height:1.6}
+.summary-list li:last-child{border-bottom:none}
+.summary-list li::before{content:"▶ ";color:#1A4D8F;font-size:.75rem}
+.related-list{list-style:none;padding:0}
+.related-list li{padding:8px 0;border-bottom:1px solid #eee;font-size:.87rem}
+.related-list li:last-child{border-bottom:none}
+.related-list a{color:#0D2B55;text-decoration:none;line-height:1.5}
+.related-list a:hover{color:#1A4D8F;text-decoration:underline}
+.risk-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.risk-item{padding:10px;border-radius:6px;font-size:.82rem;line-height:1.5}
+.risk-ok{background:#eef3fa;border:1px solid #a9c1e3;color:#12386b}
+.risk-warn{background:#fff8e1;border:1px solid #ffe082;color:#7a5c00}
+.risk-item strong{display:block;margin-bottom:4px;font-size:.85rem}
+.disclaimer{background:#f5f5f5;border:1px solid #ddd;border-radius:6px;padding:16px;margin-top:32px;font-size:.82rem;color:#777;line-height:1.7}
+footer{background:#0D2B55;color:#aaa;padding:32px 24px;text-align:center;font-size:.85rem}
+footer strong{color:#F4A52D}
+.fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+@media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+</style>
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-vH50HcSMSOmwFD8o"
+    data-ad-width = "160"
+    data-ad-height = "600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-c1XP1iKah32kfdAU"
+    data-ad-width = "728"
+    data-ad-height = "90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">시장동향</span>
+    <h1>한국부동산원 KB 주택가격지수 차이 — 조사 방식과 표본 규모 비교</h1>
+    <div class="hero-meta">
+      <span>부동산인사이트 편집팀</span>
+      <span>2026년 10월 5일</span>
+      <span>#주택가격지수 #한국부동산원 #KB부동산 #실거래가격지수</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+    <div class="data-grid">
+      <div class="data-card"><div class="num">전문조사</div><div class="label">한국부동산원<br>조사자가 직접 가격 조사</div></div>
+      <div class="data-card"><div class="num">중개업소</div><div class="label">KB부동산<br>입력 시세를 검증해 산출</div></div>
+      <div class="data-card"><div class="num">신고 거래</div><div class="label">실거래가격지수<br>계약 후 신고된 거래 기반</div></div>
+    </div>
+
+    <p>뉴스에서 "이번 주 서울 집값 0.2% 상승"이라는 보도가 나오면 그 숫자가 어느 기관 통계인지부터 확인해야 한다. 같은 주, 같은 지역인데 한국부동산원은 상승폭이 작다고 하고 KB부동산은 더 크다고 발표하는 일이 드물지 않다. 어느 한쪽이 틀린 것이 아니라 조사 주체, 표본, 계산식이 서로 다르기 때문이다.</p>
+    <p>이 글은 대표적인 세 가지 가격 통계, 곧 한국부동산원 주택가격동향조사, KB부동산 매매가격지수, 그리고 신고된 거래로 만드는 실거래가격지수가 어떻게 다른지 해설한다. 표본 수 등 구체적 수치는 언론 보도와 기관 공개 자료의 시점별 값이라 바뀔 수 있으므로, 최신 값은 각 기관 통계 사이트에서 확인해야 한다.</p>
+
+    <h2>1. 한국부동산원 주택가격동향조사</h2>
+    <p>한국부동산원은 부동산원법에 근거해 전국 주택가격동향조사를 수행하는 공적 통계 기관이다. 조사자가 표본 주택을 대상으로 가격을 직접 조사해 입력하는 방식을 택한다. 중개업소 호가에 그대로 기대지 않고 실거래 사례와 주변 시세 정보를 함께 참고해 조사자가 판단한다는 점이 특징이다. 주간 조사와 월간 조사가 있으며, 정부 부동산 정책을 판단하는 공식 지표로 가장 많이 인용된다.</p>
+    <p>표본 규모는 2023년 언론 보도 기준으로 약 3만 3천 개 안팎으로 알려졌다. 표본이 정해져 있어도 조사 시점에 실제로 거래된 주택은 극히 일부다. 거래가 없는 표본의 가격은 조사자의 판단으로 채워지므로, 거래가 뜸한 시기일수록 지수가 실제 시장을 늦게 반영한다는 지적이 따른다.</p>
+
+    <h2>2. KB부동산 매매가격지수</h2>
+    <p>KB국민은행이 발표하는 KB부동산 시세는 전국 공인중개사무소가 입력한 시세 정보를 바탕으로 자체 검증을 거쳐 산출한다. 보도 기준으로 표본 수가 약 6만 2천 개로 한국부동산원보다 많은 것으로 알려져 있다. 시세의 출발점이 중개업소의 호가와 거래 정보라는 점에서 시장 분위기를 빠르게 반영하는 장점이 있다.</p>
+    <p>반면 호가는 매도자의 희망가격이 섞여 있어 상승기에는 과대, 하락기에는 과소 반영될 수 있다. KB 시세는 대출 담보평가의 기준 자료로 쓰이는 경우가 많아 금융권에서 영향력이 크다. 같은 단지라도 KB 시세와 실거래가가 다른 이유가 여기에 있다.</p>
+
+    <div class="quote-box">
+      <p>"두 통계는 같은 시장을 다른 각도에서 찍은 사진이다. 한쪽은 조사자의 눈으로, 다른 쪽은 중개업소의 입으로 가격을 읽는다."</p>
+      <cite>— 편집팀 해설</cite>
+    </div>
+
+    <h2>3. 지수 산식의 차이</h2>
+    <p>표본이 같아도 지수를 만드는 산식이 다르면 결과가 달라진다. 보도에 따르면 한국부동산원은 가격 비율의 기하평균을 쓰는 제본스(Jevons) 방식, KB부동산은 가격 비율의 산술평균을 쓰는 칼리(Carli) 방식, 부동산R114는 표본 가격 총합의 비율을 쓰는 튜토(Tuto) 방식을 활용한다고 알려져 있다.</p>
+    <ul>
+      <li><strong>기하평균(제본스):</strong> 개별 주택의 가격 변동률을 곱해 제곱근을 취하므로 일부 급등 표본의 영향이 상대적으로 작다.</li>
+      <li><strong>산술평균(칼리):</strong> 변동률을 단순 평균하므로 급등한 표본이 있으면 지수가 더 크게 움직인다.</li>
+      <li><strong>총합 비율(튜토):</strong> 가격 수준이 높은 고가 주택의 비중이 지수에 크게 반영된다.</li>
+      <li><strong>해석:</strong> 상승기에는 산술평균 계열 지수가 기하평균 계열보다 높게 나오는 경향이 있다.</li>
+    </ul>
+    <p>다만 각 기관의 현행 산식과 가중치는 개편될 수 있으므로, 비교할 때는 기관의 최신 통계 설명서를 함께 확인하는 것이 안전하다.</p>
+
+    <h2>4. 실거래가격지수는 무엇이 다른가</h2>
+    <p>한국부동산원은 조사 지수 외에 실거래가격지수도 발표한다. 계약 후 신고된 실제 거래 자료를 바탕으로 같은 주택의 거래 가격 변화를 반영하는 방식이다. 호가나 조사자 판단이 개입하지 않아 객관적이지만, 두 가지 약점이 있다. 하나는 신고 시차로, 매매계약 체결일부터 30일 이내에 신고하면 되므로 최근 계약은 일정 기간 뒤에야 통계에 들어온다. 다른 하나는 거래가 없는 달의 공백이다. 거래량이 급감한 시기에는 표본이 적어 지수 변동성이 커질 수 있다.</p>
+
+    <div class="quote-box">
+      <p>"빠른 통계는 부정확할 위험이 크고, 정확한 통계는 늦다. 세 지수를 함께 보는 이유다."</p>
+      <cite>— 편집팀 해설</cite>
+    </div>
+
+    <h2>5. 세 통계를 비교하면</h2>
+    <ul>
+      <li><strong>한국부동산원 조사 지수:</strong> 공적 통계, 정책 판단 기준, 조사자 판단 개입, 반영 속도는 중간</li>
+      <li><strong>KB 매매가격지수:</strong> 민간 통계, 금융권 담보평가 활용, 중개업소 입력 정보 기반, 반영 속도는 빠른 편</li>
+      <li><strong>실거래가격지수:</strong> 신고 거래 기반, 객관성이 높고 시차가 큼</li>
+      <li><strong>공통 한계:</strong> 모두 평균적 흐름만 보여주며 특정 단지의 가격을 대신하지 못한다</li>
+    </ul>
+
+    <h2>6. 숫자를 읽을 때 주의할 점</h2>
+    <p>첫째, 주간 변동률은 표본 오차가 커서 한두 주의 차이에 의미를 부여하기 어렵다. 둘째, 변동률과 가격 수준을 혼동하면 안 된다. 지수는 기준 시점 대비 상대적 변화이지 평균 가격 그 자체가 아니다. 셋째, 지역 범위와 주택 유형이 다르면 비교 자체가 성립하지 않는다. 서울 전체와 강남권, 아파트와 전체 주택 지수는 서로 다른 숫자다. 넷째, 기사에 인용된 기관과 조사 기준일을 확인하지 않으면 서로 다른 통계를 한 문장에 섞어 오독하기 쉽다.</p>
+
+    <h2>7. 실수요자·투자자 시사점</h2>
+    <ul>
+      <li>기사나 보고서의 집값 숫자는 먼저 발표 기관과 조사 기준일부터 확인한다.</li>
+      <li>시장 분위기는 KB 지수로, 정책 판단 기준은 부동산원 지수로, 실제 체결 가격은 실거래가로 구분해 본다.</li>
+      <li>매수 판단에는 단지 단위 실거래가 추이를 지수보다 우선해서 본다.</li>
+      <li>대출 한도와 직결되는 담보 시세는 금융기관이 어느 자료를 쓰는지 사전에 문의한다.</li>
+      <li>주간 변동률은 한두 주 단위가 아니라 4주 이상 이동 추세로 해석한다.</li>
+    </ul>
+
+    <h2>결론</h2>
+    <p>한국부동산원과 KB의 숫자가 다른 것은 오류가 아니라 설계의 차이다. 조사 주체, 표본, 산식, 신고 시차를 알고 나면 같은 주의 서로 다른 발표를 모순 없이 읽을 수 있다. 어느 지수가 맞느냐가 아니라 어느 질문에 어느 지수가 맞느냐를 묻는 것이 올바른 접근이다.</p>
+
+    <div class="disclaimer">본 글은 한국부동산원 및 KB부동산 공개 자료와 언론 보도(2023년 보도 포함)를 바탕으로 한 일반 정보입니다. 표본 수, 산식, 발표 주기는 각 기관의 개편에 따라 달라질 수 있으며 투자 권유가 아닙니다. 최신 내용은 한국부동산원 부동산통계정보(R-ONE)와 KB부동산 통계에서 확인하시기 바랍니다.</div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>핵심 요약</h3>
+      <ul class="summary-list">
+        <li>부동산원은 조사자가 직접 가격 조사</li>
+        <li>KB는 중개업소 입력 시세를 검증해 산출</li>
+        <li>산식이 다르면 같은 표본도 다른 결과</li>
+        <li>실거래가격지수는 객관적이나 신고 시차 존재</li>
+        <li>기관·기준일·지역을 먼저 확인할 것</li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h3>관련 기사</h3>
+      <ul class="related-list">
+        <li><a href="article_20260810_1_actual_price_v2">실거래가 조회 방법과 호가 차이</a></li>
+        <li><a href="article_20260831_1_jeonse-ratio_v2">전세가율 해설</a></li>
+        <li><a href="article_20260907_1_housing-supply-ratio_v2">주택보급률 뜻과 산정식</a></li>
+        <li><a href="article_20261004_1_long_term_repair_fund_v2">장기수선충당금 뜻</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-card">
+      <h3>통계 확인처</h3>
+      <div class="risk-grid">
+        <div class="risk-item risk-ok"><strong>R-ONE</strong>한국부동산원 통계</div>
+        <div class="risk-item risk-ok"><strong>KB통계</strong>KB부동산 월간 동향</div>
+        <div class="risk-item risk-warn"><strong>실거래가</strong>국토부 공개시스템</div>
+        <div class="risk-item risk-warn"><strong>주의</strong>기준일 반드시 확인</div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> — 데이터와 현장이 만나는 부동산 분석 미디어<br>
+  <small style="margin-top:8px;display:block">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</small>
+</footer>
+</body>
+</html>
