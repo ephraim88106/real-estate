@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 380,
+    url: 'article_20261006_1_subscription_v2.html',
+    category: '분양',
+    title: '분양가 폭등 시대, 분양가 상한제 단지에 청약자 몰린다 — 2026년 10월 핵심 분양 일정 완전 분석',
+    summary: '2026년 10월 분양가 상한제 단지에 청약자가 집중되고 있다. 시세 대비 31% 저렴한 분상제, 평균 142:1의 경쟁률, 10월 1만 5천 가구 분양 예정 물량까지 핵심 청약 전략과 가점 활용법을 완전 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-06',
+    title_en: 'In the Era of Soaring Prices, Buyers Flock to Price-Controlled Apartments',
+    summary_en: 'In October 2026, apartment subscription demand concentrates on price-capped units. With 31% below market price and average competition of 142:1, complete analysis of subscription strategies for 15,000 planned units.'
+  },
+  {
+    id: 379,
+    url: 'article_20261006_2_reconstruction_v2.html',
+    category: '재개발',
+    title: '서울 재건축 골든타임 진입 — 은마·개포·압구정, 2026년 관리처분 인가 줄줄이 예정',
+    summary: '서울 강남권 재건축 단지들이 관리처분인가 단계에 일제히 도달하고 있다. 은마아파트, 개포주공 6·7단지, 압구정 현대 핵심 사업 현황과 분담금 리스크를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-06',
+    title_en: 'Seoul Reconstruction Enters Golden Hour — Eunma, Gaepodong, Apgujeong Management Approvals Lined Up',
+    summary_en: 'Major Gangnam reconstruction projects reach the pivotal management disposition approval stage. In-depth analysis of Eunma, Gaepo Public Housing 6&7, and Apgujeong Hyundai timelines and financial risks.'
+  },
+  {
     id: 378,
     url: 'article_20261006_1_didimdol_income_v2.html',
     category: '정책',
