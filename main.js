@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 378,
+    url: 'article_20261006_1_didimdol_income_v2.html',
+    category: '정책',
+    title: '디딤돌대출 소득 얼마까지 — 연소득 구간과 순자산 판정',
+    summary: '내집마련 디딤돌대출의 부부합산 연소득 구간, 주택가격·면적 상한, 순자산 한도, 대출 한도와 신청 시점을 제도 구조 중심으로 해설합니다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-06',
+    title_en: 'Didimdol Loan Income Limits — Income Bands and Net Asset Test',
+    summary_en: 'How Korea\'s Didimdol home-purchase loan screens applicants: household income bands, price and size caps, net asset limit, loan ceiling and application window.'
+  },
+  {
     id: 377,
     url: 'article_20261005_1_market_v2.html',
     category: '시장동향',
