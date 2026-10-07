@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 381,
+    url: 'article_20261007_1_interim_loan_v2.html',
+    category: '분양',
+    title: '중도금대출 얼마까지 — HUG 보증 12억 조건과 잔금대출 전환 절차',
+    summary: '분양 계약 후 받는 중도금대출은 통상 분양가의 60% 이내에서 실행되며, HUG 보증은 분양가 12억 원 이하만 가능하다. DSR 예외 여부와 잔금대출 전환 시 6억 원 한도 적용 조건을 2026년 10월 기준으로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-07',
+    title_en: 'Interim Payment Loans in Korea: HUG Guarantee Cap of KRW 1.2B and Conversion to Final Payment Loans',
+    summary_en: 'Interim payment loans typically cover up to 60% of the sale price, HUG guarantees apply only to prices up to KRW 1.2 billion, and the final payment loan stage faces tighter limits depending on the notice date.'
+  },
+  {
     id: 380,
     url: 'article_20261006_1_subscription_v2.html',
     category: '분양',
