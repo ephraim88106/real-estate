@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 383,
+    url: 'article_20261007_1_investment_v2.html',
+    category: '투자',
+    title: '서울 경매 낙찰가율 100% 4개월 연속 — 지금 뛰어들어야 하나, 기다려야 하나?',
+    summary: '서울 아파트 경매 낙찰가율이 4개월 연속 100%를 웃돌고 있다. 소형 아파트는 113%까지 치솟은 과열 시장에서 진짜 투자 기회와 함정을 냉정하게 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-07',
+    title_en: 'Seoul Apartment Auction Bid Rate Exceeds 100% for 4 Months Straight — Buy Now or Wait?',
+    summary_en: 'Seoul apartment auction bid rates have exceeded 100% for four consecutive months. This article coldly analyzes real investment opportunities and traps in an overheated market.'
+  },
+  {
+    id: 382,
+    url: 'article_20261007_2_overseas_v2.html',
+    category: '해외',
+    title: '"도쿄 아파트, 우리도 사볼까?" — 엔화 강세 이후에도 한국인 투자 열기가 식지 않는 이유',
+    summary: '도쿄 아파트 시세가 버블 이전 최고가를 갱신한 지금도 한국인 투자자들의 관심이 식지 않는다. 환율 리스크와 세금 구조, 오사카·후쿠오카 대안까지 종합 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-07',
+    title_en: '"Should We Buy a Tokyo Apartment?" — Why Korean Investor Interest in Japan Persists Even After Yen Appreciation',
+    summary_en: 'Tokyo apartment prices have surpassed pre-bubble highs, yet Korean investors continue to show strong interest in Japan. This analysis covers exchange rate risks, tax structures, and alternatives like Osaka and Fukuoka.'
+  },
+  {
     id: 381,
     url: 'article_20261007_1_interim_loan_v2.html',
     category: '분양',
