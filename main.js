@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 384,
+    url: 'article_20261008_1_membership-transfer_v2.html',
+    category: '재개발',
+    title: '조합원 지위양도 예외 사유 — 투기과열지구 10년 보유·5년 거주와 확인 절차',
+    summary: '투기과열지구에서는 재건축 조합설립인가 후, 재개발 관리처분계획인가 후 매수한 사람이 조합원이 될 수 없다. 법이 인정하는 양도 예외 사유와 매수 전 확인 순서를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-08',
+    title_en: 'Exceptions to the Union Membership Transfer Ban in Speculation Overheated Zones',
+    summary_en: 'In speculation-overheated zones, buyers after union establishment approval (reconstruction) or management disposition approval (redevelopment) cannot become members. This explains the legal exceptions and a pre-purchase checklist.'
+  },
+  {
     id: 383,
     url: 'article_20261007_1_investment_v2.html',
     category: '투자',
