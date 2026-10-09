@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 387,
+    url: 'article_20261009_1_policy_v2.html',
+    category: '정책',
+    title: 'DSR 3단계 강화·가계부채 총량제 충돌 — 대출 규제 전쟁, 실수요자가 최대 피해자다',
+    summary: '2026년 하반기 DSR 3단계 강화와 가계부채 총량제가 동시에 작동하면서 실수요자 대출 창구가 사실상 봉쇄됐다. 정책 의도와 시장 현실의 간극을 전문가 시각으로 냉정하게 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-09',
+    title_en: 'DSR Phase 3 and Household Debt Cap Clash: Real Buyers Are the Biggest Victims',
+    summary_en: 'With DSR Phase 3 tightening and bank household-debt quotas both active in H2 2026, mortgage access for genuine buyers has been virtually shut. This analysis examines the gap between policy intent and market reality.'
+  },
+  {
+    id: 386,
+    url: 'article_20261009_2_subscription_v2.html',
+    category: '분양',
+    title: '10월 전국 3만 가구 쏟아진다 — 청약 양극화 시대, 살아남는 단지 vs 미달 단지 구분법',
+    summary: '2026년 10월 전국 3만 가구 이상이 분양에 나선다. 청약 양극화가 극심한 지금, 어떤 단지를 노려야 하고 어떤 단지는 피해야 하는지 전략적으로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-09',
+    title_en: '30,000 Units Launch Nationwide in October: How to Pick Winners in a Polarized Market',
+    summary_en: 'Over 30,000 apartment units hit the market across South Korea in October 2026. With subscription polarization at its peak, this guide shows which projects to target and which to avoid.'
+  },
+  {
     id: 385,
     url: 'article_20261009_1_auction-deposit_v2.html',
     category: '투자',
