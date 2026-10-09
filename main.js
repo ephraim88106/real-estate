@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 385,
+    url: 'article_20261009_1_auction-deposit_v2.html',
+    category: '투자',
+    title: '입찰보증금 얼마 — 최저매각가격 10% 규정과 재매각 시 보증 비율',
+    summary: '법원 입찰보증금은 최저매각가격의 10분의 1이 원칙이다. 납부 형태, 패찰·낙찰 시 반환 시점, 대금 미납 시 몰수와 재매각 때 달라지는 보증 비율을 법령 순서대로 설명한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-09',
+    title_en: 'Auction Bid Deposit in Korea: The 10% Rule and Higher Deposits on Re-sale',
+    summary_en: 'Korean court auction bid deposits are normally one tenth of the minimum sale price. This explains payment forms, refund timing, forfeiture on non-payment, and deposits at re-sale.'
+  },
+  {
     id: 384,
     url: 'article_20261008_1_membership-transfer_v2.html',
     category: '재개발',
