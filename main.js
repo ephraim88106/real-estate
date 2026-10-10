@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 390,
+    url: 'article_20261010_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '1기 신도시 재건축, 지금 사야 하나? 분당·일산 선도지구 최신 현황과 투자 포인트 완전 분석 #재건축투자 #선도지구',
+    summary: '분당·일산 선도지구가 시공사 선정 단계에 진입했다. 분담금 현실과 사업 속도를 냉정하게 분석해 지금 진입 여부를 점검한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-10',
+    title_en: 'Should You Buy Now? Complete Analysis of 1st New Town Reconstruction Progress and Investment Points',
+    summary_en: 'Bundang and Ilsan lead districts are entering contractor selection. We analyze realistic assessment costs and project schedules for informed investment decisions.'
+  },
+  {
+    id: 389,
+    url: 'article_20261010_2_investment_v2.html',
+    category: '투자',
+    title: '지금 부동산 고수들이 주목하는 3가지 시장 신호 — 2026년 4분기 투자 전략 완전 해설 #부동산투자 #옥석가리기',
+    summary: '경매 낙찰가율 89.4%, 전세가율 62% 회복, 거래량 18% 반등 — 시장이 보내는 3가지 신호와 4분기 실전 투자 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-10',
+    title_en: '3 Market Signals Real Estate Experts Are Watching Now — Q4 2026 Investment Strategy Complete Guide',
+    summary_en: 'Auction rates at 89.4%, jeonse ratio recovering to 62%, transactions up 18%. We decode 3 key signals and present Q4 real estate investment strategies.'
+  },
+  {
     id: 388,
     url: 'article_20261010_1_overseas-rental-income_v2.html',
     category: '해외',
