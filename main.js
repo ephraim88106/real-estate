@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 388,
+    url: 'article_20261010_1_overseas-rental-income_v2.html',
+    category: '해외',
+    title: '국외 월세 종합소득세 신고 시기 — 외국납부세액공제 한도와 이월 순서',
+    summary: '해외에서 받는 월세도 한국 거주자는 다음 해 5월 종합소득세로 신고한다. 현지 납부세액을 세액공제 또는 필요경비로 처리하는 방식, 공제한도와 10년 이월, 명세서 제출 점검 순서를 설명한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-10',
+    title_en: 'Reporting Overseas Rental Income in Korea: Foreign Tax Credit Limits and Carryover',
+    summary_en: 'Korean residents report overseas rent in the May income tax return. This explains the foreign tax credit versus expense option, the credit limit, 10-year carryover, and the statement filing check.'
+  },
+  {
     id: 387,
     url: 'article_20261009_1_policy_v2.html',
     category: '정책',
