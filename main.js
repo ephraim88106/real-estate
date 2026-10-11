@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 391,
+    url: 'article_20261011_1_implied-renewal_v2.html',
+    category: '칼럼',
+    title: '묵시적 갱신 뜻 — 자동 연장 조건과 임차인 해지 통보 3개월 효력',
+    summary: '만료 6~2개월 전 통지가 없으면 임대차는 같은 조건으로 2년 연장된다. 묵시적 갱신의 성립 조건, 증액 한도, 임차인 해지 3개월 효력을 주택임대차보호법 조문으로 풀어 쓴다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-11',
+    title_en: 'Implied Renewal of Korean Leases: Conditions and the 3-Month Tenant Termination Rule',
+    summary_en: 'If no notice is given 6 to 2 months before expiry, a Korean residential lease renews on the same terms for two years. This explains the conditions, the 5% rent cap and when a tenant termination notice takes effect.'
+  },
+  {
     id: 390,
     url: 'article_20261010_1_redevelopment_v2.html',
     category: '재개발',
