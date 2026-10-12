@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 394,
+    url: 'article_20261012_1_market_v2.html',
+    category: '시장동향',
+    title: '거래 실종·가격 혼조…서울 아파트 시장, 10월의 갈림길에 서다',
+    summary: '입주물량 급감과 금리 부담이 교차하는 가운데, 서울 아파트 시장은 거래 위축과 가격 혼조 현상이 동시에 나타나고 있습니다. 강남권 선호도는 여전하나 중저가 지역을 중심으로 관망세가 짙어지며, 10월은 하반기 방향성을 결정짓는 중요한 분기점이 될 전망입니다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-12',
+    title_en: 'Seoul Apartment Market at a Crossroads in October: Vanishing Transactions, Mixed Prices',
+    summary_en: 'With supply shortages and interest rate pressures intersecting, Seoul\'s apartment market shows simultaneous transaction contraction and mixed price movements. While Gangnam demand remains firm, cautious sentiment deepens in mid-to-low price zones, making October a critical inflection point for H2.'
+  },
+  {
+    id: 393,
+    url: 'article_20261012_2_policy_v2.html',
+    category: '정책',
+    title: '한국 부동산 정책의 역설: 규제로 막고 공급으로 풀어야 할 \'죄수의 딜레마\'',
+    summary: '2026년 하반기, 한국 정부의 부동산 정책은 공급 확대와 금융 규제 사이의 모순적 균형을 요구받고 있습니다. LTV·DSR 규제는 실수요자 진입 장벽을 높이고, 전문가들은 세제 완화와 도심 공급 가속화를 출구전략으로 제시하고 있습니다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-12',
+    title_en: 'The Paradox of Korea\'s Real Estate Policy: A \'Prisoner\'s Dilemma\' Between Regulation and Supply',
+    summary_en: 'In H2 2026, Korea\'s real estate policy faces a paradoxical balance between supply expansion and financial regulation. LTV/DSR rules suppress demand while raising barriers for genuine buyers, as experts propose tax relief and accelerated urban supply as exit strategies.'
+  },
+  {
     id: 392,
     url: 'article_20261012_1_lease-report_v2.html',
     category: '시장동향',
