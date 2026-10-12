@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 392,
+    url: 'article_20261012_1_lease-report_v2.html',
+    category: '시장동향',
+    title: '임대차 계약 신고 대상 — 보증금 6천만 원·월세 30만 원 초과 조건과 과태료 얼마',
+    summary: '보증금 6천만 원 또는 월세 30만 원을 넘는 주택 임대차는 계약서 작성일부터 30일 안에 신고해야 한다. 신고 대상 조건, 미신고 과태료 구간, 확정일자 자동 부여와 변경·해제 신고를 풀어 쓴다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-12',
+    title_en: 'Korea Lease Contract Reporting: Which Rentals Must Be Reported and What the Fine Is',
+    summary_en: 'Residential leases with a deposit above 60 million won or monthly rent above 300,000 won must be reported within 30 days of signing. This explains the scope, the fine range and the automatic fixed-date confirmation.'
+  },
+  {
     id: 391,
     url: 'article_20261011_1_implied-renewal_v2.html',
     category: '칼럼',
