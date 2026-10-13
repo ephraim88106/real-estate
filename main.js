@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 397,
+    url: 'article_20261013_1_subscription_v2.html',
+    category: '분양',
+    title: '분양가 오르기 전 마지막 찬스?…상한제 단지에 청약자 2만 명 몰린 까닭',
+    summary: '분양가 상한제 폐지 논의가 가시화되며 막차 청약 심리가 폭발하고 있다. 상한제 단지의 구조와 리스크, 2026년 10월 청약 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-13',
+    title_en: 'Last Chance Before Price Hike? Why 20,000 Buyers Rushed to Price-Capped Apartments',
+    summary_en: 'As discussion of abolishing the housing price cap grows, buyers are rushing to price-capped apartments. This article analyzes the structure, risks, and subscription strategy for October 2026.'
+  },
+  {
+    id: 396,
+    url: 'article_20261013_2_reconstruction_v2.html',
+    category: '재개발',
+    title: '서울 재건축 선도지구, 지금 살아야 할까? 사업성·리스크 완벽 분석',
+    summary: '서울 재건축 선도지구 추진이 가속화되지만 조합 갈등·사업비 급등·이주비 리스크가 도사린다. 선도지구 투자의 명과 암을 철저히 해부한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-13',
+    title_en: 'Should You Buy Into Seoul\'s Pilot Reconstruction Zones Now? A Full Risk Analysis',
+    summary_en: 'Seoul\'s reconstruction pilot zones are moving faster, but hidden risks of conflicts, surging costs, and relocation financing loom large. A complete investment analysis.'
+  },
+  {
     id: 395,
     url: 'article_20261013_1_one_home_capital_gains_v2.html',
     category: '정책',
