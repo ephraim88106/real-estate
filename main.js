@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 395,
+    url: 'article_20261013_1_one_home_capital_gains_v2.html',
+    category: '정책',
+    title: '고가주택 장기보유특별공제율 얼마 — 보유·거주 최대 80%와 12억 초과분 과세',
+    summary: '1세대 1주택 비과세의 기본 요건과 양도가액 12억 원 초과분 과세 비율, 보유 40%·거주 40% 합산 최대 80%의 장기보유특별공제 구조를 숫자 예시로 풀어 설명합니다. 취득일·양도일 판정과 조정대상지역 거주 요건 체크 포인트도 담았습니다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-13',
+    title_en: 'High-Value Home Long-Term Holding Deduction: Up to 80% and Tax on the Portion Above KRW 1.2 Billion',
+    summary_en: 'Explains one-household one-home capital gains tax exemption requirements, how the portion above KRW 1.2 billion is taxed, and how holding and residence periods combine for up to an 80% deduction, with a worked example.'
+  },
+  {
     id: 394,
     url: 'article_20261012_1_market_v2.html',
     category: '시장동향',
