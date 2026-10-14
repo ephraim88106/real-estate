@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 400,
+    url: 'article_20261014_1_investment_auction_v2.html',
+    category: '투자',
+    title: '경매시장의 경고등: 서울 낙찰가율 1년 7개월 만에 최저…지금 어디에 투자해야 하나?',
+    summary: '서울 아파트 경매 낙찰가율이 94.7%로 1년 7개월 만에 최저치를 기록했다. 경기 남부는 115%를 넘으며 뜨거운 수요를 이어가는 양극화 시장에서 투자 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-14',
+    title_en: 'Auction Market Warning Lights: Seoul Acceptance Rate Hits 19-Month Low—Where to Invest Now?',
+    summary_en: 'Seoul apartment auction rate dropped to 94.7%, a 19-month low, while Gyeonggi South exceeds 115%. We analyze investment strategies in this polarized market.'
+  },
+  {
+    id: 399,
+    url: 'article_20261014_2_overseas_global_v2.html',
+    category: '해외',
+    title: '외국인은 미국 부동산을 떠나고, 외국 자본은 한국으로 온다—2026 해외투자 완전 리포트',
+    summary: '2026년 외국인의 미국 부동산 매수가 19% 급감했다. 역설적으로 외국 자본이 한국으로 유입 중이다. 일본·동남아·미국 시장 변화와 한국인 투자 전략을 점검한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-14',
+    title_en: 'Foreigners Leave US Real Estate While Foreign Capital Flows into Korea—2026 Overseas Investment Report',
+    summary_en: 'Foreign purchases of US real estate plunged 19% in 2026 while foreign capital flows into Korea. We examine global markets and strategies for Korean investors.'
+  },
+  {
     id: 398,
     url: 'article_20261014_1_resale_restriction_v2.html',
     category: '분양',
