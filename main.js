@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 398,
+    url: 'article_20261014_1_resale_restriction_v2.html',
+    category: '분양',
+    title: '분양권 전매제한 기간 언제까지 — 지역별 3년·1년·6개월과 기산일',
+    summary: '분양권 전매제한은 공공택지·규제지역 최대 3년, 과밀억제권역 1년, 그 밖의 수도권 6개월로 갈린다. 기산일은 당첨자 발표일이며, 예외 사유와 위반 시 제재, 실거주 의무와의 차이를 주택법 시행령 기준으로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-14',
+    title_en: 'How Long Is the Presale Rights Resale Restriction? Regional Periods and Start Date',
+    summary_en: 'The resale restriction on presale rights runs up to 3 years in public-land and regulated areas of the capital region, 1 year in overcrowding-control zones and 6 months elsewhere. The clock starts at the winner announcement date; exceptions and penalties are explained.'
+  },
+  {
     id: 397,
     url: 'article_20261013_1_subscription_v2.html',
     category: '분양',
