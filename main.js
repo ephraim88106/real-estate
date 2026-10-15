@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 403,
+    url: 'article_20261015_1_column_anniversary_v2.html',
+    category: '칼럼',
+    title: '10·15 대책 1년, 규제의 역설: 집값은 오르고 시장은 얼어붙었다 🏚️',
+    summary: '정부가 투기 수요를 잡겠다며 10·15 대책을 발표한 지 1년, 서울 집값은 오히려 11% 상승하고 거래량은 40% 급감했다. 규제의 역설이 낳은 이중 시장의 실체와 향후 정책 전환 방향을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-15',
+    title_en: 'One Year of the October 15 Real Estate Policy: Prices Rise as Market Freezes',
+    summary_en: 'One year after South Korea\'s October 15 real estate regulations, Seoul apartment prices rose 11% while transaction volume plummeted 40%. We analyze the paradox of regulation and what policy changes are needed.'
+  },
+  {
+    id: 402,
+    url: 'article_20261015_2_market_88weeks_v2.html',
+    category: '시장동향',
+    title: '서울 아파트값 88주 연속 상승의 역설: 거래는 얼고 집값만 타오른다 🔥',
+    summary: '서울 아파트값이 88주 연속 오르는 동안 거래량은 40% 급감했다. 의왕·군포·용산까지 들썩이는 외곽 상승세의 실체와 \'거래 없는 상승\'이 안고 있는 위험성을 상세히 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-15',
+    title_en: '88 Consecutive Weeks of Seoul Apartment Price Increases: Transactions Frozen, Prices Burning',
+    summary_en: 'Seoul apartment prices rose for 88 consecutive weeks while transaction volume dropped 40%. We examine the reality behind the price surge in outer districts and the risks of this low-transaction, high-price market.'
+  },
+  {
     id: 401,
     url: 'article_20261015_1_union-consent-rate_v2.html',
     category: '재개발',
