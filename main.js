@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 401,
+    url: 'article_20261015_1_union-consent-rate_v2.html',
+    category: '재개발',
+    title: '조합설립 동의율 산정 — 동별 과반·전체 70%·토지면적 계산과 동의서 효력',
+    summary: '재건축은 동별 과반수와 전체 70%, 재개발은 토지등소유자 4분의 3과 토지면적 2분의 1로 동의율을 센다. 2025년 5월 개정 내용과 산정 시점, 동의서 하자를 도시정비법 제35조 기준으로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-15',
+    title_en: 'Association Consent Rate Calculation: Per-Building Majority, 70% Overall and Land Area Rules',
+    summary_en: 'Reconstruction needs a majority in each building plus 70% overall, while redevelopment needs three quarters of owners and half of the land area. We explain the 2025 amendment, timing and consent form defects.'
+  },
+  {
     id: 400,
     url: 'article_20261014_1_investment_auction_v2.html',
     category: '투자',
