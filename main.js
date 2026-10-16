@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 404,
+    url: 'article_20261016_1_reit-dividend-tax_v2.html',
+    category: '투자',
+    title: '공모리츠 분리과세 신청 — 증권사 약정 절차와 배당소득세 9.9% 적용',
+    summary: '리츠 배당소득은 기본 15.4%가 원천징수되지만 공모리츠는 투자액 5천만 원 한도, 3년 보유 조건으로 9.9% 분리과세를 받을 수 있다. 증권사 약정 절차와 금융소득종합과세 판정, 중도 매도 시 불이익을 사례 계산과 함께 해설한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-16',
+    title_en: 'Public REIT Dividend Tax Election: Brokerage Enrollment and the 9.9% Separate Tax Rate',
+    summary_en: 'REIT dividends are withheld at 15.4% by default, but public REITs can qualify for a 9.9% separate tax up to KRW 50 million invested with a three-year holding period. We explain enrollment, the KRW 20 million financial income test and early-sale penalties.'
+  },
+  {
     id: 403,
     url: 'article_20261015_1_column_anniversary_v2.html',
     category: '칼럼',
