@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 406,
+    url: 'article_20261016_1_policy_v2.html',
+    category: '정책',
+    title: '10·15 대책 1년, 서울 아파트값 6.8% 올랐다 — 규제의 역설, 누가 책임지나?',
+    summary: '이재명 정부의 10·15 부동산 대책 1년, 서울 아파트값은 오히려 6.8% 상승했다. 대출 규제 강화의 역설과 공급 엇박자 정책의 구조적 한계를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-16',
+    title_en: '1 Year Since the 10·15 Housing Policy: Seoul Apartment Prices Up 6.8%',
+    summary_en: 'One year after the 10·15 real estate policy, Seoul apartment prices rose 6.8%. We analyze the structural contradictions of tightened lending rules versus stalled supply.'
+  },
+  {
+    id: 405,
+    url: 'article_20261016_2_subscription_v2.html',
+    category: '분양',
+    title: '10월 청약 대전 개막! 인천·충청 6734가구 쏟아진다 — 지금 신청 안 하면 후회한다',
+    summary: '2026년 10월 전국 13곳 6,734가구 청약이 시작됐다. 인천·충청 대단지를 중심으로 한 경쟁률 전망, 특별공급 전략을 완전 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-16',
+    title_en: 'October Subscription Season: 6,734 Units in Incheon & Chungcheong — Complete Strategy Guide',
+    summary_en: 'Subscriptions open for 6,734 units across 13 sites in October 2026, with large complexes in Incheon and Chungcheong. We analyze competition rates and winning strategies.'
+  },
+  {
     id: 404,
     url: 'article_20261016_1_reit-dividend-tax_v2.html',
     category: '투자',
