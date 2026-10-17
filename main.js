@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 409,
+    url: 'article_20261017_1_reconstruction_v2.html',
+    category: '재개발',
+    title: '서울 8.5만 가구 재건축 착공 초읽기…내 아파트 단지는 명단에 있나?',
+    summary: '서울시가 재개발·재건축 8만 5천 호 신속 착공 계획을 발표했다. 85개 구역이 2026~2028년 착공 예정으로, 재건축 투자의 기회와 리스크를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-17',
+    title_en: 'Seoul\'s 85,000-Unit Reconstruction Countdown — Is Your Apartment Complex on the List?',
+    summary_en: 'Seoul announced a rapid construction plan for 85,000 redevelopment units. 85 zones are scheduled for 2026-2028 construction. In-depth analysis of reconstruction investment opportunities and risks.'
+  },
+  {
+    id: 408,
+    url: 'article_20261017_2_investment_v2.html',
+    category: '투자',
+    title: '서울은 꺾이고 경기는 뜨겁다: 낙찰가율 115% 경매 시장이 보내는 투자 신호',
+    summary: '9월 서울 아파트 경매 낙찰가율이 1년 7개월 만에 최저치를 기록한 반면 경기 남부는 115%를 넘어섰다. 수도권 경매 시장의 역전이 주는 투자 교훈과 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-17',
+    title_en: 'Seoul Cools, Gyeonggi Heats Up: Investment Signals from the 115% Auction Market',
+    summary_en: 'Seoul\'s apartment auction bid rate hit a 17-month low in September, while Gyeonggi South surpassed 115%. Analysis of the metropolitan area auction market reversal and investment strategy.'
+  },
+  {
     id: 407,
     url: 'article_20261017_1_japan_acquisition_tax_v2.html',
     category: '해외',
