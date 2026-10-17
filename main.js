@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 407,
+    url: 'article_20261017_1_japan_acquisition_tax_v2.html',
+    category: '해외',
+    title: '오사카 맨션 취득세 종류 — 등록면허세·인지세·고정자산세 세율과 납부 시기',
+    summary: '일본에서 부동산을 살 때 내는 부동산취득세 3%, 등록면허세 1.5~2.0%, 인지세와 매년 내는 고정자산세 1.4%를 취득·보유 단계별로 계산한다. 감면 특례의 기한(2027년 3월 말)과 임대·양도 원천징수까지 짚는다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-17',
+    title_en: 'Japan Property Acquisition Tax for Korean Buyers: Registration, Stamp and Fixed Asset Tax Rates',
+    summary_en: 'A step-by-step look at the taxes on buying Japanese property: 3% acquisition tax, 1.5-2.0% registration license tax, stamp duty and the 1.4% annual fixed asset tax, with special-rate deadlines.'
+  },
+  {
     id: 406,
     url: 'article_20261016_1_policy_v2.html',
     category: '정책',
