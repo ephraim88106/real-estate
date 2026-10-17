@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서울은 꺾이고 경기는 뜨겁다: 낙찰가율 115% 경매 시장이 보내는 투자 신호 | 부동산인사이트</title>
+  <meta name="description" content="9월 서울 아파트 경매 낙찰가율이 1년 7개월 만에 최저치를 기록한 반면, 경기 남부는 115%를 넘어섰다. 이 역전 현상이 의미하는 투자 신호를 분석한다.">
+  <meta name="keywords" content="부동산 경매, 낙찰가율, 경기 남부 아파트, 투자 전략, 갭투자, 수도권 부동산">
+  <meta name="google-adsense-account" content="ca-pub-9118774019383180">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0D2B55;
+      --accent: #8B1A1A;
+      --accent-light: #fdf0f0;
+      --text: #1a1a2e;
+      --text-light: #555;
+      --bg: #fdf8f8;
+      --white: #fff;
+      --border: #e8d8d8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+
+    /* Header */
+    header {
+      background: var(--primary);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    .logo {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+    .logo span { color: #F4A52D; }
+    nav { display: flex; gap: 24px; }
+    nav a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #F4A52D; }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #1A0505 0%, #8B1A1A 55%, #2A0808 100%);
+      padding: 60px 24px;
+      color: #fff;
+    }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .category-tag {
+      display: inline-block;
+      background: #8B1A1A;
+      color: #fff;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .hero h1 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 20px;
+    }
+    .hero-meta {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* Layout */
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 24px; }
+    .grid { display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+    /* Data boxes */
+    .data-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 32px 0;
+    }
+    @media (max-width: 600px) { .data-row { grid-template-columns: 1fr; } }
+    .data-card {
+      background: var(--accent-light);
+      border: 1px solid #d89090;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .data-card .num {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .data-card .label {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      margin-top: 6px;
+    }
+
+    /* Article body */
+    .article-body { font-size: 1rem; color: var(--text); }
+    .article-body p { margin-bottom: 20px; }
+    .article-body h2 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 40px 0 16px;
+      padding-left: 14px;
+      border-left: 4px solid var(--accent);
+      color: var(--text);
+    }
+
+    /* Blockquote */
+    .pull-quote {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      margin: 28px 0;
+      padding: 20px 24px;
+      border-radius: 0 8px 8px 0;
+    }
+    .pull-quote p {
+      font-family: 'Noto Serif KR', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--accent);
+      margin: 0;
+    }
+    .pull-quote cite {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      margin-top: 10px;
+      font-style: normal;
+    }
+
+    /* Comparison table */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 0.9rem;
+    }
+    .compare-table th {
+      background: var(--accent);
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+    }
+    .compare-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table tr:nth-child(even) { background: var(--accent-light); }
+    .compare-table .hot { color: var(--accent); font-weight: 700; }
+    .compare-table .cool { color: #2a6a9e; font-weight: 700; }
+
+    /* Tips list */
+    .tip-list {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 28px 0;
+    }
+    .tip-list h3 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .tip-list ul { padding-left: 20px; }
+    .tip-list li { margin-bottom: 10px; line-height: 1.7; }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: #f2f2f2;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    /* Sidebar */
+    .sidebar { }
+    .sidebar-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 24px;
+    }
+    .sidebar-card h3 {
+      font-family: 'Noto Serif KR', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+    }
+    .summary-list { list-style: none; padding: 0; }
+    .summary-list li {
+      font-size: 0.88rem;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.6;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-list li::before {
+      content: "▶";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+      font-size: 0.65rem;
+      top: 10px;
+    }
+    .related-list { list-style: none; padding: 0; }
+    .related-list li { font-size: 0.88rem; padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .related-list li:last-child { border-bottom: none; }
+    .related-list a { color: var(--text); text-decoration: none; }
+    .related-list a:hover { color: var(--accent); }
+
+    .area-highlight {
+      background: var(--accent-light);
+      border: 1px solid #d89090;
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .area-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #e8d8d8;
+      font-size: 0.88rem;
+    }
+    .area-item:last-child { border-bottom: none; }
+    .area-name { font-weight: 500; }
+    .area-rate {
+      font-weight: 700;
+      color: var(--accent);
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 30px 24px;
+      font-size: 0.82rem;
+      margin-top: 60px;
+    }
+    footer strong { color: #F4A52D; }
+
+    .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+    @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+  </style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">투자 인사이트</span>
+    <h1>서울은 꺾이고 경기는 뜨겁다: 낙찰가율 115% 경매 시장이 보내는 투자 신호</h1>
+    <p class="hero-sub">9월 서울 낙찰가율 94.7% vs 경기 남부 115% — 수도권 경매 시장의 역전이 주는 교훈과 전략</p>
+    <p class="hero-meta">부동산인사이트 편집팀 · 2026년 10월 17일</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid">
+    <main>
+      <div class="data-row">
+        <div class="data-card">
+          <div class="num">94.7%</div>
+          <div class="label">9월 서울 아파트 낙찰가율 (1년 7개월 최저)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">115%</div>
+          <div class="label">경기 남부 아파트 낙찰가율 (초과 경쟁)</div>
+        </div>
+        <div class="data-card">
+          <div class="num">62명</div>
+          <div class="label">수원 영통구 아파트 단일 경매 응찰자 수</div>
+        </div>
+      </div>
+
+      <div class="article-body">
+        <p>부동산 경매 시장은 시세를 선행하는 나침반이다. 실수요자와 투자자들이 발 빠르게 시장 가치를 반영하는 이 공간에서, 2026년 10월 수도권 경매 시장은 충격적인 역전 현상을 보여주고 있다. 서울 아파트 낙찰가율이 1년 7개월 만에 최저치인 94.7%로 주저앉은 반면, 경기 남부의 낙찰가율은 무려 115%를 넘어서며 불꽃 경쟁을 이어가고 있다. 감정가보다 15%나 높은 가격에 낙찰된다는 것은 투자자들이 그만큼 해당 지역의 미래 가치를 높게 평가한다는 뜻이다.</p>
+
+        <p>경기 남부 아파트 한 채에 무려 62명이 응찰하고, 노도강(노원·도봉·강북) 경매에서도 웃돈 경쟁이 벌어지는 지금, 이 시장의 흐름을 읽지 못하면 투자 기회를 놓치거나 오히려 함정에 빠질 수 있다. 경매 시장이 보내는 신호를 심층 분석한다.</p>
+
+        <h2>서울 낙찰가율 급락의 배경: 초고가만 주춤, 중저가는 다르다</h2>
+        <p>9월 서울 아파트 낙찰가율이 94.7%로 하락했다는 수치만 보면 서울 시장이 전반적으로 냉각된 것처럼 보인다. 그러나 데이터를 더 세밀하게 들여다보면 전혀 다른 그림이 펼쳐진다. 이 하락을 주도한 것은 초고가 물건들이다. 서울 강남권, 용산 등의 10억 원 이상 초고가 아파트들은 입찰자 수가 줄고 낙찰가율도 하락했다.</p>
+
+        <p>반면 서울 외곽, 특히 노도강(노원·도봉·강북) 지역의 중저가 아파트들은 여전히 웃돈 경쟁이 벌어지고 있다. 노도강 경매에서 감정가 이상의 낙찰이 속출하고, 가압류도 강세를 보이는 것은 이 지역에 실수요 및 중소 투자자들의 관심이 쏠리고 있음을 의미한다. 서울 경매 시장의 냉각은 선택적 냉각이지, 시장 전반의 위기 신호로 해석하면 안 된다.</p>
+
+        <div class="pull-quote">
+          <p>"트리마제가 12억 빠지는 동안 분당은 5억 올랐다. 서울 초고가와 경기 남부 핵심 지역의 디커플링은 이제 경매 시장에서도 확인됐다. 이것이 2026년 수도권 부동산의 가장 중요한 트렌드다."</p>
+          <cite>— 한 경매 전문가 (헤럴드경제 인터뷰)</cite>
+        </div>
+
+        <h2>경기 남부 낙찰가율 115%의 의미: 무엇이 투자자를 끌어당기나</h2>
+        <p>경기 남부의 낙찰가율 115%는 단순한 수치 이상의 의미를 갖는다. 감정가는 통상 시세의 80~90% 수준에서 결정된다. 여기서 115%를 내고 낙찰받는다는 것은, 투자자들이 실제 시세보다도 더 높은 가격을 지불하고 있다는 뜻이다. 그럼에도 62명이 한 물건에 응찰하는 상황이 벌어진다. 이는 경기 남부 부동산에 대한 투자 심리가 거의 '과열' 수준에 가까워지고 있음을 보여준다.</p>
+
+        <p>경기 남부, 특히 수원 영통구·용인·화성·평택 등이 뜨거운 이유는 복합적이다. 첫째, GTX-A 노선 개통과 수도권 광역급행철도 확장으로 서울 접근성이 극적으로 개선됐다. 둘째, 삼성전자·SK하이닉스 등 반도체 대기업의 클러스터가 형성되며 양질의 직주근접 수요가 폭발했다. 셋째, 상대적으로 서울보다 낮은 진입 비용이 실수요와 투자 수요를 동시에 끌어들이고 있다.</p>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>지역</th>
+              <th>9월 낙찰가율</th>
+              <th>주요 특징</th>
+              <th>수요 온도</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>서울 강남·용산 초고가</td>
+              <td class="cool">85~90%</td>
+              <td>입찰자 감소, 유찰 증가</td>
+              <td>❄️ 냉각</td>
+            </tr>
+            <tr>
+              <td>서울 노도강 (중저가)</td>
+              <td class="hot">100~105%</td>
+              <td>실수요 탄탄, 웃돈 경쟁</td>
+              <td>🔥 온기</td>
+            </tr>
+            <tr>
+              <td>경기 남부 (수원·용인·화성)</td>
+              <td class="hot">110~115%</td>
+              <td>62명 응찰, 반도체 클러스터 수혜</td>
+              <td>🔥🔥 과열 주의</td>
+            </tr>
+            <tr>
+              <td>경기 남부 외 수도권</td>
+              <td>95~100%</td>
+              <td>GTX 호재 선반영 구간</td>
+              <td>🌡️ 보통</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>경매 낙찰가율, 이렇게 활용하라: 선행 지표로서의 가치</h2>
+        <p>경매 낙찰가율은 3~6개월 후 일반 매매 시장을 선행하는 지표로 알려져 있다. 낙찰가율이 높다는 것은 투자자들이 해당 지역 부동산의 미래 가치를 현재보다 높게 보고 있다는 뜻이며, 이는 곧 일반 시세 상승으로 이어지는 경우가 많다. 반대로 낙찰가율이 장기간 하락한다면, 시장 참여자들이 더 낮은 미래 가격을 예상하고 있다는 경고 신호다.</p>
+
+        <p>이 관점에서 현재 경기 남부의 115% 낙찰가율은 6개월 후인 2027년 봄, 해당 지역 아파트값이 추가 상승할 가능성을 시사한다. 반면 서울 초고가 시장의 낙찰가율 하락은 해당 가격대의 조정 또는 보합이 장기화할 수 있음을 암시한다. 투자자라면 경매 낙찰가율 데이터를 월별로 모니터링하는 습관을 들이는 것이 필수적이다.</p>
+
+        <div class="pull-quote">
+          <p>"경매 시장은 미래 시세에 베팅하는 곳이다. 지금 경기 남부에서 115%를 지불하는 투자자들은 1~2년 내 시세가 그 이상 오를 것이라고 확신하는 것이다. 그 확신의 근거가 무엇인지 파악하는 것이 투자의 핵심이다."</p>
+          <cite>— 부동산 경매 전문 법무사 인터뷰</cite>
+        </div>
+
+        <h2>리스크 요인: 과열 경매의 함정</h2>
+        <p>경기 남부 경매의 과열 신호는 동시에 리스크 경고이기도 하다. 첫째, 115%의 낙찰가율은 이미 웃돈을 지불한 것이므로, 시장이 조금만 하락해도 즉시 손실 구간에 진입한다. 감정가의 115%로 낙찰받았는데 시세가 감정가 수준으로 내려오면 손실은 불가피하다. 둘째, 62명이 경쟁하는 시장에서는 정보 비대칭을 활용할 여지가 적다. 모두가 아는 정보로 경쟁하면 수익은 줄어드는 것이 경제 원리다.</p>
+
+        <p>셋째, 금리 리스크도 무시할 수 없다. 경매는 낙찰 후 즉시 잔금을 납부해야 하는 구조다. 레버리지(대출)를 활용한 경매 투자에서 금리 상승은 수익성을 직접 갉아먹는다. 현재 한국은행의 금리 방향성을 면밀히 확인하고, 자신의 대출 비용이 기대 수익률을 상회하지 않는지 철저히 계산해야 한다.</p>
+
+        <div class="tip-list">
+          <h3>⚡ 경매 투자자·실수요자 핵심 시사점</h3>
+          <ul>
+            <li><strong>경기 남부 과열 구간 진입 신중:</strong> 낙찰가율 115% 이상 구간은 이미 상당 부분 가치가 선반영됐다. 신규 진입 시 5~10% 추가 하락 시나리오를 항상 스트레스 테스트해볼 것.</li>
+            <li><strong>서울 초고가 유찰 물건 기회 탐색:</strong> 서울 강남권 초고가 물건은 2~3회 유찰 후 감정가의 60~70% 수준까지 하락하는 경우가 있다. 장기 보유 여력이 있는 투자자에게는 오히려 기회 구간일 수 있다.</li>
+            <li><strong>노도강 중저가 실수요 진입 시점 포착:</strong> 서울 중저가 경매 시장의 온기는 실수요가 받쳐주는 구조라 안정적이다. 대출 조건과 관리비 등 총보유비용을 계산한 뒤 실입주 목적으로 접근하면 합리적인 선택이 될 수 있다.</li>
+            <li><strong>GTX 호재 미반영 역세권 노려라:</strong> 경기 남부의 인기는 GTX와 반도체 클러스터에서 나온다. 아직 GTX 수혜가 덜 반영된 구간, 즉 역 예정지 인근 2~3km 내 소형 아파트를 조사해볼 것.</li>
+            <li><strong>경매 낙찰가율 월별 데이터 추적 루틴화:</strong> 법원 경매 정보 사이트(지지옥션, 태인경매 등)를 정기적으로 모니터링해 낙찰가율 추세 변화를 발 빠르게 포착하는 것이 투자 선행 정보 확보의 핵심이다.</li>
+          </ul>
+        </div>
+
+        <h2>결론: 경매는 시장의 엑스레이다</h2>
+        <p>2026년 10월, 수도권 경매 시장이 보내는 메시지는 명확하다. 서울 초고가 시장은 가격 부담으로 수요가 위축되고 있으며, 중저가 서울과 경기 남부 핵심 지역으로 투자 에너지가 이동하고 있다. 이 흐름은 일시적 현상이 아니라 GTX 완성, 반도체 산업 성장, 재건축 공급 지연이라는 구조적 변화를 반영한 장기 트렌드다.</p>
+
+        <p>투자자는 이 경매 시장의 신호를 단순히 가격 정보로 소비하는 데 그쳐서는 안 된다. 낙찰가율 115%가 만들어지는 구조적 이유를 이해하고, 과열 리스크와 기회를 동시에 계산하는 냉정한 분석이 필요하다. 군중이 열광할 때 한 박자 늦게 들어가는 것이 아니라, 군중이 몰리기 직전 상황을 읽어내는 능력 — 그것이 부동산 투자에서 장기 수익을 만들어내는 진짜 실력이다.</p>
+
+        <div class="disclaimer">
+          <strong>⚠️ 면책 고지:</strong> 본 기사는 정보 제공 및 분석을 목적으로 작성되었으며, 특정 투자 상품이나 부동산 매수·매도를 권유하는 것이 아닙니다. 부동산 경매 투자는 원금 손실의 위험이 있으며, 법적 권리관계 분석, 세금 계산 등 전문가의 조언을 반드시 구하시기 바랍니다. 본 기사의 내용은 공개 자료를 기반으로 작성됐으나, 투자 판단의 최종 책임은 투자자 본인에게 있습니다.
+        </div>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <h3>📌 핵심 요약</h3>
+        <ul class="summary-list">
+          <li>9월 서울 아파트 낙찰가율 94.7%, 1년 7개월 만에 최저치 기록</li>
+          <li>경기 남부 낙찰가율 115% 초과, 단일 물건 62명 응찰 사례 발생</li>
+          <li>서울 초고가는 냉각, 노도강·경기 남부 중저가는 과열 양극화</li>
+          <li>GTX·반도체 클러스터가 경기 남부 투자 수요 구조적으로 뒷받침</li>
+          <li>경매 낙찰가율은 3~6개월 선행 지표, 월별 모니터링이 필수</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>🏠 주요 지역 낙찰가율</h3>
+        <div class="area-highlight">
+          <div class="area-item">
+            <span class="area-name">경기 남부 (수원·용인·화성)</span>
+            <span class="area-rate">115%+</span>
+          </div>
+          <div class="area-item">
+            <span class="area-name">서울 노도강</span>
+            <span class="area-rate">~105%</span>
+          </div>
+          <div class="area-item">
+            <span class="area-name">서울 전체 평균</span>
+            <span class="area-rate">94.7%</span>
+          </div>
+          <div class="area-item">
+            <span class="area-name">서울 초고가 (강남·용산)</span>
+            <span class="area-rate">85~90%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>📰 관련 기사</h3>
+        <ul class="related-list">
+          <li><a href="#">서울 아파트 낙찰가율 최저…초고가는 주춤, 중저가는 후끈</a></li>
+          <li><a href="#">트리마제 12억 빠질 때 분당은 5억 올랐다</a></li>
+          <li><a href="#">GTX 수혜 미반영 역세권 발굴 전략</a></li>
+          <li><a href="#">경매로 부동산 저점 잡는 실전 전략</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <p><strong>부동산인사이트</strong> | 전문적인 부동산 분석 미디어</p>
+  <p style="margin-top: 8px;">© 2026 부동산인사이트. 본 기사의 무단 전재 및 재배포를 금합니다.</p>
+</footer>
+
+</body>
+</html>
