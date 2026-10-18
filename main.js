@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 411,
+    url: 'article_20261018_1_overseas_v2.html',
+    category: '해외',
+    title: '규제 피해 해외로 탈출하는 한국 자금, 올해만 3,200억 송금… 미국·일본·동남아 어디가 답인가?',
+    summary: '2026년 상반기 해외 부동산 송금액이 3,200억을 돌파했다. 미국 선벨트, 일본 도심, 동남아 콘도 — 어디가 진짜 기회의 땅인지 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-18',
+    title_en: 'Korean Capital Fleeing Regulations: 320 Billion Won Sent Overseas for Real Estate — US, Japan, or Southeast Asia?',
+    summary_en: 'Overseas real estate remittances from Korea surpassed 320 billion won in H1 2026. We analyze the US Sunbelt, Japanese city centers, and Southeast Asian condos.'
+  },
+  {
+    id: 410,
+    url: 'article_20261018_2_column_v2.html',
+    category: '칼럼',
+    title: '집값은 오르는데 왜 불안한가 — 2026년 하반기 한국 부동산의 구조적 딜레마',
+    summary: '서울 집값이 소폭 회복세를 보이지만 시장 참여자들의 불안감은 더 커지고 있다. 금리·공급·정책 세 변수로 2026년 하반기 부동산 구조적 딜레마를 해부한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-18',
+    title_en: 'Prices Rising, But Why the Anxiety? The Structural Dilemma of Korea\'s Real Estate in H2 2026',
+    summary_en: 'Seoul apartment prices are recovering slightly, yet market anxiety is growing. We dissect the structural dilemma through three lenses: interest rates, supply, and policy.'
+  },
+  {
     id: 409,
     url: 'article_20261017_1_reconstruction_v2.html',
     category: '재개발',
