@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 412,
+    url: 'article_20261019_1_unsold_v2.html',
+    category: '시장동향',
+    title: '준공 후 미분양 뜻 — 일반 미분양과의 차이와 통계 공표 시점',
+    summary: '미분양은 분양했지만 계약되지 않은 주택이다. 공사 중 물량인 일반 미분양과 공사 완료 후 재고인 준공 후 미분양의 차이, 국토교통부 통계의 월간 공표 구조와 읽는 요령을 해설한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-19',
+    title_en: 'Unsold Homes After Completion: Meaning, Difference From General Unsold Units, and Statistics Release Timing',
+    summary_en: 'Explains unsold housing in Korea, the difference between general unsold units and unsold units after completion, and how the Ministry of Land monthly statistics are compiled and published.'
+  },
+  {
     id: 411,
     url: 'article_20261018_1_overseas_v2.html',
     category: '해외',

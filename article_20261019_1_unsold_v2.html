@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>준공 후 미분양 뜻 — 일반 미분양과의 차이와 통계 공표 시점</title>
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<meta name="description" content="준공 후 미분양과 일반 미분양의 뜻과 차이, 국토교통부 미분양주택현황 통계의 조사 체계와 공표 주기, 통계를 읽을 때 주의할 점을 해설한다.">
+<meta name="keywords" content="준공 후 미분양, 미분양 뜻, 미분양주택현황, 국토교통부 주택통계">
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261019_1_unsold_v2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="준공 후 미분양 뜻 — 일반 미분양과의 차이와 통계 공표 시점">
+<meta property="og:description" content="준공 후 미분양과 일반 미분양의 뜻과 차이, 국토교통부 미분양주택현황 통계의 조사 체계와 공표 주기, 통계를 읽을 때 주의할 점을 해설한다.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261019_1_unsold_v2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --accent: #1A4D8F;
+    --accent-light: #e8f0fb;
+    --accent-dark: #0D2B55;
+    --header-bg: #0D2B55;
+    --text-main: #1a1a2e;
+    --text-sub: #4a4a6a;
+    --bg: #f8f9fc;
+    --white: #ffffff;
+    --border: #e0e4ef;
+    --gold: #F4A52D;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text-main); line-height: 1.8; }
+  a { color: inherit; text-decoration: none; }
+
+  /* HEADER */
+  header { background: var(--header-bg); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; letter-spacing: -0.5px; }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 28px; }
+  nav a { color: rgba(255,255,255,0.82); font-size: 0.88rem; font-weight: 500; transition: color 0.2s; padding: 4px 0; border-bottom: 2px solid transparent; }
+  nav a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+
+  /* HERO */
+  .hero { background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%); padding: 72px 24px 64px; text-align: center; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+  .hero-inner { max-width: 860px; margin: 0 auto; position: relative; }
+  .category-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.78rem; font-weight: 700; padding: 5px 14px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 700; color: #fff; line-height: 1.45; margin-bottom: 18px; }
+  .hero-sub { color: rgba(255,255,255,0.78); font-size: 1rem; margin-bottom: 28px; }
+  .meta { color: rgba(255,255,255,0.6); font-size: 0.84rem; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+  /* LAYOUT */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 24px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } nav { display: none; } }
+
+  /* MAIN CONTENT */
+  .article-body { background: var(--white); border-radius: 12px; padding: 44px 48px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+  @media (max-width: 640px) { .article-body { padding: 28px 20px; } }
+
+  /* DATA CARDS */
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 40px; }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border-radius: 10px; padding: 20px 18px; text-align: center; border-top: 4px solid var(--accent); }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.9rem; font-weight: 700; color: var(--accent-dark); line-height: 1; }
+  .data-card .label { font-size: 0.8rem; color: var(--text-sub); margin-top: 6px; }
+
+  /* HEADINGS */
+  h2 { font-family: 'Noto Serif KR', serif; font-size: 1.38rem; font-weight: 700; color: var(--text-main); margin: 40px 0 16px; border-left: 4px solid var(--accent); padding-left: 14px; line-height: 1.4; }
+  h3 { font-size: 1.08rem; font-weight: 700; color: var(--text-main); margin: 24px 0 10px; }
+  p { margin-bottom: 18px; font-size: 0.98rem; color: var(--text-sub); }
+  p:last-child { margin-bottom: 0; }
+
+  /* QUOTE BOX */
+  .quote-box { background: var(--accent-light); border-left: 5px solid var(--accent); border-radius: 0 10px 10px 0; padding: 24px 28px; margin: 32px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: var(--accent-dark); margin: 0; line-height: 1.75; }
+  .quote-author { margin-top: 10px; font-size: 0.82rem; color: var(--accent); font-weight: 700; }
+
+  /* TIP LIST */
+  ul.tip-list { list-style: none; padding: 0; margin: 16px 0 24px; }
+  ul.tip-list li { padding: 10px 14px 10px 40px; position: relative; background: #f1f6fd; border-radius: 8px; margin-bottom: 8px; font-size: 0.93rem; color: var(--text-sub); border-left: 3px solid var(--accent); }
+  ul.tip-list li::before { content: '●'; position: absolute; left: 14px; color: var(--accent); font-size: 0.7rem; top: 14px; }
+
+  /* SCENARIO BOX */
+  .scenario-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 24px 0; }
+  @media (max-width: 600px) { .scenario-grid { grid-template-columns: 1fr; } }
+  .scenario-box { border-radius: 10px; padding: 20px; }
+  .scenario-box.bull { background: #e8f5e9; border-top: 4px solid #388e3c; }
+  .scenario-box.bear { background: #fce4ec; border-top: 4px solid #c62828; }
+  .scenario-box h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; }
+  .scenario-box.bull h4 { color: #1b5e20; }
+  .scenario-box.bear h4 { color: #b71c1c; }
+  .scenario-box ul { list-style: disc; padding-left: 18px; font-size: 0.86rem; color: var(--text-sub); }
+  .scenario-box ul li { margin-bottom: 5px; }
+
+  /* DISCLAIMER */
+  .disclaimer { background: #f5f5f5; border-radius: 8px; padding: 18px 22px; margin-top: 40px; font-size: 0.8rem; color: #777; line-height: 1.6; }
+
+  /* SIDEBAR */
+  aside { display: flex; flex-direction: column; gap: 24px; }
+  .sidebar-card { background: var(--white); border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .sidebar-card h4 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; color: var(--text-main); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); }
+  .summary-list { list-style: none; padding: 0; }
+  .summary-list li { padding: 7px 0 7px 20px; position: relative; font-size: 0.87rem; color: var(--text-sub); border-bottom: 1px solid var(--border); }
+  .summary-list li:last-child { border-bottom: none; }
+  .summary-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .related-list { list-style: none; padding: 0; }
+  .related-list li { padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.86rem; color: var(--text-sub); }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list li a { color: var(--text-sub); transition: color 0.2s; }
+  .related-list li a:hover { color: var(--accent); }
+  .timeline { padding: 0; list-style: none; }
+  .timeline li { padding: 8px 0 8px 20px; border-left: 2px solid var(--accent); margin-left: 8px; font-size: 0.83rem; color: var(--text-sub); position: relative; }
+  .timeline li::before { content: ''; position: absolute; left: -5px; top: 14px; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; }
+  .timeline li strong { display: block; color: var(--text-main); margin-bottom: 2px; }
+
+  /* FIXED SIDEBAR AD */
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+  /* FOOTER */
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.55); text-align: center; padding: 32px 20px; font-size: 0.82rem; margin-top: 40px; }
+  footer strong { color: rgba(255,255,255,0.85); }
+</style>
+</head>
+<body>
+
+<!-- FIXED SIDEBAR AD -->
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<!-- TOP BANNER AD -->
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="index.html">시장동향</a>
+      <a href="index.html">정책·규제</a>
+      <a href="index.html">투자분석</a>
+      <a href="index.html">법률·세금</a>
+      <a href="index.html">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">시장동향</span>
+    <h1>준공 후 미분양 뜻<br>— 일반 미분양과의 차이와 통계 공표 시점</h1>
+    <p class="hero-sub">같은 '미분양'이라도 공사 중인 단지와 공사가 끝난 단지는 의미가 전혀 다르다. 두 개념의 차이와 국토교통부 통계를 읽는 요령을 해설한다.</p>
+    <div class="meta"><span>2026년 10월 19일</span><span>부동산인사이트 편집팀</span><span>약 6분 소요</span></div>
+  </div>
+</section>
+
+<div class="container">
+  <main>
+    <article class="article-body">
+
+      <div class="data-cards">
+        <div class="data-card"><div class="num">월 1회</div><div class="label">국토교통부 미분양 통계 공표 주기</div></div>
+        <div class="data-card"><div class="num">2종류</div><div class="label">일반 미분양 · 준공 후 미분양</div></div>
+        <div class="data-card"><div class="num">27,013호</div><div class="label">2025년 5월 말 전국 준공 후 미분양(국토부 발표)</div></div>
+      </div>
+
+      <p>부동산 뉴스에서 미분양이 늘었다거나 줄었다는 보도는 매달 반복된다. 그런데 기사에 나오는 숫자가 전체 미분양인지, 준공 후 미분양인지에 따라 시장이 보내는 신호는 크게 달라진다. 두 개념을 구분하지 않고 '미분양 증가'라는 제목만 읽으면 시장 상황을 오독하기 쉽다.</p>
+      <p>이 글은 미분양이라는 용어의 정의, 일반 미분양과 준공 후 미분양의 차이, 통계가 만들어지고 공표되는 구조, 그리고 수치를 읽을 때 주의할 점을 순서대로 짚는다. 수치는 국토교통부 보도와 공공데이터 설명을 근거로 했으며, 최신 값은 국토교통부 통계누리에서 직접 확인하는 것이 정확하다.</p>
+
+      <h2>미분양의 뜻 — 분양했지만 팔리지 않은 주택</h2>
+      <p>미분양은 사업계획 승인권자로부터 분양 승인을 받아 입주자를 모집했지만, 모집 결과 계약되지 않고 남은 주택을 말한다. 청약에서 경쟁률이 미달했거나, 당첨된 뒤 계약을 포기한 물량이 대표적이다. 분양 자체를 하지 않은 주택이나 임대 목적의 주택은 미분양에 포함되지 않는다.</p>
+      <p>핵심은 '분양 절차를 거친 뒤에도 주인을 찾지 못했다'는 점이다. 그래서 미분양 통계는 신규 분양시장의 소화 능력, 즉 공급이 수요를 얼마나 앞질렀는지를 보여주는 지표로 쓰인다.</p>
+
+      <h2>일반 미분양과 준공 후 미분양의 차이</h2>
+      <p>통계에서는 미분양을 공사 진행 단계에 따라 나눈다. 아직 공사 중이거나 착공 전인 단지에서 계약되지 않은 물량이 일반 미분양(공사 중 미분양)이고, 사용검사를 받아 공사가 끝났는데도 팔리지 않은 물량이 준공 후 미분양이다. 국토교통부는 후자를 '공사완료 후 미분양'이라는 이름으로도 집계한다.</p>
+      <div class="scenario-grid">
+        <div class="scenario-box bull"><h4>일반 미분양</h4><ul><li>공사 중이거나 착공 전 단지의 계약 잔여분</li><li>분양 일정에 따라 단기간 늘고 줄 수 있음</li><li>입주까지 시간이 남아 있어 사업자가 판촉 여력을 가짐</li></ul></div>
+        <div class="scenario-box bear"><h4>준공 후 미분양</h4><ul><li>공사가 끝나 입주 가능한데도 남은 물량</li><li>공사비 대출 이자와 관리비 부담이 사업자에게 누적</li><li>지역 수요 부진이 장기화됐다는 신호로 해석</li></ul></div>
+      </div>
+      <p>일반 미분양은 분양 직후에 일시적으로 높아졌다가 계약 기간이 지나며 줄어드는 경우가 많다. 반면 준공 후 미분양은 사용검사까지 마쳤는데도 소진되지 않은 재고이므로 시장 체력이 약한 지역에서 더 의미 있게 읽힌다. 건설사 입장에서는 완공 후에도 금융비용이 계속 발생해 자금난으로 이어질 수 있어, 정책 당국도 이 수치를 더 주의 깊게 본다.</p>
+
+      <div class="quote-box"><p>총량보다 중요한 것은 구성이다. 같은 미분양 숫자라도 공사 중 물량이 많은지, 준공 후 물량이 많은지에 따라 해석이 정반대가 된다.</p><div class="quote-author">— 편집팀 해설</div></div>
+
+      <h2>통계는 어떻게 만들어지고 언제 공표되나</h2>
+      <p>미분양주택현황은 시군구가 관할 지역의 현황을 모아 시도에 보고하고, 시도가 이를 취합해 국토교통부에 올리는 체계로 작성된다. 공표 주기는 매월이다. 국토교통부는 매달 말 무렵 직전 달 말 기준 주택통계를 발표하며, 이 자료에 준공 후 미분양 수치가 함께 담긴다. 예컨대 2025년 6월 30일 발표된 5월 주택통계에서는 5월 말 기준 전국 준공 후 미분양이 2만 7,013호로 보도됐다.</p>
+      <p>따라서 뉴스에서 보는 미분양 수치는 발표 시점이 아니라 '직전 달 말 기준'이라는 점을 기억해야 한다. 공표까지 약 한 달의 시차가 있어, 이미 지나간 시장 상황을 반영한다.</p>
+      <ul class="tip-list">
+        <li>공표 주기는 월 단위이며, 기준 시점은 직전 달 말이다.</li>
+        <li>조회 경로는 국토교통부 통계누리의 미분양주택현황이다.</li>
+        <li>공공데이터포털과 지자체 데이터 사이트에서도 시군구별 파일을 내려받을 수 있다.</li>
+        <li>지역별 값은 시도 단위와 시군구 단위로 나뉘므로 같은 지역이라도 표의 단위를 확인해야 한다.</li>
+      </ul>
+
+      <h2>통계를 읽을 때 주의할 점</h2>
+      <p>첫째, 미분양 통계는 지자체 보고에 의존하므로 현실과 차이가 생길 수 있다. 2026년 3월에는 정부가 발표하는 미분양 통계가 지역에 따라 실제 물량과 최대 네 배가량 차이가 난다는 지적이 보도되기도 했다. 통계의 한계를 전제로 추세를 보는 편이 안전하다.</p>
+      <p>둘째, 전국 합계보다 지역별 분포가 중요하다. 전국 수치가 줄어도 특정 지방에 재고가 쏠려 있을 수 있고, 수도권과 지방의 시장 온도는 다르게 움직인다. 셋째, 한 달 수치보다 몇 개월에 걸친 추세와 인허가·착공·입주 통계를 함께 보아야 공급 압력을 가늠할 수 있다.</p>
+
+      <div class="quote-box"><p>미분양은 결과 지표다. 원인은 분양가, 입지, 금리, 대출 여건에 있고 숫자는 그 결과를 한 달 늦게 알려준다.</p><div class="quote-author">— 편집팀 해설</div></div>
+
+      <h2>실수요자·투자자 시사점</h2>
+      <ul class="tip-list">
+        <li>기사에 나온 미분양이 전체인지 준공 후인지 먼저 확인한다.</li>
+        <li>관심 지역의 준공 후 미분양 추이를 시군구 단위로 3~6개월 이상 본다.</li>
+        <li>미분양 증가가 곧 가격 하락을 뜻하지는 않으므로 실거래가와 입주 물량을 함께 비교한다.</li>
+        <li>준공 후 미분양 단지는 분양 조건이 바뀌는 경우가 있으니 계약 조건을 문서로 확인한다.</li>
+        <li>통계의 시차와 보고 오차를 감안해 단정적인 결론을 피한다.</li>
+      </ul>
+
+      <h2>결론</h2>
+      <p>미분양은 하나의 숫자처럼 보이지만 공사 중 물량과 준공 후 물량으로 나뉘며 각각 가진 의미가 다르다. 매월 공표되는 국토교통부 통계를 기준 시점과 구성까지 확인하며 읽으면, 헤드라인에 휘둘리지 않고 시장의 실제 소화 능력을 판단할 수 있다.</p>
+
+      <div class="disclaimer">본 글은 정보 제공을 목적으로 하며 투자 권유나 법률·세무 자문이 아닙니다. 수치는 국토교통부 등 공개 자료를 바탕으로 하되 최신 통계는 국토교통부 통계누리에서 확인하시기 바랍니다.</div>
+    </article>
+  </main>
+
+  <aside>
+    <div class="sidebar-card"><h4>핵심 요약</h4><ul class="summary-list">
+      <li>미분양은 분양했으나 계약되지 않은 주택</li>
+      <li>일반 미분양은 공사 중 물량 포함</li>
+      <li>준공 후 미분양은 공사 완료 후 재고</li>
+      <li>국토교통부가 매월 직전 달 말 기준 공표</li>
+      <li>지자체 보고 기반이라 오차 가능성 존재</li></ul></div>
+    <div class="sidebar-card"><h4>관련 기사</h4><ul class="related-list">
+      <li><a href="article_20260810_1_actual_price_v2.html">실거래가 조회 방법</a></li>
+      <li><a href="article_20261005_1_price_index_difference_v2.html">한국부동산원 KB 주택가격지수 차이</a></li>
+      <li><a href="article_20260817_1_official-price_v2.html">공시가격 산정 기준</a></li>
+      <li><a href="article_20261014_1_resale_restriction_v2.html">분양권 전매제한 기간</a></li></ul></div>
+    <div class="sidebar-card"><h4>확인 순서</h4><ul class="timeline">
+      <li><strong>1단계</strong>기준 시점 확인</li>
+      <li><strong>2단계</strong>일반·준공 후 구분</li>
+      <li><strong>3단계</strong>시군구별 추이 비교</li></ul></div>
+  </aside>
+</div>
+
+<footer><strong>부동산인사이트</strong><br>© 2026 부동산인사이트. 본 사이트의 콘텐츠는 정보 제공 목적입니다.</footer>
+</body>
+</html>
