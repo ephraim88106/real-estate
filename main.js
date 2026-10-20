@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 415,
+    url: 'article_20261020_1_subscription_v2.html',
+    category: '분양',
+    title: '10월 4.6만 가구 분양 폭발, 왜 청약 미달이 속출하나?',
+    summary: '2026년 10월 전국에서 약 4.6만 가구가 쏟아지는 분양 대전이 펼쳐졌다. 집값은 오르는데 청약은 미달되는 엇박자 현상의 구조적 원인을 파헤치고, 실수요자를 위한 옥석 가리기 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-20',
+    title_en: 'October Surge: 46,000 Units Listed, Yet Subscription Misses Pile Up?',
+    summary_en: 'Korea's October housing market floods with 46,000 new units, yet many projects go under-subscribed. We dissect the structural reasons behind this paradox and guide real buyers to the right choices.'
+  },
+  {
+    id: 414,
+    url: 'article_20261020_2_reconstruction_v2.html',
+    category: '재개발',
+    title: '공사비 폭등에 단지 쪼개기까지 — 재건축 속도전의 민낯',
+    summary: '재건축·재개발 현장에서 공사비 급등과 조합 갈등이 심화되며 단지 쪼개기라는 극단적 해법이 등장했다. 이주비 한도 확대와 인허가 지원 강화 정책의 실효성과 한계를 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-20',
+    title_en: 'Rising Construction Costs Trigger Block Splitting Tactics in Korea's Redevelopment Race',
+    summary_en: 'As construction costs soar and association conflicts deepen, Korean redevelopment projects are resorting to zone-splitting strategies. We assess the government's policy responses and their real-world limits.'
+  },
+  {
     id: 413,
     url: 'article_20261020_1_gift_tax_deduction_v2.html',
     category: '정책',
