@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 413,
+    url: 'article_20261020_1_gift_tax_deduction_v2.html',
+    category: '정책',
+    title: '증여재산공제 10년 합산 뜻 — 관계별 금액과 혼인·출산 1억 추가공제 시기',
+    summary: '증여재산공제는 배우자 6억 원, 성년 자녀 5천만 원, 미성년 자녀 2천만 원으로 관계에 따라 다르고 10년 단위로 합산된다. 혼인·출산 추가공제 1억 원의 시기 요건, 세율 10~50%, 신고 기한 3개월을 해설한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-20',
+    title_en: 'Gift Tax Deduction in Korea: 10-Year Aggregation, Amounts by Relationship, and the 100 Million Won Marriage and Birth Allowance',
+    summary_en: 'Explains Korean gift tax deductions (spouse 600 million won, adult child 50 million won, minor 20 million won), the 10-year aggregation rule, the marriage and birth allowance, tax rates and the three-month filing deadline.'
+  },
+  {
     id: 412,
     url: 'article_20261019_1_unsold_v2.html',
     category: '시장동향',
