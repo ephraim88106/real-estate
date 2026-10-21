@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 417,
+    url: 'article_20261021_1_investment_v2.html',
+    category: '투자',
+    title: '서울 아파트 경매 낙찰가율 94.7% 1년 7개월 만에 최저…지금이 저점 매수 황금 기회인가?',
+    summary: '서울 아파트 경매 낙찰가율이 94.7%로 1년 7개월 만에 최저를 기록했다. 고가 아파트 약세와 중저가 실수요 쏠림이 동시에 나타나는 이중 구조 속에서 투자자가 주목해야 할 경매 시장 신호를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-21',
+    title_en: 'Seoul Apartment Auction Rate Hits 19-Month Low at 94.7%... Is Now the Golden Opportunity for Bottom Fishing?',
+    summary_en: 'Seoul apartment auction rates dropped to 94.7%, the lowest in 19 months. While high-priced apartments weaken, mid-to-low price segments remain competitive. We analyze what this dual market structure means for investors.'
+  },
+  {
+    id: 416,
+    url: 'article_20261021_2_overseas_v2.html',
+    category: '해외',
+    title: '미국 모기지 금리 7.5% 돌파·주택 매매 계약 25년 만에 최저…한국인 해외 부동산 투자자, 지금 어떻게 해야 하나?',
+    summary: '미국 30년 모기지 금리가 7.49%까지 치솟으며 주택 시장이 14년 만에 최악의 국면에 접어들었다. 미국을 포함해 일본, 동남아 주요 부동산 시장을 점검하고 한국인 투자자들의 대응 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-21',
+    title_en: 'US Mortgage Rate Surpasses 7.5% & Home Sales Hit 25-Year Low... What Should Korean Overseas Property Investors Do Now?',
+    summary_en: 'US 30-year mortgage rates surged to 7.49%, pushing the housing market to its worst in 14 years. We examine the US, Japan, and Southeast Asian property markets and provide strategies for Korean investors.'
+  },
+  {
     id: 415,
     url: 'article_20261020_1_subscription_v2.html',
     category: '분양',
