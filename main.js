@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 418,
+    url: 'article_20261023_1_auction-eviction-order_v2.html',
+    category: '투자',
+    title: '인도명령 신청 언제까지 — 낙찰 대금 납부 후 6개월과 집행 절차',
+    summary: '경매 낙찰자가 점유자를 내보내는 인도명령은 대금 납부 후 6개월 안에 신청해야 한다. 민사집행법 제136조 기준으로 대상 점유자, 대항력 있는 임차인 제외, 즉시항고, 명도소송과의 차이를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-23',
+    title_en: 'Auction Eviction Order Deadline: 6 Months After Payment and Enforcement Steps',
+    summary_en: 'A winning auction bidder must apply for a delivery order within six months of paying the price. This explains Civil Execution Act Article 136, who can be evicted, appeals, and how it differs from an eviction lawsuit.'
+  },
+  {
     id: 417,
     url: 'article_20261021_1_investment_v2.html',
     category: '투자',
@@ -118,7 +130,7 @@ const articles = [
     author: '부동산인사이트 편집팀',
     date: '2026-10-20',
     title_en: 'October Surge: 46,000 Units Listed, Yet Subscription Misses Pile Up?',
-    summary_en: 'Korea's October housing market floods with 46,000 new units, yet many projects go under-subscribed. We dissect the structural reasons behind this paradox and guide real buyers to the right choices.'
+    summary_en: 'Korea\'s October housing market floods with 46,000 new units, yet many projects go under-subscribed. We dissect the structural reasons behind this paradox and guide real buyers to the right choices.'
   },
   {
     id: 414,
@@ -129,8 +141,8 @@ const articles = [
     image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
     author: '부동산인사이트 편집팀',
     date: '2026-10-20',
-    title_en: 'Rising Construction Costs Trigger Block Splitting Tactics in Korea's Redevelopment Race',
-    summary_en: 'As construction costs soar and association conflicts deepen, Korean redevelopment projects are resorting to zone-splitting strategies. We assess the government's policy responses and their real-world limits.'
+    title_en: 'Rising Construction Costs Trigger Block Splitting Tactics in Korea\'s Redevelopment Race',
+    summary_en: 'As construction costs soar and association conflicts deepen, Korean redevelopment projects are resorting to zone-splitting strategies. We assess the government\'s policy responses and their real-world limits.'
   },
   {
     id: 413,
