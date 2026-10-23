@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 420,
+    url: 'article_20261023_1_policy_v2.html',
+    category: '정책',
+    title: '집값 잡겠다던 10·15 대책 1년, 규제는 강화됐는데 집값은 왜 안 잡히나?',
+    summary: '10·15 부동산 대책 시행 1년, 강력한 대출·토허구 규제에도 서울 집값 상승 압력이 지속되는 구조적 원인 4가지와 실수요자를 위한 체크포인트를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-23',
+    title_en: 'One Year After the Oct.15 Real Estate Measures: Why Haven\'t Home Prices Come Down Despite Tighter Regulations?',
+    summary_en: 'One year after Korea\'s sweeping Oct. 15 housing regulation package, Seoul apartment prices remain stubbornly high. We analyze four structural reasons why demand-side restrictions alone cannot solve the supply crisis.'
+  },
+  {
+    id: 419,
+    url: 'article_20261023_2_subscription_v2.html',
+    category: '분양',
+    title: '청약 경쟁률 39개월 만에 최저… 서울 빼고 지방 미분양 폭탄 터지나?',
+    summary: '전국 1순위 청약 경쟁률이 6개월 연속 하락해 39개월 최저치를 기록했다. 서울 과열과 지방 미달의 극심한 양극화, 지방 미분양 리스크와 실전 청약 전략을 총정리한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-23',
+    title_en: 'Subscription Competition Hits 39-Month Low: Is a Regional Unsold Housing Bomb About to Explode Outside Seoul?',
+    summary_en: 'National apartment subscription competition rates have fallen for six consecutive months to a 39-month low, masking extreme divergence: Seoul surges while provincial cities pile up unsold units. We break down the risks and strategy.'
+  },
+  {
     id: 418,
     url: 'article_20261023_1_auction-eviction-order_v2.html',
     category: '투자',
