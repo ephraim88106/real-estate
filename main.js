@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 421,
+    url: 'article_20261024_1_us-property-tax_v2.html',
+    category: '해외',
+    title: '캘리포니아 텍사스 재산세 납부 언제 — 11월·1월 납기와 연체 가산금',
+    summary: '미국 재산세는 카운티가 부과해 같은 가격의 집도 주별 실효세율이 크게 다르다. 전국 평균 약 0.9%, 캘리포니아 Proposition 13의 연 2% 상한, 텍사스·플로리다 납기와 연체 가산금, 외국인 소유자 유의점을 해설한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-24',
+    title_en: 'California and Texas Property Tax Due Dates: November and January Deadlines and Late Penalties',
+    summary_en: 'US property tax is levied by counties, so effective rates vary widely by state. Covers the roughly 0.9% national average, California Prop 13, Texas and Florida due dates, late penalties and points for foreign owners.'
+  },
+  {
     id: 420,
     url: 'article_20261023_1_policy_v2.html',
     category: '정책',
