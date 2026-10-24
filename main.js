@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 423,
+    url: 'article_20261024_1_reconstruction_v2.html',
+    category: '재개발',
+    title: '재건축 이주 5만 가구 쓰나미 온다… 전월세 시장 \'초긴장\' 발령',
+    summary: '사업시행인가를 넘어선 재건축·재개발 5만 가구가 이주 단계에 진입하면서 서울 전월세 시장에 역대급 수급 충격이 예고됐다. 신통기획 가속과 추가분담금 불안이 겹친 복합 리스크를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-24',
+    title_en: '5 Billion Housing Reconstruction Tsunami Incoming - Seoul Rental Market on High Alert',
+    summary_en: '50,000 units passing project implementation approval are entering the relocation phase, threatening a massive supply shock in Seoul\'s rental market. Analysis of complex risks including accelerated urban renewal and surcharges.'
+  },
+  {
+    id: 422,
+    url: 'article_20261024_2_investment_v2.html',
+    category: '투자',
+    title: '서울 경매 낙찰가율 94.7% 최저… \'불장 끝났나\' vs \'저가 매수 기회 왔다\'',
+    summary: '9월 서울 아파트 경매 낙찰가율이 1년 7개월 만에 최저치를 기록하며 경매 시장 냉각 신호가 감지되고 있다. 강남 고가와 외곽 중저가의 극명한 온도차 속에서 투자 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-24',
+    title_en: 'Seoul Auction Award Rate Hits 94.7% Low - End of Bull Market or Buying Opportunity?',
+    summary_en: 'Seoul apartment auction award rates hit a 19-month low in September, signaling market cooling. Analysis of the stark gap between upscale Gangnam units and mid-range outer districts offers strategic investment insights.'
+  },
+  {
     id: 421,
     url: 'article_20261024_1_us-property-tax_v2.html',
     category: '해외',
