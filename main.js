@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 424,
+    url: 'article_20261025_1_tenancy-registration-order_v2.html',
+    category: '칼럼',
+    title: '임차권등기명령 신청 절차 — 이사 전 대항력 유지 조건과 비용 종류',
+    summary: '보증금을 돌려받지 못한 채 이사해야 할 때 쓰는 임차권등기명령의 신청 요건, 관할 법원, 필요 서류, 비용 구성과 등기 후 대항력·우선변제권 유지 효과 및 한계를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-25',
+    title_en: 'Tenancy Registration Order Procedure - Keeping Tenant Rights Before Moving Out',
+    summary_en: 'Explains who can apply for a tenancy registration order, the court, documents, cost items, and how it preserves opposing force and priority repayment rights after moving out, including its limits.'
+  },
+  {
     id: 423,
     url: 'article_20261024_1_reconstruction_v2.html',
     category: '재개발',
