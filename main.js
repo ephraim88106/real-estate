@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 425,
+    url: 'article_20261026_1_pir-meaning_v2.html',
+    category: '시장동향',
+    title: 'PIR 뜻 — 소득 대비 주택가격 계산과 KB·국토부 수치 비교',
+    summary: 'PIR은 주택가격을 가구 연소득으로 나눈 값이다. KB부동산의 분위별 25개 조합과 국토교통부 주거실태조사 수치가 다른 이유, 주택구입부담지수와의 구분, 해석할 때의 한계를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-26',
+    title_en: 'What Is PIR — Price-to-Income Calculation and KB vs MOLIT Figures',
+    summary_en: 'PIR divides home price by annual household income. This guide explains why KB Real Estate\'s 25 quintile combinations and the MOLIT housing survey give different figures, how PIR differs from the K-HAI affordability index, and its limits.'
+  },
+  {
     id: 424,
     url: 'article_20261025_1_tenancy-registration-order_v2.html',
     category: '칼럼',

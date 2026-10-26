@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIR 뜻 — 소득 대비 주택가격 계산과 KB·국토부 수치 비교 | 부동산인사이트</title>
+  <meta name="description" content="PIR(소득 대비 주택가격 비율)의 뜻과 계산식, 중위 기준 PIR과 분위별 PIR의 차이, KB부동산과 국토교통부 주거실태조사 수치가 다른 이유, 주택구입부담지수와의 차이를 해설한다.">
+  <link rel="canonical" href="https://realestate.ephseed.com/article_20261026_1_pir-meaning_v2">
+  <meta property="og:url" content="https://realestate.ephseed.com/article_20261026_1_pir-meaning_v2">
+  <meta property="og:title" content="PIR 뜻 — 소득 대비 주택가격 계산과 KB·국토부 수치 비교">
+  <meta property="og:type" content="article">
+  <meta name="google-adsense-account" content="ca-pub-9118774019383180">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Noto Sans KR', sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.8; }
+    a { color: inherit; text-decoration: none; }
+    /* Header */
+    header { background: #0D2B55; position: sticky; top: 0; z-index: 500; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; font-weight: 700; color: #fff; }
+    .logo span { color: #F4A52D; }
+    nav { display: flex; gap: 24px; }
+    nav a { color: rgba(255,255,255,0.85); font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: #F4A52D; }
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%); padding: 64px 20px 52px; color: #fff; }
+    .hero-inner { max-width: 860px; margin: 0 auto; }
+    .cat-tag { display: inline-block; background: #1A4D8F; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 4px 14px; border-radius: 3px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+    .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; line-height: 1.4; margin-bottom: 18px; }
+    .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.82); margin-bottom: 22px; line-height: 1.7; }
+    .hero-meta { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+    /* Layout */
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+    @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+    /* Article */
+    article { background: #fff; border-radius: 8px; padding: 40px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    /* Data box */
+    .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 36px; }
+    @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+    .data-card { background: #e3ecf8; border-left: 4px solid #1A4D8F; border-radius: 6px; padding: 18px 16px; }
+    .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.8rem; font-weight: 700; color: #1A4D8F; }
+    .data-card .label { font-size: 0.78rem; color: #555; margin-top: 4px; line-height: 1.4; }
+    /* Body */
+    .body-text p { font-size: 1.02rem; color: #2a2a2a; margin-bottom: 20px; line-height: 1.9; }
+    .body-text h2 { font-family: 'Noto Serif KR', serif; font-size: 1.25rem; font-weight: 700; color: #0D2B55; border-left: 4px solid #1A4D8F; padding-left: 14px; margin: 36px 0 16px; }
+    .quote-box { background: #eaf1fa; border-left: 4px solid #1A4D8F; padding: 22px 24px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+    .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: #0D2B55; line-height: 1.8; }
+    .quote-box cite { display: block; margin-top: 10px; font-size: 0.82rem; color: #666; font-style: normal; }
+    .insight-box { background: #f3f7fc; border: 1.5px solid #1A4D8F; border-radius: 8px; padding: 24px 28px; margin: 28px 0; }
+    .insight-box h3 { font-size: 1rem; font-weight: 700; color: #1A4D8F; margin-bottom: 14px; }
+    .insight-box ul { padding-left: 20px; }
+    .insight-box ul li { font-size: 0.97rem; color: #2a2a2a; margin-bottom: 10px; line-height: 1.7; }
+    .disclaimer { background: #f2f2f2; border-radius: 6px; padding: 18px 20px; margin-top: 40px; font-size: 0.8rem; color: #777; line-height: 1.7; }
+    /* Sidebar */
+    aside { display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-box { background: #fff; border-radius: 8px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
+    .sidebar-box h3 { font-size: 0.95rem; font-weight: 700; color: #0D2B55; border-bottom: 2px solid #1A4D8F; padding-bottom: 10px; margin-bottom: 16px; }
+    .summary-list li { list-style: none; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem; color: #333; line-height: 1.6; }
+    .summary-list li::before { content: "✅ "; }
+    .related-list li { list-style: none; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+    .related-list li a { font-size: 0.87rem; color: #333; line-height: 1.5; display: block; }
+    .related-list li a:hover { color: #1A4D8F; }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+    .compare-table th { background: #e3ecf8; color: #0D2B55; padding: 8px 6px; font-weight: 700; }
+    .compare-table td { padding: 8px 6px; border-bottom: 1px solid #eee; color: #333; }
+    /* Footer */
+    footer { background: #0D2B55; color: rgba(255,255,255,0.65); text-align: center; padding: 32px 20px; font-size: 0.82rem; margin-top: 40px; }
+    footer .logo-f { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; color: #fff; margin-bottom: 8px; }
+    footer .logo-f span { color: #F4A52D; }
+    /* Fixed sidebar ad */
+    .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+    @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+  </style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-vH50HcSMSOmwFD8o"
+    data-ad-width = "160"
+    data-ad-height = "600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit = "DAN-c1XP1iKah32kfdAU"
+    data-ad-width = "728"
+    data-ad-height = "90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">부동산<span>인사이트</span></div>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="cat-tag">시장동향</div>
+    <h1>PIR 뜻 — 소득 대비 주택가격 계산과 KB·국토부 수치 비교</h1>
+    <p class="hero-sub">“서울 집값은 연소득의 10배가 넘는다”는 말에 쓰이는 지표가 PIR이다. 같은 서울을 두고도 10배, 13배, 18배로 숫자가 갈리는 이유는 계산에 넣는 집값과 소득의 정의가 다르기 때문이다.</p>
+    <div class="hero-meta">부동산인사이트 편집팀 · 2026년 10월 26일 · #PIR #소득대비집값 #주택지표</div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+    <div class="data-box">
+      <div class="data-card"><div class="num">집값 ÷ 연소득</div><div class="label">PIR 기본 계산식<br>(Price to Income Ratio)</div></div>
+      <div class="data-card"><div class="num">5×5 = 25개</div><div class="label">KB부동산 분위별<br>PIR 조합 수</div></div>
+      <div class="data-card"><div class="num">원리금 ÷ 소득</div><div class="label">주택구입부담지수는<br>대출 상환 부담을 측정</div></div>
+    </div>
+    <div class="body-text">
+      <p>부동산 뉴스에 자주 등장하는 PIR은 주택가격을 가구의 연간 소득으로 나눈 값이다. 집값이 6억 원이고 가구 연소득이 6천만 원이라면 PIR은 10배다. 소득을 한 푼도 쓰지 않고 10년을 모아야 그 집을 살 수 있다는 뜻으로 읽는다. 값이 클수록 소득에 비해 집이 비싸다는 의미이고, 같은 도시의 과거와 비교하거나 다른 도시와 견줄 때 쓰인다.</p>
+      <p>문제는 이 단순한 식에 무엇을 넣느냐에 따라 결과가 크게 달라진다는 점이다. 집값은 평균인지 중위인지, 소득은 전체 가구인지 자가 가구인지, 근로소득인지 총소득인지에 따라 수치가 바뀐다. 이 글은 PIR의 계산 구조와 기관별 수치가 다른 이유, 해석할 때 놓치기 쉬운 한계를 설명한다. 기관별 최신 수치는 갱신 주기가 다르므로 인용하기 전에 발표 시점을 확인해야 한다.</p>
+      <h2>PIR 계산식과 숫자를 읽는 법</h2>
+      <p>PIR의 기본식은 단순하다. 주택가격을 연소득으로 나눈다. 예를 들어 서울의 중위 가구가 중위 가격대의 집을 산다고 가정할 때 집값이 9억 원, 가구 연소득이 9천만 원이면 PIR은 10이다. 이 값이 5라면 연소득 5년치, 20이라면 20년치가 집값과 같다는 뜻이다.</p>
+      <p>다만 PIR은 실제로 몇 년 만에 집을 살 수 있는지를 알려 주는 숫자가 아니다. 가구는 생활비를 쓰고, 대출을 받아 집을 사며, 이자를 낸다. PIR은 이런 현실을 모두 지우고 “소득 대비 가격의 상대적 크기”만 보여 주는 거친 지표다. 그래서 절대적 해석보다 시계열 비교, 지역 간 비교에 적합하다.</p>
+      <div class="quote-box"><p>“PIR이 알려 주는 것은 집을 사는 데 걸리는 시간이 아니라, 소득과 집값이 얼마나 벌어졌는가다.”</p><cite>— 지표 해석 원칙</cite></div>
+      <h2>KB부동산 PIR: 분위로 나누는 25개의 조합</h2>
+      <p>KB부동산은 주택가격과 가구소득을 각각 1분위(하위 20%)부터 5분위(상위 20%)까지 나눠 모두 25개의 PIR을 산출한다. 가장 널리 인용되는 것은 소득 3분위(중위 소득) 가구가 가격 3분위(중간 가격대) 주택을 사는 경우다. 언론이 “서울 PIR 10배 안팎”이라고 할 때는 대체로 이 중위 조합을 가리킨다.</p>
+      <p>반면 소득 하위 20% 가구가 가격 상위 20% 주택을 사는 조합이나 반대의 조합까지 계산하면 숫자는 몇 배씩 벌어진다. 소득 상위 20%·주택가격 상위 20% 기준 PIR을 소개한 기사와 중위 기준 PIR을 소개한 기사의 수치가 크게 다르게 보이는 이유다. 서로 다른 조합의 숫자를 한 문장에 놓고 비교하면 잘못된 결론이 나온다.</p>
+      <p>KB는 소득 자료의 출처에 따라 PIR을 여러 종류로 제공한다. 통계청(현 국가데이터처)의 가계소득 통계를 쓰는 지표가 대표적이고, 주택담보대출을 받은 실제 차주의 소득을 쓰는 지표도 있다. 후자는 대출이 가능한 가구의 소득이어서 전체 가구 소득보다 높게 잡히는 경향이 있고, PIR은 그만큼 낮게 나올 수 있다.</p>
+      <h2>국토교통부 주거실태조사 PIR은 왜 다른가</h2>
+      <p>국토교통부 주거실태조사도 PIR을 발표한다. 이쪽은 표본 가구를 직접 조사해 자가 가구가 보유한 주택의 가격(응답자가 인식하는 가격)과 가구 소득을 이용한다. 주거실태조사는 중위 PIR과 평균 PIR을 구분하고, 자가 가구와 임차 가구의 PIR도 따로 제시한다. KB의 가격은 시세 조사에 기반하고, 국토부는 가구가 응답한 값이라는 차이가 있다.</p>
+      <p>이 때문에 서울만 보아도 KB 중위 조합 PIR이 10배 안팎일 때 주거실태조사의 서울 자가 가구 PIR은 그보다 높게 나오기도 한다. 둘 중 어느 쪽이 맞는지가 아니라, 무엇을 측정한 숫자인지가 다르다. 수치를 인용할 때는 반드시 “누구의 PIR인지”를 함께 밝혀야 한다.</p>
+      <div class="quote-box"><p>“같은 PIR이라는 이름 아래 서로 다른 질문에 답하는 숫자들이 놓여 있다.”</p><cite>— 기관별 수치 비교 시 유의점</cite></div>
+      <h2>주택구입부담지수(K-HAI)와 PIR의 차이</h2>
+      <p>PIR과 자주 함께 나오는 지표가 한국주택금융공사의 주택구입부담지수(K-HAI)다. PIR이 집값과 소득의 비율이라면 K-HAI는 대출 상환 부담에 초점을 둔다. 중위 소득 가구가 중간 가격대 주택을 표준적인 조건의 주택담보대출(보도에서는 LTV 47.9%, 만기 20년, 원리금균등분할상환 가정으로 소개된다)로 구입할 때, 연간 원리금 상환액이 소득에서 차지하는 비중을 적정 부담 수준과 비교해 지수로 만든다.</p>
+      <p>지수 100은 대출 원리금 상환액이 소득의 일정 비율(보도에 따라 25% 안팎으로 소개)에 해당하는 상태를 뜻하고, 이보다 높을수록 부담이 큰 것으로 본다. 금리가 오르면 집값이 같아도 K-HAI는 올라간다. 반면 PIR은 금리와 무관하다. 그래서 금리 변동기에는 두 지표가 다른 방향을 가리킬 수 있다. 정확한 산식과 가정은 주택금융공사가 공표하는 자료에서 확인해야 한다.</p>
+      <h2>PIR을 해석할 때의 한계</h2>
+      <p>첫째, 소득 대비 가격만 보므로 금리와 대출 규제의 영향이 빠진다. 같은 PIR이라도 금리가 낮고 대출 한도가 넓으면 실제 매수 여력은 달라진다. 둘째, 가구 구성이 반영되지 않는다. 맞벌이 가구와 외벌이 가구, 상속·증여로 자금을 마련하는 가구의 사정은 PIR에 나타나지 않는다. 셋째, 중위 조합은 현실에서 가장 흔한 매수 사례가 아니다. 서울에서 실제 거래되는 집은 중위 소득 가구가 사기에는 비싼 경우가 많아, 거래 당사자의 자산과 대출 규모가 더 중요하다.</p>
+      <p>넷째, 지역을 비교할 때 가격 조사 방식의 차이를 고려해야 한다. 시세 기반 지표는 실제 거래가 적을 때 현실과 어긋날 수 있다. 이런 한계 때문에 PIR 하나로 “사도 된다, 사면 안 된다”를 판단하는 것은 위험하다. PIR은 방향과 추세를 보는 보조 지표로 다루고, 대출 한도(DSR·LTV)와 월 상환 부담을 함께 계산해야 한다.</p>
+      <div class="insight-box">
+        <h3>📌 실수요자·투자자 시사점</h3>
+        <ul>
+          <li>PIR 수치를 볼 때는 어느 기관의 지표인지, 중위 기준인지 분위 조합인지를 먼저 확인한다.</li>
+          <li>서로 다른 기관의 PIR을 한 표에 놓고 비교하지 않는다. 정의가 달라 비교가 성립하지 않는다.</li>
+          <li>본인의 PIR은 희망 집값을 세전 가구 연소득으로 나누어 직접 계산해 본다.</li>
+          <li>PIR이 높은 지역일수록 대출 의존도가 커지므로 금리 변동에 따른 원리금 부담을 함께 점검한다.</li>
+          <li>금리가 움직이는 시기에는 PIR과 함께 주택구입부담지수 같은 상환 부담 지표를 병행해 본다.</li>
+          <li>PIR은 가격 수준 판단 지표일 뿐 매수 시점 신호가 아니므로, 단독으로 투자 판단을 내리지 않는다.</li>
+        </ul>
+      </div>
+      <h2>결론</h2>
+      <p>PIR은 집값을 가구 연소득으로 나눈 단순한 비율이지만, 어떤 집값과 어떤 소득을 쓰느냐에 따라 같은 도시에서도 다른 숫자가 나온다. KB부동산은 분위별 25개 조합과 소득 출처별 지표를 제공하고, 국토교통부 주거실태조사는 응답 가구의 자가 주택을 기준으로 한다. 숫자를 인용하기 전에 정의를 확인하고, 금리와 대출 한도까지 반영한 상환 부담 지표를 함께 보는 것이 PIR을 제대로 쓰는 방식이다.</p>
+      <div class="disclaimer"><strong>※ 면책 고지:</strong> 본 글은 KB부동산, 국토교통부 주거실태조사, 한국주택금융공사의 공개 설명과 언론 보도를 바탕으로 한 일반 정보이며, 기관별 최신 수치와 산식은 변경될 수 있다. 인용 전 각 기관의 원자료를 확인하시기 바라며, 투자 판단의 책임은 독자 본인에게 있다.</div>
+    </div>
+  </article>
+  <aside>
+    <div class="sidebar-box"><h3>📋 핵심 요약</h3><ul class="summary-list">
+      <li>PIR은 주택가격을 가구 연소득으로 나눈 값</li>
+      <li>KB는 가격·소득 5분위로 25개 PIR 산출</li>
+      <li>국토부는 응답 가구의 자가 주택 기준 제시</li>
+      <li>주택구입부담지수는 금리 반영, PIR은 무관</li>
+      <li>기관별 수치 직접 비교는 오해의 원인</li></ul></div>
+    <div class="sidebar-box"><h3>🔗 관련 기사</h3><ul class="related-list">
+      <li><a href="article_20261005_1_price_index_difference_v2.html">한국부동산원 KB 주택가격지수 차이 — 조사 방식과 표본 규모</a></li>
+      <li><a href="article_20260907_1_housing-supply-ratio_v2.html">주택보급률 뜻 — 자가보유율·자가점유율과의 차이와 산정식</a></li>
+      <li><a href="article_20260831_1_jeonse-ratio_v2.html">전세가율 뜻 — 계산법과 깡통전세 판단 방법</a></li>
+      <li><a href="article_20260810_1_actual_price_v2.html">실거래가 조회 방법 — 국토부 공개시스템 이용법과 호가와의 차이</a></li></ul></div>
+    <div class="sidebar-box"><h3>📊 PIR 예시</h3><table class="compare-table">
+      <thead><tr><th>집값</th><th>연소득</th><th>PIR</th></tr></thead><tbody>
+      <tr><td>3억</td><td>6천만</td><td>5배</td></tr>
+      <tr><td>6억</td><td>6천만</td><td>10배</td></tr>
+      <tr><td>9억</td><td>6천만</td><td>15배</td></tr></tbody></table></div>
+  </aside>
+</div>
+
+<footer>
+  <div class="logo-f">부동산<span>인사이트</span></div>
+  <p>© 2026 부동산인사이트 · 본 콘텐츠의 무단 전재·복사를 금합니다.</p>
+  <p style="margin-top:8px;">이 기사는 정보 제공 목적으로 작성되었으며, 투자 결정의 책임은 독자 본인에게 있습니다.</p>
+</footer>
+
+</body>
+</html>
