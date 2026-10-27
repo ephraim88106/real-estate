@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 428,
+    url: 'article_20261027_1_subscription_v2.html',
+    category: '분양',
+    title: '청약 경쟁률 39개월 최저치 추락…분양가 폭등이 부른 \'수요 절벽\'의 실체',
+    summary: '전국 1순위 청약 경쟁률이 39개월 만에 최저치인 5.6대 1을 기록했다. 분양가 고공행진, 고금리, 공급 물량 증가가 맞물리며 지방은 첫 미달 사태가 발생했고, 수도권-지방 청약 양극화가 심화되고 있다. 실수요자는 입지 우선 원칙과 분양가 시세 비교를 통한 전략적 청약이 필요하다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-27',
+    title_en: 'Subscription Rate Hits 39-Month Low: The Reality of \'Demand Cliff\' Caused by Soaring Pre-sale Prices',
+    summary_en: 'South Korea\'s first-priority apartment subscription competition rate hit a 39-month low of 5.6:1. Rising pre-sale prices, high interest rates, and increased supply have led to first-ever misses in Busan, deepening the urban-rural divide. Strategic approaches prioritizing location and fair pricing are essential.'
+  },
+  {
+    id: 427,
+    url: 'article_20261027_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '서울 재건축 5만 가구 이주 주의보…\'정비사업 30일 룰\'이 바꾸는 전월세 시장의 판도',
+    summary: '사업시행인가를 넘은 서울 재건축 5만 가구의 이주가 본격화될 전망이다. 서울시는 10월 26일 정비사업 시행자 지정 30일 룰을 시행하며 재개발·재건축 속도를 높이고 있다. 이주 수요로 인한 전월세 상승과 창신 9·10구역 논란 등 현안을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-27',
+    title_en: 'Warning: 50,000 Seoul Reconstruction Households Set to Relocate — How the \'30-Day Rule\' Will Reshape the Rental Market',
+    summary_en: 'Seoul\'s reconstruction projects are accelerating under the new 30-day operator designation rule (effective Oct 26, 2026). With 50,000 households facing relocation, rental market pressure is mounting. We analyze the Changsin 9/10 zone petition controversy and what it means for tenants.'
+  },
+  {
     id: 426,
     url: 'article_20261027_1_acq-tax-surcharge_v2.html',
     category: '정책',
