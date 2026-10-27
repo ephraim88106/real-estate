@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 426,
+    url: 'article_20261027_1_acq-tax-surcharge_v2.html',
+    category: '정책',
+    title: '취득세 12% 언제부터 — 주택 수 산정에 분양권·입주권·오피스텔 들어가는 시점',
+    summary: '조정대상지역 2주택 8%, 3주택 이상 12%로 갈리는 취득세 중과 구조를 해설한다. 세대 단위 주택 수 판정, 분양권·입주권·주거용 오피스텔이 포함되는 취득 시기, 일시적 2주택 3년 예외와 법인·증여 중과를 설명한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-27',
+    title_en: 'Acquisition Tax 8% and 12% — When Presale Rights and Officetels Count as Homes',
+    summary_en: 'How Korea\'s multi-home acquisition tax surcharge works: 8% for a second home and 12% for a third in adjustment zones, household-based home counts, which assets are included, and the three-year temporary two-home exception.'
+  },
+  {
     id: 425,
     url: 'article_20261026_1_pir-meaning_v2.html',
     category: '시장동향',
