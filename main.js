@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 429,
+    url: 'article_20261028_1_presale-transfer-tax_v2.html',
+    category: '분양',
+    title: '분양권 양도소득세 세율 — 보유기간별 70%·60% 차이와 지방소득세 포함 실효세율',
+    summary: '분양권 양도세율은 보유 1년 미만 70%, 1년 이상 60%로 갈리고 2년이 넘어도 누진세율로 내려가지 않는다. 지방소득세 10%를 더한 실효세율, 양도차익 산정, 주택 수 영향, 양도월 말일부터 2개월 이내 신고 시기를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-28',
+    title_en: 'Presale Right Capital Gains Tax Rates: 70% vs 60% by Holding Period and Effective Rate with Local Tax',
+    summary_en: 'Capital gains on a presale right are taxed at 70% if held under one year and 60% afterward, with no step-down to progressive rates. This guide covers the 10% local income tax, gain calculation, house-count effects and the two-month filing deadline.'
+  },
+  {
     id: 428,
     url: 'article_20261027_1_subscription_v2.html',
     category: '분양',
