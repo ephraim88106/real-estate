@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 431,
+    url: 'article_20261028_1_investment-auction_v2.html',
+    category: '투자',
+    title: '서울 경매 시장에 찬바람…낙찰가율 94.7%, 지금이 진짜 매수 기회인가?',
+    summary: '서울 아파트 경매 낙찰가율이 1년 7개월 만에 최저치인 94.7%로 떨어졌다. 역대 최다 경매 물건이 쏟아지는 이 시점, 투자자들은 냉각된 시장을 위기로 볼 것인가 기회로 볼 것인가.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-28',
+    title_en: 'Seoul Auction Market Cools Down - Is a 94.7% Success Rate a Buying Opportunity?',
+    summary_en: 'Seoul apartment auction success rates hit a 19-month low of 94.7%. With a record number of properties hitting the auction market, investors must decide: is this a crisis or an opportunity?'
+  },
+  {
+    id: 430,
+    url: 'article_20261028_2_overseas-us-restriction_v2.html',
+    category: '해외',
+    title: '미국 36개 주가 외국인 땅 막는다…한국인 투자자, 이제 어디로 가야 하나?',
+    summary: '미국 내 외국인 부동산 소유 제한법이 36개 주로 확산되고 2026년 외국인 매수는 19% 급감했다. 이 거대한 패러다임 전환 앞에 한국인 투자자들이 취할 수 있는 새로운 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-28',
+    title_en: '36 US States Now Restrict Foreign Property Ownership - Where Should Korean Investors Go?',
+    summary_en: 'Foreign property ownership restrictions have spread to 36 US states, with foreign purchases falling 19% in 2026. This analysis examines the strategic options for Korean investors facing this paradigm shift.'
+  },
+  {
     id: 429,
     url: 'article_20261028_1_presale-transfer-tax_v2.html',
     category: '분양',
