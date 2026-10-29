@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 432,
+    url: 'article_20261029_1_reconstruction-diagnosis_v2.html',
+    category: '재개발',
+    title: '재건축진단 뜻 — 30년 경과 단지 면제 조건과 진행 절차',
+    summary: '2025년 6월 시행된 개정 도시정비법에서 안전진단이 재건축진단으로 바뀌었다. 통과 시한이 사업시행계획인가 전으로 이동했고, 준공 30년 경과 단지는 주민이 원하면 진단을 면제받을 수 있다. 평가항목 가중치 변화와 진행 절차를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-29',
+    title_en: 'Reconstruction Diagnosis Explained - Exemption for 30-Year-Old Complexes and the Process',
+    summary_en: 'Since June 2025 the safety inspection for redevelopment has become a reconstruction diagnosis, due before project implementation approval. Complexes completed 30+ years ago can skip it if owners wish.'
+  },
+  {
     id: 431,
     url: 'article_20261028_1_investment-auction_v2.html',
     category: '투자',
