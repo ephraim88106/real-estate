@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 434,
+    url: 'article_20261029_1_column_v2.html',
+    category: '칼럼',
+    title: '거래 절벽·강남 하락·미분양 급증... 2026년 10월, 한국 부동산 \'3중 위기\'의 진단',
+    summary: '서울 아파트 거래량 19.2% 급감, 강남·서초 동반 하락, 악성 미분양 15개월 연속 증가. 세 가지 악재가 동시에 가시화된 2026년 10월 부동산 시장의 구조적 전환점을 전문가 시각으로 진단한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-29',
+    title_en: 'Korea Real Estate \'3-Way Crisis\' Diagnosis: October 2026 Market Analysis',
+    summary_en: 'Seoul apartment transactions dropped 19.2%, Gangnam-Seocho prices fell simultaneously, and unsold inventory rose for 15 consecutive months. A deep expert analysis of the structural turning point in Korea\'s real estate market.'
+  },
+  {
+    id: 433,
+    url: 'article_20261029_2_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 거래량 19.2% 뚝, 강남·서초도 하락세...지금 사면 안 되는 이유 5가지',
+    summary: '2026년 10월 서울 아파트 매매 거래량이 전월 대비 19.2% 급감했다. 강남·서초 동반 하락, 악성 미분양 15개월 연속 증가로 시장 전환점이 명확해졌다. 데이터로 읽는 수도권 시장 동향 심층 분석.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-29',
+    title_en: 'Seoul Apartment Transactions Drop 19.2%, Gangnam-Seocho Also Declining: 5 Reasons Not to Buy Now',
+    summary_en: 'Seoul apartment transaction volume fell 19.2% in October 2026. With Gangnam and Seocho both turning negative and unsold inventory rising for 15 months, data-driven analysis of the turning point in Seoul\'s real estate market.'
+  },
+  {
     id: 432,
     url: 'article_20261029_1_reconstruction-diagnosis_v2.html',
     category: '재개발',
