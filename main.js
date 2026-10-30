@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 437,
+    url: 'article_20261030_1_policy_v2.html',
+    category: '정책',
+    title: '10·15 대책 1년, 집값은 더 올랐다: 이재명 정부 부동산 정책 성적표 — 48.9점',
+    summary: '이재명 정부의 10·15 부동산 안정화 대책이 시행 1주년을 맞았다. 시장 참여자들의 종합 평점은 48.9점, 서울 아파트값은 오히려 6.8% 올랐다. 수요 억제 일변도 정책의 한계가 수면 위로 드러났다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-30',
+    title_en: 'One Year After the Oct.15 Policy: Home Prices Rose Further',
+    summary_en: 'South Korea\'s Oct. 15 real estate stabilization package received a market score of just 48.9 out of 100 after one year, while Seoul apartment prices rose 6.8%. Demand-side controls alone proved insufficient.'
+  },
+  {
+    id: 436,
+    url: 'article_20261030_2_subscription_v2.html',
+    category: '분양',
+    title: '\'청약 포기\'가 늘고 있다: 경쟁률 반토막, 분양시장의 대이변',
+    summary: '2026년 전국 아파트 1순위 청약경쟁률이 5.6대 1로 1년 새 절반으로 떨어졌다. 분양가 급등과 공급 확대가 겹치며 수요자들이 선별적으로 청약 통장을 사용하는 새로운 시대가 열리고 있다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-30',
+    title_en: 'Subscription Applications Halved: Korea\'s New Apartment Market Dilemma',
+    summary_en: 'South Korea\'s nationwide apartment subscription competition rate dropped to 5.6:1 in 2026, half of last year\'s figure. Surging sales prices and increased supply are forcing buyers to become more selective.'
+  },
+  {
     id: 435,
     url: 'article_20261030_1_auction-loan-limit_v2.html',
     category: '투자',
