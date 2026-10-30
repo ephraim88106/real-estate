@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 435,
+    url: 'article_20261030_1_auction-loan-limit_v2.html',
+    category: '투자',
+    title: '경락잔금 LTV 뜻 — 낙찰가 대비 담보가치 적용과 잔금 납부 기한',
+    summary: '경락잔금대출은 낙찰 뒤 잔금을 치르기 위한 담보대출이다. 규제지역 LTV 40%, 비규제 70%, 은행권 DSR 40% 가운데 가장 낮은 값이 한도가 되는 구조와 입찰 전 확인 사항을 해설한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-30',
+    title_en: 'Auction Balance Loan LTV Explained: Collateral Value and Payment Deadline',
+    summary_en: 'An auction balance loan funds the remaining payment after winning a court auction. This explains how LTV 40 and 70 percent, the 40 percent bank DSR and price caps combine to set the limit, and what to confirm before bidding.'
+  },
+  {
     id: 434,
     url: 'article_20261029_1_column_v2.html',
     category: '칼럼',
