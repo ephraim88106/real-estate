@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 440,
+    url: 'article_20261031_1_reconstruction_v2.html',
+    category: '재개발',
+    title: '한강변 재건축 규제 대전환 임박: 15층 족쇄 풀리면 어떤 단지가 날아오를까?',
+    summary: '서울시 한강변 아파트 15층 고도제한 완화 논의가 재점화됐다. 오세훈 시장의 재건축 규제 개혁이 정비사업 판도를 어떻게 바꿀지, 수혜 단지와 리스크를 냉정하게 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-31',
+    title_en: 'Seoul Riverside Reconstruction Revolution: What Changes When the 15-Floor Height Limit Falls?',
+    summary_en: 'Debate over relaxing the 15-floor height restriction on Han River-side apartments has reignited. We analyze which projects stand to benefit and what risks lie ahead.'
+  },
+  {
+    id: 439,
+    url: 'article_20261031_2_investment_v2.html',
+    category: '투자',
+    title: '서울 아파트 경매 낙찰가율 94%대 하락… 이게 진짜 매수 기회일까, 함정일까?',
+    summary: '서울 아파트 경매 낙찰가율이 1년 7개월 만에 최저인 94.7%로 하락했다. 과열이 빠진 시장 속에서 진짜 투자 기회를 어떻게 포착할지 데이터로 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-31',
+    title_en: 'Seoul Apartment Auction Rate Drops to 94%: Real Buying Opportunity or Trap?',
+    summary_en: 'Seoul apartment auction bid ratios have fallen to a 19-month low of 94.7%. We break down the data to find genuine investment opportunities in a cooling market.'
+  },
+  {
     id: 438,
     url: 'article_20261031_1_thailand-condo-foreign_v2.html',
     category: '해외',
