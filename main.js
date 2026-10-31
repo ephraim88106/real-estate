@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 438,
+    url: 'article_20261031_1_thailand-condo-foreign_v2.html',
+    category: '해외',
+    title: '태국 콘도 외국인 쿼터 뜻 — 49% 산정과 송금 증빙 FET 발급 시점',
+    summary: '외국인이 태국 콘도를 자기 명의로 등기할 때 적용되는 건물별 연면적 49% 쿼터의 산정 방식, 외화 송금 증빙(FET) 발급 요건, 토지청 이전 수수료 2%와 매도인 세금 구조를 2026년 10월 기준으로 해설했다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-10-31',
+    title_en: 'Thailand Condo Foreign Quota Explained - 49% Calculation and FET Remittance Proof',
+    summary_en: 'How the 49% foreign ownership quota is calculated for Thai condominiums, when the FET remittance proof is issued, and what transfer fees and seller taxes apply, as of October 2026.'
+  },
+  {
     id: 437,
     url: 'article_20261030_1_policy_v2.html',
     category: '정책',
