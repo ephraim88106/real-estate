@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>전월세 전환율 뜻 — 법정 상한 산식과 보증금·월세 환산 예시 | 부동산인사이트</title>
+<meta name="description" content="전세 보증금을 월세로 바꿀 때 적용하는 전월세 전환율의 뜻, 법정 상한(기준금리+2%와 연 10% 중 낮은 값) 산식, 보증금별 월세 환산 예시를 해설합니다.">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261101_1_conversion-rate_v2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="전월세 전환율 뜻 — 법정 상한 산식과 보증금·월세 환산 예시">
+<meta property="og:description" content="전세 보증금을 월세로 바꿀 때 적용하는 전월세 전환율의 뜻, 법정 상한(기준금리+2%와 연 10% 중 낮은 값) 산식, 보증금별 월세 환산 예시를 해설합니다.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261101_1_conversion-rate_v2">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #0D2B55;
+    --accent: #6A6A10;
+    --accent-light: #f2f2d6;
+    --accent-mid: #a8a84a;
+    --gold: #F4A52D;
+    --text: #1a1a2e;
+    --text-light: #555;
+    --bg: #fdfdf6;
+    --white: #ffffff;
+    --card-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+
+  /* Fixed sidebar ad */
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+  /* Header */
+  header { background: var(--primary); position: sticky; top: 0; z-index: 999; box-shadow: 0 2px 15px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 900; color: #fff; text-decoration: none; }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+  @media (max-width: 768px) { nav { display: none; } }
+
+  /* Hero */
+  .hero { background: linear-gradient(135deg, #2A2A0A 0%, #7A7A1A 55%, #2A2A0A 100%); padding: 80px 20px 60px; color: #fff; }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .cat-tag { display: inline-block; background: var(--accent); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; line-height: 1.4; margin-bottom: 20px; }
+  .hero .subtitle { font-size: 1.05rem; opacity: 0.9; margin-bottom: 28px; line-height: 1.7; }
+  .meta { display: flex; gap: 20px; font-size: 0.85rem; opacity: 0.75; flex-wrap: wrap; }
+
+  /* Layout */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+  /* Data box */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  @media (max-width: 640px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border-left: 4px solid var(--accent); padding: 20px; border-radius: 8px; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 1.9rem; font-weight: 900; color: var(--accent); }
+  .data-card .label { font-size: 0.82rem; color: var(--text-light); margin-top: 4px; }
+
+  /* Body text */
+  .article-body p { font-size: 1.02rem; margin-bottom: 18px; color: var(--text); }
+  .article-body h2 { font-family: 'Noto Serif KR', serif; font-size: 1.35rem; font-weight: 700; color: var(--primary); border-left: 4px solid var(--accent); padding-left: 14px; margin: 36px 0 16px; }
+
+  /* Quote box */
+  .quote-box { background: var(--accent-light); border-left: 5px solid var(--accent-mid); padding: 24px 28px; margin: 28px 0; border-radius: 0 8px 8px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: #4a4a0a; margin: 0; }
+  .quote-box cite { display: block; margin-top: 10px; font-size: 0.85rem; font-style: normal; color: var(--text-light); }
+
+  /* Implications list */
+  .implications { background: var(--white); border: 1px solid var(--accent-light); border-radius: 10px; padding: 24px 28px; margin: 24px 0; }
+  .implications h3 { font-family: 'Noto Serif KR', serif; font-size: 1.05rem; color: var(--accent); margin-bottom: 14px; }
+  .implications ul { padding-left: 20px; }
+  .implications ul li { margin-bottom: 10px; font-size: 0.97rem; }
+
+  /* Disclaimer */
+  .disclaimer { background: #f0f0f0; border-radius: 8px; padding: 18px 22px; margin-top: 36px; }
+  .disclaimer p { font-size: 0.82rem; color: #777; margin: 0; line-height: 1.6; }
+
+  /* Sidebar */
+  .sidebar {}
+  .sidebar-card { background: var(--white); border-radius: 10px; padding: 22px; box-shadow: var(--card-shadow); margin-bottom: 24px; }
+  .sidebar-card h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 16px; }
+  .sidebar-card ul { list-style: none; padding: 0; }
+  .sidebar-card ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem; line-height: 1.5; }
+  .sidebar-card ul li:last-child { border-bottom: none; }
+  .sidebar-card ul li::before { content: "▶ "; color: var(--accent); font-size: 0.75rem; }
+  .key-bullet { color: var(--accent); font-weight: 700; }
+
+  /* Signal table */
+  .signal-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.88rem; }
+  .signal-table th { background: var(--accent); color: #fff; padding: 8px 10px; text-align: left; }
+  .signal-table td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+  .signal-table tr:nth-child(even) td { background: var(--accent-light); }
+  .up { color: #c00; font-weight: 700; }
+  .down { color: #1a7a3a; font-weight: 700; }
+
+  footer { background: var(--primary); color: rgba(255,255,255,0.7); padding: 40px 20px; text-align: center; font-size: 0.88rem; }
+  footer strong { color: var(--gold); }
+  .hashtags { margin-top: 24px; color: var(--accent); font-size: 0.9rem; }
+  .hashtags span { display: inline-block; margin: 3px 5px; }
+</style>
+</style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-vH50HcSMSOmwFD8o" data-ad-width="160" data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display:flex;justify-content:center;background:#fff;padding:10px 0;border-bottom:1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-c1XP1iKah32kfdAU" data-ad-width="728" data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">칼럼·해설</span>
+    <h1>전월세 전환율 뜻 — 법정 상한 산식과 보증금·월세 환산 예시</h1>
+    <p class="subtitle">보증금을 줄이고 월세를 내는 순간 적용되는 숫자, 전월세 전환율. 법이 정한 상한이 어떻게 정해지고 월세가 어떻게 계산되는지 예시로 따라가 본다.</p>
+    <div class="meta">
+      <span>📅 2026년 11월 1일</span>
+      <span>✍️ 부동산인사이트 편집팀</span>
+      <span>⏱️ 예상 읽기 시간 7분</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <main class="article-body">
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">+2%p</div>
+        <div class="label">법정 상한 = 한국은행 기준금리에 더하는 가산율 (주택임대차보호법 시행령)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">연 10%</div>
+        <div class="label">기준금리+2%와 비교해 낮은 쪽을 택하는 법정 비교 상한</div>
+      </div>
+      <div class="data-card">
+        <div class="num">÷ 12</div>
+        <div class="label">연 환산 차임을 12개월로 나누면 월세 (전환 보증금 × 전환율 ÷ 12)</div>
+      </div>
+    </div>
+
+    <p>전세 계약을 갱신하면서 집주인이 보증금 일부를 월세로 돌리자고 하거나, 반대로 월세 세입자가 목돈이 생겨 보증금을 더 넣고 월세를 줄이고 싶을 때가 있다. 이때 두 금액을 서로 바꾸는 비율이 전월세 전환율이다. 전환율이 높을수록 같은 보증금을 줄여도 월세는 더 많이 오르고, 낮을수록 임차인에게 유리하다. 숫자 하나가 매달 나가는 돈을 수십만 원씩 바꾸기 때문에 계약서에 도장을 찍기 전에 계산 구조를 알아 두어야 한다.</p>
+
+    <p>이 글은 전환율의 뜻과 법정 상한의 산식, 그리고 보증금별 월세 환산 예시를 순서대로 해설한다. 기준금리는 한국은행 금융통화위원회 결정에 따라 수시로 바뀌므로, 본문의 숫자는 어디까지나 계산 방식을 보여 주는 가정값이다. 실제 계약 시점의 기준금리는 한국은행 공시로 직접 확인해야 한다.</p>
+
+    <h2>전월세 전환율의 뜻과 두 가지 방향</h2>
+
+    <p>전월세 전환율은 보증금 중 월세로 바꾸는 금액에 대해 1년 동안 내야 하는 차임의 비율이다. 예를 들어 전환 대상 보증금이 1억 원이고 전환율이 5%라면 연간 차임은 500만 원, 월세로는 약 41만 원대가 된다. 반대로 월세를 보증금으로 돌릴 때도 같은 비율로 거꾸로 계산한다. 월세 50만 원은 연 600만 원이므로 전환율 5%에서는 1억 2천만 원의 보증금과 같은 가치가 된다.</p>
+
+    <p>시장에서 쓰는 전환율은 한국부동산원이 지역별로 조사해 발표하는 통계와, 법이 계약 당사자에게 허용하는 법정 상한으로 나뉜다. 둘은 전혀 다른 개념이다. 시장 전환율은 실제 거래에서 형성된 평균값이고, 법정 상한은 그 이상으로 월세를 올려 받을 수 없게 막는 천장이다. 시장 전환율이 법정 상한을 웃도는 지역에서는 두 숫자의 차이가 곧 분쟁의 씨앗이 된다.</p>
+
+    <h2>법정 상한 산식: 기준금리+2%와 연 10% 중 낮은 값</h2>
+
+    <p>주택임대차보호법 제7조의2는 보증금의 전부 또는 일부를 월 단위 차임으로 전환할 때 그 산정률이 일정한 비율을 넘지 못하도록 정하고 있다. 구체적인 비율은 시행령이 정한다. 시행령에 따르면 상한은 두 가지 중 낮은 쪽이다. 하나는 연 10%이고, 다른 하나는 한국은행이 공시한 기준금리에 연 2%를 더한 비율이다. 기준금리가 8%를 넘지 않는 한 사실상 뒤쪽이 적용된다고 보면 된다.</p>
+
+    <div class="quote-box">
+      <p>법정 상한은 고정된 숫자가 아니라 공식이다. 기준금리가 오르면 상한도 같이 오르고, 내리면 같이 내린다.</p>
+      <cite>— 해설 요지</cite>
+    </div>
+
+    <p>가정을 두고 계산해 보면 구조가 선명해진다. 기준금리가 연 2.5%라면 상한은 4.5%, 연 3.0%라면 5.0%다. 기준금리가 오르는 국면에서는 같은 보증금을 월세로 돌려도 법적으로 받을 수 있는 월세가 늘어난다는 뜻이다. 계약일에 가까운 시점의 기준금리를 반드시 확인해야 하는 이유다. 금융통화위원회 회의 일정과 결정 내용은 한국은행 누리집에 공개된다.</p>
+
+    <h2>월세 환산 계산: 단계별 예시</h2>
+
+    <p>계산식은 단순하다. 월세 = (기존 보증금 − 새 보증금) × 전환율 ÷ 12. 먼저 얼마를 월세로 돌릴지 정하고, 그 금액에 전환율을 곱해 연 차임을 구한 뒤, 12로 나누면 된다. 전환율은 법정 상한 이하에서 당사자가 합의한다.</p>
+
+    <table class="signal-table" style="margin:20px 0;">
+      <tr><th>기존 전세</th><th>새 보증금</th><th>전환 금액</th><th>전환율(가정)</th><th>월세</th></tr>
+      <tr><td>3억 원</td><td>1억 원</td><td>2억 원</td><td>4.5%</td><td>75만 원</td></tr>
+      <tr><td>3억 원</td><td>1억 원</td><td>2억 원</td><td>5.0%</td><td>약 83만 3천 원</td></tr>
+      <tr><td>5억 원</td><td>2억 원</td><td>3억 원</td><td>4.5%</td><td>112만 5천 원</td></tr>
+      <tr><td>5억 원</td><td>2억 원</td><td>3억 원</td><td>5.0%</td><td>125만 원</td></tr>
+    </table>
+
+    <p>첫 줄을 풀어 보면 이렇다. 전세 3억 원에서 보증금 1억 원만 남기면 전환 금액은 2억 원이다. 여기에 4.5%를 곱하면 연 900만 원이고, 12로 나누면 월 75만 원이 된다. 전환율이 0.5%p만 달라져도 같은 조건에서 월세는 약 8만 원 넘게 차이가 난다. 반대로 월세 75만 원짜리 계약에서 보증금을 2억 원 늘릴 수 있다면, 같은 전환율로 월세를 없앨 수 있다는 식으로 역산도 가능하다.</p>
+
+    <div class="quote-box">
+      <p>전환율 0.5%p는 작아 보여도 보증금 2억 원 기준으로 연 100만 원, 2년이면 200만 원의 차이를 만든다.</p>
+      <cite>— 해설 요지</cite>
+    </div>
+
+    <h2>상한을 넘는 요구를 받았을 때와 적용 범위</h2>
+
+    <p>법정 상한은 임차인을 보호하기 위한 규정이다. 주택임대차보호법은 이 법에 어긋나는 약정으로서 임차인에게 불리한 것은 효력이 없다고 정하고 있다. 따라서 상한을 넘는 전환율로 월세를 정했더라도 초과분은 임차인이 다툴 수 있다. 다만 분쟁이 생기면 실제로 어떤 절차를 밟을지는 계약 사정에 따라 달라지므로, 주택임대차분쟁조정위원회나 법률 전문가에게 확인하는 편이 안전하다.</p>
+
+    <p>한 가지 주의할 점은 적용 범위다. 이 규정은 이미 체결된 임대차에서 보증금을 월세로 돌리거나 갱신하는 경우를 중심으로 설명되는 경우가 많고, 새 집을 처음 구하는 신규 계약의 최초 월세에도 똑같이 강제되는지는 해석이 갈릴 수 있다. 신규 계약에서는 시장 시세가 사실상 기준이 되는 경우가 많다. 그래도 법정 상한은 협상 때 합리적인 참고 숫자가 되므로 알고 들어가면 유리하다.</p>
+
+    <p>계약갱신청구권을 행사하는 갱신에서는 증액 상한 5% 규정도 함께 따져야 한다. 보증금을 월세로 돌려 받는 것 역시 실질적으로 임대료 인상이 될 수 있어서, 전환 후의 총 부담이 직전 계약 대비 5% 범위를 넘는지 살펴보는 것이 안전하다. 구체적인 판단은 계약 구조에 따라 달라질 수 있다.</p>
+
+    <h2>전세 대출 이자와 월세, 어느 쪽이 유리한가 비교하는 법</h2>
+
+    <p>전환율은 임차인 입장에서 곧 보증금의 기회비용이다. 보증금 2억 원을 월세로 돌려 아낄 수 있는 돈을, 그 돈을 전세대출로 마련했다면 내야 할 이자와 비교하면 된다. 가령 대출금리가 연 4%라면 2억 원의 이자는 연 800만 원이다. 전환율 4.5%로 월세를 내면 연 900만 원이므로 대출을 받아 전세로 사는 편이 연 100만 원 저렴하다. 반대로 대출금리가 전환율보다 높다면 월세가 유리하다. 대출금리가 전환율을 얼마나 웃도는지가 판단의 핵심이다.</p>
+
+    <p>여기에 세제 요소가 더해진다. 월세를 낸 무주택 근로자는 조건에 따라 월세 세액공제를 받을 수 있고, 전세대출 이자에는 별도의 소득공제 한도가 있다. 이 혜택은 소득과 주택 요건에 따라 달라지므로 국세청 안내로 최신 한도를 확인한 뒤 비교에 반영해야 한다.</p>
+
+    <h2>실수요자와 임대인을 위한 시사점</h2>
+
+    <div class="implications">
+      <h3>📌 계약 전 확인 목록</h3>
+      <ul>
+        <li>계약일 기준 한국은행 기준금리를 확인하고 상한(기준금리+2%, 연 10% 중 낮은 값)을 직접 계산한다</li>
+        <li>월세 = 전환 금액 × 전환율 ÷ 12 로 집주인 제시액이 맞는지 검산한다</li>
+        <li>전환율 0.5%p 차이가 2년간 얼마인지 환산해 협상 숫자로 쓴다</li>
+        <li>전세대출 금리와 전환율을 비교해 대출 전세와 월세 중 총비용이 낮은 쪽을 고른다</li>
+        <li>보증금을 줄이면 반환 채권액도 줄어드는 만큼 확정일자와 전입신고 상태를 다시 점검한다</li>
+        <li>특약에 전환 조건과 계산식을 명시해 나중에 상한 초과 분쟁이 생기지 않게 한다</li>
+        <li>임대인은 상한을 넘긴 약정이 분쟁 대상이 될 수 있음을 알고 보수적으로 산정한다</li>
+      </ul>
+    </div>
+
+    <h2>결론: 숫자를 알면 협상이 달라진다</h2>
+
+    <p>전월세 전환율은 어려운 개념이 아니다. 보증금과 월세를 같은 눈금으로 비교하게 해 주는 환율 같은 숫자일 뿐이다. 법정 상한은 기준금리에 2%p를 더한 값과 연 10% 중 낮은 쪽이고, 월세는 전환 금액에 전환율을 곱해 12로 나누면 나온다. 이 두 가지만 기억해도 집주인의 제안이 합리적인지 그 자리에서 검산할 수 있다.</p>
+
+    <p>기준금리가 움직이는 시기에는 한 번 정한 숫자가 갱신 때 다시 바뀐다는 점도 염두에 두자. 계약서에 날짜와 근거 기준금리를 적어 두면 다음 협상에서 같은 계산을 반복할 수 있다. 숫자를 먼저 쥔 쪽이 협상에서 유리하다.</p>
+
+    <div class="hashtags">
+      <span>#전월세전환율</span>
+      <span>#보증금월세전환</span>
+      <span>#기준금리</span>
+      <span>#임대차보호법</span>
+      <span>#월세계산</span>
+    </div>
+
+    <div class="disclaimer">
+      <p>⚠️ 면책 고지: 본 글은 주택임대차보호법과 시행령의 일반적 내용을 바탕으로 한 참고용 해설입니다. 본문의 기준금리와 전환율은 계산 방식을 보여 주기 위한 가정값이며, 실제 상한은 계약 시점의 한국은행 기준금리로 다시 계산해야 합니다. 법령은 개정될 수 있고 개별 계약에는 특약과 사정이 있으므로, 중요한 결정 전에는 법령정보센터 원문 확인과 법률 전문가 상담을 권합니다.</p>
+    </div>
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h3>핵심 요약</h3>
+      <ul>
+        <li><span class="key-bullet">①</span> 전환율은 보증금과 월세를 바꾸는 환산 비율</li>
+        <li><span class="key-bullet">②</span> 법정 상한은 기준금리+2%와 연 10% 중 낮은 값</li>
+        <li><span class="key-bullet">③</span> 월세 = 전환 금액 × 전환율 ÷ 12</li>
+        <li><span class="key-bullet">④</span> 기준금리가 바뀌면 상한도 함께 바뀜</li>
+        <li><span class="key-bullet">⑤</span> 대출금리와 전환율 비교로 전세·월세 판단</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>관련 기사</h3>
+      <ul>
+        <li>계약갱신청구권 행사 시기와 거절 사유 — 증액 상한 5% 계산</li>
+        <li>확정일자 전입신고 차이 — 대항력과 우선변제권 발생 시점</li>
+        <li>묵시적 갱신 뜻 — 자동 연장 조건과 임차인 해지 통보 3개월 효력</li>
+        <li>소액임차인 최우선변제금 얼마 — 지역별 한도와 배당 순서</li>
+      </ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>상한 계산 예시(가정값)</h3>
+      <table class="signal-table">
+        <tr><th>기준금리</th><th>+2%p</th><th>적용 상한</th></tr>
+        <tr><td>2.5%</td><td>4.5%</td><td>4.5%</td></tr>
+        <tr><td>3.0%</td><td>5.0%</td><td>5.0%</td></tr>
+        <tr><td>3.5%</td><td>5.5%</td><td>5.5%</td></tr>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> — 전문가 시각으로 읽는 한국 부동산<br>
+  <small>© 2026 부동산인사이트. 본 사이트의 모든 콘텐츠는 참고 목적으로만 제공됩니다.</small>
+</footer>
+
+</body>
+</html>

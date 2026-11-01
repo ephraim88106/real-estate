@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 441,
+    url: 'article_20261101_1_conversion-rate_v2.html',
+    category: '칼럼',
+    title: '전월세 전환율 뜻 — 법정 상한 산식과 보증금·월세 환산 예시',
+    summary: '전세 보증금을 월세로 바꿀 때 쓰는 전월세 전환율의 뜻과 법정 상한(기준금리+2%와 연 10% 중 낮은 값), 보증금별 월세 환산 방법을 예시로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-01',
+    title_en: 'Jeonse-to-Monthly Rent Conversion Rate: Legal Cap Formula and Worked Examples',
+    summary_en: 'What the jeonse-to-wolse conversion rate means, how the legal cap (base rate + 2%p, or 10%, whichever is lower) works, and how to convert deposits into monthly rent.'
+  },
+  {
     id: 440,
     url: 'article_20261031_1_reconstruction_v2.html',
     category: '재개발',
