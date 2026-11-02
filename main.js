@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 444,
+    url: 'article_20261102_1_market_v2.html',
+    category: '시장동향',
+    title: '매물 폭증에도 집값 버티는 서울 아파트… 수도권 부동산 \'기이한 엇박자\' 3가지 진단',
+    summary: '서울 아파트 매물이 1년 새 30% 급증했지만 집값은 소폭 상승을 유지 중이다. 거래 반토막·매물 폭증·가격 상승의 삼중 모순을 분석하고 향후 시장 분기점을 짚는다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-02',
+    title_en: 'Seoul Apartment Listings Surge 30% But Prices Hold: Diagnosing Korea\'s Bizarre Real Estate Paradox',
+    summary_en: 'Seoul apartment listings have surged over 30% year-on-year while prices continue to inch upward. We analyze the triple contradiction of halved trading volume, spiking listings, and persistent price gains.'
+  },
+  {
+    id: 443,
+    url: 'article_20261102_2_policy_v2.html',
+    category: '정책',
+    title: '가계대출 3% 확대·10.27 대책 3주째… 부동산 정책 \'완화 vs 관리\' 최후의 줄다리기',
+    summary: '정부가 가계대출 총량 목표를 두 배로 올린 가운데 10.27 안정화 대책 3주 후 시장은 오히려 호가가 반등했다. 완화와 규제 사이에서 표류하는 부동산 정책의 실효성을 냉정히 평가한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-02',
+    title_en: 'Household Loan Cap Doubled, 3 Weeks After Oct. 27 Measures: Korea\'s Real Estate Policy Tug-of-War',
+    summary_en: 'Despite the government doubling its household loan growth target and issuing market stabilization measures, prices in Seoul\'s core areas have rebounded. We assess the effectiveness of Korea\'s contradictory property policy.'
+  },
+  {
     id: 442,
     url: 'article_20261102_1_trade-report-deadline_v2.html',
     category: '시장동향',
