@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 442,
+    url: 'article_20261102_1_trade-report-deadline_v2.html',
+    category: '시장동향',
+    title: '매매 거래신고 시기 — 계약일 30일과 지연신고 과태료 구간',
+    summary: '매매계약 체결일부터 30일 이내 하는 거래신고의 의무자, 해제 신고, 지연·미신고·거짓 신고 과태료 구조를 해설한다. 금액은 시행령 별표 3 확인이 필요하다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-02',
+    title_en: 'Property Sale Reporting Deadline: 30 Days From Contract and Late-Filing Fine Tiers',
+    summary_en: 'Who must report a property sale within 30 days of the contract, how cancellation reports work, and how fines for late, missing and false reports are structured.'
+  },
+  {
     id: 441,
     url: 'article_20261101_1_conversion-rate_v2.html',
     category: '칼럼',
