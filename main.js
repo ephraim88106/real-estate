@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 445,
+    url: 'article_20261103_1_jeonse-return-guarantee_v2.html',
+    category: '정책',
+    title: '전세보증금반환보증 보증료율 언제까지 신청 — HUG 가입 시한과 보증 거절 사유 종류',
+    summary: 'HUG 전세보증금반환보증의 대상 보증금 상한, 보증한도 산식(주택가격×90%−선순위채권), 보증료 산식과 신청 시한(계약기간 1/2 전)을 예시와 함께 해설한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-03',
+    title_en: 'Jeonse Deposit Return Guarantee: HUG Fee Rates, Application Deadline and Rejection Reasons',
+    summary_en: 'Explains HUG deposit return guarantee: eligible deposit caps, coverage limit formula, fee calculation and the application deadline of half the lease term.'
+  },
+  {
     id: 444,
     url: 'article_20261102_1_market_v2.html',
     category: '시장동향',
