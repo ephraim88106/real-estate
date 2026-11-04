@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 448,
+    url: 'article_20261104_1_investment_v2.html',
+    category: '투자',
+    title: '경매 역대 최대 쏟아진다…낙찰가율 107% 시대, 살아남는 투자법은?',
+    summary: '2026년 경매 물량이 사상 최다를 기록하는 가운데 서울 아파트 낙찰가율은 107.8%를 돌파했다. 과열과 냉각이 공존하는 경매 시장에서 옥석을 가리는 실전 투자 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-04',
+    title_en: 'Record-High Auction Volume in 2026: Survival Strategies in a 107% Bid-to-Assessment Market',
+    summary_en: 'As auction volumes hit an all-time high in 2026, Seoul apartment bid-to-assessment ratios surpassed 107.8%. This analysis explores practical investment strategies to identify winners in a market of simultaneous overheating and cooling.'
+  },
+  {
+    id: 447,
+    url: 'article_20261104_2_overseas_v2.html',
+    category: '해외',
+    title: '도쿄 집값 21% 폭등에 일본이 \'한국 토허제\' 따라가는 이유',
+    summary: '일본 도쿄 아파트값이 1년 새 21% 급등하면서 일본 정부가 한국의 토지거래허가제를 벤치마킹한 외국인 실거주 의무 도입을 검토 중이다. 과열된 도쿄 부동산 시장과 한국인 투자자들에게 미치는 영향을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-04',
+    title_en: 'Why Japan Is Following Korea\'s Land Transaction Permit System After Tokyo\'s 21% Price Surge',
+    summary_en: 'With Tokyo apartment prices surging 21% in one year, Japan is considering adopting a foreign-buyer residency requirement modeled on Korea\'s land transaction permit system. This analysis examines the implications for Korean investors in Japanese real estate.'
+  },
+  {
     id: 446,
     url: 'article_20261104_1_move-in-period_v2.html',
     category: '분양',
