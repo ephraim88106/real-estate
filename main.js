@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 446,
+    url: 'article_20261104_1_move-in-period_v2.html',
+    category: '분양',
+    title: '입주지정기간 뜻 — 잔금 연체이자 발생 시점과 계약해제 요건',
+    summary: '분양 잔금을 내야 하는 입주지정기간의 의미와 통상 45~60일 길이, 연체이자 산식(금액×일수÷365×이율), 구간별 이율 소급 적용 불가 판례, 시행사 귀책 지연 시 지체상금과 최고·해제 흐름을 해설한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-04',
+    title_en: 'Move-in Period Explained: When Balance Payment Interest Starts and When a Presale Contract Can Be Cancelled',
+    summary_en: 'Explains the move-in designation period for newly built presale homes, the late-interest formula, the court ruling against retroactive tiered rates, developer delay compensation and the reminder-then-cancellation sequence.'
+  },
+  {
     id: 445,
     url: 'article_20261103_1_jeonse-return-guarantee_v2.html',
     category: '정책',
