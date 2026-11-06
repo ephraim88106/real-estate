@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 453,
+    url: 'article_20261106_1_policy_v2.html',
+    category: '정책',
+    title: '🚨 부동산 대출 규제 허위 지라시 사태 — 금융위 수사 의뢰, 그 이면에 감춰진 진실',
+    summary: '2026년 11월 6일, 주담대 추가 축소·규제지역 확대 허위 지라시에 금융위원장이 직접 수사 의뢰를 선언했다. 반복되는 정책 불안과 소통 부재의 구조적 문제를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-06',
+    title_en: 'Real Estate Loan Regulation Fake News Crisis — Behind the Financial Commission Investigation Order',
+    summary_en: 'On November 6, 2026, the FSC chairman announced a criminal investigation against fake mortgage restriction and regulated zone news. A structural problem of policy uncertainty and communication failure.'
+  },
+  {
+    id: 452,
+    url: 'article_20261106_2_subscription_v2.html',
+    category: '분양',
+    title: '🏘️ 11월 역대급 분양 폭탄 4.4만 가구 — 경기권 집중·분상제 단지 청약 전략 완전 가이드',
+    summary: '11월 전국 4만4358가구 분양 예정, 작년 대비 58% 급증. 분양가 상한제 단지 경쟁률 3배 초과, 경기도 평택·수원·시흥 집중. 실수요자를 위한 7가지 청약 체크리스트 완전 공개.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-06',
+    title_en: 'November Record 44,000 Unit Subscription Rush — Gyeonggi-Focused Complete Strategy Guide',
+    summary_en: 'November nationwide pre-sales reach 44,358 units, up 58% year-over-year. Price-capped units show 3x higher competition rates, concentrated in Pyeongtaek, Suwon, and Siheung. A complete 7-point checklist.'
+  },
+  {
     id: 451,
     url: 'article_20261105_1_column_v2.html',
     category: '칼럼',
