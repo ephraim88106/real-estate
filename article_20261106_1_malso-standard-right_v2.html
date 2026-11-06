@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>말소기준권리 뜻 — 낙찰 후 소멸하는 권리와 인수하는 권리 판정 순서 | 부동산인사이트</title>
+<meta name="description" content="경매 권리분석의 출발점인 말소기준권리의 뜻과 후보 권리 4가지, 민사집행법 제91조의 소멸·인수 원칙, 선순위 임차인·전세권·유치권 판단 절차를 해설한다.">
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261106_1_malso-standard-right_v2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="말소기준권리 뜻 — 낙찰 후 소멸하는 권리와 인수하는 권리 판정 순서">
+<meta property="og:description" content="경매 권리분석의 출발점인 말소기준권리의 뜻과 후보 권리 4가지, 민사집행법 제91조의 소멸·인수 원칙, 선순위 임차인·전세권·유치권 판단 절차를 해설한다.">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261106_1_malso-standard-right_v2">
+<meta name="keywords" content="말소기준권리, 경매 권리분석, 소멸주의, 인수주의, 선순위 임차인, 매각물건명세서">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #8B1A1A;
+    --accent-light: rgba(139,26,26,0.12);
+    --accent-mid: rgba(139,26,26,0.25);
+    --hero-gradient: linear-gradient(135deg, #1A0505 0%, #8B1A1A 55%, #2A0808 100%);
+    --header-bg: #0D2B55;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555;
+    --border: #e0e0e0;
+    --bg-light: #f8f8f6;
+    --white: #fff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; color: var(--text-primary); background: #fafafa; line-height: 1.8; }
+
+  /* 고정 사이드바 광고 */
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+  /* 헤더 */
+  header { background: var(--header-bg); position: sticky; top: 0; z-index: 900; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+  .logo span { color: #F4A52D; }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: #F4A52D; }
+
+  /* 히어로 */
+  .hero { background: var(--hero-gradient); color: #fff; padding: 72px 20px 56px; text-align: center; }
+  .hero-inner { max-width: 860px; margin: 0 auto; }
+  .cat-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.78rem; font-weight: 700; letter-spacing: 1.5px; padding: 6px 16px; border-radius: 2px; text-transform: uppercase; margin-bottom: 20px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.6rem); font-weight: 700; line-height: 1.4; margin-bottom: 20px; word-break: keep-all; }
+  .hero .meta { font-size: 0.85rem; color: rgba(255,255,255,0.75); display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .hero .meta span::before { content: '·'; margin-right: 8px; }
+  .hero .meta span:first-child::before { display: none; }
+
+  /* 레이아웃 */
+  .container { max-width: 1200px; margin: 0 auto; padding: 48px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+
+  /* 본문 */
+  article { background: var(--white); border-radius: 4px; padding: 48px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+  @media (max-width: 600px) { article { padding: 24px 16px; } }
+
+  /* 데이터 박스 */
+  .data-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0; }
+  @media (max-width: 600px) { .data-cards { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border-left: 4px solid var(--accent); padding: 20px 16px; border-radius: 2px; }
+  .data-card .num { font-family: 'Noto Serif KR', serif; font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; }
+  .data-card .label { font-size: 0.82rem; color: var(--text-secondary); margin-top: 6px; }
+
+  /* 본문 h2 */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.3rem; font-weight: 700; border-left: 4px solid var(--accent); padding-left: 14px; margin: 40px 0 16px; color: var(--text-primary); }
+  article p { margin-bottom: 18px; font-size: 0.97rem; word-break: keep-all; color: var(--text-primary); }
+
+  /* 쿼트 박스 */
+  .quote-box { background: var(--accent-light); border-left: 4px solid var(--accent); padding: 24px 28px; margin: 28px 0; font-family: 'Noto Serif KR', serif; font-style: italic; font-size: 1.05rem; color: var(--accent); border-radius: 0 4px 4px 0; }
+  .quote-box cite { display: block; margin-top: 10px; font-size: 0.83rem; font-style: normal; color: var(--text-secondary); }
+
+  /* 목록 */
+  .insight-list { margin: 16px 0 24px; padding-left: 0; list-style: none; }
+  .insight-list li { padding: 10px 14px; background: var(--bg-light); border-left: 3px solid var(--accent); margin-bottom: 8px; font-size: 0.93rem; }
+  .insight-list li::before { content: '▶'; color: var(--accent); margin-right: 8px; font-size: 0.75rem; }
+
+  /* 면책고지 */
+  .disclaimer { background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; padding: 18px 20px; margin-top: 40px; font-size: 0.8rem; color: #777; line-height: 1.6; }
+
+  /* 사이드바 */
+  .sidebar { }
+  .sidebar-box { background: var(--white); border-radius: 4px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); margin-bottom: 24px; }
+  .sidebar-box h3 { font-family: 'Noto Serif KR', serif; font-size: 1rem; font-weight: 700; border-left: 3px solid var(--accent); padding-left: 10px; margin-bottom: 16px; }
+  .summary-list { list-style: none; }
+  .summary-list li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; color: var(--text-primary); }
+  .summary-list li::before { content: '◆'; color: var(--accent); font-size: 0.65rem; margin-right: 8px; }
+  .summary-list li:last-child { border-bottom: none; }
+  .related-list { list-style: none; }
+  .related-list li { padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .related-list li:last-child { border-bottom: none; }
+  .related-list a { text-decoration: none; color: var(--text-primary); font-size: 0.87rem; line-height: 1.5; display: block; }
+  .related-list a:hover { color: var(--accent); }
+  .related-cat { font-size: 0.72rem; color: var(--accent); font-weight: 700; display: block; margin-bottom: 2px; }
+
+  /* 위젯 테이블 */
+  .widget-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; margin-top: 8px; }
+  .widget-table th { background: var(--accent); color: #fff; padding: 8px 10px; text-align: left; }
+  .widget-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  .widget-table tr:last-child td { border-bottom: none; }
+  .up { color: #c0392b; font-weight: 700; }
+  .down { color: #2980b9; font-weight: 700; }
+
+  /* 푸터 */
+  footer { background: var(--header-bg); color: rgba(255,255,255,0.7); text-align: center; padding: 32px 20px; font-size: 0.82rem; margin-top: 40px; }
+  footer strong { color: #F4A52D; }
+
+  /* 태그 */
+  .tags { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { background: var(--accent-light); color: var(--accent); font-size: 0.78rem; padding: 4px 12px; border-radius: 2px; }
+</style>
+</head>
+<body>
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="index.html">시장동향</a>
+      <a href="index.html">정책·규제</a>
+      <a href="index.html">투자분석</a>
+      <a href="index.html">법률·세금</a>
+      <a href="index.html">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="cat-tag">투자 인사이트</span>
+    <h1>말소기준권리 뜻 —<br>낙찰 후 소멸하는 권리와 인수하는 권리 판정 순서</h1>
+    <div class="meta">
+      <span>부동산인사이트 편집팀</span>
+      <span>2026년 11월 6일</span>
+      <span>투자분석</span>
+      <span>#말소기준권리 #경매권리분석 #소멸주의</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+    <div class="data-cards">
+      <div class="data-card"><div class="num">4가지</div><div class="label">기준 후보 권리 (근저당·압류·가압류·담보가등기)</div></div>
+      <div class="data-card"><div class="num">제91조</div><div class="label">소멸·인수 원칙을 정한 민사집행법 조문</div></div>
+      <div class="data-card"><div class="num">1순위</div><div class="label">등기 접수가 가장 빠른 권리가 기준선</div></div>
+    </div>
+
+    <p>경매 물건을 처음 보는 사람이 가장 먼저 부딪히는 용어가 '말소기준권리'다. 등기부등본에는 근저당, 가압류, 전세권, 지상권 같은 권리가 줄지어 적혀 있는데, 낙찰을 받으면 이 가운데 무엇이 지워지고 무엇이 낙찰자에게 남는지는 한눈에 알 수 없다. 말소기준권리는 바로 그 경계선을 긋는 기준이다. 기준보다 뒤에 설정된 권리는 매각으로 소멸하고, 기준보다 앞선 일부 권리는 낙찰자가 그대로 떠안는다.</p>
+    <p>다만 이 용어는 법 조문에 나오는 말이 아니다. 법원 실무와 경매 업계에서 굳어진 개념이며, 법적 근거는 민사집행법 제91조의 소멸주의와 인수주의 규정에 있다. 이 글에서는 말소기준권리가 무엇인지, 어떤 권리가 후보가 되는지, 그리고 입찰 전에 어떤 순서로 확인해야 하는지를 단계별로 해설한다.</p>
+
+    <h2>말소기준권리의 뜻과 법적 근거</h2>
+    <p>민사집행법 제91조는 경매 부동산 위의 부담을 어떻게 처리할지 정한다. 제2항은 저당권과 담보가등기 등은 순위와 관계없이 매각으로 소멸한다고 규정하고, 제3항은 지상권·지역권·전세권·등기된 임차권은 저당권·압류채권·가압류채권에 대항할 수 없는 경우 매각으로 소멸한다고 정한다. 제4항은 이들 가운데 먼저 설정되어 대항할 수 있는 권리는 매수인이 인수하되, 전세권의 경우 전세권자가 배당요구를 하면 매각으로 소멸한다고 규정한다.</p>
+    <p>법원은 이 규정을 적용하기 위해 "어느 권리보다 뒤에 있으면 소멸하는가"라는 기준점이 필요하다. 그 기준점이 말소기준권리다. 즉 말소기준권리는 소멸하는 권리와 인수되는 권리를 가르는 시간상의 경계이며, 낙찰자의 추가 부담액을 계산하는 출발점이 된다.</p>
+
+    <div class="quote-box">
+      말소기준권리보다 앞서 있는 권리만 낙찰자의 부담이 될 수 있다. 입찰가를 정하기 전에 기준선부터 찾는 것이 권리분석의 첫 순서다.
+      <cite>— 부동산인사이트 편집팀 해설</cite>
+    </div>
+
+    <h2>말소기준권리가 되는 권리 4가지</h2>
+    <p>실무에서 말소기준권리 후보로 보는 권리는 다음 네 가지다. 등기부에서 이 중 접수 일자와 순번이 가장 빠른 것이 기준이 된다.</p>
+    <ul class="insight-list">
+      <li>(근)저당권 — 가장 흔한 기준. 은행 대출 담보로 설정된 권리로, 순위와 상관없이 매각으로 소멸한다</li>
+      <li>압류 — 세금 체납 등으로 설정된 권리. 선순위 압류가 있으면 이것이 기준이 될 수 있다</li>
+      <li>가압류 — 채권자가 판결 전에 재산 처분을 막아 둔 권리. 가장 빠르면 기준이 된다</li>
+      <li>담보가등기 — 채권 담보 목적의 가등기. 등기부상 가등기가 담보인지 소유권이전 목적인지 구분해야 한다</li>
+    </ul>
+    <p>여기에 경매개시결정 기입등기도 다른 후보가 전혀 없을 때 기준이 되는 경우가 있다. 반면 지상권, 지역권, 순수한 임차권은 기준 후보가 되지 못한다. 전세권은 원칙적으로 후보가 아니지만, 선순위 전세권자가 직접 경매를 신청하거나 배당요구를 하면 매각으로 소멸하는 쪽으로 처리되므로 사건별 확인이 필요하다.</p>
+
+    <h2>소멸하는 권리와 인수하는 권리 구분 절차</h2>
+    <p>입찰 전에는 다음 순서로 권리를 정리한다. 이 절차는 등기부등본, 법원이 공시하는 매각물건명세서, 현황조사서를 함께 놓고 진행한다.</p>
+    <p><strong>1단계. 등기부 을구·갑구에서 후보 권리를 접수 순서대로 나열한다.</strong> 갑구의 압류·가압류·가등기, 을구의 근저당·전세권·지상권을 한 줄로 세워 접수 일자와 순번을 확인한다.</p>
+    <p><strong>2단계. 후보 4가지 중 가장 빠른 권리를 말소기준권리로 확정한다.</strong> 같은 날 접수된 경우 접수번호 순서를 따른다.</p>
+    <p><strong>3단계. 기준보다 뒤에 있는 모든 권리를 소멸 대상으로 분류한다.</strong> 후순위 근저당, 후순위 가압류, 후순위 전세권·지상권, 후순위 가처분 등이 여기에 해당한다.</p>
+    <p><strong>4단계. 기준보다 앞서는 권리를 인수 대상 후보로 분류한다.</strong> 선순위 지상권, 선순위 전세권, 선순위 가처분, 선순위 임차권이 여기에 해당한다. 선순위 가처분은 소유권 다툼과 연결되어 낙찰 후 소유권을 잃을 위험이 있어 특히 주의한다.</p>
+    <p><strong>5단계. 등기부에 나타나지 않는 권리를 따로 점검한다.</strong> 유치권, 법정지상권, 분묘기지권은 등기와 무관하게 낙찰자가 영향을 받을 수 있다. 민사집행법 제91조 제5항은 유치권자가 변제를 받을 때까지 목적물 인도를 거절할 수 있다고 전제한다.</p>
+
+    <h2>임차인은 어떻게 판단하는가</h2>
+    <p>가장 자주 틀리는 부분이 임차인이다. 주택임대차보호법 제3조에 따르면 임차인은 주택 인도와 주민등록(전입신고)을 마친 다음 날부터 제3자에게 대항력이 생긴다. 이 대항력 발생일이 말소기준권리 접수일보다 앞서면 선순위 임차인이다. 선순위 임차인의 보증금은 배당으로 다 받지 못하면 낙찰자가 남은 금액을 인수해야 할 수 있다.</p>
+    <p>반대로 전입일이 기준보다 늦으면 대항력이 없어 보증금 반환 책임은 낙찰자에게 넘어오지 않는다. 다만 이때 임차인은 확정일자를 갖추고 배당요구 종기까지 배당요구를 해야 순위에 따라 배당받을 수 있다. 선순위 임차인이 확정일자와 배당요구까지 갖췄다면 배당에서 보증금을 회수하고 나머지만 인수 대상이 된다.</p>
+
+    <div class="quote-box">
+      같은 임차인이라도 전입일이 기준선의 앞이냐 뒤냐에 따라 낙찰자의 추가 부담이 0원이 될 수도, 보증금 전액이 될 수도 있다.
+      <cite>— 부동산인사이트 편집팀 해설</cite>
+    </div>
+
+    <h2>사례로 보는 구분 예시</h2>
+    <p>가상의 사례를 들어 보자. 등기부에 2021년 3월 A은행 근저당권, 2022년 5월 B씨 가압류, 2022년 9월 C씨 전세권이 순서대로 있다면 후보 중 가장 빠른 2021년 3월 근저당이 말소기준권리다. 이후의 가압류와 전세권은 모두 기준보다 뒤라 낙찰로 소멸한다.</p>
+    <p>이번에는 순서를 바꿔 2020년 11월 전입한 임차인이 있고 근저당이 2021년 3월에 설정된 경우를 보자. 임차인의 대항력 발생일이 기준보다 앞서므로 선순위 임차인이다. 이 경우 임차인이 배당요구를 하지 않았다면 낙찰자는 보증금 전체를 떠안을 위험이 있다. 매각물건명세서의 '대항력 있는 임차인' 기재와 배당요구 여부를 반드시 확인해야 하는 이유다.</p>
+
+    <h2>입찰 전 점검 시사점</h2>
+    <ul class="insight-list">
+      <li>등기부 접수 일자만 보지 말고 매각물건명세서의 '소멸되지 않는 권리' 기재를 같이 읽는다</li>
+      <li>임차인의 전입일·확정일자·배당요구 여부를 말소기준권리 접수일과 나란히 비교한다</li>
+      <li>선순위 가처분, 선순위 지상권이 있으면 입찰가 산정 이전에 법률 전문가 검토를 받는다</li>
+      <li>선순위 전세권은 배당요구 여부에 따라 소멸·인수가 갈리므로 배당요구 종기 이후 상황까지 확인한다</li>
+      <li>유치권 신고, 법정지상권 성립 여지는 현장 확인과 현황조사서로 별도 점검한다</li>
+      <li>인수 금액이 있으면 최저매각가격이 아니라 인수액을 더한 총취득가로 수익률을 계산한다</li>
+    </ul>
+
+    <h2>결론</h2>
+    <p>말소기준권리는 경매 권리분석의 첫 단추다. 후보 4가지 중 가장 빠른 권리를 찾고, 그보다 앞선 권리와 임차인만 인수 위험으로 추려내면 분석 범위가 크게 줄어든다. 다만 등기부에 나타나지 않는 유치권과 법정지상권, 전세권 예외 등은 기준선만으로 판단할 수 없다. 최종 판단은 법원 공시 서류와 전문가 검토를 거쳐야 한다.</p>
+
+    <div class="tags">
+      <span class="tag">#말소기준권리</span>
+      <span class="tag">#경매권리분석</span>
+      <span class="tag">#소멸주의</span>
+      <span class="tag">#인수주의</span>
+      <span class="tag">#선순위임차인</span>
+      <span class="tag">#매각물건명세서</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>면책 고지:</strong> 본 글은 민사집행법, 주택임대차보호법 등 공개된 법령과 일반적인 법원 실무를 바탕으로 한 정보 해설이며 법률 자문이나 투자 권유가 아닙니다. 사건별 사실관계에 따라 결론이 달라질 수 있으므로 입찰 전 법원 공시 서류를 직접 확인하고 법률 전문가의 도움을 받으시기 바랍니다. 법령은 개정될 수 있으며 본문은 2026년 11월 기준입니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-box">
+      <h3>핵심 요약</h3>
+      <ul class="summary-list">
+        <li>말소기준권리는 소멸·인수 권리의 경계선</li>
+        <li>후보는 근저당·압류·가압류·담보가등기</li>
+        <li>가장 빠른 접수 권리가 기준이 됨</li>
+        <li>기준보다 앞선 임차인은 보증금 인수 위험</li>
+        <li>유치권·법정지상권은 등기부 밖에서 확인</li>
+      </ul>
+    </div>
+    <div class="sidebar-box">
+      <h3>관련 기사</h3>
+      <ul class="related-list">
+        <li><span class="related-cat">투자분석</span><a href="article_20261104_1_move-in-period_v2.html">입주지정기간 뜻 — 잔금 연체이자 발생 시점</a></li>
+        <li><span class="related-cat">투자분석</span><a href="index.html">소액임차인 최우선변제금 얼마 — 지역별 한도와 배당 순서</a></li>
+        <li><span class="related-cat">투자분석</span><a href="index.html">입찰보증금 얼마 — 최저매각가격 10% 규정</a></li>
+        <li><span class="related-cat">투자분석</span><a href="index.html">인도명령 신청 언제까지 — 낙찰 대금 납부 후 6개월</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-box">
+      <h3>권리별 낙찰 후 처리</h3>
+      <table class="widget-table">
+        <tr><th>권리</th><th>기준보다 뒤</th><th>기준보다 앞</th></tr>
+        <tr><td>근저당</td><td>소멸</td><td>기준 자체</td></tr>
+        <tr><td>지상권</td><td>소멸</td><td>인수</td></tr>
+        <tr><td>전세권</td><td>소멸</td><td>인수(배당요구 시 소멸)</td></tr>
+        <tr><td>가처분</td><td>소멸</td><td>인수 위험</td></tr>
+        <tr><td>임차인</td><td>대항력 없음</td><td>보증금 인수 가능</td></tr>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <strong>부동산인사이트</strong> | 전문적 시각으로 보는 한국 부동산<br>
+  <span style="font-size:0.78rem; margin-top: 8px; display:block;">본 사이트의 콘텐츠는 정보 제공 목적으로 작성되었으며 투자 권유가 아닙니다.</span>
+</footer>
+</body>
+</html>

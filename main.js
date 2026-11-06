@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 449,
+    url: 'article_20261106_1_malso-standard-right_v2.html',
+    category: '투자',
+    title: '말소기준권리 뜻 — 낙찰 후 소멸하는 권리와 인수하는 권리 판정 순서',
+    summary: '경매 권리분석의 출발점인 말소기준권리의 뜻과 후보 권리 4가지를 해설한다. 민사집행법 제91조의 소멸·인수 원칙에 따라 선순위 임차인, 전세권, 유치권을 가려내는 순서를 정리한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-06',
+    title_en: 'What Is the Extinguishing Base Right? How to Tell Which Rights Survive an Auction',
+    summary_en: 'Explains the base right in Korean court auctions, its four candidate rights, and how Civil Execution Act Article 91 decides which rights are extinguished and which the buyer assumes.'
+  },
+  {
     id: 448,
     url: 'article_20261104_1_investment_v2.html',
     category: '투자',
