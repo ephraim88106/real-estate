@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 451,
+    url: 'article_20261105_1_column_v2.html',
+    category: '칼럼',
+    title: '91주 상승의 역설: 거래는 사라지고 가격만 남았다 — 지금 서울 집값에 무슨 일이 벌어지고 있나',
+    summary: '서울 아파트 91주 연속 상승의 이면을 해부한다. 거래량 급감·강남3구 하락 전환 속에서 가격만 오르는 기형적 시장의 본질과 투자자들이 놓치고 있는 진짜 신호를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-05',
+    title_en: 'The Paradox of 91-Week Rise: Transactions Vanish, Only Prices Remain',
+    summary_en: 'Dissecting the hidden reality behind Seoul\'s 91-week consecutive apartment price rise. Analyzing the distorted market where prices keep rising amid plummeting transactions and the reversal of Gangnam three districts.'
+  },
+  {
+    id: 450,
+    url: 'article_20261105_2_market_v2.html',
+    category: '시장동향',
+    title: '강남은 꺾이고 경기 남부는 치솟는다 — 11월 첫째 주 아파트 시장 완전 해부',
+    summary: '한국부동산원 11월 1주 통계 완전 분석. 전국 0.07% 상승 속 강남3구 동반 하락, 경기 남부 반도체 벨트 0.20% 급등, 시장 양극화 심화 — 지역별 데이터와 투자 시사점까지 총망라.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-05',
+    title_en: 'Gangnam Falls, Southern Gyeonggi Surges: Full Dissection of Week 1 November Apartment Market',
+    summary_en: 'Complete analysis of Korea Real Estate Board\'s November week 1 statistics. National +0.07% rise with Gangnam 3 districts declining together, Southern Gyeonggi semiconductor belt surging +0.20%, deepening market polarization with regional data and investment implications.'
+  },
+  {
     id: 449,
     url: 'article_20261106_1_malso-standard-right_v2.html',
     category: '투자',
