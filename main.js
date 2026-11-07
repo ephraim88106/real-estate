@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 454,
+    url: 'article_20261107_1_firpta-withholding_v2.html',
+    category: '해외',
+    title: 'FIRPTA 뜻 — 원천징수 세율 구간과 8288-B 감액·환급 순서',
+    summary: '미국 부동산을 팔 때 매각대금 전체에 붙는 FIRPTA 원천징수의 15%·10%·0% 구간, 8288-B 감액 증명서, ITIN과 1040-NR 환급 순서, 한국 신고 연결 지점을 해설한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-07',
+    title_en: 'FIRPTA Meaning — Withholding Rate Tiers and Form 8288-B Reduction and Refund Steps',
+    summary_en: 'Explains FIRPTA withholding on US property sales: 15%, 10% and 0% tiers, the 8288-B reduced withholding certificate, ITIN and Form 1040-NR refund steps, and links to Korean tax filing.'
+  },
+  {
     id: 453,
     url: 'article_20261106_1_policy_v2.html',
     category: '정책',
