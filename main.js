@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 456,
+    url: 'article_20261108_1_overseas_v2.html',
+    category: '해외',
+    title: '환율 1,350원 시대 — 지금 도쿄·뉴욕·방콕 집 사는 게 답인가? 2026 해외부동산 완전 분석',
+    summary: '2026년 하반기 미국 금리 안정화와 엔화 약세 속에서 한국인 해외부동산 투자가 역대 최고치를 경신하고 있다. 도쿄, 뉴욕, 방콕 세 시장의 현주소와 반드시 알아야 할 세금·규제 체크리스트를 심층 분석했다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-08',
+    title_en: 'Era of KRW 1,350 — Should You Buy in Tokyo, New York, or Bangkok Now? 2026 Overseas Real Estate Complete Analysis',
+    summary_en: 'In the second half of 2026, with US rate stabilization and yen weakness, Korean overseas real estate acquisitions have hit a record high. We deeply analyze Tokyo, New York, and Bangkok markets along with essential tax and regulatory checklists.'
+  },
+  {
+    id: 455,
+    url: 'article_20261108_2_column_v2.html',
+    category: '칼럼',
+    title: '서울만 뛰고 지방은 무너진다 — 2026년 부동산 양극화 쇼크, 당신의 집은 어느 편인가?',
+    summary: '2026년 한국 부동산 수도권·지방 가격 격차가 역대 최고인 3.1배를 기록했다. 금리, 정책, 공급 삼각축을 중심으로 초양극화 시대의 구조적 원인을 분석하고 투자자를 위한 생존 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-08',
+    title_en: 'Only Seoul Rises, Regions Collapse — 2026 Real Estate Polarization Shock: Which Side Is Your Property On?',
+    summary_en: 'In 2026, the price gap between the Seoul metropolitan area and regional cities hit a record 3.1 times. We analyze the structural causes of extreme polarization through the lens of interest rates, policy, and supply, and present survival strategies for investors.'
+  },
+  {
     id: 454,
     url: 'article_20261107_1_firpta-withholding_v2.html',
     category: '해외',
