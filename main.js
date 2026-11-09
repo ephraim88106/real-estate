@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 457,
+    url: 'article_20261109_1_housing-supply-stats_v2.html',
+    category: '시장동향',
+    title: '주택 착공 준공 뜻 — 사용승인 집계 단계와 입주 시차',
+    summary: '인허가·착공·분양·준공이 각각 어느 단계의 호수를 세는지, 국토교통부가 언제 공표하는지, 입주까지 몇 해가 걸리는지 풀어 설명한다. 월간 잠정치와 연간 확정치, 2025년 10월 준공 집계 방식 변경도 함께 짚는다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-09',
+    title_en: 'Housing Starts vs Completions in Korea: What Each Stage Counts and the Lag to Move-in',
+    summary_en: 'Explains what permits, construction starts, sales approvals and completions each count, when MOLIT publishes them, and how long it takes to reach move-in.'
+  },
+  {
     id: 456,
     url: 'article_20261108_1_overseas_v2.html',
     category: '해외',
