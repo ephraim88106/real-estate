@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 460,
+    url: 'article_20261110_1_subscription_nov_v2.html',
+    category: '분양',
+    title: '11월 분양 대전(大戰): 4만 4천 가구 쏟아진다—당신의 청약 전략은 준비됐나?',
+    summary: '2026년 11월 전국 4만4,358가구 분양 대전. 분양가 상한제 단지 경쟁률 3배↑, 서울·수도권 택지 쏠림 심화. 가점별 맞춤 청약 전략을 완벽 정리했다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-10',
+    title_en: 'November Subscription Battle: 44,000 Units Hit the Market—Is Your Strategy Ready?',
+    summary_en: 'A record 44,358 units are set for subscription in November 2026. Regulated-price units show 3x higher competition rates, with demand concentrated in Seoul and metropolitan areas.'
+  },
+  {
+    id: 459,
+    url: 'article_20261110_2_reconstruction_wave_v2.html',
+    category: '재개발',
+    title: '서울 정비사업 1,200곳 동시다발: 재개발·재건축 속도전의 명암과 투자자 생존법',
+    summary: '서울 재개발·재건축 1,200곳 동시 진행. 조합 설립 10년 미착공 49곳의 경고 속에 선도지구·정비구역이 가속화. 투자자를 위한 단계별 리스크와 체크리스트를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-10',
+    title_en: '1,200 Simultaneous Seoul Redevelopment Projects: The Reality Behind the Rush',
+    summary_en: 'Over 1,200 redevelopment and reconstruction projects are simultaneously underway in Seoul. With 49 stalled projects as a warning, we analyze the risks and opportunities for investors.'
+  },
+  {
     id: 458,
     url: 'article_20261110_1_housing-pension-eligibility_v2.html',
     category: '정책',
