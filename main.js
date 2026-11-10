@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 458,
+    url: 'article_20261110_1_housing-pension-eligibility_v2.html',
+    category: '정책',
+    title: '주택연금 가입 연령 — 부부 중 만 55세 요건과 공시가격 12억 이하 판정',
+    summary: '주택연금은 소유자 또는 배우자 중 1인이 만 55세 이상이고 부부 기준 공시가격 등이 12억 원 이하일 때 가입할 수 있다. 시세가 아닌 공시가격 판정, 실거주 전입 요건, 월지급금을 정하는 연소자 연령·주택 가격·지급 방식을 한국주택금융공사 안내에 따라 해설한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-10',
+    title_en: 'Korea Housing Pension Eligibility: Age 55 Rule and the KRW 1.2 Billion Official-Price Limit',
+    summary_en: 'Explains who can join the HF housing pension: age 55 for an owner or spouse, official price up to KRW 1.2 billion, residence rules, and what sets the monthly payout.'
+  },
+  {
     id: 457,
     url: 'article_20261109_1_housing-supply-stats_v2.html',
     category: '시장동향',
