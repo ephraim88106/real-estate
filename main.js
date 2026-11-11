@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 461,
+    url: 'article_20261111_1_subscription-point-table_v2.html',
+    category: '분양',
+    title: '가점 배점표 — 무주택기간·부양가족·가입기간 점수와 만 30세 기산 시기',
+    summary: '민영주택 가점제 84점 만점의 배점표를 항목별로 풀고, 무주택기간이 만 30세와 혼인신고일 중 언제부터 세어지는지, 부양가족과 통장 가입기간이 어떤 요건으로 인정되는지를 주택공급에 관한 규칙 기준으로 해설한다. 2024년 배우자 통장 합산과 2026년 부양가족 요건 변경도 함께 짚는다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-11',
+    title_en: 'Housing Subscription Point Table: Homeless Period, Dependents, Account Tenure and the Age-30 Start Date',
+    summary_en: 'A guide to the 84-point scoring table for private housing subscriptions in Korea: how the homeless period is counted from age 30 or the marriage registration date, who qualifies as a dependent, and how account tenure and spouse tenure are credited.'
+  },
+  {
     id: 460,
     url: 'article_20261110_1_subscription_nov_v2.html',
     category: '분양',
