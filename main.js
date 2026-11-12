@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 462,
+    url: 'article_20261112_1_deterioration-ratio_v2.html',
+    category: '재개발',
+    title: '정비구역 노후도 뜻 — 지정 요건 60%·3분의 2 산정과 준공 30년 판정 시기',
+    summary: '정비구역 노후도는 구역 안 전체 건축물 동수 가운데 노후·불량건축물이 차지하는 비율이다. 시행령 하한이 2024년 3월 3분의 2에서 5분의 3으로 낮아진 경위, 서울 조례와 신속통합기획 후보지 기준의 동수 60% 필수·연면적 60% 선택 구조, 철근콘크리트 30년·그 밖의 구조 20년이라는 준공 연수와 증·개축·멸실·무허가 건물의 판정 시점을 법령 기준으로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-12',
+    title_en: 'Building Deterioration Ratio for Redevelopment Zones: The 60% Threshold, Count vs Floor-Area Methods and the 30-Year Rule',
+    summary_en: 'How Korea measures the share of old and substandard buildings that unlocks a redevelopment zone designation: the 2024 cut from two-thirds to three-fifths, Seoul\'s 60% building-count rule with a 60% floor-area option, the 30-year concrete and 20-year other-structure thresholds, and how rebuilt, demolished and unpermitted buildings are counted.'
+  },
+  {
     id: 461,
     url: 'article_20261111_1_subscription-point-table_v2.html',
     category: '분양',

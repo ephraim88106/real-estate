@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>정비구역 노후도 뜻 — 지정 요건 60%·3분의 2 산정과 준공 30년 판정 시기</title>
+<meta name="description" content="정비구역 노후도는 구역 안 전체 건축물 가운데 노후·불량건축물이 차지하는 비율이다. 시행령 3분의 2에서 5분의 3으로 낮아진 입안 요건, 서울 조례의 동수 60%와 연면적 보조 요건, 준공 20~30년 판정과 증·개축·무허가 건물의 산정 시점을 해설한다.">
+<meta name="keywords" content="노후도, 정비구역 지정 요건, 노후불량건축물, 노후도 산정, 동수 노후도, 연면적 노후도, 신속통합기획 후보지, 준공 30년">
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261112_1_deterioration-ratio_v2">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261112_1_deterioration-ratio_v2">
+<meta property="og:title" content="정비구역 노후도 뜻 — 지정 요건 60%·3분의 2 산정과 준공 30년 판정 시기">
+<meta property="og:description" content="노후도 비율의 분모·분자, 시행령 5분의 3과 서울 조례 60%의 관계, 동수와 연면적 산정의 차이, 준공 20~30년 판정 시점을 법령 기준으로 풀이한다.">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --primary: #0D2B55;
+    --accent: #7B4A9E;
+    --accent-light: #f5eeff;
+    --accent-mid: #9b6abe;
+    --text: #1a1a2e;
+    --text-muted: #555;
+    --bg: #f8f9fa;
+    --white: #fff;
+    --border: #e0e0e0;
+    --gold: #F4A52D;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* Header */
+  header { background: var(--primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+  @media (max-width: 768px) { nav { display: none; } .logo { font-size: 1.1rem; } }
+
+  /* Hero */
+  .hero { background: linear-gradient(135deg, #2A0A4A 0%, #7B4A9E 55%, #4A1A6E 100%); padding: 60px 20px; }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 18px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; color: #fff; line-height: 1.4; margin-bottom: 18px; }
+  .hero .subtitle { color: rgba(255,255,255,0.85); font-size: 1rem; margin-bottom: 24px; }
+  .hero-meta { display: flex; gap: 20px; color: rgba(255,255,255,0.7); font-size: 0.82rem; flex-wrap: wrap; }
+  .hero-meta span::before { content: '📅 '; }
+  .hero-meta .author::before { content: '✍️ '; }
+
+  /* Layout */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 1000px) { .container { grid-template-columns: 1fr; } }
+
+  /* Article */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; font-weight: 700; margin: 36px 0 16px; border-left: 4px solid var(--accent); padding-left: 16px; color: var(--primary); }
+  article p { margin-bottom: 18px; color: #333; line-height: 1.9; }
+  article ul { margin: 16px 0 20px 20px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li strong { color: var(--primary); }
+
+  /* Data Box */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border: 1px solid var(--accent); border-radius: 10px; padding: 20px; text-align: center; }
+  .data-card .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 0.82rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+  /* Quote Box */
+  .quote-box { background: var(--accent-light); border-left: 5px solid var(--accent); padding: 24px 28px; margin: 28px 0; border-radius: 0 10px 10px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; color: #4a2a6a; font-size: 1.05rem; line-height: 1.8; margin: 0; }
+  .quote-box cite { display: block; margin-top: 12px; font-size: 0.82rem; color: var(--accent); font-style: normal; font-weight: 600; }
+
+  /* Insight Box */
+  .insight-box { background: #faf5ff; border: 2px solid var(--accent); border-radius: 10px; padding: 24px; margin: 28px 0; }
+  .insight-box h3 { color: var(--accent); font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .insight-box ul { margin-left: 18px; }
+  .insight-box li { margin-bottom: 8px; font-size: 0.95rem; }
+
+  /* Warning Box */
+  .warning-box { background: #fff8e1; border: 2px solid #f4a52d; border-radius: 10px; padding: 20px; margin: 24px 0; }
+  .warning-box h3 { color: #b07a00; font-size: 0.95rem; margin-bottom: 10px; }
+  .warning-box p { color: #7a5500; font-size: 0.9rem; margin: 0; }
+
+  /* Disclaimer */
+  .disclaimer { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-top: 40px; font-size: 0.82rem; color: #777; line-height: 1.7; }
+
+  /* Hashtags */
+  .hashtags { margin: 24px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { background: var(--accent-light); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+  /* Sidebar */
+  .sidebar { }
+  .sidebar-widget { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 22px; margin-bottom: 24px; }
+  .sidebar-widget h3 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+  .sidebar-widget ul { list-style: none; }
+  .sidebar-widget ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem; color: #444; }
+  .sidebar-widget ul li:last-child { border-bottom: none; }
+  .sidebar-widget ul li::before { content: '▸ '; color: var(--accent); font-size: 0.75rem; }
+  .sidebar-widget ul li a { color: #444; text-decoration: none; }
+  .sidebar-widget ul li a:hover { color: var(--accent); }
+  .summary-bullet { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 0.88rem; }
+  .summary-bullet .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+  th { background: var(--accent); color: white; padding: 10px 12px; text-align: left; }
+  td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+
+  /* Fixed sidebar ad */
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+  footer { background: var(--primary); color: rgba(255,255,255,0.75); padding: 40px 20px; text-align: center; font-size: 0.85rem; }
+  footer .footer-logo { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; color: white; margin-bottom: 10px; }
+  footer .footer-logo span { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">재개발·재건축</span>
+    <h1>정비구역 노후도 뜻<br>지정 요건 60%·3분의 2 산정과 준공 30년 판정 시기</h1>
+    <p class="subtitle">노후도 비율의 분모와 분자 · 시행령 5분의 3과 서울 조례 60%의 관계 · 동수와 연면적 두 가지 산정 · 증·개축과 무허가 건물의 판정 시점</p>
+    <div class="hero-meta">
+      <span>2026년 11월 12일</span>
+      <span class="author">부동산인사이트 편집팀</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">5분의 3</div>
+        <div class="label">시행령 별표 1의 주택정비형 입안 요건 (2024년 3월 개정, 종전 3분의 2)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">60%</div>
+        <div class="label">서울 조례와 신속통합기획 후보지의 동수 노후도 필수 하한</div>
+      </div>
+      <div class="data-card">
+        <div class="num">20~30년</div>
+        <div class="label">시행령이 조례에 위임한 노후·불량건축물 준공 경과연수 범위</div>
+      </div>
+    </div>
+
+    <p>구역 지정을 준비하는 동네에서 가장 먼저 나오는 숫자가 노후도다. 추진준비위원회가 돌리는 안내문에는 "우리 구역 노후도 71%"처럼 적혀 있고, 반대하는 쪽은 "신축 빌라가 늘어 60%가 깨졌다"고 맞선다. 노후도는 구역 안 건축물 가운데 법이 정한 노후·불량건축물이 차지하는 비율이다. 구역 지정의 문을 여는 열쇠이자, 한 동의 신축으로도 흔들리는 민감한 숫자다.</p>
+
+    <p>문제는 이 비율을 따지는 틀이 세 겹으로 겹쳐 있다는 점이다. 국가 법령인 도시 및 주거환경정비법과 시행령이 큰 틀을 정하고, 시·도 조례가 경과연수와 비율을 지역 사정에 맞게 구체화하며, 서울의 신속통합기획처럼 후보지를 뽑는 공모 기준이 그 위에 다시 얹힌다. 세 틀의 숫자가 각각 3분의 2, 5분의 3, 60%로 조금씩 달라 보이는 이유가 여기 있다.</p>
+
+    <p>이 글은 2026년 11월 시점의 법령과 서울시 공개 자료를 바탕으로 노후도의 분모와 분자, 비율 요건의 변천, 동수와 연면적 산정의 차이, 그리고 준공 연수를 세는 시점을 차례로 풀어본다. 수치는 시행령 별표 1과 서울특별시 도시 및 주거환경정비 조례를 기본으로 하되, 자치단체마다 조례 수치가 다르므로 다른 지역은 해당 조례를 확인해야 한다.</p>
+
+    <h2>노후도의 분모와 분자: 무엇을 세는가</h2>
+    <p>노후도는 분자와 분모가 모두 "건축물"이다. 분모는 정비계획 입안 대상 구역 안에 있는 전체 건축물의 수이고, 분자는 그중 노후·불량건축물에 해당하는 건축물의 수다. 세대 수나 소유자 수가 아니라 건축물 동(棟)의 수라는 점이 핵심이다. 50세대가 사는 다세대주택 한 동도 한 동이고, 단독주택 한 채도 한 동이다.</p>
+
+    <p>노후·불량건축물의 범위는 도시정비법 제2조 제3호가 네 갈래로 정한다. 첫째, 건축물이 훼손되거나 일부가 멸실되어 붕괴 등 안전사고 우려가 있는 건축물. 둘째, 내진성능이 확보되지 않은 건축물 가운데 중대한 기능적·구조적 결함이 있거나, 부분 철거가 불가피하거나, 수선·유지 비용이 신축 비용보다 큰 것으로 조례가 정하는 건축물. 셋째, 주변 토지 이용 상황에 비해 효용이 현저히 떨어지는 등 조례가 정하는 건축물. 넷째, 도시 미관을 저해하거나 노후화된 건축물로서 대통령령이 정하는 바에 따라 조례가 정하는 건축물이다.</p>
+
+    <p>실무에서 노후도의 대부분을 채우는 것은 넷째 갈래다. 시행령 제2조는 이 갈래를 "준공된 후 20년 이상 30년 이하의 범위에서 시·도 조례로 정하는 기간이 지난 건축물"로 구체화한다. 다시 말해 법은 20년에서 30년 사이의 폭만 정하고, 몇 년부터 노후로 볼지는 각 시·도가 조례로 정한다. 같은 1995년 준공 건물이 서울에서는 노후이고 다른 시·도에서는 아닐 수 있는 구조다.</p>
+
+    <div class="quote-box">
+      <p>"노후도는 감정이 아니라 산수다. 분모는 구역 안 모든 동, 분자는 조례가 정한 연수를 넘긴 동이다. 안내문의 70%와 반대 측의 58%가 동시에 나오는 것은 구역 경계를 어디에 긋느냐, 증축된 건물을 어느 해부터 세느냐가 다르기 때문이지 둘 중 하나가 거짓이어서가 아니다."</p>
+      <cite>— 부동산인사이트 편집팀, 정비사업 법령 해설</cite>
+    </div>
+
+    <h2>서울의 준공 연수: 철근콘크리트 30년, 그 밖의 구조 20년</h2>
+    <p>서울특별시 도시 및 주거환경정비 조례 제4조는 넷째 갈래의 경과연수를 구조와 용도에 따라 나눈다. 공동주택 가운데 철근콘크리트·철골콘크리트·철골철근콘크리트·강구조 건물은 조례 별표 1이 정한 기간을 적용하는데, 이 별표는 준공 연도가 늦을수록 요구 연수가 길어지는 계단식 구조다. 1980년대 초 준공분은 20년대 초반에서 시작해 해마다 한 해씩 늘고, 1990년대 초 이후 준공된 5층 이상 공동주택은 30년이 적용된다. 그 밖의 구조로 지은 공동주택은 20년이다.</p>
+
+    <p>공동주택이 아닌 건축물은 더 단순하다. 철근콘크리트 등 견고한 구조는 30년, 벽돌조·블록조·목조 같은 그 밖의 구조는 20년이다. 저층 주거지에서 노후도가 빨리 차는 이유가 여기 있다. 1990년대 후반에 지은 벽돌조 다가구주택은 2020년을 전후해 이미 20년을 넘겼지만, 같은 해 지은 철근콘크리트 다세대주택은 2020년대 후반이 되어야 30년에 이른다. 한 골목 안에서도 구조에 따라 노후 판정 시기가 10년 갈린다.</p>
+
+    <p>경과연수의 기산점은 건축물대장의 사용승인일(준공일)이다. 사용승인 기록이 없는 옛 건물은 과세대장이나 등기부의 보존등기일 등으로 추정하는데, 이 추정 방식 역시 조례와 지자체 지침에 따른다. 건물이 오래됐다는 주민의 기억이 아니라 공부(公簿)상 날짜가 기준이므로, 노후도를 검토할 때는 구역 안 모든 건물의 건축물대장을 뽑아 사용승인일과 구조를 표로 정리하는 작업이 먼저다.</p>
+
+    <h2>비율 요건의 변천: 3분의 2에서 5분의 3으로</h2>
+    <p>노후·불량건축물 비율의 하한은 시행령 별표 1 "정비계획 입안대상지역"에 있다. 2024년 3월 19일 이전까지 주택정비형 재개발의 입안 요건은 "노후·불량건축물의 수가 전체 건축물 수의 3분의 2 이상"이었고, 시·도 조례로 10%포인트 범위에서 올리거나 내릴 수 있었다. 서울은 이 증감 권한을 써서 일찍부터 조례상 비율을 낮춰 운용해 왔다.</p>
+
+    <p>2024년 3월 19일 시행된 시행령 개정(대통령령 제34321호)은 이 하한 자체를 낮췄다. 재정비촉진지구는 2분의 1 이상, 그 밖의 지역은 5분의 3 이상으로 바뀌었고, 개정 이유는 재개발사업의 원활한 추진 지원이었다. 5분의 3은 60%이므로, 국가 법령의 하한과 서울이 운용하던 60%가 사실상 같은 선에 놓이게 됐다. 다만 별표 1의 문언은 이후에도 손질이 이어졌으므로 실제 적용 전에는 국가법령정보센터의 현행 별표를 확인하는 편이 안전하다.</p>
+
+    <p>서울특별시의회도 조례를 고쳐 노후도 요건을 전체 건축물의 3분의 2 이상에서 60%로 낮췄고, 정비계획 입안 요건의 노후·불량건축물 비율을 5분의 3 이상으로 맞췄다. 그 결과 2026년 현재 서울에서 주택정비형 구역 지정을 논의할 때 통용되는 숫자는 동수 노후도 60%다. 안내문에 아직 "3분의 2"가 남아 있다면 개정 전 자료일 가능성이 크다.</p>
+
+    <table>
+      <thead>
+        <tr><th>구분</th><th>노후도 하한</th><th>근거</th><th>비고</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>시행령 별표 1 (2024년 3월 이전)</td><td>3분의 2 이상</td><td>도시정비법 시행령</td><td>조례로 10%p 증감 가능</td></tr>
+        <tr><td>시행령 별표 1 (2024년 3월 19일 이후)</td><td>5분의 3 이상</td><td>대통령령 제34321호</td><td>재정비촉진지구는 2분의 1</td></tr>
+        <tr><td>서울 조례 (개정 후)</td><td>동수 60% 이상</td><td>서울시 도시 및 주거환경정비 조례</td><td>연면적 등은 보조 요건</td></tr>
+        <tr><td>서울 신속통합기획 후보지 (2024년 6월 개선)</td><td>동수 60% 이상 필수</td><td>서울시 후보지 선정 기준</td><td>동수 75% 이상이면 선택 항목 면제</td></tr>
+      </tbody>
+    </table>
+
+    <h2>동수 노후도와 연면적 노후도: 두 숫자의 차이</h2>
+    <p>노후도는 보통 동수로 말하지만, 연면적으로 따지는 두 번째 노후도가 있다. 전체 건축물 연면적 합계 가운데 노후·불량건축물 연면적 합계의 비율이다. 서울시 자료가 "노후도(동수)"와 "노후도(연면적)"를 나란히 쓰는 이유다. 동수 노후도가 필수 항목이고, 연면적 노후도는 주택접도율·과소필지·호수밀도·반지하주택 비율과 함께 선택 항목 가운데 하나로 들어간다.</p>
+
+    <p>서울시가 2024년 6월 개선한 신속통합기획 재개발 후보지 선정 기준을 보면 구조가 선명하다. 필수 항목은 노후도 동수 60% 이상과 구역 면적 1만㎡ 이상이다. 선택 항목은 노후도 연면적 60% 이상, 주택접도율 40% 이하, 과소필지 40% 이상, 호수밀도 헥타르당 60동 이상, 반지하주택 50% 이상 가운데 하나 이상이다. 동수 노후도가 75% 이상이면 선택 항목을 채우지 않아도 된다. 여기에 토지등소유자 30% 이상이 구역 지정을 희망해야 입안을 요청할 수 있고, 찬성 동의율이 높을수록 가점을 받는다.</p>
+
+    <p>두 노후도가 갈리는 전형적인 장면이 신축 다세대주택이다. 노후한 단독주택 두 채를 헐고 5층짜리 다세대 한 동을 지으면 동수 분모는 두 동이 줄고 한 동이 늘어 순감하지만, 신축 한 동이 분자에서 빠지는 효과는 한 동뿐이다. 반면 연면적으로는 신축 한 동이 헐린 두 채의 몇 배 면적을 차지하므로 연면적 노후도가 훨씬 크게 떨어진다. 동수 노후도는 65%로 버티는데 연면적 노후도가 50% 밑으로 내려가는 구역은 대개 이런 신축이 몇 해 사이 집중된 곳이다.</p>
+
+    <div class="quote-box">
+      <p>"동수 노후도가 필수이고 연면적은 선택인 구조는, 신축 몇 동으로 구역 전체를 막지 못하게 하면서도 신축이 대규모로 들어선 곳은 걸러내려는 절충이다. 투자자가 볼 숫자는 오늘의 노후도가 아니라, 앞으로 3년간 건축허가가 몇 건 더 나올 수 있느냐다."</p>
+      <cite>— 부동산인사이트 편집팀</cite>
+    </div>
+
+    <h2>증·개축, 멸실, 무허가 건물의 판정 시점</h2>
+    <p>노후도 산정에서 분쟁이 잦은 지점은 세 가지다. 첫째, 증축이나 개축을 거친 건물이다. 2009년 서울행정법원은 적법한 허가를 거쳐 증·개축한 건물은 증·개축 시점부터 내구연한을 다시 세고, 허가 없이 임의로 증·개축한 부분은 산정에서 제외해야 한다고 판단했다. 1985년에 지어 2010년에 허가받고 개축한 건물은 2010년을 기산점으로 삼으므로, 2026년 시점에는 노후로 잡히지 않는다.</p>
+
+    <p>둘째, 이미 철거되어 건축물대장에만 남아 있는 건물이다. 같은 판결은 현존하지 않는 건물을 노후·불량건축물로 세어서는 안 된다고 봤다. 대장만 믿고 노후도를 계산하면 실제보다 높게 나올 수 있으므로, 현장 조사로 멸실 여부를 확인해야 한다. 법제처도 노후·불량건축물 판단에 현장 조사가 필요한지를 두고 유권해석을 내놓은 바 있어, 서류 산정과 현장 확인을 병행하는 것이 관행으로 굳어졌다.</p>
+
+    <p>셋째, 무허가건축물이다. 종전에는 무허가 건물이 노후도 산정의 분모와 분자 어디에도 들어가지 않았다. 국토교통부는 2025년 4월 도시정비법 시행령 개정안을 입법예고하면서, 토지보상법령이 보상 대상으로 삼는 1989년 1월 24일 당시의 무허가건축물을 노후도 산정에 포함하겠다고 밝혔다. 35년 넘게 자리를 지킨 무허가 주택이 많은 구릉지 저층 주거지의 노후도가 올라가는 효과를 겨냥한 조치다. 이 개정의 공포·시행 여부와 현행 문언은 국가법령정보센터에서 별표 1과 부칙을 직접 확인해야 한다.</p>
+
+    <h2>제도 평가: 문턱은 낮아졌지만 셈법은 더 중요해졌다</h2>
+    <p>3분의 2에서 5분의 3으로의 완화는 7%포인트에 못 미치는 작은 변화처럼 보이지만, 경계에 걸린 구역에는 결정적이다. 100동 가운데 노후 건물이 64동인 구역은 종전 요건으로는 3동이 모자랐고 지금은 4동이 남는다. 반대로 신축이 늘어 60%선이 위협받는 구역에서는 동수와 연면적을 동시에 관리해야 하는 부담이 생겼다. 서울이 동수를 필수로, 연면적을 선택으로 둔 것은 이 긴장을 제도 안에 그대로 옮긴 결과다.</p>
+
+    <p>무허가건축물 포함은 방향이 분명하다. 오래된 무허가 주택은 그 자체로 주거환경 정비의 대상인데도 산정에서 빠져 노후도를 끌어내리는 역설이 있었다. 다만 산정에 넣는 것과 분양 자격을 주는 것은 별개의 문제이고, 조례가 정하는 분양 자격 요건은 그대로다. 노후도에 포함된다고 해서 그 무허가 건물의 소유자가 곧바로 조합원 자격을 얻는 것은 아니다.</p>
+
+    <div class="warning-box">
+      <h3>⚠️ 노후도 안내문을 볼 때 확인할 네 가지</h3>
+      <p>①구역 경계가 입안 요청 도면과 같은지, ②동수인지 연면적인지, ③증·개축 건물의 기산점을 어느 해로 잡았는지, ④철거·멸실 건물이 분자에 남아 있는지. 네 가지 가운데 하나만 달라도 60%는 쉽게 넘나든다.</p>
+    </div>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+    <div class="insight-box">
+      <h3>✅ 노후도 점검 체크리스트 (2026년 11월 시점)</h3>
+      <ul>
+        <li><strong>건축물대장 전수 확인:</strong> 구역 안 모든 동의 사용승인일과 구조를 표로 만들어 서울 조례 제4조의 연수(철근콘크리트 30년·그 밖의 구조 20년)를 직접 대입해 본다.</li>
+        <li><strong>동수와 연면적을 따로 계산:</strong> 동수 60%를 넘겨도 연면적이 60%에 못 미치면 접도율·과소필지·호수밀도·반지하 가운데 하나를 더 채워야 한다. 동수 75% 이상이면 이 부담이 사라진다.</li>
+        <li><strong>향후 3년의 신축 가능성:</strong> 구역 안 노후 단독주택 가운데 매도가 잦은 필지, 건축허가가 접수된 필지를 확인한다. 신축 한 동이 들어설 때마다 연면적 노후도는 급락한다.</li>
+        <li><strong>증·개축 이력 분리:</strong> 외관이 낡아 보여도 허가 개축 이력이 있으면 노후로 잡히지 않는다. 안내문의 노후도가 실제보다 높게 나온 구역은 대개 이 항목에서 틀린다.</li>
+        <li><strong>무허가 건물 비중 파악:</strong> 1989년 1월 24일 이전 무허가 주택이 많은 구역은 시행령 개정의 시행 여부에 따라 노후도가 달라진다. 현행 별표 1을 확인하고 산정에 반영한다.</li>
+        <li><strong>다른 시·도는 조례부터:</strong> 20~30년 범위 안에서 조례마다 연수가 다르다. 경기·인천의 구역을 볼 때 서울 수치를 그대로 쓰면 틀린다.</li>
+        <li><strong>노후도 통과는 출발선일 뿐:</strong> 노후도는 입안 요청의 문을 여는 요건이지 사업성이나 분양 자격을 보장하지 않는다. 토지등소유자 30% 희망, 찬성 동의율, 사업성 검토가 뒤따른다.</li>
+      </ul>
+    </div>
+
+    <h2>결론</h2>
+    <p>노후도는 구역 안 전체 건축물 동수 가운데 조례가 정한 준공 연수를 넘긴 동의 비율이다. 국가 법령의 하한은 2024년 3월 3분의 2에서 5분의 3으로 내려왔고, 서울은 조례와 신속통합기획 후보지 기준에서 동수 60%를 필수로, 연면적 60%를 선택 항목으로 쓴다. 준공 연수는 서울에서 철근콘크리트 공동주택 30년, 그 밖의 구조 20년이며 기산점은 사용승인일이다. 허가 증·개축은 그 시점부터 다시 세고, 멸실 건물은 빼며, 1989년 1월 24일 이전 무허가 건물은 2025년 입법예고에 따라 산정에 들어오는 방향으로 바뀌고 있다.</p>
+
+    <p>결국 노후도를 읽는 일은 안내문의 숫자를 믿는 일이 아니라 분모와 분자를 직접 다시 세는 일이다. 구역 경계, 산정 단위, 기산점, 멸실 여부 네 가지를 맞춰 놓고 보면 60%라는 선이 어느 쪽으로 기울어 있는지가 보인다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#노후도</span>
+      <span class="hashtag">#정비구역지정요건</span>
+      <span class="hashtag">#노후불량건축물</span>
+      <span class="hashtag">#동수노후도</span>
+      <span class="hashtag">#연면적노후도</span>
+      <span class="hashtag">#신속통합기획</span>
+      <span class="hashtag">#준공30년</span>
+      <span class="hashtag">#도시정비법시행령</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지</strong><br>
+      본 기사는 도시 및 주거환경정비법·시행령, 서울특별시 도시 및 주거환경정비 조례, 서울시의 신속통합기획 후보지 선정 기준 공개 자료를 바탕으로 2026년 11월 시점에 작성한 일반 해설이며, 특정 구역의 지정 가능성이나 투자 판단에 대한 조언이 아닙니다. 노후·불량건축물의 경과연수와 비율 요건은 시·도 조례마다 다르고 법령 개정으로 바뀔 수 있으므로, 실제 판단 전에는 국가법령정보센터의 현행 조문과 해당 자치단체 담당 부서, 전문가의 확인을 거치시기 바랍니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <div class="summary-bullet"><div class="dot"></div><div>노후도 = 구역 안 전체 건축물 동수 중 노후·불량건축물 동수의 비율</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>시행령 하한은 2024년 3월 3분의 2에서 5분의 3(재정비촉진지구 2분의 1)으로 완화</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>서울은 동수 60% 필수, 연면적 60%는 접도율·과소필지·호수밀도·반지하와 함께 선택 항목</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>서울 조례의 준공 연수: 철근콘크리트 공동주택 30년, 그 밖의 구조 20년, 기산점은 사용승인일</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>허가 증·개축은 그 시점부터 재기산, 멸실 건물 제외, 1989년 이전 무허가 건물은 포함 방향으로 개정 추진</div></div>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🔗 관련 기사</h3>
+      <ul>
+        <li><a href="article_20261029_1_reconstruction-diagnosis_v2.html">재건축진단 뜻 — 30년 경과 단지 면제 조건과 진행 절차</a></li>
+        <li><a href="article_20261015_1_union-consent-rate_v2.html">조합설립 동의율 산정 — 동별 과반·전체 70%·토지면적 계산</a></li>
+        <li><a href="article_20261001_1_cash-settlement_v2.html">현금청산 대상 조건 — 청산 절차 순서와 지연이자 얼마</a></li>
+        <li><a href="article_20260903_1_proportional-rate_v2.html">비례율 계산법 — 권리가액·분담금 산정 공식과 100% 기준</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🧮 노후도 산정 예시 (100동 구역)</h3>
+      <table style="font-size:0.8rem;">
+        <thead><tr><th>상황</th><th>동수 노후도</th></tr></thead>
+        <tbody>
+          <tr><td>노후 64동 / 전체 100동</td><td>64% (5분의 3 충족)</td></tr>
+          <tr><td>단독 2채 철거 → 신축 1동</td><td>63 / 99 = 63.6%</td></tr>
+          <tr><td>허가 개축 3동 재기산</td><td>60 / 99 = 60.6%</td></tr>
+          <tr><td>멸실 2동 대장 정리</td><td>58 / 97 = 59.8%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:6px; font-size:0.78rem;">본 사이트의 모든 정보는 투자 참고용이며 투자 손실에 대한 책임은 투자자 본인에게 있습니다.</p>
+</footer>
+
+</body>
+</html>
