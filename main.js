@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 465,
+    url: 'article_20261113_1_policy_v2.html',
+    category: '정책',
+    title: '다주택자 압박·대출한도 축소… 2026 가계부채 관리방안, 부동산 시장을 얼리다',
+    summary: '금융당국이 \'부동산과 금융의 분리\'를 선언하며 2026 가계부채 관리방안을 발표했다. LTV·DSR 규제 유지와 다주택자 압박 강화로 수요 억제 기조가 뚜렷해지고 있다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-13',
+    title_en: '2026 Household Debt Management Plan: Korea\'s Clampdown on Real Estate Loans',
+    summary_en: 'Financial authorities announced the 2026 household debt management plan, declaring separation of real estate from finance. Stricter lending limits and multi-homeowner restrictions signal a continued demand-suppression policy.'
+  },
+  {
+    id: 464,
+    url: 'article_20261113_2_subscription_v2.html',
+    category: '분양',
+    title: '광교 184대 1 vs 9곳 미달… 11월 청약시장, 양극화의 민낯',
+    summary: '11월 전국 5만 6천 가구 분양이 쏟아지는 가운데 수도권 프리미엄 단지와 지방 단지 간 청약 경쟁률 격차가 극단적으로 벌어졌다. 분양가상한제 적용 단지만 초경쟁, 비적용 단지는 외면받는 양극화가 심화되고 있다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-13',
+    title_en: '184:1 vs Mass Rejections: Korea\'s November 2026 Subscription Market Polarization',
+    summary_en: 'As 56,000 units flood the November market, the gap between premium Seoul-area developments and regional projects has widened dramatically. With over half of recent sites undersubscribed, the apartment lottery system is increasingly a winner-takes-all contest.'
+  },
+  {
     id: 463,
     url: 'article_20261113_1_onbid-public-auction_v2.html',
     category: '투자',
