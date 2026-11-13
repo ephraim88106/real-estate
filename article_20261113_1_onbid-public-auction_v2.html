@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공매 뜻 — 온비드 입찰 순서와 보증금·명도 소송·배분 비교</title>
+<meta name="description" content="공매는 세금 체납자의 압류재산을 국세징수법에 따라 세무서장이 팔고 한국자산관리공사가 온비드에서 대행하는 매각이다. 주 1회 전자입찰 순서, 공매보증 10%, 유찰 때 10%포인트씩 50%까지 내려가는 예정가격, 매각결정 뒤 7일·30일 잔금, 인도명령이 없어 명도 소송으로 가는 구조, 배분요구 종기와 순위를 법원 매각과 나란히 놓고 해설한다.">
+<meta name="keywords" content="공매 뜻, 압류재산 공매, 온비드 입찰, 공매보증, 공매 유찰 저감, 공매 잔금 납부기한, 공매 명도소송, 배분요구 종기, 공유자 우선매수, 국세징수법">
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261113_1_onbid-public-auction_v2">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261113_1_onbid-public-auction_v2">
+<meta property="og:title" content="공매 뜻 — 온비드 입찰 순서와 보증금·명도 소송·배분 비교">
+<meta property="og:description" content="압류재산 공매의 1주 입찰 순서, 공매보증 10%, 최초 예정가격의 10%포인트씩 50%까지 내려가는 유찰 구조, 매각결정 뒤 7일·30일 잔금, 인도명령 없는 명도, 배분요구 종기를 국세징수법 조문으로 풀이한다.">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --primary: #0D2B55;
+    --accent: #8B1A1A;
+    --accent-light: #fbeeee;
+    --accent-mid: #b04545;
+    --text: #1a1a2e;
+    --text-muted: #555;
+    --bg: #f8f9fa;
+    --white: #fff;
+    --border: #e0e0e0;
+    --gold: #F4A52D;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* Header */
+  header { background: var(--primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+  @media (max-width: 768px) { nav { display: none; } .logo { font-size: 1.1rem; } }
+
+  /* Hero */
+  .hero { background: linear-gradient(135deg, #1A0505 0%, #8B1A1A 55%, #2A0808 100%); padding: 60px 20px; }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 18px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; color: #fff; line-height: 1.4; margin-bottom: 18px; }
+  .hero .subtitle { color: rgba(255,255,255,0.85); font-size: 1rem; margin-bottom: 24px; }
+  .hero-meta { display: flex; gap: 20px; color: rgba(255,255,255,0.7); font-size: 0.82rem; flex-wrap: wrap; }
+  .hero-meta span::before { content: '📅 '; }
+  .hero-meta .author::before { content: '✍️ '; }
+
+  /* Layout */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 1000px) { .container { grid-template-columns: 1fr; } }
+
+  /* Article */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; font-weight: 700; margin: 36px 0 16px; border-left: 4px solid var(--accent); padding-left: 16px; color: var(--primary); }
+  article p { margin-bottom: 18px; color: #333; line-height: 1.9; }
+  article ul { margin: 16px 0 20px 20px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li strong { color: var(--primary); }
+
+  /* Data Box */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border: 1px solid var(--accent); border-radius: 10px; padding: 20px; text-align: center; }
+  .data-card .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 0.82rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+  /* Quote Box */
+  .quote-box { background: var(--accent-light); border-left: 5px solid var(--accent); padding: 24px 28px; margin: 28px 0; border-radius: 0 10px 10px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; color: #5a1a1a; font-size: 1.05rem; line-height: 1.8; margin: 0; }
+  .quote-box cite { display: block; margin-top: 12px; font-size: 0.82rem; color: var(--accent); font-style: normal; font-weight: 600; }
+
+  /* Insight Box */
+  .insight-box { background: #fdf5f5; border: 2px solid var(--accent); border-radius: 10px; padding: 24px; margin: 28px 0; }
+  .insight-box h3 { color: var(--accent); font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .insight-box ul { margin-left: 18px; }
+  .insight-box li { margin-bottom: 8px; font-size: 0.95rem; }
+
+  /* Warning Box */
+  .warning-box { background: #fff8e1; border: 2px solid #f4a52d; border-radius: 10px; padding: 20px; margin: 24px 0; }
+  .warning-box h3 { color: #b07a00; font-size: 0.95rem; margin-bottom: 10px; }
+  .warning-box p { color: #7a5500; font-size: 0.9rem; margin: 0; }
+
+  /* Disclaimer */
+  .disclaimer { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-top: 40px; font-size: 0.82rem; color: #777; line-height: 1.7; }
+
+  /* Hashtags */
+  .hashtags { margin: 24px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { background: var(--accent-light); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+  /* Sidebar */
+  .sidebar { }
+  .sidebar-widget { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 22px; margin-bottom: 24px; }
+  .sidebar-widget h3 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+  .sidebar-widget ul { list-style: none; }
+  .sidebar-widget ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem; color: #444; }
+  .sidebar-widget ul li:last-child { border-bottom: none; }
+  .sidebar-widget ul li::before { content: '▸ '; color: var(--accent); font-size: 0.75rem; }
+  .sidebar-widget ul li a { color: #444; text-decoration: none; }
+  .sidebar-widget ul li a:hover { color: var(--accent); }
+  .summary-bullet { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 0.88rem; }
+  .summary-bullet .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+  th { background: var(--accent); color: white; padding: 10px 12px; text-align: left; }
+  td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+
+  /* Fixed sidebar ad */
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+  footer { background: var(--primary); color: rgba(255,255,255,0.75); padding: 40px 20px; text-align: center; font-size: 0.85rem; }
+  footer .footer-logo { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; color: white; margin-bottom: 10px; }
+  footer .footer-logo span { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">투자 인사이트</span>
+    <h1>공매 뜻<br>온비드 입찰 순서와 보증금·명도 소송·배분 비교</h1>
+    <p class="subtitle">세금 체납 압류재산을 파는 국세징수법 매각 · 주 1회 전자입찰과 10%포인트씩 내려가는 예정가격 · 인도명령이 없는 명도 · 배분요구 종기와 순위를 법원 매각과 나란히 본다</p>
+    <div class="hero-meta">
+      <span>2026년 11월 13일</span>
+      <span class="author">부동산인사이트 편집팀</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">10%</div>
+        <div class="label">공매보증 하한 (국세징수법 제71조, 공매예정가격 기준 · 캠코 공고는 입찰금액 기준)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">10%p × 5회</div>
+        <div class="label">유찰 때마다 최초 예정가격의 10%씩 체감, 50%가 하한 (제87조)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">7일 → 30일</div>
+        <div class="label">매각결정일부터 잔금 납부 원칙 7일, 필요 시 30일 범위 연장 (제84조)</div>
+      </div>
+    </div>
+
+    <p>법원에서 집이 팔리면 경매라 부르고, 세무서가 압류한 집이 팔리면 공매라 부른다. 둘 다 빚을 갚지 못한 사람의 재산을 강제로 팔아 채권자에게 나눠 주는 절차지만, 근거 법률과 집행 기관이 다르고 그래서 입찰 방식, 보증금, 가격이 내려가는 속도, 낙찰 뒤 집을 비우는 방법까지 다르다. 공매는 국세징수법이 정한 체납처분 매각이고, 실무에서는 세무서장이 한국자산관리공사(캠코)에 매각을 대행시켜 전자자산처분시스템 온비드에서 진행한다.</p>
+
+    <p>온비드에는 압류재산 말고도 국유재산 대부·매각, 공공기관 보유 자산, 금융기관이 맡긴 수탁재산, 신탁회사의 신탁 공매가 함께 올라온다. 이름은 모두 공매지만 근거와 규칙이 제각각이다. 이 글은 그중 개인 투자자가 가장 많이 만나는 세금 체납 압류재산 공매를 다룬다. 압류재산 공매는 국세징수법 제3장 제3절의 조문이 절차를 일일이 정하고 있어, 조문을 따라가면 입찰에서 배분까지의 순서가 그대로 보인다.</p>
+
+    <p>수치와 기한은 2026년 11월 시점의 국세징수법(2021년 전부개정 이후 조문 번호 기준)과 캠코의 온비드 공고 관행을 바탕으로 적었다. 법이 범위만 정하고 공고가 구체 숫자를 채우는 항목이 많으므로, 실제 입찰 전에는 해당 물건의 공매공고와 공매재산명세서를 반드시 확인해야 한다.</p>
+
+    <h2>공매의 뜻: 누가, 무슨 근거로 파는가</h2>
+    <p>국세를 체납하면 세무서장은 체납자의 재산을 압류하고, 압류재산을 공매해 그 대금으로 체납액을 충당한다. 이 매각이 공매다. 민사집행법에 따라 법원이 채권자의 신청을 받아 진행하는 경매와 달리, 공매는 행정청이 스스로 집행하는 절차여서 법원의 결정문이 없고 집행관의 현황조사도 없다. 국세징수법 제103조는 세무서장이 공매와 수의계약, 권리이전 업무를 캠코에 대행하게 할 수 있다고 정하고, 캠코가 대행하는 경우 그 공매는 세무서장이 한 것으로 본다.</p>
+
+    <p>지방세 체납분은 지방세징수법이, 건강보험료 같은 공과금 체납분은 각 법률이 국세징수법 절차를 준용해 같은 방식으로 공매한다. 그래서 온비드의 압류재산 목록에는 세무서, 지방자치단체, 국민건강보험공단 등이 위임한 물건이 섞여 있다. 어느 기관이 위임했든 캠코가 대행하는 압류재산 공매는 입찰과 매각결정, 배분의 틀이 같다.</p>
+
+    <p>공매의 성격이 행정처분이라는 점은 투자자에게 두 가지 결과를 낳는다. 첫째, 절차에 다툼이 있으면 법원에 이의를 내는 것이 아니라 심사청구·심판청구나 행정소송으로 다툰다. 둘째, 법원 경매가 가진 부수 제도, 특히 낙찰자가 점유자를 내보낼 때 쓰는 인도명령이 공매에는 없다. 이 차이는 뒤에서 다시 본다.</p>
+
+    <div class="quote-box">
+      <p>"경매와 공매의 차이는 가격이 아니라 절차의 밀도다. 법원은 집행관이 현황을 조사하고 매각물건명세서를 만들고 인도명령으로 뒤처리까지 맡지만, 공매는 공고와 명세서를 내걸고 전자입찰을 받은 뒤 매수인에게 등기를 넘기는 데서 역할이 끝난다. 나머지 공백은 입찰자가 채워야 한다."</p>
+      <cite>— 부동산인사이트 편집팀, 체납처분 절차 해설</cite>
+    </div>
+
+    <h2>온비드 입찰 순서: 공고에서 매각결정까지 1주 단위</h2>
+    <p>압류재산 공매는 공매공고로 시작한다. 국세징수법 제72조는 공고에 매각 재산의 표시, 공매예정가격, 입찰 기간과 개찰 일시, 공매보증, 배분요구의 종기, 매각결정기일 등을 적도록 하고, 공고 뒤에는 등기소에 공매공고 등기를 촉탁한다. 공고와 함께 캠코는 공매재산명세서를 온비드에 올린다. 등기된 권리, 임차인 등 점유자의 신고 내용, 배분요구 현황이 여기 담기므로 경매의 매각물건명세서에 해당하는 자료가 이 명세서다.</p>
+
+    <p>입찰은 온비드 또는 스마트온비드 앱에서 전자입찰로만 한다. 법원처럼 입찰 당일 법정에 가서 봉투를 내는 방식이 아니다. 캠코의 압류재산 공고는 보통 한 물건을 여러 회차로 나눠 공고하고, 각 회차는 월요일에 입찰을 열어 수요일 오후 5시에 마감하며 목요일 오전에 개찰하는 것이 통례다. 입찰 시작 시각은 공고에 따라 오전 10시 또는 오후 2시 등으로 다르므로 회차별 공고를 봐야 한다. 입찰서를 내면서 공매보증을 지정 계좌로 입금해야 입찰이 성립한다.</p>
+
+    <p>개찰에서 최고가 매수신청인이 정해지면 세무서장(대행 시 캠코)은 매각결정기일에 매각결정을 한다. 제84조는 공유자·배우자의 우선매수 신청, 매수인 결격, 매각 불허 사유 같은 법정 사유가 없으면 최고가 매수신청인을 매수인으로 정하도록 하고, 매각결정기일은 개찰일부터 7일 이내에 둔다. 실무에서는 개찰 다음 주 초에 매각결정이 나고 매각결정통지서가 발급된다. 같은 가격이 둘 이상이면 추첨으로 정하고, 최고가 신청인이 공매보증을 내지 않는 등 결격이면 차순위로 내려가지 않고 그 회차는 유찰 처리가 된다.</p>
+
+    <table>
+      <thead>
+        <tr><th>단계</th><th>압류재산 공매 (온비드)</th><th>법원 매각 (민사집행법)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>근거·집행 주체</td><td>국세징수법, 세무서장 → 캠코 대행</td><td>민사집행법, 지방법원 집행관·경매계</td></tr>
+        <tr><td>입찰 방식</td><td>온비드 전자입찰, 주 1회 회차</td><td>기일입찰(법정 출석), 통상 월 1회 기일</td></tr>
+        <tr><td>보증금</td><td>공매예정가격의 10% 이상 (공고는 입찰금액의 10%)</td><td>최저매각가격의 10%</td></tr>
+        <tr><td>유찰 시 가격</td><td>최초 예정가격의 10%p씩, 50%까지</td><td>법원별 전회 최저가의 20~30%</td></tr>
+        <tr><td>권리 자료</td><td>공매재산명세서, 현황조사 없음</td><td>매각물건명세서·현황조사서·감정평가서</td></tr>
+        <tr><td>잔금 기한</td><td>매각결정일부터 7일, 30일까지 연장</td><td>매각허가 확정 후 통상 1개월 안팎</td></tr>
+        <tr><td>점유자 명도</td><td>인도명령 없음 → 명도 소송</td><td>대금 납부 후 6개월 내 인도명령</td></tr>
+        <tr><td>대금 분배</td><td>배분 (배분요구 종기까지 요구)</td><td>배당 (배당요구 종기까지 요구)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>공매보증과 유찰: 10%와 10%포인트</h2>
+    <p>국세징수법 제71조는 세무서장이 공매에 참여하려는 사람에게 공매보증을 받을 수 있게 하고, 그 금액은 공매예정가격의 100분의 10 이상으로 정한다. 캠코의 온비드 공고는 이를 입찰금액의 10% 이상으로 운용하므로, 예정가격보다 높게 쓸수록 보증도 따라 커진다. 보증은 금전 외에 보증보험증권으로도 낼 수 있다. 법원 매각의 입찰보증금이 최저매각가격의 10분의 1로 고정돼 있어 얼마를 써내든 보증이 같은 것과 다른 점이다.</p>
+
+    <p>보증은 낙찰자가 잔금을 내지 않으면 돌려받지 못하고 국고(지방세는 지방자치단체 금고)에 귀속된다. 반대로 낙찰받지 못한 입찰자의 보증은 개찰 뒤 곧바로 반환된다. 법원 매각에서 미납 보증금이 배당 재원에 들어가듯, 공매에서도 귀속된 보증은 체납액에 충당된다.</p>
+
+    <p>유찰 뒤 가격이 내려가는 규칙은 두 절차의 가장 눈에 띄는 차이다. 제87조는 매수신청인이 없거나 신청가격이 예정가격에 못 미쳐 유찰되면 최초 공매예정가격의 100분의 10에 해당하는 금액을 차례로 줄여 재공매하도록 한다. 기준이 직전 회차가 아니라 최초 가격이라는 점이 핵심이다. 최초 예정가격이 1억 원이면 9천만 원, 8천만 원, 7천만 원, 6천만 원, 5천만 원으로 매주 1천만 원씩 내려가고, 최초 가격의 50%에 이르면 체감이 멈춘다. 그래도 팔리지 않으면 제68조에 따라 예정가격을 새로 정해 다시 공고한다. 법원 매각은 회차마다 전회 최저가의 20% 또는 30%를 깎으므로 두 번 유찰되면 64% 또는 49%가 되지만, 공매는 같은 기간에 80%에 머문다. 대신 공매는 매주 회차가 돌아오므로 50%에 닿는 데 5주면 된다.</p>
+
+    <div class="quote-box">
+      <p>"공매 가격은 계단이 낮고 촘촘하다. 한 번에 20~30%가 꺼지는 법원 매각에서는 유찰 직후 회차에 사람이 몰리지만, 매주 10%포인트씩 내려가는 공매에서는 어느 회차에 들어갈지가 그대로 수익률이 된다. 서두르면 지난주보다 10%를 더 내고, 기다리면 같은 생각을 한 입찰자에게 넘어간다."</p>
+      <cite>— 부동산인사이트 편집팀</cite>
+    </div>
+
+    <h2>매각결정과 잔금: 7일 원칙, 30일 연장, 차액납부</h2>
+    <p>제84조는 매각결정을 하면서 대금납부기한을 정하도록 하고, 그 기한은 매각결정을 한 날부터 7일 이내가 원칙이며 세무서장이 필요하다고 인정하면 30일 범위에서 연장할 수 있다고 정한다. 캠코의 공고 실무는 매각결정 금액이 3천만 원 미만이면 7일, 3천만 원 이상이면 30일로 납부기한을 적는 것이 통례로 알려져 있다. 다만 이 금액 경계는 법 조문이 아니라 공고 운용이므로 물건마다 공고에 적힌 기한을 따라야 한다. 법원 매각이 매각허가결정 확정 뒤 대금지급기한을 통상 1개월 안팎으로 잡는 것과 견주면 공매의 자금 일정이 더 빠듯하다.</p>
+
+    <p>잔금을 내지 않으면 제86조에 따라 매각결정이 취소되고 보증은 귀속되며, 물건은 제87조의 재공매로 돌아간다. 반대로 체납자가 매각결정 전에 체납액을 모두 내면 제88조에 따라 공매는 취소된다. 매각결정 뒤 잔금 납부 전이라도 체납자가 매수인의 동의를 받아 체납액을 내면 매각결정을 취소할 수 있다. 공매 물건이 입찰 직전에 사라지는 일이 잦은 이유다. 낙찰자 입장에서는 매각결정이 나기 전까지는 물건이 확정된 것이 아니라고 보는 편이 안전하다.</p>
+
+    <p>2024년 7월 1일 이후 공고분부터는 차액납부 제도가 적용된다. 제84조의2에 따라 공매재산에 전세권·저당권·가등기담보권을 가진 채권자나, 등기된 임차권 또는 확정일자와 대항력을 갖춘 임차인이 그 재산을 낙찰받으면, 자기가 배분받을 채권액을 매수대금에서 빼고 차액만 낼 수 있다. 전세 보증금을 떼일 처지의 임차인이 살던 집을 직접 낙찰받을 때 보증금만큼 현금을 마련하지 않아도 되도록 한 장치다. 신청은 매각결정기일 전까지 차액납부신청서와 임대차계약서 등 채권 증빙을 내야 한다.</p>
+
+    <h2>명도: 인도명령이 없다는 것의 무게</h2>
+    <p>법원 매각의 낙찰자는 민사집행법 제136조에 따라 대금을 낸 날부터 6개월 안에 인도명령을 신청할 수 있고, 법원이 점유자에게 인도를 명하면 집행관이 강제집행한다. 소송 없이 결정 하나로 명도가 끝나는 구조다. 공매에는 이 제도가 없다. 국세징수법 어디에도 매수인이 법원에 인도를 명해 달라고 신청할 근거가 없으므로, 점유자가 스스로 나가지 않으면 매수인은 소유권을 근거로 건물명도(인도) 소송을 내고 판결을 받아 강제집행해야 한다.</p>
+
+    <p>명도 소송은 소장 접수부터 판결 확정과 집행까지 통상 수개월이 걸리고, 그동안의 대출 이자와 관리비, 점유자와의 협상 비용은 모두 매수인 몫이다. 공매 물건의 낙찰가가 비슷한 조건의 법원 매각 물건보다 낮게 형성되는 가장 큰 이유가 이 명도 부담이다. 공매 매수인에게도 인도명령을 허용하자는 국세징수법 개정안이 국회에 발의된 적이 있으나, 이 글을 쓰는 시점의 현행 조문에는 반영돼 있지 않다. 개정 여부는 국가법령정보센터에서 현행 국세징수법 제3장 제3절을 확인하는 것이 가장 정확하다.</p>
+
+    <p>명도 부담을 줄이려면 입찰 전에 점유 관계를 스스로 파악해야 한다. 공매는 집행관 현황조사가 없어 공매재산명세서의 점유 정보가 임차인 신고와 등기, 전입세대 확인에 의존한다. 전입세대확인서와 등기사항증명서를 직접 떼고, 가능하면 현장을 찾아 점유자가 소유자인지 임차인인지, 대항력 있는 임차인이라면 배분요구를 했는지를 확인하는 것이 법원 매각 때보다 더 중요하다. 대항력 있는 임차인이 배분요구를 하지 않았다면 보증금을 매수인이 떠안게 되므로, 이 경우 명도는 소송이 아니라 보증금 반환의 문제가 된다.</p>
+
+    <h2>배분: 종기와 순위, 그리고 2023년 4월 이후의 당해세</h2>
+    <p>공매 대금을 채권자에게 나누는 절차를 공매에서는 배당이 아니라 배분이라 부른다. 제76조에 따라 공매공고 등기 전에 등기되지 않은 채권, 즉 우선변제권 있는 임차보증금, 임금채권, 가압류채권, 집행권원 있는 일반채권 등을 가진 사람은 배분요구의 종기까지 세무서장에게 배분을 요구해야 하고, 요구하지 않으면 배분받지 못한다. 종기는 공매공고에 적히며 최초 입찰서 제출 시작일 이전으로 정해진다. 법원 매각의 배당요구 종기가 첫 매각기일 전에 따로 고지되는 것과 같은 구조다.</p>
+
+    <p>배분 순위는 제96조가 정한다. 압류재산에 관계된 체납액, 교부청구된 다른 조세·공과금, 저당권 등 담보채권, 임차보증금, 임금채권, 가압류·일반채권이 법정 순위에 따라 나뉜다. 소액임차인의 최우선변제금은 국세기본법 제35조가 국세보다 앞서는 예외로 두고 있어 공매에서도 먼저 배분된다. 2022년 12월 개정돼 2023년 4월 1일부터 시행된 국세기본법 제35조 제7항은 해당 주택에 부과된 당해세라도 임차인의 확정일자보다 법정기일이 늦은 부분은 그 임차보증금에 배분 순위를 양보하도록 했다. 세금 체납으로 집이 공매에 넘어간 임차인에게 의미가 큰 개정이다.</p>
+
+    <p>배분기일은 매수대금을 납부받은 날부터 30일 이내로 지정되고, 배분계산서가 작성돼 열람에 제공된다. 배분에 이의가 있는 채권자는 배분기일에 이의를 제기하고, 받아들여지지 않으면 행정소송으로 다툰다. 법원 매각의 배당이의 소송이 민사소송인 것과 달리 공매의 배분 다툼은 행정처분을 대상으로 한다는 점이 다르다.</p>
+
+    <h2>공유자 우선매수와 농지, 그 밖의 특칙</h2>
+    <p>공유 지분이 공매에 나오면 제79조에 따라 다른 공유자는 매각결정기일 전까지 공매보증을 제공하고 최고가 매수신청가격과 같은 가격으로 우선매수를 신청할 수 있다. 체납자의 배우자도 공유물인 경우 같은 권리를 가진다. 우선매수 신청이 받아들여지면 최고가 매수신청인은 매수인이 되지 못하고 보증을 돌려받는다. 법원 매각의 공유자 우선매수권과 취지는 같지만, 공매에서는 매각결정기일 전이라는 시한이 조문에 명시돼 있어 개찰 뒤에도 신청이 들어올 수 있다. 지분 물건에 입찰할 때는 낙찰이 곧 취득이 아닐 수 있다는 점을 전제해야 한다.</p>
+
+    <p>농지는 공매에서도 농지취득자격증명이 필요하다. 법원 매각이 매각결정기일까지 증명을 제출하도록 하는 것처럼, 캠코 공고도 소유권 이전 전까지 증명을 요구하며 발급받지 못하면 매각결정이 취소되고 보증이 귀속될 수 있다. 주택과 토지의 취득세는 낙찰가를 과세표준으로 일반 매매와 같은 세율이 적용되고, 매수인이 인수하는 권리가 없는 한 매각으로 말소되는 권리의 처리도 법원 매각과 같은 말소기준 논리를 따른다.</p>
+
+    <h2>제도 평가: 싸게 사는 절차가 아니라 공백을 사는 절차</h2>
+    <p>공매가 법원 매각보다 유리하다고 알려진 대목은 세 가지다. 매주 회차가 돌아와 속도가 빠르고, 전자입찰이라 법정에 갈 필요가 없으며, 가격 계단이 10%포인트로 낮아 원하는 가격대에 정확히 들어갈 수 있다. 반면 불리한 대목도 셋이다. 현황조사가 없어 권리분석을 스스로 해야 하고, 인도명령이 없어 명도에 시간과 비용이 들며, 체납액 납부로 절차가 중간에 사라질 수 있다. 결국 공매의 낮은 낙찰가는 절차가 비워 둔 자리를 입찰자가 메우는 대가다.</p>
+
+    <p>제도는 공백을 조금씩 메우는 방향으로 움직여 왔다. 2021년 전부개정으로 조문이 절차 순서대로 정리됐고, 2023년 당해세 순위 조정과 2024년 차액납부 신설은 체납자의 임차인을 보호하는 쪽으로 저울을 옮겼다. 남은 가장 큰 공백은 명도다. 인도명령이 공매에 들어오는 순간 공매와 법원 매각의 낙찰가 격차는 상당 부분 사라질 것이므로, 이 개정의 향방은 공매 투자자가 가장 먼저 추적해야 할 변수다.</p>
+
+    <div class="warning-box">
+      <h3>⚠️ 공매 입찰 전에 공고에서 확인할 다섯 가지</h3>
+      <p>①이번 회차 입찰 기간과 개찰 일시, ②공매보증 금액과 입금 계좌, ③배분요구 종기와 임차인의 배분요구 여부, ④매각결정기일과 잔금 납부기한(7일인지 30일인지), ⑤매각으로 말소되지 않고 매수인이 인수하는 권리. 공매재산명세서에 "미상"으로 남은 점유 정보는 입찰자가 직접 채워야 하는 숙제다.</p>
+    </div>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+    <div class="insight-box">
+      <h3>✅ 압류재산 공매 체크리스트 (2026년 11월 시점)</h3>
+      <ul>
+        <li><strong>회차 선택이 수익률:</strong> 최초 예정가격의 10%포인트씩 매주 내려가므로, 감정가 대비 목표 매입가를 먼저 정하고 그 가격이 되는 회차를 역산한다. 50% 하한에 닿은 뒤에는 새 예정가격으로 재공고되므로 그 이상 기다려도 더 내려가지 않는다.</li>
+        <li><strong>보증은 입찰금액의 10%:</strong> 법원 매각처럼 최저가의 10%가 아니다. 높게 쓸수록 보증이 커지고, 잔금을 못 내면 전액 귀속된다. 입찰 전 대출 가능 금액을 확인하되, 공매 낙찰 물건은 금융기관이 경락잔금대출과 다르게 취급할 수 있으므로 미리 문의한다.</li>
+        <li><strong>잔금 일정은 7일 또는 30일:</strong> 3천만 원 미만은 매각결정일부터 7일이 통례다. 소액 물건일수록 잔금이 급하므로 현금을 준비한 뒤 입찰한다.</li>
+        <li><strong>명도 비용을 입찰가에 반영:</strong> 인도명령이 없다. 점유자가 소유자나 대항력 없는 임차인이라도 소송 기간의 이자·관리비·집행 비용을 수개월분 잡고, 그만큼 낮게 써낸다.</li>
+        <li><strong>대항력 임차인의 배분요구 확인:</strong> 확정일자와 전입이 말소기준보다 앞선 임차인이 배분요구를 하지 않았으면 보증금을 매수인이 인수한다. 공매재산명세서의 배분요구 현황과 전입세대확인서를 대조한다.</li>
+        <li><strong>취소 가능성을 전제:</strong> 매각결정 전 체납액 완납으로 공매가 취소될 수 있다. 입찰 준비 비용을 한 물건에 몰지 말고, 매각결정통지서를 받기 전까지는 자금을 묶지 않는다.</li>
+        <li><strong>지분 물건은 우선매수를 계산:</strong> 공유자가 매각결정기일 전까지 같은 가격으로 우선매수를 신청할 수 있다. 지분 공매에서 최고가를 써도 취득이 보장되지 않는다.</li>
+        <li><strong>임차인이라면 차액납부를 검토:</strong> 살던 집이 공매에 나왔고 보증금이 배분 대상이면, 매각결정기일 전에 차액납부를 신청해 보증금만큼 잔금을 줄일 수 있다.</li>
+      </ul>
+    </div>
+
+    <h2>결론</h2>
+    <p>공매는 세금 체납자의 압류재산을 국세징수법에 따라 세무서장이 팔고 캠코가 온비드에서 대행하는 행정 매각이다. 주 1회 전자입찰, 공매예정가격의 10% 이상인 공매보증, 유찰 때마다 최초 가격의 10%포인트씩 50%까지 내려가는 예정가격, 개찰 뒤 7일 안의 매각결정과 그로부터 7일 또는 30일의 잔금, 종기까지 요구해야 받는 배분이 절차의 뼈대다. 법원 매각과 갈라지는 지점은 현황조사와 인도명령이 없다는 것이고, 그 공백이 공매 낙찰가를 낮추는 동시에 입찰자의 책임을 키운다.</p>
+
+    <p>공매에 들어가려는 사람이 읽어야 할 문서는 둘이다. 하나는 해당 회차의 공매공고이고, 다른 하나는 공매재산명세서다. 앞의 것이 기한과 금액을 정하고, 뒤의 것이 권리와 점유를 알려 준다. 두 문서의 빈칸을 스스로 채울 수 있을 때 10%포인트의 계단은 기회가 되고, 채우지 못하면 그 계단은 명도 소송의 비용으로 되돌아온다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#공매</span>
+      <span class="hashtag">#압류재산공매</span>
+      <span class="hashtag">#온비드</span>
+      <span class="hashtag">#공매보증</span>
+      <span class="hashtag">#유찰저감</span>
+      <span class="hashtag">#명도소송</span>
+      <span class="hashtag">#배분요구종기</span>
+      <span class="hashtag">#국세징수법</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지</strong><br>
+      본 기사는 국세징수법·국세기본법 조문과 한국자산관리공사 온비드의 압류재산 공매공고 관행을 바탕으로 2026년 11월 시점에 작성한 일반 해설이며, 특정 물건의 입찰이나 투자 판단에 대한 조언이 아닙니다. 입찰 기간·보증금·잔금 납부기한·배분요구 종기는 물건마다 공고로 정해지고 법령 개정으로 바뀔 수 있으므로, 실제 입찰 전에는 해당 공매공고와 공매재산명세서, 국가법령정보센터의 현행 조문, 전문가의 확인을 거치시기 바랍니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <div class="summary-bullet"><div class="dot"></div><div>공매 = 국세징수법에 따른 압류재산 매각, 세무서장이 캠코에 대행시켜 온비드 전자입찰로 진행</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>공매보증은 공매예정가격의 10% 이상(공고는 입찰금액의 10%), 잔금 미납 시 귀속</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>유찰 때마다 최초 예정가격의 10%포인트씩 매주 체감, 50%가 하한</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>매각결정은 개찰 뒤 7일 이내, 잔금은 매각결정일부터 7일 원칙·30일 연장(실무 3천만 원 기준)</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>인도명령 없음 → 명도 소송, 배분은 종기까지 요구한 채권에만, 2024년 7월부터 임차인 차액납부 가능</div></div>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🔗 관련 기사</h3>
+      <ul>
+        <li><a href="article_20261106_1_malso-standard-right_v2.html">말소기준권리 뜻 — 낙찰 후 소멸하는 권리와 인수하는 권리 판정 순서</a></li>
+        <li><a href="article_20261023_1_auction-eviction-order_v2.html">인도명령 신청 언제까지 — 낙찰 대금 납부 후 6개월과 집행 절차</a></li>
+        <li><a href="article_20261009_1_auction-deposit_v2.html">입찰보증금 얼마 — 최저매각가격 10% 규정과 재매각 시 보증 비율</a></li>
+        <li><a href="article_20261002_1_priority-repayment_v2.html">소액임차인 최우선변제금 얼마 — 지역별 한도와 배당 순서</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🗓️ 압류재산 공매 1회차 일정 (통례)</h3>
+      <table style="font-size:0.8rem;">
+        <thead><tr><th>시점</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>월요일</td><td>온비드 입찰 개시, 보증금 입금</td></tr>
+          <tr><td>수요일 17:00</td><td>입찰 마감</td></tr>
+          <tr><td>목요일 오전</td><td>개찰, 최고가 매수신청인 결정</td></tr>
+          <tr><td>개찰 후 7일 내</td><td>매각결정기일, 통지서 발급</td></tr>
+          <tr><td>결정일 +7일/30일</td><td>잔금 납부, 미납 시 보증 귀속</td></tr>
+          <tr><td>납부 후 30일 내</td><td>배분기일</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:6px; font-size:0.78rem;">본 사이트의 모든 정보는 투자 참고용이며 투자 손실에 대한 책임은 투자자 본인에게 있습니다.</p>
+</footer>
+
+</body>
+</html>

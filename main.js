@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 463,
+    url: 'article_20261113_1_onbid-public-auction_v2.html',
+    category: '투자',
+    title: '공매 뜻 — 온비드 입찰 순서와 보증금·명도 소송·배분 비교',
+    summary: '공매는 세금 체납자의 압류재산을 국세징수법에 따라 세무서장이 팔고 한국자산관리공사가 온비드에서 대행하는 매각이다. 주 1회 전자입찰 순서, 공매예정가격 10% 이상인 공매보증, 유찰 때마다 최초 가격의 10%포인트씩 50%까지 내려가는 예정가격, 매각결정 뒤 7일·30일 잔금, 인도명령이 없어 명도 소송으로 가는 구조, 배분요구 종기와 2024년 7월 도입된 임차인 차액납부를 법원 매각과 나란히 놓고 조문으로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-13',
+    title_en: 'Korean Public Auction (Gongmae) Explained: Onbid Bidding Sequence, Deposit, Eviction Litigation and Distribution Compared with Court Auctions',
+    summary_en: 'How tax-seizure public auctions run on KAMCO\'s Onbid platform: the weekly electronic bidding cycle, the 10% bid bond, the 10-point weekly price cuts down to 50% of the first reserve, the 7-day and 30-day payment deadlines after the sale decision, why there is no court eviction order and buyers must sue for possession, and how distribution claims and the 2024 set-off payment rule work.'
+  },
+  {
     id: 462,
     url: 'article_20261112_1_deterioration-ratio_v2.html',
     category: '재개발',
