@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 466,
+    url: 'article_20261114_1_canada-foreign-buyer-ban_v2.html',
+    category: '해외',
+    title: '캐나다 외국인 집 구매 금지 언제까지 — 연장안 시한과 신축·유학생·워크퍼밋 예외 대상',
+    summary: '캐나다 외국인 주거용 부동산 구매 금지법은 현행 법으로 2027년 1월 1일 만료되고, 2026년 11월 5일 연방 예산안은 2029년 1월 1일까지 연장하되 신축은 예외로 두는 안을 내놓았다. 비캐나다인 판정, 대도시권 3세대 이하 주거용 재산, 워크퍼밋 183일·유학생 244일과 50만 달러 요건, 1만 달러 벌금과 매각 명령, 온타리오 25%·BC 20% 외국인 취득세를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-14',
+    title_en: 'How Long Does Canada Ban Foreign Home Buyers — Proposed Extension and New-Build, Student, Work-Permit Exemptions',
+    summary_en: 'Canada bans non-Canadians from buying homes until January 1, 2027 under current law, and Budget 2026 (November 5, 2026) proposes extending the ban on existing homes to January 1, 2029 while exempting new builds. This explainer covers who counts as non-Canadian, the three-unit CMA/CA scope, the 183-day work-permit and 244-day/C$500,000 student exemptions, the C$10,000 fine and court-ordered sale, and the separate 25% Ontario and 20% BC foreign-buyer taxes.'
+  },
+  {
     id: 465,
     url: 'article_20261113_1_policy_v2.html',
     category: '정책',
