@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 468,
+    url: 'article_20261114_1_reconstruction_v2.html',
+    category: '재개발',
+    title: '목동·압구정 재건축 대격전: 50조 수주전의 승자는 누구인가',
+    summary: '압구정·목동 등 \'압여목성\' 재건축이 동시에 본궤도에 오르며 50조 원 규모의 수주 전쟁이 개막됐다. 선도지구 정책 현황, 조합원 리스크, 투자 체크리스트를 집중 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-14',
+    title_en: 'Seoul Reconstruction War: Who Will Win the 50 Trillion Won Contract Battle?',
+    summary_en: 'Reconstruction projects in Apgujeong, Mokdong and other major areas are simultaneously underway, launching a 50 trillion won construction contract war. This article analyzes the policy landscape, investor risks, and key checklist for homeowners.'
+  },
+  {
+    id: 467,
+    url: 'article_20261114_2_investment_v2.html',
+    category: '투자',
+    title: '서울 아파트 경매 시장의 반전: 감정가 초과 낙찰이 사라지고 있다',
+    summary: '2026년 초 107.8%에 달했던 서울 아파트 경매 낙찰가율이 하반기 들어 뚜렷한 하락세를 보이고 있다. 고가·중저가 양극화 심화, 단기 시세차익 모델 퇴조, 2026년 4분기 경매 투자 전략을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-14',
+    title_en: 'Seoul Apartment Auction Market Reversal: Over-Appraisal Bids Are Disappearing',
+    summary_en: 'Seoul apartment auction bid rates, which reached 107.8% in early 2026, are clearly declining in the second half. This article analyzes the polarization between high-end and mid-range districts, the retreat of short-term profit strategies, and Q4 2026 auction investment tactics.'
+  },
+  {
     id: 466,
     url: 'article_20261114_1_canada-foreign-buyer-ban_v2.html',
     category: '해외',
