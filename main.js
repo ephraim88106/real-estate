@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 469,
+    url: 'article_20261115_1_rent-tax-credit_v2.html',
+    category: '칼럼',
+    title: '월세 세액공제 자격과 신청 — 총급여 8천만 원·공제율 17% 구간, 무주택 판정 시기와 전입신고 확인',
+    summary: '총급여 8천만 원 이하 무주택 세대주가 한 해 낸 월세(연 1,000만 원 한도)의 15% 또는 17%를 세액에서 빼 주는 월세 세액공제를 해설한다. 소득·무주택·주택·계약자·전입신고 다섯 요건과 12월 31일 무주택 판정, 집주인 동의가 필요 없는 서류 제출, 2026년 배우자 추가공제와 2027년 한도 1,200만 원 개편안, 5년 경정청구까지 다룬다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-15',
+    title_en: 'Monthly Rent Tax Credit: Eligibility, 15%/17% Rates, Year-End Homeownership Test and Address Registration',
+    summary_en: 'Explains the Korean monthly rent tax credit under Article 95-2 of the Restriction of Special Taxation Act: 15% or 17% of annual rent up to 10 million won for tenants earning 80 million won or less, the five eligibility conditions, the December 31 homeownership test, document filing without landlord consent, the 2026 spouse add-on, the proposed 2027 expansion and five-year amended claims.'
+  },
+  {
     id: 468,
     url: 'article_20261114_1_reconstruction_v2.html',
     category: '재개발',
