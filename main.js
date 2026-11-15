@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 471,
+    url: 'article_20261115_1_overseas_v2.html',
+    category: '해외',
+    title: '트럼프 관세 충격에 외국인 미국 부동산 투자 19% 급감… 지금 한국인은 어디에 베팅해야 하나?',
+    summary: '2026년 외국인 미국 부동산 투자가 19% 급감하며 17년래 최저치에 근접했다. 트럼프 관세와 반이민 정책, 달러 강세가 복합적으로 작용한 결과다. 한국인 투자자들은 직접 투자보다 리츠 및 선별적 동남아 접근이 유효하다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-15',
+    title_en: 'Trump Tariff Shock: Foreign US Real Estate Investment Plunges 19% — Where Should Korean Investors Bet Now?',
+    summary_en: 'Foreign investment in US real estate has fallen 19% in 2026, nearing a 17-year low due to Trump tariffs, anti-immigration policies, and a strong dollar. Korean investors should pivot to REITs and selective Southeast Asia exposure.'
+  },
+  {
+    id: 470,
+    url: 'article_20261115_2_column_v2.html',
+    category: '칼럼',
+    title: '주식 폭등 없으면 강북 집값도 멈춘다…전문가들이 말하는 2027년 부동산의 갈림길',
+    summary: '서울 아파트 91주 연속 상승세 속에서 강남이 6주 연속 하락하는 양극화가 진행 중이다. 전문가들은 주식시장 유동성 고갈과 대선 불확실성이 맞물리는 2027년을 중요한 변곡점으로 지목한다. 선별과 준비가 핵심 전략이다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-15',
+    title_en: 'No Stock Surge, No Gangbuk Rally — Experts Name 2027 as the Key Turning Point for Korean Real Estate',
+    summary_en: 'Seoul apartments have risen for 91 consecutive weeks, yet Gangnam has been declining for 6 weeks. Experts warn that 2027 is a critical inflection point as stock market liquidity fades and presidential election uncertainty looms.'
+  },
+  {
     id: 469,
     url: 'article_20261115_1_rent-tax-credit_v2.html',
     category: '칼럼',
