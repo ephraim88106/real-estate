@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>매매수급지수 뜻 — 부동산원 산출식과 KB 매수우위지수 해석</title>
+<meta name="description" content="매매수급지수는 한국부동산원이 주간 아파트가격동향조사에서 협력 공인중개사 설문으로 집계하는 0~200 범위의 수급 심리 지표다. 100을 넘으면 사려는 수요가 팔려는 공급보다 많다는 뜻이고, 100 아래면 그 반대다. KB부동산 매수우위지수는 '100 + 매수자 많음 비중 − 매도자 많음 비중'으로 계산해 같은 0~200 척도를 쓰지만 질문과 표본이 달라 수준을 직접 비교하면 안 된다. 2026년 11월 9일 기준 KB 서울 매수우위지수 54.9, 국토연구원 10월 서울 주택매매 소비심리지수 129.6 등 세 기관 지표의 산식·국면 구간·읽는 순서를 해설한다.">
+<meta name="keywords" content="매매수급지수, 매매수급지수 뜻, 매매수급지수 100, 매수우위지수, KB 매수우위지수, 전세수급지수, 한국부동산원 수급동향, 부동산 소비심리지수, 국토연구원 소비자심리지수, 매도자 우위 매수자 우위, 수급지수 해석">
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261116_1_supply-demand-index_v2">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261116_1_supply-demand-index_v2">
+<meta property="og:title" content="매매수급지수 뜻 — 부동산원 산출식과 KB 매수우위지수 해석">
+<meta property="og:description" content="부동산원 매매수급지수(0~200, 100 기준선)와 KB 매수우위지수(100 + 매수자 많음 − 매도자 많음), 국토연구원 소비심리지수(95·115 국면 구간)의 산식과 표본, 서로 다른 수준을 비교할 때의 함정, 2026년 11월 수치로 읽는 순서를 해설한다.">
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --primary: #0D2B55;
+    --accent: #1A4D8F;
+    --accent-light: #e9eff8;
+    --accent-mid: #4b77b3;
+    --text: #1a1a2e;
+    --text-muted: #555;
+    --bg: #f8f9fa;
+    --white: #fff;
+    --border: #e0e0e0;
+    --gold: #F4A52D;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* Header */
+  header { background: var(--primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+  @media (max-width: 768px) { nav { display: none; } .logo { font-size: 1.1rem; } }
+
+  /* Hero */
+  .hero { background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%); padding: 60px 20px; }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.35); }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; color: #fff; line-height: 1.4; margin-bottom: 18px; }
+  .hero .subtitle { color: rgba(255,255,255,0.85); font-size: 1rem; margin-bottom: 24px; }
+  .hero-meta { display: flex; gap: 20px; color: rgba(255,255,255,0.7); font-size: 0.82rem; flex-wrap: wrap; }
+  .hero-meta span::before { content: '📅 '; }
+  .hero-meta .author::before { content: '✍️ '; }
+
+  /* Layout */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 1000px) { .container { grid-template-columns: 1fr; } }
+
+  /* Article */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; font-weight: 700; margin: 36px 0 16px; border-left: 4px solid var(--accent); padding-left: 16px; color: var(--primary); }
+  article p { margin-bottom: 18px; color: #333; line-height: 1.9; }
+  article ul { margin: 16px 0 20px 20px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li strong { color: var(--primary); }
+
+  /* Data Box */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border: 1px solid var(--accent); border-radius: 10px; padding: 20px; text-align: center; }
+  .data-card .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 0.82rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+  /* Quote Box */
+  .quote-box { background: var(--accent-light); border-left: 5px solid var(--accent); padding: 24px 28px; margin: 28px 0; border-radius: 0 10px 10px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; color: #10294d; font-size: 1.05rem; line-height: 1.8; margin: 0; }
+  .quote-box cite { display: block; margin-top: 12px; font-size: 0.82rem; color: var(--accent); font-style: normal; font-weight: 600; }
+
+  /* Insight Box */
+  .insight-box { background: #eef3fa; border: 2px solid var(--accent); border-radius: 10px; padding: 24px; margin: 28px 0; }
+  .insight-box h3 { color: var(--accent); font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .insight-box ul { margin-left: 18px; }
+  .insight-box li { margin-bottom: 8px; font-size: 0.95rem; }
+
+  /* Warning Box */
+  .warning-box { background: #fff8e1; border: 2px solid #f4a52d; border-radius: 10px; padding: 20px; margin: 24px 0; }
+  .warning-box h3 { color: #b07a00; font-size: 0.95rem; margin-bottom: 10px; }
+  .warning-box p { color: #7a5500; font-size: 0.9rem; margin: 0; }
+
+  /* Disclaimer */
+  .disclaimer { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-top: 40px; font-size: 0.82rem; color: #777; line-height: 1.7; }
+
+  /* Hashtags */
+  .hashtags { margin: 24px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { background: var(--accent-light); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+  /* Sidebar */
+  .sidebar { }
+  .sidebar-widget { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 22px; margin-bottom: 24px; }
+  .sidebar-widget h3 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+  .sidebar-widget ul { list-style: none; }
+  .sidebar-widget ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem; color: #444; }
+  .sidebar-widget ul li:last-child { border-bottom: none; }
+  .sidebar-widget ul li::before { content: '▸ '; color: var(--accent); font-size: 0.75rem; }
+  .sidebar-widget ul li a { color: #444; text-decoration: none; }
+  .sidebar-widget ul li a:hover { color: var(--accent); }
+  .summary-bullet { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 0.88rem; }
+  .summary-bullet .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+  th { background: var(--accent); color: white; padding: 10px 12px; text-align: left; }
+  td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+
+  /* Fixed sidebar ad */
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+  footer { background: var(--primary); color: rgba(255,255,255,0.75); padding: 40px 20px; text-align: center; font-size: 0.85rem; }
+  footer .footer-logo { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; color: white; margin-bottom: 10px; }
+  footer .footer-logo span { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">시장동향</span>
+    <h1>매매수급지수 뜻<br>부동산원 산출식과 KB 매수우위지수 해석</h1>
+    <p class="subtitle">한국부동산원 매매수급지수는 0~200 범위, 100이 수요와 공급이 같은 선 · KB 매수우위지수는 100 + 매수자 많음 비중 − 매도자 많음 비중 · 국토연구원 소비심리지수는 95·115로 국면을 가른다 · 세 지표는 질문과 표본이 달라 수준이 아니라 각자의 역사와 방향으로 읽어야 한다</p>
+    <div class="hero-meta">
+      <span>2026년 11월 16일</span>
+      <span class="author">부동산인사이트 편집팀</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">0 ~ 200</div>
+        <div class="label">부동산원 매매수급지수 범위 · 100 초과면 사려는 수요가 팔려는 공급보다 많고, 100 미만이면 공급이 수요보다 많다 (주간 아파트가격동향조사)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">54.9</div>
+        <div class="label">KB부동산 서울 매수우위지수 · 2026년 11월 9일 기준, 전주 대비 5.3p 하락, 5주 연속 하락으로 연중 최저 (10월 5일 73.3)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">129.6</div>
+        <div class="label">국토연구원 서울 주택매매시장 소비심리지수 · 2026년 10월, 3개월 연속 하락했지만 상승 국면 하한선 115보다 높다</div>
+      </div>
+    </div>
+
+    <p>"서울 매매수급지수가 100을 넘었다", "매수우위지수가 연중 최저로 떨어졌다", "소비심리지수가 석 달째 하락했다". 같은 주에 이 세 문장이 한꺼번에 기사 제목으로 나오면 읽는 사람은 혼란에 빠진다. 사려는 사람이 많다는 것인지 적다는 것인지, 시장이 뜨겁다는 것인지 식었다는 것인지 알 수 없다. 세 문장은 서로 모순되는 것이 아니다. 발표 기관이 다르고, 질문이 다르고, 척도의 눈금이 다른 세 개의 심리 지표를 같은 말로 옮겨 놓았을 뿐이다.</p>
+
+    <p>수급 지표는 가격 통계와 성격이 다르다. 가격지수는 이미 체결된 거래나 호가를 집계한 결과이고, 수급지수는 현장 중개업소나 가구가 "지금 사려는 사람과 팔려는 사람 중 누가 많으냐"에 답한 설문의 집계다. 그래서 가격보다 먼저 움직이는 경우가 많고, 그만큼 변동이 거칠며, 해석을 잘못하면 방향을 거꾸로 읽게 된다. 특히 100이라는 숫자가 세 지표에 모두 등장하지만 그 100의 의미는 저마다 다르다.</p>
+
+    <p>이 글은 2026년 11월 시점에서 한국부동산원 매매수급지수의 산출 구조와 100의 뜻, KB부동산 매수우위지수의 산식, 국토연구원 부동산시장 소비심리지수의 국면 구간을 차례로 풀고, 세 지표의 수준을 직접 비교하면 왜 틀리는지, 그리고 현재 수치를 어떤 순서로 읽어야 하는지를 해설한다.</p>
+
+    <h2>매매수급지수의 뜻: 부동산원이 매주 집계하는 수요·공급 비중</h2>
+    <p>매매수급지수는 한국부동산원이 매주 목요일 발표하는 주간 아파트가격동향조사의 부속 지표다. 공식 명칭은 수급동향이며, 매매와 전세를 따로 집계해 매매수급지수와 전세수급지수로 부른다. 조사 표본 단지가 있는 지역의 협력 공인중개사에게 현재 시장에서 수요와 공급 중 어느 쪽이 많은지를 묻고, 그 응답을 0에서 200 사이의 지수로 환산한다. 한국감정원 시절에는 회원 중개업소 설문과 함께 인터넷 매물 건수 등을 분석해 수요와 공급의 비중을 지수화한다고 설명했다.</p>
+
+    <p>척도의 구조는 단순하다. 응답자 전원이 "공급이 훨씬 많다"고 답하면 0, 전원이 "수요가 훨씬 많다"고 답하면 200, 수요와 공급이 같다는 쪽으로 모이면 100이 된다. 따라서 100은 수요와 공급이 균형인 선이고, 100을 넘으면 집을 사려는 사람이 팔려는 사람보다 많으며, 100 아래면 팔려는 사람이 더 많다는 뜻이다. 지수가 200이나 0에 실제로 닿는 일은 없고, 역사적으로 서울 매매수급지수는 대략 60대에서 120대 사이를 오갔다.</p>
+
+    <p>참고가 되는 극단값은 두 개다. 2021년 2월 셋째 주 수도권 매매수급지수는 118.8을 기록해 당시까지의 조사 이래 최고치를 썼고, 2022년 말 서울 매매수급지수는 60대 초반까지 내려가 2012년 집계 시작 이후 최저 수준으로 떨어졌다. 한쪽은 집을 사겠다는 사람이 줄을 섰던 시기, 다른 쪽은 금리 급등으로 매수세가 사라졌던 시기다. 이 두 숫자를 양 끝에 놓고 현재 수치가 어디쯤 있는지 보는 것이 가장 쓸모 있는 읽기다.</p>
+
+    <div class="warning-box">
+      <h3>⚠️ 매도자 우위와 매수자 우위, 기사마다 반대로 쓴다</h3>
+      <p>부동산원 지수가 100을 넘으면 사려는 사람이 많으므로 파는 쪽이 유리한 시장, 즉 "매도자 우위 시장"이다. 그런데 일부 기사는 같은 상황을 "매수 우위"라고 쓴다. 매수세가 우위라는 뜻으로 쓴 것인데, 매수자에게 유리하다는 뜻으로 읽히기 쉽다. 숫자를 볼 때는 "100 초과 = 사려는 사람이 더 많다"는 사실 하나만 붙들고, 우위라는 말은 누구에게 유리하다는 뜻인지 문맥으로 가려 읽어야 한다.</p>
+    </div>
+
+    <h2>KB 매수우위지수 산식: 100 + 매수자 많음 − 매도자 많음</h2>
+    <p>KB부동산의 매수우위지수는 KB 주택가격동향조사에 참여하는 표본 공인중개사에게 "매수자 많음, 비슷함, 매도자 많음" 가운데 하나를 고르게 한 설문으로 만든다. 산식은 공개돼 있다. <strong>매수우위지수 = 100 + 매수자 많음 응답 비중 − 매도자 많음 응답 비중</strong>이다. 예를 들어 매수자 많음이 12.8%, 매도자 많음이 30.3%라면 100 + 12.8 − 30.3 = 82.5가 된다. 범위는 부동산원과 같은 0~200이고, 100을 넘으면 매수자가 많고 100 아래면 매도자가 많다는 해석도 같다.</p>
+
+    <p>그런데 실제 수치의 분포는 부동산원 지수와 크게 다르다. KB 매수우위지수는 서울에서도 100을 넘는 일이 드물다. 2020년과 2021년의 과열기에 잠시 100을 크게 넘었을 뿐, 평상시에는 50~80 사이에서 움직이고 지방은 30~50대인 경우가 많다. 전국 수치는 2026년 10월 26일 기준 43이었고, 5월에도 44.4에 머물렀다. 이유는 설문의 구조에 있다. 중개사는 거래가 활발하지 않은 평상시에 "비슷함"보다 "매도자 많음"을 고르는 경향이 있고, 한 명의 매수자가 여러 중개업소를 돌아다니는 시장 구조상 매도 물건이 더 많이 보이기 때문이다. 그 결과 KB 지수는 기준선 100이 아니라 자기 과거 평균을 중심으로 읽어야 하는 지표가 됐다.</p>
+
+    <table>
+      <thead>
+        <tr><th>항목</th><th>부동산원 매매수급지수</th><th>KB 매수우위지수</th><th>국토연구원 소비심리지수</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>발표 주기</td><td>주간(목요일), 월간</td><td>주간, 월간</td><td>월간(다음 달 중순)</td></tr>
+        <tr><td>응답자</td><td>협력 공인중개사</td><td>표본 공인중개사</td><td>중개업소 + 일반 가구</td></tr>
+        <tr><td>질문</td><td>수요와 공급 중 어느 쪽이 많은가</td><td>매수자·매도자 중 누가 많은가</td><td>가격·거래 전망 등 복수 문항</td></tr>
+        <tr><td>범위와 균형선</td><td>0~200, 100</td><td>0~200, 100</td><td>0~200, 100</td></tr>
+        <tr><td>해석 구간</td><td>100 초과 수요 우세</td><td>100 초과 매수자 우세(서울도 드묾)</td><td>95 미만 하강 / 95~115 보합 / 115 이상 상승</td></tr>
+        <tr><td>2026년 최근치(서울)</td><td>전세수급지수 11월 2주 120.2 (7월 4주 128.1)</td><td>11월 9일 54.9 (강북 61.9 · 강남 48.6)</td><td>10월 주택매매 129.6 (7월 139.9)</td></tr>
+      </tbody>
+    </table>
+
+    <div class="quote-box">
+      <p>"부동산원 지수의 100은 저울의 눈금이고, KB 지수의 100은 서울이 과열될 때만 닿는 천장에 가깝다. 두 지표에 같은 숫자가 찍혔다고 같은 시장을 말하는 것이 아니다. 각 지표는 자기 과거와 비교할 때만 뜻을 갖는다."</p>
+      <cite>— 부동산인사이트 편집팀, 수급 지표 해설</cite>
+    </div>
+
+    <h2>국토연구원 소비심리지수: 95와 115로 국면을 가른다</h2>
+    <p>세 번째 지표는 국토연구원이 매달 중순에 발표하는 부동산시장 소비자심리조사다. 전국의 중개업소와 일반 가구를 함께 조사해 주택매매시장과 주택전세시장의 소비심리지수를 만든다. 범위는 역시 0~200이지만, 이 지수는 100 하나가 아니라 두 개의 선으로 국면을 나눈다. 95 미만이면 하강 국면, 95 이상 115 미만이면 보합 국면, 115 이상이면 상승 국면이다. 그래서 "지수가 내렸다"와 "국면이 바뀌었다"는 다른 말이다.</p>
+
+    <p>2026년 11월 16일 발표된 10월 조사에서 서울 주택매매시장 소비심리지수는 129.6으로 전월 130.8보다 1.2포인트 내렸다. 7월 139.9에서 8월 132.5, 9월 130.8, 10월 129.6으로 석 달 연속 하락이다. 그러나 상승 국면의 하한선 115보다 아직 15포인트 가까이 높아 국면은 여전히 상승이다. 같은 조사에서 전국 주택매매 지수는 116.5, 수도권은 124.2, 서울 주택전세 지수는 122.3이었다. 세종은 7.8포인트 오른 133.1로 서울을 앞질렀다.</p>
+
+    <p>이 조사에는 수급을 직접 묻는 문항도 있다. 10월 서울 중개업소 가운데 "매도하려는 사람이 다소 또는 훨씬 많았다"고 답한 비율은 40.7%로, "매수하려는 사람이 많았다"는 응답 20.1%의 두 배였다. 종합 심리지수는 상승 국면인데 수급 문항은 매도 우세라는 것이 이 조사의 현재 모습이고, 바로 이 조합이 KB 매수우위지수의 급락과 부동산원 가격지수의 소폭 상승이 동시에 나오는 이유를 설명한다.</p>
+
+    <h2>왜 세 지표가 다른 방향을 가리키는가</h2>
+    <p>2026년 11월 둘째 주 상황을 세 지표로 겹쳐 보면 이렇다. 한국부동산원 주간 조사에서 11월 9일 기준 서울 아파트 매매가격은 전주 대비 0.07% 올랐고 전세가격은 0.17% 올랐다. 10월 월간 조사에서도 서울 주택 매매가격은 0.65% 상승했지만 상승 폭은 6개월 만에 가장 작았고 강남구는 1.24% 하락했다. 같은 날 기준 KB 서울 매수우위지수는 54.9로 전주보다 5.3포인트 떨어졌다. 한강 이북 14개 구가 61.9, 이남 11개 구가 48.6이다. 국토연구원 10월 소비심리지수는 129.6으로 석 달째 내렸지만 상승 국면이다.</p>
+
+    <p>가격은 오르는데 매수 심리는 연중 최저라는 조합이 모순처럼 보이는 것은 지표들이 측정하는 시점과 대상이 다르기 때문이다. 가격지수는 성사된 거래와 호가의 움직임이라 매도자가 호가를 내리지 않는 한 쉽게 꺾이지 않는다. 매수우위지수는 중개업소 문을 두드리는 사람의 수를 묻는 것이라 거래가 끊기면 먼저 떨어진다. 실제로 서울 아파트 매매 거래량은 5월 8,900건에서 9월 3,900건으로 줄었고, 11월 10일 기준 매매 매물은 8만 477건으로 8월 2일보다 31.3% 늘었다. 사려는 사람은 줄고 팔려는 물건은 늘었으니 중개사 체감 지표가 먼저 반응한 것이다.</p>
+
+    <p>부동산원 전세수급지수는 또 다른 그림을 보여 준다. 서울 전세수급지수는 7월 넷째 주 128.1까지 올랐다가 11월 둘째 주 120.2로 내려왔지만 여전히 100을 크게 웃돈다. 매매는 관망, 전세는 수요 우세라는 구도다. 매매수급과 전세수급을 함께 보면 "집을 안 사는 것"과 "집이 필요 없는 것"이 다르다는 점이 드러난다. 매수 대기 수요가 전세 시장으로 옮겨 가 있다는 뜻이고, 이것이 매매 심리가 식어도 가격이 급락하지 않는 이유의 하나다.</p>
+
+    <div class="quote-box">
+      <p>"수급지수는 체온계이지 진단서가 아니다. 체온이 내려간다고 곧바로 병이 나은 것도, 올라간다고 곧바로 병이 난 것도 아니다. 가격·거래량·매물·전세수급을 옆에 놓고 읽을 때에만 수급지수는 방향을 말해 준다."</p>
+      <cite>— 부동산인사이트 편집팀</cite>
+    </div>
+
+    <h2>읽는 순서: 수준이 아니라 방향, 절댓값이 아니라 자기 역사</h2>
+    <p>수급 지표를 쓸 때 가장 흔한 실수는 세 가지다. 첫째, 서로 다른 기관의 수치를 한 줄에 놓고 비교하는 것이다. 부동산원 109와 KB 55를 나란히 두고 "두 배 차이"라고 말하는 것은 섭씨와 화씨를 같은 저울에 올리는 것과 같다. 둘째, 한 주의 등락에 의미를 부여하는 것이다. 설문 기반 지표는 표본의 응답 변화에 민감해 1~2포인트는 잡음인 경우가 많다. 셋째, 100을 모든 지표의 분기점으로 보는 것이다. KB 지수는 서울도 100 아래가 정상이고, 국토연구원 지수는 95와 115가 분기점이다.</p>
+
+    <p>권할 만한 읽기는 이렇다. 먼저 각 지표를 자기 과거 범위 안에 놓는다. 부동산원 서울 매매수급지수는 60대(2022년 말)와 110대(2021년) 사이 어디인지, KB 서울 매수우위지수는 연중 최저인지 평균 근처인지, 국토연구원 지수는 세 국면 중 어디인지를 본다. 다음으로 4주 이상의 방향을 본다. 5주 연속 하락처럼 방향이 일관되면 신호이고, 오르내림이 섞이면 잡음이다. 마지막으로 거래량과 매물 수, 전세수급지수를 같이 놓고 심리와 실물이 같은 방향인지 확인한다. 심리는 식었는데 매물이 줄고 거래가 늘면 심리 지표가 뒤늦은 것이고, 심리도 식고 매물도 늘면 가격이 따라 내려갈 가능성이 커진다.</p>
+
+    <h2>지표 평가와 전망</h2>
+    <p>세 지표 가운데 가장 빠른 것은 KB 주간 매수우위지수이고, 가장 안정적인 것은 국토연구원 월간 소비심리지수이며, 가격 통계와 같은 표본 체계로 묶여 있어 가격과 함께 읽기 편한 것은 부동산원 수급지수다. 어느 하나가 우월하다기보다 역할이 다르다. 단기 매수·매도 타이밍을 보는 사람에게는 주간 지표가, 1~2년 시계로 시장 국면을 보는 사람에게는 월간 지표가 맞다.</p>
+
+    <p>2026년 하반기의 조합, 즉 가격 소폭 상승·매수 심리 급락·매물 급증·전세수급 여전히 100 초과는 과거 2021년 말에서 2022년 초의 전환기와 닮은 점이 있다. 그때도 가격지수는 몇 달 더 올랐고 수급지수가 먼저 100 아래로 내려갔다. 다만 당시와 달리 지금은 전세 수요가 강하게 남아 있어 매매가 전세로 흡수되는 구조라는 차이가 있다. 수급 지표가 가격 조정을 예고하는지, 아니면 세제 개편안과 대출 규제에 따른 일시적 관망인지는 KB 지수가 10월 초 수준(70대)을 회복하는지, 국토연구원 지수가 115선을 지키는지로 판별할 수 있을 것이다.</p>
+
+    <h2>실수요자와 투자자를 위한 시사점</h2>
+    <div class="insight-box">
+      <h3>✅ 수급 지표 읽기 체크 항목 (2026년 11월 기준)</h3>
+      <ul>
+        <li><strong>부동산원 지수는 100을 기준선으로, KB 지수는 자기 평균을 기준선으로:</strong> 부동산원 매매수급지수 100 초과는 사려는 사람이 더 많다는 뜻이고, KB 매수우위지수는 서울도 50~80이 평상시 범위이므로 100과 비교하지 말고 연중 최고·최저와 비교한다.</li>
+        <li><strong>기관 간 수치를 한 줄에 놓지 않는다:</strong> 질문·표본·응답 성향이 달라 수준 비교는 무의미하다. 같은 기관 지표의 4주 이상 방향만 비교한다.</li>
+        <li><strong>매매수급과 전세수급을 짝으로 본다:</strong> 매매 심리가 식어도 전세수급지수가 100을 크게 웃돌면 대기 수요가 전세로 가 있는 것이다. 이 경우 가격 급락보다 거래 감소와 횡보가 먼저 온다.</li>
+        <li><strong>실수요자는 KB 지수 연중 최저 구간을 협상 구간으로 본다:</strong> 매수자가 드문 시기는 호가 조정 여지가 크다. 다만 심리 지표만 보고 바닥을 단정하지 말고 관심 단지의 실거래가와 매물 수 추이를 같이 확인한다.</li>
+        <li><strong>매도자는 거래량이 줄 때 호가를 먼저 조정하는 쪽이 팔린다:</strong> 매물 8만 건이 넘는 시장에서 매수우위지수 50대는 선택권이 매수자에게 있다는 뜻이다. 가격을 지키려면 시간을, 시간을 지키려면 가격을 내줘야 한다.</li>
+        <li><strong>투자자는 국토연구원 지수의 115선을 국면 전환 신호로 쓴다:</strong> 서울 129.6은 아직 상승 국면이다. 115 아래로 내려가면 보합 국면으로 분류가 바뀌며, 이는 통상 가격지수 하락 전환보다 앞서거나 동행한다.</li>
+        <li><strong>주간 등락 1~2포인트는 잡음으로 처리한다:</strong> 설문 지표의 표본 오차 범위다. 5주 연속 하락, 7주 만의 100 돌파처럼 연속성이 있는 변화만 신호로 본다.</li>
+        <li><strong>지역 지수를 본다:</strong> 서울 평균은 강북(61.9)과 강남(48.6)의 평균이다. 관심 지역의 권역별 수급지수를 따로 보지 않으면 평균이 두 시장의 차이를 지운다.</li>
+      </ul>
+    </div>
+
+    <h2>결론</h2>
+    <p>매매수급지수는 한국부동산원이 협력 공인중개사 설문으로 매주 집계하는 0~200 범위의 수급 심리 지표이며, 100을 넘으면 사려는 수요가 팔려는 공급보다 많다는 뜻이다. KB부동산 매수우위지수는 100 + 매수자 많음 비중 − 매도자 많음 비중으로 계산해 같은 척도를 쓰지만 서울에서도 100을 넘는 일이 드문 지표이고, 국토연구원 소비심리지수는 95와 115 두 선으로 하강·보합·상승 국면을 가른다. 세 지표에 모두 100이 있지만 그 100의 무게는 전혀 다르다.</p>
+
+    <p>2026년 11월 현재 KB 서울 매수우위지수 54.9는 연중 최저이고, 국토연구원 서울 매매 심리지수 129.6은 석 달째 내렸지만 상승 국면이며, 부동산원 서울 전세수급지수 120.2는 여전히 수요 우세다. 매수 심리는 식고 가격은 버티며 수요는 전세로 옮겨 가 있는 시장이다. 수급 지표는 이 그림을 가격보다 먼저 그려 주지만, 그 그림을 제대로 읽으려면 각 지표를 자기 역사 위에 놓고 방향을 보는 습관이 먼저다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#매매수급지수</span>
+      <span class="hashtag">#매매수급지수뜻</span>
+      <span class="hashtag">#매수우위지수</span>
+      <span class="hashtag">#전세수급지수</span>
+      <span class="hashtag">#부동산소비심리지수</span>
+      <span class="hashtag">#한국부동산원</span>
+      <span class="hashtag">#KB부동산</span>
+      <span class="hashtag">#국토연구원</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지</strong><br>
+      본 기사는 한국부동산원 주간 아파트가격동향조사(2026년 11월 둘째 주, 11월 9일 기준)와 10월 전국주택가격동향조사, KB부동산 주간 주택시장동향(2026년 11월 9일 기준), 국토연구원 2026년 10월 부동산시장 소비자심리조사(11월 16일 발표), 아시아경제·세계일보·서울파이낸스·서울경제TV 등의 공개 보도를 바탕으로 작성한 해설 콘텐츠입니다. 각 지수의 산출 방식과 해석 구간은 발표 기관의 공개 설명을 요약한 것이며, 표본 구성과 세부 가중 방식은 기관별 조사 개요 원문을 확인하시기 바랍니다. 지수 수치는 발표 시점 기준이며 이후 수정·갱신될 수 있습니다. 본 글은 특정 지역이나 상품의 매수·매도를 권유하지 않으며, 투자 판단과 그 결과에 대한 책임은 독자 본인에게 있습니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <div class="summary-bullet"><div class="dot"></div><div>부동산원 매매수급지수: 협력 공인중개사 설문, 0~200, 100 초과면 사려는 수요가 팔려는 공급보다 많다 · 매주 목요일 발표</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>KB 매수우위지수 = 100 + 매수자 많음 비중 − 매도자 많음 비중 · 서울도 평상시 50~80, 100 초과는 과열기에만</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>국토연구원 소비심리지수: 95 미만 하강 / 95~115 보합 / 115 이상 상승 국면 · 중개업소와 일반 가구 동시 조사</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>2026년 11월: KB 서울 54.9(연중 최저) · 국토연 서울 매매 129.6(상승 국면) · 부동산원 서울 전세수급 120.2 · 매물 8만 477건</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>읽는 순서: 기관별 수준 비교 금지 → 자기 과거 범위 안의 위치 → 4주 이상 방향 → 거래량·매물·전세수급과 교차 확인</div></div>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🔗 관련 기사</h3>
+      <ul>
+        <li><a href="article_20261005_1_price_index_difference_v2.html">한국부동산원 KB 주택가격지수 차이 — 조사 방식과 표본 규모 비교</a></li>
+        <li><a href="article_20260831_1_jeonse-ratio_v2.html">전세가율 뜻 — 계산법과 깡통전세 판단 방법</a></li>
+        <li><a href="article_20261026_1_pir-meaning_v2.html">PIR 뜻 — 소득 대비 주택가격 계산과 KB·국토부 수치 비교</a></li>
+        <li><a href="article_20260810_1_actual_price_v2.html">실거래가 조회 방법 — 국토부 공개시스템 이용법과 호가와의 차이</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>📊 서울 수급·심리 지표 추이 (2026년)</h3>
+      <table style="font-size:0.8rem;">
+        <thead><tr><th>지표</th><th>고점</th><th>최근</th></tr></thead>
+        <tbody>
+          <tr><td>KB 매수우위지수(주간)</td><td>73.3 (10월 5일)</td><td>54.9 (11월 9일)</td></tr>
+          <tr><td>국토연 매매 소비심리(월간)</td><td>139.9 (7월)</td><td>129.6 (10월)</td></tr>
+          <tr><td>부동산원 전세수급지수(주간)</td><td>128.1 (7월 4주)</td><td>120.2 (11월 2주)</td></tr>
+          <tr><td>매매 매물(아실)</td><td>—</td><td>80,477건 (11월 10일, 8월 2일 대비 +31.3%)</td></tr>
+          <tr><td>월 거래량(국토부)</td><td>8,900건 (5월)</td><td>3,900건 (9월)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:6px; font-size:0.78rem;">본 사이트의 모든 정보는 투자 참고용이며 투자 손실에 대한 책임은 투자자 본인에게 있습니다.</p>
+</footer>
+
+</body>
+</html>

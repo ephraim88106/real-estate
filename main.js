@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 472,
+    url: 'article_20261116_1_supply-demand-index_v2.html',
+    category: '시장동향',
+    title: '매매수급지수 뜻 — 부동산원 산출식과 KB 매수우위지수 해석',
+    summary: '한국부동산원 매매수급지수는 협력 공인중개사 설문으로 집계하는 0~200 범위 지표로, 100을 넘으면 사려는 수요가 팔려는 공급보다 많다는 뜻이다. KB 매수우위지수는 100 + 매수자 많음 비중 − 매도자 많음 비중으로 계산하며 서울도 평상시 50~80에 머물러 100과 비교하면 안 된다. 국토연구원 소비심리지수의 95·115 국면 구간, 2026년 11월 KB 서울 54.9·국토연 서울 129.6 수치로 세 지표를 읽는 순서를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-16',
+    title_en: 'What the Housing Supply-Demand Index Means: REB Formula vs. KB Buyer-Superiority Index',
+    summary_en: 'The Korea Real Estate Board supply-demand index is a 0-200 broker survey where readings above 100 mean more buyers than sellers. KB\'s buyer-superiority index (100 + buyers-more share - sellers-more share) rarely exceeds 100 even in Seoul, so levels must not be compared across agencies. We explain the KRIHS sentiment index phases (95/115) and how to read the November 2026 readings of 54.9 (KB Seoul) and 129.6 (KRIHS Seoul).'
+  },
+  {
     id: 471,
     url: 'article_20261115_1_overseas_v2.html',
     category: '해외',
