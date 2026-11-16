@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 474,
+    url: 'article_20261116_1_market_v2.html',
+    category: '시장동향',
+    title: '서울 아파트 매물 8만 건 돌파… '대출 한파'에 무너지는 강남 불패 신화',
+    summary: '서울 아파트 매물이 역대 최고치인 8만 건을 돌파하며 강남 3구마저 6주 연속 하락세를 기록 중이다. 대출 규제로 인한 거래 절벽과 함께 서울 부동산 시장의 패러다임 전환이 본격화되고 있다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-16',
+    title_en: 'Seoul apartment listings surpass 80,000 units — loan freeze shatters Gangnam invincibility myth',
+    summary_en: 'Seoul apartment listings hit a record 80,000 units as Gangnam posts a 6-week consecutive decline. A transaction freeze signals a paradigm shift in Seoul real estate.'
+  },
+  {
+    id: 473,
+    url: 'article_20261116_2_policy_v2.html',
+    category: '정책',
+    title: '스트레스 DSR 완화냐 강화냐… 2026년 하반기 부동산 대출 규제의 명암',
+    summary: '지방 주담대 스트레스 DSR이 또다시 연장되는 가운데 수도권과 지방의 대출 규제 양극화가 심화되고 있다. 2026년 하반기 부동산 대출 정책 전면 분석과 실수요자 대응 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-16',
+    title_en: 'Stress DSR eased or tightened? The light and shadow of H2 2026 mortgage regulations',
+    summary_en: 'As regional stress-DSR rules are extended again, the gap between metropolitan and provincial loan limits deepens. A comprehensive analysis of H2 2026 mortgage policy.'
+  },
+  {
     id: 472,
     url: 'article_20261116_1_supply-demand-index_v2.html',
     category: '시장동향',
