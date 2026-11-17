@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 476,
+    url: 'article_20261117_1_subscription_v2.html',
+    category: '분양',
+    title: '서울 청약자 4년 만에 최저인데… 왜 59㎡만 불티나게 팔릴까?',
+    summary: '서울 아파트 1순위 청약자가 4년 만에 최저치를 기록했지만 59㎡ 소형은 84㎡ 대비 5.8배 경쟁률을 기록 중이다. 분양가 상한제·대출 규제·MZ세대 선호 변화가 맞물린 분양 시장의 구조적 양극화를 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-17',
+    title_en: 'Seoul apartment applicants hit 4-year low, but why is 59㎡ selling like hotcakes?',
+    summary_en: 'While Seoul\'s first-priority apartment applicants hit a 4-year low, 59㎡ units are recording 5.8x the competition ratio of 84㎡ units. This analysis examines the structural polarization of the subscription market driven by price caps, loan regulations, and MZ generation preferences.'
+  },
+  {
+    id: 475,
+    url: 'article_20261117_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '1기 신도시 재건축, 분당은 달리는데 일산·중동은 제자리… 어디에 투자해야 하나?',
+    summary: '1기 신도시 선도지구 3.6만호 선정 이후 분당·산본은 속도를 내는 반면 일산·중동은 사업성 문제로 고전 중이다. 2026년 11월 현재 각 신도시의 진행 현황과 투자 판단 기준을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-17',
+    title_en: '1st-gen new town redevelopment: Bundang sprints ahead while Ilsan and Jungdong stall — where should you invest?',
+    summary_en: 'After 36,000 units were designated as pilot districts in 1st-generation new towns, Bundang and Sanbon are accelerating while Ilsan and Jungdong struggle with feasibility issues. This in-depth analysis covers the current status and investment criteria as of November 2026.'
+  },
+  {
     id: 474,
     url: 'article_20261116_1_market_v2.html',
     category: '시장동향',
