@@ -85,6 +85,24 @@ const i18n = {
 
 const articles = [
   {
+    id: 479,
+    url: "article_20261119_1_column_v2.html",
+    category: "칼럼",
+    title: "주담대 5% 시대의 역설: 고금리 속에서도 아파트를 사는 사람들의 진짜 이유",
+    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80",
+    date: "2026-11-19",
+    author: "부동산인사이트 편집팀"
+  },
+  {
+    id: 478,
+    url: "article_20261119_2_market_v2.html",
+    category: "시장동향",
+    title: "서울 아파트 93주 연속 상승의 균열 — 강남 매물 적체 vs 강북 매수 열기의 충돌",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
+    date: "2026-11-19",
+    author: "부동산인사이트 편집팀"
+  },
+  {
     id: 477,
     url: 'article_20261119_1_management-disposition_v2.html',
     category: '재개발',
