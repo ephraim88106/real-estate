@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 477,
+    url: 'article_20261119_1_management-disposition_v2.html',
+    category: '재개발',
+    title: '관리처분계획인가 뜻 — 사업시행인가 다음 단계와 이주·철거는 언제',
+    summary: '관리처분계획인가는 분양신청 결과를 바탕으로 조합원별 배정·종전자산 가격·분담금·일반분양 물량을 확정하는 계획을 시장·군수등이 승인하는 처분이다. 공람 30일·인가 통보 30일(타당성 검증 시 60일), 고시 후 사용·수익 정지와 현금청산 90일, 이주·철거로 이어지는 순서와 입주권 전환 시점을 도시정비법으로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-19',
+    title_en: 'What is management and disposition plan approval? The step after project implementation approval, and when relocation and demolition begin',
+    summary_en: 'Management and disposition plan approval is the administrative decision that fixes each union member\'s unit allocation, prior-asset valuation, contribution and general-sale volume based on the sale applications. This explainer covers the 30-day public inspection, the 30-day (60 with verification) approval deadline, the suspension of use and 90-day cash-settlement window after notice, and when membership rights arise and relocation begins.'
+  },
+  {
     id: 476,
     url: 'article_20261117_1_subscription_v2.html',
     category: '분양',
@@ -112,7 +124,7 @@ const articles = [
     id: 474,
     url: 'article_20261116_1_market_v2.html',
     category: '시장동향',
-    title: '서울 아파트 매물 8만 건 돌파… '대출 한파'에 무너지는 강남 불패 신화',
+    title: '서울 아파트 매물 8만 건 돌파… \'대출 한파\'에 무너지는 강남 불패 신화',
     summary: '서울 아파트 매물이 역대 최고치인 8만 건을 돌파하며 강남 3구마저 6주 연속 하락세를 기록 중이다. 대출 규제로 인한 거래 절벽과 함께 서울 부동산 시장의 패러다임 전환이 본격화되고 있다.',
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
     author: '부동산인사이트 편집팀',
