@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>법정지상권 뜻 — 성립 조건과 지료 산정, 건물만 낙찰받을 때 판정 순서</title>
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<meta name="description" content="법정지상권은 같은 사람 소유이던 토지와 건물이 경매·매매로 서로 다른 소유자에게 넘어갈 때 건물 소유자에게 법이 인정하는 토지 사용권이다. 민법 제366조와 관습법상 법정지상권의 성립 조건, 성립하지 않는 유형, 견고한 건물 30년의 존속기간, 법원의 지료 결정과 2년분 연체 소멸청구, 토지만 또는 건물만 낙찰받을 때의 판정 순서를 2026년 현행 민법과 대법원 판례로 해설한다.">
+<meta name="keywords" content="법정지상권, 법정지상권 뜻, 법정지상권 성립 조건, 관습법상 법정지상권, 법정지상권 지료, 법정지상권 존속기간, 토지만 매각, 건물만 매각, 민법 제366조, 지상권 소멸청구">
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261120_1_statutory-superficies_v2">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261120_1_statutory-superficies_v2">
+<meta property="og:title" content="법정지상권 뜻 — 성립 조건과 지료 산정, 건물만 낙찰받을 때 판정 순서">
+<meta property="og:description" content="토지와 건물의 주인이 갈라질 때 성립하는 법정지상권의 뜻, 민법 제366조와 관습법상 성립 조건, 불성립 유형, 존속기간 30년과 지료 결정, 2년분 연체 소멸청구, 입찰 전 판정 순서를 해설한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --primary: #0D2B55;
+    --accent: #8B1A1A;
+    --accent-light: #f9eded;
+    --accent-mid: #b04a4a;
+    --text: #1a1a2e;
+    --text-muted: #555;
+    --bg: #f8f9fa;
+    --white: #fff;
+    --border: #e0e0e0;
+    --gold: #F4A52D;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* Header */
+  header { background: var(--primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+  @media (max-width: 768px) { nav { display: none; } .logo { font-size: 1.1rem; } }
+
+  /* Hero */
+  .hero { background: linear-gradient(135deg, #1A0505 0%, #8B1A1A 55%, #2A0808 100%); padding: 60px 20px; }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.35); }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; color: #fff; line-height: 1.4; margin-bottom: 18px; }
+  .hero .subtitle { color: rgba(255,255,255,0.85); font-size: 1rem; margin-bottom: 24px; }
+  .hero-meta { display: flex; gap: 20px; color: rgba(255,255,255,0.7); font-size: 0.82rem; flex-wrap: wrap; }
+  .hero-meta span::before { content: '📅 '; }
+  .hero-meta .author::before { content: '✍️ '; }
+
+  /* Layout */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 1000px) { .container { grid-template-columns: 1fr; } }
+
+  /* Article */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; font-weight: 700; margin: 36px 0 16px; border-left: 4px solid var(--accent); padding-left: 16px; color: var(--primary); }
+  article p { margin-bottom: 18px; color: #333; line-height: 1.9; }
+  article ul { margin: 16px 0 20px 20px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li strong { color: var(--primary); }
+
+  /* Data Box */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border: 1px solid var(--accent); border-radius: 10px; padding: 20px; text-align: center; }
+  .data-card .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 0.82rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+  /* Quote Box */
+  .quote-box { background: var(--accent-light); border-left: 5px solid var(--accent); padding: 24px 28px; margin: 28px 0; border-radius: 0 10px 10px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; color: #5a1010; font-size: 1.05rem; line-height: 1.8; margin: 0; }
+  .quote-box cite { display: block; margin-top: 12px; font-size: 0.82rem; color: var(--accent); font-style: normal; font-weight: 600; }
+
+  /* Insight Box */
+  .insight-box { background: #fbf2f2; border: 2px solid var(--accent); border-radius: 10px; padding: 24px; margin: 28px 0; }
+  .insight-box h3 { color: var(--accent); font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .insight-box ul { margin-left: 18px; }
+  .insight-box li { margin-bottom: 8px; font-size: 0.95rem; }
+
+  /* Warning Box */
+  .warning-box { background: #fff8e1; border: 2px solid #f4a52d; border-radius: 10px; padding: 20px; margin: 24px 0; }
+  .warning-box h3 { color: #b07a00; font-size: 0.95rem; margin-bottom: 10px; }
+  .warning-box p { color: #7a5500; font-size: 0.9rem; margin: 0; }
+
+  /* Disclaimer */
+  .disclaimer { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-top: 40px; font-size: 0.82rem; color: #777; line-height: 1.7; }
+
+  /* Hashtags */
+  .hashtags { margin: 24px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { background: var(--accent-light); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+  /* Sidebar */
+  .sidebar { }
+  .sidebar-widget { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 22px; margin-bottom: 24px; }
+  .sidebar-widget h3 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+  .sidebar-widget ul { list-style: none; }
+  .sidebar-widget ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem; color: #444; }
+  .sidebar-widget ul li:last-child { border-bottom: none; }
+  .sidebar-widget ul li::before { content: '▸ '; color: var(--accent); font-size: 0.75rem; }
+  .sidebar-widget ul li a { color: #444; text-decoration: none; }
+  .sidebar-widget ul li a:hover { color: var(--accent); }
+  .summary-bullet { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 0.88rem; }
+  .summary-bullet .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+  th { background: var(--accent); color: white; padding: 10px 12px; text-align: left; }
+  td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+
+  /* Fixed sidebar ad */
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+  footer { background: var(--primary); color: rgba(255,255,255,0.75); padding: 40px 20px; text-align: center; font-size: 0.85rem; }
+  footer .footer-logo { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; color: white; margin-bottom: 10px; }
+  footer .footer-logo span { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">투자 인사이트</span>
+    <h1>법정지상권 뜻<br>성립 조건과 지료 산정, 건물만 낙찰받을 때 판정 순서</h1>
+    <p class="subtitle">토지와 건물의 주인이 경매·매매로 갈라질 때 건물을 철거하지 않고 둘 수 있게 법이 인정하는 토지 사용권 · 민법 제366조와 관습법 두 갈래 · 존속기간은 견고한 건물 30년, 지료는 협의가 안 되면 법원이 정하고 2년분이 밀리면 소멸청구 대상이 된다</p>
+    <div class="hero-meta">
+      <span>2026년 11월 20일</span>
+      <span class="author">부동산인사이트 편집팀</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">30년</div>
+        <div class="label">석조·콘크리트조 등 견고한 건물을 위한 지상권의 최단 존속기간 · 그 밖의 건물은 15년 (민법 제280조·제281조)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">2년분</div>
+        <div class="label">지료 연체 합계가 2년분 이상이면 토지 소유자가 지상권 소멸을 청구할 수 있다 · 다만 지료가 먼저 정해져 있어야 한다 (민법 제287조)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">2갈래</div>
+        <div class="label">저당권 실행 경매는 민법 제366조, 매매·증여·강제경매·공매는 관습법상 법정지상권 · 판단 시점이 서로 다르다</div>
+      </div>
+    </div>
+
+    <p>법원 경매 물건을 보다 보면 매각물건명세서 비고란에 "법정지상권 성립 여지 있음", "제시 외 건물 매각 제외", "토지만 매각" 같은 문구가 적힌 사건이 있다. 이런 물건은 감정가의 절반 아래로 떨어질 때까지 유찰되는 일이 흔하다. 토지를 낙찰받아도 그 위 건물을 철거하지 못할 수 있고, 반대로 건물만 낙찰받았다가 토지 소유자에게 철거를 당할 수도 있기 때문이다. 그 갈림길을 정하는 권리가 법정지상권이다.</p>
+
+    <p>우리 민법은 토지와 건물을 별개의 부동산으로 다룬다. 등기부도 따로 있고 저당권도 따로 설정할 수 있다. 그래서 같은 사람이 갖고 있던 토지와 건물이 경매나 매매를 거치며 서로 다른 사람에게 넘어가는 일이 생긴다. 이때 건물 소유자에게 토지를 쓸 권리가 전혀 없다면 멀쩡한 건물을 헐어야 한다. 법정지상권은 이런 사회적 손실을 막기 위해 당사자 계약 없이 법률이 직접 인정하는 지상권이다.</p>
+
+    <p>이 글은 2026년 11월 현행 민법과 대법원 판례를 바탕으로 법정지상권의 뜻, 민법 제366조와 관습법상 법정지상권의 성립 조건, 성립하지 않는 대표 유형, 존속기간과 지료가 어떻게 정해지는지, 건물만 또는 토지만 낙찰받으려는 사람이 어떤 순서로 판정해야 하는지를 차례로 설명한다.</p>
+
+    <h2>법정지상권의 뜻: 계약 없이 법이 인정하는 토지 사용권</h2>
+    <p>지상권은 남의 토지에 건물이나 공작물, 수목을 소유하기 위해 그 토지를 사용하는 물권이다(민법 제279조). 보통은 토지 소유자와 계약을 맺고 등기해야 생긴다. 법정지상권은 이 계약과 등기 없이 일정한 요건이 갖춰지면 법률에 의해 당연히 성립한다. 민법 제187조에 따라 등기 없이도 취득하고, 토지가 제3자에게 넘어가도 그 사람에게 주장할 수 있다.</p>
+    <p>민법과 특별법이 정한 법정지상권은 여러 가지가 있다. 전세권이 설정된 건물의 경우(민법 제305조), 저당물 경매의 경우(민법 제366조), 가등기담보법과 입목법이 정한 경우다. 여기에 판례가 오랫동안 인정해 온 관습법상 법정지상권이 있다. 경매·투자 실무에서 문제 되는 것은 대부분 민법 제366조와 관습법상 법정지상권 두 가지다.</p>
+    <p>법정지상권이 성립하면 건물 소유자는 건물을 유지하는 데 필요한 범위에서 토지를 사용할 수 있다. 건물이 앉은 자리뿐 아니라 건물 이용에 일반적으로 필요한 주변 부분까지 포함된다. 대신 토지 소유자에게 지료를 내야 한다. 법정지상권이 성립하지 않으면 건물 소유자는 토지 소유자의 청구에 따라 건물을 철거하고 토지를 인도해야 하며, 그동안 토지를 쓴 대가를 부당이득으로 돌려줘야 한다.</p>
+
+    <div class="quote-box">
+      <p>법정지상권은 건물 소유자에게는 철거를 막는 방패이고, 토지 소유자에게는 수십 년 동안 땅을 마음대로 쓰지 못하게 하는 부담이다. 같은 권리가 어느 쪽을 낙찰받느냐에 따라 자산이 되기도 하고 위험이 되기도 한다.</p>
+      <cite>— 부동산인사이트 편집팀</cite>
+    </div>
+
+    <h2>민법 제366조 법정지상권의 성립 조건</h2>
+    <p>민법 제366조는 "저당물의 경매로 인하여 토지와 그 지상건물이 다른 소유자에 속한 경우에는 토지소유자는 건물소유자에 대하여 지상권을 설정한 것으로 본다"고 정한다. 판례가 정리한 요건은 세 가지다.</p>
+    <ul>
+      <li><strong>저당권 설정 당시 토지 위에 건물이 존재할 것.</strong> 등기된 건물일 필요는 없다. 미등기 건물이나 무허가 건물이어도 건물로서 실체가 있으면 된다. 건축 중이던 건물은 저당권 설정 당시 건물의 규모와 종류를 외형상 예상할 수 있을 정도로 공사가 진전되어 있었고, 그 뒤 매수인이 매각대금을 다 낼 때까지 최소한의 기둥과 지붕, 주벽을 갖춰 독립된 건물이 되었다면 요건을 채운 것으로 본다(대법원 2004다13533).</li>
+      <li><strong>저당권 설정 당시 토지와 건물의 소유자가 같을 것.</strong> 설정 시점에 동일인 소유였다면 그 뒤 한쪽이 제3자에게 팔렸더라도 성립에는 지장이 없다. 반대로 설정 당시 소유자가 달랐다면 나중에 같은 사람이 되어도 성립하지 않는다.</li>
+      <li><strong>저당권 실행 경매로 토지와 건물의 소유자가 달라질 것.</strong> 토지나 건물 어느 한쪽 또는 양쪽에 저당권이 설정되어 있고, 그 저당권에 기한 임의경매로 소유자가 갈라져야 한다.</li>
+    </ul>
+    <p>이 규정은 강행규정이어서 저당권 설정 당사자끼리 "법정지상권을 배제한다"고 약정해도 효력이 없다는 것이 판례다. 입찰자 입장에서는 등기부에 그런 특약이 보이더라도 그것만 믿고 토지를 낙찰받아서는 안 된다는 뜻이다.</p>
+
+    <h2>관습법상 법정지상권: 매매·증여·강제경매·공매의 경우</h2>
+    <p>저당권 실행이 아닌 원인으로 토지와 건물의 주인이 갈라지는 경우에는 민법 제366조가 적용되지 않는다. 판례는 이 공백을 관습법으로 메워 왔다. 동일인 소유이던 토지와 건물이 매매, 증여, 강제경매, 국세징수법에 따른 공매 등으로 소유자가 달라지고, 건물을 철거한다는 특약이 없으면 건물 소유자가 관습법상 법정지상권을 취득한다는 법리다. 이 관습법을 폐기해야 한다는 주장이 있었지만 대법원은 2022년 7월 21일 전원합의체 판결(2017다236749)에서 이 법리가 현재에도 효력을 유지한다고 확인했다.</p>
+    <p>민법 제366조와 다른 점은 두 가지다. 첫째, 당사자 사이에 철거 특약이 있거나 건물 소유를 위한 임대차계약을 맺는 등 토지 사용에 관해 따로 합의한 경우에는 성립하지 않는다. 둘째, 동일인 소유였는지를 보는 시점이 다르다. 매매·증여는 소유권이 넘어가는 처분 당시를 본다. 강제경매는 매수인이 대금을 낸 때가 아니라 그 경매의 압류 효력이 발생한 때를 기준으로 하고, 가압류가 본압류로 이어진 사건이면 가압류 효력 발생 시가 기준이다(대법원 2012. 10. 18. 선고 2010다52140 전원합의체). 강제경매 전에 설정된 저당권이 매각으로 소멸하는 사건이라면 그 저당권 설정 당시로 거슬러 올라가 판단한다(대법원 2009다62059).</p>
+    <table>
+      <thead><tr><th>구분</th><th>민법 제366조</th><th>관습법상 법정지상권</th></tr></thead>
+      <tbody>
+        <tr><td>소유자가 달라진 원인</td><td>저당권 실행 경매(임의경매)</td><td>매매·증여·강제경매·공매 등</td></tr>
+        <tr><td>동일인 소유 판단 시점</td><td>저당권 설정 당시</td><td>처분 당시 / 강제경매는 압류(가압류) 효력 발생 시</td></tr>
+        <tr><td>배제 특약</td><td>효력 없음(강행규정)</td><td>철거 특약·임대차 합의가 있으면 불성립</td></tr>
+        <tr><td>존속기간·지료</td><td colspan="2">공통 — 민법 지상권 규정 적용, 지료는 협의 또는 법원 결정</td></tr>
+      </tbody>
+    </table>
+
+    <h2>성립하지 않는 대표 유형</h2>
+    <p>경매 정보지에 "법정지상권 성립 여지 있음"이라고 적혀 있어도 실제로는 성립하지 않는 사건이 적지 않다. 토지만 낙찰받으려는 사람에게는 이 유형을 가려내는 일이 수익의 출발점이다.</p>
+    <ul>
+      <li><strong>나대지에 저당권을 설정한 뒤 건물을 지은 경우.</strong> 저당권 설정 당시 건물이 없었으므로 민법 제366조 요건을 채우지 못한다. 저당권자가 건물 신축에 동의했더라도 결론은 같다. 이때 토지 저당권자는 민법 제365조에 따라 토지와 건물을 함께 경매에 부칠 수 있다(일괄경매청구권). 다만 건물 매각대금에서는 우선변제를 받지 못한다.</li>
+      <li><strong>토지와 건물에 공동저당을 설정한 뒤 건물을 헐고 새로 지은 경우.</strong> 대법원은 2003년 12월 18일 전원합의체 판결(98다43601)에서, 신축 건물에 토지 저당권과 같은 순위의 공동저당권을 다시 설정해 주는 등 특별한 사정이 없으면 법정지상권이 성립하지 않는다고 판단했다. 저당권자가 토지와 건물 전체의 담보가치를 보고 돈을 빌려줬는데 신축 건물 때문에 토지 가치가 깎이면 안 된다는 이유다.</li>
+      <li><strong>저당권 설정 당시 토지와 건물 소유자가 달랐던 경우.</strong> 남의 땅에 지은 건물, 명의신탁으로 등기상 소유자가 다른 경우 등이 여기에 해당한다. 원래부터 토지 사용 관계는 당사자가 정했어야 하는 사안이므로 법이 개입하지 않는다.</li>
+      <li><strong>건물로 볼 수 없는 구조물.</strong> 기둥과 지붕, 주벽을 갖추지 못한 골조, 쉽게 옮길 수 있는 컨테이너나 비닐하우스는 독립된 건물로 인정받기 어렵다.</li>
+      <li><strong>철거 특약이나 임대차 합의가 있는 매매.</strong> 관습법상 법정지상권은 당사자가 토지 사용에 관해 따로 정했다면 인정되지 않는다.</li>
+    </ul>
+
+    <div class="warning-box">
+      <h3>⚠️ 매각물건명세서의 문구는 법원의 판단이 아니다</h3>
+      <p>"법정지상권 성립 여지 있음"은 가능성을 알리는 안내 문구일 뿐 성립 여부를 확정한 것이 아니다. 최종 판단은 낙찰 뒤 건물철거·토지인도 소송이나 지상권 확인 소송에서 내려진다. 입찰 전에 토지·건물 등기부의 저당권 설정일, 건축물대장의 사용승인일과 착공일, 과거 항공사진, 현황조사서를 대조해 저당권 설정 당시 건물이 있었는지와 소유자가 같았는지를 직접 확인해야 한다.</p>
+    </div>
+
+    <h2>존속기간과 지료: 얼마나 오래, 얼마를 내는가</h2>
+    <p>법정지상권은 존속기간을 약정하지 않은 지상권으로 취급된다. 민법 제281조에 따라 제280조의 최단기간이 적용되어, 석조·석회조·연와조 또는 이와 비슷한 견고한 건물은 30년, 그 밖의 건물은 15년, 건물이 아닌 공작물은 5년이다. 철근콘크리트 건물은 30년이 적용된다고 보면 된다. 기간이 끝났을 때 건물이 남아 있으면 지상권자는 갱신을 청구할 수 있고, 토지 소유자가 거절하면 건물을 상당한 가격으로 사 달라고 청구할 수 있다(민법 제283조).</p>
+    <p>지료는 먼저 당사자가 협의하고, 협의가 되지 않으면 당사자의 청구로 법원이 정한다(민법 제366조 단서, 관습법상 법정지상권에도 준용). 실무에서는 토지 소유자가 지료 청구 소송을 내고 법원이 감정인에게 임료 감정을 맡긴다. 감정은 대체로 토지의 기초가격에 기대이율을 곱하고 필요 제경비를 더하는 방식으로 이뤄진다. 여기서 중요한 판례 원칙이 있다. 지료를 정할 때는 건물이 서 있어 토지 소유권이 제한받는 사정을 깎아서는 안 되고, 그런 제한이 없는 상태의 토지 가치를 바탕으로 해야 한다(대법원 88다카18504, 94다61144). 건물 소유자가 예상보다 높은 지료를 부담하게 되는 이유다. 기대이율과 기초가격은 사건마다 감정 결과가 다르므로 일률적인 비율을 전제로 수익을 계산하면 안 된다.</p>
+    <p>지료가 정해진 뒤 사정이 바뀌면 양쪽 모두 증감을 청구할 수 있다(민법 제286조). 지상권자가 2년분 이상 지료를 내지 않으면 토지 소유자는 지상권 소멸을 청구할 수 있다(민법 제287조). 판례에 따르면 연속해서 2년일 필요는 없고 연체액 합계가 2년분에 이르면 되며, 자동으로 소멸하는 것이 아니라 소멸청구의 의사표시가 있어야 한다. 한 가지 전제가 있다. 협의나 판결로 지료가 정해진 적이 없다면 지료를 내지 않았더라도 연체로 볼 수 없어 소멸청구가 받아들여지지 않는다(대법원 93다52297). 또 토지를 새로 산 사람은 이전 소유자에 대한 연체 기간을 합산할 수 없다(대법원 99다17142).</p>
+
+    <div class="quote-box">
+      <p>토지 낙찰자가 법정지상권 있는 건물을 정리하는 현실적인 길은 철거 소송이 아니라 지료다. 지료를 판결로 확정하고, 2년분이 밀리면 소멸을 청구한다. 건물 낙찰자는 그 반대로 지료 부담을 수익 계산에 먼저 넣어야 한다.</p>
+      <cite>— 부동산인사이트 편집팀</cite>
+    </div>
+
+    <h2>건물만, 또는 토지만 낙찰받을 때 판정 순서</h2>
+    <p>법정지상권 물건은 서류 몇 장의 날짜를 순서대로 대조하는 작업으로 대부분 걸러진다. 다음 순서를 권한다.</p>
+    <ul>
+      <li><strong>1단계 — 경매의 종류를 확인한다.</strong> 사건번호와 등기부의 경매개시결정 원인을 보고 저당권 실행(임의경매)인지 강제경매·공매인지 구분한다. 적용 법리와 판단 시점이 여기서 갈린다.</li>
+      <li><strong>2단계 — 판단 시점을 정한다.</strong> 임의경매는 최선순위 저당권 설정일, 강제경매는 압류(가압류) 효력 발생일이다. 강제경매라도 매각으로 소멸하는 저당권이 먼저 있으면 그 설정일이 기준이다.</li>
+      <li><strong>3단계 — 그 시점에 건물이 있었는지 본다.</strong> 건축물대장의 착공일·사용승인일, 건물 등기부의 보존등기일, 과거 항공사진과 로드뷰, 현황조사서를 대조한다. 미등기 건물은 재산세 과세 자료나 전기·수도 개설 시기도 근거가 된다.</li>
+      <li><strong>4단계 — 그 시점에 소유자가 같았는지 본다.</strong> 토지 등기부와 건물 등기부(또는 건축물대장의 소유자란)를 나란히 놓고 확인한다. 미등기 건물은 건축주가 누구였는지가 핵심이다.</li>
+      <li><strong>5단계 — 배제 사유를 점검한다.</strong> 공동저당 뒤 재축된 건물인지, 관습법상 법정지상권이라면 철거 특약이나 임대차계약이 있는지 확인한다.</li>
+      <li><strong>6단계 — 성립·불성립 각각의 수지를 계산한다.</strong> 성립한다면 지료 수입(토지 낙찰자) 또는 지료 부담(건물 낙찰자)을, 불성립이라면 철거 소송 기간과 비용, 건물 매수 협상 가능성을 넣어 입찰가를 정한다.</li>
+    </ul>
+    <p>건물만 낙찰받는 경우 하나 더 알아둘 점이 있다. 법정지상권이 붙어 있는 건물을 경매로 취득한 사람은 특별한 사정이 없는 한 건물 소유권과 함께 그 법정지상권도 등기 없이 취득한다는 것이 판례다. 반면 일반 매매로 건물을 산 사람은 지상권 이전등기를 해야 지상권자가 된다. 다만 이 경우에도 토지 소유자가 건물 양수인에게 철거를 청구하는 것은 신의칙상 허용되지 않는다(대법원 1985. 4. 9. 선고 84다카1131 전원합의체). 어느 경우든 토지를 사용한 대가는 지급해야 한다.</p>
+
+    <h2>제도 평가: 건물 보호와 토지 소유권 제약 사이</h2>
+    <p>법정지상권은 토지와 건물을 별개 부동산으로 보는 우리 법제에서 나오는 부작용을 줄이는 장치다. 멀쩡한 건물의 철거를 막아 사회적 비용을 줄이고, 저당권 설정 당시 건물이 있었다는 사실을 요건으로 삼아 저당권자가 예상하지 못한 손해를 보지 않게 설계되어 있다.</p>
+    <p>한편 관습법상 법정지상권은 등기부에 드러나지 않아 토지 매수인이 미리 알기 어렵고, 최장 30년 동안 토지 이용을 묶는다는 비판을 받아 왔다. 2022년 전원합의체 판결에서도 폐지 의견이 있었지만 다수의견은 법적 안정성을 이유로 유지를 택했다. 민법 개정 논의에서 토지와 건물의 소유자가 달라질 때 법정 임대차나 지상권을 명문으로 정리하자는 제안이 반복되는 만큼, 장기 보유를 전제로 하는 투자자는 입법 동향을 함께 지켜볼 필요가 있다.</p>
+
+    <div class="insight-box">
+      <h3>📋 실수요자·투자자가 확인할 것</h3>
+      <ul>
+        <li><strong>유찰이 많다고 싼 물건은 아니다.</strong> 법정지상권이 성립하는 토지는 수십 년간 지료만 받는 자산이다. 낙찰가 대비 예상 지료 수익률과 회수 기간을 먼저 계산한다.</li>
+        <li><strong>저당권 설정일과 건물 착공·사용승인일을 반드시 대조한다.</strong> 판정의 대부분이 이 두 날짜의 앞뒤로 결정된다.</li>
+        <li><strong>건물만 낙찰받을 때는 지료와 대출 가능성을 함께 본다.</strong> 토지 사용권이 불안정한 건물은 금융기관 담보 평가가 낮아 경락잔금대출이 어렵거나 한도가 크게 줄 수 있다.</li>
+        <li><strong>지료는 판결로 확정해 둔다.</strong> 토지 소유자는 지료가 정해져야 2년분 연체에 따른 소멸청구를 할 수 있고, 건물 소유자도 금액이 확정되어야 연체 위험을 관리할 수 있다.</li>
+        <li><strong>법정지상권이 없으면 건물 낙찰자는 철거 위험을 진다.</strong> 이 경우 토지 소유자와의 임대차 계약이나 토지 매수 협상이 가능한지 입찰 전에 타진한다.</li>
+        <li><strong>인도명령으로 해결되지 않는다.</strong> 토지 낙찰자가 지상 건물 소유자를 상대로 건물을 철거시키려면 별도의 건물철거·토지인도 소송이 필요하고, 소송 기간을 자금 계획에 넣어야 한다.</li>
+      </ul>
+    </div>
+
+    <h2>결론</h2>
+    <p>법정지상권은 같은 사람이 갖고 있던 토지와 건물이 경매나 매매로 갈라질 때 건물을 지키기 위해 법이 인정하는 토지 사용권이다. 저당권 실행 경매에는 민법 제366조가, 매매·증여·강제경매·공매에는 관습법상 법정지상권이 적용되고, 두 경우 모두 "기준 시점에 건물이 있었는가, 그때 토지와 건물의 소유자가 같았는가"가 핵심 질문이다. 나대지 저당 후 신축, 공동저당 후 재축, 철거 특약이 있는 매매에서는 성립하지 않는다. 성립하면 견고한 건물은 30년 동안 유지되고, 지료는 협의나 법원 결정으로 정해지며, 2년분이 밀리면 소멸청구 대상이 된다. 입찰 전에는 경매 종류, 기준일, 건물 존재, 소유자 동일성, 배제 사유, 수지 계산의 순서로 서류를 대조하고, 판단이 엇갈리는 사건은 전문가 검토를 거친 뒤 입찰가를 정하는 것이 안전하다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#법정지상권</span>
+      <span class="hashtag">#법정지상권뜻</span>
+      <span class="hashtag">#관습법상법정지상권</span>
+      <span class="hashtag">#지료</span>
+      <span class="hashtag">#토지만매각</span>
+      <span class="hashtag">#건물만매각</span>
+      <span class="hashtag">#민법제366조</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>면책 고지</strong><br>
+      본 글은 2026년 11월 현행 「민법」과 공개된 대법원 판례를 바탕으로 작성한 일반적인 해설이며, 특정 경매 사건이나 개별 부동산의 권리관계에 대한 법률 자문이 아닙니다. 법정지상권의 성립 여부와 지료 액수는 사건별 사실관계와 법원 감정 결과에 따라 달라지고, 판례와 법령은 변경될 수 있습니다. 조문은 국가법령정보센터, 판결 전문은 대법원 종합법률정보에서 직접 확인하시고, 입찰이나 소송에 앞서 변호사 등 전문가와 상담하시기 바랍니다. 투자 판단과 그 결과에 대한 책임은 투자자 본인에게 있습니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <div class="summary-bullet"><div class="dot"></div><div>법정지상권: 동일인 소유이던 토지와 건물의 주인이 갈라질 때 계약·등기 없이 법이 건물 소유자에게 인정하는 토지 사용권</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>임의경매 = 민법 제366조(저당권 설정 당시 판단) / 매매·증여·강제경매·공매 = 관습법(처분·압류 시 판단, 철거 특약 있으면 불성립)</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>나대지 저당 후 신축, 공동저당 후 재축, 설정 당시 소유자 상이 → 불성립</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>존속기간: 견고한 건물 30년, 그 밖의 건물 15년, 공작물 5년</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>지료는 협의 또는 법원 결정 · 정해진 지료를 2년분 이상 연체하면 소멸청구 가능</div></div>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🔗 관련 기사</h3>
+      <ul>
+        <li><a href="article_20261106_1_malso-standard-right_v2.html">말소기준권리 뜻 — 낙찰 후 소멸하는 권리와 인수하는 권리 판정 순서</a></li>
+        <li><a href="article_20261023_1_auction-eviction-order_v2.html">인도명령 신청 언제까지 — 낙찰 대금 납부 후 6개월과 집행 절차</a></li>
+        <li><a href="article_20261030_1_auction-loan-limit_v2.html">경락잔금 LTV 뜻 — 낙찰가 대비 담보가치 적용과 잔금 납부 기한</a></li>
+        <li><a href="article_20261113_1_onbid-public-auction_v2.html">공매 뜻 — 온비드 입찰 순서와 보증금·명도 소송·배분 비교</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>⚖️ 근거 조문·판례 한눈에</h3>
+      <table style="font-size:0.8rem;">
+        <thead><tr><th>쟁점</th><th>근거</th></tr></thead>
+        <tbody>
+          <tr><td>저당물 경매 시 성립</td><td>민법 제366조</td></tr>
+          <tr><td>존속기간</td><td>민법 제280조·제281조</td></tr>
+          <tr><td>갱신·매수청구</td><td>민법 제283조</td></tr>
+          <tr><td>지료 증감청구</td><td>민법 제286조</td></tr>
+          <tr><td>2년분 연체 소멸청구</td><td>민법 제287조</td></tr>
+          <tr><td>일괄경매청구</td><td>민법 제365조</td></tr>
+          <tr><td>관습법 유지</td><td>2017다236749 전합</td></tr>
+          <tr><td>강제경매 판단 시점</td><td>2010다52140 전합</td></tr>
+          <tr><td>공동저당 후 재축</td><td>98다43601 전합</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:6px; font-size:0.78rem;">본 사이트의 모든 정보는 투자 참고용이며 투자 손실에 대한 책임은 투자자 본인에게 있습니다.</p>
+</footer>
+
+</body>
+</html>

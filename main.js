@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 480,
+    url: 'article_20261120_1_statutory-superficies_v2.html',
+    category: '투자',
+    title: '법정지상권 뜻 — 성립 조건과 지료 산정, 건물만 낙찰받을 때 판정 순서',
+    summary: '법정지상권은 같은 사람 소유이던 토지와 건물이 경매·매매로 갈라질 때 건물 소유자에게 법이 인정하는 토지 사용권이다. 민법 제366조와 관습법상 성립 조건, 성립하지 않는 유형, 견고한 건물 30년의 존속기간, 법원의 지료 결정과 2년분 연체 소멸청구, 입찰 전 판정 순서를 현행 민법과 대법원 판례로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-20',
+    title_en: 'What is a statutory superficies? Conditions, ground rent, and how to assess a building-only or land-only auction',
+    summary_en: 'A statutory superficies is the right to keep using the land that Korean law grants a building owner when land and building owned by one person end up with different owners through auction or sale. This explainer covers the conditions under Civil Act Article 366 and customary law, the cases where it does not arise, the 30-year term for solid buildings, court-set ground rent, termination after two years of arrears, and a pre-bid checklist order.'
+  },
+  {
     id: 479,
     url: "article_20261119_1_column_v2.html",
     category: "칼럼",
