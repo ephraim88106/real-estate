@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 482,
+    url: 'article_20261120_1_policy_v2.html',
+    category: '정책',
+    title: '이재명 정부 부동산 정책의 기로: 규제 강화냐 완화냐, 11월의 선택이 2027년을 가른다',
+    summary: '2026년 11월, 대출 규제 강화와 완화 논쟁이 뜨거운 가운데 이재명 정부의 부동산 정책이 중요한 분기점에 서 있다. 규제 일변도 정책의 한계와 공급 확대의 필요성을 심층 분석하며 실수요자와 투자자를 위한 대응 전략을 제시한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-20',
+    title_en: 'Korea Real Estate Policy at a Crossroads: Will the Lee Government Tighten or Ease Rules?',
+    summary_en: 'In November 2026, Korea real estate policy debate intensifies over loan regulations. This analysis examines structural limitations of regulation-focused policies and provides strategies for homebuyers and investors navigating uncertainty.'
+  },
+  {
+    id: 481,
+    url: 'article_20261120_2_subscription_v2.html',
+    category: '분양',
+    title: '연말 청약 파티, 될 곳만 살아남는다: 11월 분양가상한제 5200가구의 진실',
+    summary: '11월 분양가상한제 아파트 5205가구 공급으로 연말 청약 시장이 과열과 냉각이 공존하는 양극화를 보인다. 분상제 단지와 일반 단지 경쟁률 3배 차이, 59㎡ 소형의 폭발적 인기 등 11월 청약 시장의 실상과 현명한 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-20',
+    title_en: 'Year-End Subscription Rally: Only Prime Locations Survive — The Truth Behind 5200 Price-Capped Units',
+    summary_en: 'November 2026 sees 5205 price-capped apartment units hitting the market, revealing extreme polarization in subscriptions. Competition ratios differ 3x between capped and uncapped units, while 59sqm types dominate at 5.8x higher competition than 84sqm units.'
+  },
+  {
     id: 480,
     url: 'article_20261120_1_statutory-superficies_v2.html',
     category: '투자',
