@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 483,
+    url: 'article_20261121_1_1031-exchange_v2.html',
+    category: '해외',
+    title: '1031 익스체인지 뜻 — 45일 지정·180일 취득 시한과 부트 과세 범위',
+    summary: '1031 익스체인지는 미국 투자·사업용 부동산을 같은 종류의 부동산으로 갈아탈 때 양도차익 과세를 뒤로 미루는 제도다. 매각 후 45일 안에 대체 부동산을 서면 지정하고 180일 안에 취득해야 하며, 받은 현금과 줄어든 채무는 부트로 과세된다. 외국인 매도인의 FIRPTA 원천징수와 한국 거주자가 한국에서 따로 내는 양도소득세까지 해설한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-21',
+    title_en: '1031 Exchange Explained: 45-Day Identification, 180-Day Closing and Taxable Boot',
+    summary_en: 'A 1031 exchange defers U.S. capital gains tax when investment real estate is swapped for like-kind property. This guide covers the 45-day and 180-day deadlines, qualified intermediaries, taxable boot, FIRPTA withholding for foreign sellers, and why Korean residents still owe Korean capital gains tax.'
+  },
+  {
     id: 482,
     url: 'article_20261120_1_policy_v2.html',
     category: '정책',
