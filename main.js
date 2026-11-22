@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 484,
+    url: 'article_20261122_1_earnest-money-double-refund_v2.html',
+    category: '칼럼',
+    title: '계약금 배액배상 뜻 — 가계약금 반환 판정과 중도금 지급 후 해제 가능 시점',
+    summary: '계약금 배액배상은 민법 제565조의 해약금 해제로, 매수인은 계약금을 포기하고 매도인은 받은 돈의 두 배를 돌려주면 이행 착수 전까지 계약을 풀 수 있다. 계약금 일부만 건너간 경우의 약정 계약금 잣대(대법원 2014다231378), 가계약금 반환을 가르는 세 단계 판정(대법원 2022다247187), 위약금과의 차이와 기타소득 과세까지 해설한다.',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-22',
+    title_en: 'Double Refund of Earnest Money in Korea: Provisional Deposits and the Deadline for Walking Away',
+    summary_en: 'Explains rescission by earnest money under Article 565 of the Korean Civil Code: the buyer forfeits the deposit, the seller returns double, and the right ends once either side begins performance. Covers the agreed-deposit yardstick when only part was paid, the three-step test for refunding a provisional deposit, the difference from liquidated damages, and tax on the amount received.'
+  },
+  {
     id: 483,
     url: 'article_20261121_1_1031-exchange_v2.html',
     category: '해외',
