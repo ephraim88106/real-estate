@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 487,
+    url: 'article_20261123_1_market_v2.html',
+    category: '시장동향',
+    title: '강남이 무너지고 강북이 뜬다? 서울 아파트 시장 양극화의 진짜 의미',
+    summary: '2026년 11월, 동남권 6주 연속 하락에 성동·강동까지 한강벨트 약세가 확산되는 가운데 강북권은 상승세를 유지하고 있다. 서울 아파트 시장의 양극화 심화 원인과 실수요자·투자자 대응 전략을 분석한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-23',
+    title_en: 'Gangnam Falls While Gangbuk Rises? The True Meaning Behind Seoul Apartment Market Polarization',
+    summary_en: 'In November 2026, Seoul real estate enters stark polarization: southeast districts see 6 consecutive weeks of decline while northern Seoul holds its upward trend. We analyze the causes and strategic implications for buyers and investors.'
+  },
+  {
+    id: 486,
+    url: 'article_20261123_2_policy_v2.html',
+    category: '정책',
+    title: '대출 조이면서 2금융권 폭증? 가계부채 딜레마에 빠진 정부 정책',
+    summary: 'LTV·DSR 규제 엄격 유지에도 2금융권 가계대출이 11월 한 달에만 4조1천억 원 급증했다. 풍선효과로 대표되는 대출 규제의 한계와 2027년 대선을 앞둔 정책 변화 전망을 심층 분석한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-23',
+    title_en: 'Tightening Bank Loans While Secondary Finance Surges: The Government\'s Household Debt Policy Dilemma',
+    summary_en: 'Despite strict LTV/DSR regulations, secondary financial institutions saw 4.1 trillion won in new household loans in November alone. We analyze the balloon effect, structural flaws, and outlook for housing finance policy ahead of the 2027 election.'
+  },
+  {
     id: 485,
     url: 'article_20261123_1_housing-affordability-index_v2.html',
     category: '시장동향',
