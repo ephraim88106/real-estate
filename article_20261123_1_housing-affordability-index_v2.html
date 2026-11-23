@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>주택구입부담지수 뜻 — K-HAI 산식과 지수 100 해석, 소득 25.7% 상환 가정</title>
+<meta name="google-adsense-account" content="ca-pub-9118774019383180">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9118774019383180" crossorigin="anonymous"></script>
+<meta name="description" content="주택구입부담지수(K-HAI)는 한국주택금융공사가 분기마다 내는 지표로, 중위소득 가구가 중위가격 주택을 LTV 47.9%·DTI 25.7%·20년 원리금균등 표준대출로 샀을 때의 원리금 부담을 나타낸다. 산식은 대출상환가능소득 ÷ 중위가구소득 × 100이고, 지수 100은 소득의 25.7%를 원리금으로 내는 수준이다. 2026년 1분기 서울 179.3(약 46.1%), 전국 61.5까지 공표치와 PIR·KB 주택구매력지수와의 관계를 해설한다.">
+<meta name="keywords" content="주택구입부담지수, 주택구입부담지수 뜻, K-HAI, 주택구입부담지수 산식, 주택구입부담지수 100, 한국주택금융공사, 주택금융통계, 서울 주택구입부담지수, 소득 대비 원리금 상환비율, PIR, KB 주택구매력지수">
+<link rel="canonical" href="https://realestate.ephseed.com/article_20261123_1_housing-affordability-index_v2">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://realestate.ephseed.com/article_20261123_1_housing-affordability-index_v2">
+<meta property="og:title" content="주택구입부담지수 뜻 — K-HAI 산식과 지수 100 해석, 소득 25.7% 상환 가정">
+<meta property="og:description" content="K-HAI의 뜻과 산식, 표준대출 가정(LTV 47.9%·DTI 25.7%·20년), 지수 100의 의미, 지수 × 0.257 환산법, 2022년 정점과 2026년 1분기 서울 179.3까지의 흐름을 해설한다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --primary: #0D2B55;
+    --accent: #1A4D8F;
+    --accent-light: #e9f0f9;
+    --accent-mid: #4a75b0;
+    --text: #1a1a2e;
+    --text-muted: #555;
+    --bg: #f8f9fa;
+    --white: #fff;
+    --border: #e0e0e0;
+    --gold: #F4A52D;
+  }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+
+  /* Header */
+  header { background: var(--primary); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  .logo { font-family: 'Noto Serif KR', serif; font-size: 1.4rem; font-weight: 700; color: #fff; text-decoration: none; }
+  .logo span { color: var(--gold); }
+  nav { display: flex; gap: 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: var(--gold); }
+  @media (max-width: 768px) { nav { display: none; } .logo { font-size: 1.1rem; } }
+
+  /* Hero */
+  .hero { background: linear-gradient(135deg, #0D2B55 0%, #1A4D8F 55%, #0D2B55 100%); padding: 60px 20px; }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .category-tag { display: inline-block; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 4px 14px; border-radius: 20px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 18px; }
+  .hero h1 { font-family: 'Noto Serif KR', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; color: #fff; line-height: 1.4; margin-bottom: 18px; }
+  .hero .subtitle { color: rgba(255,255,255,0.85); font-size: 1rem; margin-bottom: 24px; }
+  .hero-meta { display: flex; gap: 20px; color: rgba(255,255,255,0.7); font-size: 0.82rem; flex-wrap: wrap; }
+  .hero-meta span::before { content: '📅 '; }
+  .hero-meta .author::before { content: '✍️ '; }
+
+  /* Layout */
+  .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 40px; }
+  @media (max-width: 1000px) { .container { grid-template-columns: 1fr; } }
+
+  /* Article */
+  article h2 { font-family: 'Noto Serif KR', serif; font-size: 1.5rem; font-weight: 700; margin: 36px 0 16px; border-left: 4px solid var(--accent); padding-left: 16px; color: var(--primary); }
+  article p { margin-bottom: 18px; color: #333; line-height: 1.9; }
+  article ul { margin: 16px 0 20px 20px; }
+  article ul li { margin-bottom: 10px; color: #333; }
+  article ul li strong { color: var(--primary); }
+
+  /* Data Box */
+  .data-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 28px 0; }
+  @media (max-width: 600px) { .data-box { grid-template-columns: 1fr; } }
+  .data-card { background: var(--accent-light); border: 1px solid var(--accent); border-radius: 10px; padding: 20px; text-align: center; }
+  .data-card .num { font-size: 1.8rem; font-weight: 700; color: var(--accent); font-family: 'Noto Serif KR', serif; }
+  .data-card .label { font-size: 0.82rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+
+  /* Quote Box */
+  .quote-box { background: var(--accent-light); border-left: 5px solid var(--accent); padding: 24px 28px; margin: 28px 0; border-radius: 0 10px 10px 0; }
+  .quote-box p { font-family: 'Noto Serif KR', serif; font-style: italic; color: #0d2b55; font-size: 1.05rem; line-height: 1.8; margin: 0; }
+  .quote-box cite { display: block; margin-top: 12px; font-size: 0.82rem; color: var(--accent); font-style: normal; font-weight: 600; }
+
+  /* Insight Box */
+  .insight-box { background: #f1f6fc; border: 2px solid var(--accent); border-radius: 10px; padding: 24px; margin: 28px 0; }
+  .insight-box h3 { color: var(--accent); font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+  .insight-box ul { margin-left: 18px; }
+  .insight-box li { margin-bottom: 8px; font-size: 0.95rem; }
+
+  /* Warning Box */
+  .warning-box { background: #fff8e1; border: 2px solid #f4a52d; border-radius: 10px; padding: 20px; margin: 24px 0; }
+  .warning-box h3 { color: #b07a00; font-size: 0.95rem; margin-bottom: 10px; }
+  .warning-box p { color: #7a5500; font-size: 0.9rem; margin: 0; }
+
+  /* Disclaimer */
+  .disclaimer { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-top: 40px; font-size: 0.82rem; color: #777; line-height: 1.7; }
+
+  /* Hashtags */
+  .hashtags { margin: 24px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag { background: var(--accent-light); color: var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+  /* Sidebar */
+  .sidebar { }
+  .sidebar-widget { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 22px; margin-bottom: 24px; }
+  .sidebar-widget h3 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 14px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+  .sidebar-widget ul { list-style: none; }
+  .sidebar-widget ul li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.88rem; color: #444; }
+  .sidebar-widget ul li:last-child { border-bottom: none; }
+  .sidebar-widget ul li::before { content: '▸ '; color: var(--accent); font-size: 0.75rem; }
+  .sidebar-widget ul li a { color: #444; text-decoration: none; }
+  .sidebar-widget ul li a:hover { color: var(--accent); }
+  .summary-bullet { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 0.88rem; }
+  .summary-bullet .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+  th { background: var(--accent); color: white; padding: 10px 12px; text-align: left; }
+  td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+
+  /* Fixed sidebar ad */
+  .fixed-sidebar-ad { position: fixed; top: 150px; right: 20px; z-index: 1000; }
+  @media (max-width: 1400px) { .fixed-sidebar-ad { display: none; } }
+
+  footer { background: var(--primary); color: rgba(255,255,255,0.75); padding: 40px 20px; text-align: center; font-size: 0.85rem; }
+  footer .footer-logo { font-family: 'Noto Serif KR', serif; font-size: 1.2rem; color: white; margin-bottom: 10px; }
+  footer .footer-logo span { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="fixed-sidebar-ad">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-vH50HcSMSOmwFD8o"
+    data-ad-width="160"
+    data-ad-height="600"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+<div style="display: flex; justify-content: center; background: #fff; padding: 10px 0; border-bottom: 1px solid #eee;">
+  <ins class="kakao_ad_area" style="display:none;"
+    data-ad-unit="DAN-c1XP1iKah32kfdAU"
+    data-ad-width="728"
+    data-ad-height="90"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">부동산<span>인사이트</span></a>
+    <nav>
+      <a href="#">시장동향</a>
+      <a href="#">정책·규제</a>
+      <a href="#">투자분석</a>
+      <a href="#">법률·세금</a>
+      <a href="#">칼럼</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="category-tag">시장동향</span>
+    <h1>주택구입부담지수 뜻<br>K-HAI 산식과 지수 100 해석, 소득 25.7% 상환 가정</h1>
+    <p class="subtitle">한국주택금융공사가 분기마다 내는 K-HAI는 중위소득 가구가 중위가격 주택을 표준대출로 샀을 때의 원리금 부담을 잰다 · 표준대출은 LTV 47.9%·DTI 25.7%·만기 20년 원리금균등 · 지수 100은 소득의 25.7%를 원리금으로 낸다는 뜻 · 지수 × 0.257 = 소득 대비 상환비율 · PIR과 달리 금리가 들어간다</p>
+    <div class="hero-meta">
+      <span>2026년 11월 23일</span>
+      <span class="author">부동산인사이트 편집팀</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <article>
+
+    <div class="data-box">
+      <div class="data-card">
+        <div class="num">25.7%</div>
+        <div class="label">지수 100에 해당하는 소득 대비 원리금 상환비율 · 표준대출의 DTI 가정치 (한국주택금융공사)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">179.3</div>
+        <div class="label">2026년 1분기 서울 K-HAI · 중위소득 가구가 소득의 약 46.1%를 원리금으로 내는 수준 (같은 분기 전국 61.5)</div>
+      </div>
+      <div class="data-card">
+        <div class="num">214.6</div>
+        <div class="label">서울 K-HAI 역대 최고치 · 2022년 3분기, 금리 급등기 (같은 분기 전국 89.3도 2004년 통계 작성 이후 최고)</div>
+      </div>
+    </div>
+
+    <p>주택구입부담지수는 "보통 소득을 버는 집이 보통 가격의 집을 대출을 끼고 샀을 때, 매달 갚는 돈이 소득에서 얼마를 차지하는가"를 하나의 숫자로 압축한 지표다. 영문 약칭은 K-HAI(Korea Housing Affordability Index)이고, 한국주택금융공사가 2004년부터 분기마다 전국과 17개 시도별로 산출해 주택금융통계 포털에 공개한다. 기사에서 "서울 주택구입부담지수 179" 같은 문장을 볼 때, 이 숫자가 무엇을 가정하고 무엇을 빼고 계산된 것인지 알아야 제대로 읽을 수 있다.</p>
+
+    <p>이 지수가 자주 오해받는 이유는 두 가지다. 첫째, 이름에 '부담'이 들어가 높을수록 나쁜 지표인데, 비슷한 이름의 KB국민은행 주택구매력지수(HAI)는 높을수록 사기 쉽다는 뜻이라 방향이 반대다. 둘째, 지수 100이 '소득의 100%'처럼 들리지만 실제로는 '소득의 25.7%를 원리금으로 낸다'는 뜻이다. 그래서 서울 179.3은 소득을 1.8배 넘게 쓴다는 말이 아니라 소득의 약 46%를 원리금 상환에 쓴다는 말이다.</p>
+
+    <p>이 글은 한국주택금융공사가 공개한 산식과 표준대출 가정, 그리고 2026년 11월까지 보도된 공표치를 바탕으로 K-HAI의 뜻, 계산 구조, 지수 100의 해석, PIR과의 관계, 읽을 때 주의할 점을 차례로 푼다. 본문의 예시 금액은 산식 이해를 돕기 위한 가정이다.</p>
+
+    <h2>주택구입부담지수의 뜻: 중위소득 가구 × 중위가격 주택 × 표준대출</h2>
+    <p>K-HAI는 세 가지 '중간값'과 하나의 '표준 대출'을 조합해 만든다. 소득은 해당 지역 중위가구소득, 집값은 한국부동산원이 내는 해당 지역 주택 중위가격, 금리는 한국은행이 집계하는 예금은행 주택담보대출 신규취급액 가중평균금리를 쓴다. 여기에 공사가 정한 표준대출 조건을 얹는다. 주택담보대출비율(LTV) 47.9%, 총부채상환비율(DTI) 25.7%, 만기 20년 원리금균등분할상환이다.</p>
+
+    <p>즉 이 지수는 "중위소득 가구가 중위가격 주택을 사면서 집값의 47.9%를 20년 원리금균등 조건으로 빌렸다면, 그 원리금이 소득 대비 얼마나 무거운가"를 잰다. 실제 매수자의 대출 비율이나 만기, 금리 우대는 반영하지 않는다. 모든 지역, 모든 분기에 같은 대출 틀을 씌우기 때문에 지역 간·시점 간 비교가 가능해진다. 개별 가구의 실제 상환 부담을 보여 주는 숫자가 아니라, 시장 전체의 '구입 난이도'를 같은 잣대로 재는 숫자라는 점이 핵심이다.</p>
+
+    <table>
+      <thead>
+        <tr><th>구성 요소</th><th>쓰는 값</th><th>출처</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>소득</td><td>지역별 중위가구소득</td><td>통계청 가계 소득 통계를 바탕으로 공사가 추정</td></tr>
+        <tr><td>주택가격</td><td>지역별 주택 중위가격</td><td>한국부동산원(옛 한국감정원)</td></tr>
+        <tr><td>금리</td><td>주택담보대출 신규취급액 가중평균금리</td><td>한국은행 예금은행 금리 통계</td></tr>
+        <tr><td>대출 조건</td><td>LTV 47.9% · DTI 25.7% · 20년 원리금균등</td><td>한국주택금융공사 표준대출 가정</td></tr>
+        <tr><td>공표 단위</td><td>분기 · 전국 및 17개 시도</td><td>주택금융통계 포털(houstat.hf.go.kr)</td></tr>
+      </tbody>
+    </table>
+
+    <h2>K-HAI 산식: 대출상환가능소득 ÷ 중위가구소득 × 100</h2>
+    <p>공사가 공개한 산식은 "K-HAI = 대출상환가능소득 ÷ 중위가구소득 × 100"이다. 여기서 대출상환가능소득은 표준대출의 원리금을 DTI 25.7% 안에서 갚으려면 필요한 소득을 말한다. 풀어 쓰면 다음 세 단계다.</p>
+
+    <ul>
+      <li><strong>① 대출액:</strong> 중위가격 × 47.9%</li>
+      <li><strong>② 월 원리금:</strong> 대출액을 해당 분기 주담대 금리, 20년(240개월) 원리금균등으로 나눠 갚을 때의 월 상환액</li>
+      <li><strong>③ 필요소득:</strong> 월 원리금 ÷ 0.257 — 원리금이 소득의 25.7%가 되려면 벌어야 하는 월소득</li>
+      <li><strong>④ 지수:</strong> 필요소득 ÷ 실제 중위가구 월소득 × 100</li>
+    </ul>
+
+    <p>가정을 넣어 계산해 보자. 중위가격 6억 원, 금리 연 4.2%, 중위가구 월소득 600만 원이라고 하자. 대출액은 6억 원 × 47.9% = 2억 8,740만 원이다. 이를 연 4.2%, 240개월 원리금균등으로 갚으면 월 상환액은 약 177만 원이다. 이 금액이 소득의 25.7%가 되려면 월소득이 약 690만 원(177만 ÷ 0.257)이어야 한다. 실제 소득은 600만 원이므로 지수는 690 ÷ 600 × 100 ≈ 115가 된다. 177만 원 ÷ 600만 원 = 29.5%이니, 지수 115 × 0.257 ≈ 29.5%와 정확히 맞아떨어진다.</p>
+
+    <div class="quote-box">
+      <p>지수를 소득 대비 상환비율로 바꾸는 법은 한 줄이다. 지수에 0.257을 곱하면 된다. 100이면 25.7%, 150이면 38.6%, 200이면 51.4%다.</p>
+      <cite>— K-HAI 읽는 법의 핵심</cite>
+    </div>
+
+    <p>같은 집값과 소득에서 금리만 바꿔 보면 이 지수의 성격이 드러난다. 위 예시에서 금리가 연 3.0%면 월 원리금은 약 159만 원, 지수는 약 103이다. 금리가 연 5.5%로 오르면 월 원리금은 약 198만 원, 지수는 약 128로 뛴다. 집값이 한 푼도 오르지 않았는데 금리 2.5%포인트 차이로 지수가 25 가까이 움직인다. 2022년 집값이 꺾이기 시작한 시점에 오히려 지수가 사상 최고를 찍은 이유가 여기에 있다.</p>
+
+    <h2>지수 100의 해석: '감당 가능선'이 아니라 '표준 부담선'</h2>
+    <p>지수 100은 중위소득 가구가 소득의 25.7%를 원리금으로 내는 상태다. 공사는 이를 적정 부담 수준으로 설명하고, 100을 넘으면 적정 수준보다 부담이 크다는 뜻으로 해석한다. 지수 60.9는 적정 부담액의 60.9%만 원리금으로 낸다는 의미이고, 이를 소득 대비로 바꾸면 약 15.7%다.</p>
+
+    <p>다만 100을 '이 선을 넘으면 집을 살 수 없다'는 절벽으로 읽으면 안 된다. 25.7%는 공사가 표준대출을 정할 때 쓴 DTI 가정치일 뿐, 가계가 버틸 수 있는 한계를 과학적으로 정한 숫자가 아니다. 현재 은행 주담대 심사는 DTI보다 총부채원리금상환비율(DSR)을 중심으로 이뤄지고, 수도권 규제지역에서는 LTV 한도와 대출액 상한이 따로 걸려 있다. 지수 179가 나왔다고 해서 서울 중위가구가 실제로 소득의 46%를 갚는다는 뜻도 아니다. 실제 매수자는 더 많은 자기자본을 넣거나, 더 긴 만기(30~40년)로 빌리거나, 맞벌이로 소득이 중위보다 높은 경우가 많다.</p>
+
+    <table>
+      <thead>
+        <tr><th>지수</th><th>소득 대비 원리금 비율</th><th>읽는 법</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>60</td><td>약 15.4%</td><td>표준 부담선의 60% · 전국 평균이 최근 이 언저리</td></tr>
+        <tr><td>100</td><td>25.7%</td><td>표준 부담선 · 공사가 말하는 적정 수준</td></tr>
+        <tr><td>150</td><td>약 38.6%</td><td>소득의 3분의 1 이상이 원리금</td></tr>
+        <tr><td>179.3</td><td>약 46.1%</td><td>2026년 1분기 서울</td></tr>
+        <tr><td>214.6</td><td>약 55.2%</td><td>2022년 3분기 서울 · 역대 최고</td></tr>
+      </tbody>
+    </table>
+
+    <h2>최근 흐름: 2022년 정점, 2023년 하락, 2025~2026년 서울 재상승</h2>
+    <p>보도된 공사 공표치를 이어 보면 흐름이 선명하다. 2022년 3분기 전국 지수는 89.3으로 2004년 통계 작성 이후 가장 높았고, 서울은 214.6으로 직전 분기(204.0)보다 10.6포인트 오르며 사상 최고를 기록했다. 주담대 금리가 빠르게 오른 시기였다. 이후 집값 조정과 금리 하향이 겹치며 2022년 4분기 서울은 198.6, 2023년 3분기에는 150.9까지 내려왔다.</p>
+
+    <p>하락은 오래가지 않았다. 2025년 4분기 전국 지수는 60.9로 직전 분기(59.6)보다 1.3포인트 올랐고, 서울은 165.1로 2023년 2분기 이후 가장 높았다. 2026년 1분기에는 전국 61.5, 서울 179.3으로 올라섰다. 서울 179.3에 0.257을 곱하면 소득 대비 원리금 비율은 약 46.1%다. 전국 지수가 60 언저리에 머무는 동안 서울만 큰 폭으로 오른 것은 금리보다 서울 중위가격 상승이 지수를 끌어올렸다는 뜻이다. 이 글 작성 시점에 확인한 최신 공표치는 2026년 1분기이며, 이후 분기 수치는 주택금융통계 포털에서 확인하는 것이 정확하다.</p>
+
+    <div class="quote-box">
+      <p>2022년의 정점은 금리가 만들었고, 2026년의 재상승은 서울 집값이 만들었다. 같은 숫자라도 무엇이 밀어 올렸는지에 따라 해소되는 길이 다르다.</p>
+      <cite>— 지수를 움직인 요인을 나눠 읽어야 하는 이유</cite>
+    </div>
+
+    <p>공표 시점도 알아 둘 필요가 있다. K-HAI는 분기 지표지만 소득·가격·금리 자료가 모두 모여야 계산되므로, 해당 분기가 끝나고 한 분기 남짓 뒤에 나온다. 2025년 4분기 수치는 2026년 4월 초에, 2026년 1분기 수치는 7월 하순에 보도됐다. 기사에서 "최신 지수"라고 하더라도 이미 3~4개월 전 시장을 반영한 숫자라는 뜻이다.</p>
+
+    <h2>PIR·KB 주택구매력지수와 무엇이 다른가</h2>
+    <p>PIR(소득 대비 주택가격 비율)은 집값을 연소득으로 나눈 값이다. "몇 년치 소득을 한 푼도 쓰지 않고 모아야 집을 사는가"를 보여 준다. 계산이 단순하고 국제 비교가 쉽지만 금리를 반영하지 않는다. 같은 PIR 10이라도 금리 3%와 6%의 실제 부담은 크게 다르다. K-HAI는 대출과 금리를 넣어 이 빈틈을 메운 지표다. 그래서 금리 변동기에는 두 지표가 다른 방향을 가리키기도 한다. 집값이 내려 PIR은 떨어지는데 금리가 더 빨리 올라 K-HAI는 오르는 식이다.</p>
+
+    <p>KB국민은행의 주택구매력지수(HAI)는 이름이 비슷하지만 방향이 반대다. 중위소득 가구가 중위가격 주택을 무리 없이 살 수 있는 상태를 100으로 두고, 숫자가 클수록 구매 여력이 크다는 뜻으로 읽는다. 공사의 K-HAI는 숫자가 클수록 부담이 크다. 기사 제목에 'HAI'만 적혀 있다면 어느 기관 지표인지부터 확인해야 해석을 뒤집지 않는다. 공사는 별도로 중위소득 가구가 살 수 있는 주택 재고의 비율을 보여 주는 주택구입물량지수(K-HOI)도 연 단위로 낸다. 부담지수가 '얼마나 무거운가'라면 물량지수는 '살 수 있는 집이 몇 채나 되는가'를 본다.</p>
+
+    <table>
+      <thead>
+        <tr><th>지표</th><th>산출 기관</th><th>금리 반영</th><th>숫자가 클수록</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>K-HAI(주택구입부담지수)</td><td>한국주택금융공사 · 분기</td><td>반영</td><td>부담이 크다</td></tr>
+        <tr><td>KB 주택구매력지수(HAI)</td><td>KB국민은행</td><td>반영</td><td>사기 쉽다</td></tr>
+        <tr><td>PIR</td><td>KB·국토교통부 등</td><td>미반영</td><td>소득 대비 집값이 비싸다</td></tr>
+        <tr><td>K-HOI(주택구입물량지수)</td><td>한국주택금융공사 · 연간</td><td>반영</td><td>살 수 있는 집이 많다</td></tr>
+      </tbody>
+    </table>
+
+    <h2>제도 평가와 전망</h2>
+    <p>K-HAI의 장점은 하나의 고정된 틀로 20년 넘는 시계열과 17개 시도를 비교할 수 있게 한다는 데 있다. 금리라는 변수를 집값과 같은 저울에 올렸다는 점에서 PIR보다 실제 체감에 가깝다. 반면 그 고정된 틀이 약점이기도 하다. LTV 47.9%, 만기 20년이라는 가정은 50년 만기 주담대와 DSR 규제, 대출액 상한이 공존하는 지금의 대출 현실과 거리가 있다. 중위가격도 지역 전체 주택의 중간값이라, 서울 안에서도 강남권과 외곽의 차이는 지수 하나에 묻힌다.</p>
+
+    <p>앞으로의 방향은 두 변수가 가른다. 서울 지수가 179 수준까지 오른 것은 가격 요인이 컸으므로, 금리가 내려가더라도 서울 중위가격이 계속 오르면 지수는 쉽게 내려오지 않는다. 반대로 지방은 지수가 낮아도 인구와 수요가 약해 '부담이 낮으니 살 때'라는 신호로 곧바로 읽기 어렵다. 지수를 볼 때는 수준보다 변화의 원인, 즉 이번 분기 상승이 금리 때문인지 가격 때문인지를 함께 확인하는 습관이 필요하다.</p>
+
+    <h2>실수요자·투자자를 위한 시사점</h2>
+    <div class="insight-box">
+      <h3>✅ 주택구입부담지수 읽기 체크리스트 (2026년 11월 시점 공표치 기준)</h3>
+      <ul>
+        <li><strong>지수에 0.257을 곱해 비율로 바꾼다:</strong> 179.3은 소득의 179%가 아니라 약 46%다. 기사 숫자를 볼 때마다 먼저 환산한다.</li>
+        <li><strong>어느 기관의 HAI인지 확인한다:</strong> 공사 K-HAI는 높을수록 부담이 크고, KB 주택구매력지수는 높을수록 구매 여력이 크다.</li>
+        <li><strong>내 조건으로 다시 계산한다:</strong> 표준대출은 LTV 47.9%·20년이다. 실제로 빌릴 금액·만기·금리를 넣고, 월 원리금을 내 월소득으로 나눠 직접 부담률을 확인한다.</li>
+        <li><strong>상승 원인을 나눠 본다:</strong> 금리 때문에 오른 지수는 금리 하락기에 빠르게 내려오지만, 가격 때문에 오른 지수는 쉽게 내려오지 않는다.</li>
+        <li><strong>공표 시차를 감안한다:</strong> 분기 종료 후 한 분기 남짓 뒤에 나오므로, 매수 타이밍 판단에는 최근 실거래가와 금리 흐름을 함께 본다.</li>
+        <li><strong>지역 평균의 한계를 기억한다:</strong> 시도 단위 중위가격이라 같은 서울 안에서도 자치구별 부담은 크게 다르다. 관심 지역 실거래 중간값으로 따로 계산한다.</li>
+        <li><strong>DSR 한도와 따로 확인한다:</strong> 지수가 낮아도 실제 대출 가능액은 DSR·LTV 규제와 대출액 상한으로 정해진다.</li>
+      </ul>
+    </div>
+
+    <h2>결론</h2>
+    <p>주택구입부담지수(K-HAI)는 중위소득 가구가 중위가격 주택을 LTV 47.9%·20년 원리금균등 대출로 샀을 때의 원리금 부담을 지수로 나타낸 것이다. 산식은 대출상환가능소득 ÷ 중위가구소득 × 100이고, 지수 100은 소득의 25.7%를 원리금으로 내는 표준 부담선이다. 지수에 0.257을 곱하면 소득 대비 상환비율이 나온다.</p>
+
+    <p>이 지수는 금리를 품고 있어 PIR보다 체감에 가깝지만, 고정된 대출 가정과 시도 단위 평균이라는 한계도 함께 안고 있다. 그러니 기사 속 지수를 그대로 받아들이기보다, 비율로 환산하고, 상승 원인을 나누고, 마지막으로 자기 대출 조건을 넣어 다시 계산해 보는 것이 이 숫자를 가장 쓸모 있게 쓰는 방법이다.</p>
+
+    <div class="hashtags">
+      <span class="hashtag">#주택구입부담지수</span>
+      <span class="hashtag">#KHAI</span>
+      <span class="hashtag">#한국주택금융공사</span>
+      <span class="hashtag">#주택금융통계</span>
+      <span class="hashtag">#원리금상환비율</span>
+      <span class="hashtag">#PIR</span>
+      <span class="hashtag">#주택구매력지수</span>
+      <span class="hashtag">#내집마련부담</span>
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠️ 면책 고지</strong><br>
+      본 기사는 한국주택금융공사 주택금융통계 포털에 공개된 K-HAI 산식·표준대출 가정과, 2026년 11월까지 언론에 보도된 공사 공표치(2022년 3분기·4분기, 2023년 3분기, 2025년 4분기, 2026년 1분기)를 바탕으로 작성한 일반 해설입니다. 공표치는 공사의 사후 보정에 따라 바뀔 수 있으며, 본문의 계산 예시(중위가격 6억 원, 월소득 600만 원, 금리 3.0~5.5%)는 산식 이해를 돕기 위한 가정입니다. 실제 대출 가능액과 상환 부담은 개인의 소득·부채, DSR·LTV 규제, 금융회사 심사에 따라 달라집니다. 매수 결정 전에는 공사 원자료와 금융회사 상담을 통해 확인하시기 바랍니다.
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-widget">
+      <h3>📌 핵심 요약</h3>
+      <div class="summary-bullet"><div class="dot"></div><div>K-HAI = 중위소득 가구가 중위가격 주택을 표준대출로 샀을 때의 원리금 부담 지수 · 한국주택금융공사 분기 공표</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>표준대출: LTV 47.9% · DTI 25.7% · 만기 20년 원리금균등 · 금리는 한국은행 주담대 신규취급 금리</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>산식: 대출상환가능소득 ÷ 중위가구소득 × 100 · 지수 × 0.257 = 소득 대비 원리금 비율</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>2026년 1분기 서울 179.3(약 46.1%), 전국 61.5 · 서울 역대 최고는 2022년 3분기 214.6</div></div>
+      <div class="summary-bullet"><div class="dot"></div><div>PIR과 달리 금리를 반영 · KB 주택구매력지수는 숫자 방향이 반대</div></div>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🔗 관련 기사</h3>
+      <ul>
+        <li><a href="article_20261026_1_pir-meaning_v2.html">PIR 뜻 — 소득 대비 주택가격 계산과 KB·국토부 수치 비교</a></li>
+        <li><a href="article_20261116_1_supply-demand-index_v2.html">매매수급지수 뜻 — 부동산원 산출식과 KB 매수우위지수 해석</a></li>
+        <li><a href="article_20260831_1_jeonse-ratio_v2.html">전세가율 뜻 — 계산법과 깡통전세 판단 방법</a></li>
+        <li><a href="article_20260817_1_official-price_v2.html">공시가격 산정 기준 — 현실화율 계산법과 열람·이의신청 기간 정리</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>🧮 지수 → 상환비율 환산표</h3>
+      <table style="font-size:0.8rem;">
+        <thead><tr><th>K-HAI</th><th>소득 대비 원리금</th></tr></thead>
+        <tbody>
+          <tr><td>50</td><td>약 12.9%</td></tr>
+          <tr><td>80</td><td>약 20.6%</td></tr>
+          <tr><td>100</td><td>25.7%</td></tr>
+          <tr><td>120</td><td>약 30.8%</td></tr>
+          <tr><td>150</td><td>약 38.6%</td></tr>
+          <tr><td>180</td><td>약 46.3%</td></tr>
+          <tr><td>200</td><td>약 51.4%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-logo">부동산<span>인사이트</span></div>
+  <p style="margin-top:8px;">© 2026 부동산인사이트. 본 콘텐츠의 무단 전재 및 재배포를 금합니다.</p>
+  <p style="margin-top:6px; font-size:0.78rem;">본 사이트의 모든 정보는 투자 참고용이며 투자 손실에 대한 책임은 투자자 본인에게 있습니다.</p>
+</footer>
+
+</body>
+</html>

@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 485,
+    url: 'article_20261123_1_housing-affordability-index_v2.html',
+    category: '시장동향',
+    title: '주택구입부담지수 뜻 — K-HAI 산식과 지수 100 해석, 소득 25.7% 상환 가정',
+    summary: '주택구입부담지수(K-HAI)는 중위소득 가구가 중위가격 주택을 LTV 47.9%·DTI 25.7%·20년 원리금균등 표준대출로 샀을 때의 원리금 부담을 한국주택금융공사가 분기마다 지수로 낸 것이다. 지수 100은 소득의 25.7%를 원리금으로 내는 수준이며, 지수에 0.257을 곱하면 소득 대비 상환비율이 된다. 2026년 1분기 서울 179.3(약 46.1%)까지의 흐름과 PIR·KB 주택구매력지수와의 차이를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-23',
+    title_en: 'Korea Housing Affordability Index (K-HAI): Formula, What 100 Means, and the 25.7% Repayment Assumption',
+    summary_en: 'Explains the K-HAI published quarterly by the Korea Housing Finance Corporation, which measures the mortgage burden of a median-income household buying a median-priced home with a standard loan (LTV 47.9%, DTI 25.7%, 20-year amortization). An index of 100 means 25.7% of income goes to repayments; multiplying by 0.257 converts any reading. Covers the trend up to Seoul 179.3 in Q1 2026 and how it differs from PIR and the KB affordability index.'
+  },
+  {
     id: 484,
     url: 'article_20261122_1_earnest-money-double-refund_v2.html',
     category: '칼럼',
