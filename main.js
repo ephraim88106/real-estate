@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 488,
+    url: 'article_20261124_1_funding-plan-submission_v2.html',
+    category: '정책',
+    title: '자금조달계획서 제출 대상 — 규제지역·6억 판정과 증빙서류 종류',
+    summary: '자금조달계획서는 조정대상지역·투기과열지구 주택은 금액과 관계없이, 비규제지역은 거래가격 6억 원 이상, 법인 매수는 지역·금액과 관계없이 계약일부터 30일 안에 낸다. 투기과열지구와 2026년 2월 10일 이후 계약한 토지거래허가구역 주택은 항목별 증빙서류까지 첨부해야 하며, 판정 순서와 서류 종류, 미제출 사유서, 과태료를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-24',
+    title_en: 'Who Must Submit a Home Funding Plan in Korea — Regulated Areas, the KRW 600 Million Threshold and Required Documents',
+    summary_en: 'A home funding plan must be filed within 30 days of contract for any home in a regulated area regardless of price, for homes of KRW 600 million or more elsewhere, and for all corporate buyers. Homes in speculation-overheated districts and, from February 10, 2026, land transaction permit zones also require supporting documents; we explain the decision steps, document types, deferral statements and fines.'
+  },
+  {
     id: 487,
     url: 'article_20261123_1_market_v2.html',
     category: '시장동향',
