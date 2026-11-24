@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 490,
+    url: 'article_20261124_1_subscription_v2.html',
+    category: '분양',
+    title: '두 단지에 청약 15만건 폭발! 연말 수도권 청약 대박과 전국 양극화의 민낯',
+    summary: '2026년 11월 연말 분양시장이 수도권 양극화 현상을 극명하게 보여주고 있다. 두 단지에만 청약 15만건이 몰렸지만 전국 3곳 중 2곳은 미달이라는 충격적인 통계가 나왔다. 청약 시장도 이제 \'선택과 집중\'이 필요한 성숙 단계에 들어섰다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-24',
+    title_en: '150,000 Applications Flood Into Two Complexes! Seoul Subscription Frenzy vs. Nationwide Market Collapse',
+    summary_en: 'The year-end subscription market reveals extreme polarization: two complexes attracted 150,000 applications while two out of three nationwide projects went unfilled.'
+  },
+  {
+    id: 489,
+    url: 'article_20261124_2_redevelopment_v2.html',
+    category: '재개발',
+    title: '재건축 53곳 부담금 4.4조 폭탄…서울시 인허가 대개편과 절세 급매의 충돌',
+    summary: '서울 재건축 단지 53곳이 총 4.4조원의 재건축 초과이익환수 부담금을 통보받으면서 절세 급매가 쏟아지고 있다. 동시에 서울시가 231곳의 인허가권을 구청장에게 이양하는 역대급 규제 완화를 추진한다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-24',
+    title_en: '4.4 Trillion Won Reconstruction Tax Bomb Hits 53 Seoul Complexes — Tax Bargain Sales Flood the Market',
+    summary_en: '53 Seoul reconstruction complexes face 4.4 trillion won in tax surcharges while Seoul City pursues historic deregulation by delegating permit authority to district mayors.'
+  },
+  {
     id: 488,
     url: 'article_20261124_1_funding-plan-submission_v2.html',
     category: '정책',
