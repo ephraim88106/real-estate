@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 491,
+    url: 'article_20261125_1_unranked-supply-vs-cancelled-resale_v2.html',
+    category: '분양',
+    title: '무순위 사후접수와 계약취소주택 재공급 자격 — 무주택·거주지·재당첨 제한 판정',
+    summary: '무순위 사후접수와 계약취소주택 재공급은 둘 다 줍줍으로 불리지만 신청 자격과 당첨 뒤 불이익이 다르다. 공급 유형 확인, 세대 전원 무주택 판정(입주자모집공고일 현재), 지자체장이 정하는 거주지 조건, 규제지역 재당첨 제한 10년·7년을 판정 순서대로 해설한다.',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-25',
+    title_en: 'Unranked Supply vs. Cancelled-Contract Resale in Korea: Eligibility, Residency and Re-winning Bans',
+    summary_en: 'Unranked post-application supply and cancelled-contract resale are both called leftover-unit lotteries, but eligibility and penalties differ. We walk through supply type, household-wide non-ownership as of the announcement date, local residency rules and the 10-year and 7-year re-winning bans in regulated areas.'
+  },
+  {
     id: 490,
     url: 'article_20261124_1_subscription_v2.html',
     category: '분양',
