@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 492,
+    url: 'article_20261127_1_lien-right-auction_v2.html',
+    category: '투자',
+    title: '유치권 뜻 — 낙찰자 인수 여부와 성립 요건, 점유 언제부터 대항되나',
+    summary: '유치권은 등기부에 나타나지 않지만 성립하면 낙찰자가 변제 책임을 질 수 있는 권리다. 민법 제320조의 성립 요건 세 가지, 압류 이후 점유 취득 시 매수인에게 대항하기 어렵다는 판례, 입찰 전 현장 확인 순서를 해설한다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-27',
+    title_en: 'Lien Rights (Yuchigwon) in Korean Auctions: Requirements, Winning-Bidder Liability and Possession Timing',
+    summary_en: 'A lien right does not appear in the property register, yet a winning bidder may have to pay the claim. We explain the three requirements under Civil Act Article 320, the precedent denying effect against buyers when possession began after seizure, and a pre-bid checking order.'
+  },
+  {
     id: 491,
     url: 'article_20261125_1_unranked-supply-vs-cancelled-resale_v2.html',
     category: '분양',
