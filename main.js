@@ -85,6 +85,18 @@ const i18n = {
 
 const articles = [
   {
+    id: 493,
+    url: 'article_20261128_1_uk-sdlt-foreign-buyer_v2.html',
+    category: '해외',
+    title: '영국 SDLT 비거주자 세율 — 183일 체류와 추가주택 5% 가산 시기',
+    summary: '영국 주택 구입 시 내는 인지세(SDLT)는 2025년 4월 이후 표준 구간 세율에 비거주자 2%, 추가주택 5%가 더해진다. 취득일 직전 12개월 183일 체류 판정과 50만 파운드 사례별 세금, 신고·납부 기한을 해설한다.',
+    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-28',
+    title_en: 'UK SDLT for Non-Residents: 183-Day Test, 2% Surcharge and the 5% Higher Rate on Additional Homes',
+    summary_en: 'UK Stamp Duty Land Tax stacks banded standard rates, a 2% non-resident surcharge and a 5% higher rate for additional dwellings. We explain the 183-day residence test, a 500,000 pound worked comparison and the filing deadline.'
+  },
+  {
     id: 492,
     url: 'article_20261127_1_lien-right-auction_v2.html',
     category: '투자',
