@@ -85,6 +85,30 @@ const i18n = {
 
 const articles = [
   {
+    id: 495,
+    url: 'article_20261128_1_redevelopment_v2.html',
+    category: '재개발',
+    title: '강남·서초 재건축 15주 연속 하락…‘재건축 프리미엄’이 꺼지는 순간',
+    summary: '11월 3주 한국부동산원 통계에서 서울은 +0.03%로 보합에 근접했지만 서초·강남은 15주, 송파는 11주 연속 하락했다. 용산·동작까지 하락 전환하고 매물이 8만 건을 넘은 지금, 재건축 시장은 폭락이 아닌 ‘재가격 책정’ 국면에 들어섰다.',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-28',
+    title_en: 'Gangnam and Seocho Redevelopment Prices Fall for 15 Straight Weeks: When the Redevelopment Premium Fades',
+    summary_en: 'Seoul apartment prices rose just 0.03% in the third week of November, near flat, while Seocho and Gangnam fell for a 15th straight week and Songpa for an 11th. With Yongsan and Dongjak turning negative and listings above 80,000, the redevelopment market is in a re-pricing phase rather than a crash.'
+  },
+  {
+    id: 494,
+    url: 'article_20261128_2_investment_v2.html',
+    category: '투자',
+    title: '서울 경매 낙찰률 21.8%, 12년 만에 최저…낙찰가율 100%의 착시',
+    summary: '10월 서울 아파트 경매 낙찰가율은 100.1%로 올랐지만 낙찰률은 21.8%로 2014년 4월 이후 최저였다. 외곽·중저가는 강세, 25억 원 이상 고가는 낙찰률 13.6%에 그친 양극화와 가압류 증가, 전세의 방어력을 투자 관점에서 분석했다.',
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
+    author: '부동산인사이트 편집팀',
+    date: '2026-11-28',
+    title_en: 'Seoul Auction Success Rate Hits 21.8%, a 12-Year Low: The Illusion Behind a 100% Winning-Bid Ratio',
+    summary_en: 'Seoul apartment auction winning-bid ratio rose to 100.1% in October, yet the success rate fell to 21.8%, the lowest since April 2014. We analyze the split between resilient outer-district and mid-priced units and weak 2.5bn-won-plus deals (13.6%), rising liens and the cushion from jeonse.'
+  },
+  {
     id: 493,
     url: 'article_20261128_1_uk-sdlt-foreign-buyer_v2.html',
     category: '해외',
